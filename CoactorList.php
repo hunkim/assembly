@@ -7,6 +7,7 @@ $build = "PRC_A1J5J1E1N1K0Q1O4A4V8L1H4C2Q4C9";
 
 $ch = curl_init();
 
+curl_setopt( $ch, CURLOPT_USERAGENT, "Mozilla/5.0 (Windows; U; Windows NT 5.1; rv:1.7.3) Gecko/20041001 Firefox/0.10.1" );
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($ch, CURLOPT_HEADER, false);
 curl_setopt($ch, CURLOPT_URL, ($url . $build));
