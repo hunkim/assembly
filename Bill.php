@@ -59,7 +59,6 @@ class Bill {
     $sql .= ", titleHTML='" . $db->real_escape_string($this->titleHTML) . "'\n";
     $sql .= ", sumHTML='" . $db->real_escape_string($this->sumHTML) . "'\n";
     $sql .= ", billHTML='" . $db->real_escape_string($this->billHTML) . "'\n";
-    $sql .= ", titleHTML='" . $db->real_escape_string($this->titleHTML) . "'\n";
     $sql .= ", coActorHTML='" . $db->real_escape_string($this->coActorHTML) . "'\n";
     $sql .= ", proposedby='" . $db->real_escape_string($this->proposedby) . "'\n";
     $sql .= ", result='" . $db->real_escape_string($this->result) . "'\n";
