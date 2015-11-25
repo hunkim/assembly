@@ -26,9 +26,9 @@ class Actor {
 
   function getId($db) {
     $sql = "SELECT id from Actor where ";
-    $sql .= "name='" . $db->real_escape_string(urlencode($this->name)) . "'\n";
-    $sql .= "AND cname='" . $db->real_escape_string(urlencode($this->cname)) . "'\n";
-    $sql .= "AND party='" . $db->real_escape_string(urlencode($this->party)) . "'\n";
+    $sql .= "name='" . $db->real_escape_string(($this->name)) . "'\n";
+    $sql .= "AND cname='" . $db->real_escape_string(($this->cname)) . "'\n";
+    $sql .= "AND party='" . $db->real_escape_string(($this->party)) . "'\n";
 
     echo $sql;
 
@@ -71,9 +71,9 @@ class Actor {
       return;
     }
     $sql = "INSERT INTO Actor SET ";
-    $sql .= "name='" . $db->real_escape_string(urlencode($this->name)) . "'\n";
-    $sql .= ", cname='" . $db->real_escape_string(urlencode($this->cname)) . "'\n";
-    $sql .= ", party='" . $db->real_escape_string(urlencode($this->party)) . "'\n";
+    $sql .= "name='" . $db->real_escape_string(($this->name)) . "'\n";
+    $sql .= ", cname='" . $db->real_escape_string(($this->cname)) . "'\n";
+    $sql .= ", party='" . $db->real_escape_string(($this->party)) . "'\n";
 
     if ($db->query($sql) === TRUE) {
       $this->id = $db->insert_id;
