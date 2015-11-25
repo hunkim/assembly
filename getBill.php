@@ -39,7 +39,6 @@ function getBill($id, $content) {
   }
 
   echo ("T: $title  S: $summary");
-  exit;
 
   $bill = new Bill($id);
   $bill->setTitleSum($title, $summary);
