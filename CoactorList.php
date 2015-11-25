@@ -13,7 +13,7 @@ curl_setopt($ch, CURLOPT_URL, ($url . $build));
 
 $content = curl_exec($ch);
 curl_close($ch);
-
+echo $url . $build;
 echo $content;
 
 ?>
