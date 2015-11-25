@@ -38,7 +38,7 @@ switch($apptype) {
     break;
 
   case 'billactors':
-    $sql = "select name, cname, party  from Actor a Inner join CoActor c on a.id = c.actorid where c.billid = ? order by name;";
+    $sql = "select name, cname, party, a.id  from Actor a Inner join CoActor c on a.id = c.actorid where c.billid = ? order by name;";
     break;
 }
 // process and print
