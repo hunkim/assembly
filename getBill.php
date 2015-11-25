@@ -30,7 +30,7 @@ $idx = 0;
 $title = "";
 $summary = "";
 foreach ($tokens as $line) {
-  if ($line=="" || strpos($line, "제안이유 및 주요내용")) {
+  if ($line=="" || strpos($line, "제안이유 및 주요내용") || strpos($line, "http://")) {
     continue;
   }
 
@@ -38,7 +38,7 @@ foreach ($tokens as $line) {
   if ($idx++==0) {
     $title = $line;
   } else {
-    $summary .= "$title\n";
+    $summary .= "line\n";
   }
 }
 
