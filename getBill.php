@@ -17,6 +17,7 @@ function getBill($id, $content) {
   foreach ($tokens as $line) {
     $line = trim($line); // let's trim
 
+    echo $line;
     if ($line=="" || strpos($line, "제안이유")!==false || strpos($line, "http://")!==false) {
       continue;
     }
@@ -29,6 +30,9 @@ function getBill($id, $content) {
     }
   }
 
+  echo ($title . ":" . $summary);
+  exit;
+  
   $bill = new Bill($id);
   $bill->setTitleSum($title, $summary);
   return $bill;
