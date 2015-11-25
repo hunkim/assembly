@@ -17,13 +17,16 @@ switch($apptype) {
   case 'stat':
     $sql = "select count(*) as c, YEAR(cdate) as y, MONTH(cdate) as m from CoActor c ";
     $sql .= " INNER JOIN Bill b on b.id = c.billid INNER Join Actor a on a.id=c.actorid ";
-    $sql .= " where a.id = ? group by YEAR(cdate), MONTH(cdate);";
+    $sql .= " where a.id = ? group by YEAR(cdate), MONTH(cdate) order by YEAR(cdate), MONTH(cdate) ;";
     break;
   case 'list':
-    $sql = "select b.id, title,YEAR(cdate) as y, MONTH(cdate) as m from Bill b INNER JOIN CoActor c on c.billid = b.id where c.actorid=?";
+    $sql = "select b.id, title,YEAR(cdate) as y, MONTH(cdate) as m from Bill b ";
+    $sql .= "INNER JOIN CoActor c on c.billid = b.id where c.actorid=? "
+    $sql .= " order by YEAR(cdate), MONTH(cdate) ";
     break;
   case 'all':
-    $sql = "select a.name, a.cname, a.party, a.id actorid, count(*) as c from CoActor c INNER JOIN Actor a ON a.id = c.actorid group by actorid order by c desc; ";
+    $sql = "select a.name, a.cname, a.party, a.id actorid, count(*) as c from CoActor c ";
+    $sql .= "INNER JOIN Actor a ON a.id = c.actorid group by actorid order by c desc; ";
 }
 // process and print
 processQuery($sql);
