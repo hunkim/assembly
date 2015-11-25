@@ -15,11 +15,11 @@ CREATE TABLE Bill (
   id varchar(255) NOT NULL UNIQUE,
   title varchar(255),
   summary varchar(1024),
-  cdate DATE ('Y-m-d'),
-  pdate DATE ('Y-m-d'),
+  cdate DATE,
+  pdate DATE,
 
   summaryHTML TEXT,
-  coactorHTML TEXT,
+  coActorHTML TEXT,
   billHTML TEXT,
 
   collected date,
