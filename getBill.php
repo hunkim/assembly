@@ -26,6 +26,23 @@ $content = file_get_contents ("bill.html");
 $txt = strip_tags($content);
 $tokens = preg_split('/\n+/', $txt);
 
-print_r($tokens);
+$idx = 0;
+$title = "";
+$summary = "";
+foreach ($tokens as $line) {
+  if ($line=="" || strpos($line, "제안이유 및 주요내용")) {
+    continue;
+  }
+
+  // assume the first text is the title
+  if ($idx++==0) {
+    $title = $line;
+  } else {
+    $summary .= "$title\n";
+  }
+}
+
+echo("Title: $title\n");
+echo("Summary: $summary");
 
 ?>
