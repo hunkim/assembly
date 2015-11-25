@@ -12,7 +12,7 @@ if ($db->connect_error) {
 }
 
 if (exist($db, $billid)) {
-  echo "$billid is already in our DB!\b"
+  echo "$billid is already in our DB!\b";
 } else {
   storeContent($db, $billid);
 }
