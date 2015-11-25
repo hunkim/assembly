@@ -13,7 +13,7 @@ if (!$tname) {
 }
 
 // Basic information SQL
-$sql = "select a.name, a.cname, a.party, actorid, count(*) as c from CoActor c INNER JOIN Actor a ON a.id = c.actorid where 1=? group by actorid order by c desc; ";
+$sql = "select a.name, a.cname, a.party, a.id actorid, count(*) as c from CoActor c INNER JOIN Actor a ON a.id = c.actorid where 1=? group by actorid order by c desc; ";
 
 // process and print
 processQuery($sql);
