@@ -41,7 +41,7 @@ class Actor {
       // output data of each row
       while($row = $result->fetch_assoc()) {
         $this->id = intval($row["id"]);
-        $echo("We have it: $this->id\n");
+        echo("We have it: $this->id\n");
         return true;
       }
     } else {
