@@ -100,7 +100,7 @@ function process($db, $file) {
       case '본회의의결':
     }
   }
-  print_r($tokens);
+//  print_r($tokens);
 }
 
 if ($bill) {
