@@ -40,7 +40,7 @@ class Actor {
   }
 
   function insertWithBill($db, $billid) {
-    assert($this->id && this->id!="");
+    assert($this->id);
 
     $sql = "INSERT INTO CoActor SET ";
     $sql .= "actorid='" . $db->real_escape_string($this->id) . "'\n";
