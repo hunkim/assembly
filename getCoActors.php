@@ -4,7 +4,10 @@ include 'Actor.php';
 
 // for testing
 if ($argv[0]=='getCoActors.php') {
-  getActors("PRC_A1J5J1E1N1K0Q1O4A4V8L1H4C2Q4C9");
+  $arr = getActors("PRC_A1J5J1E1N1K0Q1O4A4V8L1H4C2Q4C9");
+  foreach ($arr as $a) {
+    echo ($a->toString() . "\n");
+  }
 }
 
 function getActors($billid) {
@@ -45,12 +48,15 @@ function getActors($billid) {
     }
   }
 
+  $actorArr = [];
   foreach ($namearr as $value) {
     if ($value!='') {
       $a = new Actor($value);
-      echo ($a->toString() . "\n");
+      $actorArr[] = $a;
     }
   }
+
+  return $actorArr;
 }
 
 function parse_names($str) {
