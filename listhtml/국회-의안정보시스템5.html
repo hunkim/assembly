@@ -1,0 +1,3992 @@
+
+<!-- saved from url=(0057)http://likms.assembly.go.kr/bill/jsp/BillSearchResult.jsp -->
+<html hola_ext_inject="disabled" class="gr__likms_assembly_go_kr"><head><meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
+		
+		<link href="./국회-의안정보시스템5_files/style.css" rel="stylesheet" type="text/css">
+		<title>국회-의안정보시스템</title>
+		
+		<script language="javascript" src="./국회-의안정보시스템5_files/common.js"></script>
+		<script language="javascript" src="./국회-의안정보시스템5_files/paging.js"></script>
+		<script language="javascript" src="./국회-의안정보시스템5_files/jquery-1.7.1.min.js"></script>
+		<script language="javascript">
+			<!--
+			
+				function DoSearch() {
+					var	hfm					= document.HFM;
+					var	lastQry				= '';
+					var	innerSrchCheck		= document.all['INNER_SRCH_CHECK'].checked;
+					var	srchBillName		= document.all['SRCH_BILL_NAME'].value;
+					//
+					if(innerSrchCheck) {
+						hfm.LAST_QUERY.value		= lastQry;
+					} else {
+						hfm.LAST_QUERY.value		= '';
+					}
+					if(document.readyState != "complete"){
+						alert("검색조회 중 입니다. 잠시만 기다려주세요.");
+						document.all['PAGE_SIZE_OPTION'].value = '100';
+						return;
+					}else{
+    					hfm.BILL_NAME.value		= srchBillName;
+    					//
+    					ResetPaging();
+    					hfm.submit();	
+					}
+				}
+			-->
+		</script>
+	<style id="style-1-cropbar-clipper">/* Copyright 2014 Evernote Corporation. All rights reserved. */
+.en-markup-crop-options {
+    top: 18px !important;
+    left: 50% !important;
+    margin-left: -100px !important;
+    width: 200px !important;
+    border: 2px rgba(255,255,255,.38) solid !important;
+    border-radius: 4px !important;
+}
+
+.en-markup-crop-options div div:first-of-type {
+    margin-left: 0px !important;
+}
+</style></head>
+	<body leftmargin="0" topmargin="0" onload="javascript:SetPageView(); document.all.SRCH_BILL_NAME.focus();document.all.SRCH_BILL_NAME.select()">
+		<form name="HFM" method="post" action="./국회-의안정보시스템5_files/국회-의안정보시스템5.html" target="_self">
+			<input type="hidden" name="BILL_NAME" value="">
+			<input type="hidden" name="SIMSA_BONMUN" value="">
+			<input type="hidden" name="AGE_FROM" value="19">
+			<input type="hidden" name="AGE_TO" value="19">
+			<input type="hidden" name="AGE" value="">
+			<input type="hidden" name="TERM_FROM" value="">
+			<input type="hidden" name="TERM_TO" value="">
+			<input type="hidden" name="DATE_FROM" value="">
+			<input type="hidden" name="DATE_TO" value="">
+			<input type="hidden" name="DISP_FROM" value="">
+			<input type="hidden" name="DISP_TO" value="">
+			<input type="hidden" name="PROPOSE_FROM" value="">
+			<input type="hidden" name="PROPOSE_TO" value="">
+			<input type="hidden" name="SUBMIT_FROM" value="">
+			<input type="hidden" name="SUBMIT_TO" value="">
+			<input type="hidden" name="BILL_NO_FROM" value="">
+			<input type="hidden" name="BILL_NO_TO" value="">
+			<input type="hidden" name="BILL_KIND" value="법률안">
+			<input type="hidden" name="BILL_KIND2" value="">
+			<input type="hidden" name="BILL_KIND_EXCLUDE" value="">
+			<input type="hidden" name="CHARGE_COMMITTEE" value="">
+			<input type="hidden" name="CHARGE_COMMITTEE_NAME" value="">
+			<input type="hidden" name="PROPOSER_KIND" value="">
+			<input type="hidden" name="PROPOSER" value="">
+			<input type="hidden" name="HJ_NM" value="">
+			<input type="hidden" name="STATS_TYPE" value="">
+			<input type="hidden" name="PROPOSE_GUBN" value="공동발의">
+			<input type="hidden" name="GENERAL_RESULT" value="처리의안">
+			<input type="hidden" name="GENERAL_RESULT_TYPE" value="">			
+			<input type="hidden" name="COMMITTEE_RESULT" value="">
+			<input type="hidden" name="PERIOD_FROM" value="">
+			<input type="hidden" name="PERIOD_TO" value="">
+			<input type="hidden" name="BUDGET_YN" value="">
+			<input type="hidden" name="BILL_GBN_AMENDMENT" value="N">			
+			<input type="hidden" name="ORDER_COLUMN" value="ProposeDtBillSearchResult">
+			<input type="hidden" name="ORDER_TYPE" value="DESC">
+			<input type="hidden" name="LAST_QUERY" value="">
+			<input type="hidden" name="PAGE" value="5">
+			<input type="hidden" name="PAGE_SIZE" value="100">
+			<input type="hidden" name="MAX_PAGE" value="10">
+			<input type="hidden" name="BILL_SRCH" value="BillSearch">
+			<input type="hidden" name="ALL_COUNT" value="5492">
+			<input type="hidden" name="RESULT_COUNT" value="100">
+			<input type="hidden" name="MOORING_TYPE" value="N">
+			
+			
+			<input type="hidden" name="STATS_KIND" value="">
+			<input type="hidden" name="AGE_CHECK" value="">
+			
+		</form>
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+			<tbody>
+				<tr bgcolor="#A4977D">
+					<td width="970" height="3"></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td background="./국회-의안정보시스템5_files/bg.gif" height="130" width="970">
+						
+<script language="javascript">
+	//
+	$(document).ready(function() {
+		//
+		$("#SubMenu2_1").hide();
+		$("#SubMenu6_1").hide();
+		$("#SubMenu7_1").hide();
+		//
+		//******************************************
+		// 메뉴 오버시 이벤트
+		//******************************************
+		$(".mainMenu").mouseover(function() {
+			
+			$("#SubMenu2_1").hide();
+			$("#SubMenu6_1").hide();
+			$("#SubMenu7_1").hide();
+			
+			$("#menu1").attr("src","/bill/WebContents/Menu/MainMenu1_1.gif");
+			$("#menu2").attr("src","/bill/WebContents/Menu/MainMenu2_1.gif");
+			$("#menu3").attr("src","/bill/WebContents/Menu/MainMenu3_1.gif");
+			$("#menu4").attr("src","/bill/WebContents/Menu/MainMenu4_1.gif");
+			$("#menu5").attr("src","/bill/WebContents/Menu/MainMenu5_1.png");
+			$("#menu6").attr("src","/bill/WebContents/Menu/MainMenu6_1.gif");
+			$("#menu7").attr("src","/bill/WebContents/Menu/MainMenu7_1.gif");
+			$("#menu8").attr("src","/bill/WebContents/Menu/MainMenu8_1.gif");
+			
+			var temp = ($(this).attr("id")).split("menu");
+			
+			$("#SubMenu" + temp[1] +"_1").show();
+			if(temp[1] == '5'){
+				$("#menu" + temp[1]).attr("src","/bill/WebContents/Menu/MainMenu"+temp[1]+"_2.png");
+			}else{
+				$("#menu" + temp[1]).attr("src","/bill/WebContents/Menu/MainMenu"+temp[1]+"_2.gif");	
+			}
+	
+		});			
+		//
+		$(".subMenu").mouseover(function() {
+			
+			$("#sub_menu2_1").attr("src","/bill/WebContents/Menu/SubMenu2_1_1.gif");
+			$("#sub_menu2_2").attr("src","/bill/WebContents/Menu/SubMenu2_2_1.gif");
+			$("#sub_menu2_3").attr("src","/bill/WebContents/Menu/SubMenu2_3_1.gif");
+			$("#sub_menu2_4").attr("src","/bill/WebContents/Menu/SubMenu2_4_1.gif");
+			$("#sub_menu6_1").attr("src","/bill/WebContents/Menu/SubMenu6_1_1.gif");
+			$("#sub_menu6_2").attr("src","/bill/WebContents/Menu/SubMenu6_2_1.gif");
+			$("#sub_menu7_1").attr("src","/bill/WebContents/Menu/SubMenu7_1_1.gif");
+			$("#sub_menu7_2").attr("src","/bill/WebContents/Menu/SubMenu7_2_1.gif");
+			$("#sub_menu7_3").attr("src","/bill/WebContents/Menu/SubMenu7_3_1.gif");
+			$("#sub_menu7_4").attr("src","/bill/WebContents/Menu/SubMenu7_4_1.gif");
+			
+			var temp = ($(this).attr("id")).split("sub_menu");
+			$("#sub_menu" + temp[1]).attr("src","/bill/WebContents/Menu/SubMenu"+temp[1]+"_2.gif");
+
+		});
+		//
+	});
+	//
+</script>
+
+<table border="0" cellspacing="0" cellpadding="0" background="./국회-의안정보시스템5_files/SubTopBG.gif" style="background-repeat: no-repeat;">
+	<tbody><tr>
+		<td width="323">
+			<table border="0" cellspacing="0" cellpadding="0">
+				<tbody><tr>
+					<td height="15"></td>
+				</tr>
+				<tr>
+					<td height="43" align="left"><a href="http://likms.assembly.go.kr/bill/jsp/main.jsp"><img src="./국회-의안정보시스템5_files/SubTop_logo.gif" alt="의안정보시스템" border="0"></a></td>
+				</tr>
+				<tr>
+					<td height="72"></td>
+				</tr>
+			</tbody></table>
+		</td>
+		
+		<!-- 메뉴 수정 시작 -->
+		<td width="647">
+			<div id="SubTopMenu">
+				<table width="647">
+					<tbody><tr>
+						<td><a href="http://likms.assembly.go.kr/bill/WebContents/Summary.htm" onfocus="this.blur()"><img src="./국회-의안정보시스템5_files/MainMenu1_1.gif" name="menu1" border="0" id="menu1" class="mainMenu" alt="의안개요"></a></td>
+						<td><img src="./국회-의안정보시스템5_files/Menuline.gif" alt="구분선"></td>
+						<td><a href="http://likms.assembly.go.kr/bill/jsp/BillSearchDetail.jsp" onfocus="this.blur()"><img src="./국회-의안정보시스템5_files/MainMenu2_1.gif" name="menu2" border="0" id="menu2" class="mainMenu" alt="의안검색"></a></td>
+						<td><img src="./국회-의안정보시스템5_files/Menuline.gif" alt="구분선"></td>
+						<td><a href="http://likms.assembly.go.kr/bill/jsp/FinishBill.jsp" onfocus="this.blur()"><img src="./국회-의안정보시스템5_files/MainMenu3_1.gif" name="menu3" border="0" id="menu3" class="mainMenu" alt="처리의안"></a></td>
+						<td><img src="./국회-의안정보시스템5_files/Menuline.gif" alt="구분선"></td>
+						<td><a href="http://likms.assembly.go.kr/bill/jsp/MooringBill.jsp" onfocus="this.blur()"><img src="./국회-의안정보시스템5_files/MainMenu4_1.gif" name="menu4" border="0" id="menu4" class="mainMenu" alt="계류의안"></a></td>
+						<td><img src="./국회-의안정보시스템5_files/Menuline.gif" alt="구분선"></td>
+						<td><a href="http://likms.assembly.go.kr/bill/jsp/BeforePropose.jsp" onfocus="this.blur()"><img src="./국회-의안정보시스템5_files/MainMenu5_1.png" name="menu5" border="0" id="menu5" class="mainMenu" alt="본회의부의요청안건"></a></td>
+						<td><img src="./국회-의안정보시스템5_files/Menuline.gif" alt="구분선"></td>
+						<td><a href="http://likms.assembly.go.kr/bill/jsp/StatFinishBillSearch.jsp" onfocus="this.blur()"><img src="./국회-의안정보시스템5_files/MainMenu6_1.gif" name="menu6" border="0" id="menu6" class="mainMenu" alt="의안통계"></a></td>
+						<td><img src="./국회-의안정보시스템5_files/Menuline.gif" alt="구분선"></td>
+						<td><a href="http://likms.assembly.go.kr/bill/jsp/PetitionSearch.jsp" onfocus="this.blur()"><img src="./국회-의안정보시스템5_files/MainMenu7_1.gif" name="menu7" border="0" id="menu7" class="mainMenu" alt="청원"></a></td>
+						<td><img src="./국회-의안정보시스템5_files/Menuline.gif" alt="구분선"></td>
+						<td><a href="http://likms.assembly.go.kr/bill/jsp/ReportList.jsp" onfocus="this.blur()"><img src="./국회-의안정보시스템5_files/MainMenu8_1.gif" name="menu8" border="0" id="menu8" class="mainMenu" alt="연차보고서"></a></td>
+					</tr>
+				</tbody></table>
+			</div>
+			
+			<!-- 의안검색 서브메뉴 시작  -->
+			<div id="SubMenu2_1" style="display:none; padding-bottom:10px;">
+				<table bgcolor="#a5977c">
+					<tbody><tr height="14">
+						<td><a href="http://likms.assembly.go.kr/bill/jsp/BillSearchDetail.jsp" onfocus="this.blur()"><img src="./국회-의안정보시스템5_files/SubMenu2_1_1.gif" name="sub_menu2_1" border="0" id="sub_menu2_1" class="subMenu" alt="의안상세검색"></a></td>
+						<td width="3" align="center"><img src="./국회-의안정보시스템5_files/Menuline_sub.gif" alt="구분선"></td>
+						<td><a href="http://likms.assembly.go.kr/bill/jsp/BillSearchSimsa.jsp" onfocus="this.blur()"><img src="./국회-의안정보시스템5_files/SubMenu2_2_1.gif" name="sub_menu2_2" border="0" id="sub_menu2_2" class="subMenu" alt="심사보고서본문검색"></a></td>
+						<td width="3" align="center"><img src="./국회-의안정보시스템5_files/Menuline_sub.gif" alt="구분선"></td>
+						<td><a href="http://likms.assembly.go.kr/bill/jsp/BillSearchLaw.jsp" onfocus="this.blur()"><img src="./국회-의안정보시스템5_files/SubMenu2_3_1.gif" name="sub_menu2_3" border="0" id="sub_menu2_3" class="subMenu" alt="발의법률안검색"></a></td>
+						<td width="3" align="center"><img src="./국회-의안정보시스템5_files/Menuline_sub.gif" alt="구분선"></td>
+						<td><a href="http://likms.assembly.go.kr/bill/jsp/BillSearchProposal.jsp" onfocus="this.blur()"><img src="./국회-의안정보시스템5_files/SubMenu2_4_1.gif" name="sub_menu2_4" border="0" id="sub_menu2_4" class="subMenu" alt="제안이유/주요내용검색"></a></td>
+					</tr>
+				</tbody></table>
+			</div>
+			<!-- 의안검색 서브메뉴 끝 -->
+
+			<!-- 의안통계 서브메뉴 시작  -->
+			<div id="SubMenu6_1" style="display:none;">
+				<table bgcolor="#a5977c">
+					<tbody><tr height="14">
+						<td><a href="http://likms.assembly.go.kr/bill/jsp/StatFinishBillSearch.jsp" onfocus="this.blur()"><img src="./국회-의안정보시스템5_files/SubMenu6_1_1.gif" name="sub_menu6_1" border="0" id="sub_menu6_1" class="subMenu" alt="처리의안통계"></a></td>
+						<td width="3" align="center"><img src="./국회-의안정보시스템5_files/Menuline_sub.gif" alt="구분선"></td>
+						<td><a href="http://likms.assembly.go.kr/bill/jsp/StatMooringBill.jsp" onfocus="this.blur()"><img src="./국회-의안정보시스템5_files/SubMenu6_2_1.gif" name="sub_menu6_2" border="0" id="sub_menu6_2" class="subMenu" alt="계류의안통계"></a></td>
+					</tr>
+				</tbody></table>
+			</div>
+			<!-- 의안통계 서브메뉴 끝 -->
+
+			<!-- 청원 서브메뉴 시작  -->
+			<div id="SubMenu7_1" style="display:none;">
+				<table bgcolor="#a5977c">
+					<tbody><tr height="14">
+						<td><a href="http://likms.assembly.go.kr/bill/jsp/PetitionSearch.jsp" onfocus="this.blur()"><img src="./국회-의안정보시스템5_files/SubMenu7_1_1.gif" name="sub_menu7_1" border="0" id="sub_menu7_1" class="subMenu" alt="청원검색"></a></td>
+						<td width="3" align="center"><img src="./국회-의안정보시스템5_files/Menuline_sub.gif" alt="구분선"></td>
+						<td><a href="http://likms.assembly.go.kr/bill/jsp/PetitionFinish.jsp" onfocus="this.blur()"><img src="./국회-의안정보시스템5_files/SubMenu7_2_1.gif" name="sub_menu7_2" border="0" id="sub_menu7_2" class="subMenu" alt="청원처리"></a></td>
+						<td width="3" align="center"><img src="./국회-의안정보시스템5_files/Menuline_sub.gif" alt="구분선"></td>
+						<td><a href="http://likms.assembly.go.kr/bill/jsp/PetitionMooring.jsp" onfocus="this.blur()"><img src="./국회-의안정보시스템5_files/SubMenu7_3_1.gif" name="sub_menu7_3" border="0" id="sub_menu7_3" class="subMenu" alt="청원계류"></a></td>
+						<td width="3" align="center"><img src="./국회-의안정보시스템5_files/Menuline_sub.gif" alt="구분선"></td>
+						<td><a href="http://likms.assembly.go.kr/bill/jsp/PetitionStat.jsp" onfocus="this.blur()"><img src="./국회-의안정보시스템5_files/SubMenu7_4_1.gif" name="sub_menu7_4" border="0" id="sub_menu7_4" class="subMenu" alt="청원통계"></a></td>
+					</tr>
+				</tbody></table>
+			</div>
+			<!-- 청원 서브메뉴 끝 -->
+		</td>
+		<!-- 메뉴 수정 끝 -->
+	</tr>
+</tbody></table>
+
+					</td>
+					<td background="./국회-의안정보시스템5_files/bg.gif"></td>
+				</tr>
+			</tbody>
+		</table>
+		<table width="970" border="0" cellspacing="0" cellpadding="0">
+			<tbody>
+				<tr>
+					<td height="15" colspan="2"></td>
+				</tr>
+				<tr>
+					<td height="28">
+						<table width="100%" border="0" cellspacing="0" cellpadding="0">
+							<tbody>
+								<tr>
+									<td width="30" height="23"></td>
+									<td>
+										<img src="./국회-의안정보시스템5_files/title.gif" width="122" height="23" align="absbottom" alt="검색결과목록">&nbsp;
+										<span class="text3">
+											제19대(2012~2016)부터 제19대(2012~2016)까지의 의안에서
+											
+											총5492건이 검색되었습니다.
+										</span>
+									</td>
+								</tr>
+								<tr>
+									<td height="10"></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td height="30"></td>
+									<td>
+										<table width="940" height="30" border="0" cellspacing="0" cellpadding="0">
+											<tbody>
+												<tr>
+													<td width="45"><span class="text4_B">의안명:</span></td>
+													<td width="140">
+														<input id="SRCH_BILL_NAME" type="text" class="input" style="border:1px solid #7F9DB9; height:17px" size="23" value="" onkeypress="javascript:if(event.keyCode == 13) DoSearch();">
+													</td>
+													<td>
+														&nbsp;<img src="./국회-의안정보시스템5_files/btn_search.gif" onclick="javascript:DoSearch()" align="absmiddle" alt="검색">
+														<input type="checkbox" id="INNER_SRCH_CHECK" border="0" style="margin-left: -5">
+														<span class="text2">결과내재검색</span>
+													</td>
+													<td>
+														<span class="text2">페이지당 결과 수</span>
+														<select id="PAGE_SIZE_OPTION" onchange="javascript:document.HFM.PAGE_SIZE.value=this.options[this.selectedIndex].value; DoSearch();">
+															<option value="5">5</option><option value="10">10</option><option value="20">20</option><option value="50">50</option><option value="100" selected="">100</option>
+														</select>
+													</td>
+													<td align="right">
+														<img src="./국회-의안정보시스템5_files/icon_01.gif" width="13" height="14" align="absmiddle" alt="계류의안"><span class="text2">:계류의안</span>
+														<!--&nbsp;<IMG SRC="/bill/WebContents/BillSearchResult/icon_03.gif" WIDTH="13" HEIGHT="14" ALIGN="absmiddle"><SPAN CLASS="text2">:통과의안</SPAN>-->
+														&nbsp;<img src="./국회-의안정보시스템5_files/icon_02.gif" width="13" height="14" align="absmiddle" alt="처리의안"><span class="text2">:처리의안</span>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td>&nbsp;</td>
+									<td>
+										<table width="100%" border="0" cellspacing="0" cellpadding="0">
+											<tbody>
+												<tr align="center" class="text5_B">
+													<td width="9%" height="31" background="./국회-의안정보시스템5_files/table_bg.gif" style="cursor:pointer" onclick="javascript:OrderBy(&#39;billNo&#39;)">의안번호</td>
+													<td width="*%" background="./국회-의안정보시스템5_files/table_bg.gif" style="cursor:pointer" onclick="javascript:OrderBy(&#39;billName&#39;)">의안명</td>
+													<td width="10%" background="./국회-의안정보시스템5_files/table_bg.gif" style="cursor:pointer" onclick="javascript:OrderBy(&#39;proposerKind&#39;)">제안자구분</td>
+													<td width="10%" background="./국회-의안정보시스템5_files/table_bg.gif" style="cursor:pointer" onclick="javascript:OrderBy(&#39;proposeDt&#39;)">제안일자</td>
+													
+														<td width="10%" background="./국회-의안정보시스템5_files/table_bg.gif" style="cursor:pointer" onclick="javascript:OrderBy(&#39;procDt&#39;)">의결일자</td>
+														<td width="10%" background="./국회-의안정보시스템5_files/table_bg.gif" style="cursor:pointer" onclick="javascript:OrderBy(&#39;generalResult&#39;)">의결결과</td>
+													
+													<td width="10%" background="./국회-의안정보시스템5_files/table_bg.gif">주요내용</td>
+													<td width="10%" background="./국회-의안정보시스템5_files/table_bg.gif">심사진행상태</td>
+												</tr>
+																				
+												<tr>
+													<td height="29" align="center" class="text6">
+														1913515
+													</td>
+													<td>
+														<img src="./국회-의안정보시스템5_files/icon_02.gif" width="13" height="14" border="0" align="absmiddle" alt="구분">&nbsp;
+															<a href="javascript:GoDetail('PRC_L1N4S1R2I3I1G1V6L4Z9J2F3A5H6C5')" class="list1" title="소프트웨어산업 진흥법 일부개정법률안(강은희의원 등 11인)">소프트웨어산업 진흥법 일부개정법률안(강은희의원 등 11인)</a>
+													</td>
+													<td align="center" class="text6">
+														의원
+													</td>
+													<td align="center" class="text6">
+														2014-12-31
+													</td>
+													
+														<td align="center" class="text6">
+															2015-05-29
+														</td>
+														<td align="center" class="text6">
+															대안반영폐기
+														</td>
+													
+													<td align="center" class="text6">
+														
+														<img src="./국회-의안정보시스템5_files/icon_txt.gif" align="absmiddle" style="cursor:pointer" onclick="javascript:OpenSummary(&#39;PRC_L1N4S1R2I3I1G1V6L4Z9J2F3A5H6C5&#39;)" alt="제안이유 및 주요내용">
+														
+													</td>
+													<td align="center" class="text6">																																			
+													
+														대안반영폐기
+													
+													</td>
+												</tr>
+												<tr bgcolor="#DBDBDB">
+													<td height="1" colspan="8" align="center"></td>
+												</tr>
+																				
+												<tr>
+													<td height="29" align="center" class="text6">
+														1913492
+													</td>
+													<td>
+														<img src="./국회-의안정보시스템5_files/icon_02.gif" width="13" height="14" border="0" align="absmiddle" alt="구분">&nbsp;
+															<a href="javascript:GoDetail('PRC_D1P4R1J2E3V1C1H4S3J8V2K2F8M4Z7')" class="list1" title="이북5도에 관한 특별조치법 일부개정법률안(김민기의원 등 11인)">이북5도에 관한 특별조치법 일부개정법률안(김민기의원 등 11인)</a>
+													</td>
+													<td align="center" class="text6">
+														의원
+													</td>
+													<td align="center" class="text6">
+														2014-12-31
+													</td>
+													
+														<td align="center" class="text6">
+															2015-04-30
+														</td>
+														<td align="center" class="text6">
+															대안반영폐기
+														</td>
+													
+													<td align="center" class="text6">
+														
+														<img src="./국회-의안정보시스템5_files/icon_txt.gif" align="absmiddle" style="cursor:pointer" onclick="javascript:OpenSummary(&#39;PRC_D1P4R1J2E3V1C1H4S3J8V2K2F8M4Z7&#39;)" alt="제안이유 및 주요내용">
+														
+													</td>
+													<td align="center" class="text6">																																			
+													
+														대안반영폐기
+													
+													</td>
+												</tr>
+												<tr bgcolor="#DBDBDB">
+													<td height="1" colspan="8" align="center"></td>
+												</tr>
+																				
+												<tr>
+													<td height="29" align="center" class="text6">
+														1913490
+													</td>
+													<td>
+														<img src="./국회-의안정보시스템5_files/icon_02.gif" width="13" height="14" border="0" align="absmiddle" alt="구분">&nbsp;
+															<a href="javascript:GoDetail('PRC_Q1L4M1Y2T3F1K1J4V3P6I1I4Z4S3X0')" class="list1" title="도로교통법 일부개정법률안(김민기의원 등 11인)">도로교통법 일부개정법률안(김민기의원 등 11인)</a>
+													</td>
+													<td align="center" class="text6">
+														의원
+													</td>
+													<td align="center" class="text6">
+														2014-12-31
+													</td>
+													
+														<td align="center" class="text6">
+															2015-01-20
+														</td>
+														<td align="center" class="text6">
+															철회
+														</td>
+													
+													<td align="center" class="text6">
+														
+														<img src="./국회-의안정보시스템5_files/icon_txt.gif" align="absmiddle" style="cursor:pointer" onclick="javascript:OpenSummary(&#39;PRC_Q1L4M1Y2T3F1K1J4V3P6I1I4Z4S3X0&#39;)" alt="제안이유 및 주요내용">
+														
+													</td>
+													<td align="center" class="text6">																																			
+													
+														철회
+													
+													</td>
+												</tr>
+												<tr bgcolor="#DBDBDB">
+													<td height="1" colspan="8" align="center"></td>
+												</tr>
+																				
+												<tr>
+													<td height="29" align="center" class="text6">
+														1913483
+													</td>
+													<td>
+														<img src="./국회-의안정보시스템5_files/icon_02.gif" width="13" height="14" border="0" align="absmiddle" alt="구분">&nbsp;
+															<a href="javascript:GoDetail('ARC_Z1Q4T1B2O3R1E1Q4D2Y7O0W1B9M1Z8')" class="list1" title="도로교통법 일부개정법률안">도로교통법 일부개정법률안</a>
+													</td>
+													<td align="center" class="text6">
+														정부
+													</td>
+													<td align="center" class="text6">
+														2014-12-31
+													</td>
+													
+														<td align="center" class="text6">
+															2015-07-24
+														</td>
+														<td align="center" class="text6">
+															대안반영폐기
+														</td>
+													
+													<td align="center" class="text6">
+														
+														<img src="./국회-의안정보시스템5_files/icon_txt.gif" align="absmiddle" style="cursor:pointer" onclick="javascript:OpenSummary(&#39;ARC_Z1Q4T1B2O3R1E1Q4D2Y7O0W1B9M1Z8&#39;)" alt="제안이유 및 주요내용">
+														
+													</td>
+													<td align="center" class="text6">																																			
+													
+														대안반영폐기
+													
+													</td>
+												</tr>
+												<tr bgcolor="#DBDBDB">
+													<td height="1" colspan="8" align="center"></td>
+												</tr>
+																				
+												<tr>
+													<td height="29" align="center" class="text6">
+														1913476
+													</td>
+													<td>
+														<img src="./국회-의안정보시스템5_files/icon_02.gif" width="13" height="14" border="0" align="absmiddle" alt="구분">&nbsp;
+															<a href="javascript:GoDetail('PRC_J1X4H1Y2P3N1P1R3L5L3U1Q9Q8C2J4')" class="list1" title="청소년 기본법 일부개정법률안(박민수의원 등 10인)">청소년 기본법 일부개정법률안(박민수의원 등 10인)</a>
+													</td>
+													<td align="center" class="text6">
+														의원
+													</td>
+													<td align="center" class="text6">
+														2014-12-31
+													</td>
+													
+														<td align="center" class="text6">
+															2015-05-29
+														</td>
+														<td align="center" class="text6">
+															대안반영폐기
+														</td>
+													
+													<td align="center" class="text6">
+														
+														<img src="./국회-의안정보시스템5_files/icon_txt.gif" align="absmiddle" style="cursor:pointer" onclick="javascript:OpenSummary(&#39;PRC_J1X4H1Y2P3N1P1R3L5L3U1Q9Q8C2J4&#39;)" alt="제안이유 및 주요내용">
+														
+													</td>
+													<td align="center" class="text6">																																			
+													
+														대안반영폐기
+													
+													</td>
+												</tr>
+												<tr bgcolor="#DBDBDB">
+													<td height="1" colspan="8" align="center"></td>
+												</tr>
+																				
+												<tr>
+													<td height="29" align="center" class="text6">
+														1913473
+													</td>
+													<td>
+														<img src="./국회-의안정보시스템5_files/icon_02.gif" width="13" height="14" border="0" align="absmiddle" alt="구분">&nbsp;
+															<a href="javascript:GoDetail('PRC_X1M4V1G2Z3B1T1A3B4I0I5J2I8V5U9')" class="list1" title="농어업인 삶의 질 향상 및 농어촌지역 개발촉진에 관한 특별법 일부개정법률안(박민수의원 등 10인)">농어업인 삶의 질 향상 및 농어촌지역 개발촉진에 관한 특별법 일부개정법률안(박민수...</a>
+													</td>
+													<td align="center" class="text6">
+														의원
+													</td>
+													<td align="center" class="text6">
+														2014-12-31
+													</td>
+													
+														<td align="center" class="text6">
+															2015-07-06
+														</td>
+														<td align="center" class="text6">
+															대안반영폐기
+														</td>
+													
+													<td align="center" class="text6">
+														
+														<img src="./국회-의안정보시스템5_files/icon_txt.gif" align="absmiddle" style="cursor:pointer" onclick="javascript:OpenSummary(&#39;PRC_X1M4V1G2Z3B1T1A3B4I0I5J2I8V5U9&#39;)" alt="제안이유 및 주요내용">
+														
+													</td>
+													<td align="center" class="text6">																																			
+													
+														대안반영폐기
+													
+													</td>
+												</tr>
+												<tr bgcolor="#DBDBDB">
+													<td height="1" colspan="8" align="center"></td>
+												</tr>
+																				
+												<tr>
+													<td height="29" align="center" class="text6">
+														1913464
+													</td>
+													<td>
+														<img src="./국회-의안정보시스템5_files/icon_02.gif" width="13" height="14" border="0" align="absmiddle" alt="구분">&nbsp;
+															<a href="javascript:GoDetail('ARC_J1V4A1P2S3O1E1Y1Q3C6M0P3C8O6Y5')" class="list1" title="온천법 일부개정법률안">온천법 일부개정법률안</a>
+													</td>
+													<td align="center" class="text6">
+														정부
+													</td>
+													<td align="center" class="text6">
+														2014-12-31
+													</td>
+													
+														<td align="center" class="text6">
+															2015-07-06
+														</td>
+														<td align="center" class="text6">
+															대안반영폐기
+														</td>
+													
+													<td align="center" class="text6">
+														
+														<img src="./국회-의안정보시스템5_files/icon_txt.gif" align="absmiddle" style="cursor:pointer" onclick="javascript:OpenSummary(&#39;ARC_J1V4A1P2S3O1E1Y1Q3C6M0P3C8O6Y5&#39;)" alt="제안이유 및 주요내용">
+														
+													</td>
+													<td align="center" class="text6">																																			
+													
+														대안반영폐기
+													
+													</td>
+												</tr>
+												<tr bgcolor="#DBDBDB">
+													<td height="1" colspan="8" align="center"></td>
+												</tr>
+																				
+												<tr>
+													<td height="29" align="center" class="text6">
+														1913448
+													</td>
+													<td>
+														<img src="./국회-의안정보시스템5_files/icon_02.gif" width="13" height="14" border="0" align="absmiddle" alt="구분">&nbsp;
+															<a href="javascript:GoDetail('PRC_M1E4R1P2S3S0P1D8X0L3X5G4R5X6V7')" class="list1" title="도시 및 주거환경정비법 일부개정법률안(주호영의원 등 10인)">도시 및 주거환경정비법 일부개정법률안(주호영의원 등 10인)</a>
+													</td>
+													<td align="center" class="text6">
+														의원
+													</td>
+													<td align="center" class="text6">
+														2014-12-30
+													</td>
+													
+														<td align="center" class="text6">
+															2015-08-11
+														</td>
+														<td align="center" class="text6">
+															대안반영폐기
+														</td>
+													
+													<td align="center" class="text6">
+														
+														<img src="./국회-의안정보시스템5_files/icon_txt.gif" align="absmiddle" style="cursor:pointer" onclick="javascript:OpenSummary(&#39;PRC_M1E4R1P2S3S0P1D8X0L3X5G4R5X6V7&#39;)" alt="제안이유 및 주요내용">
+														
+													</td>
+													<td align="center" class="text6">																																			
+													
+														대안반영폐기
+													
+													</td>
+												</tr>
+												<tr bgcolor="#DBDBDB">
+													<td height="1" colspan="8" align="center"></td>
+												</tr>
+																				
+												<tr>
+													<td height="29" align="center" class="text6">
+														1913447
+													</td>
+													<td>
+														<img src="./국회-의안정보시스템5_files/icon_02.gif" width="13" height="14" border="0" align="absmiddle" alt="구분">&nbsp;
+															<a href="javascript:GoDetail('PRC_J1A4L1S2B3Q0I1P8K0M1B5L6T6I4C4')" class="list1" title="정당법 일부개정법률안(이강후의원 등 10인)">정당법 일부개정법률안(이강후의원 등 10인)</a>
+													</td>
+													<td align="center" class="text6">
+														의원
+													</td>
+													<td align="center" class="text6">
+														2014-12-30
+													</td>
+													
+														<td align="center" class="text6">
+															2015-07-24
+														</td>
+														<td align="center" class="text6">
+															대안반영폐기
+														</td>
+													
+													<td align="center" class="text6">
+														
+														<img src="./국회-의안정보시스템5_files/icon_txt.gif" align="absmiddle" style="cursor:pointer" onclick="javascript:OpenSummary(&#39;PRC_J1A4L1S2B3Q0I1P8K0M1B5L6T6I4C4&#39;)" alt="제안이유 및 주요내용">
+														
+													</td>
+													<td align="center" class="text6">																																			
+													
+														대안반영폐기
+													
+													</td>
+												</tr>
+												<tr bgcolor="#DBDBDB">
+													<td height="1" colspan="8" align="center"></td>
+												</tr>
+																				
+												<tr>
+													<td height="29" align="center" class="text6">
+														1913446
+													</td>
+													<td>
+														<img src="./국회-의안정보시스템5_files/icon_02.gif" width="13" height="14" border="0" align="absmiddle" alt="구분">&nbsp;
+															<a href="javascript:GoDetail('ARC_J1S4H1F2A3Y0I1Q8D4V5Z4C0M0I0Q7')" class="list1" title="국가정보화 기본법 일부개정법률안">국가정보화 기본법 일부개정법률안</a>
+													</td>
+													<td align="center" class="text6">
+														정부
+													</td>
+													<td align="center" class="text6">
+														2014-12-30
+													</td>
+													
+														<td align="center" class="text6">
+															2015-05-29
+														</td>
+														<td align="center" class="text6">
+															대안반영폐기
+														</td>
+													
+													<td align="center" class="text6">
+														
+														<img src="./국회-의안정보시스템5_files/icon_txt.gif" align="absmiddle" style="cursor:pointer" onclick="javascript:OpenSummary(&#39;ARC_J1S4H1F2A3Y0I1Q8D4V5Z4C0M0I0Q7&#39;)" alt="제안이유 및 주요내용">
+														
+													</td>
+													<td align="center" class="text6">																																			
+													
+														대안반영폐기
+													
+													</td>
+												</tr>
+												<tr bgcolor="#DBDBDB">
+													<td height="1" colspan="8" align="center"></td>
+												</tr>
+																				
+												<tr>
+													<td height="29" align="center" class="text6">
+														1913441
+													</td>
+													<td>
+														<img src="./국회-의안정보시스템5_files/icon_02.gif" width="13" height="14" border="0" align="absmiddle" alt="구분">&nbsp;
+															<a href="javascript:GoDetail('ARC_I1V4K1N2M3M0V1H7G4M4W2Z7P2V9H2')" class="list1" title="6·25 전사자유해의 발굴 등에 관한 법률 일부개정법률안">6·25 전사자유해의 발굴 등에 관한 법률 일부개정법률안</a>
+													</td>
+													<td align="center" class="text6">
+														정부
+													</td>
+													<td align="center" class="text6">
+														2014-12-30
+													</td>
+													
+														<td align="center" class="text6">
+															2015-03-03
+														</td>
+														<td align="center" class="text6">
+															원안가결
+														</td>
+													
+													<td align="center" class="text6">
+														
+														<img src="./국회-의안정보시스템5_files/icon_txt.gif" align="absmiddle" style="cursor:pointer" onclick="javascript:OpenSummary(&#39;ARC_I1V4K1N2M3M0V1H7G4M4W2Z7P2V9H2&#39;)" alt="제안이유 및 주요내용">
+														
+													</td>
+													<td align="center" class="text6">																																			
+													
+														공포
+													
+													</td>
+												</tr>
+												<tr bgcolor="#DBDBDB">
+													<td height="1" colspan="8" align="center"></td>
+												</tr>
+																				
+												<tr>
+													<td height="29" align="center" class="text6">
+														1913439
+													</td>
+													<td>
+														<img src="./국회-의안정보시스템5_files/icon_02.gif" width="13" height="14" border="0" align="absmiddle" alt="구분">&nbsp;
+															<a href="javascript:GoDetail('PRC_E1I4B1H2U3S0N1C7L4Z8O1S1B1E5P0')" class="list1" title="철도사업법 일부개정법률안(이장우의원 등 11인)">철도사업법 일부개정법률안(이장우의원 등 11인)</a>
+													</td>
+													<td align="center" class="text6">
+														의원
+													</td>
+													<td align="center" class="text6">
+														2014-12-30
+													</td>
+													
+														<td align="center" class="text6">
+															2015-07-24
+														</td>
+														<td align="center" class="text6">
+															대안반영폐기
+														</td>
+													
+													<td align="center" class="text6">
+														
+														<img src="./국회-의안정보시스템5_files/icon_txt.gif" align="absmiddle" style="cursor:pointer" onclick="javascript:OpenSummary(&#39;PRC_E1I4B1H2U3S0N1C7L4Z8O1S1B1E5P0&#39;)" alt="제안이유 및 주요내용">
+														
+													</td>
+													<td align="center" class="text6">																																			
+													
+														대안반영폐기
+													
+													</td>
+												</tr>
+												<tr bgcolor="#DBDBDB">
+													<td height="1" colspan="8" align="center"></td>
+												</tr>
+																				
+												<tr>
+													<td height="29" align="center" class="text6">
+														1913438
+													</td>
+													<td>
+														<img src="./국회-의안정보시스템5_files/icon_02.gif" width="13" height="14" border="0" align="absmiddle" alt="구분">&nbsp;
+															<a href="javascript:GoDetail('ARC_C1L4T1T2T3X0D1G7E4X7B1V4L1Z4M6')" class="list1" title="행정사법 일부개정법률안">행정사법 일부개정법률안</a>
+													</td>
+													<td align="center" class="text6">
+														정부
+													</td>
+													<td align="center" class="text6">
+														2014-12-30
+													</td>
+													
+														<td align="center" class="text6">
+															2015-04-30
+														</td>
+														<td align="center" class="text6">
+															대안반영폐기
+														</td>
+													
+													<td align="center" class="text6">
+														
+														<img src="./국회-의안정보시스템5_files/icon_txt.gif" align="absmiddle" style="cursor:pointer" onclick="javascript:OpenSummary(&#39;ARC_C1L4T1T2T3X0D1G7E4X7B1V4L1Z4M6&#39;)" alt="제안이유 및 주요내용">
+														
+													</td>
+													<td align="center" class="text6">																																			
+													
+														대안반영폐기
+													
+													</td>
+												</tr>
+												<tr bgcolor="#DBDBDB">
+													<td height="1" colspan="8" align="center"></td>
+												</tr>
+																				
+												<tr>
+													<td height="29" align="center" class="text6">
+														1913437
+													</td>
+													<td>
+														<img src="./국회-의안정보시스템5_files/icon_02.gif" width="13" height="14" border="0" align="absmiddle" alt="구분">&nbsp;
+															<a href="javascript:GoDetail('ARC_E1Q4I1J2G3T0E1L7O4X6L1K9M3R2F1')" class="list1" title="소방시설 설치·유지 및 안전관리에 관한 법률 일부개정법률안">소방시설 설치·유지 및 안전관리에 관한 법률 일부개정법률안</a>
+													</td>
+													<td align="center" class="text6">
+														정부
+													</td>
+													<td align="center" class="text6">
+														2014-12-30
+													</td>
+													
+														<td align="center" class="text6">
+															2015-07-06
+														</td>
+														<td align="center" class="text6">
+															대안반영폐기
+														</td>
+													
+													<td align="center" class="text6">
+														
+														<img src="./국회-의안정보시스템5_files/icon_txt.gif" align="absmiddle" style="cursor:pointer" onclick="javascript:OpenSummary(&#39;ARC_E1Q4I1J2G3T0E1L7O4X6L1K9M3R2F1&#39;)" alt="제안이유 및 주요내용">
+														
+													</td>
+													<td align="center" class="text6">																																			
+													
+														대안반영폐기
+													
+													</td>
+												</tr>
+												<tr bgcolor="#DBDBDB">
+													<td height="1" colspan="8" align="center"></td>
+												</tr>
+																				
+												<tr>
+													<td height="29" align="center" class="text6">
+														1913427
+													</td>
+													<td>
+														<img src="./국회-의안정보시스템5_files/icon_02.gif" width="13" height="14" border="0" align="absmiddle" alt="구분">&nbsp;
+															<a href="javascript:GoDetail('PRC_M1J4V1O2W3C0R1F7T1A1D4T7U8L5K6')" class="list1" title="수산업법 일부개정법률안(유성엽의원 등 13인)">수산업법 일부개정법률안(유성엽의원 등 13인)</a>
+													</td>
+													<td align="center" class="text6">
+														의원
+													</td>
+													<td align="center" class="text6">
+														2014-12-30
+													</td>
+													
+														<td align="center" class="text6">
+															2015-05-29
+														</td>
+														<td align="center" class="text6">
+															대안반영폐기
+														</td>
+													
+													<td align="center" class="text6">
+														
+														<img src="./국회-의안정보시스템5_files/icon_txt.gif" align="absmiddle" style="cursor:pointer" onclick="javascript:OpenSummary(&#39;PRC_M1J4V1O2W3C0R1F7T1A1D4T7U8L5K6&#39;)" alt="제안이유 및 주요내용">
+														
+													</td>
+													<td align="center" class="text6">																																			
+													
+														대안반영폐기
+													
+													</td>
+												</tr>
+												<tr bgcolor="#DBDBDB">
+													<td height="1" colspan="8" align="center"></td>
+												</tr>
+																				
+												<tr>
+													<td height="29" align="center" class="text6">
+														1913422
+													</td>
+													<td>
+														<img src="./국회-의안정보시스템5_files/icon_02.gif" width="13" height="14" border="0" align="absmiddle" alt="구분">&nbsp;
+															<a href="javascript:GoDetail('ARC_V1T4K1C2H3W0D1B6V5I4M5Q2P7W9P9')" class="list1" title="기술사법 일부개정법률안">기술사법 일부개정법률안</a>
+													</td>
+													<td align="center" class="text6">
+														정부
+													</td>
+													<td align="center" class="text6">
+														2014-12-30
+													</td>
+													
+														<td align="center" class="text6">
+															2015-11-12
+														</td>
+														<td align="center" class="text6">
+															원안가결
+														</td>
+													
+													<td align="center" class="text6">
+														
+														<img src="./국회-의안정보시스템5_files/icon_txt.gif" align="absmiddle" style="cursor:pointer" onclick="javascript:OpenSummary(&#39;ARC_V1T4K1C2H3W0D1B6V5I4M5Q2P7W9P9&#39;)" alt="제안이유 및 주요내용">
+														
+													</td>
+													<td align="center" class="text6">																																			
+													
+														정부이송
+													
+													</td>
+												</tr>
+												<tr bgcolor="#DBDBDB">
+													<td height="1" colspan="8" align="center"></td>
+												</tr>
+																				
+												<tr>
+													<td height="29" align="center" class="text6">
+														1913420
+													</td>
+													<td>
+														<img src="./국회-의안정보시스템5_files/icon_02.gif" width="13" height="14" border="0" align="absmiddle" alt="구분">&nbsp;
+															<a href="javascript:GoDetail('PRC_R1S4F1F2C3R0Z1K6F3Y7H4I6K1J9F5')" class="list1" title="전파법 일부개정법률안(장병완의원 등 10인)">전파법 일부개정법률안(장병완의원 등 10인)</a>
+													</td>
+													<td align="center" class="text6">
+														의원
+													</td>
+													<td align="center" class="text6">
+														2014-12-30
+													</td>
+													
+														<td align="center" class="text6">
+															2015-11-12
+														</td>
+														<td align="center" class="text6">
+															대안반영폐기
+														</td>
+													
+													<td align="center" class="text6">
+														
+														<img src="./국회-의안정보시스템5_files/icon_txt.gif" align="absmiddle" style="cursor:pointer" onclick="javascript:OpenSummary(&#39;PRC_R1S4F1F2C3R0Z1K6F3Y7H4I6K1J9F5&#39;)" alt="제안이유 및 주요내용">
+														
+													</td>
+													<td align="center" class="text6">																																			
+													
+														대안반영폐기
+													
+													</td>
+												</tr>
+												<tr bgcolor="#DBDBDB">
+													<td height="1" colspan="8" align="center"></td>
+												</tr>
+																				
+												<tr>
+													<td height="29" align="center" class="text6">
+														1913415
+													</td>
+													<td>
+														<img src="./국회-의안정보시스템5_files/icon_02.gif" width="13" height="14" border="0" align="absmiddle" alt="구분">&nbsp;
+															<a href="javascript:GoDetail('PRC_B1C4L1R2X3X0F1M6K1E8T4S1R8X0B2')" class="list1" title="기업도시개발 특별법 일부개정법률안(황주홍의원 등 10인)">기업도시개발 특별법 일부개정법률안(황주홍의원 등 10인)</a>
+													</td>
+													<td align="center" class="text6">
+														의원
+													</td>
+													<td align="center" class="text6">
+														2014-12-30
+													</td>
+													
+														<td align="center" class="text6">
+															2015-05-29
+														</td>
+														<td align="center" class="text6">
+															대안반영폐기
+														</td>
+													
+													<td align="center" class="text6">
+														
+														<img src="./국회-의안정보시스템5_files/icon_txt.gif" align="absmiddle" style="cursor:pointer" onclick="javascript:OpenSummary(&#39;PRC_B1C4L1R2X3X0F1M6K1E8T4S1R8X0B2&#39;)" alt="제안이유 및 주요내용">
+														
+													</td>
+													<td align="center" class="text6">																																			
+													
+														대안반영폐기
+													
+													</td>
+												</tr>
+												<tr bgcolor="#DBDBDB">
+													<td height="1" colspan="8" align="center"></td>
+												</tr>
+																				
+												<tr>
+													<td height="29" align="center" class="text6">
+														1913414
+													</td>
+													<td>
+														<img src="./국회-의안정보시스템5_files/icon_02.gif" width="13" height="14" border="0" align="absmiddle" alt="구분">&nbsp;
+															<a href="javascript:GoDetail('ARC_B1W4F1K2Y3G0B1U6M1X5R4C0M2P6M9')" class="list1" title="아이돌봄 지원법 일부개정법률안">아이돌봄 지원법 일부개정법률안</a>
+													</td>
+													<td align="center" class="text6">
+														정부
+													</td>
+													<td align="center" class="text6">
+														2014-12-30
+													</td>
+													
+														<td align="center" class="text6">
+															2015-11-12
+														</td>
+														<td align="center" class="text6">
+															대안반영폐기
+														</td>
+													
+													<td align="center" class="text6">
+														
+														<img src="./국회-의안정보시스템5_files/icon_txt.gif" align="absmiddle" style="cursor:pointer" onclick="javascript:OpenSummary(&#39;ARC_B1W4F1K2Y3G0B1U6M1X5R4C0M2P6M9&#39;)" alt="제안이유 및 주요내용">
+														
+													</td>
+													<td align="center" class="text6">																																			
+													
+														대안반영폐기
+													
+													</td>
+												</tr>
+												<tr bgcolor="#DBDBDB">
+													<td height="1" colspan="8" align="center"></td>
+												</tr>
+																				
+												<tr>
+													<td height="29" align="center" class="text6">
+														1913403
+													</td>
+													<td>
+														<img src="./국회-의안정보시스템5_files/icon_02.gif" width="13" height="14" border="0" align="absmiddle" alt="구분">&nbsp;
+															<a href="javascript:GoDetail('PRC_S1Q4B1N2N3R0N1U5I4S1Y2S5E2S2A9')" class="list1" title="농약관리법 일부개정법률안(이운룡의원 등 12인)">농약관리법 일부개정법률안(이운룡의원 등 12인)</a>
+													</td>
+													<td align="center" class="text6">
+														의원
+													</td>
+													<td align="center" class="text6">
+														2014-12-30
+													</td>
+													
+														<td align="center" class="text6">
+															2015-07-06
+														</td>
+														<td align="center" class="text6">
+															수정가결
+														</td>
+													
+													<td align="center" class="text6">
+														
+														<img src="./국회-의안정보시스템5_files/icon_txt.gif" align="absmiddle" style="cursor:pointer" onclick="javascript:OpenSummary(&#39;PRC_S1Q4B1N2N3R0N1U5I4S1Y2S5E2S2A9&#39;)" alt="제안이유 및 주요내용">
+														
+													</td>
+													<td align="center" class="text6">																																			
+													
+														공포
+													
+													</td>
+												</tr>
+												<tr bgcolor="#DBDBDB">
+													<td height="1" colspan="8" align="center"></td>
+												</tr>
+																				
+												<tr>
+													<td height="29" align="center" class="text6">
+														1913374
+													</td>
+													<td>
+														<img src="./국회-의안정보시스템5_files/icon_02.gif" width="13" height="14" border="0" align="absmiddle" alt="구분">&nbsp;
+															<a href="javascript:GoDetail('ARC_R1Y4C1L2L2C9Z1C7B3V1J5F3S4H0F9')" class="list1" title="정보통신망 이용촉진 및 정보보호 등에 관한 법률 일부개정법률안">정보통신망 이용촉진 및 정보보호 등에 관한 법률 일부개정법률안</a>
+													</td>
+													<td align="center" class="text6">
+														정부
+													</td>
+													<td align="center" class="text6">
+														2014-12-29
+													</td>
+													
+														<td align="center" class="text6">
+															2015-05-29
+														</td>
+														<td align="center" class="text6">
+															대안반영폐기
+														</td>
+													
+													<td align="center" class="text6">
+														
+														<img src="./국회-의안정보시스템5_files/icon_txt.gif" align="absmiddle" style="cursor:pointer" onclick="javascript:OpenSummary(&#39;ARC_R1Y4C1L2L2C9Z1C7B3V1J5F3S4H0F9&#39;)" alt="제안이유 및 주요내용">
+														
+													</td>
+													<td align="center" class="text6">																																			
+													
+														대안반영폐기
+													
+													</td>
+												</tr>
+												<tr bgcolor="#DBDBDB">
+													<td height="1" colspan="8" align="center"></td>
+												</tr>
+																				
+												<tr>
+													<td height="29" align="center" class="text6">
+														1913357
+													</td>
+													<td>
+														<img src="./국회-의안정보시스템5_files/icon_02.gif" width="13" height="14" border="0" align="absmiddle" alt="구분">&nbsp;
+															<a href="javascript:GoDetail('PRC_Z1F4R1U2M2H9O1I7U3I4V5X1K9K1Y1')" class="list1" title="과학기술기본법 일부개정법률안(장병완의원 등 10인)">과학기술기본법 일부개정법률안(장병완의원 등 10인)</a>
+													</td>
+													<td align="center" class="text6">
+														의원
+													</td>
+													<td align="center" class="text6">
+														2014-12-29
+													</td>
+													
+														<td align="center" class="text6">
+															2015-05-29
+														</td>
+														<td align="center" class="text6">
+															대안반영폐기
+														</td>
+													
+													<td align="center" class="text6">
+														
+														<img src="./국회-의안정보시스템5_files/icon_txt.gif" align="absmiddle" style="cursor:pointer" onclick="javascript:OpenSummary(&#39;PRC_Z1F4R1U2M2H9O1I7U3I4V5X1K9K1Y1&#39;)" alt="제안이유 및 주요내용">
+														
+													</td>
+													<td align="center" class="text6">																																			
+													
+														대안반영폐기
+													
+													</td>
+												</tr>
+												<tr bgcolor="#DBDBDB">
+													<td height="1" colspan="8" align="center"></td>
+												</tr>
+																				
+												<tr>
+													<td height="29" align="center" class="text6">
+														1913354
+													</td>
+													<td>
+														<img src="./국회-의안정보시스템5_files/icon_02.gif" width="13" height="14" border="0" align="absmiddle" alt="구분">&nbsp;
+															<a href="javascript:GoDetail('PRC_L1U4V1X2T2B9L1M7G2Q9J5T7H3S6R2')" class="list1" title="주택법 일부개정법률안(정희수의원 등 10인)">주택법 일부개정법률안(정희수의원 등 10인)</a>
+													</td>
+													<td align="center" class="text6">
+														의원
+													</td>
+													<td align="center" class="text6">
+														2014-12-29
+													</td>
+													
+														<td align="center" class="text6">
+															2015-07-06
+														</td>
+														<td align="center" class="text6">
+															대안반영폐기
+														</td>
+													
+													<td align="center" class="text6">
+														
+														<img src="./국회-의안정보시스템5_files/icon_txt.gif" align="absmiddle" style="cursor:pointer" onclick="javascript:OpenSummary(&#39;PRC_L1U4V1X2T2B9L1M7G2Q9J5T7H3S6R2&#39;)" alt="제안이유 및 주요내용">
+														
+													</td>
+													<td align="center" class="text6">																																			
+													
+														대안반영폐기
+													
+													</td>
+												</tr>
+												<tr bgcolor="#DBDBDB">
+													<td height="1" colspan="8" align="center"></td>
+												</tr>
+																				
+												<tr>
+													<td height="29" align="center" class="text6">
+														1913353
+													</td>
+													<td>
+														<img src="./국회-의안정보시스템5_files/icon_02.gif" width="13" height="14" border="0" align="absmiddle" alt="구분">&nbsp;
+															<a href="javascript:GoDetail('PRC_I1B4E1W2Q2T9U1U7B0Z2Y3U2S0F0X4')" class="list1" title="대부업 등의 등록 및 금융이용자 보호에 관한 법률 일부개정법률안">대부업 등의 등록 및 금융이용자 보호에 관한 법률 일부개정법률안</a>
+													</td>
+													<td align="center" class="text6">
+														정부
+													</td>
+													<td align="center" class="text6">
+														2014-12-29
+													</td>
+													
+														<td align="center" class="text6">
+															2015-07-06
+														</td>
+														<td align="center" class="text6">
+															대안반영폐기
+														</td>
+													
+													<td align="center" class="text6">
+														
+														<img src="./국회-의안정보시스템5_files/icon_txt.gif" align="absmiddle" style="cursor:pointer" onclick="javascript:OpenSummary(&#39;PRC_I1B4E1W2Q2T9U1U7B0Z2Y3U2S0F0X4&#39;)" alt="제안이유 및 주요내용">
+														
+													</td>
+													<td align="center" class="text6">																																			
+													
+														대안반영폐기
+													
+													</td>
+												</tr>
+												<tr bgcolor="#DBDBDB">
+													<td height="1" colspan="8" align="center"></td>
+												</tr>
+																				
+												<tr>
+													<td height="29" align="center" class="text6">
+														1913350
+													</td>
+													<td>
+														<img src="./국회-의안정보시스템5_files/icon_02.gif" width="13" height="14" border="0" align="absmiddle" alt="구분">&nbsp;
+															<a href="javascript:GoDetail('ARC_E1V4D1D2I2A9G1S6G5J3R4I5V6M3S3')" class="list1" title="주택저당채권유동화회사법 폐지법률안">주택저당채권유동화회사법 폐지법률안</a>
+													</td>
+													<td align="center" class="text6">
+														정부
+													</td>
+													<td align="center" class="text6">
+														2014-12-29
+													</td>
+													
+														<td align="center" class="text6">
+															2015-07-06
+														</td>
+														<td align="center" class="text6">
+															원안가결
+														</td>
+													
+													<td align="center" class="text6">
+														
+														<img src="./국회-의안정보시스템5_files/icon_txt.gif" align="absmiddle" style="cursor:pointer" onclick="javascript:OpenSummary(&#39;ARC_E1V4D1D2I2A9G1S6G5J3R4I5V6M3S3&#39;)" alt="제안이유 및 주요내용">
+														
+													</td>
+													<td align="center" class="text6">																																			
+													
+														공포
+													
+													</td>
+												</tr>
+												<tr bgcolor="#DBDBDB">
+													<td height="1" colspan="8" align="center"></td>
+												</tr>
+																				
+												<tr>
+													<td height="29" align="center" class="text6">
+														1913346
+													</td>
+													<td>
+														<img src="./국회-의안정보시스템5_files/icon_02.gif" width="13" height="14" border="0" align="absmiddle" alt="구분">&nbsp;
+															<a href="javascript:GoDetail('PRC_A1K4S1B2M2K3H1D6K3M3K5N7B8I5T3')" class="list1" title="주택법 일부개정법률안">주택법 일부개정법률안</a>
+													</td>
+													<td align="center" class="text6">
+														위원장
+													</td>
+													<td align="center" class="text6">
+														2014-12-29
+													</td>
+													
+														<td align="center" class="text6">
+															2014-12-29
+														</td>
+														<td align="center" class="text6">
+															원안가결
+														</td>
+													
+													<td align="center" class="text6">
+														
+													</td>
+													<td align="center" class="text6">																																			
+													
+														공포
+													
+													</td>
+												</tr>
+												<tr bgcolor="#DBDBDB">
+													<td height="1" colspan="8" align="center"></td>
+												</tr>
+																				
+												<tr>
+													<td height="29" align="center" class="text6">
+														1913344
+													</td>
+													<td>
+														<img src="./국회-의안정보시스템5_files/icon_02.gif" width="13" height="14" border="0" align="absmiddle" alt="구분">&nbsp;
+															<a href="javascript:GoDetail('PRC_W1M4S1T2Q2U3F1Y6D3L3J0D1A8S3H5')" class="list1" title="재건축초과이익 환수에 관한 법률 일부개정법률안(대안)">재건축초과이익 환수에 관한 법률 일부개정법률안(대안)</a>
+													</td>
+													<td align="center" class="text6">
+														위원장
+													</td>
+													<td align="center" class="text6">
+														2014-12-29
+													</td>
+													
+														<td align="center" class="text6">
+															2014-12-29
+														</td>
+														<td align="center" class="text6">
+															원안가결
+														</td>
+													
+													<td align="center" class="text6">
+														
+													</td>
+													<td align="center" class="text6">																																			
+													
+														공포
+													
+													</td>
+												</tr>
+												<tr bgcolor="#DBDBDB">
+													<td height="1" colspan="8" align="center"></td>
+												</tr>
+																				
+												<tr>
+													<td height="29" align="center" class="text6">
+														1913343
+													</td>
+													<td>
+														<img src="./국회-의안정보시스템5_files/icon_02.gif" width="13" height="14" border="0" align="absmiddle" alt="구분">&nbsp;
+															<a href="javascript:GoDetail('PRC_E1G4D1S2X2A3K1I6L3V8P3O0F0I1X7')" class="list1" title="도시 및 주거환경정비법 일부개정법률안(대안)">도시 및 주거환경정비법 일부개정법률안(대안)</a>
+													</td>
+													<td align="center" class="text6">
+														위원장
+													</td>
+													<td align="center" class="text6">
+														2014-12-29
+													</td>
+													
+														<td align="center" class="text6">
+															2014-12-29
+														</td>
+														<td align="center" class="text6">
+															원안가결
+														</td>
+													
+													<td align="center" class="text6">
+														
+													</td>
+													<td align="center" class="text6">																																			
+													
+														공포
+													
+													</td>
+												</tr>
+												<tr bgcolor="#DBDBDB">
+													<td height="1" colspan="8" align="center"></td>
+												</tr>
+																				
+												<tr>
+													<td height="29" align="center" class="text6">
+														1913342
+													</td>
+													<td>
+														<img src="./국회-의안정보시스템5_files/icon_02.gif" width="13" height="14" border="0" align="absmiddle" alt="구분">&nbsp;
+															<a href="javascript:GoDetail('PRC_E1E4S1A2H2R3I1R6I4X0Q0D8P6Q7N5')" class="list1" title="공공주택건설 등에 관한 특별법 일부개정법률안(대안)">공공주택건설 등에 관한 특별법 일부개정법률안(대안)</a>
+													</td>
+													<td align="center" class="text6">
+														위원장
+													</td>
+													<td align="center" class="text6">
+														2014-12-29
+													</td>
+													
+														<td align="center" class="text6">
+															2014-12-29
+														</td>
+														<td align="center" class="text6">
+															원안가결
+														</td>
+													
+													<td align="center" class="text6">
+														
+													</td>
+													<td align="center" class="text6">																																			
+													
+														공포
+													
+													</td>
+												</tr>
+												<tr bgcolor="#DBDBDB">
+													<td height="1" colspan="8" align="center"></td>
+												</tr>
+																				
+												<tr>
+													<td height="29" align="center" class="text6">
+														1913341
+													</td>
+													<td>
+														<img src="./국회-의안정보시스템5_files/icon_02.gif" width="13" height="14" border="0" align="absmiddle" alt="구분">&nbsp;
+															<a href="javascript:GoDetail('PRC_B1J4D1F2M2K3G1Z6G4Q1E0C9U2I7S6')" class="list1" title="도시공원 및 녹지 등에 관한 법률 일부개정법률안(대안)">도시공원 및 녹지 등에 관한 법률 일부개정법률안(대안)</a>
+													</td>
+													<td align="center" class="text6">
+														위원장
+													</td>
+													<td align="center" class="text6">
+														2014-12-29
+													</td>
+													
+														<td align="center" class="text6">
+															2014-12-29
+														</td>
+														<td align="center" class="text6">
+															원안가결
+														</td>
+													
+													<td align="center" class="text6">
+														
+													</td>
+													<td align="center" class="text6">																																			
+													
+														공포
+													
+													</td>
+												</tr>
+												<tr bgcolor="#DBDBDB">
+													<td height="1" colspan="8" align="center"></td>
+												</tr>
+																				
+												<tr>
+													<td height="29" align="center" class="text6">
+														1913340
+													</td>
+													<td>
+														<img src="./국회-의안정보시스템5_files/icon_02.gif" width="13" height="14" border="0" align="absmiddle" alt="구분">&nbsp;
+															<a href="javascript:GoDetail('ARC_W1U4T1F2U2D9P1I4P2S1N4U3T4M7B7')" class="list1" title="환경정책기본법 일부개정법률안">환경정책기본법 일부개정법률안</a>
+													</td>
+													<td align="center" class="text6">
+														정부
+													</td>
+													<td align="center" class="text6">
+														2014-12-29
+													</td>
+													
+														<td align="center" class="text6">
+															2015-11-12
+														</td>
+														<td align="center" class="text6">
+															수정가결
+														</td>
+													
+													<td align="center" class="text6">
+														
+														<img src="./국회-의안정보시스템5_files/icon_txt.gif" align="absmiddle" style="cursor:pointer" onclick="javascript:OpenSummary(&#39;ARC_W1U4T1F2U2D9P1I4P2S1N4U3T4M7B7&#39;)" alt="제안이유 및 주요내용">
+														
+													</td>
+													<td align="center" class="text6">																																			
+													
+														정부이송
+													
+													</td>
+												</tr>
+												<tr bgcolor="#DBDBDB">
+													<td height="1" colspan="8" align="center"></td>
+												</tr>
+																				
+												<tr>
+													<td height="29" align="center" class="text6">
+														1913339
+													</td>
+													<td>
+														<img src="./국회-의안정보시스템5_files/icon_02.gif" width="13" height="14" border="0" align="absmiddle" alt="구분">&nbsp;
+															<a href="javascript:GoDetail('PRC_T1L4P1D2Y2A9R1M4K1J7V2D2V9Z5X1')" class="list1" title="원자력안전법 일부개정법률안(장하나의원 등 16인)">원자력안전법 일부개정법률안(장하나의원 등 16인)</a>
+													</td>
+													<td align="center" class="text6">
+														의원
+													</td>
+													<td align="center" class="text6">
+														2014-12-29
+													</td>
+													
+														<td align="center" class="text6">
+															2015-05-29
+														</td>
+														<td align="center" class="text6">
+															대안반영폐기
+														</td>
+													
+													<td align="center" class="text6">
+														
+														<img src="./국회-의안정보시스템5_files/icon_txt.gif" align="absmiddle" style="cursor:pointer" onclick="javascript:OpenSummary(&#39;PRC_T1L4P1D2Y2A9R1M4K1J7V2D2V9Z5X1&#39;)" alt="제안이유 및 주요내용">
+														
+													</td>
+													<td align="center" class="text6">																																			
+													
+														대안반영폐기
+													
+													</td>
+												</tr>
+												<tr bgcolor="#DBDBDB">
+													<td height="1" colspan="8" align="center"></td>
+												</tr>
+																				
+												<tr>
+													<td height="29" align="center" class="text6">
+														1913334
+													</td>
+													<td>
+														<img src="./국회-의안정보시스템5_files/icon_02.gif" width="13" height="14" border="0" align="absmiddle" alt="구분">&nbsp;
+															<a href="javascript:GoDetail('ARC_C1G4K1B2Q2A9W1R3L4R5G3K4C6F8B9')" class="list1" title="하도급거래 공정화에 관한 법률 일부개정법률안">하도급거래 공정화에 관한 법률 일부개정법률안</a>
+													</td>
+													<td align="center" class="text6">
+														정부
+													</td>
+													<td align="center" class="text6">
+														2014-12-29
+													</td>
+													
+														<td align="center" class="text6">
+															2015-07-06
+														</td>
+														<td align="center" class="text6">
+															대안반영폐기
+														</td>
+													
+													<td align="center" class="text6">
+														
+														<img src="./국회-의안정보시스템5_files/icon_txt.gif" align="absmiddle" style="cursor:pointer" onclick="javascript:OpenSummary(&#39;ARC_C1G4K1B2Q2A9W1R3L4R5G3K4C6F8B9&#39;)" alt="제안이유 및 주요내용">
+														
+													</td>
+													<td align="center" class="text6">																																			
+													
+														대안반영폐기
+													
+													</td>
+												</tr>
+												<tr bgcolor="#DBDBDB">
+													<td height="1" colspan="8" align="center"></td>
+												</tr>
+																				
+												<tr>
+													<td height="29" align="center" class="text6">
+														1913333
+													</td>
+													<td>
+														<img src="./국회-의안정보시스템5_files/icon_02.gif" width="13" height="14" border="0" align="absmiddle" alt="구분">&nbsp;
+															<a href="javascript:GoDetail('PRC_U1T4I1O2M2H9U1Z3F5Q5J1J4D6V2G6')" class="list1" title="여성발전기본법 일부개정법률안(박혜자의원 등 10인)">여성발전기본법 일부개정법률안(박혜자의원 등 10인)</a>
+													</td>
+													<td align="center" class="text6">
+														의원
+													</td>
+													<td align="center" class="text6">
+														2014-12-29
+													</td>
+													
+														<td align="center" class="text6">
+															2015-05-29
+														</td>
+														<td align="center" class="text6">
+															대안반영폐기
+														</td>
+													
+													<td align="center" class="text6">
+														
+														<img src="./국회-의안정보시스템5_files/icon_txt.gif" align="absmiddle" style="cursor:pointer" onclick="javascript:OpenSummary(&#39;PRC_U1T4I1O2M2H9U1Z3F5Q5J1J4D6V2G6&#39;)" alt="제안이유 및 주요내용">
+														
+													</td>
+													<td align="center" class="text6">																																			
+													
+														대안반영폐기
+													
+													</td>
+												</tr>
+												<tr bgcolor="#DBDBDB">
+													<td height="1" colspan="8" align="center"></td>
+												</tr>
+																				
+												<tr>
+													<td height="29" align="center" class="text6">
+														1913329
+													</td>
+													<td>
+														<img src="./국회-의안정보시스템5_files/icon_02.gif" width="13" height="14" border="0" align="absmiddle" alt="구분">&nbsp;
+															<a href="javascript:GoDetail('PRC_H1G4G1P2Q0D3D2B0D4U0N0I8W6N6Q7')" class="list1" title="지방세특례제한법 일부개정법률안(대안)">지방세특례제한법 일부개정법률안(대안)</a>
+													</td>
+													<td align="center" class="text6">
+														위원장
+													</td>
+													<td align="center" class="text6">
+														2014-12-29
+													</td>
+													
+														<td align="center" class="text6">
+															2014-12-29
+														</td>
+														<td align="center" class="text6">
+															원안가결
+														</td>
+													
+													<td align="center" class="text6">
+														
+													</td>
+													<td align="center" class="text6">																																			
+													
+														공포
+													
+													</td>
+												</tr>
+												<tr bgcolor="#DBDBDB">
+													<td height="1" colspan="8" align="center"></td>
+												</tr>
+																				
+												<tr>
+													<td height="29" align="center" class="text6">
+														1913328
+													</td>
+													<td>
+														<img src="./국회-의안정보시스템5_files/icon_02.gif" width="13" height="14" border="0" align="absmiddle" alt="구분">&nbsp;
+															<a href="javascript:GoDetail('ARC_N1Q4F1Y2W2P9P1R3K2R5O0I0S6G4R5')" class="list1" title="마리나항만의 조성 및 관리 등에 관한 법률 일부개정법률안">마리나항만의 조성 및 관리 등에 관한 법률 일부개정법률안</a>
+													</td>
+													<td align="center" class="text6">
+														정부
+													</td>
+													<td align="center" class="text6">
+														2014-12-29
+													</td>
+													
+														<td align="center" class="text6">
+															2015-07-06
+														</td>
+														<td align="center" class="text6">
+															수정가결
+														</td>
+													
+													<td align="center" class="text6">
+														
+														<img src="./국회-의안정보시스템5_files/icon_txt.gif" align="absmiddle" style="cursor:pointer" onclick="javascript:OpenSummary(&#39;ARC_N1Q4F1Y2W2P9P1R3K2R5O0I0S6G4R5&#39;)" alt="제안이유 및 주요내용">
+														
+													</td>
+													<td align="center" class="text6">																																			
+													
+														공포
+													
+													</td>
+												</tr>
+												<tr bgcolor="#DBDBDB">
+													<td height="1" colspan="8" align="center"></td>
+												</tr>
+																				
+												<tr>
+													<td height="29" align="center" class="text6">
+														1913322
+													</td>
+													<td>
+														<img src="./국회-의안정보시스템5_files/icon_02.gif" width="13" height="14" border="0" align="absmiddle" alt="구분">&nbsp;
+															<a href="javascript:GoDetail('PRC_D1B4S1M1P1Y3F2D1K2F0V5P0L7M7J4')" class="list1" title="유선 및 도선 사업법 일부개정법률안(대안)">유선 및 도선 사업법 일부개정법률안(대안)</a>
+													</td>
+													<td align="center" class="text6">
+														위원장
+													</td>
+													<td align="center" class="text6">
+														2014-12-29
+													</td>
+													
+														<td align="center" class="text6">
+															2015-01-12
+														</td>
+														<td align="center" class="text6">
+															원안가결
+														</td>
+													
+													<td align="center" class="text6">
+														
+													</td>
+													<td align="center" class="text6">																																			
+													
+														공포
+													
+													</td>
+												</tr>
+												<tr bgcolor="#DBDBDB">
+													<td height="1" colspan="8" align="center"></td>
+												</tr>
+																				
+												<tr>
+													<td height="29" align="center" class="text6">
+														1913320
+													</td>
+													<td>
+														<img src="./국회-의안정보시스템5_files/icon_02.gif" width="13" height="14" border="0" align="absmiddle" alt="구분">&nbsp;
+															<a href="javascript:GoDetail('PRC_W1D4W1M1E2U4Q1S0P2Z7T4N4A8C4C9')" class="list1" title="화장품법 일부개정법률안">화장품법 일부개정법률안</a>
+													</td>
+													<td align="center" class="text6">
+														위원장
+													</td>
+													<td align="center" class="text6">
+														2014-12-29
+													</td>
+													
+														<td align="center" class="text6">
+															2014-12-29
+														</td>
+														<td align="center" class="text6">
+															원안가결
+														</td>
+													
+													<td align="center" class="text6">
+														
+													</td>
+													<td align="center" class="text6">																																			
+													
+														공포
+													
+													</td>
+												</tr>
+												<tr bgcolor="#DBDBDB">
+													<td height="1" colspan="8" align="center"></td>
+												</tr>
+																				
+												<tr>
+													<td height="29" align="center" class="text6">
+														1913319
+													</td>
+													<td>
+														<img src="./국회-의안정보시스템5_files/icon_02.gif" width="13" height="14" border="0" align="absmiddle" alt="구분">&nbsp;
+															<a href="javascript:GoDetail('PRC_T1E4B1R1F2R1M1M7H3Q1Q2V3G9Y1J8')" class="list1" title="국민연금법 일부개정법률안(대안)">국민연금법 일부개정법률안(대안)</a>
+													</td>
+													<td align="center" class="text6">
+														위원장
+													</td>
+													<td align="center" class="text6">
+														2014-12-29
+													</td>
+													
+														<td align="center" class="text6">
+															2014-12-29
+														</td>
+														<td align="center" class="text6">
+															원안가결
+														</td>
+													
+													<td align="center" class="text6">
+														
+													</td>
+													<td align="center" class="text6">																																			
+													
+														공포
+													
+													</td>
+												</tr>
+												<tr bgcolor="#DBDBDB">
+													<td height="1" colspan="8" align="center"></td>
+												</tr>
+																				
+												<tr>
+													<td height="29" align="center" class="text6">
+														1913318
+													</td>
+													<td>
+														<img src="./국회-의안정보시스템5_files/icon_02.gif" width="13" height="14" border="0" align="absmiddle" alt="구분">&nbsp;
+															<a href="javascript:GoDetail('PRC_O1W4U1O1W2B1E1D7A3B8Q5H1T9I7Q6')" class="list1" title="국민연금과 직역연금의 연계에 관한 법률 일부개정법률안(대안)">국민연금과 직역연금의 연계에 관한 법률 일부개정법률안(대안)</a>
+													</td>
+													<td align="center" class="text6">
+														위원장
+													</td>
+													<td align="center" class="text6">
+														2014-12-29
+													</td>
+													
+														<td align="center" class="text6">
+															2014-12-29
+														</td>
+														<td align="center" class="text6">
+															원안가결
+														</td>
+													
+													<td align="center" class="text6">
+														
+													</td>
+													<td align="center" class="text6">																																			
+													
+														공포
+													
+													</td>
+												</tr>
+												<tr bgcolor="#DBDBDB">
+													<td height="1" colspan="8" align="center"></td>
+												</tr>
+																				
+												<tr>
+													<td height="29" align="center" class="text6">
+														1913317
+													</td>
+													<td>
+														<img src="./국회-의안정보시스템5_files/icon_02.gif" width="13" height="14" border="0" align="absmiddle" alt="구분">&nbsp;
+															<a href="javascript:GoDetail('PRC_V1T4O1J1W2S4Q1D0H1B5L5A1I3V4N8')" class="list1" title="장사 등에 관한 법률 일부개정법률안(대안)">장사 등에 관한 법률 일부개정법률안(대안)</a>
+													</td>
+													<td align="center" class="text6">
+														위원장
+													</td>
+													<td align="center" class="text6">
+														2014-12-29
+													</td>
+													
+														<td align="center" class="text6">
+															2014-12-29
+														</td>
+														<td align="center" class="text6">
+															원안가결
+														</td>
+													
+													<td align="center" class="text6">
+														
+													</td>
+													<td align="center" class="text6">																																			
+													
+														공포
+													
+													</td>
+												</tr>
+												<tr bgcolor="#DBDBDB">
+													<td height="1" colspan="8" align="center"></td>
+												</tr>
+																				
+												<tr>
+													<td height="29" align="center" class="text6">
+														1913316
+													</td>
+													<td>
+														<img src="./국회-의안정보시스템5_files/icon_02.gif" width="13" height="14" border="0" align="absmiddle" alt="구분">&nbsp;
+															<a href="javascript:GoDetail('PRC_U1H4E1J1C2O1D1K7K4U3Q3B7C2G4B7')" class="list1" title="노인복지법 일부개정법률안(대안)">노인복지법 일부개정법률안(대안)</a>
+													</td>
+													<td align="center" class="text6">
+														위원장
+													</td>
+													<td align="center" class="text6">
+														2014-12-29
+													</td>
+													
+														<td align="center" class="text6">
+															2014-12-29
+														</td>
+														<td align="center" class="text6">
+															원안가결
+														</td>
+													
+													<td align="center" class="text6">
+														
+													</td>
+													<td align="center" class="text6">																																			
+													
+														공포
+													
+													</td>
+												</tr>
+												<tr bgcolor="#DBDBDB">
+													<td height="1" colspan="8" align="center"></td>
+												</tr>
+																				
+												<tr>
+													<td height="29" align="center" class="text6">
+														1913315
+													</td>
+													<td>
+														<img src="./국회-의안정보시스템5_files/icon_02.gif" width="13" height="14" border="0" align="absmiddle" alt="구분">&nbsp;
+															<a href="javascript:GoDetail('PRC_Y1G4L1O1Y2D4S1Q0O2M4S4W0Q2X8H3')" class="list1" title="치매관리법 일부개정법률안(대안)">치매관리법 일부개정법률안(대안)</a>
+													</td>
+													<td align="center" class="text6">
+														위원장
+													</td>
+													<td align="center" class="text6">
+														2014-12-29
+													</td>
+													
+														<td align="center" class="text6">
+															2014-12-29
+														</td>
+														<td align="center" class="text6">
+															원안가결
+														</td>
+													
+													<td align="center" class="text6">
+														
+													</td>
+													<td align="center" class="text6">																																			
+													
+														공포
+													
+													</td>
+												</tr>
+												<tr bgcolor="#DBDBDB">
+													<td height="1" colspan="8" align="center"></td>
+												</tr>
+																				
+												<tr>
+													<td height="29" align="center" class="text6">
+														1913314
+													</td>
+													<td>
+														<img src="./국회-의안정보시스템5_files/icon_02.gif" width="13" height="14" border="0" align="absmiddle" alt="구분">&nbsp;
+															<a href="javascript:GoDetail('PRC_W1V4M1B1C2K1W1M7V4V8P2F1B4U3G0')" class="list1" title="농어촌주민의 보건복지증진을 위한 특별법 일부개정법률안(대안)">농어촌주민의 보건복지증진을 위한 특별법 일부개정법률안(대안)</a>
+													</td>
+													<td align="center" class="text6">
+														위원장
+													</td>
+													<td align="center" class="text6">
+														2014-12-29
+													</td>
+													
+														<td align="center" class="text6">
+															2014-12-29
+														</td>
+														<td align="center" class="text6">
+															원안가결
+														</td>
+													
+													<td align="center" class="text6">
+														
+													</td>
+													<td align="center" class="text6">																																			
+													
+														공포
+													
+													</td>
+												</tr>
+												<tr bgcolor="#DBDBDB">
+													<td height="1" colspan="8" align="center"></td>
+												</tr>
+																				
+												<tr>
+													<td height="29" align="center" class="text6">
+														1913313
+													</td>
+													<td>
+														<img src="./국회-의안정보시스템5_files/icon_02.gif" width="13" height="14" border="0" align="absmiddle" alt="구분">&nbsp;
+															<a href="javascript:GoDetail('PRC_D1T4M1W1L2B1J1Q7I4I6A1T9D6V0E3')" class="list1" title="노숙인 등의 복지 및 자립지원에 관한 법률 일부개정법률안(대안)">노숙인 등의 복지 및 자립지원에 관한 법률 일부개정법률안(대안)</a>
+													</td>
+													<td align="center" class="text6">
+														위원장
+													</td>
+													<td align="center" class="text6">
+														2014-12-29
+													</td>
+													
+														<td align="center" class="text6">
+															2014-12-29
+														</td>
+														<td align="center" class="text6">
+															원안가결
+														</td>
+													
+													<td align="center" class="text6">
+														
+													</td>
+													<td align="center" class="text6">																																			
+													
+														공포
+													
+													</td>
+												</tr>
+												<tr bgcolor="#DBDBDB">
+													<td height="1" colspan="8" align="center"></td>
+												</tr>
+																				
+												<tr>
+													<td height="29" align="center" class="text6">
+														1913312
+													</td>
+													<td>
+														<img src="./국회-의안정보시스템5_files/icon_02.gif" width="13" height="14" border="0" align="absmiddle" alt="구분">&nbsp;
+															<a href="javascript:GoDetail('PRC_Z1I4X1X1X2W4U1Y0S1Y8L0B2W1F5H7')" class="list1" title="장애인·노인·임산부등의편의증진보장에관한법률 일부개정법률안(대안)">장애인·노인·임산부등의편의증진보장에관한법률 일부개정법률안(대안)</a>
+													</td>
+													<td align="center" class="text6">
+														위원장
+													</td>
+													<td align="center" class="text6">
+														2014-12-29
+													</td>
+													
+														<td align="center" class="text6">
+															2014-12-29
+														</td>
+														<td align="center" class="text6">
+															원안가결
+														</td>
+													
+													<td align="center" class="text6">
+														
+													</td>
+													<td align="center" class="text6">																																			
+													
+														공포
+													
+													</td>
+												</tr>
+												<tr bgcolor="#DBDBDB">
+													<td height="1" colspan="8" align="center"></td>
+												</tr>
+																				
+												<tr>
+													<td height="29" align="center" class="text6">
+														1913311
+													</td>
+													<td>
+														<img src="./국회-의안정보시스템5_files/icon_02.gif" width="13" height="14" border="0" align="absmiddle" alt="구분">&nbsp;
+															<a href="javascript:GoDetail('PRC_I1M4E1K1M2X4B1T0Z1T0A5I6P8F6Y8')" class="list1" title="응급의료에 관한 법률 일부개정법률안(대안)">응급의료에 관한 법률 일부개정법률안(대안)</a>
+													</td>
+													<td align="center" class="text6">
+														위원장
+													</td>
+													<td align="center" class="text6">
+														2014-12-29
+													</td>
+													
+														<td align="center" class="text6">
+															2014-12-29
+														</td>
+														<td align="center" class="text6">
+															원안가결
+														</td>
+													
+													<td align="center" class="text6">
+														
+													</td>
+													<td align="center" class="text6">																																			
+													
+														공포
+													
+													</td>
+												</tr>
+												<tr bgcolor="#DBDBDB">
+													<td height="1" colspan="8" align="center"></td>
+												</tr>
+																				
+												<tr>
+													<td height="29" align="center" class="text6">
+														1913310
+													</td>
+													<td>
+														<img src="./국회-의안정보시스템5_files/icon_02.gif" width="13" height="14" border="0" align="absmiddle" alt="구분">&nbsp;
+															<a href="javascript:GoDetail('PRC_G1W4M1U1E2Q4V1I0B2I3E1D6C7I8T0')" class="list1" title="지방의료원의 설립 및 운영에 관한 법률 일부개정법률안(대안)">지방의료원의 설립 및 운영에 관한 법률 일부개정법률안(대안)</a>
+													</td>
+													<td align="center" class="text6">
+														위원장
+													</td>
+													<td align="center" class="text6">
+														2014-12-29
+													</td>
+													
+														<td align="center" class="text6">
+															2014-12-29
+														</td>
+														<td align="center" class="text6">
+															원안가결
+														</td>
+													
+													<td align="center" class="text6">
+														
+													</td>
+													<td align="center" class="text6">																																			
+													
+														공포
+													
+													</td>
+												</tr>
+												<tr bgcolor="#DBDBDB">
+													<td height="1" colspan="8" align="center"></td>
+												</tr>
+																				
+												<tr>
+													<td height="29" align="center" class="text6">
+														1913309
+													</td>
+													<td>
+														<img src="./국회-의안정보시스템5_files/icon_02.gif" width="13" height="14" border="0" align="absmiddle" alt="구분">&nbsp;
+															<a href="javascript:GoDetail('PRC_J1C4X1Q1E2G4H1N0O4P0T4D9M4F9F8')" class="list1" title="환자안전법안(대안)">환자안전법안(대안)</a>
+													</td>
+													<td align="center" class="text6">
+														위원장
+													</td>
+													<td align="center" class="text6">
+														2014-12-29
+													</td>
+													
+														<td align="center" class="text6">
+															2014-12-29
+														</td>
+														<td align="center" class="text6">
+															원안가결
+														</td>
+													
+													<td align="center" class="text6">
+														
+													</td>
+													<td align="center" class="text6">																																			
+													
+														공포
+													
+													</td>
+												</tr>
+												<tr bgcolor="#DBDBDB">
+													<td height="1" colspan="8" align="center"></td>
+												</tr>
+																				
+												<tr>
+													<td height="29" align="center" class="text6">
+														1913308
+													</td>
+													<td>
+														<img src="./국회-의안정보시스템5_files/icon_02.gif" width="13" height="14" border="0" align="absmiddle" alt="구분">&nbsp;
+															<a href="javascript:GoDetail('PRC_G1F4G1H1E2V4S1K0Q0D8F4W8F4M8K4')" class="list1" title="의료법 일부개정법률안(대안)">의료법 일부개정법률안(대안)</a>
+													</td>
+													<td align="center" class="text6">
+														위원장
+													</td>
+													<td align="center" class="text6">
+														2014-12-29
+													</td>
+													
+														<td align="center" class="text6">
+															2014-12-29
+														</td>
+														<td align="center" class="text6">
+															원안가결
+														</td>
+													
+													<td align="center" class="text6">
+														
+													</td>
+													<td align="center" class="text6">																																			
+													
+														공포
+													
+													</td>
+												</tr>
+												<tr bgcolor="#DBDBDB">
+													<td height="1" colspan="8" align="center"></td>
+												</tr>
+																				
+												<tr>
+													<td height="29" align="center" class="text6">
+														1913307
+													</td>
+													<td>
+														<img src="./국회-의안정보시스템5_files/icon_02.gif" width="13" height="14" border="0" align="absmiddle" alt="구분">&nbsp;
+															<a href="javascript:GoDetail('PRC_X1F4K1S1L2B1K1L7L4M9D4N5C9G2N5')" class="list1" title="모자보건법 일부개정법률안(대안)">모자보건법 일부개정법률안(대안)</a>
+													</td>
+													<td align="center" class="text6">
+														위원장
+													</td>
+													<td align="center" class="text6">
+														2014-12-29
+													</td>
+													
+														<td align="center" class="text6">
+															2014-12-29
+														</td>
+														<td align="center" class="text6">
+															원안가결
+														</td>
+													
+													<td align="center" class="text6">
+														
+													</td>
+													<td align="center" class="text6">																																			
+													
+														공포
+													
+													</td>
+												</tr>
+												<tr bgcolor="#DBDBDB">
+													<td height="1" colspan="8" align="center"></td>
+												</tr>
+																				
+												<tr>
+													<td height="29" align="center" class="text6">
+														1913306
+													</td>
+													<td>
+														<img src="./국회-의안정보시스템5_files/icon_02.gif" width="13" height="14" border="0" align="absmiddle" alt="구분">&nbsp;
+															<a href="javascript:GoDetail('ARC_F1D4O1D2C2L9K1X0U3A9U0J0C4D6Y1')" class="list1" title="농수산물 유통 및 가격안정에 관한 법률 일부개정법률안">농수산물 유통 및 가격안정에 관한 법률 일부개정법률안</a>
+													</td>
+													<td align="center" class="text6">
+														정부
+													</td>
+													<td align="center" class="text6">
+														2014-12-29
+													</td>
+													
+														<td align="center" class="text6">
+															2015-05-29
+														</td>
+														<td align="center" class="text6">
+															대안반영폐기
+														</td>
+													
+													<td align="center" class="text6">
+														
+														<img src="./국회-의안정보시스템5_files/icon_txt.gif" align="absmiddle" style="cursor:pointer" onclick="javascript:OpenSummary(&#39;ARC_F1D4O1D2C2L9K1X0U3A9U0J0C4D6Y1&#39;)" alt="제안이유 및 주요내용">
+														
+													</td>
+													<td align="center" class="text6">																																			
+													
+														대안반영폐기
+													
+													</td>
+												</tr>
+												<tr bgcolor="#DBDBDB">
+													<td height="1" colspan="8" align="center"></td>
+												</tr>
+																				
+												<tr>
+													<td height="29" align="center" class="text6">
+														1913305
+													</td>
+													<td>
+														<img src="./국회-의안정보시스템5_files/icon_02.gif" width="13" height="14" border="0" align="absmiddle" alt="구분">&nbsp;
+															<a href="javascript:GoDetail('PRC_Z1X4Z1Z1K2K4V1G0M1G2B4Y5W9Z2R3')" class="list1" title="의료기기법 일부개정법률안(대안)">의료기기법 일부개정법률안(대안)</a>
+													</td>
+													<td align="center" class="text6">
+														위원장
+													</td>
+													<td align="center" class="text6">
+														2014-12-29
+													</td>
+													
+														<td align="center" class="text6">
+															2014-12-29
+														</td>
+														<td align="center" class="text6">
+															원안가결
+														</td>
+													
+													<td align="center" class="text6">
+														
+													</td>
+													<td align="center" class="text6">																																			
+													
+														공포
+													
+													</td>
+												</tr>
+												<tr bgcolor="#DBDBDB">
+													<td height="1" colspan="8" align="center"></td>
+												</tr>
+																				
+												<tr>
+													<td height="29" align="center" class="text6">
+														1913297
+													</td>
+													<td>
+														<img src="./국회-의안정보시스템5_files/icon_02.gif" width="13" height="14" border="0" align="absmiddle" alt="구분">&nbsp;
+															<a href="javascript:GoDetail('PRC_Y1M4R1T2H0I5F1K1S2E3M1S0B9V6S5')" class="list1" title="교육기본법 일부개정법률안(대안)">교육기본법 일부개정법률안(대안)</a>
+													</td>
+													<td align="center" class="text6">
+														위원장
+													</td>
+													<td align="center" class="text6">
+														2014-12-29
+													</td>
+													
+														<td align="center" class="text6">
+															2014-12-29
+														</td>
+														<td align="center" class="text6">
+															원안가결
+														</td>
+													
+													<td align="center" class="text6">
+														
+													</td>
+													<td align="center" class="text6">																																			
+													
+														공포
+													
+													</td>
+												</tr>
+												<tr bgcolor="#DBDBDB">
+													<td height="1" colspan="8" align="center"></td>
+												</tr>
+																				
+												<tr>
+													<td height="29" align="center" class="text6">
+														1913296
+													</td>
+													<td>
+														<img src="./국회-의안정보시스템5_files/icon_02.gif" width="13" height="14" border="0" align="absmiddle" alt="구분">&nbsp;
+															<a href="javascript:GoDetail('PRC_A1V4E1Z2A0N5R1I1Y2K8I0R8M6U2E9')" class="list1" title="학교안전사고 예방 및 보상에 관한 법률 일부개정법률안(대안)">학교안전사고 예방 및 보상에 관한 법률 일부개정법률안(대안)</a>
+													</td>
+													<td align="center" class="text6">
+														위원장
+													</td>
+													<td align="center" class="text6">
+														2014-12-29
+													</td>
+													
+														<td align="center" class="text6">
+															2014-12-29
+														</td>
+														<td align="center" class="text6">
+															원안가결
+														</td>
+													
+													<td align="center" class="text6">
+														
+													</td>
+													<td align="center" class="text6">																																			
+													
+														공포
+													
+													</td>
+												</tr>
+												<tr bgcolor="#DBDBDB">
+													<td height="1" colspan="8" align="center"></td>
+												</tr>
+																				
+												<tr>
+													<td height="29" align="center" class="text6">
+														1913294
+													</td>
+													<td>
+														<img src="./국회-의안정보시스템5_files/icon_02.gif" width="13" height="14" border="0" align="absmiddle" alt="구분">&nbsp;
+															<a href="javascript:GoDetail('PRC_B1E4V1C1N2H4S0X9D5K6M4G1O6R1Y7')" class="list1" title="약사법 일부개정법률안(대안)">약사법 일부개정법률안(대안)</a>
+													</td>
+													<td align="center" class="text6">
+														위원장
+													</td>
+													<td align="center" class="text6">
+														2014-12-29
+													</td>
+													
+														<td align="center" class="text6">
+															2014-12-29
+														</td>
+														<td align="center" class="text6">
+															원안가결
+														</td>
+													
+													<td align="center" class="text6">
+														
+													</td>
+													<td align="center" class="text6">																																			
+													
+														공포
+													
+													</td>
+												</tr>
+												<tr bgcolor="#DBDBDB">
+													<td height="1" colspan="8" align="center"></td>
+												</tr>
+																				
+												<tr>
+													<td height="29" align="center" class="text6">
+														1913293
+													</td>
+													<td>
+														<img src="./국회-의안정보시스템5_files/icon_02.gif" width="13" height="14" border="0" align="absmiddle" alt="구분">&nbsp;
+															<a href="javascript:GoDetail('PRC_K1D4K1E1K2D4Y1A0K2P1E4T3K7O4V7')" class="list1" title="정신보건법 일부개정법률안(대안)">정신보건법 일부개정법률안(대안)</a>
+													</td>
+													<td align="center" class="text6">
+														위원장
+													</td>
+													<td align="center" class="text6">
+														2014-12-29
+													</td>
+													
+														<td align="center" class="text6">
+															2014-12-29
+														</td>
+														<td align="center" class="text6">
+															원안가결
+														</td>
+													
+													<td align="center" class="text6">
+														
+													</td>
+													<td align="center" class="text6">																																			
+													
+														공포
+													
+													</td>
+												</tr>
+												<tr bgcolor="#DBDBDB">
+													<td height="1" colspan="8" align="center"></td>
+												</tr>
+																				
+												<tr>
+													<td height="29" align="center" class="text6">
+														1913292
+													</td>
+													<td>
+														<img src="./국회-의안정보시스템5_files/icon_02.gif" width="13" height="14" border="0" align="absmiddle" alt="구분">&nbsp;
+															<a href="javascript:GoDetail('PRC_M1M4B1I1T2K7K1V7C2R1E3R5P6E7G8')" class="list1" title="전파법 일부개정법률안(대안)">전파법 일부개정법률안(대안)</a>
+													</td>
+													<td align="center" class="text6">
+														위원장
+													</td>
+													<td align="center" class="text6">
+														2014-12-29
+													</td>
+													
+														<td align="center" class="text6">
+															2014-12-29
+														</td>
+														<td align="center" class="text6">
+															원안가결
+														</td>
+													
+													<td align="center" class="text6">
+														
+													</td>
+													<td align="center" class="text6">																																			
+													
+														공포
+													
+													</td>
+												</tr>
+												<tr bgcolor="#DBDBDB">
+													<td height="1" colspan="8" align="center"></td>
+												</tr>
+																				
+												<tr>
+													<td height="29" align="center" class="text6">
+														1913280
+													</td>
+													<td>
+														<img src="./국회-의안정보시스템5_files/icon_02.gif" width="13" height="14" border="0" align="absmiddle" alt="구분">&nbsp;
+															<a href="javascript:GoDetail('PRC_Q1O4E1P2V0W2R1S0S2V2K3K7Z6K4R0')" class="list1" title="방송통신위원회의 설치 및 운영에 관한 법률 일부개정법률안(대안)">방송통신위원회의 설치 및 운영에 관한 법률 일부개정법률안(대안)</a>
+													</td>
+													<td align="center" class="text6">
+														위원장
+													</td>
+													<td align="center" class="text6">
+														2014-12-29
+													</td>
+													
+														<td align="center" class="text6">
+															2014-12-29
+														</td>
+														<td align="center" class="text6">
+															원안가결
+														</td>
+													
+													<td align="center" class="text6">
+														
+													</td>
+													<td align="center" class="text6">																																			
+													
+														공포
+													
+													</td>
+												</tr>
+												<tr bgcolor="#DBDBDB">
+													<td height="1" colspan="8" align="center"></td>
+												</tr>
+																				
+												<tr>
+													<td height="29" align="center" class="text6">
+														1913279
+													</td>
+													<td>
+														<img src="./국회-의안정보시스템5_files/icon_02.gif" width="13" height="14" border="0" align="absmiddle" alt="구분">&nbsp;
+															<a href="javascript:GoDetail('PRC_U1E4J1I1W2N7I1Y7K2B3D1T6A0Y5Z4')" class="list1" title="한국교육방송공사법 일부개정법률안(대안)">한국교육방송공사법 일부개정법률안(대안)</a>
+													</td>
+													<td align="center" class="text6">
+														위원장
+													</td>
+													<td align="center" class="text6">
+														2014-12-29
+													</td>
+													
+														<td align="center" class="text6">
+															2014-12-29
+														</td>
+														<td align="center" class="text6">
+															원안가결
+														</td>
+													
+													<td align="center" class="text6">
+														
+													</td>
+													<td align="center" class="text6">																																			
+													
+														공포
+													
+													</td>
+												</tr>
+												<tr bgcolor="#DBDBDB">
+													<td height="1" colspan="8" align="center"></td>
+												</tr>
+																				
+												<tr>
+													<td height="29" align="center" class="text6">
+														1913278
+													</td>
+													<td>
+														<img src="./국회-의안정보시스템5_files/icon_02.gif" width="13" height="14" border="0" align="absmiddle" alt="구분">&nbsp;
+															<a href="javascript:GoDetail('PRC_O1N4D1I2N0U1C1Z1W2S4Z0Q7G8V9T9')" class="list1" title="초지법 일부개정법률안(대안)">초지법 일부개정법률안(대안)</a>
+													</td>
+													<td align="center" class="text6">
+														위원장
+													</td>
+													<td align="center" class="text6">
+														2014-12-29
+													</td>
+													
+														<td align="center" class="text6">
+															2014-12-29
+														</td>
+														<td align="center" class="text6">
+															원안가결
+														</td>
+													
+													<td align="center" class="text6">
+														
+													</td>
+													<td align="center" class="text6">																																			
+													
+														공포
+													
+													</td>
+												</tr>
+												<tr bgcolor="#DBDBDB">
+													<td height="1" colspan="8" align="center"></td>
+												</tr>
+																				
+												<tr>
+													<td height="29" align="center" class="text6">
+														1913277
+													</td>
+													<td>
+														<img src="./국회-의안정보시스템5_files/icon_02.gif" width="13" height="14" border="0" align="absmiddle" alt="구분">&nbsp;
+															<a href="javascript:GoDetail('PRC_C1R4M1O1T2Y7H1W7Q1A9P2Z5P1I0Z5')" class="list1" title="전기통신사업법 일부개정법률안(대안)">전기통신사업법 일부개정법률안(대안)</a>
+													</td>
+													<td align="center" class="text6">
+														위원장
+													</td>
+													<td align="center" class="text6">
+														2014-12-29
+													</td>
+													
+														<td align="center" class="text6">
+															2014-12-29
+														</td>
+														<td align="center" class="text6">
+															원안가결
+														</td>
+													
+													<td align="center" class="text6">
+														
+													</td>
+													<td align="center" class="text6">																																			
+													
+														공포
+													
+													</td>
+												</tr>
+												<tr bgcolor="#DBDBDB">
+													<td height="1" colspan="8" align="center"></td>
+												</tr>
+																				
+												<tr>
+													<td height="29" align="center" class="text6">
+														1913276
+													</td>
+													<td>
+														<img src="./국회-의안정보시스템5_files/icon_02.gif" width="13" height="14" border="0" align="absmiddle" alt="구분">&nbsp;
+															<a href="javascript:GoDetail('PRC_K1Q4T1D2I0R3C1I3P2O5S4U4A3W8K0')" class="list1" title="원자력안전법 일부개정법률안(대안)">원자력안전법 일부개정법률안(대안)</a>
+													</td>
+													<td align="center" class="text6">
+														위원장
+													</td>
+													<td align="center" class="text6">
+														2014-12-29
+													</td>
+													
+														<td align="center" class="text6">
+															2014-12-29
+														</td>
+														<td align="center" class="text6">
+															원안가결
+														</td>
+													
+													<td align="center" class="text6">
+														
+													</td>
+													<td align="center" class="text6">																																			
+													
+														공포
+													
+													</td>
+												</tr>
+												<tr bgcolor="#DBDBDB">
+													<td height="1" colspan="8" align="center"></td>
+												</tr>
+																				
+												<tr>
+													<td height="29" align="center" class="text6">
+														1913275
+													</td>
+													<td>
+														<img src="./국회-의안정보시스템5_files/icon_02.gif" width="13" height="14" border="0" align="absmiddle" alt="구분">&nbsp;
+															<a href="javascript:GoDetail('PRC_U1B4B1Q2H0B3V1S4I4O9Y2M7J3C4I2')" class="list1" title="근로자직업능력 개발법 일부개정법률안(대안)">근로자직업능력 개발법 일부개정법률안(대안)</a>
+													</td>
+													<td align="center" class="text6">
+														위원장
+													</td>
+													<td align="center" class="text6">
+														2014-12-26
+													</td>
+													
+														<td align="center" class="text6">
+															2014-12-29
+														</td>
+														<td align="center" class="text6">
+															원안가결
+														</td>
+													
+													<td align="center" class="text6">
+														
+													</td>
+													<td align="center" class="text6">																																			
+													
+														공포
+													
+													</td>
+												</tr>
+												<tr bgcolor="#DBDBDB">
+													<td height="1" colspan="8" align="center"></td>
+												</tr>
+																				
+												<tr>
+													<td height="29" align="center" class="text6">
+														1913274
+													</td>
+													<td>
+														<img src="./국회-의안정보시스템5_files/icon_02.gif" width="13" height="14" border="0" align="absmiddle" alt="구분">&nbsp;
+															<a href="javascript:GoDetail('PRC_H1T4X1O2X0O3I1Y5L0O5Q1V4S0G6N8')" class="list1" title="고용보험법 일부개정법률안(대안)">고용보험법 일부개정법률안(대안)</a>
+													</td>
+													<td align="center" class="text6">
+														위원장
+													</td>
+													<td align="center" class="text6">
+														2014-12-26
+													</td>
+													
+														<td align="center" class="text6">
+															2014-12-29
+														</td>
+														<td align="center" class="text6">
+															원안가결
+														</td>
+													
+													<td align="center" class="text6">
+														
+													</td>
+													<td align="center" class="text6">																																			
+													
+														공포
+													
+													</td>
+												</tr>
+												<tr bgcolor="#DBDBDB">
+													<td height="1" colspan="8" align="center"></td>
+												</tr>
+																				
+												<tr>
+													<td height="29" align="center" class="text6">
+														1913273
+													</td>
+													<td>
+														<img src="./국회-의안정보시스템5_files/icon_02.gif" width="13" height="14" border="0" align="absmiddle" alt="구분">&nbsp;
+															<a href="javascript:GoDetail('PRC_E1B4X1J2Z0G3Z1B6R4R1A4A9E9C1A3')" class="list1" title="산업재해보상보험법 일부개정법률안(대안)">산업재해보상보험법 일부개정법률안(대안)</a>
+													</td>
+													<td align="center" class="text6">
+														위원장
+													</td>
+													<td align="center" class="text6">
+														2014-12-26
+													</td>
+													
+														<td align="center" class="text6">
+															2014-12-29
+														</td>
+														<td align="center" class="text6">
+															원안가결
+														</td>
+													
+													<td align="center" class="text6">
+														
+													</td>
+													<td align="center" class="text6">																																			
+													
+														공포
+													
+													</td>
+												</tr>
+												<tr bgcolor="#DBDBDB">
+													<td height="1" colspan="8" align="center"></td>
+												</tr>
+																				
+												<tr>
+													<td height="29" align="center" class="text6">
+														1913272
+													</td>
+													<td>
+														<img src="./국회-의안정보시스템5_files/icon_02.gif" width="13" height="14" border="0" align="absmiddle" alt="구분">&nbsp;
+															<a href="javascript:GoDetail('PRC_Q1Q4A1K2B0N3H1T6B4X4L0Y2T6R2X0')" class="list1" title="직업안정법 일부개정법률안(대안)">직업안정법 일부개정법률안(대안)</a>
+													</td>
+													<td align="center" class="text6">
+														위원장
+													</td>
+													<td align="center" class="text6">
+														2014-12-26
+													</td>
+													
+														<td align="center" class="text6">
+															2014-12-29
+														</td>
+														<td align="center" class="text6">
+															원안가결
+														</td>
+													
+													<td align="center" class="text6">
+														
+													</td>
+													<td align="center" class="text6">																																			
+													
+														공포
+													
+													</td>
+												</tr>
+												<tr bgcolor="#DBDBDB">
+													<td height="1" colspan="8" align="center"></td>
+												</tr>
+																				
+												<tr>
+													<td height="29" align="center" class="text6">
+														1913271
+													</td>
+													<td>
+														<img src="./국회-의안정보시스템5_files/icon_02.gif" width="13" height="14" border="0" align="absmiddle" alt="구분">&nbsp;
+															<a href="javascript:GoDetail('PRC_Y1W4N1J2K0P3A1L4J3Y0Q1H5K9R5I1')" class="list1" title="임금채권보장법 일부개정법률안(대안)">임금채권보장법 일부개정법률안(대안)</a>
+													</td>
+													<td align="center" class="text6">
+														위원장
+													</td>
+													<td align="center" class="text6">
+														2014-12-26
+													</td>
+													
+														<td align="center" class="text6">
+															2014-12-29
+														</td>
+														<td align="center" class="text6">
+															원안가결
+														</td>
+													
+													<td align="center" class="text6">
+														
+													</td>
+													<td align="center" class="text6">																																			
+													
+														공포
+													
+													</td>
+												</tr>
+												<tr bgcolor="#DBDBDB">
+													<td height="1" colspan="8" align="center"></td>
+												</tr>
+																				
+												<tr>
+													<td height="29" align="center" class="text6">
+														1913270
+													</td>
+													<td>
+														<img src="./국회-의안정보시스템5_files/icon_02.gif" width="13" height="14" border="0" align="absmiddle" alt="구분">&nbsp;
+															<a href="javascript:GoDetail('PRC_D1J4D1O2G0N2X1E6J0S5B1V3X6J9O7')" class="list1" title="환경영향평가법 일부개정법률안(대안)">환경영향평가법 일부개정법률안(대안)</a>
+													</td>
+													<td align="center" class="text6">
+														위원장
+													</td>
+													<td align="center" class="text6">
+														2014-12-26
+													</td>
+													
+														<td align="center" class="text6">
+															2014-12-29
+														</td>
+														<td align="center" class="text6">
+															원안가결
+														</td>
+													
+													<td align="center" class="text6">
+														
+													</td>
+													<td align="center" class="text6">																																			
+													
+														공포
+													
+													</td>
+												</tr>
+												<tr bgcolor="#DBDBDB">
+													<td height="1" colspan="8" align="center"></td>
+												</tr>
+																				
+												<tr>
+													<td height="29" align="center" class="text6">
+														1913269
+													</td>
+													<td>
+														<img src="./국회-의안정보시스템5_files/icon_02.gif" width="13" height="14" border="0" align="absmiddle" alt="구분">&nbsp;
+															<a href="javascript:GoDetail('PRC_C1X4P1Q2V0S2H1O5V4W0V2V4V3Z9W4')" class="list1" title="폐기물관리법 일부개정법률안(대안)">폐기물관리법 일부개정법률안(대안)</a>
+													</td>
+													<td align="center" class="text6">
+														위원장
+													</td>
+													<td align="center" class="text6">
+														2014-12-26
+													</td>
+													
+														<td align="center" class="text6">
+															2014-12-29
+														</td>
+														<td align="center" class="text6">
+															원안가결
+														</td>
+													
+													<td align="center" class="text6">
+														
+													</td>
+													<td align="center" class="text6">																																			
+													
+														공포
+													
+													</td>
+												</tr>
+												<tr bgcolor="#DBDBDB">
+													<td height="1" colspan="8" align="center"></td>
+												</tr>
+																				
+												<tr>
+													<td height="29" align="center" class="text6">
+														1913268
+													</td>
+													<td>
+														<img src="./국회-의안정보시스템5_files/icon_02.gif" width="13" height="14" border="0" align="absmiddle" alt="구분">&nbsp;
+															<a href="javascript:GoDetail('PRC_B1I4M1O2X0U2F1M6J5A2H2F9D6I8T5')" class="list1" title="유해화학물질 관리법 일부개정법률안(대안)">유해화학물질 관리법 일부개정법률안(대안)</a>
+													</td>
+													<td align="center" class="text6">
+														위원장
+													</td>
+													<td align="center" class="text6">
+														2014-12-26
+													</td>
+													
+														<td align="center" class="text6">
+															2014-12-29
+														</td>
+														<td align="center" class="text6">
+															원안가결
+														</td>
+													
+													<td align="center" class="text6">
+														
+													</td>
+													<td align="center" class="text6">																																			
+													
+														공포
+													
+													</td>
+												</tr>
+												<tr bgcolor="#DBDBDB">
+													<td height="1" colspan="8" align="center"></td>
+												</tr>
+																				
+												<tr>
+													<td height="29" align="center" class="text6">
+														1913267
+													</td>
+													<td>
+														<img src="./국회-의안정보시스템5_files/icon_02.gif" width="13" height="14" border="0" align="absmiddle" alt="구분">&nbsp;
+															<a href="javascript:GoDetail('PRC_V1X4Q1P2Y0P2W1H5G3D8T5X1V7Z7F9')" class="list1" title="대기환경보전법 일부개정법률안(대안)">대기환경보전법 일부개정법률안(대안)</a>
+													</td>
+													<td align="center" class="text6">
+														위원장
+													</td>
+													<td align="center" class="text6">
+														2014-12-26
+													</td>
+													
+														<td align="center" class="text6">
+															2014-12-29
+														</td>
+														<td align="center" class="text6">
+															원안가결
+														</td>
+													
+													<td align="center" class="text6">
+														
+													</td>
+													<td align="center" class="text6">																																			
+													
+														공포
+													
+													</td>
+												</tr>
+												<tr bgcolor="#DBDBDB">
+													<td height="1" colspan="8" align="center"></td>
+												</tr>
+																				
+												<tr>
+													<td height="29" align="center" class="text6">
+														1913266
+													</td>
+													<td>
+														<img src="./국회-의안정보시스템5_files/icon_02.gif" width="13" height="14" border="0" align="absmiddle" alt="구분">&nbsp;
+															<a href="javascript:GoDetail('PRC_U1M4R1W2H0Z2K1V5P4W3B2X6L1T5D0')" class="list1" title="자원의 절약과 재활용촉진에 관한 법률 일부개정법률안(대안)">자원의 절약과 재활용촉진에 관한 법률 일부개정법률안(대안)</a>
+													</td>
+													<td align="center" class="text6">
+														위원장
+													</td>
+													<td align="center" class="text6">
+														2014-12-26
+													</td>
+													
+														<td align="center" class="text6">
+															2014-12-29
+														</td>
+														<td align="center" class="text6">
+															원안가결
+														</td>
+													
+													<td align="center" class="text6">
+														
+													</td>
+													<td align="center" class="text6">																																			
+													
+														공포
+													
+													</td>
+												</tr>
+												<tr bgcolor="#DBDBDB">
+													<td height="1" colspan="8" align="center"></td>
+												</tr>
+																				
+												<tr>
+													<td height="29" align="center" class="text6">
+														1913265
+													</td>
+													<td>
+														<img src="./국회-의안정보시스템5_files/icon_02.gif" width="13" height="14" border="0" align="absmiddle" alt="구분">&nbsp;
+															<a href="javascript:GoDetail('PRC_K1Q4B1L2C0T2B1C5W4C2V2R8M7L5Q1')" class="list1" title="전기·전자제품 및 자동차의 자원순환에 관한 법률 일부개정법률안(대안)">전기·전자제품 및 자동차의 자원순환에 관한 법률 일부개정법률안(대안)</a>
+													</td>
+													<td align="center" class="text6">
+														위원장
+													</td>
+													<td align="center" class="text6">
+														2014-12-26
+													</td>
+													
+														<td align="center" class="text6">
+															2014-12-29
+														</td>
+														<td align="center" class="text6">
+															원안가결
+														</td>
+													
+													<td align="center" class="text6">
+														
+													</td>
+													<td align="center" class="text6">																																			
+													
+														공포
+													
+													</td>
+												</tr>
+												<tr bgcolor="#DBDBDB">
+													<td height="1" colspan="8" align="center"></td>
+												</tr>
+																				
+												<tr>
+													<td height="29" align="center" class="text6">
+														1913264
+													</td>
+													<td>
+														<img src="./국회-의안정보시스템5_files/icon_02.gif" width="13" height="14" border="0" align="absmiddle" alt="구분">&nbsp;
+															<a href="javascript:GoDetail('PRC_Y1P4Z1N2L0M2J2Y1P0N8N3K0F6M7O8')" class="list1" title="국립낙동강생물자원관의 설립 및 운영에 관한 법률안(대안)">국립낙동강생물자원관의 설립 및 운영에 관한 법률안(대안)</a>
+													</td>
+													<td align="center" class="text6">
+														위원장
+													</td>
+													<td align="center" class="text6">
+														2014-12-26
+													</td>
+													
+														<td align="center" class="text6">
+															2014-12-29
+														</td>
+														<td align="center" class="text6">
+															원안가결
+														</td>
+													
+													<td align="center" class="text6">
+														
+													</td>
+													<td align="center" class="text6">																																			
+													
+														공포
+													
+													</td>
+												</tr>
+												<tr bgcolor="#DBDBDB">
+													<td height="1" colspan="8" align="center"></td>
+												</tr>
+																				
+												<tr>
+													<td height="29" align="center" class="text6">
+														1913249
+													</td>
+													<td>
+														<img src="./국회-의안정보시스템5_files/icon_02.gif" width="13" height="14" border="0" align="absmiddle" alt="구분">&nbsp;
+															<a href="javascript:GoDetail('PRC_R1B4F1Z2J0E5S1Q0W3E4M5M1N5K7A0')" class="list1" title="독점규제 및 공정거래에 관한 법률 일부개정법률안(대안)">독점규제 및 공정거래에 관한 법률 일부개정법률안(대안)</a>
+													</td>
+													<td align="center" class="text6">
+														위원장
+													</td>
+													<td align="center" class="text6">
+														2014-12-26
+													</td>
+													
+														<td align="center" class="text6">
+															2014-12-29
+														</td>
+														<td align="center" class="text6">
+															원안가결
+														</td>
+													
+													<td align="center" class="text6">
+														
+													</td>
+													<td align="center" class="text6">																																			
+													
+														공포
+													
+													</td>
+												</tr>
+												<tr bgcolor="#DBDBDB">
+													<td height="1" colspan="8" align="center"></td>
+												</tr>
+																				
+												<tr>
+													<td height="29" align="center" class="text6">
+														1913248
+													</td>
+													<td>
+														<img src="./국회-의안정보시스템5_files/icon_02.gif" width="13" height="14" border="0" align="absmiddle" alt="구분">&nbsp;
+															<a href="javascript:GoDetail('PRC_E1R4Z1B2Z0R5X1K0P3T6W5P3W7G2S2')" class="list1" title="농림수산업자 신용보증법 일부개정법률안(대안)">농림수산업자 신용보증법 일부개정법률안(대안)</a>
+													</td>
+													<td align="center" class="text6">
+														위원장
+													</td>
+													<td align="center" class="text6">
+														2014-12-26
+													</td>
+													
+														<td align="center" class="text6">
+															2014-12-29
+														</td>
+														<td align="center" class="text6">
+															원안가결
+														</td>
+													
+													<td align="center" class="text6">
+														
+													</td>
+													<td align="center" class="text6">																																			
+													
+														공포
+													
+													</td>
+												</tr>
+												<tr bgcolor="#DBDBDB">
+													<td height="1" colspan="8" align="center"></td>
+												</tr>
+																				
+												<tr>
+													<td height="29" align="center" class="text6">
+														1913247
+													</td>
+													<td>
+														<img src="./국회-의안정보시스템5_files/icon_02.gif" width="13" height="14" border="0" align="absmiddle" alt="구분">&nbsp;
+															<a href="javascript:GoDetail('PRC_J1V4E1Q2S0U1T1B1R2Q1H5F3O5E7H0')" class="list1" title="농지법 일부개정법률안(대안)">농지법 일부개정법률안(대안)</a>
+													</td>
+													<td align="center" class="text6">
+														위원장
+													</td>
+													<td align="center" class="text6">
+														2014-12-26
+													</td>
+													
+														<td align="center" class="text6">
+															2014-12-29
+														</td>
+														<td align="center" class="text6">
+															원안가결
+														</td>
+													
+													<td align="center" class="text6">
+														
+													</td>
+													<td align="center" class="text6">																																			
+													
+														공포
+													
+													</td>
+												</tr>
+												<tr bgcolor="#DBDBDB">
+													<td height="1" colspan="8" align="center"></td>
+												</tr>
+																				
+												<tr>
+													<td height="29" align="center" class="text6">
+														1913246
+													</td>
+													<td>
+														<img src="./국회-의안정보시스템5_files/icon_02.gif" width="13" height="14" border="0" align="absmiddle" alt="구분">&nbsp;
+															<a href="javascript:GoDetail('PRC_W1A4P1B2B0T5L1P0N3L9T0U1P3B3L7')" class="list1" title="여신전문금융업법 일부개정법률안(대안)">여신전문금융업법 일부개정법률안(대안)</a>
+													</td>
+													<td align="center" class="text6">
+														위원장
+													</td>
+													<td align="center" class="text6">
+														2014-12-26
+													</td>
+													
+														<td align="center" class="text6">
+															2014-12-29
+														</td>
+														<td align="center" class="text6">
+															원안가결
+														</td>
+													
+													<td align="center" class="text6">
+														
+													</td>
+													<td align="center" class="text6">																																			
+													
+														공포
+													
+													</td>
+												</tr>
+												<tr bgcolor="#DBDBDB">
+													<td height="1" colspan="8" align="center"></td>
+												</tr>
+																				
+												<tr>
+													<td height="29" align="center" class="text6">
+														1913236
+													</td>
+													<td>
+														<img src="./국회-의안정보시스템5_files/icon_02.gif" width="13" height="14" border="0" align="absmiddle" alt="구분">&nbsp;
+															<a href="javascript:GoDetail('PRC_G1D4L1A2F0C1P1J1I1D2W4P1J6G5O6')" class="list1" title="해외농업개발협력법 일부개정법률안(대안)">해외농업개발협력법 일부개정법률안(대안)</a>
+													</td>
+													<td align="center" class="text6">
+														위원장
+													</td>
+													<td align="center" class="text6">
+														2014-12-26
+													</td>
+													
+														<td align="center" class="text6">
+															2014-12-29
+														</td>
+														<td align="center" class="text6">
+															원안가결
+														</td>
+													
+													<td align="center" class="text6">
+														
+													</td>
+													<td align="center" class="text6">																																			
+													
+														공포
+													
+													</td>
+												</tr>
+												<tr bgcolor="#DBDBDB">
+													<td height="1" colspan="8" align="center"></td>
+												</tr>
+																				
+												<tr>
+													<td height="29" align="center" class="text6">
+														1913234
+													</td>
+													<td>
+														<img src="./국회-의안정보시스템5_files/icon_02.gif" width="13" height="14" border="0" align="absmiddle" alt="구분">&nbsp;
+															<a href="javascript:GoDetail('PRC_I1E4I1M2J0O1H1I1H2V5F1M3T2W8S6')" class="list1" title="수목원 조성 및 진흥에 관한 법률 일부개정법률안(대안)">수목원 조성 및 진흥에 관한 법률 일부개정법률안(대안)</a>
+													</td>
+													<td align="center" class="text6">
+														위원장
+													</td>
+													<td align="center" class="text6">
+														2014-12-26
+													</td>
+													
+														<td align="center" class="text6">
+															2014-12-29
+														</td>
+														<td align="center" class="text6">
+															원안가결
+														</td>
+													
+													<td align="center" class="text6">
+														
+													</td>
+													<td align="center" class="text6">																																			
+													
+														공포
+													
+													</td>
+												</tr>
+												<tr bgcolor="#DBDBDB">
+													<td height="1" colspan="8" align="center"></td>
+												</tr>
+																				
+												<tr>
+													<td height="29" align="center" class="text6">
+														1913233
+													</td>
+													<td>
+														<img src="./국회-의안정보시스템5_files/icon_02.gif" width="13" height="14" border="0" align="absmiddle" alt="구분">&nbsp;
+															<a href="javascript:GoDetail('PRC_R1J4G1G2H0A1N1U1P1T9B5F2M2T4O2')" class="list1" title="귀농어ㆍ귀촌 활성화 및 지원에 관한 법률안(대안)">귀농어ㆍ귀촌 활성화 및 지원에 관한 법률안(대안)</a>
+													</td>
+													<td align="center" class="text6">
+														위원장
+													</td>
+													<td align="center" class="text6">
+														2014-12-26
+													</td>
+													
+														<td align="center" class="text6">
+															2014-12-29
+														</td>
+														<td align="center" class="text6">
+															원안가결
+														</td>
+													
+													<td align="center" class="text6">
+														
+													</td>
+													<td align="center" class="text6">																																			
+													
+														공포
+													
+													</td>
+												</tr>
+												<tr bgcolor="#DBDBDB">
+													<td height="1" colspan="8" align="center"></td>
+												</tr>
+																				
+												<tr>
+													<td height="29" align="center" class="text6">
+														1913232
+													</td>
+													<td>
+														<img src="./국회-의안정보시스템5_files/icon_02.gif" width="13" height="14" border="0" align="absmiddle" alt="구분">&nbsp;
+															<a href="javascript:GoDetail('PRC_F1T4R1N2S0D1E1L1E3E2W5X0R2I8M7')" class="list1" title="수산업법 일부개정법률안(대안)">수산업법 일부개정법률안(대안)</a>
+													</td>
+													<td align="center" class="text6">
+														위원장
+													</td>
+													<td align="center" class="text6">
+														2014-12-26
+													</td>
+													
+														<td align="center" class="text6">
+															2014-12-29
+														</td>
+														<td align="center" class="text6">
+															원안가결
+														</td>
+													
+													<td align="center" class="text6">
+														
+													</td>
+													<td align="center" class="text6">																																			
+													
+														공포
+													
+													</td>
+												</tr>
+												<tr bgcolor="#DBDBDB">
+													<td height="1" colspan="8" align="center"></td>
+												</tr>
+																				
+												<tr>
+													<td height="29" align="center" class="text6">
+														1913226
+													</td>
+													<td>
+														<img src="./국회-의안정보시스템5_files/icon_02.gif" width="13" height="14" border="0" align="absmiddle" alt="구분">&nbsp;
+															<a href="javascript:GoDetail('PRC_V1Y4L1N1Z2S4H1U8F0I9K3Q0E4H7M5')" class="list1" title="부정경쟁방지 및 영업비밀보호에 관한 법률 일부개정법률안(대안)">부정경쟁방지 및 영업비밀보호에 관한 법률 일부개정법률안(대안)</a>
+													</td>
+													<td align="center" class="text6">
+														위원장
+													</td>
+													<td align="center" class="text6">
+														2014-12-26
+													</td>
+													
+														<td align="center" class="text6">
+															2014-12-29
+														</td>
+														<td align="center" class="text6">
+															원안가결
+														</td>
+													
+													<td align="center" class="text6">
+														
+													</td>
+													<td align="center" class="text6">																																			
+													
+														공포
+													
+													</td>
+												</tr>
+												<tr bgcolor="#DBDBDB">
+													<td height="1" colspan="8" align="center"></td>
+												</tr>
+																				
+												<tr>
+													<td height="29" align="center" class="text6">
+														1913225
+													</td>
+													<td>
+														<img src="./국회-의안정보시스템5_files/icon_02.gif" width="13" height="14" border="0" align="absmiddle" alt="구분">&nbsp;
+															<a href="javascript:GoDetail('PRC_I1F4T1N1B2P8W2L0M1F0W2I5N2H6D9')" class="list1" title="중소기업제품 구매촉진 및 판로지원에 관한 법률 일부개정법률안(대안)">중소기업제품 구매촉진 및 판로지원에 관한 법률 일부개정법률안(대안)</a>
+													</td>
+													<td align="center" class="text6">
+														위원장
+													</td>
+													<td align="center" class="text6">
+														2014-12-26
+													</td>
+													
+														<td align="center" class="text6">
+															2014-12-29
+														</td>
+														<td align="center" class="text6">
+															원안가결
+														</td>
+													
+													<td align="center" class="text6">
+														
+													</td>
+													<td align="center" class="text6">																																			
+													
+														공포
+													
+													</td>
+												</tr>
+												<tr bgcolor="#DBDBDB">
+													<td height="1" colspan="8" align="center"></td>
+												</tr>
+																				
+												<tr>
+													<td height="29" align="center" class="text6">
+														1913224
+													</td>
+													<td>
+														<img src="./국회-의안정보시스템5_files/icon_02.gif" width="13" height="14" border="0" align="absmiddle" alt="구분">&nbsp;
+															<a href="javascript:GoDetail('PRC_E1N4C1A1N2A8P2U0Y1R4U3K2K3X5Z6')" class="list1" title="중소기업진흥에 관한 법률 일부개정법률안(대안)">중소기업진흥에 관한 법률 일부개정법률안(대안)</a>
+													</td>
+													<td align="center" class="text6">
+														위원장
+													</td>
+													<td align="center" class="text6">
+														2014-12-26
+													</td>
+													
+														<td align="center" class="text6">
+															2014-12-29
+														</td>
+														<td align="center" class="text6">
+															원안가결
+														</td>
+													
+													<td align="center" class="text6">
+														
+													</td>
+													<td align="center" class="text6">																																			
+													
+														공포
+													
+													</td>
+												</tr>
+												<tr bgcolor="#DBDBDB">
+													<td height="1" colspan="8" align="center"></td>
+												</tr>
+																				
+												<tr>
+													<td height="29" align="center" class="text6">
+														1913223
+													</td>
+													<td>
+														<img src="./국회-의안정보시스템5_files/icon_02.gif" width="13" height="14" border="0" align="absmiddle" alt="구분">&nbsp;
+															<a href="javascript:GoDetail('PRC_M1Z4D1W1J2O4K1G8P0O3J3D3Y2R6C7')" class="list1" title="중소기업 기술혁신 촉진법 일부개정법률안(대안)">중소기업 기술혁신 촉진법 일부개정법률안(대안)</a>
+													</td>
+													<td align="center" class="text6">
+														위원장
+													</td>
+													<td align="center" class="text6">
+														2014-12-26
+													</td>
+													
+														<td align="center" class="text6">
+															2014-12-29
+														</td>
+														<td align="center" class="text6">
+															원안가결
+														</td>
+													
+													<td align="center" class="text6">
+														
+													</td>
+													<td align="center" class="text6">																																			
+													
+														공포
+													
+													</td>
+												</tr>
+												<tr bgcolor="#DBDBDB">
+													<td height="1" colspan="8" align="center"></td>
+												</tr>
+																				
+												<tr>
+													<td height="29" align="center" class="text6">
+														1913222
+													</td>
+													<td>
+														<img src="./국회-의안정보시스템5_files/icon_02.gif" width="13" height="14" border="0" align="absmiddle" alt="구분">&nbsp;
+															<a href="javascript:GoDetail('PRC_P1G4E1K1V2A4R1G7W4B1L2J6L8L2O5')" class="list1" title="석유 및 석유대체연료 사업법 일부개정법률안(대안)">석유 및 석유대체연료 사업법 일부개정법률안(대안)</a>
+													</td>
+													<td align="center" class="text6">
+														위원장
+													</td>
+													<td align="center" class="text6">
+														2014-12-26
+													</td>
+													
+														<td align="center" class="text6">
+															2014-12-29
+														</td>
+														<td align="center" class="text6">
+															원안가결
+														</td>
+													
+													<td align="center" class="text6">
+														
+													</td>
+													<td align="center" class="text6">																																			
+													
+														공포
+													
+													</td>
+												</tr>
+												<tr bgcolor="#DBDBDB">
+													<td height="1" colspan="8" align="center"></td>
+												</tr>
+																				
+												<tr>
+													<td height="29" align="center" class="text6">
+														1913221
+													</td>
+													<td>
+														<img src="./국회-의안정보시스템5_files/icon_02.gif" width="13" height="14" border="0" align="absmiddle" alt="구분">&nbsp;
+															<a href="javascript:GoDetail('PRC_C1E4F1B1E2T4S1Y7T5E5J3K0T6K8W1')" class="list1" title="에너지이용 합리화법 일부개정법률안(대안)">에너지이용 합리화법 일부개정법률안(대안)</a>
+													</td>
+													<td align="center" class="text6">
+														위원장
+													</td>
+													<td align="center" class="text6">
+														2014-12-26
+													</td>
+													
+														<td align="center" class="text6">
+															2014-12-29
+														</td>
+														<td align="center" class="text6">
+															원안가결
+														</td>
+													
+													<td align="center" class="text6">
+														
+													</td>
+													<td align="center" class="text6">																																			
+													
+														공포
+													
+													</td>
+												</tr>
+												<tr bgcolor="#DBDBDB">
+													<td height="1" colspan="8" align="center"></td>
+												</tr>
+																				
+												<tr>
+													<td height="29" align="center" class="text6">
+														1913220
+													</td>
+													<td>
+														<img src="./국회-의안정보시스템5_files/icon_02.gif" width="13" height="14" border="0" align="absmiddle" alt="구분">&nbsp;
+															<a href="javascript:GoDetail('PRC_J1H4H1R1X2L4D1Y7J4R0C0R8T8H3W7')" class="list1" title="액화석유가스의 안전관리 및 사업법 전부개정법률안(대안)">액화석유가스의 안전관리 및 사업법 전부개정법률안(대안)</a>
+													</td>
+													<td align="center" class="text6">
+														위원장
+													</td>
+													<td align="center" class="text6">
+														2014-12-26
+													</td>
+													
+														<td align="center" class="text6">
+															2014-12-29
+														</td>
+														<td align="center" class="text6">
+															원안가결
+														</td>
+													
+													<td align="center" class="text6">
+														
+													</td>
+													<td align="center" class="text6">																																			
+													
+														공포
+													
+													</td>
+												</tr>
+												<tr bgcolor="#DBDBDB">
+													<td height="1" colspan="8" align="center"></td>
+												</tr>
+																				
+												<tr>
+													<td height="29" align="center" class="text6">
+														1913219
+													</td>
+													<td>
+														<img src="./국회-의안정보시스템5_files/icon_02.gif" width="13" height="14" border="0" align="absmiddle" alt="구분">&nbsp;
+															<a href="javascript:GoDetail('PRC_I1F4U1C1T2C4B1F7P5V2K1Q2P6B4A2')" class="list1" title="신에너지 및 재생에너지 개발·이용·보급 촉진법 일부개정법률안(대안)">신에너지 및 재생에너지 개발·이용·보급 촉진법 일부개정법률안(대안)</a>
+													</td>
+													<td align="center" class="text6">
+														위원장
+													</td>
+													<td align="center" class="text6">
+														2014-12-26
+													</td>
+													
+														<td align="center" class="text6">
+															2014-12-29
+														</td>
+														<td align="center" class="text6">
+															원안가결
+														</td>
+													
+													<td align="center" class="text6">
+														
+													</td>
+													<td align="center" class="text6">																																			
+													
+														공포
+													
+													</td>
+												</tr>
+												<tr bgcolor="#DBDBDB">
+													<td height="1" colspan="8" align="center"></td>
+												</tr>
+																				
+												<tr>
+													<td height="29" align="center" class="text6">
+														1913218
+													</td>
+													<td>
+														<img src="./국회-의안정보시스템5_files/icon_02.gif" width="13" height="14" border="0" align="absmiddle" alt="구분">&nbsp;
+															<a href="javascript:GoDetail('PRC_W1I4X1N1G2W8N1A9I5D1A4B7G7C4G5')" class="list1" title="광산피해의 방지 및 복구에 관한 법률 일부개정법률안(대안)">광산피해의 방지 및 복구에 관한 법률 일부개정법률안(대안)</a>
+													</td>
+													<td align="center" class="text6">
+														위원장
+													</td>
+													<td align="center" class="text6">
+														2014-12-26
+													</td>
+													
+														<td align="center" class="text6">
+															2014-12-29
+														</td>
+														<td align="center" class="text6">
+															원안가결
+														</td>
+													
+													<td align="center" class="text6">
+														
+													</td>
+													<td align="center" class="text6">																																			
+													
+														공포
+													
+													</td>
+												</tr>
+												<tr bgcolor="#DBDBDB">
+													<td height="1" colspan="8" align="center"></td>
+												</tr>
+																				
+												<tr>
+													<td height="29" align="center" class="text6">
+														1913217
+													</td>
+													<td>
+														<img src="./국회-의안정보시스템5_files/icon_02.gif" width="13" height="14" border="0" align="absmiddle" alt="구분">&nbsp;
+															<a href="javascript:GoDetail('PRC_M1T4Z1A1O2F4I1J6D4W2R3R6A7T4X5')" class="list1" title="제품안전기본법 일부개정법률안(대안)">제품안전기본법 일부개정법률안(대안)</a>
+													</td>
+													<td align="center" class="text6">
+														위원장
+													</td>
+													<td align="center" class="text6">
+														2014-12-26
+													</td>
+													
+														<td align="center" class="text6">
+															2014-12-29
+														</td>
+														<td align="center" class="text6">
+															원안가결
+														</td>
+													
+													<td align="center" class="text6">
+														
+													</td>
+													<td align="center" class="text6">																																			
+													
+														공포
+													
+													</td>
+												</tr>
+												<tr bgcolor="#DBDBDB">
+													<td height="1" colspan="8" align="center"></td>
+												</tr>
+																				
+												<tr>
+													<td height="29" align="center" class="text6">
+														1913216
+													</td>
+													<td>
+														<img src="./국회-의안정보시스템5_files/icon_02.gif" width="13" height="14" border="0" align="absmiddle" alt="구분">&nbsp;
+															<a href="javascript:GoDetail('PRC_D1D4L1V1H2J4G1B7M0R2F1F8X1A2D8')" class="list1" title="산업기술의 유출방지 및 보호에 관한 법률 일부개정법률안(대안)">산업기술의 유출방지 및 보호에 관한 법률 일부개정법률안(대안)</a>
+													</td>
+													<td align="center" class="text6">
+														위원장
+													</td>
+													<td align="center" class="text6">
+														2014-12-26
+													</td>
+													
+														<td align="center" class="text6">
+															2014-12-29
+														</td>
+														<td align="center" class="text6">
+															원안가결
+														</td>
+													
+													<td align="center" class="text6">
+														
+													</td>
+													<td align="center" class="text6">																																			
+													
+														공포
+													
+													</td>
+												</tr>
+												<tr bgcolor="#DBDBDB">
+													<td height="1" colspan="8" align="center"></td>
+												</tr>
+																				
+												<tr>
+													<td height="29" align="center" class="text6">
+														1913215
+													</td>
+													<td>
+														<img src="./국회-의안정보시스템5_files/icon_02.gif" width="13" height="14" border="0" align="absmiddle" alt="구분">&nbsp;
+															<a href="javascript:GoDetail('PRC_S1H4K1D1O2Z8H1V9Q5I9A3P2R2O0K7')" class="list1" title="소기업 및 소상공인 지원을 위한 특별조치법 전부개정법률안(대안)">소기업 및 소상공인 지원을 위한 특별조치법 전부개정법률안(대안)</a>
+													</td>
+													<td align="center" class="text6">
+														위원장
+													</td>
+													<td align="center" class="text6">
+														2014-12-26
+													</td>
+													
+														<td align="center" class="text6">
+															2014-12-29
+														</td>
+														<td align="center" class="text6">
+															원안가결
+														</td>
+													
+													<td align="center" class="text6">
+														
+													</td>
+													<td align="center" class="text6">																																			
+													
+														공포
+													
+													</td>
+												</tr>
+												<tr bgcolor="#DBDBDB">
+													<td height="1" colspan="8" align="center"></td>
+												</tr>
+																				
+												<tr>
+													<td height="29" align="center" class="text6">
+														1913214
+													</td>
+													<td>
+														<img src="./국회-의안정보시스템5_files/icon_02.gif" width="13" height="14" border="0" align="absmiddle" alt="구분">&nbsp;
+															<a href="javascript:GoDetail('PRC_F1I4I1L1U2J8V1Q9W5Q0J3V9L4Y7K7')" class="list1" title="고압가스 안전관리법 일부개정법률안(대안)">고압가스 안전관리법 일부개정법률안(대안)</a>
+													</td>
+													<td align="center" class="text6">
+														위원장
+													</td>
+													<td align="center" class="text6">
+														2014-12-26
+													</td>
+													
+														<td align="center" class="text6">
+															2014-12-29
+														</td>
+														<td align="center" class="text6">
+															원안가결
+														</td>
+													
+													<td align="center" class="text6">
+														
+													</td>
+													<td align="center" class="text6">																																			
+													
+														공포
+													
+													</td>
+												</tr>
+												<tr bgcolor="#DBDBDB">
+													<td height="1" colspan="8" align="center"></td>
+												</tr>
+																				
+												<tr>
+													<td height="29" align="center" class="text6">
+														1913213
+													</td>
+													<td>
+														<img src="./국회-의안정보시스템5_files/icon_02.gif" width="13" height="14" border="0" align="absmiddle" alt="구분">&nbsp;
+															<a href="javascript:GoDetail('PRC_I1Q4B1O2V0V8G1C9R2O0E0I1A0G8M6')" class="list1" title="다중이용업소의 안전관리에 관한 특별법 일부개정법률안(대안)">다중이용업소의 안전관리에 관한 특별법 일부개정법률안(대안)</a>
+													</td>
+													<td align="center" class="text6">
+														위원장
+													</td>
+													<td align="center" class="text6">
+														2014-12-26
+													</td>
+													
+														<td align="center" class="text6">
+															2014-12-29
+														</td>
+														<td align="center" class="text6">
+															원안가결
+														</td>
+													
+													<td align="center" class="text6">
+														
+													</td>
+													<td align="center" class="text6">																																			
+													
+														공포
+													
+													</td>
+												</tr>
+												<tr bgcolor="#DBDBDB">
+													<td height="1" colspan="8" align="center"></td>
+												</tr>
+																				
+												<tr>
+													<td height="29" align="center" class="text6">
+														1913212
+													</td>
+													<td>
+														<img src="./국회-의안정보시스템5_files/icon_02.gif" width="13" height="14" border="0" align="absmiddle" alt="구분">&nbsp;
+															<a href="javascript:GoDetail('PRC_I1A4K1A2R0A8D1A9G2C0I4U7K3Z4T4')" class="list1" title="급경사지 재해예방에 관한 법률 일부개정법률안(대안)">급경사지 재해예방에 관한 법률 일부개정법률안(대안)</a>
+													</td>
+													<td align="center" class="text6">
+														위원장
+													</td>
+													<td align="center" class="text6">
+														2014-12-26
+													</td>
+													
+														<td align="center" class="text6">
+															2014-12-29
+														</td>
+														<td align="center" class="text6">
+															원안가결
+														</td>
+													
+													<td align="center" class="text6">
+														
+													</td>
+													<td align="center" class="text6">																																			
+													
+														공포
+													
+													</td>
+												</tr>
+												<tr bgcolor="#DBDBDB">
+													<td height="1" colspan="8" align="center"></td>
+												</tr>
+																				
+												<tr>
+													<td height="29" align="center" class="text6">
+														1913211
+													</td>
+													<td>
+														<img src="./국회-의안정보시스템5_files/icon_02.gif" width="13" height="14" border="0" align="absmiddle" alt="구분">&nbsp;
+															<a href="javascript:GoDetail('PRC_W1F4G1S2B0K8Y1V9P1S9P0Z2E7E8G6')" class="list1" title="지방세법 일부개정법률안(대안)">지방세법 일부개정법률안(대안)</a>
+													</td>
+													<td align="center" class="text6">
+														위원장
+													</td>
+													<td align="center" class="text6">
+														2014-12-26
+													</td>
+													
+														<td align="center" class="text6">
+															2014-12-29
+														</td>
+														<td align="center" class="text6">
+															원안가결
+														</td>
+													
+													<td align="center" class="text6">
+														
+													</td>
+													<td align="center" class="text6">																																			
+													
+														공포
+													
+													</td>
+												</tr>
+												<tr bgcolor="#DBDBDB">
+													<td height="1" colspan="8" align="center"></td>
+												</tr>
+																				
+												<tr>
+													<td height="29" align="center" class="text6">
+														1913210
+													</td>
+													<td>
+														<img src="./국회-의안정보시스템5_files/icon_02.gif" width="13" height="14" border="0" align="absmiddle" alt="구분">&nbsp;
+															<a href="javascript:GoDetail('ARC_B1G4B1B2E2J6C1V5K1B3A5F8A6J9R8')" class="list1" title="군인복지기금법 일부개정법률안">군인복지기금법 일부개정법률안</a>
+													</td>
+													<td align="center" class="text6">
+														정부
+													</td>
+													<td align="center" class="text6">
+														2014-12-26
+													</td>
+													
+														<td align="center" class="text6">
+															2015-03-03
+														</td>
+														<td align="center" class="text6">
+															대안반영폐기
+														</td>
+													
+													<td align="center" class="text6">
+														
+														<img src="./국회-의안정보시스템5_files/icon_txt.gif" align="absmiddle" style="cursor:pointer" onclick="javascript:OpenSummary(&#39;ARC_B1G4B1B2E2J6C1V5K1B3A5F8A6J9R8&#39;)" alt="제안이유 및 주요내용">
+														
+													</td>
+													<td align="center" class="text6">																																			
+													
+														대안반영폐기
+													
+													</td>
+												</tr>
+												<tr bgcolor="#DBDBDB">
+													<td height="1" colspan="8" align="center"></td>
+												</tr>
+												
+												<tr>
+													<td height="10" align="center"></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr>
+													<td colspan="8" height="26">
+														<table width="100%" border="0" cellspacing="0" cellpadding="0">
+															<tbody><tr>
+																<td width="20%"></td>
+																<td width="*" align="center" id="PAGE_LIST_VIEW">&nbsp;<img src="./국회-의안정보시스템5_files/btn_pre_end_gray.gif" alt="맨앞으로" align="absmiddle" border="0">&nbsp;&nbsp;<img src="./국회-의안정보시스템5_files/btn_pre_gray.gif" align="absmiddle" border="0">&nbsp;&nbsp;<a href="javascript:GoPage(1)" class="list1">[1]</a>&nbsp;&nbsp;<a href="javascript:GoPage(2)" class="list1">[2]</a>&nbsp;&nbsp;<a href="javascript:GoPage(3)" class="list1">[3]</a>&nbsp;&nbsp;<a href="javascript:GoPage(4)" class="list1">[4]</a>&nbsp;&nbsp;<a href="javascript:GoPage(5)" class="list1"><b>[5]</b></a>&nbsp;&nbsp;<a href="javascript:GoPage(6)" class="list1">[6]</a>&nbsp;&nbsp;<a href="javascript:GoPage(7)" class="list1">[7]</a>&nbsp;&nbsp;<a href="javascript:GoPage(8)" class="list1">[8]</a>&nbsp;&nbsp;<a href="javascript:GoPage(9)" class="list1">[9]</a>&nbsp;&nbsp;<a href="javascript:GoPage(10)" class="list1">[10]</a>&nbsp;&nbsp;<img src="./국회-의안정보시스템5_files/btn_next.gif" style="cursor:hand" onclick="javascript:GoPage(11)" align="absmiddle" border="0">&nbsp;&nbsp;<img src="./국회-의안정보시스템5_files/btn_next_end.gif" style="cursor:hand" onclick="javascript:GoPage(55)" alt="맨뒤로" align="absmiddle" border="0">&nbsp;</td>
+																<td width="20%"></td>
+															</tr>
+														</tbody></table>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td height="10">&nbsp;</td>
+									<td>&nbsp;</td>
+								</tr>
+							</tbody>
+						</table>
+					</td>
+					<td>&nbsp;</td>
+				</tr>
+			</tbody>
+		</table>
+		<table width="100%" border="0" cellspacing="0" cellpadding="0" height="46" background="./국회-의안정보시스템5_files/foot_bg.gif">
+			<tbody>
+				<tr>
+					<td width="970">
+						<table width="970" border="0" cellspacing="0" cellpadding="0">
+							
+				<tbody>
+					<tr>
+						<td>
+							<img src="./국회-의안정보시스템5_files/copyright.gif" width="264" height="46" alt="Copyright @ 2005 대한민국국회, All Rights reserved 서울시 영등포구 의사당대로 1 02)788-2030">
+						</td>
+						<td align="right" width="*">
+							<select name="menu2" onchange="if(this.options[this.selectedIndex].value != &#39;&#39;) window.open(this.options[this.selectedIndex].value,&#39;_blank&#39;)" class="text2">
+								<option selected="">:::: 국회정보시스템 ::::</option>
+								<option value="http://naph.assembly.go.kr">맞춤입법콘텐츠검색시스템</option>
+								<option value="http://likms.assembly.go.kr/law">법률지식정보시스템</option>
+								<option value="http://likms.assembly.go.kr/budget">예결산정보시스템</option>
+								<option value="http://likms.assembly.go.kr/inspections">국정감사정보시스템</option>
+								<option value="http://likms.assembly.go.kr/record">회의록시스템</option>
+								<option value="http://assembly.webcast.go.kr">인터넷의사중계시스템</option>
+								<option value="http://w3.assembly.go.kr/vod/index.jsp">영상회의록시스템</option>
+								<option value="http://w3.assembly.go.kr/multimedia">미디어자료관</option>
+								<option value="http://pal.assembly.go.kr">국회입법예고시스템</option>
+							</select>
+						</td>
+						<td width="400" align="right">
+							<a href="http://likms.assembly.go.kr/bill/WebContents/persnalinfo.htm"><img src="./국회-의안정보시스템5_files/m_07.gif" width="85" height="12" border="0" alt="최근통과의안"></a>
+							<img src="./국회-의안정보시스템5_files/m_bar.gif" width="2" height="12" alt="구분선">			
+							<a href="http://likms.assembly.go.kr/bill/jsp/LatestPassedBill.jsp"><img src="./국회-의안정보시스템5_files/m_01.gif" width="61" height="12" border="0" alt="최근통과의안"></a>
+							<img src="./국회-의안정보시스템5_files/m_bar.gif" width="2" height="12" alt="구분선">
+							<a href="http://likms.assembly.go.kr/bill/jsp/LatestReceiptBill.jsp"><img src="./국회-의안정보시스템5_files/m_02.gif" border="0" alt="최근접수의안"></a>
+							<img src="./국회-의안정보시스템5_files/m_bar.gif" width="2" height="12" alt="구분선">
+							<!--
+							<A HREF="LatestSimsaBill.jsp"><IMG SRC="/bill/WebContents/Common/m_06.gif" BORDER="0"></A>
+							<IMG SRC="/bill/WebContents/Common/m_bar.gif" WIDTH="2"	HEIGHT="12">
+							-->
+							<a href="http://likms.assembly.go.kr/bill/WebContents/Help.htm"><img src="./국회-의안정보시스템5_files/m_03.gif" border="0" alt="도움말"></a>
+							<img src="./국회-의안정보시스템5_files/m_bar.gif" width="2" height="12" alt="구분선">
+							<!--
+							<A HREF="http://search.assembly.go.kr:8080/bill/help/02-4.asf"><IMG SRC="../WebContents/Common/m_05.gif" BORDER="0"></A>
+							<IMG SRC="../WebContents/Common/m_bar.gif" WIDTH="2" HEIGHT="12">
+							-->
+							<a href="http://likms.assembly.go.kr/bill/WebContents/SiteMap.htm"><img src="./국회-의안정보시스템5_files/m_04.gif" border="0" alt="사이트맵"></a>
+						</td>
+					</tr>
+				</tbody>
+						</table>
+					</td>
+					<td></td>
+				</tr>
+			</tbody>
+		</table>
+		<iframe name="HIDDEN_FRAME" width="1" height="1" src="./국회-의안정보시스템5_files/pop.html">
+	&lt;/BODY&gt;
+&lt;/HTML&gt;
+</iframe></body><span class="gr__tooltip"><span class="gr__tooltip-content"></span><i class="gr__tooltip-logo"></i><span class="gr__triangle"></span></span></html>
