@@ -42,8 +42,8 @@ function process($db, $file) {
         if ($bill) {
           // Do something with bill
           echo $bill->toString() ."\n";
-          exit();
-          storeContent($db, $bill);
+
+          // storeContent($db, $bill);
         }
 
         $bill = new Bill("","");
