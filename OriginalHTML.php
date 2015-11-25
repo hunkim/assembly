@@ -21,31 +21,13 @@ $path = $argv[1];
 $d = dir($argv[1]);
 while (false !== ($entry = $d->read())) {
     if(endsWith($entry, ".html")) {
-        $billid = process("$path/$entry");
+        $billid = process($db, "$path/$entry");
         exit;
-
-        $billid = "PRC_A1J5J1E1N1K0Q1O4A4V8L1H4C2Q4C9";
-
-
-        if (exist($db, $billid)) {
-          echo "$billid is already in our DB!\b";
-        } else {
-          storeContent($db, $billid);
-        }
     }
 }
 
-//http://stackoverflow.com/questions/834303/startswith-and-endswith-functions-in-php
-function startsWith($haystack, $needle) {
-    // search backwards starting from haystack length characters from the end
-    return $needle === "" || strrpos($haystack, $needle, -strlen($haystack)) !== FALSE;
-}
-function endsWith($haystack, $needle) {
-    // search forward starting from end minus needle length characters
-    return $needle === "" || (($temp = strlen($haystack) - strlen($needle)) >= 0 && strpos($haystack, $needle, $temp) !== FALSE);
-}
 
-function process($file) {
+function process($db, $file) {
   $content = file_get_contents ($file);
 
   $txt = strip_tags($content);
@@ -149,14 +131,9 @@ function parseBillId($str) {
   return "";
 }
 
-function exist($db, $billid) {
-  $result = $db->query("SELECT id FROM HTML WHERE id='". $db->real_escape_string($billid) ."'");
-
-  return ($result!==false && $result->num_rows > 0);
-}
 
 function storeContent($db, $bill) {
-  $billid = $bull->id;
+  $billid = $bill->id;
   // http://likms.assembly.go.kr/bill/jsp/CoactorListPopup.jsp?bill_id=PRC_A1J5J1E1N1K0Q1O4A4V8L1H4C2Q4C9
   $courl = "http://likms.assembly.go.kr/bill/jsp/CoactorListPopup.jsp?bill_id=$billid";
   $sumurl = "http://likms.assembly.go.kr/bill/jsp/SummaryPopup.jsp?bill_id=$billid";
@@ -164,7 +141,7 @@ function storeContent($db, $bill) {
 
   echo("BID: " . $billid);
   exit();
-  
+
   $bill->coActorHTML = getContentURL($courl);
   $bill->sumHTML = getContentURL($sumurl);
   $bill->billHTML = getContentURL($billurl);
@@ -190,5 +167,17 @@ function getContentURL($url) {
     echo "Done!\n";
     return iconv('EUC-KR', 'UTF-8', $content);
 }
+
+
+//http://stackoverflow.com/questions/834303/startswith-and-endswith-functions-in-php
+function startsWith($haystack, $needle) {
+    // search backwards starting from haystack length characters from the end
+    return $needle === "" || strrpos($haystack, $needle, -strlen($haystack)) !== FALSE;
+}
+function endsWith($haystack, $needle) {
+    // search forward starting from end minus needle length characters
+    return $needle === "" || (($temp = strlen($haystack) - strlen($needle)) >= 0 && strpos($haystack, $needle, $temp) !== FALSE);
+}
+
 
 ?>

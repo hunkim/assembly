@@ -26,7 +26,18 @@ class Bill {
     return "I: $this->id T: $this->title\n p: $this->proposed\np:$this->processed b:$this->by, r: $this->result s:$this->summary";
   }
 
+
+  function exist($db) {
+    $result = $db->query("SELECT id FROM HTML WHERE id='". $db->real_escape_string($this->id) ."'");
+
+    return ($result!==false && $result->num_rows > 0);
+  }
+
   function insertHTML($db) {
+    if ($this->exist($db)) {
+      echo ("$this->id Already there!");
+      return;
+    }
 
     $sql = "INSERT IGNORE INTO Bill SET ";
     $sql .= "id='" . $db->real_escape_string($this->id) . "'\n";
