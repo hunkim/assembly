@@ -1,5 +1,7 @@
 <?php
 
+include 'Actor.php';
+
 // http://likms.assembly.go.kr/bill/jsp/CoactorListPopup.jsp?bill_id=PRC_A1J5J1E1N1K0Q1O4A4V8L1H4C2Q4C9
 $url = "http://likms.assembly.go.kr/bill/jsp/CoactorListPopup.jsp?bill_id=";
 $build = "PRC_A1J5J1E1N1K0Q1O4A4V8L1H4C2Q4C9";
@@ -37,8 +39,11 @@ foreach ($tokens as $value) {
   }
 }
 
-print_r($tokens);
-print_r($namearr);
+foreach ($namearr as $value) {
+  if ($value!=='') {
+    Actor a = new Actor($value);
+  }
+}
 
 function parse_names($str) {
   $namearr = explode( ')', $str);
