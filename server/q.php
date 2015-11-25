@@ -816,20 +816,22 @@ function processQuery($apptype, $sql) {
     $idx = 0;
     while($row = $result->fetch_array(MYSQLI_ASSOC)) {
       $id = $row['id'];
-      if (prevId!=$id) {
+      if ($prevId!=$id) {
           if($idx!=0) {
             $rows[] = $data;
           }
 
           $data['articles']=[];
           $data['name']=$row['cname'];
+          $prevId = $id;
       }
 
-      $data['articles'][] = [$row[y].$row[m]=>$row[c]];
-      $data['total']+=$row[c];
+      $data['articles'][] = [$row['y'].$row['m']=>$row['c']];
+      $data['total']+=$row['c'];
 
       $idex ++;
     }
+
   } else {
     while($row = $result->fetch_array(MYSQLI_ASSOC)) {
       $rows[] = $row;
