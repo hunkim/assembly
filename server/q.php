@@ -13,7 +13,7 @@ if (!$apptype) {
 }
 
 
-$json = {
+$json = '{
   "name": "flare",
   "children": [{
     "name": "analytics",
@@ -769,7 +769,8 @@ $json = {
       "size": 16540
     }]
   }]
-};
+};';
+
 // Basic information SQL
 switch($apptype) {
   case 'coact':
