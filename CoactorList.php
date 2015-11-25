@@ -41,7 +41,7 @@ foreach ($tokens as $value) {
 
 foreach ($namearr as $value) {
   if ($value!=='') {
-    Actor a = new Actor($value);
+    $a = new Actor($value);
   }
 }
 
