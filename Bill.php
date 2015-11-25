@@ -85,6 +85,7 @@ class Bill {
 
     $sql .= "WHERE id='" . $db->real_escape_string($this->id) . "';\n";
 
+    echo ($sql);
     if ($db->query($sql) === TRUE) {
       echo "Bill record updated successfully.\n";
     } else {
