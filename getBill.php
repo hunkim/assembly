@@ -31,6 +31,7 @@ $title = "";
 $summary = "";
 foreach ($tokens as $line) {
   $line = trim($line); // let's trim
+  echo ("$line " . strpos($line, "제안이유"));
   if ($line=="" || strpos($line, "제안이유") || strpos($line, "http:")) {
     continue;
   }
