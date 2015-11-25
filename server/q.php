@@ -15,7 +15,7 @@ if (!$apptype) {
 // Basic information SQL
 switch($apptype) {
   case 'coact':
-   $sql = "select name, cname, party, actorid, count(actorid) c from CoActor c ".
+   $sql = "select name, cname, party, actorid as id, count(actorid) c from CoActor c ".
           " inner join Actor a on a.id=actorid inner join  (select distinct(billid) from CoActor ".
           " where actorid = ?) x on x.billid=c.billid group by actorid order by c desc limit 10;";
     break;
