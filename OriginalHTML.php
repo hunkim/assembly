@@ -2,6 +2,8 @@
 error_reporting(E_ALL);
 assert_options(ASSERT_BAIL,     true);
 
+include 'Bill.php';
+
 
 if (count($argv) < 2) {
     echo "Usage: $argv[0] <listhtml_dir>\n\n";
