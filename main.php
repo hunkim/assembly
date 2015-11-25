@@ -38,7 +38,6 @@ while ($row = $db->fetch_assoc($result)) {
         $a->insert($db);
         $a->insertWithBill($db, $id);
     }
-  }
 }
 
 // Free the resources associated with the result set
