@@ -18,14 +18,14 @@ function getBill($id, $content) {
   foreach ($tokens as $line) {
     $line = trim($line); // let's trim
 
-    if (strpos($line, "제안이유")!==false)) {
+    if (strpos($line, "제안이유")!==false) {
       $start = true;
     }
 
     if (!$start) {
       continue;
     }
-    
+
     echo $line;
     if ($line=="" || strpos($line, "제안이유")!==false || strpos($line, "http://")!==false) {
       continue;
