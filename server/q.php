@@ -68,7 +68,6 @@ function processQuery($sql) {
     // make array and type
     $params = [&$bid];
     $type = "s";
-    echo("$bid");
   }
 
 	// add the last part
