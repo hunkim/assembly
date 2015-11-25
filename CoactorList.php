@@ -33,8 +33,8 @@ foreach ($tokens as $value) {
   if ($proposed && strops($value, ')') {
     $namearr = parse_names($value);
   }
-
 }
+
 print_r($tokens);
 print_r($namearr);
 
