@@ -1,7 +1,7 @@
 <?php
 
 class Actor {
-  var $id;
+  var $id = flase;
   var $name;
   var $cname;
   var $party;
@@ -40,7 +40,7 @@ class Actor {
   }
 
   function insertWithBill($db, $billid) {
-    assert($this->id);
+    assert($this->id && this->id!="");
 
     $sql = "INSERT INTO CoActor SET ";
     $sql .= "actorid='" . $db->real_escape_string($this->id) . "'\n";
