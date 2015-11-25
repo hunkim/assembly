@@ -5,6 +5,12 @@ class Bill {
   var $summary;
   var $title;
 
+  var $result;
+  var $by;
+
+  var $proposed;
+  var $processed;
+
   // 안규백(새정치민주연합/安圭伯)
   function Bill($title, $summary) {
     $this->title = $title;
@@ -12,7 +18,7 @@ class Bill {
   }
 
   function toString() {
-    return "$this->title\n$this->summary";
+    return "T: $this->title\n p: $this->proposed\np:$this->processed b:$this->by, r: $this->result s:$this->summary";
   }
 
   function insert($db, $id) {

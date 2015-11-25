@@ -33,6 +33,11 @@ while (false !== ($entry = $d->read())) {
     }
 }
 
+//http://stackoverflow.com/questions/834303/startswith-and-endswith-functions-in-php
+function startsWith($haystack, $needle) {
+    // search backwards starting from haystack length characters from the end
+    return $needle === "" || strrpos($haystack, $needle, -strlen($haystack)) !== FALSE;
+}
 function endsWith($haystack, $needle) {
     // search forward starting from end minus needle length characters
     return $needle === "" || (($temp = strlen($haystack) - strlen($needle)) >= 0 && strpos($haystack, $needle, $temp) !== FALSE);
@@ -44,6 +49,71 @@ function process($file) {
   $txt = strip_tags($content);
   $txt = iconv('EUC-KR', 'UTF-8', $content);
   $tokens = preg_split('/\s+/', $txt);
+
+  $billArr = [];
+  $bill = null;
+  $title = "";
+  foreach ($tokens as $line) {
+    if (startsWith($line, 'href="javascript:GoDetail(') {
+        if ($bill) {
+          // Do something with bill
+          echo "$bill->toString()\n";
+        }
+
+        $bill = new Bill("","");
+        $bill.parseId($line)
+        continue;
+    }
+
+    if ($bill==null) {
+      continue;
+    }
+
+    if (isDate($line) && !$bill->proposed) {
+      $bill->proposed = $line;
+      continue;
+    } else {
+      $bill->processed = $line;
+      continue;
+    }
+
+    if (&& startsWith($line, 'title="')) {
+      $title . = $line;
+      $titleMode = ttue;
+      continue;
+    }
+
+
+    if ($title != "") {
+        $title.= $line;
+    }
+
+    if (strpos($line, ')">')!==false) {
+      $title = "";
+      $arr = explode('"', $title);
+      if (count($arr)>2) {
+        $bill->title = $arr[1];
+      }
+    }
+
+    switch($line) {
+      case '부결':
+      case '철회':
+      case '대안반영폐기':
+      case '수정가결':
+      case '원안가결':
+        $bill->result = $line;
+        break;
+      case '위원장':
+      case '의원':
+      case '정부':
+        $bill->by = $line;
+        break;
+
+      case '공포':
+      case '본회의의결':
+    }
+  }
   print_r($tokens);
 }
 
