@@ -20,7 +20,7 @@ echo $content;
 $doc = new DOMDocument();
 $doc->loadHTML($content);
 
-$tables = $doc->getElementsByTagName("TABLE");
+$tables = $doc->getElementsByTagName("TD");
 
 print_r($tables);
 
