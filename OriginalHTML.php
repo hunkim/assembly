@@ -128,6 +128,7 @@ function isDate($str) {
 // [1032] => href="javascript:GoDetail('PRC_D1P4R1J2E3V1C1H4S3J8V2K2F8M4Z7')"
 function parseBillId($str) {
   $arr = explode("'", $str);
+  print_r($arr);
   if (count($arr)<2) {
     return "";
   }
