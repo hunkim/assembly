@@ -11,7 +11,7 @@ class Actor {
     $arr = explode('(', $str);
     assert(count($arr)==2);
 
-    $this->$name = $arr[0];
+    $this->name = $arr[0];
     $arr2 = explode('/', $arr[1]);
     assert(count($arr2)==2);
 
