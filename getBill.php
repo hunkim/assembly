@@ -29,7 +29,8 @@ function getBill($id, $content) {
     }
   }
 
-  $bill = new Bill($id, $title, $summary);
+  $bill = new Bill($id);
+  $bill->setTitleSum($title, $summary);
   return $bill;
 }
 ?>

@@ -32,10 +32,10 @@ class Bill {
   var $coActorHTML;
 
   function Bill($id) {
-    $this->Bill($id, "", "");
+  $this->id = $id;
   }
 
-  function Bill($id, $title, $summary) {
+  function setTitleSum($title, $summary) {
     $this->title = $title;
     $this->summary = $summary;
   }
