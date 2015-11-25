@@ -68,7 +68,7 @@ function process($file) {
         continue;
     }
 
-    if ($bill==null) {
+    if (!$bill) {
       continue;
     }
 
