@@ -21,7 +21,7 @@ $content = file_get_contents ("co.html");
 }
 
 $txt = strip_tags($content);
-$tokens = explode(' ', $txt);
+$tokens = preg_split('/\s+/', $txt);
 
 print_r($tokens);
 
