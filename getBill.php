@@ -38,7 +38,7 @@ foreach ($tokens as $line) {
   if ($idx++==0) {
     $title = $line;
   } else {
-    $summary .= "line\n";
+    $summary .= "$line\n";
   }
 }
 
