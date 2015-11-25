@@ -35,9 +35,11 @@ switch($apptype) {
 
   case 'summary':
     $sql = "select summary from Bill where id = ?;";
+    break;
 
   case 'billactors':
     $sql = "select name, cname, party  from Actor a Inner join CoActor c on a.id = c.actorid where c.billid = ? order by name;";
+    break;
 }
 // process and print
 processQuery($sql);
