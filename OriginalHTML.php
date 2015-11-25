@@ -119,6 +119,11 @@ function process($file) {
   print_r($tokens);
 }
 
+//2015-04-30
+function isDate($str) {
+  return is_numeric(replace($str, '-', ''));
+}
+
 // [1032] => href="javascript:GoDetail('PRC_D1P4R1J2E3V1C1H4S3J8V2K2F8M4Z7')"
 function parseBillId($str) {
   $arr = explode("'", $str);
