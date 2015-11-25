@@ -44,7 +44,6 @@ class Bill {
 
   function exist($db) {
     $result = $db->query("SELECT id FROM HTML WHERE id='". $db->real_escape_string($this->id) ."'");
-
     return ($result!==false && $result->num_rows > 0);
   }
 
@@ -52,6 +51,10 @@ class Bill {
     if ($this->exist($db)) {
       echo ("$this->id Already there!");
       return;
+    }
+
+    echo($this->exist($db)) {
+      exit;
     }
 
     $sql = "INSERT INTO Bill SET ";
