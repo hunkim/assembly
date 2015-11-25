@@ -23,6 +23,25 @@ $content = file_get_contents ("co.html");
 $txt = strip_tags($content);
 $tokens = preg_split('/\s+/', $txt);
 
+$propsed = false;
+foreach ($tokens as $value) {
+  if ($value=='발의의원') {
+    $propsed = true;
+    continue;
+  }
+
+  if ($proposed && strops($value, ')') {
+    $namearr = parse_names($value)
+  }
+
+}
 print_r($tokens);
+print_r($namearr);
+
+function parse_names($str) {
+  $namearr = explode(')', $str);
+
+  return $namearr;
+}
 
 ?>
