@@ -55,7 +55,7 @@ class Actor {
 
   function insert($db) {
     // we are done!
-    if (getId($db)===true) {
+    if ($this->getId($db)===true) {
       return;
     }
     $sql = "INSERT INTO ACTOR SET ";
