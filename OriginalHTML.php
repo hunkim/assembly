@@ -2,7 +2,11 @@
 error_reporting(E_ALL);
 assert_options(ASSERT_BAIL,     true);
 
-$billid = "PRC_A1J5J1E1N1K0Q1O4A4V8L1H4C2Q4C9";
+
+if (count($argv) < 2) {
+    echo "Usage: $argv[0] <listhtml_dir>\n\n";
+    exit;
+}
 
 // open DB
 $db = new mysqli("p:localhost", "trend", "", "assembly");
@@ -11,11 +15,35 @@ if ($db->connect_error) {
     die("Connection failed: " . $db->connect_error);
 }
 
-if (exist($db, $billid)) {
-  echo "$billid is already in our DB!\b";
-} else {
-  storeContent($db, $billid);
+
+$d = dir($argv[1]);
+while (false !== ($entry = $d->read())) {
+    if(!is_dir($dir. $entry) && endsWith($entry, ".html")) {
+        $billid = process($entry);
+        exit;
+        
+        $billid = "PRC_A1J5J1E1N1K0Q1O4A4V8L1H4C2Q4C9";
+
+
+        if (exist($db, $billid)) {
+          echo "$billid is already in our DB!\b";
+        } else {
+          storeContent($db, $billid);
+        }
+    }
 }
+
+
+
+
+function process($file) {
+  $content = file_get_contents (file);
+
+  $txt = strip_tags($content);
+  $tokens = preg_split('/\s+/', $txt);
+  print_r($tokens);
+}
+
 
 function exist($db, $billid) {
   $result = $db->query("SELECT id FROM HTML WHERE id='". $db->real_escape_string($billid) ."'");
