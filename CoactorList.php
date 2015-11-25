@@ -18,7 +18,10 @@ echo $url . $build;
 echo $content;
 
 $doc = new DOMDocument();
-$doc->loadHTML("<html><body>Test<br></body></html>");
-echo $doc->saveHTML();
+$doc->loadHTML($content);
+
+$tables = $doc->getElementsByTagName("TABLE");
+
+print_r($tables);
 
 ?>
