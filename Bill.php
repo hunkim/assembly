@@ -38,7 +38,7 @@ class Bill {
   }
 
   function toString() {
-    return "I: $this->id T: $this->title\n p: $this->proposed\np:$this->processed b:$this->by, r: $this->result s:$this->summary";
+    return "I: $this->id T: $this->title\n p: $this->proposed\np:$this->processed b:$this->proposedby, r: $this->result s:$this->summary";
   }
 
 

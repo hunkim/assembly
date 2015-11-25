@@ -65,7 +65,6 @@ function process($db, $file) {
 
     if (startsWith($line, 'title="')) {
       $title .= $line;
-      $titleMode = ttue;
       continue;
     }
 
