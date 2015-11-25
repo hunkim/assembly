@@ -126,7 +126,7 @@ function process($file) {
 function isDate($str) {
   $val = str_replace($str, '-', '');
   echo ($val);
-  return is_numeric();
+  return is_numeric($val);
 }
 
 // [1032] => href="javascript:GoDetail('PRC_D1P4R1J2E3V1C1H4S3J8V2K2F8M4Z7')"
