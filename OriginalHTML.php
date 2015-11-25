@@ -59,7 +59,7 @@ function process($file) {
     if (startsWith($line, 'href="javascript:GoDetail(')) {
         if ($bill) {
           // Do something with bill
-          echo "$bill->toString()\n";
+          echo $bill->toString() ."\n";
           exit();
         }
 
