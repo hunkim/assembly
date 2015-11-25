@@ -21,7 +21,13 @@ if (!$result) {
     die($message);
 }
 
-while ($row = $db->fetch_assoc($result)) {
+
+if ($result->num_rows <= 0) {
+  die($message  = 'no result query: ' . $db->error() . "\n";)
+}
+
+// output data of each row
+while($row = $result->fetch_assoc()) {
     $sumHTML = $row['sumHTML'];
     $coActorHTML =  $row['coActorHTML'];
     $id = $row['id'];
