@@ -5,9 +5,11 @@ class Actor {
   var $name;
   var $cname;
   var $party;
+  var $proposed;
 
   // 안규백(새정치민주연합/安圭伯)
-  function Actor($str) {
+  function Actor($proposed, $str) {
+    $this->proposed = $proposed;
     echo ("Parsing $str\n");
     $arr = explode('(', $str);
     assert(count($arr)==2);
@@ -57,6 +59,8 @@ class Actor {
     $sql = "INSERT INTO CoActor SET ";
     $sql .= "actorid='" . $db->real_escape_string($this->id) . "'\n";
     $sql .= ", billid='" . $db->real_escape_string($billid) . "'\n";
+    $sql .= ", billid='" . $db->real_escape_string($this->proposed) . "'\n";
+
 
     if ($db->query($sql) === TRUE) {
       echo "New coactor record created successfully.\n";
