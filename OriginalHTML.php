@@ -94,7 +94,7 @@ function process($db, $file) {
       case '위원장':
       case '의원':
       case '정부':
-        $bill->by = $line;
+        $bill->proposedby = $line;
         break;
 
       case '공포':

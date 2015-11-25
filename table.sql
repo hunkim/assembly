@@ -15,6 +15,8 @@ CREATE TABLE Bill (
   id varchar(255) NOT NULL UNIQUE,
   title varchar(255),
   summary varchar(1024),
+  proposedby varchar(1024),
+
   cdate DATE,
   pdate DATE,
 

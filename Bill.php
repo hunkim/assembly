@@ -21,7 +21,7 @@ class Bill {
   var $title;
 
   var $result;
-  var $by;
+  var $proposedby;
 
   var $proposed;
   var $processed;
@@ -61,11 +61,11 @@ class Bill {
     $sql .= ", billHTML='" . $db->real_escape_string($this->billHTML) . "'\n";
     $sql .= ", titleHTML='" . $db->real_escape_string($this->titleHTML) . "'\n";
     $sql .= ", coActorHTML='" . $db->real_escape_string($this->coActorHTML) . "'\n";
-    $sql .= ", by='" . $db->real_escape_string($this->by) . "'\n";
+    $sql .= ", proposedby='" . $db->real_escape_string($this->proposedby) . "'\n";
     $sql .= ", result='" . $db->real_escape_string($this->result) . "'\n";
     $sql .= ", proposed='" . $db->real_escape_string($this->proposed) . "'\n";
     $sql .= ", processed='" . $db->real_escape_string($this->processed) . "'\n";
-    $sql .= ", collected=now()'\n";
+    $sql .= ", collected=now();\n";
 
     if ($db->query($sql) === TRUE) {
       echo "New bill record created successfully.\n";
