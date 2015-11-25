@@ -31,12 +31,13 @@ class Actor {
     $sql .= "AND party='" . $db->real_escape_string($this->party) . "'\n";
 
     echo $sql;
-    
+
     if (($result=$db->query($sql)) === TRUE) {
       $this->id = int_val(mysql_fetch_object($result));
       $echo("We have it: $this->id\n");
       return true;
     } else {
+      echo "Error: " . $sql . "\n" . $db->error;
       return false;
     }
   }
