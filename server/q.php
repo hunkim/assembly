@@ -24,7 +24,7 @@ switch($apptype) {
     break;
   case 'all':
     $sql = "select a.name, a.cname, a.party, a.id actorid, count(*) as c from CoActor c INNER JOIN Actor a ON a.id = c.actorid group by actorid order by c desc; ";
-
+}
 // process and print
 processQuery($sql);
 
