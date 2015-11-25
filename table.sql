@@ -15,7 +15,15 @@ CREATE TABLE Bill (
   id varchar(255) NOT NULL UNIQUE,
   title varchar(255),
   summary varchar(1024),
-  cdate DATE,
+  cdate DATE ('Y-m-d'),
+  pdate DATE ('Y-m-d'),
+
+  summaryHTML TEXT,
+  coactorHTML TEXT,
+  billHTML TEXT,
+
+  collected date,
+  processed int(1),
   PRIMARY KEY (id)
 );
 
@@ -33,15 +41,7 @@ CREATE TABLE CoActor (
 
 
 DROP TABLE HTML;
-CREATE TABLE HTML (
-  id varchar(255) NOT NULL,
-  summary TEXT,
-  coactor TEXT,
-  bill TEXT,
-  collected date,
-  processed int(1)
-  PRIMARY KEY (id)
-)
+
 
 CREATE USER 'trend'@'localhost' IDENTIFIED BY 'only!trend!';
 GRANT ALL PRIVILEGES ON assembly.* TO 'trend'@'localhost';

@@ -60,6 +60,7 @@ function process($file) {
         if ($bill) {
           // Do something with bill
           echo $bill->toString() ."\n";
+          storeContent($db, $bill);
           exit();
         }
 
@@ -123,6 +124,13 @@ function process($file) {
   print_r($tokens);
 }
 
+if ($bill) {
+  // Do something with bill
+  echo $bill->toString() ."\n";
+  storeContent($db, $bill);
+  exit();
+}
+
 //2015-04-30
 function isDate($str) {
   return is_numeric(str_replace( '-', '', $str));
@@ -147,38 +155,18 @@ function exist($db, $billid) {
   return ($result!==false && $result->num_rows > 0);
 }
 
-function storeContent($db, $billid) {
+function storeContent($db, $bill) {
+  $billid = $bull->id;
   // http://likms.assembly.go.kr/bill/jsp/CoactorListPopup.jsp?bill_id=PRC_A1J5J1E1N1K0Q1O4A4V8L1H4C2Q4C9
   $courl = "http://likms.assembly.go.kr/bill/jsp/CoactorListPopup.jsp?bill_id=$billid";
   $sumurl = "http://likms.assembly.go.kr/bill/jsp/SummaryPopup.jsp?bill_id=$billid";
   $billurl = "http://likms.assembly.go.kr/bill/jsp/BillDetail.jsp?bill_id=$billid";
 
-  $cocontent = getContentURL($courl);
-  if ($cocontent==null) {
-    return;
-  }
+  $bill->coActorHTML = getContentURL($courl);
+  $bill->sumHTML = getContentURL($sumurl);
+  $bill->billHTML = getContentURL($billurl);
 
-  $sumcontent = getContentURL($sumurl);
-  if ($sumcontent==null) {
-    return;
-  }
-
-  $billcontent = getContentURL($billurl);
-  if ($billcontent==null) {
-    return;
-  }
-
-  $sql = "INSERT INTO HTML SET ";
-  $sql .= "id='" . $db->real_escape_string(($billid)) . "'\n";
-  $sql .= ", summary='" . $db->real_escape_string(($sumcontent)) . "'\n";
-  $sql .= ", coactor='" . $db->real_escape_string(($cocontent)) . "'\n";
-  $sql .= ", bill='" . $db->real_escape_string(($billcontent)) . "'\n";
-
-  if ($db->query($sql) === TRUE) {
-    echo "New actor record created successfully.\n";
-  } else {
-    echo "Error: " . $sql . "<br>" . $db->error;
-  }
+  $bill.insertHTML();
 }
 
 // http://likms.assembly.go.kr/bill/jsp/CoactorListPopup.jsp?bill_id=PRC_A1J5J1E1N1K0Q1O4A4V8L1H4C2Q4C9
