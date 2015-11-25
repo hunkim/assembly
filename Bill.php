@@ -43,7 +43,7 @@ class Bill {
 
 
   function exist($db) {
-    $sql = ""SELECT id FROM HTML WHERE id='". $db->real_escape_string($this->id) . "'";
+    $sql = "SELECT id FROM HTML WHERE id='". $db->real_escape_string($this->id) . "'";
     $result = $db->query($sql);
     echo ($sql);
     return ($result!==false && $result->num_rows > 0);
