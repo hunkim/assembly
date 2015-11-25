@@ -34,18 +34,18 @@ function getActors($billid) {
   $txt = strip_tags($content);
   $tokens = preg_split('/\s+/', $txt);
 
-  $proposed = FALSE;
+  $proposed = 0;
   foreach ($tokens as $value) {
     echo("[$value]\n");
     if ($value=="발의의원") {
       echo("Here!");
-      $proposed = TRUE;
+      $proposed = 1;
       continue;
     }
 
     if ($value=="찬성의원") {
       echo("Agrred!");
-      $proposed = FALSE;
+      $proposed = 2;
       continue;
     }
 
