@@ -76,10 +76,8 @@ function process($file) {
 
     if (isDate($line) && !$bill->proposed) {
       $bill->proposed = $line;
-      continue;
     } else {
       $bill->processed = $line;
-      continue;
     }
 
     if (startsWith($line, 'title="')) {
