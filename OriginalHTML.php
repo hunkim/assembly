@@ -2,7 +2,7 @@
 error_reporting(E_ALL);
 assert_options(ASSERT_BAIL,     true);
 
-include 'Bill.php';
+include_once 'Bill.php';
 
 
 if (count($argv) < 2) {
