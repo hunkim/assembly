@@ -821,7 +821,7 @@ function processQuery($apptype, $sql) {
           }
 
           $data['articles']=[];
-          $data['name']=$row['cname'];
+          $data['name']="$row['name']($row['cname']/$row['party'])";
           $data['total']=0;
           $prevId = $id;
       }
