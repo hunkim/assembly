@@ -746,7 +746,7 @@ switch($apptype) {
     exit(0);
 }
 // process and print
-processQuery($sql);
+processQuery($apptype, $sql);
 
 /**
 * Main function
