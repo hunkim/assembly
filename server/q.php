@@ -20,7 +20,7 @@ switch($apptype) {
     $sql .= " where a.id = ? group by YEAR(cdate), MONTH(cdate) order by YEAR(cdate), MONTH(cdate) ;";
     break;
   case 'list':
-    $sql = "select b.id, title, cdate, pdate, result as m from Bill b ";
+    $sql = "select b.id, title, cdate, pdate, result from Bill b ";
     $sql .= "INNER JOIN CoActor c on c.billid = b.id where c.actorid=? ";
     $sql .= " order by cdate desc";
     break;
