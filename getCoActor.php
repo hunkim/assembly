@@ -35,6 +35,7 @@ function getActors($billid) {
   $tokens = preg_split('/\s+/', $txt);
 
   $proposed = 0;
+  $actorArr = [];
   foreach ($tokens as $value) {
     echo("[$value]\n");
     if ($value=="발의의원") {
@@ -51,16 +52,19 @@ function getActors($billid) {
 
     if ($proposed && strpos($value, ')')) {
       $namearr = parse_names($value);
+
+      // Add actors
+      foreach ($namearr as $value) {
+        if ($value!='') {
+          $a = new Actor($proposed, $value);
+          $actorArr[] = $a;
+        }
+      }
     }
   }
 
-  $actorArr = [];
-  foreach ($namearr as $value) {
-    if ($value!='') {
-      $a = new Actor($proposed, $value);
-      $actorArr[] = $a;
-    }
-  }
+
+
 
   return $actorArr;
 }
