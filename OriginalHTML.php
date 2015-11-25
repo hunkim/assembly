@@ -17,7 +17,7 @@ if (!exist($db, billid)) {
 
 function exist($db, $billid) {
   $result = $db->query("SELECT id FROM HTML WHERE id='$billid'");
-  return db->fetch_array($result);
+  return $db->fetch_array($result);
 }
 
 function storeContent($db, $billid) {
