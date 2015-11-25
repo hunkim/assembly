@@ -53,7 +53,7 @@ function process($file) {
   $tokens = preg_split('/\s+/', $txt);
 
   $billArr = [];
-  $bill = null;
+  $bill = false;
   $title = "";
   foreach ($tokens as $line) {
     if (startsWith($line, 'href="javascript:GoDetail(')) {
