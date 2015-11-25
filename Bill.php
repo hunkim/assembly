@@ -63,8 +63,8 @@ class Bill {
     $sql .= ", coActorHTML='" . $db->real_escape_string($this->coActorHTML) . "'\n";
     $sql .= ", proposedby='" . $db->real_escape_string($this->proposedby) . "'\n";
     $sql .= ", result='" . $db->real_escape_string($this->result) . "'\n";
-    $sql .= ", proposed='" . $db->real_escape_string($this->proposed) . "'\n";
-    $sql .= ", processed='" . $db->real_escape_string($this->processed) . "'\n";
+    $sql .= ", cdate='" . $db->real_escape_string($this->proposed) . "'\n";
+    $sql .= ", pdate='" . $db->real_escape_string($this->processed) . "'\n";
     $sql .= ", collected=now();\n";
 
     if ($db->query($sql) === TRUE) {
