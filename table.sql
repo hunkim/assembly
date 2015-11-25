@@ -30,5 +30,18 @@ CREATE TABLE CoActor (
   CONSTRAINT cac UNIQUE (billid, actorid, proposed)
 );
 
+
+
+DROP TABLE HTML;
+CREATE TABLE HTML (
+  id varchar(255) NOT NULL,
+  summary TEXT,
+  coactor TEXT,
+  bill TEXT,
+  collected date,
+  processed int(1)
+  PRIMARY KEY (id)
+)
+
 CREATE USER 'trend'@'localhost' IDENTIFIED BY 'only!trend!';
 GRANT ALL PRIVILEGES ON assembly.* TO 'trend'@'localhost';
