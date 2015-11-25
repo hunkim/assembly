@@ -17,13 +17,13 @@ if ($db->connect_error) {
 // Perform Query
 $result = $db->query("SELECT * from Bill where processed=null");
 if (!$result) {
-    $message  = 'Invalid query: ' . $db->error() . "\n";
+    $message  = 'Invalid query: ' . $db->error . "\n";
     die($message);
 }
 
 
 if ($result->num_rows <= 0) {
-  die($message  = 'no result query: ' . $db->error() . "\n");
+  die($message  = 'no result query: ' . $db->error . "\n");
 }
 
 // output data of each row
