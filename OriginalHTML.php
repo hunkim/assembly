@@ -22,7 +22,7 @@ $d = dir($argv[1]);
 while (false !== ($entry = $d->read())) {
     if(endsWith($entry, ".html")) {
         $billid = process($db, "$path/$entry");
-        exit; // process only one file for now
+      //  exit; // process only one file for now
     }
 }
 
@@ -46,8 +46,9 @@ function process($db, $file) {
           storeContent($db, $bill);
         }
 
-        $bill = new Bill("","");
-        $bill->id = parseBillId($line);
+        $id = parseBillId($line);
+        $bill = new Bill($id);
+
         continue;
     }
 

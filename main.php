@@ -7,27 +7,41 @@ include 'Bill.php';
 include 'getCoActor.php';
 include 'getBill.php';
 
-// Need to get it from somewhere
-$billid = "PRC_A1J5J1E1N1K0Q1O4A4V8L1H4C2Q4C9";
-
-$bill = getBill($billid);
-
-// open DB
 $db = new mysqli("p:localhost", "trend", "", "assembly");
+
 // Check connection
 if ($db->connect_error) {
     die("Connection failed: " . $db->connect_error);
 }
 
-// insert bill to DB
-$bill->insert($db, $billid);
-
-$actors = getActors($billid);
-
-foreach ($actors as $a) {
-  $a->insert($db);
-  $a->insertWithBill($db, $bill->id);
+/ Perform Query
+$result = $db->query("SELECT * from Bill where processed=null");
+if (!$result) {
+    $message  = 'Invalid query: ' . $db->error() . "\n";
+    die($message);
 }
 
+while ($row = $db->fetch_assoc($result)) {
+    $sumHTML = $row['sumHTML'];
+    $coActorHTML =  $row['coActorHTML'];
+    $id = $row['id'];
+
+    $bill = getBill($id, $sumHTML);
+
+    // insert bill to DB
+    $bill->update($db);
+    $actors = getActors($coActorHTML);
+
+    foreach ($actors as $a) {
+        $a->insert($db);
+        $a->insertWithBill($db, $id);
+    }
+  }
+}
+
+// Free the resources associated with the result set
+// This is done automatically at the end of the script
+$db->free_result($result);
 $db->close();
+
 ?>
