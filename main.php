@@ -26,6 +26,8 @@ while ($row = $db->fetch_assoc($result)) {
     $coActorHTML =  $row['coActorHTML'];
     $id = $row['id'];
 
+    echo ("Working on $id\n");
+
     $bill = getBill($id, $sumHTML);
 
     // insert bill to DB
