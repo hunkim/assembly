@@ -53,10 +53,6 @@ class Bill {
       return;
     }
 
-    echo($this->exist($db)) {
-      exit;
-    }
-
     $sql = "INSERT INTO Bill SET ";
     $sql .= "id='" . $db->real_escape_string($this->id) . "'\n";
     $sql .= ", titleHTML='" . $db->real_escape_string($this->titleHTML) . "'\n";
