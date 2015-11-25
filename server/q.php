@@ -39,6 +39,7 @@ function processQuery($sql) {
   $endyear = intval($_GET['endyear']);
 
   $id = intval($_GET['id']);
+  $debug = $_GET['debug'];
 
   $params = [];
   $type = "";
