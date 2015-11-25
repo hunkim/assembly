@@ -137,9 +137,6 @@ function storeContent($db, $bill) {
   $sumurl = "http://likms.assembly.go.kr/bill/jsp/SummaryPopup.jsp?bill_id=$billid";
   $billurl = "http://likms.assembly.go.kr/bill/jsp/BillDetail.jsp?bill_id=$billid";
 
-  echo("BID: " . $billid);
-  exit();
-
   $bill->coActorHTML = getContentURL($courl);
   $bill->sumHTML = getContentURL($sumurl);
   $bill->billHTML = getContentURL($billurl);
