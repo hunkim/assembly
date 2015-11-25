@@ -55,7 +55,7 @@ function processQuery($sql) {
   $debug = $_GET['debug'];
 
 
-  $bid = intval($_GET['bid']);
+  $bid = $_GET['bid'];
 
   $params = [];
   $type = "";
