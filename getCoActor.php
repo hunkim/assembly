@@ -1,6 +1,6 @@
 <?php
 
-include 'Actor.php';
+include_once 'Actor.php';
 
 // for testing
 if ($argv[0]=='getCoActors.php') {
