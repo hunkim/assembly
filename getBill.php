@@ -2,7 +2,9 @@
 
 include 'Actor.php';
 
-getBillId("PRC_A1J5J1E1N1K0Q1O4A4V8L1H4C2Q4C9");
+if ($argv[0]=='getBill.php') {
+  getBill("PRC_A1J5J1E1N1K0Q1O4A4V8L1H4C2Q4C9");
+}
 
 function getBill($billId) {
   // http://likms.assembly.go.kr/bill/jsp/CoactorListPopup.jsp?bill_id=PRC_A1J5J1E1N1K0Q1O4A4V8L1H4C2Q4C9
