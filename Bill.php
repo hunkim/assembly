@@ -12,7 +12,7 @@ if ($argv[0]=='Bill.php') {
       die("Connection failed: " . $db->connect_error);
   }
 
-  $b.insertHTML($db);
+  $b->insertHTML($db);
 }
 
 class Bill {
