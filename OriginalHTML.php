@@ -101,13 +101,13 @@ function process($db, $file) {
       case '본회의의결':
     }
   }
-//  print_r($tokens);
-}
 
-if ($bill) {
-  // Do something with bill
-  echo $bill->toString() ."\n";
-  storeContent($db, $bill);
+  // Add the last if there.
+  if ($bill) {
+    // Do something with bill
+    echo $bill->toString() ."\n";
+    storeContent($db, $bill);
+  }
 }
 
 //2015-04-30
