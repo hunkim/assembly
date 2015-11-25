@@ -9,6 +9,6 @@ $ch = curl_init();
 
 curl_setopt($ch, CURLOPT_URL, ($url . $build));
 
-$content = curl_exec($url);
+$content = curl_exec($ch);
 echo $content;
 ?>
