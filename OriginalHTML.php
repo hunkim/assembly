@@ -42,6 +42,7 @@ function process($file) {
   $content = file_get_contents ($file);
 
   $txt = strip_tags($content);
+  $txt = $content;
   $tokens = preg_split('/\s+/', $txt);
   print_r($tokens);
 }
