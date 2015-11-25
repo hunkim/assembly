@@ -61,7 +61,7 @@ function process($file) {
         }
 
         $bill = new Bill("","");
-        $bill.parseId($line)
+        $bill.parseId($line);
         continue;
     }
 
