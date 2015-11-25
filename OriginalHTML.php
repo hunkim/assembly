@@ -54,7 +54,7 @@ function process($file) {
   $bill = null;
   $title = "";
   foreach ($tokens as $line) {
-    if (startsWith($line, 'href="javascript:GoDetail(') {
+    if (startsWith($line, 'href="javascript:GoDetail(')) {
         if ($bill) {
           // Do something with bill
           echo "$bill->toString()\n";
