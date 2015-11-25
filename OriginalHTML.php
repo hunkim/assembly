@@ -77,7 +77,7 @@ function process($file) {
     if (isDate($line)) {
       if (!$bill->proposed) {
           $bill->proposed = $line;
-      } else if (!$bill->processed)
+      } else if (!$bill->processed) {
           $bill->processed = $line;
       }
       continue;
