@@ -11,12 +11,14 @@ if ($db->connect_error) {
     die("Connection failed: " . $db->connect_error);
 }
 
-if (!exist($db, billid)) {
+if (exist($db, $billid)) {
+  echo "$billid is already in our DB!\b"
+} else {
   storeContent($db, $billid);
 }
 
 function exist($db, $billid) {
-  $result = $db->query("SELECT id FROM HTML WHERE id='$billid'");
+  $result = $db->query("SELECT id FROM HTML WHERE id='". $db->real_escape_string($billid) ."'");
 
   return ($result!==false && $result->num_rows > 0);
 }
