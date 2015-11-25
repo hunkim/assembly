@@ -1,5 +1,11 @@
 <?php
 
+include 'Actor.php';
+include 'Bill.php';
+include 'getCoActor.php';
+include 'getBill.php';
+
+
 // Need to get it from somewhere
 $billId = "PRC_A1J5J1E1N1K0Q1O4A4V8L1H4C2Q4C9"
 
