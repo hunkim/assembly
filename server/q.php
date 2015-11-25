@@ -822,13 +822,14 @@ function processQuery($apptype, $sql) {
 
           $data['articles']=[];
           $data['name']=$row['cname'];
+          $data['total']=0;
           $prevId = $id;
       }
 
       $data['articles'][] = [$row['y'].$row['m']=>$row['c']];
       $data['total']+=$row['c'];
 
-      $idex ++;
+      $idx ++;
     }
 
   } else {
