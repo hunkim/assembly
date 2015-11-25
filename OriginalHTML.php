@@ -70,7 +70,7 @@ function getContentURL($url) {
     }
 
     curl_close($ch);
-    echo "Done!";
+    echo "Done!\n";
     return iconv('EUC-KR', 'UTF-8', $content);
 }
 
