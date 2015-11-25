@@ -22,7 +22,7 @@ $d = dir($argv[1]);
 while (false !== ($entry = $d->read())) {
     if(endsWith($entry, ".html")) {
         $billid = process($db, "$path/$entry");
-        exit;
+        exit; // process only one file for now
     }
 }
 
@@ -43,7 +43,6 @@ function process($db, $file) {
           // Do something with bill
           echo $bill->toString() ."\n";
           storeContent($db, $bill);
-          exit();
         }
 
         $bill = new Bill("","");
@@ -108,7 +107,6 @@ if ($bill) {
   // Do something with bill
   echo $bill->toString() ."\n";
   storeContent($db, $bill);
-  exit();
 }
 
 //2015-04-30
@@ -144,8 +142,11 @@ function storeContent($db, $bill) {
   $billurl = "http://likms.assembly.go.kr/bill/jsp/BillDetail.jsp?bill_id=$billid";
 
   $bill->coActorHTML = getContentURL($courl);
+  sleep (1);
   $bill->sumHTML = getContentURL($sumurl);
+  sleep (1);
   $bill->billHTML = getContentURL($billurl);
+  sleep (1);
 
   $bill->insertHTML($db);
 }

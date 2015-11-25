@@ -50,7 +50,7 @@ class Bill {
 
   function insertHTML($db) {
     if ($this->exist($db)) {
-      echo ("$this->id Already there!");
+      echo ("$this->id Already there!\n");
       return;
     }
 
