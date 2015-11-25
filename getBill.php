@@ -7,7 +7,7 @@ $url = "http://likms.assembly.go.kr/bill/jsp/SummaryPopup.jsp?bill_id=";
 $build = "PRC_A1J5J1E1N1K0Q1O4A4V8L1H4C2Q4C9";
 
 
-if (true) {
+if (false) {
 $ch = curl_init();
 curl_setopt( $ch, CURLOPT_USERAGENT, "Mozilla/5.0 (Windows; U; Windows NT 5.1; rv:1.7.3) Gecko/20041001 Firefox/0.10.1" );
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
@@ -24,33 +24,8 @@ $content = file_get_contents ("bill.html");
 }
 
 $txt = strip_tags($content);
-$tokens = preg_split('/\s+/', $txt);
+$tokens = preg_split('/\n+/', $txt);
 
-$propsed = false;
-foreach ($tokens as $value) {
-  echo("[$value]\n");
-  if ($value=="발의의원") {
-    echo("Here!");
-    $propsed = true;
-    continue;
-  }
-
-  if ($propsed && strpos($value, ')')) {
-    $namearr = parse_names($value);
-  }
-}
-
-foreach ($namearr as $value) {
-  if ($value!='') {
-    $a = new Actor($value);
-    echo ($a->toString() . "\n");
-  }
-}
-
-function parse_names($str) {
-  $namearr = explode( ')', $str);
-
-  return $namearr;
-}
+print_r($tokens);
 
 ?>
