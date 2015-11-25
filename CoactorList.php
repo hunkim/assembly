@@ -15,13 +15,7 @@ curl_setopt($ch, CURLOPT_URL, ($url . $build));
 $content = curl_exec($ch);
 curl_close($ch);
 echo $url . $build;
-echo $content;
+echo strip_tags($content);
 
-$doc = new DOMDocument();
-$doc->loadHTML($content);
-
-$tables = $doc->getElementsByTagName("TD");
-
-print_r($tables);
 
 ?>
