@@ -32,13 +32,13 @@ class Actor {
 
     echo $sql;
 
-    if (($result=$db->query($sql)) === TRUE) {
+    if (($result=$db->query($sql)) === false) {
+      echo "Error: " . $sql . "\n" . $db->error;
+      return false;
+    } else {
       $this->id = int_val(mysql_fetch_object($result));
       $echo("We have it: $this->id\n");
       return true;
-    } else {
-      echo "Error: " . $sql . "\n" . $db->error;
-      return false;
     }
   }
 
