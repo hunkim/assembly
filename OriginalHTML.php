@@ -131,6 +131,14 @@ function parseBillId($str) {
 
 
 function storeContent($db, $bill) {
+
+  if ($bill->exist(db)) {
+    echo ("$this->id Already there!");
+    return;
+  }
+
+  exit;
+  
   $billid = $bill->id;
   // http://likms.assembly.go.kr/bill/jsp/CoactorListPopup.jsp?bill_id=PRC_A1J5J1E1N1K0Q1O4A4V8L1H4C2Q4C9
   $courl = "http://likms.assembly.go.kr/bill/jsp/CoactorListPopup.jsp?bill_id=$billid";
