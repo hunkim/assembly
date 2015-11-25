@@ -89,8 +89,6 @@ class Bill {
     } else {
       echo "Error: " . $sql . "<br>" . $db->error;
     }
-
-    exit();
   }
 }
 

@@ -38,7 +38,6 @@ while($row = $result->fetch_assoc()) {
     // insert bill to DB
     $bill->update($db);
 
-
     $actors = getActors($coActorHTML);
 
     foreach ($actors as $a) {
