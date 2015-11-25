@@ -32,7 +32,7 @@ class Actor {
 
     if (($result=$db->query($sql)) === TRUE) {
       $this->id = int_val(mysql_fetch_object($result));
-      $echo("We have it: $this->id");
+      $echo("We have it: $this->id\n");
       return true;
     } else {
       return false;
@@ -47,9 +47,9 @@ class Actor {
     $sql .= ", billid='" . $db->real_escape_string($billid) . "'\n";
 
     if ($db->query($sql) === TRUE) {
-      echo "New coactor record created successfully.";
+      echo "New coactor record created successfully.\n";
     } else {
-      echo "Error: " . $sql . "<br>" . $db->error;
+      echo "Error: " . $sql . "\n" . $db->error;
     }
   }
 
@@ -65,7 +65,7 @@ class Actor {
 
     if ($db->query($sql) === TRUE) {
       $this->id = $db->insert_id;
-      echo "New actor record created successfully. Last inserted ID is: " . $this->id;
+      echo "New actor record created successfully. Last inserted ID is: $this->id \n";
     } else {
       echo "Error: " . $sql . "<br>" . $db->error;
     }

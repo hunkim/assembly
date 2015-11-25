@@ -21,7 +21,7 @@ class Bill {
     $sql .= ", title='" . $db->real_escape_string($this->title) . "'\n";
 
     if ($db->query($sql) === TRUE) {
-      echo "New bill record created successfully.";
+      echo "New bill record created successfully.\n";
     } else {
       echo "Error: " . $sql . "<br>" . $db->error;
     }
