@@ -30,7 +30,7 @@ foreach ($tokens as $value) {
     continue;
   }
 
-  if ($proposed && strops($value, ')') {
+  if ($proposed && strops($value, ')')) {
     $namearr = parse_names($value);
   }
 }
@@ -39,7 +39,7 @@ print_r($tokens);
 print_r($namearr);
 
 function parse_names($str) {
-  $namearr = explode(')', $str);
+  $namearr = explode( ')', $str);
 
   return $namearr;
 }
