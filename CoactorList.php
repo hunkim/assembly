@@ -17,5 +17,6 @@ curl_close($ch);
 echo $url . $build;
 echo strip_tags($content);
 
+echo "한글";
 
 ?>
