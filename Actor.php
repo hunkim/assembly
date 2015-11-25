@@ -25,7 +25,7 @@ class Actor {
   }
 
   function getId($db) {
-    $sql = "SELECT id from ACTOR where ";
+    $sql = "SELECT id from Actor where ";
     $sql .= "name='" . $db->real_escape_string($this->name) . "'\n";
     $sql .= "AND cname='" . $db->real_escape_string($this->cname) . "'\n";
     $sql .= "AND party='" . $db->real_escape_string($this->party) . "'\n";
@@ -42,7 +42,7 @@ class Actor {
   function insertWithBill($db, $billid) {
     assert($this->id);
 
-    $sql = "INSERT INTO COACTOR SET ";
+    $sql = "INSERT INTO CoActor SET ";
     $sql .= "actorid='" . $db->real_escape_string($this->id) . "'\n";
     $sql .= ", billid='" . $db->real_escape_string($billid) . "'\n";
 

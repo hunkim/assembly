@@ -16,7 +16,7 @@ class Bill {
   }
 
   function insert($db) {
-    $sql = "INSERT IGNORE INTO BILL SET ";
+    $sql = "INSERT IGNORE INTO Bill SET ";
     $sql .= "summary='" . $db->real_escape_string($this->summary) . "'\n";
     $sql .= ", title='" . $db->real_escape_string($this->title) . "'\n";
 
