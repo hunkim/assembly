@@ -34,22 +34,22 @@ function getActors($billid) {
   $txt = strip_tags($content);
   $tokens = preg_split('/\s+/', $txt);
 
-  $propsed = FALSE;
+  $proposed = FALSE;
   foreach ($tokens as $value) {
     echo("[$value]\n");
     if ($value=="발의의원") {
       echo("Here!");
-      $propsed = TRUE;
+      $proposed = TRUE;
       continue;
     }
 
     if ($value=="찬성의원") {
       echo("Agrred!");
-      $propsed = FALSE;
+      $proposed = FALSE;
       continue;
     }
 
-    if ($propsed && strpos($value, ')')) {
+    if ($proposed && strpos($value, ')')) {
       $namearr = parse_names($value);
     }
   }

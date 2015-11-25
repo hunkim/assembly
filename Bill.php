@@ -19,8 +19,8 @@ class Bill {
     $this->id = $id;
 
     $sql = "INSERT IGNORE INTO Bill SET ";
-    $sql .= "summary='" . $db->real_escape_string($this->id) . "'\n";
-    $sql .= "summary='" . $db->real_escape_string($this->summary) . "'\n";
+    $sql .= "id='" . $db->real_escape_string($this->id) . "'\n";
+    $sql .= ", summary='" . $db->real_escape_string($this->summary) . "'\n";
     $sql .= ", title='" . $db->real_escape_string($this->title) . "'\n";
 
     if ($db->query($sql) === TRUE) {
