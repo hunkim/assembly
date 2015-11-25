@@ -1,5 +1,20 @@
 <?php
 
+
+if ($argv[0]=='Bill.php') {
+  $b = new getBill("","");
+  $b->id = "PRC_A1J5J1E1N1K0Q1O4A4V8L1H4C2Q4C9");
+
+  / open DB
+  $db = new mysqli("p:localhost", "trend", "", "assembly");
+  // Check connection
+  if ($db->connect_error) {
+      die("Connection failed: " . $db->connect_error);
+  }
+
+  $b.insertHTML($db);
+}
+
 class Bill {
   var $id;
   var $summary;
@@ -39,7 +54,7 @@ class Bill {
       return;
     }
 
-    $sql = "INSERT IGNORE INTO Bill SET ";
+    $sql = "INSERT INTO Bill SET ";
     $sql .= "id='" . $db->real_escape_string($this->id) . "'\n";
     $sql .= ", titleHTML='" . $db->real_escape_string($this->titleHTML) . "'\n";
     $sql .= ", sumHTML='" . $db->real_escape_string($this->sumHTML) . "'\n";
