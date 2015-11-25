@@ -89,17 +89,17 @@ function process($file) {
       continue;
     }
 
-
     if ($title != "") {
         $title.= $line;
     }
 
     if (strpos($line, ')">')!==false) {
-      $title = "";
       $arr = explode('"', $title);
       if (count($arr)>2) {
         $bill->title = $arr[1];
       }
+
+      $title = "";
     }
 
     switch($line) {
