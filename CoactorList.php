@@ -32,7 +32,7 @@ foreach ($tokens as $value) {
     continue;
   }
 
-  if ($propsed && strops($value, ')')) {
+  if ($propsed && strpos($value, ')')) {
     $namearr = parse_names($value);
   }
 }
