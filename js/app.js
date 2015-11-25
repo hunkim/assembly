@@ -178,6 +178,16 @@ app.controller('customersCtrl',
         });
     };
 
+    $scope.printSummary = function($summary) {
+      if ($summary === undefined || $summary[0] === undefined || $summary[0]
+        .summary === undefined ||
+        $summary[0].summary === "") {
+        return "요약정보 없슴.";
+      }
+
+      return "요약정보: " + $summary[0].summary;
+    }
+
     $scope.getSummary = function($index) {
       if ($scope.listArr.length < $index) {
         return;

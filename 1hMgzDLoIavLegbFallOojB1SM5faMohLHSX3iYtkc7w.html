@@ -77,6 +77,7 @@
   <!-- Default panel contents -->
   <div class="panel-heading">
     <strong>{{coArr[0].name}}({{coArr[0].cname}}/{{coArr[0].party}})님의 총 {{coArr[0].c}} 법안발의 정보 목록</strong>
+    (<i class="glyphicon glyphicon-chevron-right" aria-hidden="true">를 클릭하시면 요약정보와 제안자를 보여줍니다.</i>)
   </div>
 </div>
 
@@ -90,30 +91,35 @@
       <th>의결일자</th>
       <th>의결결과</th>
     </tr>
-    <tr ng-repeat="list in listArr">
+    <!-- http://stackoverflow.com/questions/3076708/can-we-have-multiple-tbody-in-same-table -->
+    <tbody ng-repeat="list in listArr">
+      <tr>
       <td>{{$index+1}}</td>
       <td>{{list.cdate}}</td>
-
       <td>
-
         <A target="_blank"
           href="http://likms.assembly.go.kr/bill/jsp/BillDetail.jsp?bill_id={{list.id}}">
         {{list.title}}</a>
         <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': list.open, 'glyphicon-chevron-right': !list.open}"
         ng-click="toggleList($index);"/>
-      <!--   <div cg-busy="{promise:summaryPromise,message:'요약 정보를 읽고 있습니다...'}"></div> -->
-        <div class="panel-collapse" ng-class="{'collapse in':list.open, 'collapse': !list.open}>
-        <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
-            {{list.summary[0].summary}}
-            <span ng-repeat="actor in list.ActArr">
-              <a class="btn btn-primary" ng-click="setId(actor.id);"> {{actor.name}}</a>
-               <!-- <span class="badge">{{actor.c}}</span></a> -->
-            </span>
-        </div>
       </td>
       <td>{{list.pdate}}</td>
       <td>{{list.result}}</td>
     </tr>
+    <tr>
+      <!-- http://stackoverflow.com/questions/16389775/twitter-bootstrap-use-collapse-js-on-table-cells-almost-done -->
+    <td ng-show="list.open" colspan="5" class="hiddenRow">
+        <div class="accordion-body" ng-class="{'collapse in':list.open, 'collapse': !list.open}">
+          <span class="glyphicon glyphicon-book" aria-hidden="true"></span>
+             {{printSummary(list.summary);}}<p>
+              제안자: <span ng-repeat="actor in list.ActArr">
+                <a class="btn-xs btn btn-default navbar-btn" ng-click="setId(actor.id);">{{actor.name}}({{actor.cname}}/{{actor.party}}</a>
+                 <!-- <span class="badge">{{actor.c}}</span></a> -->
+              </span>
+          </div>
+    </td>
+  </tr>
+</tbody>
 </table>
 
 

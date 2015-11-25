@@ -1,123 +1,66 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
 
-<html>
-<head>
-<script src="js/jquery-2.1.4.min.js"></script>
-<script src="js/d3.v3.min.js"></script>
-<style type="text/css">
-body{font-family: Arial, sans-serif;font-size:10px;}
-.axis path,.axis line {fill: none;stroke:#b6b6b6;shape-rendering: crispEdges;}
-/*.tick line{fill:none;stroke:none;}*/
-.tick text{fill:#999;}
-g.journal.active{cursor:pointer;}
-text.label{font-size:12px;font-weight:bold;cursor:pointer;}
-text.value{font-size:12px;font-weight:bold;}
-</style>
-</head>
-<body>
-
-<script type="text/javascript">
-function truncate(str, maxLength, suffix) {
-	if(str.length > maxLength) {
-		str = str.substring(0, maxLength + 1);
-		str = str.substring(0, Math.min(str.length, str.lastIndexOf(" ")));
-		str = str + suffix;
-	}
-	return str;
+text {
+  font: 10px sans-serif;
 }
 
-var margin = {top: 20, right: 200, bottom: 0, left: 20},
-	width = 800,
-	height = 650;
+</style>
+<body>
+<script src="//d3js.org/d3.v3.min.js"></script>
+<script>
 
-var start_year = 2012,
-	end_year = 2016;
+var diameter = 960,
+    format = d3.format(",d"),
+    color = d3.scale.category20c();
 
-var c = d3.scale.category20c();
-
-var x = d3.scale.linear()
-	.range([0, width]);
-
-var xAxis = d3.svg.axis()
-	.scale(x)
-	.orient("top");
-
-var formatYears = d3.format("0000");
-xAxis.tickFormat(formatYears);
+var bubble = d3.layout.pack()
+    .sort(null)
+    .size([diameter, diameter])
+    .padding(1.5);
 
 var svg = d3.select("body").append("svg")
-	.attr("width", width + margin.left + margin.right)
-	.attr("height", height + margin.top + margin.bottom)
-	.style("margin-left", margin.left + "px")
-	.append("g")
-	.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+    .attr("width", diameter)
+    .attr("height", diameter)
+    .attr("class", "bubble");
 
+d3.json("flare.json", function(error, root) {
+  if (error) throw error;
 
-d3.json("http://a.kassembly.xyz/q.php/order", function(data) {
-	x.domain([start_year, end_year]);
-	var xScale = d3.scale.linear()
-		.domain([start_year, end_year])
-		.range([0, width]);
+  var node = svg.selectAll(".node")
+      .data(bubble.nodes(classes(root))
+      .filter(function(d) { return !d.children; }))
+    .enter().append("g")
+      .attr("class", "node")
+      .attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });
 
-	svg.append("g")
-		.attr("class", "x axis")
-		.attr("transform", "translate(0," + 0 + ")")
-		.call(xAxis);
+  node.append("title")
+      .text(function(d) { return d.className + ": " + format(d.value); });
 
-	for (var j = 0; j < data.length; j++) {
-		var g = svg.append("g").attr("class","journal");
+  node.append("circle")
+      .attr("r", function(d) { return d.r; })
+      .style("fill", function(d) { return color(d.packageName); });
 
-		var circles = g.selectAll("circle")
-			.data(data[j]['articles'])
-			.enter()
-			.append("circle");
-
-		var text = g.selectAll("text")
-			.data(data[j]['articles'])
-			.enter()
-			.append("text");
-
-		var rScale = d3.scale.linear()
-			.domain([0, d3.max(data[j]['articles'], function(d) { return d[1]; })])
-			.range([2, 9]);
-
-		circles
-			.attr("cx", function(d, i) { return xScale(d[0]); })
-			.attr("cy", j*20+20)
-			.attr("r", function(d) { return rScale(d[1]); })
-			.style("fill", function(d) { return c(j); });
-
-		text
-			.attr("y", j*20+25)
-			.attr("x",function(d, i) { return xScale(d[0])-5; })
-			.attr("class","value")
-			.text(function(d){ return d[1]; })
-			.style("fill", function(d) { return c(j); })
-			.style("display","none");
-
-		g.append("text")
-			.attr("y", j*20+25)
-			.attr("x",width+20)
-			.attr("class","label")
-			.text(truncate(data[j]['name'],30,"..."))
-			.style("fill", function(d) { return c(j); })
-			.on("mouseover", mouseover)
-			.on("mouseout", mouseout);
-	};
-
-	function mouseover(p) {
-		var g = d3.select(this).node().parentNode;
-		d3.select(g).selectAll("circle").style("display","none");
-		d3.select(g).selectAll("text.value").style("display","block");
-	}
-
-	function mouseout(p) {
-		var g = d3.select(this).node().parentNode;
-		d3.select(g).selectAll("circle").style("display","block");
-		d3.select(g).selectAll("text.value").style("display","none");
-	}
+  node.append("text")
+      .attr("dy", ".3em")
+      .style("text-anchor", "middle")
+      .text(function(d) { return d.className.substring(0, d.r / 3); });
 });
 
-</script>
+// Returns a flattened hierarchy containing all leaf nodes under the root.
+function classes(root) {
+  var classes = [];
 
-</body>
-</html>
+  function recurse(name, node) {
+    if (node.children) node.children.forEach(function(child) { recurse(node.name, child); });
+    else classes.push({packageName: name, className: node.name, value: node.size});
+  }
+
+  recurse(null, root);
+  return {children: classes};
+}
+
+d3.select(self.frameElement).style("height", diameter + "px");
+
+</script>
