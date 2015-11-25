@@ -68,13 +68,11 @@ function process($file) {
         continue;
     }
 
-    echo ($line);
-    
     if (!$bill) {
       continue;
     }
 
-    echo ($line . " " . isDate($line) + "\n");
+    echo ($line . " " . isDate($line) . "\n");
 
     if (isDate($line) && !$bill->proposed) {
       $bill->proposed = $line;
