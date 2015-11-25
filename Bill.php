@@ -18,7 +18,7 @@ class Bill {
   }
 
   function toString() {
-    return "T: $this->title\n p: $this->proposed\np:$this->processed b:$this->by, r: $this->result s:$this->summary";
+    return "I: $this->id T: $this->title\n p: $this->proposed\np:$this->processed b:$this->by, r: $this->result s:$this->summary";
   }
 
   function insert($db, $id) {

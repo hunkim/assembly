@@ -133,9 +133,7 @@ function parseBillId($str) {
     return "";
   }
 
-  if (startsWith($arr[1], "PRC_")) {
-    return $arr[1];
-  }
+  return $arr[1];
 
   return "";
 }
