@@ -1,6 +1,7 @@
 <?php
 
 class Actor {
+  var $id;
   var $name;
   var $cname;
   var $party;
@@ -21,6 +22,53 @@ class Actor {
 
   function toString() {
     return "$this->name($this->cname/$this->party)";
+  }
+
+  function getId($db) {
+    $sql = "SELECT id from ACTOR where ";
+    $sql .= "name='" . $db->real_escape_string($this->name) . "'\n";
+    $sql .= "AND cname='" . $db->real_escape_string($this->cname) . "'\n";
+    $sql .= "AND party='" . $db->real_escape_string($this->party) . "'\n";
+
+    if (($result=$db->query($sql)) === TRUE) {
+      $this->id = int_val(mysql_fetch_object($result));
+      $echo("We have it: $this->id");
+      return true;
+    } else {
+      return false;
+    }
+  }
+
+  function insertWithBill($db, $billid) {
+    assert($this->id);
+
+    $sql = "INSERT INTO COACTOR SET ";
+    $sql .= "actorid='" . $db->real_escape_string($this->id) . "'\n";
+    $sql .= ", billid='" . $db->real_escape_string($billid) . "'\n";
+
+    if ($db->query($sql) === TRUE) {
+      echo "New coactor record created successfully.";
+    } else {
+      echo "Error: " . $sql . "<br>" . $db->error;
+    }
+  }
+
+  function insert($db) {
+    // we are done!
+    if (getId($db)===true) {
+      return;
+    }
+    $sql = "INSERT INTO ACTOR SET ";
+    $sql .= "name='" . $db->real_escape_string($this->name) . "'\n";
+    $sql .= ", cname='" . $db->real_escape_string($this->cname) . "'\n";
+    $sql .= ", party='" . $db->real_escape_string($this->party) . "'\n";
+
+    if ($db->query($sql) === TRUE) {
+      $this->id = $db->insert_id;
+      echo "New actor record created successfully. Last inserted ID is: " . $this->id;
+    } else {
+      echo "Error: " . $sql . "<br>" . $db->error;
+    }
   }
 }
 

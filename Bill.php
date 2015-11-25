@@ -14,6 +14,18 @@ class Bill {
   function toString() {
     return "$this->title\n$this->summary";
   }
+
+  function insert($db) {
+    $sql = "INSERT IGNORE INTO BILL SET ";
+    $sql .= "summary='" . $db->real_escape_string($this->summary) . "'\n";
+    $sql .= ", title='" . $db->real_escape_string($this->title) . "'\n";
+
+    if ($db->query($sql) === TRUE) {
+      echo "New bill record created successfully.";
+    } else {
+      echo "Error: " . $sql . "<br>" . $db->error;
+    }
+  }
 }
 
 ?>
