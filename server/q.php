@@ -737,6 +737,10 @@ switch($apptype) {
   case 'billactors':
     $sql = "select name, cname, party, a.id  from Actor a Inner join CoActor c on a.id = c.actorid where c.billid = ? order by name;";
     break;
+
+  case 'order'
+    $sql = "select a.id, a.name, a.cname, a.party, year(cdate) as y, month(cdate) as m, count(distinct b.id) as c from CoActor c inner join Actor a on a.id=c.actorid inner join Bill b on c.billid=b.id  group by actorid, y, m order by a.id, y, m;"
+
   default:
     print $json;
     exit(0);
@@ -747,7 +751,7 @@ processQuery($sql);
 /**
 * Main function
 */
-function processQuery($sql) {
+function processQuery($apptype, $sql) {
   $startyear = intval($_GET['startyear']);
   $endyear = intval($_GET['endyear']);
 
@@ -804,10 +808,33 @@ function processQuery($sql) {
 	// sudo apt-get install php5-mysqlnd
   $result = $stmt->get_result();
 
-  $rows=array();
-  while($row = $result->fetch_array(MYSQLI_ASSOC)) {
-    $rows[] = $row;
+  $rows=[];
+
+  if ($apptype=='order') {
+    $prevId = -1;
+    $idx = 0;
+    while($row = $result->fetch_array(MYSQLI_ASSOC)) {
+      $id = $row['id'];
+      if (prevId!=$id) {
+          if($idx!=0) {
+            $rows[] = $data;
+          }
+
+          $data['articles']=[];
+          $data['name']=$row['cname'];
+      }
+
+      $data['articles'][] = [$row[y].$row[m]=>$row[c]];
+      $data['total']+=$row[c];
+
+      $idex ++;
+    }
+  } else {
+    while($row = $result->fetch_array(MYSQLI_ASSOC)) {
+      $rows[] = $row;
+    }
   }
+
 
 	//
   //http://php.net/manual/de/function.gzencode.php
