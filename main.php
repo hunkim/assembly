@@ -1,4 +1,6 @@
 <?php
+error_reporting(E_ALL);
+assert_options(ASSERT_BAIL,     true);
 
 include 'Actor.php';
 include 'Bill.php';
