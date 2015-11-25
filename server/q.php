@@ -738,9 +738,10 @@ switch($apptype) {
     $sql = "select name, cname, party, a.id  from Actor a Inner join CoActor c on a.id = c.actorid where c.billid = ? order by name;";
     break;
 
-  case 'order'
+  case 'order':
     $sql = "select a.id, a.name, a.cname, a.party, year(cdate) as y, month(cdate) as m, count(distinct b.id) as c from CoActor c inner join Actor a on a.id=c.actorid inner join Bill b on c.billid=b.id  group by actorid, y, m order by a.id, y, m;"
-
+    break;
+    
   default:
     print $json;
     exit(0);
