@@ -15,7 +15,7 @@ curl_setopt($ch, CURLOPT_URL, ($url . $build));
 $content = curl_exec($ch);
 curl_close($ch);
 echo $url . $build;
-echo strip_tags($content);
+echo utf8_decode(strip_tags($content));
 
 echo "한글";
 
