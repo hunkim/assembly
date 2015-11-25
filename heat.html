@@ -52,7 +52,7 @@ var svg = d3.select("body").append("svg")
 	.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
 
-d3.json("flare.json", function(data) {
+d3.json("http://a.kassembly.xyz/q.php/order", function(data) {
 	x.domain([start_year, end_year]);
 	var xScale = d3.scale.linear()
 		.domain([start_year, end_year])
