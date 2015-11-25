@@ -27,7 +27,7 @@ class Actor {
   function getId($db) {
     $sql = "SELECT id from Actor where ";
     $sql .= "name='" . $db->real_escape_string($this->name) . "'\n";
-    $sql .= "AND cname='" . $db->real_escape_string($this->cname) . "'\n";
+//    $sql .= "AND cname='" . $db->real_escape_string($this->cname) . "'\n";
   //  $sql .= "AND party='" . $db->real_escape_string($this->party) . "'\n";
 
     echo $sql;
