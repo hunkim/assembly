@@ -17,7 +17,7 @@ switch($apptype) {
   case 'stat':
     $sql = "select count(*) as c, YEAR(cdate) as y, MONTH(cdate) as m from CoActor c ";
     $sql .= " INNER JOIN Bill b on b.id = c.billid INNER Join Actor a on a.id=c.actorid ";
-    $sql .= " where a.id = ? group by YEAR(cdate), MONTH(cdate);
+    $sql .= " where a.id = ? group by YEAR(cdate), MONTH(cdate);";
     break;
   case 'list':
     $sql = "select b.id, title from Bill b INNER JOIN CoActor c on c.billid = b.id where c.actorid=?";
