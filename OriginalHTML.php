@@ -68,6 +68,8 @@ function process($file) {
         continue;
     }
 
+    echo ($line);
+    
     if (!$bill) {
       continue;
     }
