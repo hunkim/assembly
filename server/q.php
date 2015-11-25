@@ -21,7 +21,7 @@ switch($apptype) {
     break;
   case 'list':
     $sql = "select b.id, title,YEAR(cdate) as y, MONTH(cdate) as m from Bill b ";
-    $sql .= "INNER JOIN CoActor c on c.billid = b.id where c.actorid=? "
+    $sql .= "INNER JOIN CoActor c on c.billid = b.id where c.actorid=? ";
     $sql .= " order by YEAR(cdate), MONTH(cdate) ";
     break;
   case 'all':
