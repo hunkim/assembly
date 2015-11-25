@@ -15,10 +15,11 @@ if ($db->connect_error) {
     die("Connection failed: " . $db->connect_error);
 }
 
+$path = $argv[1];
 $d = dir($argv[1]);
 while (false !== ($entry = $d->read())) {
     if(endsWith($entry, ".html")) {
-        $billid = process($entry);
+        $billid = process("$path/$entry");
         exit;
 
         $billid = "PRC_A1J5J1E1N1K0Q1O4A4V8L1H4C2Q4C9";
