@@ -14,7 +14,7 @@ if ($db->connect_error) {
     die("Connection failed: " . $db->connect_error);
 }
 
-/ Perform Query
+// Perform Query
 $result = $db->query("SELECT * from Bill where processed=null");
 if (!$result) {
     $message  = 'Invalid query: ' . $db->error() . "\n";
