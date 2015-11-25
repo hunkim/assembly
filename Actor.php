@@ -20,7 +20,7 @@ class Actor {
   }
 
   function toString() {
-    return "$name($cname/$party)";
+    return "$this->name($this->cname/$this->party)";
   }
 }
 
