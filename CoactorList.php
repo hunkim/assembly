@@ -25,13 +25,14 @@ $tokens = preg_split('/\s+/', $txt);
 
 $propsed = false;
 foreach ($tokens as $value) {
-  if ($value=='발의의원') {
+  echo("[$value]\n");
+  if ($value=="발의의원") {
     echo("Here!");
     $propsed = true;
     continue;
   }
 
-  if ($proposed && strops($value, ')')) {
+  if ($propsed && strops($value, ')')) {
     $namearr = parse_names($value);
   }
 }
