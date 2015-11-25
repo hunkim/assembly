@@ -780,8 +780,7 @@ function processQuery($apptype, $sql) {
 
 	if($debug) {
  		print_r($params);
-		echo ($sql);
-		echo ($type);
+		echo ("S: $sql\nT: $type\n");
 	}
 
 	// Persistent Connections
