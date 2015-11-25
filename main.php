@@ -35,9 +35,10 @@ while($row = $result->fetch_assoc()) {
     echo ("Working on $id\n");
 
     $bill = getBill($id, $sumHTML);
-
     // insert bill to DB
     $bill->update($db);
+
+
     $actors = getActors($coActorHTML);
 
     foreach ($actors as $a) {
@@ -46,9 +47,6 @@ while($row = $result->fetch_assoc()) {
     }
 }
 
-// Free the resources associated with the result set
-// This is done automatically at the end of the script
-$db->free_result($result);
 $db->close();
 
 ?>
