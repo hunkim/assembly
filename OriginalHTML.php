@@ -43,7 +43,7 @@ function process($db, $file) {
           // Do something with bill
           echo $bill->toString() ."\n";
 
-          // storeContent($db, $bill);
+          storeContent($db, $bill);
         }
 
         $bill = new Bill("","");
