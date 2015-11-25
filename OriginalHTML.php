@@ -62,7 +62,7 @@ function getContentURL($url) {
     curl_setopt($ch, CURLOPT_HEADER, true);
     curl_setopt($ch, CURLOPT_URL, $url);
 
-    f(curl_exec($ch) === false)) {
+    if(curl_exec($ch) === false) {
       echo 'Curl error: ' . curl_error($ch);
       return null;
     }
