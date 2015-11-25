@@ -6,8 +6,9 @@ class Bill {
   var $title;
 
   // 안규백(새정치민주연합/安圭伯)
-  function Bill($str) {
-
+  function Bill($title, $summary) {
+    $this->title = $title;
+    $this->summary = $summary;
   }
 
   function toString() {
