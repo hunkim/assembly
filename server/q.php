@@ -32,6 +32,12 @@ switch($apptype) {
   case 'all':
     $sql = "select a.name, a.cname, a.party, a.id actorid, count(*) as c from CoActor c ";
     $sql .= "INNER JOIN Actor a ON a.id = c.actorid group by actorid order by c desc; ";
+
+  case 'summary':
+    $sql = "select summary from Bill where id = ?;";
+
+  case 'billactors':
+    $sql = "select name, cname, party  from Actor a Inner join CoActor c on a.id = c.actorid where c.billid = ? order by name;";
 }
 // process and print
 processQuery($sql);
@@ -46,6 +52,9 @@ function processQuery($sql) {
   $id = intval($_GET['id']);
   $debug = $_GET['debug'];
 
+
+  $bid = intval($_GET['bid']);
+
   $params = [];
   $type = "";
 
@@ -53,6 +62,10 @@ function processQuery($sql) {
     // make array and type
     $params = [&$id];
     $type = "i";
+  } else if ($bid) {
+    // make array and type
+    $params = [&$bid];
+    $type = "s";
   }
 
 	// add the last part
