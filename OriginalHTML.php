@@ -42,6 +42,7 @@ function process($db, $file) {
         if ($bill) {
           // Do something with bill
           echo $bill->toString() ."\n";
+          exit();
           storeContent($db, $bill);
         }
 
@@ -75,7 +76,7 @@ function process($db, $file) {
     if (strpos($line, ')">')!==false) {
       $arr = explode('"', $title);
       if (count($arr)>2) {
-        $bill->title = $arr[1];
+        $bill->titleHTML = $arr[1];
       }
 
       $title = "";
