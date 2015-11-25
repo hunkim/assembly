@@ -42,7 +42,7 @@ foreach ($tokens as $value) {
 print_r($namearr);
 
 foreach ($namearr as $value) {
-  if ($value!=='') {
+  if ($value!='') {
     $a = new Actor($value);
   }
 }
