@@ -826,7 +826,7 @@ function processQuery($apptype, $sql) {
           $prevId = $id;
       }
 
-      $data['articles'][] = [$row['y']=>$row['c']];
+      $data['articles'][] = [intval($row['y']), intval($row['c'])];
     //  $data['articles'][] = [$row['y'].$row['m']=>$row['c']];
       $data['total']+=$row['c'];
 
