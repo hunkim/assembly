@@ -63,7 +63,7 @@ function process($file) {
         }
 
         $bill = new Bill("","");
-        $bill.parseId($line);
+        $bill->id = parseBillId($line);
         continue;
     }
 
@@ -119,6 +119,19 @@ function process($file) {
   print_r($tokens);
 }
 
+// [1032] => href="javascript:GoDetail('PRC_D1P4R1J2E3V1C1H4S3J8V2K2F8M4Z7')"
+function parseBillId($str) {
+  $arr = explode("'", $str);
+  if (count($arr)<2) {
+    return "";
+  }
+
+  if (startsWith($arr[1], "PRC_")) {
+    return $arr[1];
+  }
+
+  return "";
+}
 
 function exist($db, $billid) {
   $result = $db->query("SELECT id FROM HTML WHERE id='". $db->real_escape_string($billid) ."'");
