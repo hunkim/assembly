@@ -62,13 +62,14 @@ function getContentURL($url) {
     curl_setopt($ch, CURLOPT_HEADER, true);
     curl_setopt($ch, CURLOPT_URL, $url);
 
+    echo "Connecting ... $url\n";
     if(($content=curl_exec($ch)) === false) {
       echo 'Curl error: ' . curl_error($ch);
       return null;
     }
 
     curl_close($ch);
-    echo url;
+    echo "Done!";
     return iconv('EUC-KR', 'UTF-8', $content);
 }
 
