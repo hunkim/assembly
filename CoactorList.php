@@ -26,6 +26,7 @@ $tokens = preg_split('/\s+/', $txt);
 $propsed = false;
 foreach ($tokens as $value) {
   if ($value=='발의의원') {
+    echo("Here!");
     $propsed = true;
     continue;
   }
