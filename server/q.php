@@ -6,14 +6,24 @@ header("Access-Control-Allow-Origin: *");
 header("Content-Type: application/json; charset=UTF-8");
 
 // Get app name
-$tname = substr($_SERVER['PATH_INFO'], 1);
+$apptype = substr($_SERVER['PATH_INFO'], 1);
 
-if (!$tname) {
+if (!$apptype) {
   exit(0);
 }
 
 // Basic information SQL
-$sql = "select a.name, a.cname, a.party, a.id actorid, count(*) as c from CoActor c INNER JOIN Actor a ON a.id = c.actorid where 1=? group by actorid order by c desc; ";
+switch($apptype) {
+  case 'stat':
+    $sql = select count(*) as c, YEAR(cdate) as y, MONTH(cdate) as m from CoActor c ";
+    $sql .= " INNER JOIN Bill b on b.id = c.billid INNER Join Actor a on a.id=c.actorid ";
+    $sql .= " where a.id = ? group by YEAR(cdate), MONTH(cdate);
+    break;
+  case 'list':
+    $sql = "select b.id, title from Bill b INNER JOIN CoActor c on c.billid = b.id where c.actorid=?";
+    break;
+  case 'all':
+    $sql = "select a.name, a.cname, a.party, a.id actorid, count(*) as c from CoActor c INNER JOIN Actor a ON a.id = c.actorid group by actorid order by c desc; ";
 
 // process and print
 processQuery($sql);
@@ -25,31 +35,15 @@ function processQuery($sql) {
   $startyear = intval($_GET['startyear']);
   $endyear = intval($_GET['endyear']);
 
-	// No end year, give it enough
-  if ($endyear ==0) $endyear = 3000;
+  $id = intval($_GET['id']);
 
-  $i=1;
-	// make array and type
-  $params = [&$i];
-  $type = "i";
+  $params = [];
+  $type = "";
 
-	$debug = false;
-	foreach ($_GET as $key=>$val) {
-		if ($key=='debug') {
-			$debug = true;
-			continue;
-		}
-
-		if ($val=="") {
-			continue;
-		}
-
-  	$sql .= " AND " . $key . "=? ";
-		$type .= "s";
-
-		// need array element here, since we need a reference
-		$decoded_val[$key] = urldecode($val);
-		$params[] = &$decoded_val[$key];
+  if($id) {
+    // make array and type
+    $params = [&$id];
+    $type = "i";
   }
 
 	// add the last part
