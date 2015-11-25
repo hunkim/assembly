@@ -35,11 +35,20 @@ class Actor {
     if (($result=$db->query($sql)) === false) {
       echo "Error: " . $sql . "\n" . $db->error;
       return false;
-    } else {
-      $this->id = intval(mysql_fetch_object($result));
-      $echo("We have it: $this->id\n");
-      return true;
     }
+
+    if ($result->num_rows > 0) {
+      // output data of each row
+      while($row = $result->fetch_assoc()) {
+        $this->id = intval($row["id"]);
+        $echo("We have it: $this->id\n");
+        return true;
+      }
+    } else {
+        echo "0 results";
+    }
+
+    return false;
   }
 
   function insertWithBill($db, $billid) {
