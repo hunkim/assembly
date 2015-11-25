@@ -20,6 +20,7 @@ CREATE TABLE Bill (
   cdate DATE,
   pdate DATE,
 
+  titleHTML TEXT,
   summaryHTML TEXT,
   coActorHTML TEXT,
   billHTML TEXT,
