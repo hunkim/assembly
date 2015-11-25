@@ -39,7 +39,7 @@ function endsWith($haystack, $needle) {
 }
 
 function process($file) {
-  $content = file_get_contents (file);
+  $content = file_get_contents ($file);
 
   $txt = strip_tags($content);
   $tokens = preg_split('/\s+/', $txt);
