@@ -36,7 +36,7 @@ class Actor {
       echo "Error: " . $sql . "\n" . $db->error;
       return false;
     } else {
-      $this->id = int_val(mysql_fetch_object($result));
+      $this->id = intval(mysql_fetch_object($result));
       $echo("We have it: $this->id\n");
       return true;
     }
