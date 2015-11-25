@@ -31,7 +31,7 @@ foreach ($tokens as $value) {
   }
 
   if ($proposed && strops($value, ')') {
-    $namearr = parse_names($value)
+    $namearr = parse_names($value);
   }
 
 }
