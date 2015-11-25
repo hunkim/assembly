@@ -63,7 +63,7 @@ function process($file) {
           exit();
         }
 
-        $bill = new Bill("","");
+        $bill = new Bill($line,"");
         $bill->id = parseBillId($line);
         continue;
     }
