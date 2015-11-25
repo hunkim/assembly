@@ -39,7 +39,7 @@ function getBill($id, $content) {
     }
   }
 
-  echo ($title . ":" . $summary);
+  echo ("T: $title  S: $summary");
   exit;
 
   $bill = new Bill($id);
