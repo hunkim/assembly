@@ -58,7 +58,7 @@ class Actor {
     if ($this->getId($db)===true) {
       return;
     }
-    $sql = "INSERT INTO ACTOR SET ";
+    $sql = "INSERT INTO Actor SET ";
     $sql .= "name='" . $db->real_escape_string($this->name) . "'\n";
     $sql .= ", cname='" . $db->real_escape_string($this->cname) . "'\n";
     $sql .= ", party='" . $db->real_escape_string($this->party) . "'\n";
