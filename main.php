@@ -2,10 +2,10 @@
 error_reporting(E_ALL);
 assert_options(ASSERT_BAIL,     true);
 
-include 'Actor.php';
-include 'Bill.php';
-include 'getCoActor.php';
-include 'getBill.php';
+include_once 'Actor.php';
+include_once 'Bill.php';
+include_once 'getCoActor.php';
+include_once 'getBill.php';
 
 $db = new mysqli("p:localhost", "trend", "", "assembly");
 
