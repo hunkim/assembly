@@ -78,7 +78,7 @@ function process($file) {
     }
 
     if (startsWith($line, 'title="')) {
-      $title . = $line;
+      $title .= $line;
       $titleMode = ttue;
       continue;
     }
