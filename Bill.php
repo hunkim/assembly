@@ -5,7 +5,7 @@ if ($argv[0]=='Bill.php') {
   $b = new getBill("","");
   $b->id = "PRC_A1J5J1E1N1K0Q1O4A4V8L1H4C2Q4C9";
 
-  / open DB
+  // open DB
   $db = new mysqli("p:localhost", "trend", "", "assembly");
   // Check connection
   if ($db->connect_error) {
