@@ -72,6 +72,8 @@ function process($file) {
       continue;
     }
 
+    echo ($line . " " . isDate($line));
+
     if (isDate($line) && !$bill->proposed) {
       $bill->proposed = $line;
       continue;
