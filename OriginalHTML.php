@@ -32,8 +32,10 @@ while (false !== ($entry = $d->read())) {
     }
 }
 
-
-
+function endsWith($haystack, $needle) {
+    // search forward starting from end minus needle length characters
+    return $needle === "" || (($temp = strlen($haystack) - strlen($needle)) >= 0 && strpos($haystack, $needle, $temp) !== FALSE);
+}
 
 function process($file) {
   $content = file_get_contents (file);
