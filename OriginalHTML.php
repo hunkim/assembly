@@ -1,4 +1,6 @@
 <?php
+error_reporting(E_ALL);
+assert_options(ASSERT_BAIL,     true);
 
 $billid = "PRC_A1J5J1E1N1K0Q1O4A4V8L1H4C2Q4C9";
 
