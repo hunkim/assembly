@@ -60,7 +60,6 @@ function process($file) {
         if ($bill) {
           // Do something with bill
           echo $bill->toString() ."\n";
-          exit();
         }
 
         $bill = new Bill("","");
