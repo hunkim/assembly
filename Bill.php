@@ -77,8 +77,6 @@ class Bill {
   }
 
   function update($db) {
-    $this->id = $id;
-
     $sql = "UPDATE  Bill SET ";
     $sql .= "summary='" . $db->real_escape_string($this->summary) . "'\n";
     $sql .= ", title='" . $db->real_escape_string($this->title) . "'\n";
