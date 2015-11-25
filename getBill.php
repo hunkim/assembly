@@ -26,7 +26,6 @@ function getBill($id, $content) {
       continue;
     }
 
-    echo $line;
     if ($line=="" || strpos($line, "제안이유")!==false || strpos($line, "http://")!==false) {
       continue;
     }
