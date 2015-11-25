@@ -63,7 +63,7 @@ function process($file) {
           exit();
         }
 
-        $bill = new Bill($line,"");
+        $bill = new Bill("","");
         $bill->id = parseBillId($line);
         continue;
     }
@@ -74,10 +74,13 @@ function process($file) {
 
     echo ($line . " => " . isDate($line) . "\n");
 
-    if (isDate($line) && !$bill->proposed) {
-      $bill->proposed = $line;
-    } else {
-      $bill->processed = $line;
+    if (isDate($line) {
+      if ($bill->proposed) {
+          $bill->processed = $line;
+      } else {
+          $bill->proposed = $line;
+      }
+      continue;
     }
 
     if (startsWith($line, 'title="')) {
