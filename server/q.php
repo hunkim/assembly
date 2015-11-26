@@ -830,6 +830,7 @@ function processQuery($apptype, $sql) {
           $data['name']=$row['name'];
           $data['info']=$row['name']. "(" .$row['cname'] . "/" . $row['party'] . ")";
           $data['total']=0;
+          $data['value']=100; // start with 100 to make circle big enough
           $data['id']=$id;
           $prevId = $id;
       }
@@ -839,7 +840,7 @@ function processQuery($apptype, $sql) {
     //  $data['articles'][] = [intval($row['y']), intval($row['c'])];
     //  $data['articles'][] = [$row['y'].$row['m']=>$row['c']];
       $data['total']+=$row['c'];
-
+      $data['value']+=$row['c'];
       $idx ++;
     }
 
