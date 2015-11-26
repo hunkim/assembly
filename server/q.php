@@ -820,13 +820,13 @@ function processQuery($apptype, $sql) {
             $rows[] = $data;
           }
 
-          $data['articles']=[];
+      //    $data['articles']=[];
           $data['name']=$row['name']. "(" .$row['cname'] . "/" . $row['party'] . ")";
           $data['total']=0;
           $prevId = $id;
       }
 
-      $data['articles'][] = [intval($row['y']), intval($row['c'])];
+    //  $data['articles'][] = [intval($row['y']), intval($row['c'])];
     //  $data['articles'][] = [$row['y'].$row['m']=>$row['c']];
       $data['total']+=$row['c'];
 
