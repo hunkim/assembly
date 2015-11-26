@@ -818,6 +818,12 @@ function processQuery($apptype, $sql) {
       if ($prevId!=$id) {
           if($idx!=0) {
             $child[] = $data;
+
+            // Check it's ready to be added
+            if ($idx%10==0) {
+              $rows[]=['children'=>$child];
+              $child = [];
+            }
           }
 
       //    $data['articles']=[];
@@ -827,10 +833,7 @@ function processQuery($apptype, $sql) {
           $prevId = $id;
       }
 
-      if ($idx%10==0) {
-        $rows[]=['children'=>$child];
-        $child = [];
-      }
+
 
     //  $data['articles'][] = [intval($row['y']), intval($row['c'])];
     //  $data['articles'][] = [$row['y'].$row['m']=>$row['c']];
