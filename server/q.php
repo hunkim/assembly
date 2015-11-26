@@ -738,8 +738,12 @@ switch($apptype) {
     $sql = "select name, cname, party, a.id  from Actor a Inner join CoActor c on a.id = c.actorid where c.billid = ? order by name;";
     break;
 
-  case 'order':
+  case 'allorder':
     $sql = "select a.id, a.name, a.cname, a.party, year(cdate) as y, month(cdate) as m, count(distinct b.id) as c from CoActor c inner join Actor a on a.id=c.actorid inner join Bill b on c.billid=b.id  group by actorid, y, m order by a.id, y, m";
+    break;
+
+  case 'order':
+    $sql = "select cname, name, party, id, count(distinct billid) as c, count(distinct billid)+50 as value  from CoActor c inner join Actor a on a.id = c.actorid group by actorid order by name";
     break;
 
   default:
@@ -811,44 +815,21 @@ function processQuery($apptype, $sql) {
   $rows=[];
   $child= [];
   if ($apptype=='order') {
-    $prevId = -1;
-    $idx = 0;
     while($row = $result->fetch_array(MYSQLI_ASSOC)) {
-      $id = $row['id'];
-      if ($prevId!=$id) {
-          if($idx!=0) {
-            $child[] = $data;
-
-            // Check it's ready to be added
-            if ($idx%20==0) {
-              $rows[]=['name'=>'ord' . $idx, 'children'=>$child];
+          $child[] = $row;
+          // Check it's ready to be added
+          if (rand(1,15)==1) {
+              $rows[]=['name'=>'ord'.$row['id'], 'children'=>$child];
               $child = [];
-            }
           }
-
-      //    $data['articles']=[];
-          $data['name']=$row['name'];
-          $data['info']=$row['name']. "(" .$row['cname'] . "/" . $row['party'] . ")";
-          $data['total']=0;
-          $data['val']=100; // start with 100 to make circle big enough
-          $data['id']=$id;
-          $prevId = $id;
-      }
-
-
-
-    //  $data['articles'][] = [intval($row['y']), intval($row['c'])];
-    //  $data['articles'][] = [$row['y'].$row['m']=>$row['c']];
-      $data['total']+=$row['c'];
-
-      $idx ++;
     }
 
     // Add last one
     $child[] = $data;
-    $rows[]=['name'=>'ord' . $idx,'children'=>$child];
+    $rows[]=['name'=>'ordlast', 'children'=>$child];
 
-    $rows = ['children'=>$rows];
+    // Should start with childeren
+    $rows = ['name'=>'all', 'children'=>$rows];
   } else {
     while($row = $result->fetch_array(MYSQLI_ASSOC)) {
       $rows[] = $row;
