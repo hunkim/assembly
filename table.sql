@@ -14,7 +14,7 @@ DROP TABLE Bill;
 CREATE TABLE Bill (
   id varchar(255) NOT NULL UNIQUE,
   title varchar(255),
-  
+
   proposedby varchar(255),
   result varchar(255),
 
@@ -34,6 +34,10 @@ CREATE TABLE Bill (
 );
 
 
+CREATE INDEX all_index ON  Bill (id, title, cdate, pdate, result);
+
+
+
 DROP TABLE CoActor;
 CREATE TABLE CoActor (
   billid varchar(255) NOT NULL,
@@ -43,6 +47,7 @@ CREATE TABLE CoActor (
   FOREIGN KEY (billid) REFERENCES Bill(id),
   CONSTRAINT cac UNIQUE (billid, actorid, proposed)
 );
+CREATE INDEX all_index ON  CoActor (billid, actorid, proposed);
 
 
 
