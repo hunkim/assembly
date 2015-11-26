@@ -825,7 +825,6 @@ function processQuery($apptype, $sql) {
     }
 
     // Add last one
-    $child[] = $data;
     $rows[]=['name'=>'ordlast', 'children'=>$child];
 
     // Should start with childeren
