@@ -846,6 +846,7 @@ function processQuery($apptype, $sql) {
     $child[] = $data;
     $rows[]=['name'=>'ord' . $idx,'children'=>$child];
 
+    $rows = ['children'=>$rows[]];
   } else {
     while($row = $result->fetch_array(MYSQLI_ASSOC)) {
       $rows[] = $row;
