@@ -819,14 +819,14 @@ function processQuery($apptype, $sql) {
           $child[] = $row;
           // Check it's ready to be added
           if (rand(1,15)==1) {
-              $rows[]=['name'=>'ord' . $idx, 'children'=>$child];
+              $rows[]=['name'=>'ord'.$row['id'], 'children'=>$child];
               $child = [];
           }
     }
 
     // Add last one
     $child[] = $data;
-    $rows[]=['name'=>'ord' . $idx,'children'=>$child];
+    $rows[]=['name'=>'ordlast', 'children'=>$child];
 
     // Should start with childeren
     $rows = ['children'=>$rows];
