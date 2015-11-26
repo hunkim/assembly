@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang='ko' ng-app="myApp" ng-controller="customersCtrl">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8">
+    <title>19대 국회 법률안 발의 정보</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/png">
+    <script src="js/angular.1.4.8.min.js"></script>
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/Chart.js"></script>
+    <script src="js/angular-chart.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/angular-busy.min.js"></script>
+
+    <link rel="stylesheet" href="css/angular-chart.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/angular-busy.min.css">
+  </head>
+<body>
+  <h2>
+    <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+  {{coArr[0].name}}({{coArr[0].cname}}/{{coArr[0].party}})님의 총 {{coArr[0].c}} 법안발의 정보
+    <small>(시험운영중: <a href="mailto:hunkim+ka@gmail.com?Subject=Bug" target="_top">의견 주기</a>)</small>
+  </h2>
+
+<!-- info block -->
+<div cg-busy="{promise:statPromise,message:'통계 정보를 읽고 있습니다...'}"></div>
+<div ng-hide="errorFlag" class="alert alert-info" role="alert">
+  <a href="1hMgzDLoIavLegbFallOojB1SM5faMohLHSX3iYtkc7w.html" class="btn btn-info" role="button">전체의원보기</a>
+  <strong>공동발의 많이한 의원들(공동발의수):</strong>
+  <span ng-repeat="actor in coArr">
+    <a ng-show="$index" class="btn btn-xs btn-primary" role="button" ng-click="setId(actor.id);"> {{actor.name}}
+     <span class="badge">{{actor.c}}</span></a>
+  </span>
+</div>
+  <!--  <A href=#list> -->
+ &nbsp;
+
+<!-- error block -->
+<div ng-show="errorFlag" class="alert alert-danger text-center" role="error">
+  <span class="glyphicon glyphicon-globe" aria-hidden="true"></span>
+  인터넷 연결이 불안정 합니다.
+  <a class="btn btn-primary" role="button" ng-click="reconnect();"> 다시 연결 시도하기</a>
+</div>
+
+<!-- <div ng-hide="statArr.length===0"> -->
+  <canvas id="line" class="chart chart-line" chart-data="data"
+  chart-labels="labels" chart-legend="true" chart-series="series"
+  chart-click="onClick" >
+</canvas>
+<!-- </div> -->
+
+<!--
+<table class="table">
+  <tr ng-repeat="stat in statArr">
+    <td>{{ stat.year }}</td>
+    <td>{{ stat.month }}</td>
+    <td>{{ stat.c }}</td>
+    <td>{{ stat.avgAmtArea }}</td>
+    <td>{{ stat.avgAmtLand }}</td>
+</tr>
+</table>
+-->
+<a name="list"></a>
+<div cg-busy="{promise:listPromise,message:'계약 정보를 읽고 있습니다...'}"></div>
+<div class="panel panel-default">
+  <!-- Default panel contents -->
+  <div class="panel-heading">
+    <strong>{{coArr[0].name}}({{coArr[0].cname}}/{{coArr[0].party}})님의 총 {{coArr[0].c}} 법안발의 정보 목록</strong>
+    (<i class="glyphicon glyphicon-chevron-right" aria-hidden="true">를 클릭하시면 요약정보와 제안자를 보여줍니다.</i>)
+  </div>
+</div>
+
+  <!-- Table -->
+  <!-- 단독 전/월세: 시군구  계약면적(㎡) 전월세구분 계약일 보증금(만원) 월세(만원)  건축년도  도로명-->
+<table class="table">
+    <tr>
+      <th>#</th>
+      <th>제안일자</th>
+      <th>의안명</th>
+      <th>의결일자</th>
+      <th>의결결과</th>
+    </tr>
+    <!-- http://stackoverflow.com/questions/3076708/can-we-have-multiple-tbody-in-same-table -->
+    <tbody ng-repeat="list in listArr">
+      <tr>
+      <td>{{$index+1}}</td>
+      <td>{{list.cdate}}</td>
+      <td>
+        <A target="_blank"
+          href="http://likms.assembly.go.kr/bill/jsp/BillDetail.jsp?bill_id={{list.id}}">
+        {{list.title}}</a>
+        <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': list.open, 'glyphicon-chevron-right': !list.open}"
+        ng-click="toggleList($index);"/>
+      </td>
+      <td>{{list.pdate}}</td>
+      <td>{{list.result}}</td>
+    </tr>
+    <tr>
+      <!-- http://stackoverflow.com/questions/16389775/twitter-bootstrap-use-collapse-js-on-table-cells-almost-done -->
+    <td ng-show="list.open" colspan="5" class="hiddenRow">
+        <div class="accordion-body" ng-class="{'collapse in':list.open, 'collapse': !list.open}">
+          <span class="glyphicon glyphicon-book" aria-hidden="true"></span>
+             {{printSummary(list.summary);}}<p>
+              제안자: <span ng-repeat="actor in list.ActArr">
+                <a class="btn-xs btn btn-default navbar-btn" ng-click="setId(actor.id);">{{actor.name}}({{actor.cname}}/{{actor.party}}</a>
+                 <!-- <span class="badge">{{actor.c}}</span></a> -->
+              </span>
+          </div>
+    </td>
+  </tr>
+</tbody>
+</table>
+
+<div class="alert alert-danger" role="alert">
+  <a href="http://likms.assembly.go.kr" class="alert-link text-center"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
+    이 사이트가 보여주는 자료는 프로그램의 버그등으로 인해 오류가 있을수 있습니다. 정확한 자료는 의안정보 시스템에서 반드시 확인하세요.</a>
+</div>
+
+<p class="text-center">
+  <button class="btn btn-primary" type="button">
+  만든이: <span class="badge">hunkim+kp@gmail.com</span>
+</button>
+
+<button class="btn btn-sucess" href="http://likms.assembly.go.kr" type="button">
+자료: <span class="badge">의안정보 시스템</span>
+</button>
+
+<a href="http://aws.amazon.com">
+<img src="aws.png"></a>
+</body>
+<!-- app.js added -->
+<script src="js/app.js"></script>
+
+<!-- Google analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-70425257-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+</html>

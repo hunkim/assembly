@@ -7,8 +7,8 @@ app.controller('customersCtrl',
     // API Host
     var $rhost = "http://a.kassembly.xyz/q.php";
 
-    // show count option in the graph
-    $scope.showCount = true;
+    // show all
+    $scope.showCircle = true;
 
     // http error flag
     $scope.errorFlag = false;
@@ -20,33 +20,32 @@ app.controller('customersCtrl',
       [],
     ];
 
-    $scope.id = 158;
+    // For now, but need to change it
+    $scope.id;
 
     // stat and sale array
     $scope.statArr = [];
     $scope.listArr = [];
     $scope.coArr = [];
 
-    // Set id
-    $scope.setId = function($id) {
-      $scope.id = $id;
-      $scope.upAll();
-    }
 
-
-    // Set id
+    // Toggle cell so show more info
     $scope.toggleList = function($index) {
       if ($scope.listArr.length < $index) {
         return;
       }
 
+      // Toggle it
       $scope.listArr[$index].open = !$scope.listArr[$index].open;
 
+      // If it is open, get data
       if ($scope.listArr[$index].open) {
+        // Load only it is not loaded
         if ($scope.listArr[$index].summary === undefined) {
           $scope.getSummary($index);
         }
 
+        // Load only it is not loaded
         if ($scope.listArr[$index].ActArr === undefined) {
           $scope.getBillAct($index);
         }
@@ -178,8 +177,10 @@ app.controller('customersCtrl',
         });
     };
 
+    // Show summary
     $scope.printSummary = function($summary) {
-      if ($summary === undefined || $summary[0] === undefined || $summary[0]
+      if ($summary === undefined || $summary[0] === undefined || $summary[
+          0]
         .summary === undefined ||
         $summary[0].summary === "") {
         return "요약정보 없슴.";
@@ -209,7 +210,17 @@ app.controller('customersCtrl',
         });
     };
 
-    // Show all for the initial screen
-    $scope.upAll();
+
+    // Set id and refresh
+    $scope.setId = function($id) {
+      $scope.id = $id;
+      $location.url("/" + $id);
+      $scope.upAll();
+    }
+
+    var $id = $location.path().substring(1);
+    $scope.setId($id);
+    console.log("Move: " + $scope.id);
+
   }
 );
