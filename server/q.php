@@ -856,7 +856,7 @@ function processQuery($apptype, $sql) {
 	//
   //http://php.net/manual/de/function.gzencode.php
   //print gzencode(json_encode($rows,JSON_UNESCAPED_UNICODE));
-  print (json_encode($rows[0],JSON_PRETTY_PRINT|JSON_UNESCAPED_UNICODE));
+  print (json_encode($rows,JSON_PRETTY_PRINT|JSON_UNESCAPED_UNICODE));
 
 	$conn->close();
 }
