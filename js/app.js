@@ -5,7 +5,7 @@ var app = angular.module('myApp', ['chart.js', 'cgBusy']);
 app.controller('customersCtrl',
   function($scope, $http, $location) {
     // API Host
-    var $rhost = "http://a.kassembly.xyz/q.php";
+    var $rhost = "http://api.kassembly.xyz/q.php";
 
     // show all
     $scope.showCircle = true;
