@@ -821,7 +821,7 @@ function processQuery($apptype, $sql) {
 
             // Check it's ready to be added
             if ($idx%10==0) {
-              $rows[]=['children'=>$child];
+              $rows[]=['name'=>$idx, 'children'=>$child];
               $child = [];
             }
           }
@@ -844,7 +844,7 @@ function processQuery($apptype, $sql) {
 
     // Add last one
     $child[] = $data;
-    $rows[]=['children'=>$child];
+    $rows[]=['name'=>$idx,'children'=>$child];
 
   } else {
     while($row = $result->fetch_array(MYSQLI_ASSOC)) {
