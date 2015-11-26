@@ -827,7 +827,8 @@ function processQuery($apptype, $sql) {
           }
 
       //    $data['articles']=[];
-          $data['name']=$row['name']. "(" .$row['cname'] . "/" . $row['party'] . ")";
+          $data['name']=$row['name'];
+          $data['info']=$row['name']. "(" .$row['cname'] . "/" . $row['party'] . ")";
           $data['total']=0;
           $data['id']=$id;
           $prevId = $id;
