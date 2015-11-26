@@ -820,7 +820,7 @@ function processQuery($apptype, $sql) {
           $child[] = $row;
           // Check it's ready to be added
           //if (rand(1,15)==1) {
-          if ($idx++%5===0) {
+          if ($idx++%7===0) {
               $rows[]=['name'=>'ord'.$row['id'], 'children'=>$child];
               $child = [];
           }
