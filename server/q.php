@@ -743,7 +743,7 @@ switch($apptype) {
     break;
 
   case 'order':
-    $sql = "select  name, cname, party, id, count(distinct billid) as c, count(distinct billid)+50 as value  from CoActor c inner join Actor a on a.id = c.actorid group by actorid order by name";
+    $sql = "select  name, cname, party, id, count(distinct billid) as c, count(distinct billid)+50 as value  from CoActor c inner join Actor a on a.id = c.actorid group by actorid order by c";
     break;
 
   default:
