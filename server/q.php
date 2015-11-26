@@ -815,10 +815,12 @@ function processQuery($apptype, $sql) {
   $rows=[];
   $child= [];
   if ($apptype=='order') {
+    $idx = 0;
     while($row = $result->fetch_array(MYSQLI_ASSOC)) {
           $child[] = $row;
           // Check it's ready to be added
-          if (rand(1,15)==1) {
+          //if (rand(1,15)==1) {
+          if ($idx++%5===0) {
               $rows[]=['name'=>'ord'.$row['id'], 'children'=>$child];
               $child = [];
           }
