@@ -809,7 +809,7 @@ function processQuery($apptype, $sql) {
   $result = $stmt->get_result();
 
   $rows=[];
-
+  $child= [];
   if ($apptype=='order') {
     $prevId = -1;
     $idx = 0;
@@ -817,7 +817,7 @@ function processQuery($apptype, $sql) {
       $id = $row['id'];
       if ($prevId!=$id) {
           if($idx!=0) {
-            $rows[] = $data;
+            $child[] = $data;
           }
 
       //    $data['articles']=[];
@@ -827,12 +827,21 @@ function processQuery($apptype, $sql) {
           $prevId = $id;
       }
 
+      if ($idx%10==0) {
+        $rows[]=['children'=>$child];
+        $child = [];
+      }
+
     //  $data['articles'][] = [intval($row['y']), intval($row['c'])];
     //  $data['articles'][] = [$row['y'].$row['m']=>$row['c']];
       $data['total']+=$row['c'];
 
       $idx ++;
     }
+
+    // Add last one
+    $child[] = $data;
+    $rows[]=['children'=>$child];
 
   } else {
     while($row = $result->fetch_array(MYSQLI_ASSOC)) {
