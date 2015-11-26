@@ -829,7 +829,7 @@ function processQuery($apptype, $sql) {
     $rows[]=['name'=>'ordlast', 'children'=>$child];
 
     // Should start with childeren
-    $rows = ['children'=>$rows];
+    $rows = ['name'=>'all', 'children'=>$rows];
   } else {
     while($row = $result->fetch_array(MYSQLI_ASSOC)) {
       $rows[] = $row;
