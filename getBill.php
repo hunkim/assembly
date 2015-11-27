@@ -41,6 +41,7 @@ function getBill($id, $content) {
   // 교육기본법 일부개정법률안(1910565) split them
   list($titleOnly, $bid) = explode("(", $title);
 
+  echo("$titleOnly:$bid");
   $bill = new Bill($id);
   $bill->bid = intval($bid);
 
