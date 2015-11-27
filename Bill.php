@@ -41,8 +41,13 @@ class Bill {
     $this->summary = $summary;
   }
 
+
+  function toSummaryString() {
+      return "I: $this->id\ntT: $this->title\n\tS:$this->summary";
+  }
+
   function toString() {
-    return "I: $this->id T: $this->titleHTML\n p: $this->proposed\np:$this->processed b:$this->proposedby, r: $this->result s:$this->summary";
+    return "I: $this->id\nT: $this->titleHTML\n p: $this->proposed\np:$this->processed b:$this->proposedby, r: $this->result s:$this->summary";
   }
 
 

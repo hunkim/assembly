@@ -43,7 +43,10 @@ function getBill($id, $content) {
 
   $bill = new Bill($id);
   $bill->bid = intval($bid);
-  $bill->setTitleSum(trim($title), trim($summary));
+
+  assert(!$bid);
+  assert(!$titleOnly));
+  $bill->setTitleSum(trim($titleOnly), trim($summary));
   return $bill;
 }
 ?>

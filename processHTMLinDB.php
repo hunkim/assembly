@@ -47,9 +47,9 @@ while($row = $result->fetch_assoc()) {
     $actors = getActors($coActorHTML);
 
     if ($dryrun) {
-      print $bill->toString();
+      print $bill->toSummaryString();
 
-      $line = readline("OK?: [y]/n");
+      $line = readline("\n\nOK?: [y]/n");
       if ($line==='n') {
         exit(-1);
       }
