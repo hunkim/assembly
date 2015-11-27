@@ -12,6 +12,7 @@ if ($argv==2 && $argv[1]=='dryrun') {
   $dryrun = true;
 }
 
+$dryrun=true;
 
 $db = new mysqli("p:localhost", "trend", "", "assembly");
 
