@@ -55,8 +55,8 @@ switch($apptype) {
 
   // This is for the autocomplete search
   case 'actor':
-    $sql = "select CONCAT('(', name, CONCAT('', CONCAT('/', cname, party)),')') as info, id from Actor order by name";
-    break; 
+    $sql = "select CONCAT_WS('(', name, CONCAT(CONCAT_WS('/', cname, party)),')') as info, id from Actor order by name";
+    break;
 
   default:
     print $json;
