@@ -49,6 +49,9 @@ while($row = $result->fetch_assoc()) {
     if ($dryrun) {
       print $bill->toSummaryString();
 
+      if ($bill->summary==="") {
+        echo "\nNo summary! check http://likms.assembly.go.kr/bill/jsp/SummaryPopup.jsp?bill_id=$bill->id\n";
+      }
       $line = readline("\n\nOK?[y]/n: ");
       if ($line==='n') {
         exit(-1);
