@@ -49,7 +49,7 @@ while($row = $result->fetch_assoc()) {
     if ($dryrun) {
       print $bill->toSummaryString();
 
-      $line = readline("\n\nOK?: [y]/n");
+      $line = readline("\n\nOK?[y]/n: ");
       if ($line==='n') {
         exit(-1);
       }
