@@ -11,25 +11,51 @@
     <script src="js/angular-chart.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/angular-busy.min.js"></script>
+    <script src="js/angucomplete-alt.2.1.0.min.js"></script>
+
 
     <link rel="stylesheet" href="css/angular-chart.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/angular-busy.min.css">
+    <link rel="stylesheet" href="css/angucomplete-alt.css">
+    <link rel="stylesheet" href="css/assembly.css">
   </head>
 <body>
+  <table><tr><td class="col-md-9">
   <h2>
     <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-  {{coArr[0].name}}({{coArr[0].cname}}/{{coArr[0].party}})님의 총 {{coArr[0].c}} 법안발의 정보
-    <small>(시험운영중: <a href="mailto:hunkim+ka@gmail.com?Subject=Bug" target="_top">의견 주기</a>)</small>
+  {{coArr[0].name}}({{coArr[0].cname}}/{{coArr[0].party}}) 법안발의:{{coArr[0].c}}
+      <small>(시험운영중: <a href="mailto:hunkim+ka@gmail.com?Subject=Bug" target="_top">의견 주기</a>)</small>
   </h2>
+</td>
+
+<td>
+  <div class="input-group vcenter">
+    <angucomplete-alt id="ex1"
+            placeholder="의원검색"
+            selected-object="setActor"
+            local-data="actors"
+            search-fields="info"
+            title-field="info"
+            text-searching="false"
+            text-no-results="false"
+            clear-selected="true"
+            input-class="pull-right form-control form-control-small small-input"
+            minlength="1"/></div>
+</td>
+<td>
+  <div class="vcenter">
+    &nbsp;&nbsp;<a href="1hMgzDLoIavLegbFallOojB1SM5faMohLHSX3iYtkc7w.html" class="btn btn-primary" role="button">전체의원보기</a>
+  </div>
+</td>
+</table>
 
 <!-- info block -->
 <div cg-busy="{promise:statPromise,message:'통계 정보를 읽고 있습니다...'}"></div>
 <div ng-hide="errorFlag" class="alert alert-info" role="alert">
-  <a href="1hMgzDLoIavLegbFallOojB1SM5faMohLHSX3iYtkc7w.html" class="btn btn-info" role="button">전체의원보기</a>
-  <strong>공동발의 많이한 의원들(공동발의수):</strong>
+  <strong>{{coArr[0].name}}의원과 공동발의 많이한 의원들(공동발의수):</strong>
   <span ng-repeat="actor in coArr">
-    <a ng-show="$index" class="btn btn-xs btn-primary" role="button" ng-click="setId(actor.id);"> {{actor.name}}
+    <a ng-hide="coArr[0].id==actor.id" class="btn btn-xs btn-primary" role="button" ng-click="setId(actor.id);"> {{actor.name}}
      <span class="badge">{{actor.c}}</span></a>
   </span>
 </div>
@@ -87,10 +113,8 @@
       <td>{{list.cdate}}</td>
       <td>
         <A target="_blank"
-          href="http://likms.assembly.go.kr/bill/jsp/BillDetail.jsp?bill_id={{list.id}}">
-        {{list.title}}</a>
-        <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': list.open, 'glyphicon-chevron-right': !list.open}"
-        ng-click="toggleList($index);"/>
+          href="http://likms.assembly.go.kr/bill/jsp/BillDetail.jsp?bill_id={{list.id}}">{{list.title}}</A>
+         <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': list.open, 'glyphicon-chevron-right': !list.open}"ng-click="toggleList($index);"/>
       </td>
       <td>{{list.pdate}}</td>
       <td>{{list.result}}</td>
@@ -118,7 +142,7 @@
 
 <p class="text-center">
   <button class="btn btn-primary" type="button">
-  만든이: <span class="badge">hunkim+kp@gmail.com</span>
+  만든이: <span class="badge">hunkim+ka@gmail.com</span>
 </button>
 
 <button class="btn btn-sucess" href="http://likms.assembly.go.kr" type="button">

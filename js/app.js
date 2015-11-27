@@ -1,6 +1,8 @@
 'use strict';
 
-var app = angular.module('myApp', ['chart.js', 'cgBusy']);
+var app = angular.module('myApp', ['chart.js', 'cgBusy',
+  'angucomplete-alt'
+]);
 
 app.controller('customersCtrl',
   function($scope, $http, $location) {
@@ -28,6 +30,8 @@ app.controller('customersCtrl',
     $scope.listArr = [];
     $scope.coArr = [];
 
+    // all actors for search auto complete
+    $scope.actors = [];
 
     // Toggle cell so show more info
     $scope.toggleList = function($index) {
@@ -142,6 +146,18 @@ app.controller('customersCtrl',
         });
     };
 
+    $scope.getAllActors = function() {
+      $scope.errorFlag = false;
+      $scope.getAllActorsPromise = $http.get($rhost +
+          "/actor")
+        .success(function(response) {
+          $scope.actors = response;
+        })
+        .error(function(response) {
+          $scope.errorFlag = true;
+        });
+    };
+
     $scope.getCoAct = function() {
       $scope.coActArr = [];
       $scope.errorFlag = false;
@@ -179,7 +195,8 @@ app.controller('customersCtrl',
 
     // Show summary
     $scope.printSummary = function($summary) {
-      if ($summary === undefined || $summary[0] === undefined || $summary[
+      if ($summary === undefined || $summary[0] === undefined ||
+        $summary[
           0]
         .summary === undefined ||
         $summary[0].summary === "") {
@@ -210,17 +227,33 @@ app.controller('customersCtrl',
         });
     };
 
+    // get all actors
+    $scope.getAllActors();
 
     // Set id and refresh
     $scope.setId = function($id) {
+      if ($id === "") {
+        return;
+      }
+
       $scope.id = $id;
       $location.url("/" + $id);
       $scope.upAll();
     }
 
+    // move to the current selected
     var $id = $location.path().substring(1);
     $scope.setId($id);
     console.log("Move: " + $scope.id);
+
+    $scope.setActor = function(selected) {
+      if (selected == undefined || selected.originalObject == undefined) {
+        return;
+      }
+
+      $scope.setId(selected.originalObject.id);
+    };
+
 
   }
 );
