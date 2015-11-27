@@ -55,7 +55,7 @@ switch($apptype) {
 
   // This is for the autocomplete search
   case 'actor':
-    $sql = "select name, cname, party, id, count(distinct billid) as c from CoActor c inner join Actor a on a.id = c.actorid group by actorid order by name";
+    $sql = "select CONCAT("", CONCAT("(", name, CONCAT("/", cname, party)), ")") as info, id from Actor order by name";
     break;
 
   default:
