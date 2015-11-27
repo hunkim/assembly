@@ -7,6 +7,12 @@ include_once 'Bill.php';
 include_once 'getCoActor.php';
 include_once 'getBill.php';
 
+$dryrun = false;
+if ($argv==2 && $argv[1]=='dryrun') {
+  $dryrun = true;
+}
+
+
 $db = new mysqli("p:localhost", "trend", "", "assembly");
 
 // Check connection
@@ -35,11 +41,21 @@ while($row = $result->fetch_assoc()) {
     echo ("Working on $id\n");
 
     $bill = getBill($id, $sumHTML);
-    // insert bill to DB
-    $bill->update($db);
+
 
     $actors = getActors($coActorHTML);
 
+    if ($dryrun) {
+      print $bill->toString();
+
+      $line = readline("OK?: [y]/n");
+      if ($line==='n') {
+        exit(-1);
+      }
+      continue; // DO not put something to DB
+    }
+    // insert bill and actors to DB
+    $bill->update($db);
     foreach ($actors as $a) {
         $a->insert($db);
         $a->insertWithBill($db, $id);

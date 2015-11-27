@@ -16,7 +16,8 @@ if ($argv[0]=='Bill.php') {
 }
 
 class Bill {
-  var $id;
+  var $id; // key to get others
+  var $nid; // number id attached in the title 교육기본법 일부개정법률안(1910565)
   var $summary;
   var $title;
 
@@ -59,6 +60,7 @@ class Bill {
 
     $sql = "INSERT INTO Bill SET ";
     $sql .= "id='" . $db->real_escape_string($this->id) . "'\n";
+    $sql .= "nid='" . $db->real_escape_string($this->nid) . "'\n";
     $sql .= ", titleHTML='" . $db->real_escape_string($this->titleHTML) . "'\n";
     $sql .= ", sumHTML='" . $db->real_escape_string($this->sumHTML) . "'\n";
     $sql .= ", billHTML='" . $db->real_escape_string($this->billHTML) . "'\n";

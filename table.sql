@@ -13,6 +13,7 @@ CREATE TABLE Actor (
 DROP TABLE Bill;
 CREATE TABLE Bill (
   id varchar(255) NOT NULL UNIQUE,
+  nid int(11) NOT NULL UNIQUE,
   title varchar(255),
 
   proposedby varchar(255),

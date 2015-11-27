@@ -1,7 +1,7 @@
 <?php
-
 include_once 'Bill.php';
 
+// Test mode
 if ($argv[0]=='getBill.php') {
   $b = getBill("PRC_A1J5J1E1N1K0Q1O4A4V8L1H4C2Q4C9");
   echo ($b->toString());
@@ -26,7 +26,7 @@ function getBill($id, $content) {
       continue;
     }
 
-    if ($line=="" || strpos($line, "제안이유")!==false || strpos($line, "http://")!==false) {
+    if ($line==="" || strpos($line, "제안이유")!==false || strpos($line, "http://")!==false) {
       continue;
     }
 
@@ -38,9 +38,12 @@ function getBill($id, $content) {
     }
   }
 
-  $bill = new Bill($id);
+  // 교육기본법 일부개정법률안(1910565) split them
+  list($titleOnly, $bid) = explode("(", $title);
 
-  $bill->setTitleSum($title, $summary);
+  $bill = new Bill($id);
+  $bill->bid = intval($bid);
+  $bill->setTitleSum(trim($title), trim($summary));
   return $bill;
 }
 ?>
