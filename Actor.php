@@ -65,7 +65,7 @@ class Actor {
       echo "New coactor record created successfully.\n";
       return true;
     } else {
-      die ("Error: " . $sql . "\n" . $db->error);
+      echo ("Error: " . $sql . "\n" . $db->error);
       return false;
     }
   }
