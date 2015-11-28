@@ -15,39 +15,73 @@ if ($argv[0]=='Bill.php') {
   $b->insertHTML($db);
 }
 
+/*
+assembly_id int,
+id  int NOT NULL UNIQUE,
+link_id varchar(255) NOT NULL UNIQUE,
+title varchar(255),
+
+summary TEXT,
+
+proposed_date DATE,
+decision_date DATE,
+collected_date DATE,
+
+represent_actor int,
+
+withdrawer_count int,
+actor_count int,
+
+proposer_type varchar(255),
+status varchar(255),
+PRIMARY KEY (id)
+*/
 class Bill {
   var $id; // key to get others
-  var $nid; // number id attached in the title 교육기본법 일부개정법률안(1910565)
-  var $summary;
+  var $link_id;
+  var $assembly_id;
   var $title;
+  var $summary;
 
-  var $result;
-  var $proposedby;
+  var $proposed_date;
+  var $decision_date;
+  var $collected_date;
 
-  var $proposed;
-  var $processed;
+  var $withdrawer_count;
+  var $actor_count;
 
-  var $titleHTML;
-  var $sumHTML;
-  var $billHTML;
-  var $coActorHTML;
+  var $proposer_type;
+  var $status;
+  var $status_detail;
 
-  function Bill($id) {
-  $this->id = $id;
-  }
+  function Bill($json) {
+    $this->id = $json['bill_id'];
+    $this->link_id = $json['link_id'];
+    $this->link_id = $json['assembly_id'];
 
-  function setTitleSum($title, $summary) {
-    $this->title = $title;
-    $this->summary = $summary;
-  }
+    $this->title = $json['title'];
+    $this->summary = implode(" ", $json['summaries']);
 
+    $this->proposed_date = $json['proposed_date'];
+    $this->decision_date = $json['decision_date'];
+    //$this->collected_date = mysqlnow
 
-  function toSummaryString() {
-      return "I: $this->id ($this->bid)\n\tT: $this->title\n\tS:$this->summary";
+    $this->withdrawer_count = count($json['withdrawers']);
+    $this->actor_count = count($json['proposers']);
+
+    $this->proposer_type = $json['proposer_type'];
+    $this->status = $json['status'];
+    $this->status_detail = $json['status_detail'];
   }
 
   function toString() {
-    return "I: $this->id\nT: $this->titleHTML\n p: $this->proposed\np:$this->processed b:$this->proposedby, r: $this->result s:$this->summary";
+      return "I: $this->id ($this->link_id)\n".
+            "\tT: $this->title\n".
+            "\tP: $this->proposed_date and $this->decision_date\n".
+            "\tA: $this->actor_count (- $this->withdrawer_count)\n".
+            "\tP: $this->proposer_type\n".
+            "\tR: $this->status ($this->status_detail)\n".
+            "\tS:$this->summary";
   }
 
 
@@ -57,7 +91,7 @@ class Bill {
     return ($result!==false && $result->num_rows > 0);
   }
 
-  function insertHTML($db) {
+  function insert($db) {
     if ($this->exist($db)) {
       echo ("$this->id Already there!\n");
       return;
@@ -65,34 +99,25 @@ class Bill {
 
     $sql = "INSERT INTO Bill SET ";
     $sql .= "id='" . $db->real_escape_string($this->id) . "'\n";
-    $sql .= "nid='" . $db->real_escape_string($this->nid) . "'\n";
-    $sql .= ", titleHTML='" . $db->real_escape_string($this->titleHTML) . "'\n";
-    $sql .= ", sumHTML='" . $db->real_escape_string($this->sumHTML) . "'\n";
-    $sql .= ", billHTML='" . $db->real_escape_string($this->billHTML) . "'\n";
-    $sql .= ", coActorHTML='" . $db->real_escape_string($this->coActorHTML) . "'\n";
-    $sql .= ", proposedby='" . $db->real_escape_string($this->proposedby) . "'\n";
-    $sql .= ", result='" . $db->real_escape_string($this->result) . "'\n";
-    $sql .= ", cdate='" . $db->real_escape_string($this->proposed) . "'\n";
-    $sql .= ", pdate='" . $db->real_escape_string($this->processed) . "'\n";
-    $sql .= ", collected=now();\n";
+    $sql .= "link_id='" . $db->real_escape_string($this->link_id) . "'\n";
+    $sql .= "assembly_id='" . $db->real_escape_string($this->assembly_id) . "'\n";
+
+    $sql .= ", title='" . $db->real_escape_string($this->title) . "'\n";
+    $sql .= ", summary='" . $db->real_escape_string($this->summary) . "'\n";
+
+    $sql .= ", actor_count='" . $db->real_escape_string($this->actor_count) . "'\n";
+    $sql .= ", withdrawer_count='" . $db->real_escape_string($this->withdrawer_count) . "'\n";
+
+    $sql .= ", proposer_type='" . $db->real_escape_string($this->proposer_type) . "'\n";
+    $sql .= ", status='" . $db->real_escape_string($this->status) . "'\n";
+    $sql .= ", status_detail='" . $db->real_escape_string($this->status_detail) . "'\n";
+
+    $sql .= ", proposed_date='" . $db->real_escape_string($this->proposed_date) . "'\n";
+    $sql .= ", decision_date='" . $db->real_escape_string($this->decision_date) . "'\n";
+    $sql .= ", collected_date=now();\n";
 
     if ($db->query($sql) === TRUE) {
       echo "New bill record created successfully.\n";
-    } else {
-      echo "Error: " . $sql . "<br>" . $db->error;
-    }
-  }
-
-  function update($db) {
-    $sql = "UPDATE  Bill SET ";
-    $sql .= "summary='" . $db->real_escape_string($this->summary) . "'\n";
-    $sql .= ", title='" . $db->real_escape_string($this->title) . "'\n";
-
-    $sql .= "WHERE id='" . $db->real_escape_string($this->id) . "';\n";
-
-    echo ($sql);
-    if ($db->query($sql) === TRUE) {
-      echo "Bill record updated successfully.\n";
     } else {
       echo "Error: " . $sql . "<br>" . $db->error;
     }

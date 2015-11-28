@@ -1,33 +1,28 @@
 <?php
 
 class Actor {
-  var $id = flase;
+  var $id = false;
   var $name;
   var $cname;
   var $party;
-  var $proposed;
+
+  var $is_representative=0;
+  var $is_proposer=0;
+  var $is_assentient=0;
+  var $is_withdrawer=0;
 
   // 안규백(새정치민주연합/安圭伯)
-  function Actor($proposed, $str) {
-    $this->proposed = $proposed;
-
-    echo ("Parsing $str\n");
-    $arr = explode('(', $str);
-    assert(count($arr)==2);
-
-    $this->name = $arr[0];
-    $arr2 = explode('/', $arr[1]);
-    assert(count($arr2)==2);
-
-    $this->party = $arr2[0];
-    $this->cname = $arr2[1];
+  function Actor($arr) {
+    $this->name = $arr['name_kr'];
+    $this->party = $arr['party'];
+    $this->cname = $arr['name_cn'];
   }
 
   function toString() {
-    return "$this->name($this->cname/$this->party)";
+    return "$this->name($this->cname/$this->party) ($this->is_representative/$this->is_proposer -$this->is_withdrawer)";
   }
 
-  function getId($db) {
+  function setId($db) {
     $sql = "SELECT id from Actor where ";
     $sql .= "name='" . $db->real_escape_string(($this->name)) . "'\n";
     $sql .= "AND cname='" . $db->real_escape_string(($this->cname)) . "'\n";
@@ -54,27 +49,33 @@ class Actor {
     return false;
   }
 
-  function insertWithBill($db, $billid) {
+  function insertCoActor($db, $billid) {
     assert($this->id);
 
     $sql = "INSERT INTO CoActor SET ";
     $sql .= "actorid='" . $db->real_escape_string($this->id) . "'\n";
     $sql .= ", billid='" . $db->real_escape_string($billid) . "'\n";
-    $sql .= ", proposed='" . $db->real_escape_string($this->proposed) . "'\n";
 
+    $sql .= ", is_representative='" . $db->real_escape_string($this->is_representative) . "'\n";
+    $sql .= ", is_assentient='" . $db->real_escape_string($this->is_assentient) . "'\n";
+    $sql .= ", is_proposer='" . $db->real_escape_string($this->is_proposer) . "'\n";
+    $sql .= ", is_withdrawer='" . $db->real_escape_string($this->is_withdrawer) . "'\n";
 
     if ($db->query($sql) === TRUE) {
       echo "New coactor record created successfully.\n";
+      return true;
     } else {
       echo "Error: " . $sql . "\n" . $db->error;
+      return false;
     }
   }
 
   function insert($db) {
     // we are done!
-    if ($this->getId($db)===true) {
+    if ($this->setId($db)===true) {
       return;
     }
+
     $sql = "INSERT INTO Actor SET ";
     $sql .= "name='" . $db->real_escape_string(($this->name)) . "'\n";
     $sql .= ", cname='" . $db->real_escape_string(($this->cname)) . "'\n";
