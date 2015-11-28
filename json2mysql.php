@@ -35,7 +35,13 @@ function readJson($jsonfile, $db) {
   $bill = new Bill($json);
 
   print $bill->toString();
-  assert($bill->id!=="" && $bill->link_id!=="", "Bill ID Needed for $entry!");
+
+  // Let's skip ZZ
+  if (startsWith($bill->id, 'ZZ') {
+    return;
+  }
+
+  assert($bill->link_id!=="", "Bill ID Needed for $entry!");
   $bill->insert($db);
 
 

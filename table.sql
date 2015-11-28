@@ -13,7 +13,7 @@ CREATE TABLE Actor (
 DROP TABLE Bill;
 CREATE TABLE Bill (
     assembly_id       int NOT NULL,
-    id                varchar(50) NOT NULL UNIQUE,
+    id                int NOT NULL UNIQUE,
     link_id           varchar(50) NOT NULL UNIQUE,
     title             varchar(150),
 
@@ -33,8 +33,6 @@ CREATE TABLE Bill (
     PRIMARY KEY (id)
 ) ENGINE = MYISAM;
 
-CREATE INDEX all_index ON  Bill (id, title, proposer_type, proposed_date, decision_date, status, status_detail);
-
 
 
 DROP TABLE CoActor;
@@ -51,6 +49,9 @@ CREATE TABLE CoActor (
   FOREIGN KEY (billid) REFERENCES Bill(id),
   CONSTRAINT cac UNIQUE (billid, actorid, is_representative, is_proposer, is_assentient, is_withdrawer)
 ) ENGINE = MYISAM;
+
+
+CREATE INDEX id_title_index ON  Bill (id, title, proposer_type, proposed_date, decision_date, status, status_detail);
 CREATE INDEX all_index ON  CoActor (billid, actorid, is_representative, is_proposer, is_assentient, is_withdrawer);
 
 

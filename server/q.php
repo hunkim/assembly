@@ -105,13 +105,13 @@ function processQuery($apptype, $sql) {
   $conn = new mysqli("p:localhost", "trend", "", "assembly");
 	// Check connection
 	if ($conn->connect_error) {
-			if ($debug) {echo("Connection failed: " . $conn->connect_error);}
+			echo("Connection failed: " . $conn->connect_error);
       exit(0);
 	}
 
   $stmt = $conn->prepare($sql);
 	if (!$stmt) {
-		 if ($debug) {echo("Prepare $sql failed: ($conn->errno)  $conn->error");}
+		 echo("Prepare $sql failed: ($conn->errno)  $conn->error");
      exit(0);
 	}
 
