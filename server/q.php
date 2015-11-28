@@ -27,11 +27,19 @@ switch($apptype) {
     $sql .= " INNER JOIN Bill b on b.id = c.billid INNER Join Actor a on a.id=c.actorid ";
     $sql .= " where a.id = ? group by YEAR(proposed_date), MONTH(proposed_date) order by YEAR(proposed_date), MONTH(proposed_date) ;";
     break;
-  case 'list':
+
+  case 'list_old':
     $sql = "select b.id, b.link_id, title, proposed_date, decision_date, status, status_detail, actor_count from Bill b ";
     $sql .= "INNER JOIN CoActor c on c.billid = b.id where c.actorid=? ";
     $sql .= " order by proposed_date desc limit 500";
     break;
+
+  case 'list':
+      $sql = "select id, link_id, title, proposed_date, decision_date, status, status_detail, actor_count from Bill where billid = ";
+      $sql = " (select billid from CoActor where actorid=? )";
+      $sql .= " order by proposed_date desc";
+    break;
+
   case 'all':
     $sql = "select a.name, a.cname, a.party, a.id actorid, count(*) as c from CoActor c ";
     $sql .= "INNER JOIN Actor a ON a.id = c.actorid group by actorid order by c desc; ";
