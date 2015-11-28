@@ -33,6 +33,43 @@ app.controller('customersCtrl',
     // all actors for search auto complete
     $scope.actors = [];
 
+    // check box options
+    $scope.opt = {
+      result: "done",
+      by: "rep"
+    };
+
+    $scope.optQuery = '';
+    $scope.optString = '';
+    $scope.setOptQuery = function() {
+      $scope.optQuery = "&result=" + $scope.opt.result + "&by=" + $scope.opt.by;
+    };
+
+    $scope.setOptString = function() {
+      $scope.optString = '';
+
+      switch($scope.opt.by) {
+        case 'rep':
+          $scope.optString += "대표발의 의안중 ";
+          break;
+        case 'co':
+          $scope.optString += "공동발의 의안중 ";
+          break;
+      }
+
+      switch($scope.opt.result) {
+        case 'pass':
+          $scope.optString += "가결된 ";
+          break;
+        case 'done':
+          $scope.optString += "처리된 ";
+          break;
+        case 'ongoing':
+          $scope.optString += "계류중인 ";
+          break;
+      }
+    };
+
     // Toggle cell so show more info
     $scope.toggleList = function($index) {
       if ($scope.listArr.length < $index) {
@@ -96,6 +133,15 @@ app.controller('customersCtrl',
       $scope.data[0] = [];
 
       var statLen = $scope.statArr.length;
+
+      if (statLen==0) {
+        $scope.series = ['발의 법안이 없습니다.'];
+        $scope.label = [0];
+        $scope.data[0] = [0];
+      } else {
+        $scope.series = [ $scope.optString + ' 법안수'];
+      }
+
       for (var i = 0; i < statLen; i++) {
         $scope.labels[i] = $scope.statArr[i].y + "/" +
           $scope.statArr[i].m;
@@ -111,6 +157,9 @@ app.controller('customersCtrl',
 
 
     $scope.upAll = function() {
+      $scope.setOptQuery();
+      $scope.setOptString();
+
       $scope.getList();
       $scope.getStat();
       $scope.getCoAct();
@@ -123,7 +172,7 @@ app.controller('customersCtrl',
       $scope.errorFlag = false;
 
       $scope.statPromise = $http.get($rhost +
-          '/stat?id=' + $scope.id)
+          '/stat?id=' + $scope.id + $scope.optQuery)
         .success(function(response) {
           $scope.statArr = response;
           $scope.updateGraph();
@@ -136,8 +185,8 @@ app.controller('customersCtrl',
     $scope.getList = function() {
       $scope.listArr = [];
       $scope.errorFlag = false;
-      $scope.salePromise = $http.get($rhost +
-          "/list?id=" + $scope.id)
+      $scope.listPromise = $http.get($rhost +
+          "/list?id=" + $scope.id + $scope.optQuery)
         .success(function(response) {
           $scope.listArr = response;
         })
@@ -162,7 +211,7 @@ app.controller('customersCtrl',
       $scope.coActArr = [];
       $scope.errorFlag = false;
       $scope.coActPromise = $http.get($rhost +
-          "/coact?id=" + $scope.id)
+          "/coact?id=" + $scope.id + $scope.optQuery)
         .success(function(response) {
           $scope.coArr = response;
         })

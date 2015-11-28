@@ -1,3 +1,54 @@
+
+
+<!DOCTYPE html>
+<html lang='ko'>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>19대 국회 처리된 법률안 발의 정보</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/png">
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/assembly.css">
+
+  </head>
+  <style>
+  text {
+    font: 10px sans-serif;
+  }
+  </style>
+<body>
+<h2>
+    <span class="glyphicon glyphicon-user" aria-hidden="true"></span> 19대 국회 전체의원 법안발의 정보
+    <small>(시험운영중: <a href="mailto:hunkim+ka@gmail.com?Subject=Bug" target="_top">의견 주기</a>)</small>
+</h2>
+<!-- info block -->
+<div ng-hide="errorFlag" class="alert alert-info" role="alert">
+  <strong>각 의원 법안 발의 건수에 따라 원의 크기가 결졍됩니다.</strong> (색상은 임의 표시) 원에 마우스를 올리면 당명과 발의법안의 수를 볼수 있고 클릭하면 각 의원의 자세한 정보를 보실수 있습니다.</div>
+
+<center>
+  <iframe sandbox="allow-scripts allow-forms allow-top-navigation allow-same-origin" src="circle_all.html" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+</center>
+
+<div class="footer">
+<div class="alert alert-danger" role="alert">
+  <a href="http://likms.assembly.go.kr" class="alert-link text-center"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
+    이 사이트가 보여주는 자료는 프로그램의 버그등으로 인해 오류가 있을수 있습니다. 정확한 자료는 의안정보 시스템에서 반드시 확인하세요.</a>
+</div>
+
+<p class="text-center">
+  <button class="btn btn-primary" type="button">
+  만든이: <span class="badge">hunkim+kp@gmail.com</span>
+</button>
+
+<button class="btn btn-sucess" href="http://likms.assembly.go.kr" type="button">
+자료: <span class="badge">의안정보 시스템</span>
+</button>
+
+<a href="http://aws.amazon.com">
+<img src="aws.png"></a>
+
+<!-- Google analytics -->
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -8,3 +59,4 @@
   ga('send', 'pageview');
 
 </script>
+</html>

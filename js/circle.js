@@ -14,7 +14,7 @@ var svg = d3.select("body").append("svg")
 
 
 d3.json(
-  "http://hunkim.github.io/assembly/circle.json",
+  "http://api.kassembly.xyz/circle.json",
   function(error, root) {
     //d3.json("all.json", function(error, root) {
     //d3.json("http://api.kassembly.xyz/q.php/order", function(error, root) {
@@ -56,7 +56,7 @@ d3.json(
 
     node.on("click", function(d) {
       var url = location.href; //Save down the URL without hash.
-      location.href = "in.html#/" + d.id;
+      window.top.location.href = "in.html#/" + d.id;
     });
   });
 

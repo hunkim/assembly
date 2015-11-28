@@ -3,7 +3,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta charset="utf-8">
-    <title>19대 국회 처리된 법률안 발의 정보</title>
+    <title>19대 국회 법률안 발의 정보</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/png">
     <script src="js/angular.1.4.8.min.js"></script>
     <script src="js/jquery-2.1.4.min.js"></script>
@@ -22,11 +22,12 @@
   </head>
 <body>
   <table><tr><td class="col-md-9">
-  <h2>
+  <h3>
     <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-  {{coArr[0].name}}({{coArr[0].cname}}/{{coArr[0].party}}) 처리된 법안발의:{{coArr[0].c}}
+  {{coArr[0].name}}({{coArr[0].party}}) {{optString}} 
+  <span ng-show="listArr.length>0"> {{listArr.length}}개 법안</span>
       <small>(시험운영중: <a href="mailto:hunkim+ka@gmail.com?Subject=Bug" target="_top">의견 주기</a>)</small>
-  </h2>
+  </h3>
 </td>
 
 <td>
@@ -45,7 +46,7 @@
 </td>
 <td>
   <div class="vcenter">
-    &nbsp;&nbsp;<a href="1hMgzDLoIavLegbFallOojB1SM5faMohLHSX3iYtkc7w.html" class="btn btn-primary" role="button">전체의원보기</a>
+    &nbsp;&nbsp;<a href="index.html" class="btn btn-primary" role="button">전체의원보기</a>
   </div>
 </td>
 </table>
@@ -53,7 +54,22 @@
 <!-- info block -->
 <div cg-busy="{promise:statPromise,message:'통계 정보를 읽고 있습니다...'}"></div>
 <div ng-hide="errorFlag" class="alert alert-info" role="alert">
-  <strong>{{coArr[0].name}}의원과 공동발의 많이한 의원들(공동발의수):</strong>
+  <strong>의안 선택: </strong>
+
+
+      &nbsp;<input type="radio" ng-model="opt.by" value="rep" ng-change="upAll()"/> 대표발의
+      &nbsp;<input type="radio" ng-model="opt.by" value="co" ng-change="upAll()" /> 공동발의 
+   
+
+    &nbsp;&nbsp;<strong>결과 선택:</strong>             
+    &nbsp;<input type="radio" ng-model="opt.result" value="ongoing" ng-change="upAll()"/> 계류중
+    &nbsp;<input type="radio" ng-model="opt.result"  value="pass" ng-change="upAll()" /> 가결
+    &nbsp;<input type="radio" ng-model="opt.result" value="done" ng-change="upAll()"/> 처리
+    &nbsp;<input type="radio" ng-model="opt.result" value="all" ng-change="upAll()"/> 모두보기 
+     
+
+  <br>
+  <strong>{{optString}}의안 공동발의 많이한 의원들(공동발의수):</strong>
   <span ng-repeat="actor in coArr">
     <a ng-hide="coArr[0].id==actor.id" class="btn btn-xs btn-primary" role="button" ng-click="setId(actor.id);"> {{actor.name}}
      <span class="badge">{{actor.c}}</span></a>
@@ -69,12 +85,10 @@
   <a class="btn btn-primary" role="button" ng-click="reconnect();"> 다시 연결 시도하기</a>
 </div>
 
-<!-- <div ng-hide="statArr.length===0"> -->
-  <canvas id="line" class="chart chart-line" chart-data="data"
+<canvas id="line" class="chart chart-line" chart-data="data"
   chart-labels="labels" chart-legend="true" chart-series="series"
   chart-click="onClick" >
 </canvas>
-<!-- </div> -->
 
 <!--
 <table class="table">
@@ -88,11 +102,11 @@
 </table>
 -->
 <a name="list"></a>
-<div cg-busy="{promise:listPromise,message:'계약 정보를 읽고 있습니다...'}"></div>
+<div cg-busy="{promise:listPromise,message:'법안 정보를 읽고 있습니다...'}"></div>
 <div class="panel panel-default">
   <!-- Default panel contents -->
   <div class="panel-heading">
-    <strong>{{coArr[0].name}}({{coArr[0].cname}}/{{coArr[0].party}})님의 총 {{coArr[0].c}} 처리된 법안발의 정보 목록</strong>
+    <strong>{{coArr[0].name}}({{coArr[0].cname}}/{{coArr[0].party}})님의 {{optString}} 총 {{listArr.length}} 법안 목록</strong>
     (<i class="glyphicon glyphicon-chevron-right" aria-hidden="true">를 클릭하시면 요약정보와 제안자를 보여줍니다.</i>)
   </div>
 </div>
@@ -102,7 +116,7 @@
     <tr>
       <th>#</th>
       <th>제안일자</th>
-      <th>의안명</th>
+      <th>의안명 (공동발의자수)</th>
       <th>의결일자</th>
       <th>의결결과</th>
     </tr>
@@ -110,14 +124,15 @@
     <tbody ng-repeat="list in listArr">
       <tr>
       <td>{{$index+1}}</td>
-      <td>{{list.cdate}}</td>
+      <td>{{list.proposed_date}}</td>
       <td>
         <A target="_blank"
-          href="http://likms.assembly.go.kr/bill/jsp/BillDetail.jsp?bill_id={{list.id}}">{{list.title}}</A>
+          href="http://likms.assembly.go.kr/bill/jsp/BillDetail.jsp?bill_id={{list.link_id}}">{{list.title}} ({{list.actor_count}})
+        </A>
          <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': list.open, 'glyphicon-chevron-right': !list.open}"ng-click="toggleList($index);"/>
       </td>
-      <td>{{list.pdate}}</td>
-      <td>{{list.result}}</td>
+      <td>{{list.decision_date}}</td>
+      <td>{{list.status}}/{{list.status_detail}}</td>
     </tr>
     <tr>
       <!-- http://stackoverflow.com/questions/16389775/twitter-bootstrap-use-collapse-js-on-table-cells-almost-done -->
@@ -126,7 +141,7 @@
           <span class="glyphicon glyphicon-book" aria-hidden="true"></span>
              {{printSummary(list.summary);}}<p>
               제안자: <span ng-repeat="actor in list.ActArr">
-                <a class="btn-xs btn btn-default navbar-btn" ng-click="setId(actor.id);">{{actor.name}}({{actor.cname}}/{{actor.party}}</a>
+                <a class="btn-xs btn btn-default navbar-btn" ng-click="setId(actor.id);">{{actor.name}}</a>
                  <!-- <span class="badge">{{actor.c}}</span></a> -->
               </span>
           </div>
@@ -145,8 +160,8 @@
   만든이: <span class="badge">hunkim+ka@gmail.com</span>
 </button>
 
-<button class="btn btn-sucess" href="http://likms.assembly.go.kr" type="button">
-자료: <span class="badge">의안정보 시스템</span>
+<button class="btn btn-sucess" href="http://popong.com/" type="button">
+자료: <span class="badge">의안정보 시스템 @팀포퐁</span>
 </button>
 
 <a href="http://aws.amazon.com">
