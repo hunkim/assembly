@@ -29,7 +29,7 @@ switch($apptype) {
     break;
 
   case 'list':
-    $sql = "select b.id, b.link_id, proposed_date, decision_date, status, status_detail, actor_count from Bill b ";
+    $sql = "select b.id, b.link_id, title, proposed_date, decision_date, status, status_detail, actor_count from Bill b ";
     $sql .= "INNER JOIN CoActor c on c.billid = b.id where c.actorid=? ";
     $sql .= " order by proposed_date desc";
     break;
@@ -157,6 +157,7 @@ function processQuery($apptype, $sql) {
     while($row = $result->fetch_array(MYSQLI_ASSOC)) {
       if ($debug) echo ("how?");
       $rows[] = $row;
+      echo mb_detect_encoding($row['title']);
 
     }
   }
