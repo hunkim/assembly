@@ -33,7 +33,7 @@ if (($result=$db->query("SELECT id from Actor")) === false) {
 
 // output data of each row
 while($row = $result->fetch_assoc()) {
-   $id = $GET['id'] = $row['id'];
+   $id = $GET['bid'] = $row['id'];
 
    foreach ($appnames as $apptype) {
       foreach ($optRes as $res) {
