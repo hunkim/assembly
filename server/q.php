@@ -104,13 +104,14 @@ function processQuery($apptype, $sql) {
 	// Persistent Connections
   // http://stackoverflow.com/questions/3332074/what-are-the-disadvantages-of-using-persistent-connection-in-pdo
   // http://www.php.net/manual/en/mysqli.persistconns.php
-  mysqli_set_charset("utf8");
   $conn = new mysqli("p:localhost", "trend", "", "assembly");
 	// Check connection
 	if ($conn->connect_error) {
 			echo("Connection failed: " . $conn->connect_error);
       exit(0);
 	}
+
+  mysqli_set_charset("utf8");
 
   $stmt = $conn->prepare($sql);
 	if (!$stmt) {
