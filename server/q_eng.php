@@ -84,137 +84,138 @@ function query_engine($apptype, $GET) {
   }
   // process and print
   processQuery($apptype, $sql);
-
-  /**
-  * Main function
-  */
-  function processQuery($apptype, $sql) {
-    $startyear = intval($GET['startyear']);
-    $endyear = intval($GET['endyear']);
-
-    $id = intval($GET['id']);
-    $debug = $GET['debug'];
-
-
-    $bid = $GET['bid'];
-
-    $params = [];
-    $type = "";
-
-    if($id) {
-      // make array and type
-      $params = [&$id];
-      $type = "i";
-    } else if ($bid) {
-      // make array and type
-      $params = [&$bid];
-      $type = "s";
-    }
-
-  	// add the last part
-    //$sql .= $sql_append;
-
-  	if($debug) {
-   		print_r($params);
-  		echo ("S: $sql\nT: $type\n");
-  	}
-
-  	// Persistent Connections
-    // http://stackoverflow.com/questions/3332074/what-are-the-disadvantages-of-using-persistent-connection-in-pdo
-    // http://www.php.net/manual/en/mysqli.persistconns.php
-    $conn = new mysqli("p:localhost", "trend", "", "assembly");
-  	// Check connection
-  	if ($conn->connect_error) {
-  			echo("Connection failed: " . $conn->connect_error);
-        exit(0);
-  	}
-
-    $conn->set_charset("utf8");
-
-    $stmt = $conn->prepare($sql);
-  	if (!$stmt) {
-  		 echo("Prepare $sql failed: ($conn->errno)  $conn->error");
-       exit(0);
-  	}
-
-    // http://stackoverflow.com/questions/16236395/bind-param-with-array-of-parameters
-    call_user_func_array(array($stmt, "bind_param"), array_merge(array($type), $params));
-
-    $stmt->execute();
-
-  	// Need to install
-  	// sudo apt-get install php5-mysqlnd
-    $result = $stmt->get_result();
-
-    if ($debug) {
-      echo ("Result is ready!");
-    }
-
-    $rows=[];
-    $child= [];
-    if ($apptype=='order') {
-      $idx = 0;
-      while($row = $result->fetch_array(MYSQLI_ASSOC)) {
-          $row['info'] = $row['name']."(" . $row['cname'] . "/". $row['party']. ")";
-          $child[] = $row;
-          // Check it's ready to be added
-          //if (rand(7,15)==1) {
-          if ($idx++%20===0) {
-              $rows[]=['name'=>'ord'.$row['id'], 'children'=>$child];
-              $child = [];
-          }
-      }
-
-      // Add last one
-      $rows[]=['name'=>'ordlast', 'children'=>$child];
-
-      // Should start with childeren
-      $rows = ['name'=>'all', 'children'=>$rows];
-    } else {
-      if ($debug) echo ("Result is ready!");
-      
-      while($row = $result->fetch_array(MYSQLI_ASSOC)) {
-        $rows[] = $row;
-      }
-    }
-
-    if ($debug) {
-      echo ("Row data is ready!");
-    }
-
-  	//
-    //http://php.net/manual/de/function.gzencode.php
-    //print gzencode(json_encode($rows,JSON_UNESCAPED_UNICODE));
-  //  print (json_encode($rows,JSON_UNESCAPED_UNICODE));
-  // Turn on output buffering with the gzhandler
-
-    print (json_encode($rows,JSON_UNESCAPED_UNICODE|JSON_PRETTY_PRINT));
-    if (!$debug) {
-      retuen;
-    }
-    switch (json_last_error()) {
-            case JSON_ERROR_NONE:
-                // echo ' - No errors';
-            break;
-            case JSON_ERROR_DEPTH:
-                echo ' - Maximum stack depth exceeded';
-            break;
-            case JSON_ERROR_STATE_MISMATCH:
-                echo ' - Underflow or the modes mismatch';
-            break;
-            case JSON_ERROR_CTRL_CHAR:
-                echo ' - Unexpected control character found';
-            break;
-            case JSON_ERROR_SYNTAX:
-                echo ' - Syntax error, malformed JSON';
-            break;
-            case JSON_ERROR_UTF8:
-                echo ' - Malformed UTF-8 characters, possibly incorrectly encoded';
-            break;
-            default:
-                echo ' - Unknown error';
-            break;
-        }
-  }
 }
+ 
+/**
+* Main function
+*/
+function processQuery($apptype, $sql) {
+  $startyear = intval($GET['startyear']);
+  $endyear = intval($GET['endyear']);
+
+  $id = intval($GET['id']);
+  $debug = $GET['debug'];
+
+
+  $bid = $GET['bid'];
+
+  $params = [];
+  $type = "";
+
+  if($id) {
+    // make array and type
+    $params = [&$id];
+    $type = "i";
+  } else if ($bid) {
+    // make array and type
+    $params = [&$bid];
+    $type = "s";
+  }
+
+	// add the last part
+  //$sql .= $sql_append;
+
+	if($debug) {
+ 		print_r($params);
+		echo ("S: $sql\nT: $type\n");
+	}
+
+	// Persistent Connections
+  // http://stackoverflow.com/questions/3332074/what-are-the-disadvantages-of-using-persistent-connection-in-pdo
+  // http://www.php.net/manual/en/mysqli.persistconns.php
+  $conn = new mysqli("p:localhost", "trend", "", "assembly");
+	// Check connection
+	if ($conn->connect_error) {
+			echo("Connection failed: " . $conn->connect_error);
+      exit(0);
+	}
+
+  $conn->set_charset("utf8");
+
+  $stmt = $conn->prepare($sql);
+	if (!$stmt) {
+		 echo("Prepare $sql failed: ($conn->errno)  $conn->error");
+     exit(0);
+	}
+
+  // http://stackoverflow.com/questions/16236395/bind-param-with-array-of-parameters
+  call_user_func_array(array($stmt, "bind_param"), array_merge(array($type), $params));
+
+  $stmt->execute();
+
+	// Need to install
+	// sudo apt-get install php5-mysqlnd
+  $result = $stmt->get_result();
+
+  if ($debug) {
+    echo ("Result is ready!");
+  }
+
+  $rows=[];
+  $child= [];
+  if ($apptype=='order') {
+    $idx = 0;
+    while($row = $result->fetch_array(MYSQLI_ASSOC)) {
+        $row['info'] = $row['name']."(" . $row['cname'] . "/". $row['party']. ")";
+        $child[] = $row;
+        // Check it's ready to be added
+        //if (rand(7,15)==1) {
+        if ($idx++%20===0) {
+            $rows[]=['name'=>'ord'.$row['id'], 'children'=>$child];
+            $child = [];
+        }
+    }
+
+    // Add last one
+    $rows[]=['name'=>'ordlast', 'children'=>$child];
+
+    // Should start with childeren
+    $rows = ['name'=>'all', 'children'=>$rows];
+  } else {
+    if ($debug) echo ("Result is ready!");
+    
+    while($row = $result->fetch_array(MYSQLI_ASSOC)) {
+      $rows[] = $row;
+    }
+  }
+
+  if ($debug) {
+    echo ("Row data is ready!");
+  }
+
+	//
+  //http://php.net/manual/de/function.gzencode.php
+  //print gzencode(json_encode($rows,JSON_UNESCAPED_UNICODE));
+//  print (json_encode($rows,JSON_UNESCAPED_UNICODE));
+// Turn on output buffering with the gzhandler
+
+  print (json_encode($rows,JSON_UNESCAPED_UNICODE|JSON_PRETTY_PRINT));
+  if (!$debug) {
+    retuen;
+  }
+  switch (json_last_error()) {
+          case JSON_ERROR_NONE:
+              // echo ' - No errors';
+          break;
+          case JSON_ERROR_DEPTH:
+              echo ' - Maximum stack depth exceeded';
+          break;
+          case JSON_ERROR_STATE_MISMATCH:
+              echo ' - Underflow or the modes mismatch';
+          break;
+          case JSON_ERROR_CTRL_CHAR:
+              echo ' - Unexpected control character found';
+          break;
+          case JSON_ERROR_SYNTAX:
+              echo ' - Syntax error, malformed JSON';
+          break;
+          case JSON_ERROR_UTF8:
+              echo ' - Malformed UTF-8 characters, possibly incorrectly encoded';
+          break;
+          default:
+              echo ' - Unknown error';
+          break;
+      }
+}
+
 ?>
