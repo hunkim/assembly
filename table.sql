@@ -52,7 +52,7 @@ CREATE TABLE CoActor (
 ) ENGINE = MYISAM;
 
 
-CREATE INDEX id_title_index ON  Bill (bullid, title, proposer_type, proposed_date, decision_date, status, status_detail);
+CREATE INDEX id_title_index ON  Bill (title, proposer_type, proposed_date, decision_date, status, status_detail);
 CREATE INDEX all_index ON  CoActor (billid, actorid, is_representative, is_proposer, is_assentient, is_withdrawer);
 
 
