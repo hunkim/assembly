@@ -83,13 +83,13 @@ function query_engine($apptype, $GET) {
       exit(0);
   }
   // process and print
-  processQuery($apptype, $sql);
+  processQuery($apptype, $sql, $GET);
 }
  
 /**
 * Main function
 */
-function processQuery($apptype, $sql) {
+function processQuery($apptype, $sql, $GET) {
   $startyear = intval($GET['startyear']);
   $endyear = intval($GET['endyear']);
 
