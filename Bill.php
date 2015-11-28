@@ -93,7 +93,7 @@ class Bill {
 
   function insert($db) {
     if ($this->exist($db)) {
-      echo ("$this->id Already there!\n");
+      echo ("$this->id bill is already there!\n");
       return;
     }
 
@@ -119,7 +119,7 @@ class Bill {
     if ($db->query($sql) === TRUE) {
       echo "New bill record created successfully.\n";
     } else {
-      echo "Error: " . $sql . "<br>" . $db->error;
+      die ("Error: " . $sql . "\n" . $db->error);
     }
   }
 }

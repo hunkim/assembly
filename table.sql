@@ -45,16 +45,16 @@ CREATE TABLE CoActor (
   billid int NOT NULL,
   actorid int NOT NULL,
 
-  is_representer int(1),
+  is_representative int(1),
   is_proposer int(1),
   is_assentient int(1),
   is_withdrawer int(1),
 
   FOREIGN KEY (actorid) REFERENCES Actor(id),
   FOREIGN KEY (billid) REFERENCES Bill(id),
-  CONSTRAINT cac UNIQUE (billid, actorid, is_representer, is_proposer, is_assentient, is_withdrawer)
+  CONSTRAINT cac UNIQUE (billid, actorid, is_representative, is_proposer, is_assentient, is_withdrawer)
 ) ENGINE = MYISAM;
-CREATE INDEX all_index ON  CoActor (billid, actorid, is_representer, is_proposer, is_assentient, is_withdrawer);
+CREATE INDEX all_index ON  CoActor (billid, actorid, is_representative, is_proposer, is_assentient, is_withdrawer);
 
 
 
