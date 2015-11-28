@@ -30,6 +30,10 @@ if ($result->num_rows > 0) {
 print_r ($noparty);
 foreach ($noparty as $act) {
     $id = getOneId($db, $act['name']);
+
+    if ($id != -1) {
+      
+    }
 }
 
 
