@@ -34,6 +34,8 @@ function readJson($jsonfile, $db) {
       $actor->is_proposer = 1;
       $actor->is_representative = is_representative($actor->name, $json['status_infos']);
       $actor->insert($db);
+      $actor->insertCoActor($db, $bill->id);
+
       print $actor->toString() . "\n";
     }
 
@@ -41,6 +43,8 @@ function readJson($jsonfile, $db) {
       $actor = new Actor($a);
       $actor->is_withdrawer = 1;
       $actor->insert($db);
+      $actor->insertCoActor($db, $bill->id);
+
       print $actor->toString() . "\n";
     }
 }

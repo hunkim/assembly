@@ -1,9 +1,9 @@
 DROP TABLE Actor;
 CREATE TABLE Actor (
   id int NOT NULL AUTO_INCREMENT,
-  name varchar(255),
-  cname varchar(255),
-  party varchar(255),
+  name varchar(100),
+  cname varchar(100),
+  party varchar(100),
 
   CONSTRAINT ac UNIQUE (name, cname, party),
   PRIMARY KEY (id)
@@ -11,28 +11,6 @@ CREATE TABLE Actor (
 
 
 DROP TABLE Bill;
-CREATE TABLE Bill (
-  id  int NOT NULL UNIQUE,
-  key varchar(255) NOT NULL UNIQUE,
-  title varchar(255),
-
-  proposedby varchar(255),
-  result varchar(255),
-
-  summary varchar(1024),
-
-  cdate DATE,
-  pdate DATE,
-
-  titleHTML TEXT,
-  sumHTML TEXT,
-  coActorHTML TEXT,
-  billHTML TEXT,
-
-  collected date,
-  processed int(1),
-  PRIMARY KEY (id)
-) ENGINE = MYISAM;
 
 
 
@@ -74,9 +52,9 @@ CREATE TABLE CoActor (
 
   FOREIGN KEY (actorid) REFERENCES Actor(id),
   FOREIGN KEY (billid) REFERENCES Bill(id),
-  CONSTRAINT cac UNIQUE (billid, actorid, is_represent, is_propose, is_agree, is_withdrawer)
+  CONSTRAINT cac UNIQUE (billid, actorid, is_representer, is_proposer, is_assentient, is_withdrawer)
 ) ENGINE = MYISAM;
-CREATE INDEX all_index ON  CoActor (billid, actorid, is_represent, is_propose, is_agree, is_withdrawer);
+CREATE INDEX all_index ON  CoActor (billid, actorid, is_representer, is_proposer, is_assentient, is_withdrawer);
 
 
 
@@ -85,3 +63,26 @@ DROP TABLE HTML;
 
 CREATE USER 'trend'@'localhost' IDENTIFIED BY 'only!trend!';
 GRANT ALL PRIVILEGES ON assembly.* TO 'trend'@'localhost';
+
+CREATE TABLE Bill (
+  id  int NOT NULL UNIQUE,
+  key varchar(255) NOT NULL UNIQUE,
+  title varchar(255),
+
+  proposedby varchar(255),
+  result varchar(255),
+
+  summary varchar(1024),
+
+  cdate DATE,
+  pdate DATE,
+
+  titleHTML TEXT,
+  sumHTML TEXT,
+  coActorHTML TEXT,
+  billHTML TEXT,
+
+  collected date,
+  processed int(1),
+  PRIMARY KEY (id)
+) ENGINE = MYISAM;
