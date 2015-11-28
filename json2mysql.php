@@ -5,9 +5,9 @@ assert_options(ASSERT_BAIL,     true);
 include_once 'Bill.php';
 include_once 'Actor.php';
 
-if($argc==2 && $argv[1]==='test') {
-  _test();
-  return;
+if (count($argv) < 2) {
+    echo "Usage: $argv[0] <json_dir>\n\n";
+    exit;
 }
 
 $db = new mysqli("p:localhost", "trend", "", "assembly");
@@ -17,7 +17,14 @@ if ($db->connect_error) {
     die("Connection failed: " . $db->connect_error);
 }
 
-readJson('1904016.json', $db);
+//readJson('1904016.json', $db);
+
+$d = dir($argv[1]);
+while (false !== ($entry = $d->read())) {
+  if(!is_dir("$dir/$entry") && endsWith($entry, ".json")) {
+    readJson("$dir/$entry", $db);
+  }
+}
 
 function readJson($jsonfile, $db) {
   $str = file_get_contents($jsonfile);
@@ -77,6 +84,12 @@ function startsWith($haystack, $needle) {
     // search backwards starting from haystack length characters from the end
     return $needle === "" || strrpos($haystack, $needle, -strlen($haystack)) !== FALSE;
 }
+
+function endsWith($haystack, $needle) {
+    // search forward starting from end minus needle length characters
+    return $needle === "" || (($temp = strlen($haystack) - strlen($needle)) >= 0 && strpos($haystack, $needle, $temp) !== FALSE);
+}
+
 
 function _test() {
   _test_is_representative();
