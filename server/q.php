@@ -12,6 +12,32 @@ if (!$apptype) {
   exit(0);
 }
 
+$optQuery = " ";
+foreach ($_GET as $key => $value) {
+  if ($value==0) {
+    continue;
+  }
+
+  switch($key) {
+    case 'done':
+      $optQuery .= " and b.status='처리' ";
+      break;
+
+    case 'ongoing':
+      $optQuery .= " and b.status='계류' ";
+      break;
+
+    case 'pass':
+      $optQuery .= " and (b.status_detail='의결' or b.status_detail='공포' or b.status_detail='정부이송') ";
+      break;
+
+    case 'representative':
+      $optQuery .= " and c.is_representative=1 ";
+      break;
+
+  }
+  # code...
+}
 
 $json = '[{}]';
 
@@ -25,12 +51,12 @@ switch($apptype) {
   case 'stat':
     $sql = "select count(*) as c, YEAR(proposed_date) as y, MONTH(proposed_date) as m from CoActor c ";
     $sql .= " INNER JOIN Bill b on b.id = c.billid INNER Join Actor a on a.id=c.actorid ";
-    $sql .= " where a.id = ? group by YEAR(proposed_date), MONTH(proposed_date) order by YEAR(proposed_date), MONTH(proposed_date) ;";
+    $sql .= " where a.id = ? $optQuery group by YEAR(proposed_date), MONTH(proposed_date) order by YEAR(proposed_date), MONTH(proposed_date) ;";
     break;
 
   case 'list':
     $sql = "select b.id, b.link_id, title, proposed_date, decision_date, status, status_detail, actor_count from Bill b ";
-    $sql .= "INNER JOIN CoActor c on c.billid = b.id where c.actorid=? ";
+    $sql .= "INNER JOIN CoActor c on c.billid = b.id where c.actorid=? $optQuery ";
     $sql .= " order by proposed_date desc";
     break;
 
