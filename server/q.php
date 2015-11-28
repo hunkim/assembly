@@ -7,7 +7,10 @@ header("Content-Type: application/json; charset=UTF-8");
 
 include_once 'q_eng.php';
 
+// Get app name
+$apptype = substr($_SERVER['PATH_INFO'], 1);
+
 // use the query engine
-query_engine($appname, $_GET);
+query_engine($apptype, $_GET);
 
 ?>

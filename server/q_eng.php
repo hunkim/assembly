@@ -1,6 +1,6 @@
 <?php
 
-function query_engine($appname, $GET) {
+function query_engine($apptype, $GET) {
   if (!$apptype) {
     exit(0);
   }
