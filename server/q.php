@@ -28,7 +28,7 @@ switch($apptype) {
     $sql .= " where a.id = ? group by YEAR(proposed_date), MONTH(proposed_date) order by YEAR(proposed_date), MONTH(proposed_date) ;";
     break;
   case 'list':
-    $sql = "select b.id, title, proposed_date, decision_date, result from Bill b ";
+    $sql = "select b.id, title, proposed_date, decision_date, status, status_detail from Bill b ";
     $sql .= "INNER JOIN CoActor c on c.billid = b.id where c.actorid=? ";
     $sql .= " order by decision_date desc";
     break;
