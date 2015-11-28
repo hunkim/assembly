@@ -93,7 +93,7 @@ class Bill {
 
   function insert($db) {
     if ($this->exist($db)) {
-      echo ("$this->id bill is already there!\n");
+      echo ("Bill [$this->id] is already there!\n");
       return;
     }
 

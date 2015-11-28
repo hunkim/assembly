@@ -19,7 +19,8 @@ if ($db->connect_error) {
 
 //readJson('1904016.json', $db);
 
-$d = dir($argv[1]);
+$dir = $argv[1];
+$d = dir($dir);
 while (false !== ($entry = $d->read())) {
   if(!is_dir("$dir/$entry") && endsWith($entry, ".json")) {
     readJson("$dir/$entry", $db);
@@ -32,6 +33,8 @@ function readJson($jsonfile, $db) {
   //print_r ($json);
 
   $bill = new Bill($json);
+
+  assert($bill->id!=0 && $bill->link_id!="", "Bill ID Needed!");
   $bill->insert($db);
   print $bill->toString();
 

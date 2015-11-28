@@ -15,6 +15,12 @@ class Actor {
   function Actor($arr) {
     $this->name = $arr['name_kr'];
     $this->party = $arr['party'];
+
+    // quick Fix for 19
+    if($this->party==='민주당') {
+      $this->party='새천년민주당';
+      echo("Changed the party name!");
+    }
     $this->cname = $arr['name_cn'];
   }
 
