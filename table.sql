@@ -16,7 +16,7 @@ CREATE TABLE Bill (
     assembly_id       int NOT NULL,
     bill_id           varchar(50) NOT NULL UNIQUE,
     link_id           varchar(50) NOT NULL UNIQUE,
-    title             varchar(150),
+    title             varchar(255),
 
     summary           TEXT,
 
@@ -85,3 +85,12 @@ CREATE TABLE Bill (
   processed int(1),
   PRIMARY KEY (id)
 ) ENGINE = MYISAM;
+
+
+
+"select b.id, b.link_id, title, proposed_date, decision_date, status, status_detail, actor_count from Bill b where INNER JOIN CoActor c on c.billid = b.id where c.actorid=? ";
+$sql .= " order by proposed_date desc limit 500";
+
+
+"select b.id, b.link_id, title, proposed_date, decision_date, status, status_detail, actor_count from CoActor c where c.actorid=36 INNER JOIN Bill b on c.billid = b.id";
+$sql .= " order by proposed_date desc limit 500";
