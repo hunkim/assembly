@@ -57,7 +57,7 @@ class Bill {
   function Bill($json) {
     $this->id = $json['bill_id'];
     $this->link_id = $json['link_id'];
-    $this->$assembly_id = $json['assembly_id'];
+    $this->assembly_id = $json['assembly_id'];
 
     $this->title = $json['title'];
     $this->summary = implode(" ", $json['summaries']);
