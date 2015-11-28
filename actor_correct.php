@@ -46,6 +46,7 @@ function getOneId($db, $name) {
   if ($result->num_rows == 1) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
+      echo ($name);
       print_r($row);
       $id = $row['id'];
     }
