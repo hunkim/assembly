@@ -45,7 +45,7 @@ if ($result->num_rows == 1) {
               $ob_file = fopen("$dir/index.json",'w');
               ob_start('ob_file_callback');
 
-              query_engine($apptype, $_GET);
+              query_engine($apptype, $GET);
             }
           }
        }
