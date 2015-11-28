@@ -34,7 +34,7 @@ foreach ($noparty as $act) {
 
 
 function getOneId($db, $name) {
-  $sql = "SELECT id, name, party, cname from Actor where name='" . $name . "cname<>'' AND party<>''";
+  $sql = "SELECT id, name, party, cname from Actor where name='" . $name . "' cname<>'' AND party<>''";
 
   if (($result=$db->query($sql)) === false) {
       echo "Error: " . $sql . "\n" . $db->error;
