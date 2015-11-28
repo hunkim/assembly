@@ -18,7 +18,7 @@ class Actor {
 
     // quick Fix for 19
     if($this->party==='민주당') {
-      $this->party='새천년민주당';
+      $this->party='새정치민주연합';
       echo("Changed the party name!");
     }
     $this->cname = $arr['name_cn'];
