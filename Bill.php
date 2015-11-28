@@ -57,7 +57,7 @@ class Bill {
   function Bill($json) {
     $this->id = $json['bill_id'];
     $this->link_id = $json['link_id'];
-    $this->link_id = $json['assembly_id'];
+    $this->$assembly_id = $json['assembly_id'];
 
     $this->title = $json['title'];
     $this->summary = implode(" ", $json['summaries']);
@@ -99,8 +99,8 @@ class Bill {
 
     $sql = "INSERT INTO Bill SET ";
     $sql .= "id='" . $db->real_escape_string($this->id) . "'\n";
-    $sql .= "link_id='" . $db->real_escape_string($this->link_id) . "'\n";
-    $sql .= "assembly_id='" . $db->real_escape_string($this->assembly_id) . "'\n";
+    $sql .= ", link_id='" . $db->real_escape_string($this->link_id) . "'\n";
+    $sql .= ", assembly_id='" . $db->real_escape_string($this->assembly_id) . "'\n";
 
     $sql .= ", title='" . $db->real_escape_string($this->title) . "'\n";
     $sql .= ", summary='" . $db->real_escape_string($this->summary) . "'\n";
