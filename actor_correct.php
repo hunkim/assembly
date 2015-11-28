@@ -28,5 +28,32 @@ if ($result->num_rows > 0) {
 }
 
 print_r ($noparty);
+foreach ($noparty as $act) {
+    $id = getOneId($db, $act['name']);
+}
+
+
+function getOneId($db, $name) {
+  $sql = "SELECT id, name, party, cname from Actor where name='" . $name . "cname<>'' AND party<>''";
+
+  if (($result=$db->query($sql)) === false) {
+      echo "Error: " . $sql . "\n" . $db->error;
+      return false;
+  }
+
+    $id = "";
+
+  if ($result->num_rows == 1) {
+    // output data of each row
+    while($row = $result->fetch_assoc()) {
+      print_r($row);
+      $id = $row['id'];
+    }
+
+    return $id;
+  }
+return -1;
+}
+
 
 ?>
