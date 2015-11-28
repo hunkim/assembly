@@ -190,9 +190,11 @@ function processQuery($apptype, $sql, $GET) {
 // Turn on output buffering with the gzhandler
 
   print (json_encode($rows,JSON_UNESCAPED_UNICODE|JSON_PRETTY_PRINT));
+  
   if (!$debug) {
-    retuen;
+    return;
   }
+  
   switch (json_last_error()) {
           case JSON_ERROR_NONE:
               // echo ' - No errors';

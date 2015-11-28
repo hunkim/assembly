@@ -40,8 +40,8 @@ while($row = $result->fetch_assoc()) {
         $GET['result'] = $res;
         foreach ($optBy as $by) {
           $GET['by'] = $by;
-          $dir = "/home/ubuntu/assembly/server/api/$id/$res/$by/";
-          mkdir($dir, $recursive = true);
+          $dir = "api/$id/$res/$by/";
+          mkdir($dir, 0777, true);
 
           echo ("Working on $dir...\n");
           $ob_file = fopen("$dir/index.json",'w');
