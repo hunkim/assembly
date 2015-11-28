@@ -153,21 +153,11 @@ function processQuery($apptype, $sql) {
     // Should start with childeren
     $rows = ['name'=>'all', 'children'=>$rows];
   } else {
-      if ($debug) echo ("Result is ready!");
+    if ($debug) echo ("Result is ready!");
     
-    print('[');
     while($row = $result->fetch_array(MYSQLI_ASSOC)) {
       $rows[] = $row;
-
-      //[{"id":9462,"link_id":"PRC_Y1P5I1P1F2I5A0J9O3M9M0U6G9W2O6","title":"집회 및 시위에 관한 법률 일부개정법률안","proposed_date":"2015-11-25","decision_date":"0000-00-00","status":"계류","status_detail":"위원회 심사","actor_count":32},{"id":15605,"link_id":"PRC_B1N5V1G1F2O4F1W1W0G6P2C4L6X6L1","title":"국가유공자 등 예우 및 지원에 관한 법률 일부개정법률안","proposed_date":"2015-11-24","decision_date":"0000-00-00","status":"계류","status_detail":"위원회 심사","actor_count":10}
-      print('{');
-      foreach ($row as $key => $value) {
-        print("'" . $key. "': " . "'". $value ."',");  
-      }
-      print('},');
-
     }
-    print(']');
   }
 
   if ($debug) {
@@ -181,11 +171,12 @@ function processQuery($apptype, $sql) {
 // Turn on output buffering with the gzhandler
   //ob_start('ob_gzhandler');
   print (json_encode($rows,JSON_UNESCAPED_UNICODE));
-
-  $error = json_last_error();
+  if (!$debug) {
+    retuen;
+  }
   switch (json_last_error()) {
           case JSON_ERROR_NONE:
-              echo ' - No errors';
+              // echo ' - No errors';
           break;
           case JSON_ERROR_DEPTH:
               echo ' - Maximum stack depth exceeded';
@@ -206,6 +197,5 @@ function processQuery($apptype, $sql) {
               echo ' - Unknown error';
           break;
       }
-	$conn->close();
 }
 ?>
