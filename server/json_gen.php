@@ -14,15 +14,15 @@ $optBy=['rep','co'];
 // Persistent Connections
 // http://stackoverflow.com/questions/3332074/what-are-the-disadvantages-of-using-persistent-connection-in-pdo
 // http://www.php.net/manual/en/mysqli.persistconns.php
-$conn = new mysqli("p:localhost", "trend", "", "assembly");
+$db = new mysqli("p:localhost", "trend", "", "assembly");
 
 // Check connection
-if ($conn->connect_error) {
-  echo("Connection failed: " . $conn->connect_error);
+if ($db->connect_error) {
+  echo("Connection failed: " . $db->connect_error);
   exit(0);
 }
 
-$conn->set_charset("utf8");
+$db->set_charset("utf8");
 
 if (($result=$db->query("SELECT id from Actor")) === false) {
     echo "Error: " . $sql . "\n" . $db->error;
