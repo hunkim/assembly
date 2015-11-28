@@ -35,7 +35,7 @@ switch($apptype) {
     break;
 
   case 'list':
-      $sql = "select id, link_id, title, proposed_date, decision_date, status, status_detail, actor_count from Bill b where billid = ";
+      $sql = "select id, link_id, title, proposed_date, decision_date, status, status_detail, actor_count from Bill b where id = ";
       $sql .= " (select billid from CoActor where actorid=? )";
       $sql .= " order by b.proposed_date desc";
     break;
