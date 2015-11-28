@@ -155,9 +155,13 @@ function processQuery($apptype, $sql) {
   } else {
     while($row = $result->fetch_array(MYSQLI_ASSOC)) {
       $rows[] = $row;
+
     }
   }
 
+  if ($debug) {
+    echo ("Row data is ready!");
+  }
 
 	//
   //http://php.net/manual/de/function.gzencode.php
