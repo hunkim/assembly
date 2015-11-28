@@ -14,29 +14,28 @@ if (!$apptype) {
 
 $optQuery = " ";
 foreach ($_GET as $key => $value) {
-  if ($value==0) {
-    continue;
-  }
-
   switch($key) {
-    case 'done':
-      $optQuery .= " and b.status='처리' ";
-      break;
+    case 'result':
+      switch($value) {
+        case 'done';
+          $optQuery .= " and b.status='처리' ";
+        break;
 
-    case 'ongoing':
-      $optQuery .= " and b.status='계류' ";
-      break;
+        case 'ongoing';
+          $optQuery .= " and b.status='계류' ";
+          break;
 
-    case 'pass':
-      $optQuery .= " and (b.status_detail='의결' or b.status_detail='공포' or b.status_detail='정부이송') ";
+        case 'pass':
+          $optQuery .= " and (b.status_detail='의결' or b.status_detail='공포' or b.status_detail='정부이송') ";
+          break;
+      }
       break;
-
-    case 'representative':
-      $optQuery .= " and c.is_representative=1 ";
-      break;
-
-  }
-  # code...
+    case 'by':
+      if ($value==='rep') {
+        $optQuery .= " and c.is_representative=1 ";
+        break;
+      }
+    }
 }
 
 $json = '[{}]';
