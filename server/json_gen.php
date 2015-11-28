@@ -41,7 +41,7 @@ if ($result->num_rows == 1) {
             foreach ($optBy as $by) {
               $GET['by'] = $by;
 
-              $ob_file = fopen("/api/$id/$res/$by/index.json",'w');
+              $ob_file = fopen("./api/$id/$res/$by/index.json",'w');
               ob_start('ob_file_callback');
 
               query_engine($apptype, $_GET);
