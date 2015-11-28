@@ -40,8 +40,9 @@ if ($result->num_rows == 1) {
             $GET['result'] = $res;
             foreach ($optBy as $by) {
               $GET['by'] = $by;
-
-              $ob_file = fopen("./api/$id/$res/$by/index.json",'w');
+              $dir = "./api/$id/$res/$by/";
+              mkdir($dir);
+              $ob_file = fopen("$dir/index.json",'w');
               ob_start('ob_file_callback');
 
               query_engine($apptype, $_GET);
