@@ -42,10 +42,13 @@ if ($result->num_rows == 1) {
               $GET['by'] = $by;
               $dir = "./api/$id/$res/$by/";
               mkdir($dir);
+
+              echo ("Working on $dir...\n");
               $ob_file = fopen("$dir/index.json",'w');
               ob_start('ob_file_callback');
 
               query_engine($apptype, $GET);
+              ob_end_flush();
             }
           }
        }
