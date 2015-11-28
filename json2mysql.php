@@ -34,9 +34,10 @@ function readJson($jsonfile, $db) {
 
   $bill = new Bill($json);
 
-  assert($bill->id!=0 && $bill->link_id!="", "Bill ID Needed!");
-  $bill->insert($db);
   print $bill->toString();
+  assert($bill->id!=0 && $bill->link_id!="", "Bill ID Needed for $entry!");
+  $bill->insert($db);
+
 
   // Let's work on the actors
   foreach ($json['proposers'] as $a) {
