@@ -30,30 +30,30 @@ if (($result=$db->query("SELECT id from Actor")) === false) {
 }
 
 
-if ($result->num_rows == 1) {
-    // output data of each row
-    while($row = $result->fetch_assoc()) {
-       $id = $GET['id'] = $row['id'];
 
-       foreach ($appnames as $apptype) {
-          foreach ($optRes as $res) {
-            $GET['result'] = $res;
-            foreach ($optBy as $by) {
-              $GET['by'] = $by;
-              $dir = "./api/$id/$res/$by/";
-              mkdir($dir);
+// output data of each row
+while($row = $result->fetch_assoc()) {
+   $id = $GET['id'] = $row['id'];
 
-              echo ("Working on $dir...\n");
-              $ob_file = fopen("$dir/index.json",'w');
-              ob_start('ob_file_callback');
+   foreach ($appnames as $apptype) {
+      foreach ($optRes as $res) {
+        $GET['result'] = $res;
+        foreach ($optBy as $by) {
+          $GET['by'] = $by;
+          $dir = "./api/$id/$res/$by/";
+          mkdir($dir);
 
-              query_engine($apptype, $GET);
-              ob_end_flush();
-            }
-          }
-       }
-    }
+          echo ("Working on $dir...\n");
+          $ob_file = fopen("$dir/index.json",'w');
+          ob_start('ob_file_callback');
+
+          query_engine($apptype, $GET);
+          ob_end_flush();
+        }
+      }
+   }
 }
+
 
 
 function ob_file_callback($buffer)
