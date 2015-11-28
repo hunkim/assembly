@@ -118,11 +118,19 @@ function processQuery($apptype, $sql) {
   // http://stackoverflow.com/questions/16236395/bind-param-with-array-of-parameters
   call_user_func_array(array($stmt, "bind_param"), array_merge(array($type), $params));
 
+
+  if($debug) {
+    echo("got results");
+  }
   $stmt->execute();
 
 	// Need to install
 	// sudo apt-get install php5-mysqlnd
   $result = $stmt->get_result();
+
+  if($debug) {
+    echo("got results");
+  }
 
   $rows=[];
   $child= [];
@@ -154,7 +162,8 @@ function processQuery($apptype, $sql) {
 	//
   //http://php.net/manual/de/function.gzencode.php
   //print gzencode(json_encode($rows,JSON_UNESCAPED_UNICODE));
-  print (json_encode($rows,JSON_PRETTY_PRINT|JSON_UNESCAPED_UNICODE));
+//  print (json_encode($rows,JSON_UNESCAPED_UNICODE));
+  print (json_encode($rows));
 
 	$conn->close();
 }
