@@ -171,7 +171,7 @@ function processQuery($apptype, $sql) {
 //  print (json_encode($rows,JSON_UNESCAPED_UNICODE));
 // Turn on output buffering with the gzhandler
   //ob_start('ob_gzhandler');
-  print (json_encode($rows));
+  print (json_encode($rows),JSON_UNESCAPED_UNICODE);
 
   $error = json_last_error();
   switch (json_last_error()) {
