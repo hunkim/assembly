@@ -28,16 +28,10 @@ switch($apptype) {
     $sql .= " where a.id = ? group by YEAR(proposed_date), MONTH(proposed_date) order by YEAR(proposed_date), MONTH(proposed_date) ;";
     break;
 
-  case 'list_old':
+  case 'list':
     $sql = "select b.id, b.link_id, title, proposed_date, decision_date, status, status_detail, actor_count from Bill b ";
     $sql .= "INNER JOIN CoActor c on c.billid = b.id where c.actorid=? ";
-    $sql .= " order by proposed_date desc limit 500";
-    break;
-
-  case 'list':
-      $sql = "select id, link_id, title, proposed_date, decision_date, status, status_detail, actor_count from Bill b where id = ";
-      $sql .= " (select billid from CoActor where actorid=? )";
-      $sql .= " order by b.proposed_date desc";
+    $sql .= " order by proposed_date desc";
     break;
 
   case 'all':
