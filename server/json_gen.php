@@ -35,7 +35,7 @@ if ($result->num_rows == 1) {
     while($row = $result->fetch_assoc()) {
        $id = $GET['id'] = $row['id'];
 
-       foreach ($appnames as $value) {
+       foreach ($appnames as $apptype) {
           foreach ($optRes as $res) {
             $GET['result'] = $res;
             foreach ($optBy as $by) {
