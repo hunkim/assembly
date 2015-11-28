@@ -39,11 +39,11 @@ class Actor {
       // output data of each row
       while($row = $result->fetch_assoc()) {
         $this->id = intval($row["id"]);
-        echo("We have it: $this->id\n");
+        echo("We have the actor: $this->id\n");
         return true;
       }
     } else {
-        echo "0 results";
+        //echo "0 results";
     }
 
     return false;
@@ -65,7 +65,7 @@ class Actor {
       echo "New coactor record created successfully.\n";
       return true;
     } else {
-      echo "Error: " . $sql . "\n" . $db->error;
+      die ("Error: " . $sql . "\n" . $db->error);
       return false;
     }
   }
@@ -85,7 +85,7 @@ class Actor {
       $this->id = $db->insert_id;
       echo "New actor record created successfully. Last inserted ID is: $this->id \n";
     } else {
-      echo "Error: " . $sql . "<br>" . $db->error;
+      die ("Error: " . $sql . "<br>" . $db->error);
     }
   }
 }
