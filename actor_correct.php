@@ -47,11 +47,13 @@ function getOneId($db, $name) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
       echo ($name);
-      print_r($row);
+     // print_r($row);
       $id = $row['id'];
     }
 
     return $id;
+  } else {
+    echo "[!!] $result->num_rows";
   }
 return -1;
 }
