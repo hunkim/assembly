@@ -1,12 +1,12 @@
 <?php
 
-function query_engine($appname, $_GET) {
+function query_engine($appname, $GET) {
   if (!$apptype) {
     exit(0);
   }
 
   $optQuery = " ";
-  foreach ($_GET as $key => $value) {
+  foreach ($GET as $key => $value) {
     switch($key) {
     case 'result':
       switch($value) {
@@ -89,14 +89,14 @@ function query_engine($appname, $_GET) {
   * Main function
   */
   function processQuery($apptype, $sql) {
-    $startyear = intval($_GET['startyear']);
-    $endyear = intval($_GET['endyear']);
+    $startyear = intval($GET['startyear']);
+    $endyear = intval($GET['endyear']);
 
-    $id = intval($_GET['id']);
-    $debug = $_GET['debug'];
+    $id = intval($GET['id']);
+    $debug = $GET['debug'];
 
 
-    $bid = $_GET['bid'];
+    $bid = $GET['bid'];
 
     $params = [];
     $type = "";
@@ -216,4 +216,5 @@ function query_engine($appname, $_GET) {
             break;
         }
   }
+}
 ?>
