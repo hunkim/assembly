@@ -30,7 +30,7 @@ switch($apptype) {
   case 'list':
     $sql = "select b.id, title, proposed_date, decision_date, status, status_detail, actor_count from Bill b ";
     $sql .= "INNER JOIN CoActor c on c.billid = b.id where c.actorid=? ";
-    $sql .= " order by proposed_date desc limit 1000";
+    $sql .= " order by proposed_date desc limit 500";
     break;
   case 'all':
     $sql = "select a.name, a.cname, a.party, a.id actorid, count(*) as c from CoActor c ";
