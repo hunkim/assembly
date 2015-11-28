@@ -35,7 +35,7 @@ function readJson($jsonfile, $db) {
   $bill = new Bill($json);
 
   print $bill->toString();
-  assert($bill->id!=0 && $bill->link_id!="", "Bill ID Needed for $entry!");
+  assert($bill->id!=="" && $bill->link_id!=="", "Bill ID Needed for $entry!");
   $bill->insert($db);
 
 

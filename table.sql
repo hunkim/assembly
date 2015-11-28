@@ -16,7 +16,7 @@ DROP TABLE Bill;
 
 CREATE TABLE Bill (
     assembly_id       int NOT NULL,
-    id                int NOT NULL UNIQUE,
+    id                varchar(255) NOT NULL UNIQUE,
     link_id           varchar(255) NOT NULL UNIQUE,
     title             varchar(255),
 
