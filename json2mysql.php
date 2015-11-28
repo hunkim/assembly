@@ -17,7 +17,7 @@ if ($db->connect_error) {
     die("Connection failed: " . $db->connect_error);
 }
 
-mysqli_set_charset("utf8");
+$db->set_charset("utf8");
 
 //readJson('1904016.json', $db);
 
