@@ -157,7 +157,9 @@ function processQuery($apptype, $sql) {
     // Should start with childeren
     $rows = ['name'=>'all', 'children'=>$rows];
   } else {
+
     while($row = $result->fetch_array(MYSQLI_ASSOC)) {
+      echo ("how?");
       $rows[] = $row;
 
     }
