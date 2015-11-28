@@ -132,6 +132,10 @@ function processQuery($apptype, $sql) {
 	// sudo apt-get install php5-mysqlnd
   $result = $stmt->get_result();
 
+  if ($debug) {
+    echo ("Result is ready!");
+  }
+
   $rows=[];
   $child= [];
   if ($apptype=='order') {
