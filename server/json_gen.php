@@ -40,7 +40,7 @@ while($row = $result->fetch_assoc()) {
         $GET['result'] = $res;
         foreach ($optBy as $by) {
           $GET['by'] = $by;
-          $dir = "./api/$id/$res/$by/";
+          $dir = "api/$id/$res/$by/";
           mkdir($dir, $recursive = true);
 
           echo ("Working on $dir...\n");
