@@ -111,7 +111,7 @@ function processQuery($apptype, $sql) {
       exit(0);
 	}
 
-  mysqli_set_charset("utf8");
+  $conn->set_charset("utf8");
 
   $stmt = $conn->prepare($sql);
 	if (!$stmt) {
