@@ -154,14 +154,19 @@ function processQuery($apptype, $sql) {
     $rows = ['name'=>'all', 'children'=>$rows];
   } else {
       if ($debug) echo ("Result is ready!");
+    print('[');
     while($row = $result->fetch_array(MYSQLI_ASSOC)) {
       $rows[] = $row;
-      $en = mb_detect_encoding($row['title']);
-      if($en!='UTF-8') {
-        echo $en. $row['title'];
+
+      //[{"id":9462,"link_id":"PRC_Y1P5I1P1F2I5A0J9O3M9M0U6G9W2O6","title":"집회 및 시위에 관한 법률 일부개정법률안","proposed_date":"2015-11-25","decision_date":"0000-00-00","status":"계류","status_detail":"위원회 심사","actor_count":32},{"id":15605,"link_id":"PRC_B1N5V1G1F2O4F1W1W0G6P2C4L6X6L1","title":"국가유공자 등 예우 및 지원에 관한 법률 일부개정법률안","proposed_date":"2015-11-24","decision_date":"0000-00-00","status":"계류","status_detail":"위원회 심사","actor_count":10}
+      print('{');
+      foreach ($row as $key => $value) {
+        print("'" . $key "': " . "'". $value ."',");  
       }
+      print('},');
 
     }
+    print(']');
   }
 
   if ($debug) {
