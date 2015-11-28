@@ -158,7 +158,7 @@ function processQuery($apptype, $sql) {
       $rows[] = $row;
       $en = mb_detect_encoding($row['title'];
       if(mb_detect_encoding($row['title']!=='UTF-8')) {
-        echo "$en: $row['title']";
+        echo $en. $row['title'];
       }
 
     }
