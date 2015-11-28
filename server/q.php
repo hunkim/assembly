@@ -169,7 +169,8 @@ function processQuery($apptype, $sql) {
   //print gzencode(json_encode($rows,JSON_UNESCAPED_UNICODE));
 //  print (json_encode($rows,JSON_UNESCAPED_UNICODE));
 // Turn on output buffering with the gzhandler
-  //ob_start('ob_gzhandler');
+
+  if (!debug) ob_start('ob_gzhandler');
   print (json_encode($rows,JSON_UNESCAPED_UNICODE));
   if (!$debug) {
     retuen;
