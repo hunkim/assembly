@@ -46,8 +46,8 @@ switch($apptype) {
   case 'coact':
    $sql = "select name, cname, party, actorid as id, count(actorid) c from CoActor c ".
           " inner join Actor a on a.id=actorid inner join  (select distinct(billid) from CoActor ".
-          " where actorid = ? $optQuery) x on x.billid=c.billid group by actorid order by c desc limit 11;";
-    break;
+          " where actorid = ?) x on x.billid=c.billid group by actorid order by c desc limit 11;";
+    break;  
   case 'stat':
     $sql = "select count(*) as c, YEAR(proposed_date) as y, MONTH(proposed_date) as m from CoActor c ";
     $sql .= " INNER JOIN Bill b on b.id = c.billid INNER Join Actor a on a.id=c.actorid ";
