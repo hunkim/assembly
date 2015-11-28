@@ -41,7 +41,7 @@ while($row = $result->fetch_assoc()) {
         foreach ($optBy as $by) {
           $GET['by'] = $by;
           $dir = "./api/$id/$res/$by/";
-          mkdir($dir);
+          mkdir($dir, $recursive = true);
 
           echo ("Working on $dir...\n");
           $ob_file = fopen("$dir/index.json",'w');
