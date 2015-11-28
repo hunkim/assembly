@@ -172,7 +172,7 @@ function processQuery($apptype, $sql) {
   print (json_encode($rows));
 
   $error = json_last_error();
-  if (debug) {
+  if ($debug) {
     print ($error);
   }
 
