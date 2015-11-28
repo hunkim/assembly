@@ -11,14 +11,11 @@ CREATE TABLE Actor (
 
 
 DROP TABLE Bill;
-
-
-
 CREATE TABLE Bill (
     assembly_id       int NOT NULL,
-    id                varchar(255) NOT NULL UNIQUE,
-    link_id           varchar(255) NOT NULL UNIQUE,
-    title             varchar(255),
+    id                varchar(50) NOT NULL UNIQUE,
+    link_id           varchar(50) NOT NULL UNIQUE,
+    title             varchar(150),
 
     summary           TEXT,
 
@@ -29,14 +26,14 @@ CREATE TABLE Bill (
     withdrawer_count  int,
     actor_count       int,
 
-    proposer_type     varchar(255),
-    status            varchar(255),
-    status_detail     varchar(255),
+    proposer_type     varchar(20),
+    status            varchar(20),
+    status_detail     varchar(20),
 
     PRIMARY KEY (id)
 ) ENGINE = MYISAM;
 
-CREATE INDEX all_index ON  Bill (id, title, proposed_date, decision_date, status);
+CREATE INDEX all_index ON  Bill (id, title, proposer_type, proposed_date, decision_date, status, status_detail);
 
 
 
