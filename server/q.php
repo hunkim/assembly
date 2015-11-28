@@ -23,14 +23,14 @@ switch($apptype) {
           " where actorid = ?) x on x.billid=c.billid group by actorid order by c desc limit 11;";
     break;
   case 'stat':
-    $sql = "select count(*) as c, YEAR(cdate) as y, MONTH(cdate) as m from CoActor c ";
+    $sql = "select count(*) as c, YEAR(proposed_date) as y, MONTH(proposed_date) as m from CoActor c ";
     $sql .= " INNER JOIN Bill b on b.id = c.billid INNER Join Actor a on a.id=c.actorid ";
-    $sql .= " where a.id = ? group by YEAR(cdate), MONTH(cdate) order by YEAR(cdate), MONTH(cdate) ;";
+    $sql .= " where a.id = ? group by YEAR(proposed_date), MONTH(proposed_date) order by YEAR(proposed_date), MONTH(proposed_date) ;";
     break;
   case 'list':
-    $sql = "select b.id, title, cdate, pdate, result from Bill b ";
+    $sql = "select b.id, title, proposed_date, decision_date, result from Bill b ";
     $sql .= "INNER JOIN CoActor c on c.billid = b.id where c.actorid=? ";
-    $sql .= " order by cdate desc";
+    $sql .= " order by decision_date desc";
     break;
   case 'all':
     $sql = "select a.name, a.cname, a.party, a.id actorid, count(*) as c from CoActor c ";
@@ -45,7 +45,7 @@ switch($apptype) {
     break;
 
   case 'allorder':
-    $sql = "select a.id, a.name, a.cname, a.party, year(cdate) as y, month(cdate) as m, count(distinct b.id) as c from CoActor c inner join Actor a on a.id=c.actorid inner join Bill b on c.billid=b.id  group by actorid, y, m order by a.id, y, m";
+    $sql = "select a.id, a.name, a.cname, a.party, year(proposed_date) as y, month(proposed_date) as m, count(distinct b.id) as c from CoActor c inner join Actor a on a.id=c.actorid inner join Bill b on c.billid=b.id  group by actorid, y, m order by a.id, y, m";
     break;
 
   // This for the circle viz
@@ -55,7 +55,7 @@ switch($apptype) {
 
   // This is for the autocomplete search
   case 'actor':
-    $sql = "select CONCAT_WS('(', name,   CONCAT(CONCAT_WS('/', cname, party),')')              ) as info, id from Actor order by name";
+    $sql = "select CONCAT_WS('(', name,   CONCAT(CONCAT_WS('/', cname, party),')') ) as info, id from Actor order by name";
     break;
 
   default:
