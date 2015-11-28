@@ -37,7 +37,7 @@ status varchar(255),
 PRIMARY KEY (id)
 */
 class Bill {
-  var $id; // key to get others
+  var $bill_id; // key to get others
   var $link_id;
   var $assembly_id;
   var $title;
@@ -55,7 +55,7 @@ class Bill {
   var $status_detail;
 
   function Bill($json) {
-    $this->id = $json['bill_id'];
+    $this->bill_id = $json['bill_id'];
     $this->link_id = $json['link_id'];
     $this->assembly_id = $json['assembly_id'];
 
@@ -75,7 +75,7 @@ class Bill {
   }
 
   function toString() {
-      return "I: $this->id ($this->link_id)\n".
+      return "I: $this->billl_id ($this->link_id)\n".
             "\tT: $this->title\n".
             "\tP: $this->proposed_date and $this->decision_date\n".
             "\tA: $this->actor_count (- $this->withdrawer_count)\n".
@@ -86,19 +86,19 @@ class Bill {
 
 
   function exist($db) {
-    $sql = "SELECT id FROM Bill WHERE id='". $db->real_escape_string($this->id) . "'";
+    $sql = "SELECT 1 FROM Bill WHERE bill_id='". $db->real_escape_string($this->bill_id) . "'";
     $result = $db->query($sql);
     return ($result!==false && $result->num_rows > 0);
   }
 
   function insert($db) {
     if ($this->exist($db)) {
-      echo ("Bill [$this->id] is already there!\n");
+      echo ("Bill [$this->bill_id] is already there!\n");
       return;
     }
 
     $sql = "INSERT INTO Bill SET ";
-    $sql .= "id='" . $db->real_escape_string($this->id) . "'\n";
+    $sql .= "bill_id='" . $db->real_escape_string($this->bill_id) . "'\n";
     $sql .= ", link_id='" . $db->real_escape_string($this->link_id) . "'\n";
     $sql .= ", assembly_id='" . $db->real_escape_string($this->assembly_id) . "'\n";
 
@@ -117,6 +117,7 @@ class Bill {
     $sql .= ", collected_date=now();\n";
 
     if ($db->query($sql) === TRUE) {
+      $this->id = $db->insert_id;
       echo "New bill record created successfully.\n";
     } else {
       die ("Error: " . $sql . "\n" . $db->error);

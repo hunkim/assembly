@@ -35,15 +35,8 @@ function readJson($jsonfile, $db) {
   $bill = new Bill($json);
 
   print $bill->toString();
-
-  // Let's skip ZZ
-  if (startsWith($bill->id, 'ZZ') {
-    return;
-  }
-
   assert($bill->link_id!=="", "Bill ID Needed for $entry!");
   $bill->insert($db);
-
 
   // Let's work on the actors
   foreach ($json['proposers'] as $a) {
