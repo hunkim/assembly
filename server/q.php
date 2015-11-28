@@ -167,6 +167,11 @@ function processQuery($apptype, $sql) {
   //ob_start('ob_gzhandler');
   print (json_encode($rows));
 
+  $error = json_last_error();
+  if (debug) {
+    print ($error);
+  }
+
 	$conn->close();
 }
 ?>
