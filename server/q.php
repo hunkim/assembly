@@ -156,8 +156,9 @@ function processQuery($apptype, $sql) {
       if ($debug) echo ("Result is ready!");
     while($row = $result->fetch_array(MYSQLI_ASSOC)) {
       $rows[] = $row;
+      $en = mb_detect_encoding($row['title'];
       if(mb_detect_encoding($row['title']!=='UTF-8')) {
-        echo $row['title'];
+        echo "$en: $row['title']";
       }
 
     }
