@@ -45,6 +45,7 @@ foreach ($restapp as $app) {
   ob_start('ob_file_callback');
 
   query_engine($app, $restGet);
+  ob_end_flush();
 }
 
 
