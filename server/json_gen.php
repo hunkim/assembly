@@ -65,7 +65,7 @@ while($row = $result->fetch_assoc()) {
           $dir = "$basedir/api/actor/$id/$apptype/$res/$by/";
           mkdir($dir, 0777, true);
 
-          echo ("Working on $dir...\n");
+          echo ("Working on $dir...$id\n");
           $ob_file = fopen("$dir/index.json",'w');
           ob_start('ob_file_callback');
 
