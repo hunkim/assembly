@@ -45,7 +45,9 @@ while($row = $result->fetch_assoc()) {
 
    foreach ($billappnames as $apptype) {
       $dir = "$basedir/api/bill/$id/$apptype/";
-      mkdir($dir, 0777, true);
+
+      if (!is_dir($dir))
+        mkdir($dir, 0777, true);
 
       echo ("Working on $dir...$id\n");
       $ob_file = fopen("$dir/index.json",'w');
@@ -63,7 +65,9 @@ while($row = $result->fetch_assoc()) {
 foreach ($restapp as $app) {
   $restGet=[];
   $dir = "$basedir/api/$app/";
-  mkdir($dir, 0777, true);
+
+  if (!is_dir($dir))
+    mkdir($dir, 0777, true);
 
   echo ("Working on $dir...\n");
   $ob_file = fopen("$dir/index.json",'w');
@@ -92,7 +96,8 @@ while($row = $result->fetch_assoc()) {
         foreach ($optBy as $by) {
           $GET['by'] = $by;
           $dir = "$basedir/api/actor/$id/$apptype/$res/$by/";
-          mkdir($dir, 0777, true);
+          if (!is_dir($dir))
+            mkdir($dir, 0777, true);
 
           echo ("Working on $dir...$id\n");
           $ob_file = fopen("$dir/index.json",'w');
