@@ -60,8 +60,6 @@ while($row = $result->fetch_assoc()) {
 }
 
 
-
-
 // bill id
 if (($result=$db->query("SELECT id from Bill")) === false) {
     echo "Error: " . $sql . "\n" . $db->error;
@@ -70,7 +68,7 @@ if (($result=$db->query("SELECT id from Bill")) === false) {
 
 // bill
 while($row = $result->fetch_assoc()) {
-   $id = $GET['bid'] = $row['id'];
+   $id = $billGET['bid'] = $row['id'];
 
    foreach ($billappnames as $apptype) {
           $dir = "api/bill/$id/$apptype/";
@@ -80,7 +78,7 @@ while($row = $result->fetch_assoc()) {
           $ob_file = fopen("$dir/index.json",'w');
           ob_start('ob_file_callback');
 
-          query_engine($apptype, $GET);
+          query_engine($apptype, $billGET);
           ob_end_flush();
         }
       }
