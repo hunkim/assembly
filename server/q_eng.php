@@ -70,7 +70,7 @@ function query_engine($apptype, $GET) {
 
     // This for the circle viz
     case 'order':
-      $sql = "select  name, name_cn, party, id, count(distinct billid) as c, count(distinct billid)+50 as value  from CoActor c inner join Actor a on a.id = c.actorid and a.cname<>'' AND a.party<>'' group by actorid order by c desc";
+      $sql = "select  name, name_cn, party, id, count(distinct billid) as c, count(distinct billid)+50 as value  from CoActor c inner join Actor a on a.id = c.actorid and a.name_cn<>'' AND a.party<>'' group by actorid order by c desc";
       break;
 
     // This is for the autocomplete search
