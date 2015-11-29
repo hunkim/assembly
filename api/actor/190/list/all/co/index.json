@@ -50,16 +50,6 @@
         "actor_count": 10
     },
     {
-        "id": 14072,
-        "link_id": "PRC_K1A5G1B1B1T7K1U0G4U0Q2T2J6K9B8",
-        "title": "에너지이용 합리화법 일부개정법률안",
-        "proposed_date": "2015-11-17",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 10
-    },
-    {
         "id": 1857,
         "link_id": "PRC_Q1N5W1N1A1Q7C1T5V3D1X4D4X0K8H5",
         "title": "법원조직법 일부개정법률안",
@@ -88,6 +78,16 @@
         "status": "계류",
         "status_detail": "위원회 심사",
         "actor_count": 13
+    },
+    {
+        "id": 14072,
+        "link_id": "PRC_K1A5G1B1B1T7K1U0G4U0Q2T2J6K9B8",
+        "title": "에너지이용 합리화법 일부개정법률안",
+        "proposed_date": "2015-11-17",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 10
     },
     {
         "id": 6795,
@@ -150,36 +150,6 @@
         "actor_count": 13
     },
     {
-        "id": 6783,
-        "link_id": "PRC_R1J5U1U0A2I6N1G1R0O9V0V5A5J5N1",
-        "title": "인신보호법 일부개정법률안",
-        "proposed_date": "2015-10-26",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 10
-    },
-    {
-        "id": 10603,
-        "link_id": "PRC_R1L5G1X0I2I6K1O1M1G2A5R4U4D2N1",
-        "title": "노동조합 및 노동관계조정법 일부개정법률안",
-        "proposed_date": "2015-10-26",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 10
-    },
-    {
-        "id": 7529,
-        "link_id": "PRC_X1G5K1J0T2J6G1I0E3G7I3W0N1Z8X0",
-        "title": "기간제 및 단시간근로자 보호 등에 관한 법률 일부개정법률안",
-        "proposed_date": "2015-10-26",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 10
-    },
-    {
         "id": 1232,
         "link_id": "PRC_J1S5C1M0Y2C6Y1L0G4H8N0N3H1K8K6",
         "title": "폭력행위 등 처벌에 관한 법률 일부개정법률안",
@@ -210,9 +180,9 @@
         "actor_count": 50
     },
     {
-        "id": 16833,
-        "link_id": "PRC_R1V5R1W0Q2G6H1S1X0X2Q0P8V4R2B0",
-        "title": "교통약자의 이동편의 증진법 일부개정법률안",
+        "id": 9843,
+        "link_id": "PRC_G1C5B1C0S2X6B1I0T5X7O3X9C7Q3A8",
+        "title": "장애인·노인·임산부 등의 편의증진 보장에 관한 법률 일부개정법률안",
         "proposed_date": "2015-10-26",
         "decision_date": "0000-00-00",
         "status": "계류",
@@ -220,9 +190,9 @@
         "actor_count": 10
     },
     {
-        "id": 9843,
-        "link_id": "PRC_G1C5B1C0S2X6B1I0T5X7O3X9C7Q3A8",
-        "title": "장애인·노인·임산부 등의 편의증진 보장에 관한 법률 일부개정법률안",
+        "id": 16833,
+        "link_id": "PRC_R1V5R1W0Q2G6H1S1X0X2Q0P8V4R2B0",
+        "title": "교통약자의 이동편의 증진법 일부개정법률안",
         "proposed_date": "2015-10-26",
         "decision_date": "0000-00-00",
         "status": "계류",
@@ -243,6 +213,36 @@
         "id": 15690,
         "link_id": "PRC_O1W5G1T0O2V6O1A1G0M9Y2S3T8U0G4",
         "title": "공익신고자 보호법 일부개정법률안",
+        "proposed_date": "2015-10-26",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 10
+    },
+    {
+        "id": 6783,
+        "link_id": "PRC_R1J5U1U0A2I6N1G1R0O9V0V5A5J5N1",
+        "title": "인신보호법 일부개정법률안",
+        "proposed_date": "2015-10-26",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 10
+    },
+    {
+        "id": 10603,
+        "link_id": "PRC_R1L5G1X0I2I6K1O1M1G2A5R4U4D2N1",
+        "title": "노동조합 및 노동관계조정법 일부개정법률안",
+        "proposed_date": "2015-10-26",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 10
+    },
+    {
+        "id": 7529,
+        "link_id": "PRC_X1G5K1J0T2J6G1I0E3G7I3W0N1Z8X0",
+        "title": "기간제 및 단시간근로자 보호 등에 관한 법률 일부개정법률안",
         "proposed_date": "2015-10-26",
         "decision_date": "0000-00-00",
         "status": "계류",
@@ -310,26 +310,6 @@
         "actor_count": 10
     },
     {
-        "id": 13534,
-        "link_id": "PRC_Y1R5Q1T0P0X5E1T4V5K0E0Q3J0K9Y9",
-        "title": "국무총리 및 국무위원 출석요구의 건(정치에 관한 질문)",
-        "proposed_date": "2015-10-05",
-        "decision_date": "2015-10-12",
-        "status": "처리",
-        "status_detail": "의결",
-        "actor_count": 287
-    },
-    {
-        "id": 2447,
-        "link_id": "PRC_J1G5I1I0K0K5P1Z5I0L5H0B7K0O5V7",
-        "title": "국무총리ㆍ국무위원 및 정부위원 출석요구의 건(경제에 관한 질문)",
-        "proposed_date": "2015-10-05",
-        "decision_date": "2015-10-12",
-        "status": "처리",
-        "status_detail": "의결",
-        "actor_count": 287
-    },
-    {
         "id": 8840,
         "link_id": "PRC_J1X5S1V0F0X5R1O5L5Y3P4Z3K4Z7V5",
         "title": "감염병의 예방 및 관리에 관한 법률 일부개정법률안",
@@ -353,6 +333,26 @@
         "id": 2156,
         "link_id": "PRC_O1G5G1E0G0N5Y1X4L5M7M5K8I4B3T8",
         "title": "국무총리 및 국무위원 출석요구의 건(외교ㆍ통일ㆍ안보에 관한 질문)",
+        "proposed_date": "2015-10-05",
+        "decision_date": "2015-10-12",
+        "status": "처리",
+        "status_detail": "의결",
+        "actor_count": 287
+    },
+    {
+        "id": 13534,
+        "link_id": "PRC_Y1R5Q1T0P0X5E1T4V5K0E0Q3J0K9Y9",
+        "title": "국무총리 및 국무위원 출석요구의 건(정치에 관한 질문)",
+        "proposed_date": "2015-10-05",
+        "decision_date": "2015-10-12",
+        "status": "처리",
+        "status_detail": "의결",
+        "actor_count": 287
+    },
+    {
+        "id": 2447,
+        "link_id": "PRC_J1G5I1I0K0K5P1Z5I0L5H0B7K0O5V7",
+        "title": "국무총리ㆍ국무위원 및 정부위원 출석요구의 건(경제에 관한 질문)",
         "proposed_date": "2015-10-05",
         "decision_date": "2015-10-12",
         "status": "처리",
@@ -410,16 +410,6 @@
         "actor_count": 41
     },
     {
-        "id": 18080,
-        "link_id": "PRC_W1S5H0V9V2N4T1Q5D2O8V5C6Y6J8O2",
-        "title": "일본 아베 정부의 11개 안보관련법 제·개정안 강행처리에 대한 규탄 결의안",
-        "proposed_date": "2015-09-24",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 42
-    },
-    {
         "id": 7832,
         "link_id": "PRC_G1P5A0A9O2G4N1G7W2B4I3L9Q9H5A4",
         "title": "장기공공임대주택 입주자 삶의 질 향상 지원법 일부개정법률안",
@@ -428,6 +418,16 @@
         "status": "계류",
         "status_detail": "위원회 심사",
         "actor_count": 10
+    },
+    {
+        "id": 18080,
+        "link_id": "PRC_W1S5H0V9V2N4T1Q5D2O8V5C6Y6J8O2",
+        "title": "일본 아베 정부의 11개 안보관련법 제·개정안 강행처리에 대한 규탄 결의안",
+        "proposed_date": "2015-09-24",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 42
     },
     {
         "id": 8560,
@@ -470,36 +470,6 @@
         "actor_count": 11
     },
     {
-        "id": 8309,
-        "link_id": "PRC_C1N5O0N9E1V5X1N2T0N6V4M9Q4E9I8",
-        "title": "국가공무원법 일부개정법률안",
-        "proposed_date": "2015-09-15",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 10
-    },
-    {
-        "id": 16188,
-        "link_id": "PRC_H1D5X0B9J1E5Z1Q1U3X6Z1Y8V9L0H6",
-        "title": "법원조직법 일부개정법률안",
-        "proposed_date": "2015-09-15",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 10
-    },
-    {
-        "id": 3700,
-        "link_id": "PRC_Q1G5X0D9N1U5L1O3B0R4U3G5D9Y6F3",
-        "title": "군무원인사법 일부개정법률안",
-        "proposed_date": "2015-09-15",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "체계자구 심사",
-        "actor_count": 10
-    },
-    {
         "id": 14278,
         "link_id": "PRC_F1Q5F0C9Z1E5X1A2Q0I9K5E1N6P7U3",
         "title": "군인사법 일부개정법률안",
@@ -540,6 +510,36 @@
         "actor_count": 10
     },
     {
+        "id": 8309,
+        "link_id": "PRC_C1N5O0N9E1V5X1N2T0N6V4M9Q4E9I8",
+        "title": "국가공무원법 일부개정법률안",
+        "proposed_date": "2015-09-15",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 10
+    },
+    {
+        "id": 16188,
+        "link_id": "PRC_H1D5X0B9J1E5Z1Q1U3X6Z1Y8V9L0H6",
+        "title": "법원조직법 일부개정법률안",
+        "proposed_date": "2015-09-15",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 10
+    },
+    {
+        "id": 3700,
+        "link_id": "PRC_Q1G5X0D9N1U5L1O3B0R4U3G5D9Y6F3",
+        "title": "군무원인사법 일부개정법률안",
+        "proposed_date": "2015-09-15",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "체계자구 심사",
+        "actor_count": 10
+    },
+    {
         "id": 11085,
         "link_id": "PRC_L1Q5S0L9C1U4Y1L1L3D2S5M7Y7Q4S4",
         "title": "행정자치부장관(정종섭) 탄핵소추안",
@@ -560,16 +560,6 @@
         "actor_count": 12
     },
     {
-        "id": 703,
-        "link_id": "PRC_R1V5L0N9H0M9N1T1Y3A3C1W3Z5B2H9",
-        "title": "형법 일부개정법률안",
-        "proposed_date": "2015-09-09",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 22
-    },
-    {
         "id": 2961,
         "link_id": "PRC_U1B5T0M9I0W9W1L0Q5M9D0P6R8F1L0",
         "title": "민법 일부개정법률안",
@@ -580,24 +570,14 @@
         "actor_count": 22
     },
     {
-        "id": 7919,
-        "link_id": "PRC_K1R5W0V9T0Z8V1K7W1W9E0W8W0N4M7",
-        "title": "정부조직법 일부개정법률안",
-        "proposed_date": "2015-09-08",
+        "id": 703,
+        "link_id": "PRC_R1V5L0N9H0M9N1T1Y3A3C1W3Z5B2H9",
+        "title": "형법 일부개정법률안",
+        "proposed_date": "2015-09-09",
         "decision_date": "0000-00-00",
         "status": "계류",
         "status_detail": "위원회 심사",
-        "actor_count": 12
-    },
-    {
-        "id": 4956,
-        "link_id": "PRC_R1C5Q0Z9F0A8W1V7V0N2L2G7X1E3D3",
-        "title": "우정사업 운영에 관한 특례법 일부개정법률안",
-        "proposed_date": "2015-09-08",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 12
+        "actor_count": 22
     },
     {
         "id": 10175,
@@ -620,14 +600,24 @@
         "actor_count": 15
     },
     {
-        "id": 7176,
-        "link_id": "PRC_J1I5W0W9G0L7L1H0A5U9P0Z3M7J3E8",
-        "title": "지방세특례제한법 일부개정법률안",
-        "proposed_date": "2015-09-07",
+        "id": 7919,
+        "link_id": "PRC_K1R5W0V9T0Z8V1K7W1W9E0W8W0N4M7",
+        "title": "정부조직법 일부개정법률안",
+        "proposed_date": "2015-09-08",
         "decision_date": "0000-00-00",
         "status": "계류",
         "status_detail": "위원회 심사",
-        "actor_count": 10
+        "actor_count": 12
+    },
+    {
+        "id": 4956,
+        "link_id": "PRC_R1C5Q0Z9F0A8W1V7V0N2L2G7X1E3D3",
+        "title": "우정사업 운영에 관한 특례법 일부개정법률안",
+        "proposed_date": "2015-09-08",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 12
     },
     {
         "id": 1913,
@@ -638,6 +628,16 @@
         "status": "계류",
         "status_detail": "위원회 심사",
         "actor_count": 14
+    },
+    {
+        "id": 7176,
+        "link_id": "PRC_J1I5W0W9G0L7L1H0A5U9P0Z3M7J3E8",
+        "title": "지방세특례제한법 일부개정법률안",
+        "proposed_date": "2015-09-07",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 10
     },
     {
         "id": 8904,
@@ -690,16 +690,6 @@
         "actor_count": 12
     },
     {
-        "id": 13938,
-        "link_id": "PRC_E1H5I0B9P0M1K1Y6B5H9I0M9Z4W7U4",
-        "title": "방위사업법 일부개정법률안",
-        "proposed_date": "2015-09-01",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 13
-    },
-    {
         "id": 601,
         "link_id": "PRC_Z1I5C0K9A0C1O1O5R3L3Q2L5E7O8K9",
         "title": "위험물안전관리법 일부개정법률안",
@@ -728,6 +718,36 @@
         "status": "계류",
         "status_detail": "위원회 심사",
         "actor_count": 11
+    },
+    {
+        "id": 13938,
+        "link_id": "PRC_E1H5I0B9P0M1K1Y6B5H9I0M9Z4W7U4",
+        "title": "방위사업법 일부개정법률안",
+        "proposed_date": "2015-09-01",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 13
+    },
+    {
+        "id": 6690,
+        "link_id": "PRC_F1F5L0J8J3H1Z1S8K0C8N4L5U6T5V3",
+        "title": "주거기본법 일부개정법률안",
+        "proposed_date": "2015-08-31",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 21
+    },
+    {
+        "id": 9824,
+        "link_id": "PRC_Y1Q5R0I8K3M1X1T7U0P7D0N0K5W5U2",
+        "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+        "proposed_date": "2015-08-31",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 13
     },
     {
         "id": 16453,
@@ -770,26 +790,6 @@
         "actor_count": 11
     },
     {
-        "id": 6690,
-        "link_id": "PRC_F1F5L0J8J3H1Z1S8K0C8N4L5U6T5V3",
-        "title": "주거기본법 일부개정법률안",
-        "proposed_date": "2015-08-31",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 21
-    },
-    {
-        "id": 9824,
-        "link_id": "PRC_Y1Q5R0I8K3M1X1T7U0P7D0N0K5W5U2",
-        "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
-        "proposed_date": "2015-08-31",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 13
-    },
-    {
         "id": 12658,
         "link_id": "PRC_K1O5X0E8T2Z5Z1F1W3P5F4N0X5H5K8",
         "title": "방문판매 등에 관한 법률 일부개정법률안",
@@ -830,26 +830,6 @@
         "actor_count": 10
     },
     {
-        "id": 5517,
-        "link_id": "PRC_Z1N5T0Q8I2M1I1A7K4M2U0D7D9T7Y2",
-        "title": "통신비밀보호법 일부개정법률안",
-        "proposed_date": "2015-08-21",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 13
-    },
-    {
-        "id": 8383,
-        "link_id": "PRC_A1V5B0D8U2Z1K1E5W3F2P5R1E1D2K5",
-        "title": "각급 법원의 설치와 관할구역에 관한 법률 일부개정법률안",
-        "proposed_date": "2015-08-21",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 10
-    },
-    {
         "id": 7205,
         "link_id": "PRC_D1P5Z0G8U2O1Z1M7G4L4Q5T4F2T9Q9",
         "title": "전기통신사업법 일부개정법률안",
@@ -870,6 +850,26 @@
         "actor_count": 10
     },
     {
+        "id": 5517,
+        "link_id": "PRC_Z1N5T0Q8I2M1I1A7K4M2U0D7D9T7Y2",
+        "title": "통신비밀보호법 일부개정법률안",
+        "proposed_date": "2015-08-21",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 13
+    },
+    {
+        "id": 8383,
+        "link_id": "PRC_A1V5B0D8U2Z1K1E5W3F2P5R1E1D2K5",
+        "title": "각급 법원의 설치와 관할구역에 관한 법률 일부개정법률안",
+        "proposed_date": "2015-08-21",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 10
+    },
+    {
         "id": 4845,
         "link_id": "PRC_R1N5S0X8X2A0E1M0N5K9A0H0Z6P8J4",
         "title": "환경친화적 산업구조로의 전환촉진에 관한 법률 일부개정법률안",
@@ -877,6 +877,16 @@
         "decision_date": "0000-00-00",
         "status": "계류",
         "status_detail": "체계자구 심사",
+        "actor_count": 10
+    },
+    {
+        "id": 4054,
+        "link_id": "PRC_O1S5T0F8M2V0M1K0O5W8Z3H6F6A8I8",
+        "title": "원자력안전법 일부개정법률안",
+        "proposed_date": "2015-08-20",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
         "actor_count": 10
     },
     {
@@ -888,16 +898,6 @@
         "status": "계류",
         "status_detail": "위원회 심사",
         "actor_count": 30
-    },
-    {
-        "id": 4054,
-        "link_id": "PRC_O1S5T0F8M2V0M1K0O5W8Z3H6F6A8I8",
-        "title": "원자력안전법 일부개정법률안",
-        "proposed_date": "2015-08-20",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 10
     },
     {
         "id": 7334,
@@ -1080,16 +1080,6 @@
         "actor_count": 16
     },
     {
-        "id": 3447,
-        "link_id": "PRC_P1V5S0R8J0S4O1I1M0N2B1X5S3S1W0",
-        "title": "전기통신사업법 일부개정법률안",
-        "proposed_date": "2015-08-04",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 10
-    },
-    {
         "id": 7634,
         "link_id": "PRC_N1Z5B0G8G0W4N1A3C2Y0U0X4R8U7Y4",
         "title": "청소년복지 지원법 일부개정법률안",
@@ -1108,6 +1098,16 @@
         "status": "계류",
         "status_detail": "위원회 심사",
         "actor_count": 87
+    },
+    {
+        "id": 3447,
+        "link_id": "PRC_P1V5S0R8J0S4O1I1M0N2B1X5S3S1W0",
+        "title": "전기통신사업법 일부개정법률안",
+        "proposed_date": "2015-08-04",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 10
     },
     {
         "id": 373,
@@ -1130,9 +1130,9 @@
         "actor_count": 11
     },
     {
-        "id": 7274,
-        "link_id": "PRC_H1I5F0Z7Z2J1A1Q4L3B3R3J5N3Z1W1",
-        "title": "행정소송법 일부개정법률안",
+        "id": 6015,
+        "link_id": "PRC_S1B5A0B7D2F1M1H8U0R8O2Z1J9N5P0",
+        "title": "교통약자의 이동편의 증진법 일부개정법률안",
         "proposed_date": "2015-07-21",
         "decision_date": "0000-00-00",
         "status": "계류",
@@ -1140,9 +1140,9 @@
         "actor_count": 10
     },
     {
-        "id": 6015,
-        "link_id": "PRC_S1B5A0B7D2F1M1H8U0R8O2Z1J9N5P0",
-        "title": "교통약자의 이동편의 증진법 일부개정법률안",
+        "id": 7274,
+        "link_id": "PRC_H1I5F0Z7Z2J1A1Q4L3B3R3J5N3Z1W1",
+        "title": "행정소송법 일부개정법률안",
         "proposed_date": "2015-07-21",
         "decision_date": "0000-00-00",
         "status": "계류",
@@ -1160,9 +1160,9 @@
         "actor_count": 13
     },
     {
-        "id": 14843,
-        "link_id": "PRC_K1O5U0Q7R1L5W1K1X4O2I5Y7L7O7I8",
-        "title": "동물보호법 일부개정법률안",
+        "id": 7426,
+        "link_id": "PRC_Z1Y5D0Q7A1I5S1E8K1G0K2F2N3X0M2",
+        "title": "형사소송법 일부개정법률안",
         "proposed_date": "2015-07-15",
         "decision_date": "0000-00-00",
         "status": "계류",
@@ -1170,9 +1170,9 @@
         "actor_count": 10
     },
     {
-        "id": 7426,
-        "link_id": "PRC_Z1Y5D0Q7A1I5S1E8K1G0K2F2N3X0M2",
-        "title": "형사소송법 일부개정법률안",
+        "id": 14843,
+        "link_id": "PRC_K1O5U0Q7R1L5W1K1X4O2I5Y7L7O7I8",
+        "title": "동물보호법 일부개정법률안",
         "proposed_date": "2015-07-15",
         "decision_date": "0000-00-00",
         "status": "계류",
@@ -1290,26 +1290,6 @@
         "actor_count": 10
     },
     {
-        "id": 5963,
-        "link_id": "PRC_K1S5K0Z6N1Q9V1W8A0P0D3H7V3B6S7",
-        "title": "식생활교육지원법 일부개정법률안",
-        "proposed_date": "2015-06-19",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 10
-    },
-    {
-        "id": 13958,
-        "link_id": "PRC_T1S5S0Y6Q1F9U1J1T4B8P4I4Z9Q8X5",
-        "title": "의료법 일부개정법률안",
-        "proposed_date": "2015-06-19",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 10
-    },
-    {
         "id": 3757,
         "link_id": "PRC_M1B5M0S6D1R9C1O5V4G0H3A2V0E5V7",
         "title": "행정대집행법 일부개정법률안",
@@ -1380,6 +1360,26 @@
         "actor_count": 13
     },
     {
+        "id": 5963,
+        "link_id": "PRC_K1S5K0Z6N1Q9V1W8A0P0D3H7V3B6S7",
+        "title": "식생활교육지원법 일부개정법률안",
+        "proposed_date": "2015-06-19",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 10
+    },
+    {
+        "id": 13958,
+        "link_id": "PRC_T1S5S0Y6Q1F9U1J1T4B8P4I4Z9Q8X5",
+        "title": "의료법 일부개정법률안",
+        "proposed_date": "2015-06-19",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 10
+    },
+    {
         "id": 7289,
         "link_id": "PRC_Z1K5A0M6A1B7S1C0E5A4I3F1T3N2W1",
         "title": "국무총리 및 국무위원 출석요구의 건(외교ㆍ통일ㆍ안보에 관한 질문)",
@@ -1440,16 +1440,6 @@
         "actor_count": 11
     },
     {
-        "id": 7064,
-        "link_id": "PRC_T1I5S0G6Q1Y2Z1Z4Y4E7H2H5D0H7M0",
-        "title": "엔지니어링산업 진흥법 일부개정법률안",
-        "proposed_date": "2015-06-12",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 10
-    },
-    {
         "id": 2338,
         "link_id": "PRC_Y1U5D0O6E1L2Y1R8W0U8H0P9C2D8H5",
         "title": "통신비밀보호법 전부개정법률안",
@@ -1480,6 +1470,16 @@
         "actor_count": 10
     },
     {
+        "id": 7064,
+        "link_id": "PRC_T1I5S0G6Q1Y2Z1Z4Y4E7H2H5D0H7M0",
+        "title": "엔지니어링산업 진흥법 일부개정법률안",
+        "proposed_date": "2015-06-12",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 10
+    },
+    {
         "id": 12199,
         "link_id": "PRC_H1Y5R0X6F1I1I1B6Y1P8V2D9K7P1N3",
         "title": "에너지이용 합리화법 일부개정법률안",
@@ -1490,9 +1490,9 @@
         "actor_count": 10
     },
     {
-        "id": 10511,
-        "link_id": "PRC_Y1Y5B0B6F1H0N1J3Q4O6A5P7Q3N7G8",
-        "title": "건강기능식품에 관한 법률 일부개정법률안",
+        "id": 11761,
+        "link_id": "PRC_N1V5D0H6N1S0F1H7F0V9E2Q8G3R1X6",
+        "title": "장애인·노인·임산부등의편의증진보장에관한법률 일부개정법률안",
         "proposed_date": "2015-06-10",
         "decision_date": "0000-00-00",
         "status": "계류",
@@ -1500,9 +1500,9 @@
         "actor_count": 10
     },
     {
-        "id": 11761,
-        "link_id": "PRC_N1V5D0H6N1S0F1H7F0V9E2Q8G3R1X6",
-        "title": "장애인·노인·임산부등의편의증진보장에관한법률 일부개정법률안",
+        "id": 10511,
+        "link_id": "PRC_Y1Y5B0B6F1H0N1J3Q4O6A5P7Q3N7G8",
+        "title": "건강기능식품에 관한 법률 일부개정법률안",
         "proposed_date": "2015-06-10",
         "decision_date": "0000-00-00",
         "status": "계류",
@@ -1520,16 +1520,6 @@
         "actor_count": 12
     },
     {
-        "id": 7840,
-        "link_id": "PRC_G1Z5Q0F6Q0G8A1A7H4Y2G1V2K4R2Q2",
-        "title": "형법 일부개정법률안",
-        "proposed_date": "2015-06-08",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 42
-    },
-    {
         "id": 17550,
         "link_id": "PRC_W1E5X0N6J0B8I1B6J4L2P1N4Z9Q5X6",
         "title": "자동차관리법 일부개정법률안",
@@ -1538,6 +1528,16 @@
         "status": "계류",
         "status_detail": "위원회 심사",
         "actor_count": 11
+    },
+    {
+        "id": 7840,
+        "link_id": "PRC_G1Z5Q0F6Q0G8A1A7H4Y2G1V2K4R2Q2",
+        "title": "형법 일부개정법률안",
+        "proposed_date": "2015-06-08",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 42
     },
     {
         "id": 13235,
@@ -1580,16 +1580,6 @@
         "actor_count": 12
     },
     {
-        "id": 14081,
-        "link_id": "PRC_J1U5X0D5K2I8J1A1S4S3Z1P6U7S4U1",
-        "title": "지방자치단체를 당사자로 하는 계약에 관한 법률 일부개정법률안",
-        "proposed_date": "2015-05-28",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 10
-    },
-    {
         "id": 7078,
         "link_id": "PRC_H1L5B0K5O2K8R1H2O5L9F4K7L4R4M8",
         "title": "산업집적활성화 및 공장설립에 관한 법률 일부개정법률안",
@@ -1610,6 +1600,16 @@
         "actor_count": 23
     },
     {
+        "id": 14081,
+        "link_id": "PRC_J1U5X0D5K2I8J1A1S4S3Z1P6U7S4U1",
+        "title": "지방자치단체를 당사자로 하는 계약에 관한 법률 일부개정법률안",
+        "proposed_date": "2015-05-28",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 10
+    },
+    {
         "id": 15484,
         "link_id": "PRC_E1I5O0P5B2A7U1F1W3D8J5A9F9S9D7",
         "title": "농어촌 학교 육성 및 지원에 관한 특별법안",
@@ -1620,19 +1620,9 @@
         "actor_count": 18
     },
     {
-        "id": 16888,
-        "link_id": "PRC_C1R5R0R5O2G6V1U2F2J4P3V5H3J6O0",
-        "title": "물류시설의 개발 및 운영에 관한 법률 일부개정법률안",
-        "proposed_date": "2015-05-26",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 12
-    },
-    {
-        "id": 14625,
-        "link_id": "PRC_R1T5V0E5R2Y6D1T4V4J5C2B4K5N1W1",
-        "title": "부동산 가격공시 및 감정평가에 관한 법률 일부개정법률안",
+        "id": 785,
+        "link_id": "PRC_A1H5S0W5R2M6Z1G3S3E4H3W9E0J3G9",
+        "title": "원자력안전법 일부개정법률안",
         "proposed_date": "2015-05-26",
         "decision_date": "0000-00-00",
         "status": "계류",
@@ -1650,9 +1640,9 @@
         "actor_count": 12
     },
     {
-        "id": 785,
-        "link_id": "PRC_A1H5S0W5R2M6Z1G3S3E4H3W9E0J3G9",
-        "title": "원자력안전법 일부개정법률안",
+        "id": 7728,
+        "link_id": "PRC_L1H5J0H5K2U6E1N4G4N7U1I2U8L5Z1",
+        "title": "자유무역지역의 지정 및 운영에 관한 법률 일부개정법률안",
         "proposed_date": "2015-05-26",
         "decision_date": "0000-00-00",
         "status": "계류",
@@ -1660,9 +1650,19 @@
         "actor_count": 12
     },
     {
-        "id": 7728,
-        "link_id": "PRC_L1H5J0H5K2U6E1N4G4N7U1I2U8L5Z1",
-        "title": "자유무역지역의 지정 및 운영에 관한 법률 일부개정법률안",
+        "id": 16888,
+        "link_id": "PRC_C1R5R0R5O2G6V1U2F2J4P3V5H3J6O0",
+        "title": "물류시설의 개발 및 운영에 관한 법률 일부개정법률안",
+        "proposed_date": "2015-05-26",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 12
+    },
+    {
+        "id": 14625,
+        "link_id": "PRC_R1T5V0E5R2Y6D1T4V4J5C2B4K5N1W1",
+        "title": "부동산 가격공시 및 감정평가에 관한 법률 일부개정법률안",
         "proposed_date": "2015-05-26",
         "decision_date": "0000-00-00",
         "status": "계류",
@@ -1800,16 +1800,6 @@
         "actor_count": 12
     },
     {
-        "id": 6648,
-        "link_id": "PRC_D1J5D0Q4F2I1G1F6O4Q7U0S5T0B7C2",
-        "title": "주택시장 정상화 및 전·월세 시장 안정을 위한 특별법안",
-        "proposed_date": "2015-04-21",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 10
-    },
-    {
         "id": 3953,
         "link_id": "PRC_H1Q5L0N4Q2E1B1M0Z5C8C1U2W7M2W3",
         "title": "군인사법 일부개정법률안",
@@ -1818,6 +1808,16 @@
         "status": "계류",
         "status_detail": "위원회 심사",
         "actor_count": 18
+    },
+    {
+        "id": 6648,
+        "link_id": "PRC_D1J5D0Q4F2I1G1F6O4Q7U0S5T0B7C2",
+        "title": "주택시장 정상화 및 전·월세 시장 안정을 위한 특별법안",
+        "proposed_date": "2015-04-21",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 10
     },
     {
         "id": 8164,
@@ -1850,16 +1850,6 @@
         "actor_count": 155
     },
     {
-        "id": 6660,
-        "link_id": "PRC_G1K5C0B4Y1Q4P1X0D5R2D0V7A9M2H8",
-        "title": "수산생물질병 관리법 일부개정법률안",
-        "proposed_date": "2015-04-14",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 10
-    },
-    {
         "id": 14786,
         "link_id": "PRC_W1N5J0Z4B1X4E1C2H2G4Q1G0L6C5U3",
         "title": "도선법 일부개정법률안",
@@ -1890,6 +1880,16 @@
         "actor_count": 11
     },
     {
+        "id": 6660,
+        "link_id": "PRC_G1K5C0B4Y1Q4P1X0D5R2D0V7A9M2H8",
+        "title": "수산생물질병 관리법 일부개정법률안",
+        "proposed_date": "2015-04-14",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 10
+    },
+    {
         "id": 8480,
         "link_id": "PRC_J1D5O0F4U1D3W1G0P2A8R5R6L9A4J4",
         "title": "전자정부법 일부개정법률안",
@@ -1910,16 +1910,6 @@
         "actor_count": 59
     },
     {
-        "id": 4733,
-        "link_id": "PRC_V1F5J0D4I0E7E1A6R4B9J1X2E4P4U7",
-        "title": "세월호 선체의 온전한 인양을 촉구하는 결의안",
-        "proposed_date": "2015-04-07",
-        "decision_date": "2015-04-16",
-        "status": "처리",
-        "status_detail": "의결",
-        "actor_count": 158
-    },
-    {
         "id": 17198,
         "link_id": "PRC_R1Q5B0Y4I0K7A1H8X3P6T3V2N0G6S0",
         "title": "경범죄 처벌법 일부개정법률안",
@@ -1928,6 +1918,16 @@
         "status": "계류",
         "status_detail": "위원회 심사",
         "actor_count": 12
+    },
+    {
+        "id": 4733,
+        "link_id": "PRC_V1F5J0D4I0E7E1A6R4B9J1X2E4P4U7",
+        "title": "세월호 선체의 온전한 인양을 촉구하는 결의안",
+        "proposed_date": "2015-04-07",
+        "decision_date": "2015-04-16",
+        "status": "처리",
+        "status_detail": "의결",
+        "actor_count": 158
     },
     {
         "id": 5225,
@@ -1980,46 +1980,6 @@
         "actor_count": 12
     },
     {
-        "id": 18076,
-        "link_id": "PRC_F1F5I0C4N0Y2B1I5I5K3S4V6V5E6Y9",
-        "title": "부가가치세법 일부개정법률안",
-        "proposed_date": "2015-04-02",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 19
-    },
-    {
-        "id": 12445,
-        "link_id": "PRC_W1L5A0T4A0F2Q1C4Y0N8V0M1P7O4D9",
-        "title": "국가공무원법 일부개정법률안",
-        "proposed_date": "2015-04-02",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 20
-    },
-    {
-        "id": 10917,
-        "link_id": "PRC_E1X5Y0Z4C0A2Y1C5I5T3S3P2E0G9O0",
-        "title": "태권도 진흥 및 태권도공원 조성 등에 관한 법률 일부개정법률안",
-        "proposed_date": "2015-04-02",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 13
-    },
-    {
-        "id": 14524,
-        "link_id": "PRC_B1L5W0Z4L0X2C1U1H4O3Y0T9D0M7Z8",
-        "title": "국무총리ㆍ국무위원 및 정부위원 출석요구의 건(교육ㆍ사회ㆍ문화에 관한 질문)",
-        "proposed_date": "2015-04-02",
-        "decision_date": "2015-04-07",
-        "status": "처리",
-        "status_detail": "의결",
-        "actor_count": 287
-    },
-    {
         "id": 9611,
         "link_id": "PRC_H1E5N0S4Y0O2R1B0I0G6H2Z0O6U3T8",
         "title": "산림문화·휴양에 관한 법률 일부개정법률안",
@@ -2030,9 +1990,9 @@
         "actor_count": 12
     },
     {
-        "id": 13442,
-        "link_id": "PRC_O1X5D0V4O0F2M1W1R2M1X3G8I8F0R9",
-        "title": "국무총리 및 국무위원 출석요구의 건(국정에 관한 교섭단체 대표연설)",
+        "id": 14524,
+        "link_id": "PRC_B1L5W0Z4L0X2C1U1H4O3Y0T9D0M7Z8",
+        "title": "국무총리ㆍ국무위원 및 정부위원 출석요구의 건(교육ㆍ사회ㆍ문화에 관한 질문)",
         "proposed_date": "2015-04-02",
         "decision_date": "2015-04-07",
         "status": "처리",
@@ -2050,14 +2010,14 @@
         "actor_count": 287
     },
     {
-        "id": 3350,
-        "link_id": "PRC_U1O5Y0C4M0F2B1K0V0Q2U2Z8Y3W4B8",
-        "title": "도시 및 주거환경정비법 일부개정법률안",
+        "id": 13442,
+        "link_id": "PRC_O1X5D0V4O0F2M1W1R2M1X3G8I8F0R9",
+        "title": "국무총리 및 국무위원 출석요구의 건(국정에 관한 교섭단체 대표연설)",
         "proposed_date": "2015-04-02",
-        "decision_date": "2015-08-11",
+        "decision_date": "2015-04-07",
         "status": "처리",
-        "status_detail": "대안반영폐기",
-        "actor_count": 23
+        "status_detail": "의결",
+        "actor_count": 287
     },
     {
         "id": 3772,
@@ -2068,6 +2028,16 @@
         "status": "계류",
         "status_detail": "체계자구 심사",
         "actor_count": 20
+    },
+    {
+        "id": 3350,
+        "link_id": "PRC_U1O5Y0C4M0F2B1K0V0Q2U2Z8Y3W4B8",
+        "title": "도시 및 주거환경정비법 일부개정법률안",
+        "proposed_date": "2015-04-02",
+        "decision_date": "2015-08-11",
+        "status": "처리",
+        "status_detail": "대안반영폐기",
+        "actor_count": 23
     },
     {
         "id": 6866,
@@ -2110,6 +2080,16 @@
         "actor_count": 11
     },
     {
+        "id": 630,
+        "link_id": "PRC_B1W5I0Z4P0X2M1L1D3D1H0H0G3J0B8",
+        "title": "국무총리 및 국무위원 출석요구의 건(정치에 관한 질문)",
+        "proposed_date": "2015-04-02",
+        "decision_date": "2015-04-07",
+        "status": "처리",
+        "status_detail": "의결",
+        "actor_count": 287
+    },
+    {
         "id": 1646,
         "link_id": "PRC_B1Z5T0X4K0Z2T1X1G3L9D2Y4R1Q5H4",
         "title": "국무총리ㆍ국무위원 및 정부위원 출석요구의 건(경제에 관한 질문)",
@@ -2130,14 +2110,34 @@
         "actor_count": 20
     },
     {
-        "id": 630,
-        "link_id": "PRC_B1W5I0Z4P0X2M1L1D3D1H0H0G3J0B8",
-        "title": "국무총리 및 국무위원 출석요구의 건(정치에 관한 질문)",
+        "id": 18076,
+        "link_id": "PRC_F1F5I0C4N0Y2B1I5I5K3S4V6V5E6Y9",
+        "title": "부가가치세법 일부개정법률안",
         "proposed_date": "2015-04-02",
-        "decision_date": "2015-04-07",
-        "status": "처리",
-        "status_detail": "의결",
-        "actor_count": 287
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 19
+    },
+    {
+        "id": 12445,
+        "link_id": "PRC_W1L5A0T4A0F2Q1C4Y0N8V0M1P7O4D9",
+        "title": "국가공무원법 일부개정법률안",
+        "proposed_date": "2015-04-02",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 20
+    },
+    {
+        "id": 10917,
+        "link_id": "PRC_E1X5Y0Z4C0A2Y1C5I5T3S3P2E0G9O0",
+        "title": "태권도 진흥 및 태권도공원 조성 등에 관한 법률 일부개정법률안",
+        "proposed_date": "2015-04-02",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 13
     },
     {
         "id": 11176,
@@ -2150,16 +2150,6 @@
         "actor_count": 10
     },
     {
-        "id": 16671,
-        "link_id": "PRC_N1N5K0R3C3Q1G1B5P2K8L1J4I7O1U0",
-        "title": "건설기술 진흥법 일부개정법률안",
-        "proposed_date": "2015-03-31",
-        "decision_date": "2015-07-06",
-        "status": "처리",
-        "status_detail": "대안반영폐기",
-        "actor_count": 11
-    },
-    {
         "id": 5275,
         "link_id": "PRC_V1J5K0I3K3S1O1D7T1X2G2B2G6G2T7",
         "title": "여신전문금융업법 일부개정법률안",
@@ -2170,14 +2160,14 @@
         "actor_count": 19
     },
     {
-        "id": 10611,
-        "link_id": "PRC_K1Q5J0X3U3D0A1O5J3F1F5J7G9S7R7",
-        "title": "원양산업발전법 일부개정법률안",
-        "proposed_date": "2015-03-30",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 10
+        "id": 16671,
+        "link_id": "PRC_N1N5K0R3C3Q1G1B5P2K8L1J4I7O1U0",
+        "title": "건설기술 진흥법 일부개정법률안",
+        "proposed_date": "2015-03-31",
+        "decision_date": "2015-07-06",
+        "status": "처리",
+        "status_detail": "대안반영폐기",
+        "actor_count": 11
     },
     {
         "id": 12604,
@@ -2193,6 +2183,16 @@
         "id": 11972,
         "link_id": "PRC_T1M5E0P3R3G0V1G5I1M4A4D5I8T6Q2",
         "title": "인공조명에 의한 빛공해 방지법 일부개정법률안",
+        "proposed_date": "2015-03-30",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 10
+    },
+    {
+        "id": 10611,
+        "link_id": "PRC_K1Q5J0X3U3D0A1O5J3F1F5J7G9S7R7",
+        "title": "원양산업발전법 일부개정법률안",
         "proposed_date": "2015-03-30",
         "decision_date": "0000-00-00",
         "status": "계류",
@@ -2290,16 +2290,6 @@
         "actor_count": 10
     },
     {
-        "id": 3908,
-        "link_id": "PRC_D1N5O0D3H2A0U1Y7I0K1V5I8Y0P2H6",
-        "title": "정당법 일부개정법률안",
-        "proposed_date": "2015-03-20",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 10
-    },
-    {
         "id": 16986,
         "link_id": "PRC_K1S5R0K3R2D0J1H7I3V5A4V8Z1W0K9",
         "title": "문학진흥법안",
@@ -2308,6 +2298,16 @@
         "status": "계류",
         "status_detail": "위원회 심사",
         "actor_count": 62
+    },
+    {
+        "id": 3908,
+        "link_id": "PRC_D1N5O0D3H2A0U1Y7I0K1V5I8Y0P2H6",
+        "title": "정당법 일부개정법률안",
+        "proposed_date": "2015-03-20",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 10
     },
     {
         "id": 17919,
@@ -2620,16 +2620,6 @@
         "actor_count": 11
     },
     {
-        "id": 2401,
-        "link_id": "PRC_U1A4H1Z2U3E1T1H5G0J3G0O4C8F9V9",
-        "title": "발전소주변지역 지원에 관한 법률 일부개정법률안",
-        "proposed_date": "2014-12-31",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 16
-    },
-    {
         "id": 17955,
         "link_id": "PRC_L1E4H1Y2P3J1T1L4Z3X4F1N1R8S7N8",
         "title": "도로교통법 일부개정법률안",
@@ -2640,14 +2630,14 @@
         "actor_count": 19
     },
     {
-        "id": 7851,
-        "link_id": "PRC_C1V4Z1F2U3I0R1U7T3L2W0W0R0H8D8",
-        "title": "국가재정법 일부개정법률안",
-        "proposed_date": "2014-12-30",
+        "id": 2401,
+        "link_id": "PRC_U1A4H1Z2U3E1T1H5G0J3G0O4C8F9V9",
+        "title": "발전소주변지역 지원에 관한 법률 일부개정법률안",
+        "proposed_date": "2014-12-31",
         "decision_date": "0000-00-00",
         "status": "계류",
         "status_detail": "위원회 심사",
-        "actor_count": 11
+        "actor_count": 16
     },
     {
         "id": 8301,
@@ -2670,14 +2660,14 @@
         "actor_count": 16
     },
     {
-        "id": 13553,
-        "link_id": "PRC_L1B4T1P2M2U9C1S2Y5X8N3U6O6V9H5",
-        "title": "정부 및 공공기관 등의 해외자원개발 진상규명을 위한 국정조사요구",
-        "proposed_date": "2014-12-29",
+        "id": 7851,
+        "link_id": "PRC_C1V4Z1F2U3I0R1U7T3L2W0W0R0H8D8",
+        "title": "국가재정법 일부개정법률안",
+        "proposed_date": "2014-12-30",
         "decision_date": "0000-00-00",
         "status": "계류",
         "status_detail": "위원회 심사",
-        "actor_count": 288
+        "actor_count": 11
     },
     {
         "id": 11108,
@@ -2690,9 +2680,19 @@
         "actor_count": 16
     },
     {
-        "id": 7011,
-        "link_id": "PRC_X1Y4T1Q2A2N2U1H5D4T1G1F7A0N2J5",
-        "title": "보호관찰 등에 관한 법률 일부개정법률안",
+        "id": 13553,
+        "link_id": "PRC_L1B4T1P2M2U9C1S2Y5X8N3U6O6V9H5",
+        "title": "정부 및 공공기관 등의 해외자원개발 진상규명을 위한 국정조사요구",
+        "proposed_date": "2014-12-29",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 288
+    },
+    {
+        "id": 4712,
+        "link_id": "PRC_R1S4T1X2L2A2M1G7D0G0W0M1N7F0X4",
+        "title": "개인정보 보호법 일부개정법률안",
         "proposed_date": "2014-12-22",
         "decision_date": "0000-00-00",
         "status": "계류",
@@ -2700,9 +2700,9 @@
         "actor_count": 10
     },
     {
-        "id": 4712,
-        "link_id": "PRC_R1S4T1X2L2A2M1G7D0G0W0M1N7F0X4",
-        "title": "개인정보 보호법 일부개정법률안",
+        "id": 7011,
+        "link_id": "PRC_X1Y4T1Q2A2N2U1H5D4T1G1F7A0N2J5",
+        "title": "보호관찰 등에 관한 법률 일부개정법률안",
         "proposed_date": "2014-12-22",
         "decision_date": "0000-00-00",
         "status": "계류",
@@ -2718,16 +2718,6 @@
         "status": "계류",
         "status_detail": "위원회 심사",
         "actor_count": 16
-    },
-    {
-        "id": 1541,
-        "link_id": "PRC_K1M4N1X2D1X7R1Z6F2D1Q5B4I2Y7Z1",
-        "title": "국회의원(김진태) 징계안",
-        "proposed_date": "2014-12-17",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 130
     },
     {
         "id": 5006,
@@ -2750,6 +2740,16 @@
         "actor_count": 25
     },
     {
+        "id": 1541,
+        "link_id": "PRC_K1M4N1X2D1X7R1Z6F2D1Q5B4I2Y7Z1",
+        "title": "국회의원(김진태) 징계안",
+        "proposed_date": "2014-12-17",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 130
+    },
+    {
         "id": 15613,
         "link_id": "PRC_M1G4F1L2H1A6O1I0L3F6Q4Y0L3E9N7",
         "title": "국가재정법 일부개정법률안",
@@ -2758,6 +2758,16 @@
         "status": "계류",
         "status_detail": "위원회 심사",
         "actor_count": 13
+    },
+    {
+        "id": 9695,
+        "link_id": "PRC_I1W4T1U2F1F1U1F4W0R1L1P3C1T9J4",
+        "title": "형의 집행 및 수용자의 처우에 관한 법률 일부개정법률안",
+        "proposed_date": "2014-12-11",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 10
     },
     {
         "id": 17696,
@@ -2773,16 +2783,6 @@
         "id": 14499,
         "link_id": "PRC_J1D4Q1R2Y1M1Z1Y4N3I9R0B2T0P1N6",
         "title": "부동산 가격공시 및 감정평가에 관한 법률 일부개정법률안",
-        "proposed_date": "2014-12-11",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 10
-    },
-    {
-        "id": 9695,
-        "link_id": "PRC_I1W4T1U2F1F1U1F4W0R1L1P3C1T9J4",
-        "title": "형의 집행 및 수용자의 처우에 관한 법률 일부개정법률안",
         "proposed_date": "2014-12-11",
         "decision_date": "0000-00-00",
         "status": "계류",
@@ -2920,26 +2920,6 @@
         "actor_count": 62
     },
     {
-        "id": 1337,
-        "link_id": "PRC_H1U4K1J0D2W8V1J4K4E4R1P2U0M2J8",
-        "title": "국무총리 및 국무위원 출석요구의 건(외교ㆍ통일ㆍ안보에 관한 질문)",
-        "proposed_date": "2014-10-28",
-        "decision_date": "2014-10-29",
-        "status": "처리",
-        "status_detail": "의결",
-        "actor_count": 288
-    },
-    {
-        "id": 5178,
-        "link_id": "PRC_L1T4G1M0P2B8E1U4U4P7K3M5J5Q0Z3",
-        "title": "국무총리ㆍ국무위원 및 정부위원 출석요구의 건(경제에 관한 질문)",
-        "proposed_date": "2014-10-28",
-        "decision_date": "2014-10-29",
-        "status": "처리",
-        "status_detail": "의결",
-        "actor_count": 288
-    },
-    {
         "id": 10648,
         "link_id": "PRC_D1H4E1A0U2V8Z1Q4O3V2P0C0F6V5S0",
         "title": "국무총리 및 국무위원 출석요구의 건(국정에 관한 교섭단체 대표연설)",
@@ -2970,9 +2950,29 @@
         "actor_count": 288
     },
     {
-        "id": 11886,
-        "link_id": "PRC_X1V4M1D0S1J3L1B0H4N0S4L8N0E5T3",
-        "title": "국가재정법 일부개정법률안",
+        "id": 1337,
+        "link_id": "PRC_H1U4K1J0D2W8V1J4K4E4R1P2U0M2J8",
+        "title": "국무총리 및 국무위원 출석요구의 건(외교ㆍ통일ㆍ안보에 관한 질문)",
+        "proposed_date": "2014-10-28",
+        "decision_date": "2014-10-29",
+        "status": "처리",
+        "status_detail": "의결",
+        "actor_count": 288
+    },
+    {
+        "id": 5178,
+        "link_id": "PRC_L1T4G1M0P2B8E1U4U4P7K3M5J5Q0Z3",
+        "title": "국무총리ㆍ국무위원 및 정부위원 출석요구의 건(경제에 관한 질문)",
+        "proposed_date": "2014-10-28",
+        "decision_date": "2014-10-29",
+        "status": "처리",
+        "status_detail": "의결",
+        "actor_count": 288
+    },
+    {
+        "id": 10556,
+        "link_id": "PRC_S1W4R1H0I1U3K1Y0C3V4L2H4Z8Y5X3",
+        "title": "사회적경제기본법안",
         "proposed_date": "2014-10-13",
         "decision_date": "0000-00-00",
         "status": "계류",
@@ -2980,9 +2980,9 @@
         "actor_count": 65
     },
     {
-        "id": 10556,
-        "link_id": "PRC_S1W4R1H0I1U3K1Y0C3V4L2H4Z8Y5X3",
-        "title": "사회적경제기본법안",
+        "id": 11886,
+        "link_id": "PRC_X1V4M1D0S1J3L1B0H4N0S4L8N0E5T3",
+        "title": "국가재정법 일부개정법률안",
         "proposed_date": "2014-10-13",
         "decision_date": "0000-00-00",
         "status": "계류",
@@ -3120,9 +3120,9 @@
         "actor_count": 14
     },
     {
-        "id": 16929,
-        "link_id": "PRC_E1I4A0L7Q1R6K1M5A2L8J3G6G8J0A7",
-        "title": "국회법 일부개정법률안",
+        "id": 17115,
+        "link_id": "PRC_F1H4X0X7K1I6Q1R5L2P7G1I1E5R4L9",
+        "title": "국회과학기술처법안",
         "proposed_date": "2014-07-16",
         "decision_date": "0000-00-00",
         "status": "계류",
@@ -3130,9 +3130,9 @@
         "actor_count": 17
     },
     {
-        "id": 17115,
-        "link_id": "PRC_F1H4X0X7K1I6Q1R5L2P7G1I1E5R4L9",
-        "title": "국회과학기술처법안",
+        "id": 16929,
+        "link_id": "PRC_E1I4A0L7Q1R6K1M5A2L8J3G6G8J0A7",
+        "title": "국회법 일부개정법률안",
         "proposed_date": "2014-07-16",
         "decision_date": "0000-00-00",
         "status": "계류",
@@ -3150,16 +3150,6 @@
         "actor_count": 126
     },
     {
-        "id": 10934,
-        "link_id": "PRC_A1M4J0Q6L3N0Z1F7T0J3V3M5S2N6I1",
-        "title": "형법 일부개정법률안",
-        "proposed_date": "2014-06-30",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 15
-    },
-    {
         "id": 3569,
         "link_id": "PRC_D1B4J0I6M3V0U1U7R1Z0A4L5I7J1F4",
         "title": "공직선거법 일부개정법률안",
@@ -3167,6 +3157,16 @@
         "decision_date": "2015-07-24",
         "status": "처리",
         "status_detail": "대안반영폐기",
+        "actor_count": 15
+    },
+    {
+        "id": 10934,
+        "link_id": "PRC_A1M4J0Q6L3N0Z1F7T0J3V3M5S2N6I1",
+        "title": "형법 일부개정법률안",
+        "proposed_date": "2014-06-30",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
         "actor_count": 15
     },
     {
@@ -3210,16 +3210,6 @@
         "actor_count": 32
     },
     {
-        "id": 6408,
-        "link_id": "PRC_Z1Q4W0E6J1J7C1L8P1H2E0C2V8T0J5",
-        "title": "국무총리 및 국무위원 출석요구의 건(정치ㆍ외교ㆍ통일ㆍ안보에 관한 질문)",
-        "proposed_date": "2014-06-17",
-        "decision_date": "2014-06-18",
-        "status": "처리",
-        "status_detail": "의결",
-        "actor_count": 275
-    },
-    {
         "id": 3351,
         "link_id": "PRC_G1Z4I0L6W1J7O1Z8Y1L9B3N6J3J4R6",
         "title": "국무총리ㆍ국무위원 및 정부위원 출석요구의 건(교육ㆍ사회ㆍ문화에 관한 질문)",
@@ -3240,6 +3230,16 @@
         "actor_count": 60
     },
     {
+        "id": 12610,
+        "link_id": "PRC_J1D4X0U6G1R7A0M9D4F1G1G4H7L8E1",
+        "title": "철도건설법 일부개정법률안",
+        "proposed_date": "2014-06-17",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 10
+    },
+    {
         "id": 11823,
         "link_id": "PRC_K1R4H0D6K1Y7M1Q8A1C6H0O1X8N7P7",
         "title": "국무총리ㆍ국무위원 및 정부위원 출석요구의 건(경제에 관한 질문)",
@@ -3250,14 +3250,14 @@
         "actor_count": 275
     },
     {
-        "id": 12610,
-        "link_id": "PRC_J1D4X0U6G1R7A0M9D4F1G1G4H7L8E1",
-        "title": "철도건설법 일부개정법률안",
+        "id": 6408,
+        "link_id": "PRC_Z1Q4W0E6J1J7C1L8P1H2E0C2V8T0J5",
+        "title": "국무총리 및 국무위원 출석요구의 건(정치ㆍ외교ㆍ통일ㆍ안보에 관한 질문)",
         "proposed_date": "2014-06-17",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 10
+        "decision_date": "2014-06-18",
+        "status": "처리",
+        "status_detail": "의결",
+        "actor_count": 275
     },
     {
         "id": 7649,
@@ -3280,9 +3280,9 @@
         "actor_count": 276
     },
     {
-        "id": 1687,
-        "link_id": "PRC_K1V4M0J5Y2K8E1B5C4S0X5K7S0E8Q6",
-        "title": "기초연금법 일부개정법률안",
+        "id": 10147,
+        "link_id": "PRC_Z1S4P0N5U2P8D1K5B4G6O0Z2A3G1Y6",
+        "title": "장애인연금법 일부개정법률안",
         "proposed_date": "2014-05-28",
         "decision_date": "0000-00-00",
         "status": "계류",
@@ -3290,9 +3290,9 @@
         "actor_count": 31
     },
     {
-        "id": 10147,
-        "link_id": "PRC_Z1S4P0N5U2P8D1K5B4G6O0Z2A3G1Y6",
-        "title": "장애인연금법 일부개정법률안",
+        "id": 1687,
+        "link_id": "PRC_K1V4M0J5Y2K8E1B5C4S0X5K7S0E8Q6",
+        "title": "기초연금법 일부개정법률안",
         "proposed_date": "2014-05-28",
         "decision_date": "0000-00-00",
         "status": "계류",
@@ -3340,16 +3340,6 @@
         "actor_count": 10
     },
     {
-        "id": 14998,
-        "link_id": "PRC_T1V4H0R4J0U7Z1W7Y2Z7Y4I6G7J0Y0",
-        "title": "공직선거법 일부개정법률안",
-        "proposed_date": "2014-04-07",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 11
-    },
-    {
         "id": 1287,
         "link_id": "PRC_U1G4B0S4I0K7T1R6R5T5Z5J0W0R5L8",
         "title": "개인정보 보호법 일부개정법률안",
@@ -3370,6 +3360,16 @@
         "actor_count": 103
     },
     {
+        "id": 14998,
+        "link_id": "PRC_T1V4H0R4J0U7Z1W7Y2Z7Y4I6G7J0Y0",
+        "title": "공직선거법 일부개정법률안",
+        "proposed_date": "2014-04-07",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 11
+    },
+    {
         "id": 17905,
         "link_id": "PRC_J1Z4M0N4U0D1T1Q6B5V2X0Z1Y2U3A8",
         "title": "체육시설의 설치·이용에 관한 법률 일부개정법률안",
@@ -3378,56 +3378,6 @@
         "status": "처리",
         "status_detail": "대안반영폐기",
         "actor_count": 14
-    },
-    {
-        "id": 10298,
-        "link_id": "PRC_Z1S4F0I3Y3W1E1F6Z2J3Z4E3Y3I6E4",
-        "title": "국무총리ㆍ국무위원 및 정부위원 출석요구의 건(경제에 관한 질문)",
-        "proposed_date": "2014-03-31",
-        "decision_date": "2014-04-01",
-        "status": "처리",
-        "status_detail": "의결",
-        "actor_count": 286
-    },
-    {
-        "id": 4514,
-        "link_id": "PRC_D1C4K0G3M3J1R1H6Q1A0L0Y4Y2R6Z6",
-        "title": "국무총리 및 국무위원 출석요구의 건(국정에 관한 교섭단체 대표연설)",
-        "proposed_date": "2014-03-31",
-        "decision_date": "2014-04-01",
-        "status": "처리",
-        "status_detail": "의결",
-        "actor_count": 286
-    },
-    {
-        "id": 16473,
-        "link_id": "PRC_A1H4I0J3W3N1I1Y7E2O1B4E4J7M8K4",
-        "title": "동물보호법 일부개정법률안",
-        "proposed_date": "2014-03-31",
-        "decision_date": "2014-12-29",
-        "status": "처리",
-        "status_detail": "공포",
-        "actor_count": 10
-    },
-    {
-        "id": 3534,
-        "link_id": "PRC_A1X4B0L3B3F1P1D6U5N3D0Y3X1U9Q6",
-        "title": "지방세기본법 일부개정법률안",
-        "proposed_date": "2014-03-31",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 13
-    },
-    {
-        "id": 5544,
-        "link_id": "PRC_T1Q4N0I3R3C1X1E8O2Y2E0M5X7N1W4",
-        "title": "제품안전기본법 일부개정법률안",
-        "proposed_date": "2014-03-31",
-        "decision_date": "2014-12-29",
-        "status": "처리",
-        "status_detail": "대안반영폐기",
-        "actor_count": 20
     },
     {
         "id": 9282,
@@ -3480,24 +3430,54 @@
         "actor_count": 10
     },
     {
-        "id": 502,
-        "link_id": "PRC_A1Y4P0P3P2A8X1I1O3G4D4S5E3P8T2",
-        "title": "국민기초생활 보장법 일부개정법률안",
-        "proposed_date": "2014-03-28",
+        "id": 10298,
+        "link_id": "PRC_Z1S4F0I3Y3W1E1F6Z2J3Z4E3Y3I6E4",
+        "title": "국무총리ㆍ국무위원 및 정부위원 출석요구의 건(경제에 관한 질문)",
+        "proposed_date": "2014-03-31",
+        "decision_date": "2014-04-01",
+        "status": "처리",
+        "status_detail": "의결",
+        "actor_count": 286
+    },
+    {
+        "id": 5544,
+        "link_id": "PRC_T1Q4N0I3R3C1X1E8O2Y2E0M5X7N1W4",
+        "title": "제품안전기본법 일부개정법률안",
+        "proposed_date": "2014-03-31",
+        "decision_date": "2014-12-29",
+        "status": "처리",
+        "status_detail": "대안반영폐기",
+        "actor_count": 20
+    },
+    {
+        "id": 4514,
+        "link_id": "PRC_D1C4K0G3M3J1R1H6Q1A0L0Y4Y2R6Z6",
+        "title": "국무총리 및 국무위원 출석요구의 건(국정에 관한 교섭단체 대표연설)",
+        "proposed_date": "2014-03-31",
+        "decision_date": "2014-04-01",
+        "status": "처리",
+        "status_detail": "의결",
+        "actor_count": 286
+    },
+    {
+        "id": 16473,
+        "link_id": "PRC_A1H4I0J3W3N1I1Y7E2O1B4E4J7M8K4",
+        "title": "동물보호법 일부개정법률안",
+        "proposed_date": "2014-03-31",
+        "decision_date": "2014-12-29",
+        "status": "처리",
+        "status_detail": "공포",
+        "actor_count": 10
+    },
+    {
+        "id": 3534,
+        "link_id": "PRC_A1X4B0L3B3F1P1D6U5N3D0Y3X1U9Q6",
+        "title": "지방세기본법 일부개정법률안",
+        "proposed_date": "2014-03-31",
         "decision_date": "0000-00-00",
         "status": "계류",
         "status_detail": "위원회 심사",
-        "actor_count": 130
-    },
-    {
-        "id": 54,
-        "link_id": "PRC_C1T4G0L3K2Y8J1T1K3B0B3E5I2K7Z2",
-        "title": "사회보장수급권자의 발굴 및 지원에 관한 법률안",
-        "proposed_date": "2014-03-28",
-        "decision_date": "2014-12-09",
-        "status": "처리",
-        "status_detail": "대안반영폐기",
-        "actor_count": 130
+        "actor_count": 13
     },
     {
         "id": 10690,
@@ -3520,14 +3500,24 @@
         "actor_count": 130
     },
     {
-        "id": 4252,
-        "link_id": "PRC_C1A4Q0C3F1H8D1M1U4L6C0L9R3D7O3",
-        "title": "‘서대문형무소 유네스코 세계유산 지정’을 위한 촉구 결의안",
-        "proposed_date": "2014-03-18",
-        "decision_date": "2014-04-29",
+        "id": 502,
+        "link_id": "PRC_A1Y4P0P3P2A8X1I1O3G4D4S5E3P8T2",
+        "title": "국민기초생활 보장법 일부개정법률안",
+        "proposed_date": "2014-03-28",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 130
+    },
+    {
+        "id": 54,
+        "link_id": "PRC_C1T4G0L3K2Y8J1T1K3B0B3E5I2K7Z2",
+        "title": "사회보장수급권자의 발굴 및 지원에 관한 법률안",
+        "proposed_date": "2014-03-28",
+        "decision_date": "2014-12-09",
         "status": "처리",
-        "status_detail": "의결",
-        "actor_count": 57
+        "status_detail": "대안반영폐기",
+        "actor_count": 130
     },
     {
         "id": 15263,
@@ -3548,6 +3538,16 @@
         "status": "계류",
         "status_detail": "위원회 심사",
         "actor_count": 11
+    },
+    {
+        "id": 4252,
+        "link_id": "PRC_C1A4Q0C3F1H8D1M1U4L6C0L9R3D7O3",
+        "title": "‘서대문형무소 유네스코 세계유산 지정’을 위한 촉구 결의안",
+        "proposed_date": "2014-03-18",
+        "decision_date": "2014-04-29",
+        "status": "처리",
+        "status_detail": "의결",
+        "actor_count": 57
     },
     {
         "id": 15051,
@@ -3670,16 +3670,6 @@
         "actor_count": 281
     },
     {
-        "id": 8704,
-        "link_id": "PRC_B1I4L0N1G2W8Q1C7A3A3U4I0K3Q4C8",
-        "title": "국무총리 및 국무위원 출석요구의 건(정치에 관한 질문)",
-        "proposed_date": "2014-01-28",
-        "decision_date": "2014-02-03",
-        "status": "처리",
-        "status_detail": "의결",
-        "actor_count": 281
-    },
-    {
         "id": 12734,
         "link_id": "PRC_W1C4U0Y1X2P8Y1G7J3I9B1A6B5R6D5",
         "title": "국무총리·국무위원 및 정부위원 출석요구의 건(경제에 관한 질문)",
@@ -3720,6 +3710,16 @@
         "actor_count": 281
     },
     {
+        "id": 8704,
+        "link_id": "PRC_B1I4L0N1G2W8Q1C7A3A3U4I0K3Q4C8",
+        "title": "국무총리 및 국무위원 출석요구의 건(정치에 관한 질문)",
+        "proposed_date": "2014-01-28",
+        "decision_date": "2014-02-03",
+        "status": "처리",
+        "status_detail": "의결",
+        "actor_count": 281
+    },
+    {
         "id": 4147,
         "link_id": "PRC_Z1M4X0F1S2E1F1M7S4Q5T1V6O5G3O0",
         "title": "공직선거법 일부개정법률안",
@@ -3730,16 +3730,6 @@
         "actor_count": 13
     },
     {
-        "id": 11808,
-        "link_id": "PRC_A1W4U0I1N1D7L1V6Z4Y4J2H3A4G8S4",
-        "title": "국민건강보험법 일부개정법률안",
-        "proposed_date": "2014-01-17",
-        "decision_date": "2014-04-29",
-        "status": "처리",
-        "status_detail": "대안반영폐기",
-        "actor_count": 10
-    },
-    {
         "id": 5403,
         "link_id": "PRC_H1M4S0Y1Y1B7D1F6G4A6W0X6G9G1U8",
         "title": "노인장기요양보험법 일부개정법률안",
@@ -3747,6 +3737,16 @@
         "decision_date": "0000-00-00",
         "status": "계류",
         "status_detail": "위원회 심사",
+        "actor_count": 10
+    },
+    {
+        "id": 11808,
+        "link_id": "PRC_A1W4U0I1N1D7L1V6Z4Y4J2H3A4G8S4",
+        "title": "국민건강보험법 일부개정법률안",
+        "proposed_date": "2014-01-17",
+        "decision_date": "2014-04-29",
+        "status": "처리",
+        "status_detail": "대안반영폐기",
         "actor_count": 10
     },
     {
@@ -3950,16 +3950,6 @@
         "actor_count": 127
     },
     {
-        "id": 6784,
-        "link_id": "PRC_U1J3P1P1I1F5R1K1A3T7Y2S0Y0T5X8",
-        "title": "국무총리 및 국무위원 출석요구의 건(외교·통일·안보에 관한 질문)",
-        "proposed_date": "2013-11-15",
-        "decision_date": "2013-11-15",
-        "status": "처리",
-        "status_detail": "의결",
-        "actor_count": 282
-    },
-    {
         "id": 16477,
         "link_id": "PRC_G1N3N1N1Z1X5Z1P1P4U1L3Z6C4S1S2",
         "title": "국무총리·국무위원 및 정부위원 출석요구의 건(경제에 관한 질문)",
@@ -3993,6 +3983,16 @@
         "id": 16102,
         "link_id": "PRC_I1Y3T1O1I1M5D1A1C2K8P4R8O1C9P7",
         "title": "국무총리 및 국무위원 출석요구의 건(정치에 관한 질문)",
+        "proposed_date": "2013-11-15",
+        "decision_date": "2013-11-15",
+        "status": "처리",
+        "status_detail": "의결",
+        "actor_count": 282
+    },
+    {
+        "id": 6784,
+        "link_id": "PRC_U1J3P1P1I1F5R1K1A3T7Y2S0Y0T5X8",
+        "title": "국무총리 및 국무위원 출석요구의 건(외교·통일·안보에 관한 질문)",
         "proposed_date": "2013-11-15",
         "decision_date": "2013-11-15",
         "status": "처리",
@@ -4060,16 +4060,6 @@
         "actor_count": 25
     },
     {
-        "id": 3742,
-        "link_id": "PRC_F1Q3I0I9X2A7N1R6B1I5Q3H8O0J3F7",
-        "title": "동물원법안",
-        "proposed_date": "2013-09-27",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 22
-    },
-    {
         "id": 11450,
         "link_id": "PRC_H1F3U0E9D2D7C1S9W3E1S0X7V8G0A9",
         "title": "국무총리 및 국무위원 출석요구의 건(교섭단체 대표연설)",
@@ -4078,6 +4068,16 @@
         "status": "처리",
         "status_detail": "의결",
         "actor_count": 280
+    },
+    {
+        "id": 3742,
+        "link_id": "PRC_F1Q3I0I9X2A7N1R6B1I5Q3H8O0J3F7",
+        "title": "동물원법안",
+        "proposed_date": "2013-09-27",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 22
     },
     {
         "id": 10911,
@@ -4140,9 +4140,9 @@
         "actor_count": 13
     },
     {
-        "id": 3295,
-        "link_id": "PRC_C1F3U0F9V0R5J1J6D1S2W3S5V1M1F0",
-        "title": "형사소송법 일부개정법률안",
+        "id": 4101,
+        "link_id": "PRC_A1G3X0S9Z0O5X1X6C0E8E4E6L6N3J3",
+        "title": "국회에서의 증언·감정 등에 관한 법률 일부개정법률안",
         "proposed_date": "2013-09-05",
         "decision_date": "0000-00-00",
         "status": "계류",
@@ -4160,34 +4160,34 @@
         "actor_count": 18
     },
     {
-        "id": 8890,
-        "link_id": "PRC_N1T3V0J9Y0S5Q1V6I1T4A0R6V9T9P3",
-        "title": "국회의원(심재철) 징계안",
-        "proposed_date": "2013-09-05",
-        "decision_date": "2015-05-06",
-        "status": "처리",
-        "status_detail": "철회",
-        "actor_count": 20
-    },
-    {
-        "id": 8890,
-        "link_id": "PRC_N1T3V0J9Y0S5Q1V6I1T4A0R6V9T9P3",
-        "title": "국회의원(심재철) 징계안",
-        "proposed_date": "2013-09-05",
-        "decision_date": "2015-05-06",
-        "status": "처리",
-        "status_detail": "철회",
-        "actor_count": 20
-    },
-    {
-        "id": 4101,
-        "link_id": "PRC_A1G3X0S9Z0O5X1X6C0E8E4E6L6N3J3",
-        "title": "국회에서의 증언·감정 등에 관한 법률 일부개정법률안",
+        "id": 3295,
+        "link_id": "PRC_C1F3U0F9V0R5J1J6D1S2W3S5V1M1F0",
+        "title": "형사소송법 일부개정법률안",
         "proposed_date": "2013-09-05",
         "decision_date": "0000-00-00",
         "status": "계류",
         "status_detail": "위원회 심사",
         "actor_count": 16
+    },
+    {
+        "id": 8890,
+        "link_id": "PRC_N1T3V0J9Y0S5Q1V6I1T4A0R6V9T9P3",
+        "title": "국회의원(심재철) 징계안",
+        "proposed_date": "2013-09-05",
+        "decision_date": "2015-05-06",
+        "status": "처리",
+        "status_detail": "철회",
+        "actor_count": 20
+    },
+    {
+        "id": 8890,
+        "link_id": "PRC_N1T3V0J9Y0S5Q1V6I1T4A0R6V9T9P3",
+        "title": "국회의원(심재철) 징계안",
+        "proposed_date": "2013-09-05",
+        "decision_date": "2015-05-06",
+        "status": "처리",
+        "status_detail": "철회",
+        "actor_count": 20
     },
     {
         "id": 15005,
@@ -4200,16 +4200,6 @@
         "actor_count": 15
     },
     {
-        "id": 11865,
-        "link_id": "PRC_J1K3Y0Y8K2N8P0P9I3F6I3A4U9J8A9",
-        "title": "대한민국국기법 일부개정법률안",
-        "proposed_date": "2013-08-28",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 10
-    },
-    {
         "id": 6426,
         "link_id": "PRC_A1N3X0E8V2E8N1F4A0M6F5N3L3L2V2",
         "title": "교육환경 보호에 관한 법률안",
@@ -4218,6 +4208,16 @@
         "status": "계류",
         "status_detail": "위원회 심사",
         "actor_count": 53
+    },
+    {
+        "id": 11865,
+        "link_id": "PRC_J1K3Y0Y8K2N8P0P9I3F6I3A4U9J8A9",
+        "title": "대한민국국기법 일부개정법률안",
+        "proposed_date": "2013-08-28",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 10
     },
     {
         "id": 3413,
@@ -4270,16 +4270,6 @@
         "actor_count": 127
     },
     {
-        "id": 555,
-        "link_id": "PRC_R1E3M0F8H2H1K1C0C3J6N3H0Q7D3I5",
-        "title": "행정소송법 일부개정법률안",
-        "proposed_date": "2013-08-21",
-        "decision_date": "2014-04-29",
-        "status": "처리",
-        "status_detail": "공포",
-        "actor_count": 10
-    },
-    {
         "id": 14738,
         "link_id": "PRC_R1U3P0O8U2K1Q1W8E3Y2X4L2F8T9D2",
         "title": "국회의원(김성태) 징계안",
@@ -4288,6 +4278,16 @@
         "status": "계류",
         "status_detail": "위원회 심사",
         "actor_count": 25
+    },
+    {
+        "id": 555,
+        "link_id": "PRC_R1E3M0F8H2H1K1C0C3J6N3H0Q7D3I5",
+        "title": "행정소송법 일부개정법률안",
+        "proposed_date": "2013-08-21",
+        "decision_date": "2014-04-29",
+        "status": "처리",
+        "status_detail": "공포",
+        "actor_count": 10
     },
     {
         "id": 6393,
@@ -4330,16 +4330,6 @@
         "actor_count": 10
     },
     {
-        "id": 9609,
-        "link_id": "PRC_U1A3J0E8C1Y4I1J1C3S8K3R8W7M3Y6",
-        "title": "대한무역투자진흥공사법 일부개정법률안",
-        "proposed_date": "2013-08-14",
-        "decision_date": "2013-12-26",
-        "status": "처리",
-        "status_detail": "대안반영폐기",
-        "actor_count": 26
-    },
-    {
         "id": 5657,
         "link_id": "PRC_X1G3U0A8I1B4F1E1T0J1J4Z1R2E7N4",
         "title": "공직선거법 일부개정법률안",
@@ -4350,14 +4340,14 @@
         "actor_count": 19
     },
     {
-        "id": 11243,
-        "link_id": "PRC_R1J3E0U8F1L2O1R7I0F5L4W2I5X4V2",
-        "title": "채무자 회생 및 파산에 관한 법률 일부개정법률안",
-        "proposed_date": "2013-08-12",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 14
+        "id": 9609,
+        "link_id": "PRC_U1A3J0E8C1Y4I1J1C3S8K3R8W7M3Y6",
+        "title": "대한무역투자진흥공사법 일부개정법률안",
+        "proposed_date": "2013-08-14",
+        "decision_date": "2013-12-26",
+        "status": "처리",
+        "status_detail": "대안반영폐기",
+        "actor_count": 26
     },
     {
         "id": 7655,
@@ -4368,6 +4358,16 @@
         "status": "계류",
         "status_detail": "위원회 심사",
         "actor_count": 17
+    },
+    {
+        "id": 11243,
+        "link_id": "PRC_R1J3E0U8F1L2O1R7I0F5L4W2I5X4V2",
+        "title": "채무자 회생 및 파산에 관한 법률 일부개정법률안",
+        "proposed_date": "2013-08-12",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 14
     },
     {
         "id": 5988,
@@ -4430,9 +4430,9 @@
         "actor_count": 10
     },
     {
-        "id": 3466,
-        "link_id": "PRC_Z1B3V0G7E2I3K1J7J4I1B1P7H2R3B4",
-        "title": "국회의원(정문헌) 징계안",
+        "id": 12590,
+        "link_id": "PRC_C1Z3A0K7H2Z3W1Y7T3U6G2U9N7B1F1",
+        "title": "국회의원(서상기) 징계안",
         "proposed_date": "2013-07-23",
         "decision_date": "0000-00-00",
         "status": "계류",
@@ -4440,9 +4440,9 @@
         "actor_count": 50
     },
     {
-        "id": 12590,
-        "link_id": "PRC_C1Z3A0K7H2Z3W1Y7T3U6G2U9N7B1F1",
-        "title": "국회의원(서상기) 징계안",
+        "id": 3466,
+        "link_id": "PRC_Z1B3V0G7E2I3K1J7J4I1B1P7H2R3B4",
+        "title": "국회의원(정문헌) 징계안",
         "proposed_date": "2013-07-23",
         "decision_date": "0000-00-00",
         "status": "계류",
@@ -4600,9 +4600,9 @@
         "actor_count": 35
     },
     {
-        "id": 7592,
-        "link_id": "PRC_L1H3Z0H6G0Y3D1U1K2I2E2X4G7K2Q4",
-        "title": "법원조직법 일부개정법률안",
+        "id": 2770,
+        "link_id": "PRC_T1K3P0M6Z0P3M1W1K0M8S5I2Y5O7T9",
+        "title": "기간제 및 단시간근로자 보호 등에 관한 법률 일부개정법률안",
         "proposed_date": "2013-06-03",
         "decision_date": "0000-00-00",
         "status": "계류",
@@ -4610,9 +4610,9 @@
         "actor_count": 36
     },
     {
-        "id": 2770,
-        "link_id": "PRC_T1K3P0M6Z0P3M1W1K0M8S5I2Y5O7T9",
-        "title": "기간제 및 단시간근로자 보호 등에 관한 법률 일부개정법률안",
+        "id": 7592,
+        "link_id": "PRC_L1H3Z0H6G0Y3D1U1K2I2E2X4G7K2Q4",
+        "title": "법원조직법 일부개정법률안",
         "proposed_date": "2013-06-03",
         "decision_date": "0000-00-00",
         "status": "계류",
@@ -4650,6 +4650,16 @@
         "actor_count": 36
     },
     {
+        "id": 17848,
+        "link_id": "PRC_K1J3A0F6K0F3A1V1Y3M5F3G2E2E3Q3",
+        "title": "교원의 노동조합 설립 및 운영 등에 관한 법률 일부개정법률안",
+        "proposed_date": "2013-06-03",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 36
+    },
+    {
         "id": 14577,
         "link_id": "PRC_X1B3D0J6I0L3S1S0S4E6L3D4Y2M0H7",
         "title": "공무원의 노동조합 설립 및 운영 등에 관한 법률 일부개정법률안",
@@ -4660,9 +4670,9 @@
         "actor_count": 36
     },
     {
-        "id": 17848,
-        "link_id": "PRC_K1J3A0F6K0F3A1V1Y3M5F3G2E2E3Q3",
-        "title": "교원의 노동조합 설립 및 운영 등에 관한 법률 일부개정법률안",
+        "id": 12949,
+        "link_id": "PRC_F1K3Z0E6I0W3W1L0D4V3V2S2L9P5N5",
+        "title": "노동조합 및 노동관계조정법 일부개정법률안",
         "proposed_date": "2013-06-03",
         "decision_date": "0000-00-00",
         "status": "계류",
@@ -4690,14 +4700,24 @@
         "actor_count": 36
     },
     {
-        "id": 12949,
-        "link_id": "PRC_F1K3Z0E6I0W3W1L0D4V3V2S2L9P5N5",
-        "title": "노동조합 및 노동관계조정법 일부개정법률안",
-        "proposed_date": "2013-06-03",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 36
+        "id": 14008,
+        "link_id": "PRC_U1A3C0B5S3M1O1P6M4M4E1W8N8V3W1",
+        "title": "국무총리 및 국무위원 출석요구의 건(국정에 관한 교섭단체 대표연설)",
+        "proposed_date": "2013-05-31",
+        "decision_date": "2013-06-03",
+        "status": "처리",
+        "status_detail": "의결",
+        "actor_count": 281
+    },
+    {
+        "id": 16642,
+        "link_id": "PRC_O1R3M0S5R3Z1G1N8Y3Q1M5K3P0N9A0",
+        "title": "국무총리·국무위원 및 정부위원 출석요구의 건(교육·사회·문화에 관한 질문)",
+        "proposed_date": "2013-05-31",
+        "decision_date": "2013-06-03",
+        "status": "처리",
+        "status_detail": "의결",
+        "actor_count": 281
     },
     {
         "id": 17940,
@@ -4733,26 +4753,6 @@
         "id": 4980,
         "link_id": "PRC_N1Y3K0G5U3E1Z1F8N2N7M2C3T7S5H5",
         "title": "국무총리·국무위원 및 정부위원 출석요구의 건(경제에 관한 질문)",
-        "proposed_date": "2013-05-31",
-        "decision_date": "2013-06-03",
-        "status": "처리",
-        "status_detail": "의결",
-        "actor_count": 281
-    },
-    {
-        "id": 14008,
-        "link_id": "PRC_U1A3C0B5S3M1O1P6M4M4E1W8N8V3W1",
-        "title": "국무총리 및 국무위원 출석요구의 건(국정에 관한 교섭단체 대표연설)",
-        "proposed_date": "2013-05-31",
-        "decision_date": "2013-06-03",
-        "status": "처리",
-        "status_detail": "의결",
-        "actor_count": 281
-    },
-    {
-        "id": 16642,
-        "link_id": "PRC_O1R3M0S5R3Z1G1N8Y3Q1M5K3P0N9A0",
-        "title": "국무총리·국무위원 및 정부위원 출석요구의 건(교육·사회·문화에 관한 질문)",
         "proposed_date": "2013-05-31",
         "decision_date": "2013-06-03",
         "status": "처리",
@@ -4820,36 +4820,6 @@
         "actor_count": 10
     },
     {
-        "id": 13199,
-        "link_id": "PRC_X1F3B0L5S1D4V0C9V3Q8X1I9J3R7T1",
-        "title": "독도의 지속가능한 이용에 관한 법률 일부개정법률안",
-        "proposed_date": "2013-05-14",
-        "decision_date": "2013-12-10",
-        "status": "처리",
-        "status_detail": "공포",
-        "actor_count": 11
-    },
-    {
-        "id": 2745,
-        "link_id": "PRC_O1I3G0O5X1K4N1E4X1Z9E5S7Z7J4J8",
-        "title": "사법경찰관리의 직무를 수행할 자와 그 직무범위에 관한 법률 일부개정법률안",
-        "proposed_date": "2013-05-14",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 12
-    },
-    {
-        "id": 11089,
-        "link_id": "PRC_X1T3G0G5V1O4P1C4L3F3A0E4G6Q4Y2",
-        "title": "사행산업통합감독위원회법 일부개정법률안",
-        "proposed_date": "2013-05-14",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 12
-    },
-    {
         "id": 16302,
         "link_id": "PRC_K1W3B0G5M1E4J1O6W4Y6B2C4G8H0F5",
         "title": "폐기물관리법 일부개정법률안",
@@ -4878,6 +4848,36 @@
         "status": "계류",
         "status_detail": "위원회 심사",
         "actor_count": 18
+    },
+    {
+        "id": 2745,
+        "link_id": "PRC_O1I3G0O5X1K4N1E4X1Z9E5S7Z7J4J8",
+        "title": "사법경찰관리의 직무를 수행할 자와 그 직무범위에 관한 법률 일부개정법률안",
+        "proposed_date": "2013-05-14",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 12
+    },
+    {
+        "id": 13199,
+        "link_id": "PRC_X1F3B0L5S1D4V0C9V3Q8X1I9J3R7T1",
+        "title": "독도의 지속가능한 이용에 관한 법률 일부개정법률안",
+        "proposed_date": "2013-05-14",
+        "decision_date": "2013-12-10",
+        "status": "처리",
+        "status_detail": "공포",
+        "actor_count": 11
+    },
+    {
+        "id": 11089,
+        "link_id": "PRC_X1T3G0G5V1O4P1C4L3F3A0E4G6Q4Y2",
+        "title": "사행산업통합감독위원회법 일부개정법률안",
+        "proposed_date": "2013-05-14",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 12
     },
     {
         "id": 12225,
@@ -5030,9 +5030,9 @@
         "actor_count": 17
     },
     {
-        "id": 225,
-        "link_id": "PRC_U1L3C0F4F1L0C1F5J2G7V2U8M1G3X6",
-        "title": "국무총리·국무위원 및 정부위원 출석요구의 건(경제·교육·사회·문화에 관한 질문)",
+        "id": 18030,
+        "link_id": "PRC_P1A3P0O4T1H0Y1I5M2J0F1O6S5K0N4",
+        "title": "국무총리 및 국무위원 출석요구의 건(정치·외교·통일·안보에 관한 질문)",
         "proposed_date": "2013-04-10",
         "decision_date": "2013-04-11",
         "status": "처리",
@@ -5040,9 +5040,9 @@
         "actor_count": 279
     },
     {
-        "id": 18030,
-        "link_id": "PRC_P1A3P0O4T1H0Y1I5M2J0F1O6S5K0N4",
-        "title": "국무총리 및 국무위원 출석요구의 건(정치·외교·통일·안보에 관한 질문)",
+        "id": 225,
+        "link_id": "PRC_U1L3C0F4F1L0C1F5J2G7V2U8M1G3X6",
+        "title": "국무총리·국무위원 및 정부위원 출석요구의 건(경제·교육·사회·문화에 관한 질문)",
         "proposed_date": "2013-04-10",
         "decision_date": "2013-04-11",
         "status": "처리",
@@ -5080,16 +5080,6 @@
         "actor_count": 12
     },
     {
-        "id": 15239,
-        "link_id": "PRC_U1T3M0E4V0V5Z1X4X5H9U3O0K9Z4W9",
-        "title": "대통령기록물 관리에 관한 법률 일부개정법률안",
-        "proposed_date": "2013-04-05",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 12
-    },
-    {
         "id": 5042,
         "link_id": "PRC_B1N3E0Q4L0J5M0K9W3A5V1V2L8Z7B7",
         "title": "정당법 일부개정법률안",
@@ -5108,6 +5098,16 @@
         "status": "계류",
         "status_detail": "위원회 심사",
         "actor_count": 14
+    },
+    {
+        "id": 15239,
+        "link_id": "PRC_U1T3M0E4V0V5Z1X4X5H9U3O0K9Z4W9",
+        "title": "대통령기록물 관리에 관한 법률 일부개정법률안",
+        "proposed_date": "2013-04-05",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 12
     },
     {
         "id": 2499,
@@ -5150,6 +5150,16 @@
         "actor_count": 10
     },
     {
+        "id": 12758,
+        "link_id": "PRC_Q1F3H0N3H2J9H1L4I4M1U2E8F7K4E6",
+        "title": "소방시설 설치·유지 및 안전관리에 관한 법률 일부개정법률안",
+        "proposed_date": "2013-03-29",
+        "decision_date": "2013-12-19",
+        "status": "처리",
+        "status_detail": "대안반영폐기",
+        "actor_count": 15
+    },
+    {
         "id": 13725,
         "link_id": "PRC_B1G3R0A3G2C9D1S4H4E3R0D4K6A9Z5",
         "title": "지방자치법 일부개정법률안",
@@ -5168,16 +5178,6 @@
         "status": "계류",
         "status_detail": "위원회 심사",
         "actor_count": 33
-    },
-    {
-        "id": 12758,
-        "link_id": "PRC_Q1F3H0N3H2J9H1L4I4M1U2E8F7K4E6",
-        "title": "소방시설 설치·유지 및 안전관리에 관한 법률 일부개정법률안",
-        "proposed_date": "2013-03-29",
-        "decision_date": "2013-12-19",
-        "status": "처리",
-        "status_detail": "대안반영폐기",
-        "actor_count": 15
     },
     {
         "id": 18094,
@@ -5230,6 +5230,16 @@
         "actor_count": 10
     },
     {
+        "id": 9390,
+        "link_id": "PRC_R1V3O0K3X2L5N1A5U5B4Y2U4F4D5A4",
+        "title": "주택임대차보호법 일부개정법률안",
+        "proposed_date": "2013-03-25",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 14
+    },
+    {
         "id": 12660,
         "link_id": "PRC_X1X3B0J3M2E5W1A5T5V1Z3D2N3N3B0",
         "title": "노인복지법 일부개정법률안",
@@ -5248,16 +5258,6 @@
         "status": "계류",
         "status_detail": "위원회 심사",
         "actor_count": 11
-    },
-    {
-        "id": 9390,
-        "link_id": "PRC_R1V3O0K3X2L5N1A5U5B4Y2U4F4D5A4",
-        "title": "주택임대차보호법 일부개정법률안",
-        "proposed_date": "2013-03-25",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 14
     },
     {
         "id": 17293,
@@ -5290,16 +5290,6 @@
         "actor_count": 10
     },
     {
-        "id": 4697,
-        "link_id": "PRC_F1F3L0A3W1G9I1U7M2Z4G1L9P5T9C4",
-        "title": "학교폭력예방 및 대책에 관한 법률 일부개정법률안",
-        "proposed_date": "2013-03-19",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 11
-    },
-    {
         "id": 13579,
         "link_id": "PRC_I1F3X0I3L1Q9M1E5G5R9Y3B2Y7H0A7",
         "title": "공직선거법 일부개정법률안",
@@ -5318,6 +5308,16 @@
         "status": "계류",
         "status_detail": "위원회 심사",
         "actor_count": 45
+    },
+    {
+        "id": 4697,
+        "link_id": "PRC_F1F3L0A3W1G9I1U7M2Z4G1L9P5T9C4",
+        "title": "학교폭력예방 및 대책에 관한 법률 일부개정법률안",
+        "proposed_date": "2013-03-19",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 11
     },
     {
         "id": 7233,
@@ -5370,16 +5370,6 @@
         "actor_count": 12
     },
     {
-        "id": 5698,
-        "link_id": "PRC_Y1A3K0O3N1U1G1S5O3G5X5T8K2Z0F3",
-        "title": "감사원법 일부개정법률안",
-        "proposed_date": "2013-03-11",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 11
-    },
-    {
         "id": 6552,
         "link_id": "PRC_B1J3H0V3D1E1W1V6G2Y7V2G7Z3D4D4",
         "title": "장애인의 권리에 관한 협약 유보조항 비준동의안 제출 촉구 결의안",
@@ -5388,6 +5378,16 @@
         "status": "처리",
         "status_detail": "의결",
         "actor_count": 13
+    },
+    {
+        "id": 5698,
+        "link_id": "PRC_Y1A3K0O3N1U1G1S5O3G5X5T8K2Z0F3",
+        "title": "감사원법 일부개정법률안",
+        "proposed_date": "2013-03-11",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 11
     },
     {
         "id": 6478,
@@ -5410,16 +5410,6 @@
         "actor_count": 12
     },
     {
-        "id": 3098,
-        "link_id": "PRC_E1Y3S0W3R0Q7Q1X0O3G6N1Z5N4I1Y0",
-        "title": "소방시설 설치·유지 및 안전관리에 관한 법률 일부개정법률안",
-        "proposed_date": "2013-03-07",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 12
-    },
-    {
         "id": 15674,
         "link_id": "PRC_V1P3B0D3A0R7H1T6J3C3S1I4O9N7J4",
         "title": "초·중등교육법 일부개정법률안",
@@ -5430,14 +5420,14 @@
         "actor_count": 17
     },
     {
-        "id": 11501,
-        "link_id": "PRC_C1C3K0C3P0I5B1E5F1O7C3K4Y1S8Y8",
-        "title": "국가안전기획부(현 국가정보원) 불법도청테이프 등의 처리에 관한 특별법안",
-        "proposed_date": "2013-03-05",
+        "id": 3098,
+        "link_id": "PRC_E1Y3S0W3R0Q7Q1X0O3G6N1Z5N4I1Y0",
+        "title": "소방시설 설치·유지 및 안전관리에 관한 법률 일부개정법률안",
+        "proposed_date": "2013-03-07",
         "decision_date": "0000-00-00",
         "status": "계류",
         "status_detail": "위원회 심사",
-        "actor_count": 43
+        "actor_count": 12
     },
     {
         "id": 6338,
@@ -5460,6 +5450,16 @@
         "actor_count": 10
     },
     {
+        "id": 11501,
+        "link_id": "PRC_C1C3K0C3P0I5B1E5F1O7C3K4Y1S8Y8",
+        "title": "국가안전기획부(현 국가정보원) 불법도청테이프 등의 처리에 관한 특별법안",
+        "proposed_date": "2013-03-05",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 43
+    },
+    {
         "id": 954,
         "link_id": "PRC_L1F3K0P2H2L8J1B6X3Q5X0B2N7C2U2",
         "title": "여수ㆍ순천10ㆍ19사건 진상규명 및 희생자명예회복에 관한 특별법안",
@@ -5470,16 +5470,6 @@
         "actor_count": 16
     },
     {
-        "id": 18067,
-        "link_id": "PRC_M1Q3L0Y2U2S8K1P7Z5M4I2U4A8X5B9",
-        "title": "장애인활동 지원에 관한 법률 일부개정법률안",
-        "proposed_date": "2013-02-28",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 10
-    },
-    {
         "id": 2542,
         "link_id": "PRC_H1F3S0G2I2H8J1H5L2V8L0I1K8G7H8",
         "title": "정당법 일부개정법률안",
@@ -5488,6 +5478,16 @@
         "status": "계류",
         "status_detail": "위원회 심사",
         "actor_count": 79
+    },
+    {
+        "id": 18067,
+        "link_id": "PRC_M1Q3L0Y2U2S8K1P7Z5M4I2U4A8X5B9",
+        "title": "장애인활동 지원에 관한 법률 일부개정법률안",
+        "proposed_date": "2013-02-28",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 10
     },
     {
         "id": 4322,
@@ -5600,6 +5600,16 @@
         "actor_count": 10
     },
     {
+        "id": 2062,
+        "link_id": "PRC_S1I3B0R2R0N7M1H7D1E9S2W0G5Y5G1",
+        "title": "금융실명거래 및 비밀보장에 관한 법률 일부개정법률안",
+        "proposed_date": "2013-02-07",
+        "decision_date": "2013-07-02",
+        "status": "처리",
+        "status_detail": "공포",
+        "actor_count": 13
+    },
+    {
         "id": 12953,
         "link_id": "PRC_N1M3Z0P2U0R7T1M6Q2H7Q2H2P2S7D8",
         "title": "환경보건법 일부개정법률안",
@@ -5608,16 +5618,6 @@
         "status": "처리",
         "status_detail": "대안반영폐기",
         "actor_count": 25
-    },
-    {
-        "id": 7277,
-        "link_id": "PRC_K1I3P0N2K0M7D1P6Z4W5I0J7L0Q2G8",
-        "title": "장애인고용촉진 및 직업재활법 일부개정법률안",
-        "proposed_date": "2013-02-07",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 24
     },
     {
         "id": 8591,
@@ -5630,34 +5630,14 @@
         "actor_count": 14
     },
     {
-        "id": 2062,
-        "link_id": "PRC_S1I3B0R2R0N7M1H7D1E9S2W0G5Y5G1",
-        "title": "금융실명거래 및 비밀보장에 관한 법률 일부개정법률안",
+        "id": 7277,
+        "link_id": "PRC_K1I3P0N2K0M7D1P6Z4W5I0J7L0Q2G8",
+        "title": "장애인고용촉진 및 직업재활법 일부개정법률안",
         "proposed_date": "2013-02-07",
-        "decision_date": "2013-07-02",
-        "status": "처리",
-        "status_detail": "공포",
-        "actor_count": 13
-    },
-    {
-        "id": 5735,
-        "link_id": "PRC_V1E3N0K2C0T6F1P8C2U2T2G6O5R7Y6",
-        "title": "국무총리·국무위원 및 정부위원 출석요구의 건(정치·외교·통일·안보·경제·교육·사회·문화에 관한 질문)",
-        "proposed_date": "2013-02-06",
-        "decision_date": "2013-02-07",
-        "status": "처리",
-        "status_detail": "의결",
-        "actor_count": 281
-    },
-    {
-        "id": 10890,
-        "link_id": "PRC_Z1J3L0N2Y0J6E0A9Q3D2F2L9S1D1K6",
-        "title": "전직대통령 예우에 관한 법률 일부개정법률안",
-        "proposed_date": "2013-02-06",
         "decision_date": "0000-00-00",
         "status": "계류",
         "status_detail": "위원회 심사",
-        "actor_count": 22
+        "actor_count": 24
     },
     {
         "id": 3800,
@@ -5670,6 +5650,16 @@
         "actor_count": 16
     },
     {
+        "id": 10890,
+        "link_id": "PRC_Z1J3L0N2Y0J6E0A9Q3D2F2L9S1D1K6",
+        "title": "전직대통령 예우에 관한 법률 일부개정법률안",
+        "proposed_date": "2013-02-06",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 22
+    },
+    {
         "id": 2203,
         "link_id": "PRC_L1C3X0H2X0N6G1C4Y3O7H4H8X7A3T1",
         "title": "공직선거법 일부개정법률안",
@@ -5678,6 +5668,16 @@
         "status": "계류",
         "status_detail": "위원회 심사",
         "actor_count": 11
+    },
+    {
+        "id": 5735,
+        "link_id": "PRC_V1E3N0K2C0T6F1P8C2U2T2G6O5R7Y6",
+        "title": "국무총리·국무위원 및 정부위원 출석요구의 건(정치·외교·통일·안보·경제·교육·사회·문화에 관한 질문)",
+        "proposed_date": "2013-02-06",
+        "decision_date": "2013-02-07",
+        "status": "처리",
+        "status_detail": "의결",
+        "actor_count": 281
     },
     {
         "id": 882,
@@ -5730,16 +5730,6 @@
         "actor_count": 281
     },
     {
-        "id": 4241,
-        "link_id": "PRC_P1G3K0G1Z3K0R1Q7F2G1X5Y1P9O0B4",
-        "title": "사면법 일부개정법률안",
-        "proposed_date": "2013-01-30",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 16
-    },
-    {
         "id": 13264,
         "link_id": "PRC_B1P3G0N1H3C0K1B6L5J1W5V0T6X4B1",
         "title": "참전유공자예우 및 단체설립에 관한 법률 일부개정법률안",
@@ -5750,34 +5740,14 @@
         "actor_count": 10
     },
     {
-        "id": 6233,
-        "link_id": "PRC_W1X3D0W1I2Q4F1Q0M0W6U3R3J2J8O9",
-        "title": "효행 장려 및 지원에 관한 법률 일부개정법률안",
-        "proposed_date": "2013-01-24",
+        "id": 4241,
+        "link_id": "PRC_P1G3K0G1Z3K0R1Q7F2G1X5Y1P9O0B4",
+        "title": "사면법 일부개정법률안",
+        "proposed_date": "2013-01-30",
         "decision_date": "0000-00-00",
         "status": "계류",
         "status_detail": "위원회 심사",
-        "actor_count": 14
-    },
-    {
-        "id": 13360,
-        "link_id": "PRC_L1J3Q0O1G2U4K0D9J3T8D2F9A8Z2B5",
-        "title": "조세특례제한법 일부개정법률안",
-        "proposed_date": "2013-01-24",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 13
-    },
-    {
-        "id": 2036,
-        "link_id": "PRC_P1C3Q0V1D2L4Z0H9J5K9H3H6Y1L5O0",
-        "title": "국민건강보험법 일부개정법률안",
-        "proposed_date": "2013-01-24",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 14
+        "actor_count": 16
     },
     {
         "id": 10945,
@@ -5808,6 +5778,36 @@
         "status": "처리",
         "status_detail": "대안반영폐기",
         "actor_count": 23
+    },
+    {
+        "id": 6233,
+        "link_id": "PRC_W1X3D0W1I2Q4F1Q0M0W6U3R3J2J8O9",
+        "title": "효행 장려 및 지원에 관한 법률 일부개정법률안",
+        "proposed_date": "2013-01-24",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 14
+    },
+    {
+        "id": 13360,
+        "link_id": "PRC_L1J3Q0O1G2U4K0D9J3T8D2F9A8Z2B5",
+        "title": "조세특례제한법 일부개정법률안",
+        "proposed_date": "2013-01-24",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 13
+    },
+    {
+        "id": 2036,
+        "link_id": "PRC_P1C3Q0V1D2L4Z0H9J5K9H3H6Y1L5O0",
+        "title": "국민건강보험법 일부개정법률안",
+        "proposed_date": "2013-01-24",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 14
     },
     {
         "id": 12864,
@@ -5860,16 +5860,6 @@
         "actor_count": 16
     },
     {
-        "id": 11246,
-        "link_id": "PRC_A1I3D0W1M1R6N1W6E1B1Z3B8N0Y0L7",
-        "title": "디엔에이신원확인정보의 이용 및 보호에 관한 법률 일부개정법률안",
-        "proposed_date": "2013-01-16",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 18
-    },
-    {
         "id": 1759,
         "link_id": "PRC_S1R3I0L1E1U6X1O7K4R1B0S4R9K7P5",
         "title": "겨레말큰사전남북공동편찬사업회법 일부개정법률안",
@@ -5880,14 +5870,14 @@
         "actor_count": 21
     },
     {
-        "id": 11723,
-        "link_id": "PRC_P1H3W0Z1R1Y5D1O4D4W2D3D2W1J3J2",
-        "title": "공직선거법 일부개정법률안",
-        "proposed_date": "2013-01-15",
+        "id": 11246,
+        "link_id": "PRC_A1I3D0W1M1R6N1W6E1B1Z3B8N0Y0L7",
+        "title": "디엔에이신원확인정보의 이용 및 보호에 관한 법률 일부개정법률안",
+        "proposed_date": "2013-01-16",
         "decision_date": "0000-00-00",
         "status": "계류",
         "status_detail": "위원회 심사",
-        "actor_count": 14
+        "actor_count": 18
     },
     {
         "id": 16985,
@@ -5908,6 +5898,16 @@
         "status": "처리",
         "status_detail": "대안반영폐기",
         "actor_count": 17
+    },
+    {
+        "id": 11723,
+        "link_id": "PRC_P1H3W0Z1R1Y5D1O4D4W2D3D2W1J3J2",
+        "title": "공직선거법 일부개정법률안",
+        "proposed_date": "2013-01-15",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 14
     },
     {
         "id": 12513,
@@ -6000,16 +6000,6 @@
         "actor_count": 10
     },
     {
-        "id": 7940,
-        "link_id": "PRC_K1B2M1W2V0O6Q1Y6Q2T6Y5L3E6D5R4",
-        "title": "공직자윤리법 일부개정법률안",
-        "proposed_date": "2012-12-06",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 10
-    },
-    {
         "id": 5189,
         "link_id": "PRC_O1I2E1N2N0A6F1N3U2J8H3G3X2A9F2",
         "title": "향토예비군 설치법 일부개정법률안",
@@ -6040,10 +6030,10 @@
         "actor_count": 15
     },
     {
-        "id": 14357,
-        "link_id": "PRC_S1A2P1Z2K0A5R1S8E0K1G2Z7R5A4U0",
-        "title": "형법 일부개정법률안",
-        "proposed_date": "2012-12-05",
+        "id": 7940,
+        "link_id": "PRC_K1B2M1W2V0O6Q1Y6Q2T6Y5L3E6D5R4",
+        "title": "공직자윤리법 일부개정법률안",
+        "proposed_date": "2012-12-06",
         "decision_date": "0000-00-00",
         "status": "계류",
         "status_detail": "위원회 심사",
@@ -6063,6 +6053,16 @@
         "id": 16858,
         "link_id": "PRC_P1L2J1J2K0G5Q1M8A0M2I3O5M6O3G5",
         "title": "형사소송법 일부개정법률안",
+        "proposed_date": "2012-12-05",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 10
+    },
+    {
+        "id": 14357,
+        "link_id": "PRC_S1A2P1Z2K0A5R1S8E0K1G2Z7R5A4U0",
+        "title": "형법 일부개정법률안",
         "proposed_date": "2012-12-05",
         "decision_date": "0000-00-00",
         "status": "계류",
@@ -6160,16 +6160,6 @@
         "actor_count": 17
     },
     {
-        "id": 5965,
-        "link_id": "PRC_U1H2L1H1K1N2K1P8J1P8N2D7E5B3U9",
-        "title": "청원경찰법 일부개정법률안",
-        "proposed_date": "2012-11-12",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 18
-    },
-    {
         "id": 14059,
         "link_id": "PRC_J1O2I1V1G1X2Y1K7A1V3Y1N6K7N8L1",
         "title": "국회의원(김태호) 징계안",
@@ -6178,6 +6168,16 @@
         "status": "계류",
         "status_detail": "위원회 심사",
         "actor_count": 127
+    },
+    {
+        "id": 5965,
+        "link_id": "PRC_U1H2L1H1K1N2K1P8J1P8N2D7E5B3U9",
+        "title": "청원경찰법 일부개정법률안",
+        "proposed_date": "2012-11-12",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 18
     },
     {
         "id": 16783,
@@ -6230,9 +6230,9 @@
         "actor_count": 22
     },
     {
-        "id": 9067,
-        "link_id": "PRC_N1J2D1E1C0K1Z1N6Y2G7S2M3T6G4Q1",
-        "title": "여객자동차 운수사업법 일부개정법률안",
+        "id": 17687,
+        "link_id": "PRC_W1F2G1O1N0C1T1H6E3H2B3P8I4P9H8",
+        "title": "전통시장 및 상점가 육성을 위한 특별법 일부개정법률안",
         "proposed_date": "2012-11-01",
         "decision_date": "0000-00-00",
         "status": "계류",
@@ -6240,9 +6240,9 @@
         "actor_count": 13
     },
     {
-        "id": 17687,
-        "link_id": "PRC_W1F2G1O1N0C1T1H6E3H2B3P8I4P9H8",
-        "title": "전통시장 및 상점가 육성을 위한 특별법 일부개정법률안",
+        "id": 9067,
+        "link_id": "PRC_N1J2D1E1C0K1Z1N6Y2G7S2M3T6G4Q1",
+        "title": "여객자동차 운수사업법 일부개정법률안",
         "proposed_date": "2012-11-01",
         "decision_date": "0000-00-00",
         "status": "계류",
@@ -6310,16 +6310,6 @@
         "actor_count": 155
     },
     {
-        "id": 3300,
-        "link_id": "PRC_W1U2X1B0G1C1U1K6X3E4S1H7P5C4M5",
-        "title": "어린이 식생활안전관리 특별법 일부개정법률안",
-        "proposed_date": "2012-10-11",
-        "decision_date": "2013-06-27",
-        "status": "처리",
-        "status_detail": "대안반영폐기",
-        "actor_count": 13
-    },
-    {
         "id": 8540,
         "link_id": "PRC_R1H2T1S0R1Q1I1Z1E2A1Q0S0G5P0Z6",
         "title": "영유아보육법 일부개정법률안",
@@ -6327,6 +6317,16 @@
         "decision_date": "0000-00-00",
         "status": "계류",
         "status_detail": "체계자구 심사",
+        "actor_count": 13
+    },
+    {
+        "id": 3300,
+        "link_id": "PRC_W1U2X1B0G1C1U1K6X3E4S1H7P5C4M5",
+        "title": "어린이 식생활안전관리 특별법 일부개정법률안",
+        "proposed_date": "2012-10-11",
+        "decision_date": "2013-06-27",
+        "status": "처리",
+        "status_detail": "대안반영폐기",
         "actor_count": 13
     },
     {
@@ -6410,16 +6410,6 @@
         "actor_count": 12
     },
     {
-        "id": 1159,
-        "link_id": "PRC_Z1Q2I0Y9M1U1R1Q4F3I6Y0I2W7A8N9",
-        "title": "소득세법 일부개정법률안",
-        "proposed_date": "2012-09-11",
-        "decision_date": "2013-07-02",
-        "status": "처리",
-        "status_detail": "대안반영폐기",
-        "actor_count": 128
-    },
-    {
         "id": 17610,
         "link_id": "PRC_M1H2Z0K9J1V1Q1I4B4P0G5M7W4N0T1",
         "title": "조세특례제한법 일부개정법률안",
@@ -6430,63 +6420,13 @@
         "actor_count": 128
     },
     {
-        "id": 13337,
-        "link_id": "PRC_H1K2U0P9N1O0F1O4W1M9I4Y4Q6M0Z2",
-        "title": "법인세법 일부개정법률안",
-        "proposed_date": "2012-09-10",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 128
-    },
-    {
-        "id": 11471,
-        "link_id": "PRC_D1D2E0N9J1Z0M1Y3Y2V6Y3D8D2F8A5",
-        "title": "조세특례제한법 일부개정법률안",
-        "proposed_date": "2012-09-10",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 128
-    },
-    {
-        "id": 14253,
-        "link_id": "PRC_W1N2Z0U9F1R0D1D5L0F0I3K0I8H5H1",
-        "title": "상속세 및 증여세법 일부개정법률안",
-        "proposed_date": "2012-09-10",
-        "decision_date": "2013-01-01",
+        "id": 1159,
+        "link_id": "PRC_Z1Q2I0Y9M1U1R1Q4F3I6Y0I2W7A8N9",
+        "title": "소득세법 일부개정법률안",
+        "proposed_date": "2012-09-11",
+        "decision_date": "2013-07-02",
         "status": "처리",
         "status_detail": "대안반영폐기",
-        "actor_count": 128
-    },
-    {
-        "id": 2767,
-        "link_id": "PRC_G1B2C0C9Y1C0F1N3I4R3O0N7K5S4I1",
-        "title": "조세특례제한법 일부개정법률안",
-        "proposed_date": "2012-09-10",
-        "decision_date": "2013-01-01",
-        "status": "처리",
-        "status_detail": "대안반영폐기",
-        "actor_count": 128
-    },
-    {
-        "id": 10773,
-        "link_id": "PRC_A1L2P0R9V1E0M1W3M5N7N2P9S1L0H4",
-        "title": "조세특례제한법 일부개정법률안",
-        "proposed_date": "2012-09-10",
-        "decision_date": "2014-01-01",
-        "status": "처리",
-        "status_detail": "대안반영폐기",
-        "actor_count": 128
-    },
-    {
-        "id": 9270,
-        "link_id": "PRC_N1N2S0L9J1T0I1S3H5I5Z5U8Q6C6D0",
-        "title": "조세특례제한법 일부개정법률안",
-        "proposed_date": "2012-09-10",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
         "actor_count": 128
     },
     {
@@ -6580,6 +6520,66 @@
         "actor_count": 128
     },
     {
+        "id": 13337,
+        "link_id": "PRC_H1K2U0P9N1O0F1O4W1M9I4Y4Q6M0Z2",
+        "title": "법인세법 일부개정법률안",
+        "proposed_date": "2012-09-10",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 128
+    },
+    {
+        "id": 11471,
+        "link_id": "PRC_D1D2E0N9J1Z0M1Y3Y2V6Y3D8D2F8A5",
+        "title": "조세특례제한법 일부개정법률안",
+        "proposed_date": "2012-09-10",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 128
+    },
+    {
+        "id": 14253,
+        "link_id": "PRC_W1N2Z0U9F1R0D1D5L0F0I3K0I8H5H1",
+        "title": "상속세 및 증여세법 일부개정법률안",
+        "proposed_date": "2012-09-10",
+        "decision_date": "2013-01-01",
+        "status": "처리",
+        "status_detail": "대안반영폐기",
+        "actor_count": 128
+    },
+    {
+        "id": 2767,
+        "link_id": "PRC_G1B2C0C9Y1C0F1N3I4R3O0N7K5S4I1",
+        "title": "조세특례제한법 일부개정법률안",
+        "proposed_date": "2012-09-10",
+        "decision_date": "2013-01-01",
+        "status": "처리",
+        "status_detail": "대안반영폐기",
+        "actor_count": 128
+    },
+    {
+        "id": 10773,
+        "link_id": "PRC_A1L2P0R9V1E0M1W3M5N7N2P9S1L0H4",
+        "title": "조세특례제한법 일부개정법률안",
+        "proposed_date": "2012-09-10",
+        "decision_date": "2014-01-01",
+        "status": "처리",
+        "status_detail": "대안반영폐기",
+        "actor_count": 128
+    },
+    {
+        "id": 9270,
+        "link_id": "PRC_N1N2S0L9J1T0I1S3H5I5Z5U8Q6C6D0",
+        "title": "조세특례제한법 일부개정법률안",
+        "proposed_date": "2012-09-10",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 128
+    },
+    {
         "id": 6033,
         "link_id": "PRC_L1Q2V0H9F0B7Q1W6G4F5R4V2J9O2V2",
         "title": "청년고용촉진 특별법 일부개정법률안",
@@ -6640,16 +6640,6 @@
         "actor_count": 128
     },
     {
-        "id": 15767,
-        "link_id": "PRC_W1G2Y0F9Q0R3K1U6E4T4L1R2W9Y8N3",
-        "title": "대한민국헌정회 육성법 일부개정법률안",
-        "proposed_date": "2012-09-03",
-        "decision_date": "2013-07-02",
-        "status": "처리",
-        "status_detail": "대안반영폐기",
-        "actor_count": 128
-    },
-    {
         "id": 6717,
         "link_id": "PRC_H1S2N0T9D0N3M1Z6K3C4J0Z1J9Q1V9",
         "title": "고리 원자력발전소 1호기 안전 재점검 실시 및 2차 수명연장 중단 촉구 결의안",
@@ -6690,14 +6680,14 @@
         "actor_count": 128
     },
     {
-        "id": 17188,
-        "link_id": "PRC_D1J2C0Q8I3U1I1A8Y4U0P2P2V7T2I0",
-        "title": "국무총리·국무위원 및 정부위원 출석요구의 건(경제에 관한 질문)",
-        "proposed_date": "2012-08-31",
-        "decision_date": "2012-09-03",
+        "id": 15767,
+        "link_id": "PRC_W1G2Y0F9Q0R3K1U6E4T4L1R2W9Y8N3",
+        "title": "대한민국헌정회 육성법 일부개정법률안",
+        "proposed_date": "2012-09-03",
+        "decision_date": "2013-07-02",
         "status": "처리",
-        "status_detail": "의결",
-        "actor_count": 277
+        "status_detail": "대안반영폐기",
+        "actor_count": 128
     },
     {
         "id": 3471,
@@ -6733,6 +6723,16 @@
         "id": 17308,
         "link_id": "PRC_Y1C2Y0F8D3M1F1H8M3E2V1H5K1Q3Y8",
         "title": "국무총리 및 국무위원 출석요구의 건(정치에 관한 질문)",
+        "proposed_date": "2012-08-31",
+        "decision_date": "2012-09-03",
+        "status": "처리",
+        "status_detail": "의결",
+        "actor_count": 277
+    },
+    {
+        "id": 17188,
+        "link_id": "PRC_D1J2C0Q8I3U1I1A8Y4U0P2P2V7T2I0",
+        "title": "국무총리·국무위원 및 정부위원 출석요구의 건(경제에 관한 질문)",
         "proposed_date": "2012-08-31",
         "decision_date": "2012-09-03",
         "status": "처리",
@@ -6820,16 +6820,6 @@
         "actor_count": 18
     },
     {
-        "id": 13217,
-        "link_id": "PRC_C1B2D0R8E0R7Q1M4I4H7V2S9P5Z1Z6",
-        "title": "지방세법 일부개정법률안",
-        "proposed_date": "2012-08-07",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 17
-    },
-    {
         "id": 10222,
         "link_id": "PRC_T1U2I0T8K0H7I1P0V2I7M0L5J7I5T9",
         "title": "이동통신기기의 부정이용 방지에 관한 법률안",
@@ -6838,6 +6828,16 @@
         "status": "계류",
         "status_detail": "위원회 심사",
         "actor_count": 10
+    },
+    {
+        "id": 13217,
+        "link_id": "PRC_C1B2D0R8E0R7Q1M4I4H7V2S9P5Z1Z6",
+        "title": "지방세법 일부개정법률안",
+        "proposed_date": "2012-08-07",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 17
     },
     {
         "id": 15155,
@@ -6868,26 +6868,6 @@
         "status": "계류",
         "status_detail": "위원회 심사",
         "actor_count": 10
-    },
-    {
-        "id": 12849,
-        "link_id": "PRC_K1U2T0S7B2Z4W1A0U1E6K4Y6M7I4D3",
-        "title": "이명박 대통령 내곡동 사저부지 매입의혹사건 진상규명을 위한 특별검사의 임명 등에 관한 법률안",
-        "proposed_date": "2012-07-24",
-        "decision_date": "2013-02-23",
-        "status": "처리",
-        "status_detail": "폐기",
-        "actor_count": 127
-    },
-    {
-        "id": 10313,
-        "link_id": "PRC_I1E2K0I7D2J4X1Z0K0P4A2K3A3Y1G7",
-        "title": "검사징계법 일부개정법률안",
-        "proposed_date": "2012-07-24",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 127
     },
     {
         "id": 3328,
@@ -6940,6 +6920,36 @@
         "actor_count": 127
     },
     {
+        "id": 12849,
+        "link_id": "PRC_K1U2T0S7B2Z4W1A0U1E6K4Y6M7I4D3",
+        "title": "이명박 대통령 내곡동 사저부지 매입의혹사건 진상규명을 위한 특별검사의 임명 등에 관한 법률안",
+        "proposed_date": "2012-07-24",
+        "decision_date": "2013-02-23",
+        "status": "처리",
+        "status_detail": "폐기",
+        "actor_count": 127
+    },
+    {
+        "id": 10313,
+        "link_id": "PRC_I1E2K0I7D2J4X1Z0K0P4A2K3A3Y1G7",
+        "title": "검사징계법 일부개정법률안",
+        "proposed_date": "2012-07-24",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 127
+    },
+    {
+        "id": 4519,
+        "link_id": "PRC_Z1P2C0Z7P2F3E1D4F2G7O5C1Y4W5Q7",
+        "title": "잘못된 과거사 바로잡기와 언론 자유 보장을 위한 정수장학회 사회환원 촉구 결의안",
+        "proposed_date": "2012-07-23",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "접수",
+        "actor_count": 127
+    },
+    {
         "id": 296,
         "link_id": "PRC_Y1O2I0Y7Q2L3F1N1Z3M9Y4Z7B6X1S3",
         "title": "용산참사 구속철거민 석방 및 특별사면 촉구 결의안",
@@ -6958,16 +6968,6 @@
         "status": "계류",
         "status_detail": "위원회 심사",
         "actor_count": 12
-    },
-    {
-        "id": 4519,
-        "link_id": "PRC_Z1P2C0Z7P2F3E1D4F2G7O5C1Y4W5Q7",
-        "title": "잘못된 과거사 바로잡기와 언론 자유 보장을 위한 정수장학회 사회환원 촉구 결의안",
-        "proposed_date": "2012-07-23",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "접수",
-        "actor_count": 127
     },
     {
         "id": 588,
@@ -7030,36 +7030,6 @@
         "actor_count": 27
     },
     {
-        "id": 15368,
-        "link_id": "PRC_M1G2D0T7I1K2U1Q1L2M3E3G3G2H8N4",
-        "title": "국가를 당사자로 하는 계약에 관한 법률 일부개정법률안",
-        "proposed_date": "2012-07-12",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 127
-    },
-    {
-        "id": 17952,
-        "link_id": "PRC_J1W2R0G7F1Z2C1A2K4E2A0X2W2F3J8",
-        "title": "독점규제 및 공정거래에 관한 법률 일부개정법률안",
-        "proposed_date": "2012-07-12",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 127
-    },
-    {
-        "id": 16299,
-        "link_id": "PRC_W1L2N0J7I1L2C1N1J4M0S1C6L2B4N1",
-        "title": "독점규제 및 공정거래에 관한 법률 일부개정법률안",
-        "proposed_date": "2012-07-12",
-        "decision_date": "2013-06-25",
-        "status": "처리",
-        "status_detail": "대안반영폐기",
-        "actor_count": 127
-    },
-    {
         "id": 2510,
         "link_id": "PRC_J1I2P0B7C1A2N1W1Z3M6J0K5E3I6F8",
         "title": "하도급거래 공정화에 관한 법률 일부개정법률안",
@@ -7100,14 +7070,34 @@
         "actor_count": 127
     },
     {
-        "id": 17871,
-        "link_id": "PRC_A1T2B0G7M0U6V2G0X5Y5R2L7R2C3B0",
-        "title": "국무총리·국무위원 및 정부위원 출석요구의 건(경제에 관한 질문)",
-        "proposed_date": "2012-07-06",
-        "decision_date": "2012-07-09",
+        "id": 15368,
+        "link_id": "PRC_M1G2D0T7I1K2U1Q1L2M3E3G3G2H8N4",
+        "title": "국가를 당사자로 하는 계약에 관한 법률 일부개정법률안",
+        "proposed_date": "2012-07-12",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 127
+    },
+    {
+        "id": 17952,
+        "link_id": "PRC_J1W2R0G7F1Z2C1A2K4E2A0X2W2F3J8",
+        "title": "독점규제 및 공정거래에 관한 법률 일부개정법률안",
+        "proposed_date": "2012-07-12",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 127
+    },
+    {
+        "id": 16299,
+        "link_id": "PRC_W1L2N0J7I1L2C1N1J4M0S1C6L2B4N1",
+        "title": "독점규제 및 공정거래에 관한 법률 일부개정법률안",
+        "proposed_date": "2012-07-12",
+        "decision_date": "2013-06-25",
         "status": "처리",
-        "status_detail": "의결",
-        "actor_count": 276
+        "status_detail": "대안반영폐기",
+        "actor_count": 127
     },
     {
         "id": 5777,
@@ -7160,6 +7150,16 @@
         "actor_count": 17
     },
     {
+        "id": 17871,
+        "link_id": "PRC_A1T2B0G7M0U6V2G0X5Y5R2L7R2C3B0",
+        "title": "국무총리·국무위원 및 정부위원 출석요구의 건(경제에 관한 질문)",
+        "proposed_date": "2012-07-06",
+        "decision_date": "2012-07-09",
+        "status": "처리",
+        "status_detail": "의결",
+        "actor_count": 276
+    },
+    {
         "id": 3981,
         "link_id": "PRC_Q1C2L0D7H0Z5G1E5Z1S5S5H2I5X5W1",
         "title": "정봉주 전 국회의원 8.15 사면 촉구 결의안",
@@ -7168,16 +7168,6 @@
         "status": "계류",
         "status_detail": "위원회 심사",
         "actor_count": 98
-    },
-    {
-        "id": 6405,
-        "link_id": "PRC_T1O2U0T7C0F3K1P4S0K5E1K9Y4T0K6",
-        "title": "국회법 일부개정법률안",
-        "proposed_date": "2012-07-03",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 11
     },
     {
         "id": 8646,
@@ -7190,9 +7180,19 @@
         "actor_count": 11
     },
     {
-        "id": 14463,
-        "link_id": "PRC_U1P2D0Q7X0S2M1J7F4A9A0R2E4K3R7",
-        "title": "국민건강보험법 일부개정법률안",
+        "id": 6405,
+        "link_id": "PRC_T1O2U0T7C0F3K1P4S0K5E1K9Y4T0K6",
+        "title": "국회법 일부개정법률안",
+        "proposed_date": "2012-07-03",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 11
+    },
+    {
+        "id": 9700,
+        "link_id": "PRC_J1V2N0G7N0Q2C1S7G4V6U3U5J0P2B7",
+        "title": "의료급여법 일부개정법률안",
         "proposed_date": "2012-07-02",
         "decision_date": "0000-00-00",
         "status": "계류",
@@ -7200,9 +7200,9 @@
         "actor_count": 10
     },
     {
-        "id": 9700,
-        "link_id": "PRC_J1V2N0G7N0Q2C1S7G4V6U3U5J0P2B7",
-        "title": "의료급여법 일부개정법률안",
+        "id": 14463,
+        "link_id": "PRC_U1P2D0Q7X0S2M1J7F4A9A0R2E4K3R7",
+        "title": "국민건강보험법 일부개정법률안",
         "proposed_date": "2012-07-02",
         "decision_date": "0000-00-00",
         "status": "계류",
@@ -7270,56 +7270,6 @@
         "actor_count": 127
     },
     {
-        "id": 2565,
-        "link_id": "PRC_P1C2O0A5D3B0K1Q1P3S6A0G2J1S7I3",
-        "title": "고등교육재정교부금법안",
-        "proposed_date": "2012-05-30",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 127
-    },
-    {
-        "id": 17316,
-        "link_id": "PRC_X1X2L0X5H3J0P1N3W2V9X0H3K0M7W5",
-        "title": "대·중소기업 상생협력 촉진에 관한 법률 일부개정법률안",
-        "proposed_date": "2012-05-30",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 127
-    },
-    {
-        "id": 4073,
-        "link_id": "PRC_Y1Z2V0D5E3S0X1N2S1N3V1E8E9T2I6",
-        "title": "최저임금법 일부개정법률안",
-        "proposed_date": "2012-05-30",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 127
-    },
-    {
-        "id": 12985,
-        "link_id": "PRC_O1P2X0N5E3U0N1W2Q0A2F0Q5Y7Z6X8",
-        "title": "유통산업발전법 일부개정법률안",
-        "proposed_date": "2012-05-30",
-        "decision_date": "2013-01-01",
-        "status": "처리",
-        "status_detail": "대안반영폐기",
-        "actor_count": 127
-    },
-    {
-        "id": 16763,
-        "link_id": "PRC_I1Q2D0D5Z3N0P1C1G2V7W5I3B4D6V1",
-        "title": "소기업 및 소상공인 지원을 위한 특별조치법 일부개정법률안",
-        "proposed_date": "2012-05-30",
-        "decision_date": "2013-04-30",
-        "status": "처리",
-        "status_detail": "대안반영폐기",
-        "actor_count": 127
-    },
-    {
         "id": 2491,
         "link_id": "PRC_L1G2F0O5N3N0Q1I2E1I5G1C7G7X3V7",
         "title": "주택법 일부개정법률안",
@@ -7333,16 +7283,6 @@
         "id": 8400,
         "link_id": "PRC_D1R2D0M5L3E0W1O4H1H0D3H9C4C7G8",
         "title": "공휴일에 관한 법률안",
-        "proposed_date": "2012-05-30",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 127
-    },
-    {
-        "id": 7858,
-        "link_id": "PRC_Y1K2Q0L5U3I0X1W3O3E2O0W5X3Q7I7",
-        "title": "고등교육법 일부개정법률안",
         "proposed_date": "2012-05-30",
         "decision_date": "0000-00-00",
         "status": "계류",
@@ -7370,6 +7310,26 @@
         "actor_count": 127
     },
     {
+        "id": 7858,
+        "link_id": "PRC_Y1K2Q0L5U3I0X1W3O3E2O0W5X3Q7I7",
+        "title": "고등교육법 일부개정법률안",
+        "proposed_date": "2012-05-30",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 127
+    },
+    {
+        "id": 11316,
+        "link_id": "PRC_P1R2M0H5I3C0S1L1Q3V3O0Q8Q6O2F4",
+        "title": "기초노령연금법 일부개정법률안",
+        "proposed_date": "2012-05-30",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 127
+    },
+    {
         "id": 14729,
         "link_id": "PRC_X1J2Z0J5X3W0H1H3X2A0M0F4T3I7I3",
         "title": "영유아보육법 일부개정법률안",
@@ -7380,9 +7340,9 @@
         "actor_count": 127
     },
     {
-        "id": 11316,
-        "link_id": "PRC_P1R2M0H5I3C0S1L1Q3V3O0Q8Q6O2F4",
-        "title": "기초노령연금법 일부개정법률안",
+        "id": 2646,
+        "link_id": "PRC_Q1S2B0N5F3E0U1Z2A1W1E1B2F1A8J5",
+        "title": "고용보험법 일부개정법률안",
         "proposed_date": "2012-05-30",
         "decision_date": "0000-00-00",
         "status": "계류",
@@ -7397,16 +7357,6 @@
         "decision_date": "2013-12-26",
         "status": "처리",
         "status_detail": "대안반영폐기",
-        "actor_count": 127
-    },
-    {
-        "id": 2646,
-        "link_id": "PRC_Q1S2B0N5F3E0U1Z2A1W1E1B2F1A8J5",
-        "title": "고용보험법 일부개정법률안",
-        "proposed_date": "2012-05-30",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
         "actor_count": 127
     },
     {
@@ -7457,6 +7407,56 @@
         "decision_date": "0000-00-00",
         "status": "계류",
         "status_detail": "위원회 심사",
+        "actor_count": 127
+    },
+    {
+        "id": 2565,
+        "link_id": "PRC_P1C2O0A5D3B0K1Q1P3S6A0G2J1S7I3",
+        "title": "고등교육재정교부금법안",
+        "proposed_date": "2012-05-30",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 127
+    },
+    {
+        "id": 17316,
+        "link_id": "PRC_X1X2L0X5H3J0P1N3W2V9X0H3K0M7W5",
+        "title": "대·중소기업 상생협력 촉진에 관한 법률 일부개정법률안",
+        "proposed_date": "2012-05-30",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 127
+    },
+    {
+        "id": 4073,
+        "link_id": "PRC_Y1Z2V0D5E3S0X1N2S1N3V1E8E9T2I6",
+        "title": "최저임금법 일부개정법률안",
+        "proposed_date": "2012-05-30",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 127
+    },
+    {
+        "id": 12985,
+        "link_id": "PRC_O1P2X0N5E3U0N1W2Q0A2F0Q5Y7Z6X8",
+        "title": "유통산업발전법 일부개정법률안",
+        "proposed_date": "2012-05-30",
+        "decision_date": "2013-01-01",
+        "status": "처리",
+        "status_detail": "대안반영폐기",
+        "actor_count": 127
+    },
+    {
+        "id": 16763,
+        "link_id": "PRC_I1Q2D0D5Z3N0P1C1G2V7W5I3B4D6V1",
+        "title": "소기업 및 소상공인 지원을 위한 특별조치법 일부개정법률안",
+        "proposed_date": "2012-05-30",
+        "decision_date": "2013-04-30",
+        "status": "처리",
+        "status_detail": "대안반영폐기",
         "actor_count": 127
     }
 ]

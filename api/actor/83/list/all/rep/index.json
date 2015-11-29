@@ -1,15 +1,5 @@
 [
     {
-        "id": 10534,
-        "link_id": "PRC_U1L5W1Y0U0G8H1J5H4S3Q5C0M2W7T9",
-        "title": "한국마사회법 일부개정법률안",
-        "proposed_date": "2015-10-08",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 10
-    },
-    {
         "id": 10871,
         "link_id": "PRC_G1S5Z1K0L0C8Z1X5B0Z8N0U8T7R3Z2",
         "title": "경륜·경정법 일부개정법률안",
@@ -30,10 +20,10 @@
         "actor_count": 12
     },
     {
-        "id": 2511,
-        "link_id": "PRC_Z1J5O0Q9H1C5D1U7O1M3E0J8H3L1I8",
-        "title": "관광진흥법 일부개정법률안",
-        "proposed_date": "2015-09-15",
+        "id": 10534,
+        "link_id": "PRC_U1L5W1Y0U0G8H1J5H4S3Q5C0M2W7T9",
+        "title": "한국마사회법 일부개정법률안",
+        "proposed_date": "2015-10-08",
         "decision_date": "0000-00-00",
         "status": "계류",
         "status_detail": "위원회 심사",
@@ -48,6 +38,16 @@
         "status": "계류",
         "status_detail": "위원회 심사",
         "actor_count": 19
+    },
+    {
+        "id": 2511,
+        "link_id": "PRC_Z1J5O0Q9H1C5D1U7O1M3E0J8H3L1I8",
+        "title": "관광진흥법 일부개정법률안",
+        "proposed_date": "2015-09-15",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 10
     },
     {
         "id": 17551,
@@ -120,16 +120,6 @@
         "actor_count": 14
     },
     {
-        "id": 8481,
-        "link_id": "PRC_D1M5U0R3K0M4A1E7O2N9H3S9J5C6V9",
-        "title": "학교보건법 일부개정법률안",
-        "proposed_date": "2015-03-04",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 12
-    },
-    {
         "id": 1534,
         "link_id": "PRC_O1J5N0H3E0T4V1T7U2V0K1V3V2E6W2",
         "title": "형법 일부개정법률안",
@@ -138,6 +128,16 @@
         "status": "계류",
         "status_detail": "위원회 심사",
         "actor_count": 10
+    },
+    {
+        "id": 8481,
+        "link_id": "PRC_D1M5U0R3K0M4A1E7O2N9H3S9J5C6V9",
+        "title": "학교보건법 일부개정법률안",
+        "proposed_date": "2015-03-04",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 12
     },
     {
         "id": 16326,
@@ -170,9 +170,9 @@
         "actor_count": 13
     },
     {
-        "id": 1152,
-        "link_id": "PRC_T1B5N0B1H1X6Z1I4E2A5Z5N8O3M2V9",
-        "title": "민방위기본법 일부개정법률안",
+        "id": 12533,
+        "link_id": "PRC_K1J5U0A1L1G6Y1S4M2J9N5N6A9W1G3",
+        "title": "아동학대범죄의 처벌 등에 관한 특례법 일부개정법률안",
         "proposed_date": "2015-01-16",
         "decision_date": "0000-00-00",
         "status": "계류",
@@ -180,9 +180,9 @@
         "actor_count": 10
     },
     {
-        "id": 12533,
-        "link_id": "PRC_K1J5U0A1L1G6Y1S4M2J9N5N6A9W1G3",
-        "title": "아동학대범죄의 처벌 등에 관한 특례법 일부개정법률안",
+        "id": 1152,
+        "link_id": "PRC_T1B5N0B1H1X6Z1I4E2A5Z5N8O3M2V9",
+        "title": "민방위기본법 일부개정법률안",
         "proposed_date": "2015-01-16",
         "decision_date": "0000-00-00",
         "status": "계류",
@@ -250,16 +250,6 @@
         "actor_count": 14
     },
     {
-        "id": 17045,
-        "link_id": "PRC_I1V4D1A2S1U2O1R8U0S4V2U1G3A5E2",
-        "title": "학교보건법 일부개정법률안",
-        "proposed_date": "2014-12-12",
-        "decision_date": "2014-12-23",
-        "status": "처리",
-        "status_detail": "철회",
-        "actor_count": 12
-    },
-    {
         "id": 7688,
         "link_id": "PRC_H1I4B1K2U1Z2C1P8E0C2T2Q2A4O1Z2",
         "title": "도로교통법 일부개정법률안",
@@ -270,6 +260,16 @@
         "actor_count": 11
     },
     {
+        "id": 17045,
+        "link_id": "PRC_I1V4D1A2S1U2O1R8U0S4V2U1G3A5E2",
+        "title": "학교보건법 일부개정법률안",
+        "proposed_date": "2014-12-12",
+        "decision_date": "2014-12-23",
+        "status": "처리",
+        "status_detail": "철회",
+        "actor_count": 12
+    },
+    {
         "id": 1834,
         "link_id": "PRC_W1A4V1V2Z0U8P1K5G5O2I3V6L0H6J4",
         "title": "문화재보호법 일부개정법률안",
@@ -278,16 +278,6 @@
         "status": "계류",
         "status_detail": "위원회 심사",
         "actor_count": 10
-    },
-    {
-        "id": 11896,
-        "link_id": "PRC_T1Z4R1V1T2Y0B1P7R4A1D4Y6Q0I5H4",
-        "title": "한국국제협력단법 일부개정법률안",
-        "proposed_date": "2014-11-20",
-        "decision_date": "2015-05-29",
-        "status": "처리",
-        "status_detail": "공포",
-        "actor_count": 11
     },
     {
         "id": 2874,
@@ -320,14 +310,14 @@
         "actor_count": 10
     },
     {
-        "id": 14780,
-        "link_id": "PRC_X1J4K1J1C1A2H1V4A1V0R1N1H8K3V5",
-        "title": "성폭력방지 및 피해자보호 등에 관한 법률 일부개정법률안",
-        "proposed_date": "2014-11-12",
-        "decision_date": "2015-11-12",
+        "id": 11896,
+        "link_id": "PRC_T1Z4R1V1T2Y0B1P7R4A1D4Y6Q0I5H4",
+        "title": "한국국제협력단법 일부개정법률안",
+        "proposed_date": "2014-11-20",
+        "decision_date": "2015-05-29",
         "status": "처리",
-        "status_detail": "대안반영폐기",
-        "actor_count": 16
+        "status_detail": "공포",
+        "actor_count": 11
     },
     {
         "id": 13373,
@@ -348,6 +338,16 @@
         "status": "계류",
         "status_detail": "위원회 심사",
         "actor_count": 11
+    },
+    {
+        "id": 14780,
+        "link_id": "PRC_X1J4K1J1C1A2H1V4A1V0R1N1H8K3V5",
+        "title": "성폭력방지 및 피해자보호 등에 관한 법률 일부개정법률안",
+        "proposed_date": "2014-11-12",
+        "decision_date": "2015-11-12",
+        "status": "처리",
+        "status_detail": "대안반영폐기",
+        "actor_count": 16
     },
     {
         "id": 10780,
@@ -400,16 +400,6 @@
         "actor_count": 10
     },
     {
-        "id": 13,
-        "link_id": "PRC_J1R4X0V2P0Z4E1X6L2R7L0L3R9N3E2",
-        "title": "군형법 일부개정법률안",
-        "proposed_date": "2014-02-04",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 10
-    },
-    {
         "id": 11768,
         "link_id": "PRC_N1R4R0T2L0W4E1T1R1E7T4H4E3K1W9",
         "title": "방송통신위원회의 설치 및 운영에 관한 법률 일부개정법률안",
@@ -418,6 +408,16 @@
         "status": "계류",
         "status_detail": "위원회 심사",
         "actor_count": 11
+    },
+    {
+        "id": 13,
+        "link_id": "PRC_J1R4X0V2P0Z4E1X6L2R7L0L3R9N3E2",
+        "title": "군형법 일부개정법률안",
+        "proposed_date": "2014-02-04",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 10
     },
     {
         "id": 15880,
@@ -440,9 +440,9 @@
         "actor_count": 14
     },
     {
-        "id": 4538,
-        "link_id": "PRC_L1L3X0Z8V2O3S1C4V4B2F5T6X8J6I0",
-        "title": "공유재산 및 물품 관리법 일부개정법률안",
+        "id": 13754,
+        "link_id": "PRC_D1F3F0P8W2M3B1K4E3L5W5D5F1U9X9",
+        "title": "정보통신윤리교육 지원법안",
         "proposed_date": "2013-08-23",
         "decision_date": "0000-00-00",
         "status": "계류",
@@ -450,9 +450,9 @@
         "actor_count": 10
     },
     {
-        "id": 13754,
-        "link_id": "PRC_D1F3F0P8W2M3B1K4E3L5W5D5F1U9X9",
-        "title": "정보통신윤리교육 지원법안",
+        "id": 4538,
+        "link_id": "PRC_L1L3X0Z8V2O3S1C4V4B2F5T6X8J6I0",
+        "title": "공유재산 및 물품 관리법 일부개정법률안",
         "proposed_date": "2013-08-23",
         "decision_date": "0000-00-00",
         "status": "계류",
@@ -540,26 +540,6 @@
         "actor_count": 20
     },
     {
-        "id": 6227,
-        "link_id": "PRC_A1U2B0P8O1Q6S1O6P0X7O1O5N4E0L0",
-        "title": "방송통신위원회의 설치 및 운영에 관한 법률 일부개정법률안",
-        "proposed_date": "2012-08-16",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 23
-    },
-    {
-        "id": 6252,
-        "link_id": "PRC_Y1F2C0E8H1D6Y1N5A5S8X0D1J4H0B2",
-        "title": "방송문화진흥회법 일부개정법률안",
-        "proposed_date": "2012-08-16",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 23
-    },
-    {
         "id": 2933,
         "link_id": "PRC_U1E2F0C8W1V6Q1A6J0K2Y1L1T0A4E6",
         "title": "방송법 일부개정법률안",
@@ -573,6 +553,26 @@
         "id": 2453,
         "link_id": "PRC_C1X2F0K8D1T6U1K6T1D9B4S4M9N4W8",
         "title": "한국교육방송공사법 일부개정법률안",
+        "proposed_date": "2012-08-16",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 23
+    },
+    {
+        "id": 6227,
+        "link_id": "PRC_A1U2B0P8O1Q6S1O6P0X7O1O5N4E0L0",
+        "title": "방송통신위원회의 설치 및 운영에 관한 법률 일부개정법률안",
+        "proposed_date": "2012-08-16",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 23
+    },
+    {
+        "id": 6252,
+        "link_id": "PRC_Y1F2C0E8H1D6Y1N5A5S8X0D1J4H0B2",
+        "title": "방송문화진흥회법 일부개정법률안",
         "proposed_date": "2012-08-16",
         "decision_date": "0000-00-00",
         "status": "계류",

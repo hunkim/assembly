@@ -80,6 +80,16 @@
         "actor_count": 10
     },
     {
+        "id": 8826,
+        "link_id": "PRC_C1M4U0P8L1U2R1C0S0H6E0Q0W5C1S8",
+        "title": "해운법 일부개정법률안",
+        "proposed_date": "2014-08-12",
+        "decision_date": "2014-12-09",
+        "status": "처리",
+        "status_detail": "대안반영폐기",
+        "actor_count": 17
+    },
+    {
         "id": 4258,
         "link_id": "PRC_E1X4N0J8D1D2T0H9X5Z8T5D6R1E1U8",
         "title": "해사안전법 일부개정법률안",
@@ -93,16 +103,6 @@
         "id": 11690,
         "link_id": "PRC_W1B4J0X8H1B2J0L9L4Q9G4D6W5Y9L9",
         "title": "선원법 일부개정법률안",
-        "proposed_date": "2014-08-12",
-        "decision_date": "2014-12-09",
-        "status": "처리",
-        "status_detail": "대안반영폐기",
-        "actor_count": 17
-    },
-    {
-        "id": 8826,
-        "link_id": "PRC_C1M4U0P8L1U2R1C0S0H6E0Q0W5C1S8",
-        "title": "해운법 일부개정법률안",
         "proposed_date": "2014-08-12",
         "decision_date": "2014-12-09",
         "status": "처리",
@@ -150,21 +150,21 @@
         "actor_count": 12
     },
     {
-        "id": 11513,
-        "link_id": "PRC_Q1A4V0Q1N2P0A1B0Q5X9X5O7V8L9N9",
-        "title": "경찰관직무집행법 일부개정법률안",
-        "proposed_date": "2014-01-20",
-        "decision_date": "2014-04-29",
-        "status": "처리",
-        "status_detail": "대안반영폐기",
-        "actor_count": 13
-    },
-    {
         "id": 11426,
         "link_id": "PRC_W1O4W0K1B2N0P1C0Z5T1W4F9A7N3Z7",
         "title": "도로교통법 일부개정법률안",
         "proposed_date": "2014-01-20",
         "decision_date": "2015-07-24",
+        "status": "처리",
+        "status_detail": "대안반영폐기",
+        "actor_count": 13
+    },
+    {
+        "id": 11513,
+        "link_id": "PRC_Q1A4V0Q1N2P0A1B0Q5X9X5O7V8L9N9",
+        "title": "경찰관직무집행법 일부개정법률안",
+        "proposed_date": "2014-01-20",
+        "decision_date": "2014-04-29",
         "status": "처리",
         "status_detail": "대안반영폐기",
         "actor_count": 13
@@ -190,16 +190,6 @@
         "actor_count": 14
     },
     {
-        "id": 287,
-        "link_id": "PRC_D1H3S0U3X1W4N0M9L4L0K3B7M7F9X9",
-        "title": "비상대비자원 관리법 일부개정법률안",
-        "proposed_date": "2013-03-14",
-        "decision_date": "2013-12-19",
-        "status": "처리",
-        "status_detail": "공포",
-        "actor_count": 10
-    },
-    {
         "id": 15008,
         "link_id": "PRC_F1H3P0B3P1E4W0E9A4H0Q5G0F9Y3C7",
         "title": "철도안전법 일부개정법률안",
@@ -208,6 +198,16 @@
         "status": "처리",
         "status_detail": "대안반영폐기",
         "actor_count": 11
+    },
+    {
+        "id": 287,
+        "link_id": "PRC_D1H3S0U3X1W4N0M9L4L0K3B7M7F9X9",
+        "title": "비상대비자원 관리법 일부개정법률안",
+        "proposed_date": "2013-03-14",
+        "decision_date": "2013-12-19",
+        "status": "처리",
+        "status_detail": "공포",
+        "actor_count": 10
     },
     {
         "id": 882,

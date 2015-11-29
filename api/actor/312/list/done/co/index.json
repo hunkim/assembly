@@ -80,16 +80,6 @@
         "actor_count": 12
     },
     {
-        "id": 931,
-        "link_id": "PRC_V1Q4X0H7Q1V7J1U6E5U7H1X8L6F7W1",
-        "title": "국립대학법안",
-        "proposed_date": "2014-07-17",
-        "decision_date": "2015-03-03",
-        "status": "처리",
-        "status_detail": "대안반영폐기",
-        "actor_count": 10
-    },
-    {
         "id": 1222,
         "link_id": "PRC_E1J4S0H7Y1C7L1S7D4T0Z4K7K8L2Z0",
         "title": "소기업 및 소상공인 지원을 위한 특별조치법 전부개정법률안",
@@ -120,6 +110,16 @@
         "actor_count": 27
     },
     {
+        "id": 931,
+        "link_id": "PRC_V1Q4X0H7Q1V7J1U6E5U7H1X8L6F7W1",
+        "title": "국립대학법안",
+        "proposed_date": "2014-07-17",
+        "decision_date": "2015-03-03",
+        "status": "처리",
+        "status_detail": "대안반영폐기",
+        "actor_count": 10
+    },
+    {
         "id": 8762,
         "link_id": "PRC_A1W4C0N6G3Y0O1O6T2H0L5P0N5O7X2",
         "title": "원자력안전법 일부개정법률안",
@@ -130,16 +130,6 @@
         "actor_count": 16
     },
     {
-        "id": 7684,
-        "link_id": "PRC_Y1V4B0Z6V2Z7D1W6C5J9I3T2B5C7C4",
-        "title": "영유아보육법 일부개정법률안",
-        "proposed_date": "2014-06-27",
-        "decision_date": "2015-03-03",
-        "status": "처리",
-        "status_detail": "대안반영폐기",
-        "actor_count": 13
-    },
-    {
         "id": 4441,
         "link_id": "PRC_S1Z4C0O6G2G7P1T7V4Q0C5N2G2F2D9",
         "title": "공무원연금법 일부개정법률안",
@@ -148,6 +138,16 @@
         "status": "처리",
         "status_detail": "대안반영폐기",
         "actor_count": 12
+    },
+    {
+        "id": 7684,
+        "link_id": "PRC_Y1V4B0Z6V2Z7D1W6C5J9I3T2B5C7C4",
+        "title": "영유아보육법 일부개정법률안",
+        "proposed_date": "2014-06-27",
+        "decision_date": "2015-03-03",
+        "status": "처리",
+        "status_detail": "대안반영폐기",
+        "actor_count": 13
     },
     {
         "id": 9939,
@@ -210,21 +210,21 @@
         "actor_count": 102
     },
     {
-        "id": 5209,
-        "link_id": "PRC_U1W4M0H5P2K0L1E6R1Q1H2K4X5K1Y3",
-        "title": "사립학교법 일부개정법률안",
-        "proposed_date": "2014-05-20",
-        "decision_date": "2015-03-03",
-        "status": "처리",
-        "status_detail": "대안반영폐기",
-        "actor_count": 10
-    },
-    {
         "id": 12715,
         "link_id": "PRC_T1K4E0R5I2R0Y1K8W1S5C4Y4D6I3P4",
         "title": "공직자윤리법 일부개정법률안",
         "proposed_date": "2014-05-20",
         "decision_date": "2014-12-09",
+        "status": "처리",
+        "status_detail": "대안반영폐기",
+        "actor_count": 10
+    },
+    {
+        "id": 5209,
+        "link_id": "PRC_U1W4M0H5P2K0L1E6R1Q1H2K4X5K1Y3",
+        "title": "사립학교법 일부개정법률안",
+        "proposed_date": "2014-05-20",
+        "decision_date": "2015-03-03",
         "status": "처리",
         "status_detail": "대안반영폐기",
         "actor_count": 10

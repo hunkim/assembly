@@ -30,16 +30,6 @@
         "actor_count": 13
     },
     {
-        "id": 225,
-        "link_id": "PRC_U1L3C0F4F1L0C1F5J2G7V2U8M1G3X6",
-        "title": "국무총리·국무위원 및 정부위원 출석요구의 건(경제·교육·사회·문화에 관한 질문)",
-        "proposed_date": "2013-04-10",
-        "decision_date": "2013-04-11",
-        "status": "처리",
-        "status_detail": "의결",
-        "actor_count": 279
-    },
-    {
         "id": 4702,
         "link_id": "PRC_T1N3H0T4S1N0O1I7I4A7E3Z7X9F6W1",
         "title": "결혼중개업의 관리에 관한 법률 일부개정법률안",
@@ -53,6 +43,16 @@
         "id": 18030,
         "link_id": "PRC_P1A3P0O4T1H0Y1I5M2J0F1O6S5K0N4",
         "title": "국무총리 및 국무위원 출석요구의 건(정치·외교·통일·안보에 관한 질문)",
+        "proposed_date": "2013-04-10",
+        "decision_date": "2013-04-11",
+        "status": "처리",
+        "status_detail": "의결",
+        "actor_count": 279
+    },
+    {
+        "id": 225,
+        "link_id": "PRC_U1L3C0F4F1L0C1F5J2G7V2U8M1G3X6",
+        "title": "국무총리·국무위원 및 정부위원 출석요구의 건(경제·교육·사회·문화에 관한 질문)",
         "proposed_date": "2013-04-10",
         "decision_date": "2013-04-11",
         "status": "처리",
@@ -180,16 +180,6 @@
         "actor_count": 11
     },
     {
-        "id": 3271,
-        "link_id": "PRC_K1R2F1C2P0V7G1T4X1F8G0E1T3W5I1",
-        "title": "품질경영 및 공산품안전관리법 일부개정법률안",
-        "proposed_date": "2012-12-07",
-        "decision_date": "2013-06-25",
-        "status": "처리",
-        "status_detail": "공포",
-        "actor_count": 12
-    },
-    {
         "id": 8847,
         "link_id": "PRC_O1G2P1Y2X0P7M1S7X5B1R2F5H2B6X4",
         "title": "전자상거래 등에서의 소비자보호에 관한 법률 일부개정법률안",
@@ -198,6 +188,16 @@
         "status": "처리",
         "status_detail": "공포",
         "actor_count": 11
+    },
+    {
+        "id": 3271,
+        "link_id": "PRC_K1R2F1C2P0V7G1T4X1F8G0E1T3W5I1",
+        "title": "품질경영 및 공산품안전관리법 일부개정법률안",
+        "proposed_date": "2012-12-07",
+        "decision_date": "2013-06-25",
+        "status": "처리",
+        "status_detail": "공포",
+        "actor_count": 12
     },
     {
         "id": 4014,
@@ -350,16 +350,6 @@
         "actor_count": 10
     },
     {
-        "id": 18081,
-        "link_id": "PRC_I1M2A0E9C2O0P1N7O2J8A5A5G8N9U9",
-        "title": "수의사법 일부개정법률안",
-        "proposed_date": "2012-09-20",
-        "decision_date": "2013-07-02",
-        "status": "처리",
-        "status_detail": "공포",
-        "actor_count": 16
-    },
-    {
         "id": 5909,
         "link_id": "PRC_K1A2B0G9N2L0L1C7Q3W6V3P7B3D5O8",
         "title": "도시와 농어촌 간의 교류촉진에 관한 법률 일부개정법률안",
@@ -368,6 +358,16 @@
         "status": "처리",
         "status_detail": "공포",
         "actor_count": 13
+    },
+    {
+        "id": 18081,
+        "link_id": "PRC_I1M2A0E9C2O0P1N7O2J8A5A5G8N9U9",
+        "title": "수의사법 일부개정법률안",
+        "proposed_date": "2012-09-20",
+        "decision_date": "2013-07-02",
+        "status": "처리",
+        "status_detail": "공포",
+        "actor_count": 16
     },
     {
         "id": 758,
@@ -400,19 +400,19 @@
         "actor_count": 13
     },
     {
-        "id": 14705,
-        "link_id": "PRC_Q1B2M0L8U3X1N1B6M2N4L5L2D2K0X4",
-        "title": "해양수산발전 기본법 일부개정법률안",
-        "proposed_date": "2012-08-31",
-        "decision_date": "2012-11-22",
-        "status": "처리",
-        "status_detail": "공포",
-        "actor_count": 12
-    },
-    {
         "id": 17188,
         "link_id": "PRC_D1J2C0Q8I3U1I1A8Y4U0P2P2V7T2I0",
         "title": "국무총리·국무위원 및 정부위원 출석요구의 건(경제에 관한 질문)",
+        "proposed_date": "2012-08-31",
+        "decision_date": "2012-09-03",
+        "status": "처리",
+        "status_detail": "의결",
+        "actor_count": 277
+    },
+    {
+        "id": 17308,
+        "link_id": "PRC_Y1C2Y0F8D3M1F1H8M3E2V1H5K1Q3Y8",
+        "title": "국무총리 및 국무위원 출석요구의 건(정치에 관한 질문)",
         "proposed_date": "2012-08-31",
         "decision_date": "2012-09-03",
         "status": "처리",
@@ -428,16 +428,6 @@
         "status": "처리",
         "status_detail": "공포",
         "actor_count": 54
-    },
-    {
-        "id": 17308,
-        "link_id": "PRC_Y1C2Y0F8D3M1F1H8M3E2V1H5K1Q3Y8",
-        "title": "국무총리 및 국무위원 출석요구의 건(정치에 관한 질문)",
-        "proposed_date": "2012-08-31",
-        "decision_date": "2012-09-03",
-        "status": "처리",
-        "status_detail": "의결",
-        "actor_count": 277
     },
     {
         "id": 8041,
@@ -468,6 +458,16 @@
         "status": "처리",
         "status_detail": "의결",
         "actor_count": 277
+    },
+    {
+        "id": 14705,
+        "link_id": "PRC_Q1B2M0L8U3X1N1B6M2N4L5L2D2K0X4",
+        "title": "해양수산발전 기본법 일부개정법률안",
+        "proposed_date": "2012-08-31",
+        "decision_date": "2012-11-22",
+        "status": "처리",
+        "status_detail": "공포",
+        "actor_count": 12
     },
     {
         "id": 8752,

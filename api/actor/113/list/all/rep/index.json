@@ -20,9 +20,9 @@
         "actor_count": 10
     },
     {
-        "id": 9259,
-        "link_id": "PRC_O1W5W0M9Y2C2F1X5A1M0O5F5D4O5E3",
-        "title": "여권법 일부개정법률안",
+        "id": 8560,
+        "link_id": "PRC_I1T5V0I9J2R2R1Z5J1M3H0S4M5P0M7",
+        "title": "출입국관리법 일부개정법률안",
         "proposed_date": "2015-09-22",
         "decision_date": "0000-00-00",
         "status": "계류",
@@ -30,9 +30,9 @@
         "actor_count": 19
     },
     {
-        "id": 8560,
-        "link_id": "PRC_I1T5V0I9J2R2R1Z5J1M3H0S4M5P0M7",
-        "title": "출입국관리법 일부개정법률안",
+        "id": 9259,
+        "link_id": "PRC_O1W5W0M9Y2C2F1X5A1M0O5F5D4O5E3",
+        "title": "여권법 일부개정법률안",
         "proposed_date": "2015-09-22",
         "decision_date": "0000-00-00",
         "status": "계류",
@@ -230,16 +230,6 @@
         "actor_count": 19
     },
     {
-        "id": 2188,
-        "link_id": "PRC_B1W3G1C2W1N3X1I8Z0B8X4K1S8K6A1",
-        "title": "도시 및 주거환경정비법 일부개정법률안",
-        "proposed_date": "2013-12-13",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 10
-    },
-    {
         "id": 11423,
         "link_id": "PRC_O1K3S1X2E1X3T1K8E0U6B1C0Y2W2L0",
         "title": "범죄피해자 보호법 일부개정법률안",
@@ -250,9 +240,19 @@
         "actor_count": 10
     },
     {
-        "id": 2405,
-        "link_id": "PRC_N1Y3F1Z2N0B2B1P6N3K3P3V6W4R3R1",
-        "title": "국가를 당사자로 하는 계약에 관한 법률 일부개정법률안",
+        "id": 2188,
+        "link_id": "PRC_B1W3G1C2W1N3X1I8Z0B8X4K1S8K6A1",
+        "title": "도시 및 주거환경정비법 일부개정법률안",
+        "proposed_date": "2013-12-13",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 10
+    },
+    {
+        "id": 1922,
+        "link_id": "PRC_N1K3E1D2M0E2Y1V6G2G9S1J8A7W9W2",
+        "title": "지방자치단체를 당사자로 하는 계약에 관한 법률 일부개정법률안",
         "proposed_date": "2013-12-02",
         "decision_date": "0000-00-00",
         "status": "계류",
@@ -260,9 +260,9 @@
         "actor_count": 11
     },
     {
-        "id": 1922,
-        "link_id": "PRC_N1K3E1D2M0E2Y1V6G2G9S1J8A7W9W2",
-        "title": "지방자치단체를 당사자로 하는 계약에 관한 법률 일부개정법률안",
+        "id": 2405,
+        "link_id": "PRC_N1Y3F1Z2N0B2B1P6N3K3P3V6W4R3R1",
+        "title": "국가를 당사자로 하는 계약에 관한 법률 일부개정법률안",
         "proposed_date": "2013-12-02",
         "decision_date": "0000-00-00",
         "status": "계류",
@@ -330,16 +330,6 @@
         "actor_count": 15
     },
     {
-        "id": 286,
-        "link_id": "PRC_V1J3E0Z2K2O1Q1Z1T1Y1N4T0T4B0D8",
-        "title": "검찰청법 일부개정법률안",
-        "proposed_date": "2013-02-21",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 11
-    },
-    {
         "id": 9658,
         "link_id": "PRC_N1M3V0A2G2Z1V1P1E3I0Z1Y9N5Q2L2",
         "title": "경찰법 일부개정법률안",
@@ -353,6 +343,16 @@
         "id": 17887,
         "link_id": "PRC_Z1I3L0L2K2W1G1R1K2F7J4H1R3H5Z4",
         "title": "형법 일부개정법률안",
+        "proposed_date": "2013-02-21",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 11
+    },
+    {
+        "id": 286,
+        "link_id": "PRC_V1J3E0Z2K2O1Q1Z1T1Y1N4T0T4B0D8",
+        "title": "검찰청법 일부개정법률안",
         "proposed_date": "2013-02-21",
         "decision_date": "0000-00-00",
         "status": "계류",

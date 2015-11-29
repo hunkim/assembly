@@ -10,36 +10,6 @@
         "actor_count": 10
     },
     {
-        "id": 16393,
-        "link_id": "PRC_T1S5H0L5A2P2U1I7F5A5Z5G1Y6O4U4",
-        "title": "자유무역지역의 지정 및 운영에 관한 법률 일부개정법률안",
-        "proposed_date": "2015-05-22",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 10
-    },
-    {
-        "id": 949,
-        "link_id": "PRC_Y1W5I0V5S2D2G1U8I0M2T3I0S7J7I8",
-        "title": "전기사업법 일부개정법률안",
-        "proposed_date": "2015-05-22",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 10
-    },
-    {
-        "id": 17991,
-        "link_id": "PRC_W1N5U0K5F2U2R1B7C5R4A3Q9Z4C4E5",
-        "title": "중소기업제품 구매촉진 및 판로지원에 관한 법률 일부개정법률안",
-        "proposed_date": "2015-05-22",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 10
-    },
-    {
         "id": 2133,
         "link_id": "PRC_Z1T5Y0C5O2R2X1Y7F4L8T3O7V7C5I4",
         "title": "우편법 일부개정법률안",
@@ -80,10 +50,30 @@
         "actor_count": 10
     },
     {
-        "id": 660,
-        "link_id": "PRC_Z1P5B0V5N2U1L1L8W0K5F1D4L3V2K6",
-        "title": "건강가정기본법 일부개정법률안",
-        "proposed_date": "2015-05-21",
+        "id": 16393,
+        "link_id": "PRC_T1S5H0L5A2P2U1I7F5A5Z5G1Y6O4U4",
+        "title": "자유무역지역의 지정 및 운영에 관한 법률 일부개정법률안",
+        "proposed_date": "2015-05-22",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 10
+    },
+    {
+        "id": 949,
+        "link_id": "PRC_Y1W5I0V5S2D2G1U8I0M2T3I0S7J7I8",
+        "title": "전기사업법 일부개정법률안",
+        "proposed_date": "2015-05-22",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 10
+    },
+    {
+        "id": 17991,
+        "link_id": "PRC_W1N5U0K5F2U2R1B7C5R4A3Q9Z4C4E5",
+        "title": "중소기업제품 구매촉진 및 판로지원에 관한 법률 일부개정법률안",
+        "proposed_date": "2015-05-22",
         "decision_date": "0000-00-00",
         "status": "계류",
         "status_detail": "위원회 심사",
@@ -98,6 +88,16 @@
         "status": "계류",
         "status_detail": "위원회 심사",
         "actor_count": 93
+    },
+    {
+        "id": 660,
+        "link_id": "PRC_Z1P5B0V5N2U1L1L8W0K5F1D4L3V2K6",
+        "title": "건강가정기본법 일부개정법률안",
+        "proposed_date": "2015-05-21",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 10
     },
     {
         "id": 9246,
@@ -150,26 +150,6 @@
         "actor_count": 10
     },
     {
-        "id": 7375,
-        "link_id": "PRC_B1P5N0C5V1H2F1U7S1T7A1R6V1K7F5",
-        "title": "중소기업진흥에 관한 법률 일부개정법률안",
-        "proposed_date": "2015-05-12",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 13
-    },
-    {
-        "id": 8401,
-        "link_id": "PRC_L1R5F0I5T1U2Q1B6Q5V7S0M5S7L3F0",
-        "title": "근로복지기본법 일부개정법률안",
-        "proposed_date": "2015-05-12",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 13
-    },
-    {
         "id": 5051,
         "link_id": "PRC_M1I5N0P5Q1G2P1U7Z0V5M1L5S8Q3L2",
         "title": "고도 보존 및 육성에 관한 특별법 일부개정법률안",
@@ -188,5 +168,25 @@
         "status": "처리",
         "status_detail": "대안반영폐기",
         "actor_count": 15
+    },
+    {
+        "id": 7375,
+        "link_id": "PRC_B1P5N0C5V1H2F1U7S1T7A1R6V1K7F5",
+        "title": "중소기업진흥에 관한 법률 일부개정법률안",
+        "proposed_date": "2015-05-12",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 13
+    },
+    {
+        "id": 8401,
+        "link_id": "PRC_L1R5F0I5T1U2Q1B6Q5V7S0M5S7L3F0",
+        "title": "근로복지기본법 일부개정법률안",
+        "proposed_date": "2015-05-12",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 13
     }
 ]

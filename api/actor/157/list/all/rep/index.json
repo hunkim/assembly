@@ -1,5 +1,15 @@
 [
     {
+        "id": 3163,
+        "link_id": "PRC_C1E5V1K1Y0E6X1S1F0V6F3D0D4W3U2",
+        "title": "의료법 일부개정법률안",
+        "proposed_date": "2015-11-06",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 10
+    },
+    {
         "id": 17320,
         "link_id": "PRC_U1Q5Y1W1U0X6I1D0T1B5B3Z5W2I3P2",
         "title": "약사법 일부개정법률안",
@@ -10,10 +20,10 @@
         "actor_count": 10
     },
     {
-        "id": 3163,
-        "link_id": "PRC_C1E5V1K1Y0E6X1S1F0V6F3D0D4W3U2",
-        "title": "의료법 일부개정법률안",
-        "proposed_date": "2015-11-06",
+        "id": 2888,
+        "link_id": "PRC_T1P5B0A8T1H7B1F2V4D6U1C1F1G0C9",
+        "title": "국민연금법 일부개정법률안",
+        "proposed_date": "2015-08-17",
         "decision_date": "0000-00-00",
         "status": "계류",
         "status_detail": "위원회 심사",
@@ -40,30 +50,10 @@
         "actor_count": 10
     },
     {
-        "id": 2888,
-        "link_id": "PRC_T1P5B0A8T1H7B1F2V4D6U1C1F1G0C9",
-        "title": "국민연금법 일부개정법률안",
-        "proposed_date": "2015-08-17",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 10
-    },
-    {
         "id": 7907,
         "link_id": "PRC_H1A5J0C6A0R5F1Y5Z2G6L1I9A6S2U7",
         "title": "영유아보육법 일부개정법률안",
         "proposed_date": "2015-06-05",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 10
-    },
-    {
-        "id": 2077,
-        "link_id": "PRC_G1P5H0X6A0J2B1T8P0V9H5B9A8E7T0",
-        "title": "의료급여법 일부개정법률안",
-        "proposed_date": "2015-06-02",
         "decision_date": "0000-00-00",
         "status": "계류",
         "status_detail": "위원회 심사",
@@ -88,6 +78,16 @@
         "status": "계류",
         "status_detail": "위원회 심사",
         "actor_count": 11
+    },
+    {
+        "id": 2077,
+        "link_id": "PRC_G1P5H0X6A0J2B1T8P0V9H5B9A8E7T0",
+        "title": "의료급여법 일부개정법률안",
+        "proposed_date": "2015-06-02",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 10
     },
     {
         "id": 14169,
@@ -140,16 +140,6 @@
         "actor_count": 11
     },
     {
-        "id": 11635,
-        "link_id": "PRC_A1T4M0Y9G0G5V1A1G1A8E2W9G0B8C3",
-        "title": "국가재정법 일부개정법률안",
-        "proposed_date": "2014-09-05",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 121
-    },
-    {
         "id": 15292,
         "link_id": "PRC_W1Y4T0D9Z0A5Q1W1Q1A6X2L1S0Y1Q1",
         "title": "국가회계법 일부개정법률안",
@@ -178,6 +168,46 @@
         "status": "계류",
         "status_detail": "위원회 심사",
         "actor_count": 10
+    },
+    {
+        "id": 11635,
+        "link_id": "PRC_A1T4M0Y9G0G5V1A1G1A8E2W9G0B8C3",
+        "title": "국가재정법 일부개정법률안",
+        "proposed_date": "2014-09-05",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 121
+    },
+    {
+        "id": 15482,
+        "link_id": "PRC_G1M4Q0H5V0E2G1R6V4L8F4N2D8Z1G1",
+        "title": "저출산·고령사회기본법 일부개정법률안",
+        "proposed_date": "2014-05-02",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 29
+    },
+    {
+        "id": 4050,
+        "link_id": "PRC_I1E4E0M5H0K2H1K7K4B3W2Z1K7Y3I1",
+        "title": "지방공무원법 일부개정법률안",
+        "proposed_date": "2014-05-02",
+        "decision_date": "2015-04-30",
+        "status": "처리",
+        "status_detail": "대안반영폐기",
+        "actor_count": 26
+    },
+    {
+        "id": 4483,
+        "link_id": "PRC_T1U4U0N5Y0D2I1C6R5M2K1N7N0I0G8",
+        "title": "가족친화 사회환경의 조성 촉진에 관한 법률 일부개정법률안",
+        "proposed_date": "2014-05-02",
+        "decision_date": "2015-03-03",
+        "status": "처리",
+        "status_detail": "대안반영폐기",
+        "actor_count": 27
     },
     {
         "id": 867,
@@ -218,35 +248,5 @@
         "status": "계류",
         "status_detail": "위원회 심사",
         "actor_count": 29
-    },
-    {
-        "id": 15482,
-        "link_id": "PRC_G1M4Q0H5V0E2G1R6V4L8F4N2D8Z1G1",
-        "title": "저출산·고령사회기본법 일부개정법률안",
-        "proposed_date": "2014-05-02",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 29
-    },
-    {
-        "id": 4050,
-        "link_id": "PRC_I1E4E0M5H0K2H1K7K4B3W2Z1K7Y3I1",
-        "title": "지방공무원법 일부개정법률안",
-        "proposed_date": "2014-05-02",
-        "decision_date": "2015-04-30",
-        "status": "처리",
-        "status_detail": "대안반영폐기",
-        "actor_count": 26
-    },
-    {
-        "id": 4483,
-        "link_id": "PRC_T1U4U0N5Y0D2I1C6R5M2K1N7N0I0G8",
-        "title": "가족친화 사회환경의 조성 촉진에 관한 법률 일부개정법률안",
-        "proposed_date": "2014-05-02",
-        "decision_date": "2015-03-03",
-        "status": "처리",
-        "status_detail": "대안반영폐기",
-        "actor_count": 27
     }
 ]

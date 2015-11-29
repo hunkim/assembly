@@ -1,15 +1,5 @@
 [
     {
-        "id": 5111,
-        "link_id": "PRC_Q1J5X1Q1K0J3K1I7M5B0I2D8Y7W1L3",
-        "title": "북한이탈주민의 보호 및 정착지원에 관한 법률 일부개정법률안",
-        "proposed_date": "2015-11-03",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 14
-    },
-    {
         "id": 15409,
         "link_id": "PRC_N1F5Y1Q1U0Q3X1W8K1Y0G5S3O2U6D9",
         "title": "상속세 및 증여세법 일부개정법률안",
@@ -30,6 +20,16 @@
         "actor_count": 15
     },
     {
+        "id": 5111,
+        "link_id": "PRC_Q1J5X1Q1K0J3K1I7M5B0I2D8Y7W1L3",
+        "title": "북한이탈주민의 보호 및 정착지원에 관한 법률 일부개정법률안",
+        "proposed_date": "2015-11-03",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 14
+    },
+    {
         "id": 14641,
         "link_id": "PRC_C1V5M1Q0V2Y7G1C7I2F3H0M6V9G0S8",
         "title": "도로명주소법 일부개정법률안",
@@ -40,9 +40,9 @@
         "actor_count": 11
     },
     {
-        "id": 5477,
-        "link_id": "PRC_Q1B5P1E0W1P5L1A4A3S2O1T2F1P2I2",
-        "title": "화학무기·생물무기의 금지와 특정화학물질·생물작용제 등의 제조·수출입 규제 등에 관한 법률 일부개정법률안",
+        "id": 12940,
+        "link_id": "PRC_D1X5E1Z0T1I5X0Q9K4S5U3K4V0Y5V5",
+        "title": "감염병의 예방 및 관리에 관한 법률 일부개정법률안",
         "proposed_date": "2015-10-15",
         "decision_date": "0000-00-00",
         "status": "계류",
@@ -50,9 +50,9 @@
         "actor_count": 41
     },
     {
-        "id": 12940,
-        "link_id": "PRC_D1X5E1Z0T1I5X0Q9K4S5U3K4V0Y5V5",
-        "title": "감염병의 예방 및 관리에 관한 법률 일부개정법률안",
+        "id": 5477,
+        "link_id": "PRC_Q1B5P1E0W1P5L1A4A3S2O1T2F1P2I2",
+        "title": "화학무기·생물무기의 금지와 특정화학물질·생물작용제 등의 제조·수출입 규제 등에 관한 법률 일부개정법률안",
         "proposed_date": "2015-10-15",
         "decision_date": "0000-00-00",
         "status": "계류",
@@ -200,36 +200,6 @@
         "actor_count": 10
     },
     {
-        "id": 13926,
-        "link_id": "PRC_H1J4V0B3O1P4S1O5K5H7R2J7B2C1T7",
-        "title": "남극활동 및 환경보호에 관한 법률 일부개정법률안",
-        "proposed_date": "2014-03-14",
-        "decision_date": "2014-09-30",
-        "status": "처리",
-        "status_detail": "공포",
-        "actor_count": 10
-    },
-    {
-        "id": 8269,
-        "link_id": "PRC_O1Y4U0M3U1S4A1P6C1I1G2D2Z7B9R2",
-        "title": "한국국제교류재단법 일부개정법률안",
-        "proposed_date": "2014-03-14",
-        "decision_date": "2014-09-30",
-        "status": "처리",
-        "status_detail": "공포",
-        "actor_count": 10
-    },
-    {
-        "id": 3432,
-        "link_id": "PRC_E1O4W0R3R1D4J1T6P0A1J0N1Q0L7B9",
-        "title": "해외이주법 일부개정법률안",
-        "proposed_date": "2014-03-14",
-        "decision_date": "2014-09-30",
-        "status": "처리",
-        "status_detail": "공포",
-        "actor_count": 10
-    },
-    {
         "id": 10913,
         "link_id": "PRC_K1E4U0T3B1Y4B1L5Q5P1A1R6H2C8S9",
         "title": "재외동포재단법 일부개정법률안",
@@ -250,14 +220,34 @@
         "actor_count": 10
     },
     {
-        "id": 12854,
-        "link_id": "PRC_T1N3H1N2N2V4I1O7F2Q7B0N7O0T7U5",
-        "title": "남북관계 발전에 관한 법률 일부개정법률안",
-        "proposed_date": "2013-12-24",
-        "decision_date": "2014-04-29",
+        "id": 8269,
+        "link_id": "PRC_O1Y4U0M3U1S4A1P6C1I1G2D2Z7B9R2",
+        "title": "한국국제교류재단법 일부개정법률안",
+        "proposed_date": "2014-03-14",
+        "decision_date": "2014-09-30",
         "status": "처리",
         "status_detail": "공포",
-        "actor_count": 12
+        "actor_count": 10
+    },
+    {
+        "id": 13926,
+        "link_id": "PRC_H1J4V0B3O1P4S1O5K5H7R2J7B2C1T7",
+        "title": "남극활동 및 환경보호에 관한 법률 일부개정법률안",
+        "proposed_date": "2014-03-14",
+        "decision_date": "2014-09-30",
+        "status": "처리",
+        "status_detail": "공포",
+        "actor_count": 10
+    },
+    {
+        "id": 3432,
+        "link_id": "PRC_E1O4W0R3R1D4J1T6P0A1J0N1Q0L7B9",
+        "title": "해외이주법 일부개정법률안",
+        "proposed_date": "2014-03-14",
+        "decision_date": "2014-09-30",
+        "status": "처리",
+        "status_detail": "공포",
+        "actor_count": 10
     },
     {
         "id": 2535,
@@ -268,6 +258,16 @@
         "status": "계류",
         "status_detail": "위원회 심사",
         "actor_count": 11
+    },
+    {
+        "id": 12854,
+        "link_id": "PRC_T1N3H1N2N2V4I1O7F2Q7B0N7O0T7U5",
+        "title": "남북관계 발전에 관한 법률 일부개정법률안",
+        "proposed_date": "2013-12-24",
+        "decision_date": "2014-04-29",
+        "status": "처리",
+        "status_detail": "공포",
+        "actor_count": 12
     },
     {
         "id": 9327,
@@ -300,16 +300,6 @@
         "actor_count": 12
     },
     {
-        "id": 10600,
-        "link_id": "PRC_F1Y3Y0R7U0V4K1V0B2M6S5L0R9I4E2",
-        "title": "인사청문회법 일부개정법률안",
-        "proposed_date": "2013-07-04",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 11
-    },
-    {
         "id": 9126,
         "link_id": "PRC_R1R3K0D7N0I4L1R0I2L8E2H6P4E2T6",
         "title": "공직자윤리법 일부개정법률안",
@@ -328,6 +318,16 @@
         "status": "계류",
         "status_detail": "위원회 심사",
         "actor_count": 15
+    },
+    {
+        "id": 10600,
+        "link_id": "PRC_F1Y3Y0R7U0V4K1V0B2M6S5L0R9I4E2",
+        "title": "인사청문회법 일부개정법률안",
+        "proposed_date": "2013-07-04",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 11
     },
     {
         "id": 6933,
@@ -470,9 +470,9 @@
         "actor_count": 21
     },
     {
-        "id": 16985,
-        "link_id": "PRC_N1G3H0R1S1C5Z1M5I3Z8P0W9K5V5I1",
-        "title": "국회에서의 증언·감정 등에 관한 법률 일부개정법률안",
+        "id": 16110,
+        "link_id": "PRC_Q1M3K0D1R1K5J1J6F2O4N5U0R3V3L6",
+        "title": "국정감사 및 조사에 관한 법률 일부개정법률안",
         "proposed_date": "2013-01-15",
         "decision_date": "0000-00-00",
         "status": "계류",
@@ -480,9 +480,9 @@
         "actor_count": 10
     },
     {
-        "id": 16110,
-        "link_id": "PRC_Q1M3K0D1R1K5J1J6F2O4N5U0R3V3L6",
-        "title": "국정감사 및 조사에 관한 법률 일부개정법률안",
+        "id": 16985,
+        "link_id": "PRC_N1G3H0R1S1C5Z1M5I3Z8P0W9K5V5I1",
+        "title": "국회에서의 증언·감정 등에 관한 법률 일부개정법률안",
         "proposed_date": "2013-01-15",
         "decision_date": "0000-00-00",
         "status": "계류",
@@ -510,16 +510,6 @@
         "actor_count": 12
     },
     {
-        "id": 17127,
-        "link_id": "PRC_C1A2Y1T1L1A5X1O0B5N1V1T6L6Y5O7",
-        "title": "여신전문금융업법 일부개정법률안",
-        "proposed_date": "2012-11-15",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 10
-    },
-    {
         "id": 13867,
         "link_id": "PRC_J1W2X1B1I1O5M1V0U5L4E1P2I6W3O4",
         "title": "북한주민 인권증진법안",
@@ -527,6 +517,16 @@
         "decision_date": "2014-04-25",
         "status": "처리",
         "status_detail": "철회",
+        "actor_count": 10
+    },
+    {
+        "id": 17127,
+        "link_id": "PRC_C1A2Y1T1L1A5X1O0B5N1V1T6L6Y5O7",
+        "title": "여신전문금융업법 일부개정법률안",
+        "proposed_date": "2012-11-15",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
         "actor_count": 10
     },
     {
@@ -550,16 +550,6 @@
         "actor_count": 11
     },
     {
-        "id": 11486,
-        "link_id": "PRC_M1H2M0J9Y2D1B1R1L2M4G0A1I4Y7E1",
-        "title": "남북경협 기업 피해 신고처 설치 촉구 결의안",
-        "proposed_date": "2012-09-21",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 12
-    },
-    {
         "id": 15618,
         "link_id": "PRC_K1C2L0T9H2S1Y1A1S2Q1G4D3X1C5D7",
         "title": "북한이탈주민의 보호 및 정착지원에 관한 법률 일부개정법률안",
@@ -568,6 +558,16 @@
         "status": "계류",
         "status_detail": "위원회 심사",
         "actor_count": 10
+    },
+    {
+        "id": 11486,
+        "link_id": "PRC_M1H2M0J9Y2D1B1R1L2M4G0A1I4Y7E1",
+        "title": "남북경협 기업 피해 신고처 설치 촉구 결의안",
+        "proposed_date": "2012-09-21",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 12
     },
     {
         "id": 15363,
@@ -600,16 +600,6 @@
         "actor_count": 128
     },
     {
-        "id": 8603,
-        "link_id": "PRC_V1F2H0I7P1Q3C1D7F0H8K1J0D1U2A1",
-        "title": "사회적기업 육성법 일부개정법률안",
-        "proposed_date": "2012-07-13",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 11
-    },
-    {
         "id": 4846,
         "link_id": "PRC_B1I2D0T7B1H3S1F7D1J2H2B2L1N2A6",
         "title": "대·중소기업 상생협력 촉진에 관한 법률 일부개정법률안",
@@ -618,6 +608,16 @@
         "status": "처리",
         "status_detail": "대안반영폐기",
         "actor_count": 10
+    },
+    {
+        "id": 8603,
+        "link_id": "PRC_V1F2H0I7P1Q3C1D7F0H8K1J0D1U2A1",
+        "title": "사회적기업 육성법 일부개정법률안",
+        "proposed_date": "2012-07-13",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 11
     },
     {
         "id": 4155,

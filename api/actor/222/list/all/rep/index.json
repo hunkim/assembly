@@ -40,9 +40,9 @@
         "actor_count": 10
     },
     {
-        "id": 13563,
-        "link_id": "PRC_C1C5I0J3R2L4G0U9K3A9S3L5E9Z7T1",
-        "title": "학술진흥법 일부개정법률안",
+        "id": 1484,
+        "link_id": "PRC_V1M5N0R3G2X4O0Z9P5Y0M1K3L8J3I3",
+        "title": "과학기술기본법 일부개정법률안",
         "proposed_date": "2015-03-24",
         "decision_date": "0000-00-00",
         "status": "계류",
@@ -50,9 +50,9 @@
         "actor_count": 10
     },
     {
-        "id": 1484,
-        "link_id": "PRC_V1M5N0R3G2X4O0Z9P5Y0M1K3L8J3I3",
-        "title": "과학기술기본법 일부개정법률안",
+        "id": 13563,
+        "link_id": "PRC_C1C5I0J3R2L4G0U9K3A9S3L5E9Z7T1",
+        "title": "학술진흥법 일부개정법률안",
         "proposed_date": "2015-03-24",
         "decision_date": "0000-00-00",
         "status": "계류",
@@ -80,6 +80,16 @@
         "actor_count": 10
     },
     {
+        "id": 1407,
+        "link_id": "PRC_W1E5A0K2A2J6J0W9Q5M3S4P3F0S9W0",
+        "title": "형사소송법 일부개정법률안",
+        "proposed_date": "2015-02-26",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 10
+    },
+    {
         "id": 356,
         "link_id": "PRC_A1Z5V0D2K2K6A0D9W4S0U5B6K9B2X0",
         "title": "형의 집행 및 수용자의 처우에 관한 법률 일부개정법률안",
@@ -90,10 +100,10 @@
         "actor_count": 10
     },
     {
-        "id": 1407,
-        "link_id": "PRC_W1E5A0K2A2J6J0W9Q5M3S4P3F0S9W0",
-        "title": "형사소송법 일부개정법률안",
-        "proposed_date": "2015-02-26",
+        "id": 4894,
+        "link_id": "PRC_Y1D4F1K2L3J1N1K3V5E0I1T8Q5U4V2",
+        "title": "예술인 복지법 일부개정법률안",
+        "proposed_date": "2014-12-31",
         "decision_date": "0000-00-00",
         "status": "계류",
         "status_detail": "위원회 심사",
@@ -113,16 +123,6 @@
         "id": 5819,
         "link_id": "PRC_X1M4F1H2W3Q1U0B9Z3P2X4X2U8P0A1",
         "title": "콘텐츠산업 진흥법 일부개정법률안",
-        "proposed_date": "2014-12-31",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 10
-    },
-    {
-        "id": 4894,
-        "link_id": "PRC_Y1D4F1K2L3J1N1K3V5E0I1T8Q5U4V2",
-        "title": "예술인 복지법 일부개정법률안",
         "proposed_date": "2014-12-31",
         "decision_date": "0000-00-00",
         "status": "계류",
@@ -260,16 +260,6 @@
         "actor_count": 14
     },
     {
-        "id": 4231,
-        "link_id": "PRC_J1H3U0E3R2I9H1Z3U4B4A0G0T9Q7Z0",
-        "title": "도로교통법 일부개정법률안",
-        "proposed_date": "2013-03-29",
-        "decision_date": "2013-12-31",
-        "status": "처리",
-        "status_detail": "대안반영폐기",
-        "actor_count": 12
-    },
-    {
         "id": 4741,
         "link_id": "PRC_J1A3W0R3A2I9R1G3Y0P6J4B8V5N1V5",
         "title": "어린이 식생활안전관리 특별법 일부개정법률안",
@@ -288,6 +278,16 @@
         "status": "계류",
         "status_detail": "위원회 심사",
         "actor_count": 10
+    },
+    {
+        "id": 4231,
+        "link_id": "PRC_J1H3U0E3R2I9H1Z3U4B4A0G0T9Q7Z0",
+        "title": "도로교통법 일부개정법률안",
+        "proposed_date": "2013-03-29",
+        "decision_date": "2013-12-31",
+        "status": "처리",
+        "status_detail": "대안반영폐기",
+        "actor_count": 12
     },
     {
         "id": 1409,
@@ -360,16 +360,6 @@
         "actor_count": 11
     },
     {
-        "id": 15489,
-        "link_id": "PRC_D1C3I0N1C1K5N1D0Y3I2Y5A6X0D3K7",
-        "title": "보건의료기술 진흥법 일부개정법률안",
-        "proposed_date": "2013-01-15",
-        "decision_date": "2013-06-27",
-        "status": "처리",
-        "status_detail": "대안반영폐기",
-        "actor_count": 10
-    },
-    {
         "id": 7392,
         "link_id": "PRC_M1G3E0D1Z1H5H1G0C1K9T3Q4C6C7K0",
         "title": "국민건강보험법 일부개정법률안",
@@ -387,6 +377,16 @@
         "decision_date": "0000-00-00",
         "status": "계류",
         "status_detail": "위원회 심사",
+        "actor_count": 10
+    },
+    {
+        "id": 15489,
+        "link_id": "PRC_D1C3I0N1C1K5N1D0Y3I2Y5A6X0D3K7",
+        "title": "보건의료기술 진흥법 일부개정법률안",
+        "proposed_date": "2013-01-15",
+        "decision_date": "2013-06-27",
+        "status": "처리",
+        "status_detail": "대안반영폐기",
         "actor_count": 10
     },
     {
@@ -450,16 +450,6 @@
         "actor_count": 25
     },
     {
-        "id": 893,
-        "link_id": "PRC_X1M2W0H6I2V2X1X4Y2F9J4F0W5N9B1",
-        "title": "청소년 보호법 일부개정법률안",
-        "proposed_date": "2012-06-22",
-        "decision_date": "2014-05-02",
-        "status": "처리",
-        "status_detail": "공포",
-        "actor_count": 10
-    },
-    {
         "id": 16849,
         "link_id": "PRC_H1Y2X0G6Q2M2Y1H4A2C4V1A6R5B3X3",
         "title": "가축전염병예방법 일부개정법률안",
@@ -467,6 +457,16 @@
         "decision_date": "0000-00-00",
         "status": "계류",
         "status_detail": "위원회 심사",
+        "actor_count": 10
+    },
+    {
+        "id": 893,
+        "link_id": "PRC_X1M2W0H6I2V2X1X4Y2F9J4F0W5N9B1",
+        "title": "청소년 보호법 일부개정법률안",
+        "proposed_date": "2012-06-22",
+        "decision_date": "2014-05-02",
+        "status": "처리",
+        "status_detail": "공포",
         "actor_count": 10
     }
 ]

@@ -10,16 +10,6 @@
         "actor_count": 38
     },
     {
-        "id": 11997,
-        "link_id": "PRC_E1B2Z1O1A0W7A1X5S0R0P0U8F3D3W8",
-        "title": "세종특별자치시 설치 등에 관한 특별법 일부개정법률안",
-        "proposed_date": "2012-11-07",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 19
-    },
-    {
         "id": 6460,
         "link_id": "PRC_A1X2O1G1O0D7O1Y4C5V8J2V6B3V6N3",
         "title": "학교용지 확보 등에 관한 특례법 일부개정법률안",
@@ -28,6 +18,16 @@
         "status": "계류",
         "status_detail": "위원회 심사",
         "actor_count": 18
+    },
+    {
+        "id": 11997,
+        "link_id": "PRC_E1B2Z1O1A0W7A1X5S0R0P0U8F3D3W8",
+        "title": "세종특별자치시 설치 등에 관한 특별법 일부개정법률안",
+        "proposed_date": "2012-11-07",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 19
     },
     {
         "id": 11890,
@@ -40,16 +40,6 @@
         "actor_count": 172
     },
     {
-        "id": 710,
-        "link_id": "PRC_F1K2Z1V1X0P2V1V6G4L6A4G2L2Q0C5",
-        "title": "축산법 일부개정법률안",
-        "proposed_date": "2012-11-02",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 11
-    },
-    {
         "id": 8798,
         "link_id": "PRC_W1L2T1O1B0B2P1K7G2F2U2J2X8H4E7",
         "title": "도청이전을 위한 도시건설 및 지원에 관한 특별법 일부개정법률안",
@@ -58,6 +48,16 @@
         "status": "처리",
         "status_detail": "대안반영폐기",
         "actor_count": 100
+    },
+    {
+        "id": 710,
+        "link_id": "PRC_F1K2Z1V1X0P2V1V6G4L6A4G2L2Q0C5",
+        "title": "축산법 일부개정법률안",
+        "proposed_date": "2012-11-02",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 11
     },
     {
         "id": 13726,
@@ -110,16 +110,6 @@
         "actor_count": 20
     },
     {
-        "id": 7138,
-        "link_id": "PRC_R1F2H0N9Z2B1D1L0I5A4Z4Y6Z0J6U6",
-        "title": "의료법 일부개정법률안",
-        "proposed_date": "2012-09-21",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 11
-    },
-    {
         "id": 5664,
         "link_id": "PRC_X1V2X0X9H2G1W1W1F0U4O0W0X5O7R6",
         "title": "건강기능식품에 관한 법률 일부개정법률안",
@@ -133,6 +123,16 @@
         "id": 10201,
         "link_id": "PRC_R1E2X0V9L2Q1C1Y1H0D2X4L4X0H2S2",
         "title": "의료기기법 일부개정법률안",
+        "proposed_date": "2012-09-21",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 11
+    },
+    {
+        "id": 7138,
+        "link_id": "PRC_R1F2H0N9Z2B1D1L0I5A4Z4Y6Z0J6U6",
+        "title": "의료법 일부개정법률안",
         "proposed_date": "2012-09-21",
         "decision_date": "0000-00-00",
         "status": "계류",
@@ -320,21 +320,21 @@
         "actor_count": 13
     },
     {
-        "id": 3456,
-        "link_id": "PRC_R1S2K0G6S2I5M1Y1Z0I9C3X2F2G0G0",
-        "title": "국가재정법 일부개정법률안",
-        "proposed_date": "2012-06-25",
-        "decision_date": "2014-01-01",
-        "status": "처리",
-        "status_detail": "대안반영폐기",
-        "actor_count": 10
-    },
-    {
         "id": 17614,
         "link_id": "PRC_H1K2B0X6I2P5B1A1C0R6A1Q9M3P8W5",
         "title": "공공기관의 운영에 관한 법률 일부개정법률안",
         "proposed_date": "2012-06-25",
         "decision_date": "2013-12-26",
+        "status": "처리",
+        "status_detail": "대안반영폐기",
+        "actor_count": 10
+    },
+    {
+        "id": 3456,
+        "link_id": "PRC_R1S2K0G6S2I5M1Y1Z0I9C3X2F2G0G0",
+        "title": "국가재정법 일부개정법률안",
+        "proposed_date": "2012-06-25",
+        "decision_date": "2014-01-01",
         "status": "처리",
         "status_detail": "대안반영폐기",
         "actor_count": 10

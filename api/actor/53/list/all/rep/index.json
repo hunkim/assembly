@@ -1,15 +1,5 @@
 [
     {
-        "id": 8349,
-        "link_id": "PRC_R1J5X1Y0X2X6R1Y6M4R0S1D2V2G5S5",
-        "title": "환경영향평가법 일부개정법률안",
-        "proposed_date": "2015-10-26",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 10
-    },
-    {
         "id": 14759,
         "link_id": "PRC_S1I5C1W0Y2R6U1J6S3F5P0Z7R9Z2M4",
         "title": "관광진흥법 일부개정법률안",
@@ -20,10 +10,10 @@
         "actor_count": 11
     },
     {
-        "id": 557,
-        "link_id": "PRC_K1J5O0D8P3A1N1C7O5Q0R4P9H1V6X2",
-        "title": "해양조사와 그 정보활용에 관한 법률안",
-        "proposed_date": "2015-08-31",
+        "id": 8349,
+        "link_id": "PRC_R1J5X1Y0X2X6R1Y6M4R0S1D2V2G5S5",
+        "title": "환경영향평가법 일부개정법률안",
+        "proposed_date": "2015-10-26",
         "decision_date": "0000-00-00",
         "status": "계류",
         "status_detail": "위원회 심사",
@@ -40,20 +30,10 @@
         "actor_count": 10
     },
     {
-        "id": 15707,
-        "link_id": "PRC_V1W5S0J8A2O6J1R5V5V3T1E1G2G8Z8",
-        "title": "농어업인 삶의 질 향상 및 농어촌지역 개발촉진에 관한 특별법 일부개정법률안",
-        "proposed_date": "2015-08-26",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 10
-    },
-    {
-        "id": 6564,
-        "link_id": "PRC_N1Z5C0Q8B2Y6L1P5B2Z5F5P9A9Y4M0",
-        "title": "농어촌구조개선 특별회계법 일부개정법률안",
-        "proposed_date": "2015-08-26",
+        "id": 557,
+        "link_id": "PRC_K1J5O0D8P3A1N1C7O5Q0R4P9H1V6X2",
+        "title": "해양조사와 그 정보활용에 관한 법률안",
+        "proposed_date": "2015-08-31",
         "decision_date": "0000-00-00",
         "status": "계류",
         "status_detail": "위원회 심사",
@@ -73,6 +53,26 @@
         "id": 2261,
         "link_id": "PRC_N1U5T0M8C2A6V1W5Y5B4N2K2D8Y4R5",
         "title": "농림수산식품투자조합 결성 및 운용에 관한 법률 일부개정법률안",
+        "proposed_date": "2015-08-26",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 10
+    },
+    {
+        "id": 15707,
+        "link_id": "PRC_V1W5S0J8A2O6J1R5V5V3T1E1G2G8Z8",
+        "title": "농어업인 삶의 질 향상 및 농어촌지역 개발촉진에 관한 특별법 일부개정법률안",
+        "proposed_date": "2015-08-26",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 10
+    },
+    {
+        "id": 6564,
+        "link_id": "PRC_N1Z5C0Q8B2Y6L1P5B2Z5F5P9A9Y4M0",
+        "title": "농어촌구조개선 특별회계법 일부개정법률안",
         "proposed_date": "2015-08-26",
         "decision_date": "0000-00-00",
         "status": "계류",
@@ -310,16 +310,6 @@
         "actor_count": 10
     },
     {
-        "id": 5469,
-        "link_id": "PRC_Z1D3I1O0J3M1J1Q8H0J4P3U7I4Y8B2",
-        "title": "염업조합법 일부개정법률안",
-        "proposed_date": "2013-10-31",
-        "decision_date": "2014-04-29",
-        "status": "처리",
-        "status_detail": "공포",
-        "actor_count": 10
-    },
-    {
         "id": 17108,
         "link_id": "PRC_E1Y3W1L0B3F1I1Q8Q0E3J3V0N9B2E6",
         "title": "산림조합법 일부개정법률안",
@@ -327,6 +317,16 @@
         "decision_date": "2014-02-28",
         "status": "처리",
         "status_detail": "대안반영폐기",
+        "actor_count": 10
+    },
+    {
+        "id": 5383,
+        "link_id": "PRC_C1K3S1X0V3J1Y1U8N0M5E5A0W5R0E8",
+        "title": "수산업협동조합법 일부개정법률안",
+        "proposed_date": "2013-10-31",
+        "decision_date": "2014-04-29",
+        "status": "처리",
+        "status_detail": "공포",
         "actor_count": 10
     },
     {
@@ -340,9 +340,9 @@
         "actor_count": 10
     },
     {
-        "id": 5383,
-        "link_id": "PRC_C1K3S1X0V3J1Y1U8N0M5E5A0W5R0E8",
-        "title": "수산업협동조합법 일부개정법률안",
+        "id": 5469,
+        "link_id": "PRC_Z1D3I1O0J3M1J1Q8H0J4P3U7I4Y8B2",
+        "title": "염업조합법 일부개정법률안",
         "proposed_date": "2013-10-31",
         "decision_date": "2014-04-29",
         "status": "처리",
@@ -370,16 +370,6 @@
         "actor_count": 10
     },
     {
-        "id": 824,
-        "link_id": "PRC_K1G3U0Y6S2Q4E1K4C2X7N4U4M4S1R1",
-        "title": "국가유공자 등 예우 및 지원에 관한 법률 일부개정법률안",
-        "proposed_date": "2013-06-24",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 11
-    },
-    {
         "id": 14132,
         "link_id": "PRC_Z1L3F0X6J2Y4M1W4U3U2J0D5Y3W0A8",
         "title": "참전유공자예우 및 단체설립에 관한 법률 일부개정법률안",
@@ -388,6 +378,16 @@
         "status": "계류",
         "status_detail": "위원회 심사",
         "actor_count": 12
+    },
+    {
+        "id": 12050,
+        "link_id": "PRC_F1U3Q0A6Y2Q4R1F4U3M0O5Q4P2D4F2",
+        "title": "국민기초생활 보장법 일부개정법률안",
+        "proposed_date": "2013-06-24",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 11
     },
     {
         "id": 17197,
@@ -400,9 +400,9 @@
         "actor_count": 11
     },
     {
-        "id": 12050,
-        "link_id": "PRC_F1U3Q0A6Y2Q4R1F4U3M0O5Q4P2D4F2",
-        "title": "국민기초생활 보장법 일부개정법률안",
+        "id": 824,
+        "link_id": "PRC_K1G3U0Y6S2Q4E1K4C2X7N4U4M4S1R1",
+        "title": "국가유공자 등 예우 및 지원에 관한 법률 일부개정법률안",
         "proposed_date": "2013-06-24",
         "decision_date": "0000-00-00",
         "status": "계류",

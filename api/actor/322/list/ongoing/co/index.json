@@ -110,16 +110,6 @@
         "actor_count": 10
     },
     {
-        "id": 13524,
-        "link_id": "PRC_N1Q3T0O1P0L8P1V5N2X0Y2V7O8O5Y5",
-        "title": "인터넷게임중독 치유지원에 관한 법률안",
-        "proposed_date": "2013-01-08",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 17
-    },
-    {
         "id": 13544,
         "link_id": "PRC_I1P3X0Y1W0T8H1Y5F4T6D5J3G2N7H2",
         "title": "인터넷게임중독 예방에 관한 법률안",
@@ -133,6 +123,16 @@
         "id": 17486,
         "link_id": "PRC_R1H3Z0S1Z0N8E1D5Y1R5Q5M5J7W4P5",
         "title": "군인사법 일부개정법률안",
+        "proposed_date": "2013-01-08",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 17
+    },
+    {
+        "id": 13524,
+        "link_id": "PRC_N1Q3T0O1P0L8P1V5N2X0Y2V7O8O5Y5",
+        "title": "인터넷게임중독 치유지원에 관한 법률안",
         "proposed_date": "2013-01-08",
         "decision_date": "0000-00-00",
         "status": "계류",
@@ -160,6 +160,16 @@
         "actor_count": 10
     },
     {
+        "id": 3977,
+        "link_id": "PRC_V1D2G1N2O0H4A1M6C4V4S4X6U2G0N3",
+        "title": "평생교육법 일부개정법률안",
+        "proposed_date": "2012-12-04",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 10
+    },
+    {
         "id": 16909,
         "link_id": "PRC_V1X2E1U2R0W4D1Z6Z4W6Z4H6W0Z9X4",
         "title": "노인복지법 일부개정법률안",
@@ -180,16 +190,6 @@
         "actor_count": 10
     },
     {
-        "id": 3977,
-        "link_id": "PRC_V1D2G1N2O0H4A1M6C4V4S4X6U2G0N3",
-        "title": "평생교육법 일부개정법률안",
-        "proposed_date": "2012-12-04",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 10
-    },
-    {
         "id": 13905,
         "link_id": "PRC_C1F2Y1N1Y1I5X1I6M2H9J2L1X9K4S9",
         "title": "2007년 제2차 남북정상회담 대화록 중 노무현 전 대통령의 북방한계선(NLL) 및 북핵 관련 발언과 2007년 8월 18일 제2차 남북정상회담 추진위원회(위원장 문재인) 회의 보고서ㆍ회의록 등 자료 제출 요구안",
@@ -198,26 +198,6 @@
         "status": "계류",
         "status_detail": "접수",
         "actor_count": 150
-    },
-    {
-        "id": 1806,
-        "link_id": "PRC_F1S2T1N0O2K9T1M1N3W6V4N0Z8L4P2",
-        "title": "국회의원(김광진) 징계안",
-        "proposed_date": "2012-10-29",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 22
-    },
-    {
-        "id": 10468,
-        "link_id": "PRC_C1U2W1D0Z2E9R1G1L3M4R0J2P4U5Q0",
-        "title": "도시공원 및 녹지 등에 관한 법률 일부개정법률안",
-        "proposed_date": "2012-10-29",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 10
     },
     {
         "id": 2575,
@@ -230,9 +210,29 @@
         "actor_count": 10
     },
     {
-        "id": 5264,
-        "link_id": "PRC_T1A2Y1I0G2I3W1J8L1V1M4Q8C1N5J4",
-        "title": "국유재산특례제한법 일부개정법률안",
+        "id": 10468,
+        "link_id": "PRC_C1U2W1D0Z2E9R1G1L3M4R0J2P4U5Q0",
+        "title": "도시공원 및 녹지 등에 관한 법률 일부개정법률안",
+        "proposed_date": "2012-10-29",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 10
+    },
+    {
+        "id": 1806,
+        "link_id": "PRC_F1S2T1N0O2K9T1M1N3W6V4N0Z8L4P2",
+        "title": "국회의원(김광진) 징계안",
+        "proposed_date": "2012-10-29",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 22
+    },
+    {
+        "id": 3166,
+        "link_id": "PRC_V1I2C1I0U2S3J1E8M1Q0V4N1B1D9U6",
+        "title": "직능인 경제활동 지원에 관한 법률 일부개정법률안",
         "proposed_date": "2012-10-23",
         "decision_date": "0000-00-00",
         "status": "계류",
@@ -240,9 +240,9 @@
         "actor_count": 10
     },
     {
-        "id": 3166,
-        "link_id": "PRC_V1I2C1I0U2S3J1E8M1Q0V4N1B1D9U6",
-        "title": "직능인 경제활동 지원에 관한 법률 일부개정법률안",
+        "id": 5264,
+        "link_id": "PRC_T1A2Y1I0G2I3W1J8L1V1M4Q8C1N5J4",
+        "title": "국유재산특례제한법 일부개정법률안",
         "proposed_date": "2012-10-23",
         "decision_date": "0000-00-00",
         "status": "계류",
@@ -280,16 +280,6 @@
         "actor_count": 10
     },
     {
-        "id": 13429,
-        "link_id": "PRC_V1P2M0U9W1J2N1K7F5V8Y1J4Y6U9D4",
-        "title": "부가가치세법 일부개정법률안",
-        "proposed_date": "2012-09-12",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 11
-    },
-    {
         "id": 10761,
         "link_id": "PRC_P1Y2G0K9V1X2K1K7O5B8G4R2D3R0U7",
         "title": "식품산업진흥법 일부개정법률안",
@@ -310,14 +300,14 @@
         "actor_count": 10
     },
     {
-        "id": 333,
-        "link_id": "PRC_D1J2Y0Y9G0G3T1Z1D4P2Q0N4H0O7L2",
-        "title": "대·중소기업 상생협력 촉진에 관한 법률 일부개정법률안",
-        "proposed_date": "2012-09-03",
+        "id": 13429,
+        "link_id": "PRC_V1P2M0U9W1J2N1K7F5V8Y1J4Y6U9D4",
+        "title": "부가가치세법 일부개정법률안",
+        "proposed_date": "2012-09-12",
         "decision_date": "0000-00-00",
         "status": "계류",
         "status_detail": "위원회 심사",
-        "actor_count": 23
+        "actor_count": 11
     },
     {
         "id": 11440,
@@ -328,6 +318,16 @@
         "status": "계류",
         "status_detail": "위원회 심사",
         "actor_count": 11
+    },
+    {
+        "id": 333,
+        "link_id": "PRC_D1J2Y0Y9G0G3T1Z1D4P2Q0N4H0O7L2",
+        "title": "대·중소기업 상생협력 촉진에 관한 법률 일부개정법률안",
+        "proposed_date": "2012-09-03",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 23
     },
     {
         "id": 12710,

@@ -20,21 +20,21 @@
         "actor_count": 10
     },
     {
-        "id": 11400,
-        "link_id": "PRC_C1T4R0C2Y0X5E1S1X3G1V2G2S4N1N4",
-        "title": "과학기술분야 정부출연연구기관 등의 설립·운영 및 육성에 관한 법률 일부개정법률안",
-        "proposed_date": "2014-02-05",
-        "decision_date": "2014-12-09",
-        "status": "처리",
-        "status_detail": "대안반영폐기",
-        "actor_count": 10
-    },
-    {
         "id": 11182,
         "link_id": "PRC_G1O4F0L2G0H5K1K1Y3J2H1N6X9X8O9",
         "title": "행정기관 소속 위원회의 설치·운영에 관한 법률 일부개정법률안",
         "proposed_date": "2014-02-05",
         "decision_date": "2015-07-24",
+        "status": "처리",
+        "status_detail": "대안반영폐기",
+        "actor_count": 10
+    },
+    {
+        "id": 11400,
+        "link_id": "PRC_C1T4R0C2Y0X5E1S1X3G1V2G2S4N1N4",
+        "title": "과학기술분야 정부출연연구기관 등의 설립·운영 및 육성에 관한 법률 일부개정법률안",
+        "proposed_date": "2014-02-05",
+        "decision_date": "2014-12-09",
         "status": "처리",
         "status_detail": "대안반영폐기",
         "actor_count": 10
@@ -130,16 +130,6 @@
         "actor_count": 15
     },
     {
-        "id": 12189,
-        "link_id": "PRC_G1X2I0C6U2E8I0R9P5E6W3Y1C6E9N5",
-        "title": "아동복지법 일부개정법률안",
-        "proposed_date": "2012-06-28",
-        "decision_date": "2013-12-31",
-        "status": "처리",
-        "status_detail": "대안반영폐기",
-        "actor_count": 21
-    },
-    {
         "id": 16866,
         "link_id": "PRC_F1V2B0Z6C2K8W0B9K5N1D4S4K7I7P2",
         "title": "실종아동등의 보호 및 지원에 관한 법률 일부개정법률안",
@@ -148,5 +138,15 @@
         "status": "처리",
         "status_detail": "대안반영폐기",
         "actor_count": 20
+    },
+    {
+        "id": 12189,
+        "link_id": "PRC_G1X2I0C6U2E8I0R9P5E6W3Y1C6E9N5",
+        "title": "아동복지법 일부개정법률안",
+        "proposed_date": "2012-06-28",
+        "decision_date": "2013-12-31",
+        "status": "처리",
+        "status_detail": "대안반영폐기",
+        "actor_count": 21
     }
 ]

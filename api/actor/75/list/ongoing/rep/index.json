@@ -60,16 +60,6 @@
         "actor_count": 10
     },
     {
-        "id": 10729,
-        "link_id": "PRC_K1F5E0O7Y2H3G1Z7D3L8K2C6A6Y9T5",
-        "title": "소득세법 일부개정법률안",
-        "proposed_date": "2015-07-23",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 10
-    },
-    {
         "id": 5085,
         "link_id": "PRC_E1B5B0J7S2N3L1B7E3C4X1R2K2G0F5",
         "title": "조세특례제한법 일부개정법률안",
@@ -80,10 +70,10 @@
         "actor_count": 10
     },
     {
-        "id": 14741,
-        "link_id": "PRC_A1Q5C0V6V0G2A1H6K5P2U3D2V8F1P0",
-        "title": "조세특례제한법 일부개정법률안",
-        "proposed_date": "2015-06-02",
+        "id": 10729,
+        "link_id": "PRC_K1F5E0O7Y2H3G1Z7D3L8K2C6A6Y9T5",
+        "title": "소득세법 일부개정법률안",
+        "proposed_date": "2015-07-23",
         "decision_date": "0000-00-00",
         "status": "계류",
         "status_detail": "위원회 심사",
@@ -93,6 +83,16 @@
         "id": 16853,
         "link_id": "PRC_U1G5N0N6S0V2N1O8B1W0H4M5H4U1S5",
         "title": "전기사업법 일부개정법률안",
+        "proposed_date": "2015-06-02",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 10
+    },
+    {
+        "id": 14741,
+        "link_id": "PRC_A1Q5C0V6V0G2A1H6K5P2U3D2V8F1P0",
+        "title": "조세특례제한법 일부개정법률안",
         "proposed_date": "2015-06-02",
         "decision_date": "0000-00-00",
         "status": "계류",
@@ -230,26 +230,6 @@
         "actor_count": 12
     },
     {
-        "id": 11518,
-        "link_id": "PRC_C1J3K0A2R1R8Q1P8O0D9K2Q7K6A6J5",
-        "title": "식품산업진흥법 일부개정법률안",
-        "proposed_date": "2013-02-18",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 10
-    },
-    {
-        "id": 7598,
-        "link_id": "PRC_P1G3V0P2Q1F8Q1B8H1D0Y3F9E7Q0J8",
-        "title": "국민영양관리법 일부개정법률안",
-        "proposed_date": "2013-02-18",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 10
-    },
-    {
         "id": 13476,
         "link_id": "PRC_Z1H3U0J2B1S8Z1V8Z1A1Y4V6I5P4N6",
         "title": "건강기능식품에 관한 법률 일부개정법률안",
@@ -273,6 +253,26 @@
         "id": 17579,
         "link_id": "PRC_G1G3W0O2P1K8H1Y8J1P4U0U6W4Y4H0",
         "title": "식품위생법 일부개정법률안",
+        "proposed_date": "2013-02-18",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 10
+    },
+    {
+        "id": 11518,
+        "link_id": "PRC_C1J3K0A2R1R8Q1P8O0D9K2Q7K6A6J5",
+        "title": "식품산업진흥법 일부개정법률안",
+        "proposed_date": "2013-02-18",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 10
+    },
+    {
+        "id": 7598,
+        "link_id": "PRC_P1G3V0P2Q1F8Q1B8H1D0Y3F9E7Q0J8",
+        "title": "국민영양관리법 일부개정법률안",
         "proposed_date": "2013-02-18",
         "decision_date": "0000-00-00",
         "status": "계류",

@@ -10,16 +10,6 @@
         "actor_count": 10
     },
     {
-        "id": 8305,
-        "link_id": "PRC_X1L3R0H6V2N6D1G6U4J8B4D6T5A8J4",
-        "title": "공직자윤리법 일부개정법률안",
-        "proposed_date": "2013-06-26",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 10
-    },
-    {
         "id": 16446,
         "link_id": "PRC_M1S3R0B6N2R6O1X6E4M5F4I0G3O7J4",
         "title": "가맹사업거래의 공정화에 관한 법률 일부개정법률안",
@@ -43,6 +33,16 @@
         "id": 6847,
         "link_id": "PRC_P1Y3O0I6P2L6I1J6B5D0S2L1K1H8P7",
         "title": "공직선거법 일부개정법률안",
+        "proposed_date": "2013-06-26",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 10
+    },
+    {
+        "id": 8305,
+        "link_id": "PRC_X1L3R0H6V2N6D1G6U4J8B4D6T5A8J4",
+        "title": "공직자윤리법 일부개정법률안",
         "proposed_date": "2013-06-26",
         "decision_date": "0000-00-00",
         "status": "계류",
@@ -170,16 +170,6 @@
         "actor_count": 12
     },
     {
-        "id": 14387,
-        "link_id": "PRC_G1I2R1K1B1H5J1K7X4G2V3N5N1L7Y9",
-        "title": "부패재산의 몰수 및 회복에 관한 특례법 일부개정법률안",
-        "proposed_date": "2012-11-15",
-        "decision_date": "2013-06-27",
-        "status": "처리",
-        "status_detail": "대안반영폐기",
-        "actor_count": 11
-    },
-    {
         "id": 8751,
         "link_id": "PRC_J1H2T1V1T1X5K1D7I2G7O3F4H8P1L3",
         "title": "범죄수익은닉의 규제 및 처벌 등에 관한 법률 일부개정법률안",
@@ -210,14 +200,14 @@
         "actor_count": 11
     },
     {
-        "id": 8397,
-        "link_id": "PRC_M1C2U1J1B0Q2F1C8B0L5L4A8G2N3C5",
-        "title": "형사소송법 일부개정법률안",
-        "proposed_date": "2012-11-02",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 10
+        "id": 14387,
+        "link_id": "PRC_G1I2R1K1B1H5J1K7X4G2V3N5N1L7Y9",
+        "title": "부패재산의 몰수 및 회복에 관한 특례법 일부개정법률안",
+        "proposed_date": "2012-11-15",
+        "decision_date": "2013-06-27",
+        "status": "처리",
+        "status_detail": "대안반영폐기",
+        "actor_count": 11
     },
     {
         "id": 8933,
@@ -227,6 +217,16 @@
         "decision_date": "2014-12-29",
         "status": "처리",
         "status_detail": "대안반영폐기",
+        "actor_count": 10
+    },
+    {
+        "id": 8397,
+        "link_id": "PRC_M1C2U1J1B0Q2F1C8B0L5L4A8G2N3C5",
+        "title": "형사소송법 일부개정법률안",
+        "proposed_date": "2012-11-02",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
         "actor_count": 10
     }
 ]

@@ -20,16 +20,6 @@
         "actor_count": 10
     },
     {
-        "id": 13850,
-        "link_id": "PRC_H1F5C0O4A0O3G1O5U5N3I4G9H6O1B4",
-        "title": "변호사법 일부개정법률안",
-        "proposed_date": "2015-04-03",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 14
-    },
-    {
         "id": 8895,
         "link_id": "PRC_Z1U5P0I4H0B3B1D4T1I7G2Q9S3A3N3",
         "title": "사회복지사업법 일부개정법률안",
@@ -38,6 +28,16 @@
         "status": "계류",
         "status_detail": "위원회 심사",
         "actor_count": 13
+    },
+    {
+        "id": 13850,
+        "link_id": "PRC_H1F5C0O4A0O3G1O5U5N3I4G9H6O1B4",
+        "title": "변호사법 일부개정법률안",
+        "proposed_date": "2015-04-03",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 14
     },
     {
         "id": 5524,
@@ -250,66 +250,6 @@
         "actor_count": 12
     },
     {
-        "id": 281,
-        "link_id": "PRC_Y1Z3Q0F5D0M6Q1R1R4X0V4S8V9Q3V6",
-        "title": "수산업법 일부개정법률안",
-        "proposed_date": "2013-05-06",
-        "decision_date": "2013-07-02",
-        "status": "처리",
-        "status_detail": "공포",
-        "actor_count": 19
-    },
-    {
-        "id": 13252,
-        "link_id": "PRC_J1U3F0G5I0E6A1O3H2F9W1E7J9Z6E4",
-        "title": "국가재정법 일부개정법률안",
-        "proposed_date": "2013-05-06",
-        "decision_date": "2014-01-01",
-        "status": "처리",
-        "status_detail": "대안반영폐기",
-        "actor_count": 19
-    },
-    {
-        "id": 5194,
-        "link_id": "PRC_W1E3L0L5N0A6I1T1N4R1R2Y7X4F3B5",
-        "title": "보험업법 일부개정법률안",
-        "proposed_date": "2013-05-06",
-        "decision_date": "2015-07-06",
-        "status": "처리",
-        "status_detail": "대안반영폐기",
-        "actor_count": 19
-    },
-    {
-        "id": 7043,
-        "link_id": "PRC_W1J3Z0T5Y0J6E1J1T5W4F2P2C8M3R8",
-        "title": "산업재해보상보험법 일부개정법률안",
-        "proposed_date": "2013-05-06",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 19
-    },
-    {
-        "id": 5330,
-        "link_id": "PRC_D1J3W0C5Y0A6A1N1H3P7I1G4T8Q7Z3",
-        "title": "도로교통법 일부개정법률안",
-        "proposed_date": "2013-05-06",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 10
-    },
-    {
-        "id": 9978,
-        "link_id": "PRC_H1Q3I0C5N0Z6L1R1G3Z5T1T8P8D5Y8",
-        "title": "콘텐츠산업 진흥법 일부개정법률안",
-        "proposed_date": "2013-05-06",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 19
-    },
-    {
         "id": 5789,
         "link_id": "PRC_F1L3M0X5F0V6P1D1L3L8S2G4Y2R2M8",
         "title": "공공토지의 비축에 관한 법률 일부개정법률안",
@@ -340,6 +280,66 @@
         "actor_count": 19
     },
     {
+        "id": 13252,
+        "link_id": "PRC_J1U3F0G5I0E6A1O3H2F9W1E7J9Z6E4",
+        "title": "국가재정법 일부개정법률안",
+        "proposed_date": "2013-05-06",
+        "decision_date": "2014-01-01",
+        "status": "처리",
+        "status_detail": "대안반영폐기",
+        "actor_count": 19
+    },
+    {
+        "id": 281,
+        "link_id": "PRC_Y1Z3Q0F5D0M6Q1R1R4X0V4S8V9Q3V6",
+        "title": "수산업법 일부개정법률안",
+        "proposed_date": "2013-05-06",
+        "decision_date": "2013-07-02",
+        "status": "처리",
+        "status_detail": "공포",
+        "actor_count": 19
+    },
+    {
+        "id": 7043,
+        "link_id": "PRC_W1J3Z0T5Y0J6E1J1T5W4F2P2C8M3R8",
+        "title": "산업재해보상보험법 일부개정법률안",
+        "proposed_date": "2013-05-06",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 19
+    },
+    {
+        "id": 5194,
+        "link_id": "PRC_W1E3L0L5N0A6I1T1N4R1R2Y7X4F3B5",
+        "title": "보험업법 일부개정법률안",
+        "proposed_date": "2013-05-06",
+        "decision_date": "2015-07-06",
+        "status": "처리",
+        "status_detail": "대안반영폐기",
+        "actor_count": 19
+    },
+    {
+        "id": 9978,
+        "link_id": "PRC_H1Q3I0C5N0Z6L1R1G3Z5T1T8P8D5Y8",
+        "title": "콘텐츠산업 진흥법 일부개정법률안",
+        "proposed_date": "2013-05-06",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 19
+    },
+    {
+        "id": 5330,
+        "link_id": "PRC_D1J3W0C5Y0A6A1N1H3P7I1G4T8Q7Z3",
+        "title": "도로교통법 일부개정법률안",
+        "proposed_date": "2013-05-06",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 10
+    },
+    {
         "id": 6755,
         "link_id": "PRC_V1W3Q0S4T1H5U1E3Y2N0Y0B3E6N9S2",
         "title": "형법 일부개정법률안",
@@ -360,16 +360,6 @@
         "actor_count": 11
     },
     {
-        "id": 9540,
-        "link_id": "PRC_B1G3P0P2P2E6P1K0G0M3A0D4B9Y2V6",
-        "title": "공연법 일부개정법률안",
-        "proposed_date": "2013-02-26",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 12
-    },
-    {
         "id": 12343,
         "link_id": "PRC_U1N3Z0T2X2Y6I1T0J0F1Q0S0Y7Y9W5",
         "title": "경륜·경정법 일부개정법률안",
@@ -388,6 +378,16 @@
         "status": "처리",
         "status_detail": "공포",
         "actor_count": 15
+    },
+    {
+        "id": 9540,
+        "link_id": "PRC_B1G3P0P2P2E6P1K0G0M3A0D4B9Y2V6",
+        "title": "공연법 일부개정법률안",
+        "proposed_date": "2013-02-26",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 12
     },
     {
         "id": 3257,

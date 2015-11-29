@@ -1,15 +1,5 @@
 [
     {
-        "id": 5164,
-        "link_id": "PRC_X1C5W1Z1P2S7G1K6L4I9U2A4A1B7L8",
-        "title": "영유아보육법 일부개정법률안",
-        "proposed_date": "2015-11-27",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "접수",
-        "actor_count": 12
-    },
-    {
         "id": 10993,
         "link_id": "PRC_G1H5I1L1D2D7O1E8A0U4R5Q0H3X3R8",
         "title": "산업안전보건법 일부개정법률안",
@@ -30,6 +20,16 @@
         "actor_count": 10
     },
     {
+        "id": 5164,
+        "link_id": "PRC_X1C5W1Z1P2S7G1K6L4I9U2A4A1B7L8",
+        "title": "영유아보육법 일부개정법률안",
+        "proposed_date": "2015-11-27",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "접수",
+        "actor_count": 12
+    },
+    {
         "id": 15094,
         "link_id": "PRC_O1H5Z0U5Q2Z2T1J6G5C9U2J6X6S6R4",
         "title": "승강기시설 안전관리법 일부개정법률안",
@@ -37,16 +37,6 @@
         "decision_date": "2015-09-02",
         "status": "처리",
         "status_detail": "철회",
-        "actor_count": 10
-    },
-    {
-        "id": 8034,
-        "link_id": "PRC_X1P5E0B5W1G5K1N6R5Z2U1M3I3M9Y1",
-        "title": "국민건강보험법 일부개정법률안",
-        "proposed_date": "2015-05-15",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
         "actor_count": 10
     },
     {
@@ -58,5 +48,15 @@
         "status": "계류",
         "status_detail": "위원회 심사",
         "actor_count": 12
+    },
+    {
+        "id": 8034,
+        "link_id": "PRC_X1P5E0B5W1G5K1N6R5Z2U1M3I3M9Y1",
+        "title": "국민건강보험법 일부개정법률안",
+        "proposed_date": "2015-05-15",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 10
     }
 ]

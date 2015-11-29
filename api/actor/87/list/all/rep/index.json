@@ -170,16 +170,6 @@
         "actor_count": 10
     },
     {
-        "id": 135,
-        "link_id": "PRC_R1C4S0Q6K1T1F1E1E3X2B5Z4U5F4C5",
-        "title": "공직자윤리법 일부개정법률안",
-        "proposed_date": "2014-06-11",
-        "decision_date": "2014-12-09",
-        "status": "처리",
-        "status_detail": "대안반영폐기",
-        "actor_count": 11
-    },
-    {
         "id": 7415,
         "link_id": "PRC_D1S4E0X6S1U1Y1Z1T2Y9A1N6P4R8H7",
         "title": "지방공무원법 일부개정법률안",
@@ -197,6 +187,16 @@
         "decision_date": "0000-00-00",
         "status": "계류",
         "status_detail": "위원회 심사",
+        "actor_count": 11
+    },
+    {
+        "id": 135,
+        "link_id": "PRC_R1C4S0Q6K1T1F1E1E3X2B5Z4U5F4C5",
+        "title": "공직자윤리법 일부개정법률안",
+        "proposed_date": "2014-06-11",
+        "decision_date": "2014-12-09",
+        "status": "처리",
+        "status_detail": "대안반영폐기",
         "actor_count": 11
     },
     {
@@ -360,26 +360,6 @@
         "actor_count": 14
     },
     {
-        "id": 15405,
-        "link_id": "PRC_I1H3J0W4R2G9L1X5T0P7I1Z0Z8X2L5",
-        "title": "남녀고용평등과 일·가정 양립 지원에 관한 법률 일부개정법률안",
-        "proposed_date": "2013-04-29",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 12
-    },
-    {
-        "id": 6199,
-        "link_id": "PRC_L1B3P0K4N2L9R1F5J1V8P1V0R2T5W9",
-        "title": "성매매알선 등 행위의 처벌에 관한 법률 일부개정법률안",
-        "proposed_date": "2013-04-29",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 15
-    },
-    {
         "id": 3675,
         "link_id": "PRC_A1M3L0P4C2U9A1J5X0G6E5O7F0L8F8",
         "title": "성매매방지 및 피해자보호 등에 관한 법률 일부개정법률안",
@@ -398,6 +378,26 @@
         "status": "계류",
         "status_detail": "위원회 심사",
         "actor_count": 12
+    },
+    {
+        "id": 15405,
+        "link_id": "PRC_I1H3J0W4R2G9L1X5T0P7I1Z0Z8X2L5",
+        "title": "남녀고용평등과 일·가정 양립 지원에 관한 법률 일부개정법률안",
+        "proposed_date": "2013-04-29",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 12
+    },
+    {
+        "id": 6199,
+        "link_id": "PRC_L1B3P0K4N2L9R1F5J1V8P1V0R2T5W9",
+        "title": "성매매알선 등 행위의 처벌에 관한 법률 일부개정법률안",
+        "proposed_date": "2013-04-29",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 15
     },
     {
         "id": 12558,
@@ -420,16 +420,6 @@
         "actor_count": 35
     },
     {
-        "id": 17218,
-        "link_id": "PRC_L1C3J0T2I1X4L1X2P0X3G3L3P5U7R7",
-        "title": "대·중소기업 상생협력 촉진에 관한 법률 일부개정법률안",
-        "proposed_date": "2013-02-14",
-        "decision_date": "2013-06-27",
-        "status": "처리",
-        "status_detail": "대안반영폐기",
-        "actor_count": 14
-    },
-    {
         "id": 8587,
         "link_id": "PRC_D1N3P0U2C1V4U1W2Y0B2S0G1U6Y7L9",
         "title": "관세법 일부개정법률안",
@@ -450,6 +440,16 @@
         "actor_count": 15
     },
     {
+        "id": 17218,
+        "link_id": "PRC_L1C3J0T2I1X4L1X2P0X3G3L3P5U7R7",
+        "title": "대·중소기업 상생협력 촉진에 관한 법률 일부개정법률안",
+        "proposed_date": "2013-02-14",
+        "decision_date": "2013-06-27",
+        "status": "처리",
+        "status_detail": "대안반영폐기",
+        "actor_count": 14
+    },
+    {
         "id": 11795,
         "link_id": "PRC_Q1Q3G0K1Y2P8M1T5B0L7R4Y2Q5Z1Q6",
         "title": "의료법 일부개정법률안",
@@ -460,9 +460,9 @@
         "actor_count": 12
     },
     {
-        "id": 6082,
-        "link_id": "PRC_K1L2P1V2F1C0V1J6Z1B2T1M0F6N8K1",
-        "title": "형의 집행 및 수용자의 처우에 관한 법률 일부개정법률안",
+        "id": 12859,
+        "link_id": "PRC_K1J2X1P2C1U0L1L5H4Z2G3U3L6V1Q4",
+        "title": "국가재정법 일부개정법률안",
         "proposed_date": "2012-12-10",
         "decision_date": "0000-00-00",
         "status": "계류",
@@ -470,9 +470,9 @@
         "actor_count": 16
     },
     {
-        "id": 12859,
-        "link_id": "PRC_K1J2X1P2C1U0L1L5H4Z2G3U3L6V1Q4",
-        "title": "국가재정법 일부개정법률안",
+        "id": 6082,
+        "link_id": "PRC_K1L2P1V2F1C0V1J6Z1B2T1M0F6N8K1",
+        "title": "형의 집행 및 수용자의 처우에 관한 법률 일부개정법률안",
         "proposed_date": "2012-12-10",
         "decision_date": "0000-00-00",
         "status": "계류",
@@ -510,16 +510,6 @@
         "actor_count": 21
     },
     {
-        "id": 6304,
-        "link_id": "PRC_Q1Q2Y0A9K0S6Z1A6H1V5N4A1I8V0B0",
-        "title": "아동복지법 일부개정법률안",
-        "proposed_date": "2012-09-06",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 23
-    },
-    {
         "id": 17711,
         "link_id": "PRC_Q1U2C0T9N0Q6R1V6H1Z7V0S0A6M4K3",
         "title": "가정폭력범죄의 처벌 등에 관한 특례법 일부개정법률안",
@@ -528,6 +518,16 @@
         "status": "계류",
         "status_detail": "위원회 심사",
         "actor_count": 24
+    },
+    {
+        "id": 6304,
+        "link_id": "PRC_Q1Q2Y0A9K0S6Z1A6H1V5N4A1I8V0B0",
+        "title": "아동복지법 일부개정법률안",
+        "proposed_date": "2012-09-06",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 23
     },
     {
         "id": 1472,

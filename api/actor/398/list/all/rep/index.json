@@ -1,15 +1,5 @@
 [
     {
-        "id": 5170,
-        "link_id": "PRC_Y1O2L1Q1Q1C2Z1E7M1A2Y0T5O0W6M5",
-        "title": "공공기관의 운영에 관한 법률 일부개정법률안",
-        "proposed_date": "2012-11-12",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 10
-    },
-    {
         "id": 16185,
         "link_id": "PRC_K1T2G1B1H1U2Z1V7T3V4M1N2C4W6B2",
         "title": "맹견관리법안",
@@ -28,6 +18,16 @@
         "status": "계류",
         "status_detail": "위원회 심사",
         "actor_count": 12
+    },
+    {
+        "id": 5170,
+        "link_id": "PRC_Y1O2L1Q1Q1C2Z1E7M1A2Y0T5O0W6M5",
+        "title": "공공기관의 운영에 관한 법률 일부개정법률안",
+        "proposed_date": "2012-11-12",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 10
     },
     {
         "id": 15376,
@@ -140,9 +140,19 @@
         "actor_count": 10
     },
     {
-        "id": 2765,
-        "link_id": "PRC_J1L2N0O9N1E4H1X1C2E7R4C6E9P2B1",
-        "title": "국가공무원법 일부개정법률안",
+        "id": 17757,
+        "link_id": "PRC_E1O2X0J9E1W4Z1Y1T1A3E2G0X2L5E6",
+        "title": "교육공무원법 일부개정법률안",
+        "proposed_date": "2012-09-14",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 10
+    },
+    {
+        "id": 3475,
+        "link_id": "PRC_Z1L2I0Z9R1E4B1K1I1E4L5C0L4D8N2",
+        "title": "지방공무원법 일부개정법률안",
         "proposed_date": "2012-09-14",
         "decision_date": "0000-00-00",
         "status": "계류",
@@ -160,19 +170,9 @@
         "actor_count": 10
     },
     {
-        "id": 3475,
-        "link_id": "PRC_Z1L2I0Z9R1E4B1K1I1E4L5C0L4D8N2",
-        "title": "지방공무원법 일부개정법률안",
-        "proposed_date": "2012-09-14",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 10
-    },
-    {
-        "id": 17757,
-        "link_id": "PRC_E1O2X0J9E1W4Z1Y1T1A3E2G0X2L5E6",
-        "title": "교육공무원법 일부개정법률안",
+        "id": 2765,
+        "link_id": "PRC_J1L2N0O9N1E4H1X1C2E7R4C6E9P2B1",
+        "title": "국가공무원법 일부개정법률안",
         "proposed_date": "2012-09-14",
         "decision_date": "0000-00-00",
         "status": "계류",
@@ -260,16 +260,6 @@
         "actor_count": 10
     },
     {
-        "id": 5010,
-        "link_id": "PRC_Z1A2B0B7K1U2K1O7S3T7J1X4G2E6V5",
-        "title": "공직선거법 일부개정법률안",
-        "proposed_date": "2012-07-12",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 10
-    },
-    {
         "id": 3630,
         "link_id": "PRC_N1J2E0O7M1M2L1V7R4S2S2R9D2Z5I6",
         "title": "국가재정법 일부개정법률안",
@@ -288,6 +278,16 @@
         "status": "계류",
         "status_detail": "위원회 심사",
         "actor_count": 11
+    },
+    {
+        "id": 5010,
+        "link_id": "PRC_Z1A2B0B7K1U2K1O7S3T7J1X4G2E6V5",
+        "title": "공직선거법 일부개정법률안",
+        "proposed_date": "2012-07-12",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 10
     },
     {
         "id": 18019,
@@ -320,16 +320,6 @@
         "actor_count": 10
     },
     {
-        "id": 14451,
-        "link_id": "PRC_K1G2I0V6K2I6E1K5D5U5T3A8T2T7U0",
-        "title": "대한민국 국화에 관한 법률안",
-        "proposed_date": "2012-06-26",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 10
-    },
-    {
         "id": 15229,
         "link_id": "PRC_P1K2Z0L6A2U6V1P6N0C0R3L3E3N5T6",
         "title": "고용정책 기본법 일부개정법률안",
@@ -340,10 +330,10 @@
         "actor_count": 10
     },
     {
-        "id": 6307,
-        "link_id": "PRC_D1I2T0V6K2A2T1H3B3Q8V2U8X7W4X2",
-        "title": "국가재정법 일부개정법률안",
-        "proposed_date": "2012-06-22",
+        "id": 14451,
+        "link_id": "PRC_K1G2I0V6K2I6E1K5D5U5T3A8T2T7U0",
+        "title": "대한민국 국화에 관한 법률안",
+        "proposed_date": "2012-06-26",
         "decision_date": "0000-00-00",
         "status": "계류",
         "status_detail": "위원회 심사",
@@ -360,6 +350,16 @@
         "actor_count": 12
     },
     {
+        "id": 6307,
+        "link_id": "PRC_D1I2T0V6K2A2T1H3B3Q8V2U8X7W4X2",
+        "title": "국가재정법 일부개정법률안",
+        "proposed_date": "2012-06-22",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 10
+    },
+    {
         "id": 7004,
         "link_id": "PRC_U1T2X0R6S1S5B1C5F0R2F2S2S2L6D0",
         "title": "노인장기요양보험법 일부개정법률안",
@@ -367,16 +367,6 @@
         "decision_date": "0000-00-00",
         "status": "계류",
         "status_detail": "위원회 심사",
-        "actor_count": 10
-    },
-    {
-        "id": 10668,
-        "link_id": "PRC_W1N2N0T6R1K4E0Y9A4P8A0Z7T1P3O9",
-        "title": "민주화운동기념사업회법 일부개정법률안",
-        "proposed_date": "2012-06-14",
-        "decision_date": "2013-04-29",
-        "status": "처리",
-        "status_detail": "공포",
         "actor_count": 10
     },
     {
@@ -398,5 +388,15 @@
         "status": "계류",
         "status_detail": "위원회 심사",
         "actor_count": 11
+    },
+    {
+        "id": 10668,
+        "link_id": "PRC_W1N2N0T6R1K4E0Y9A4P8A0Z7T1P3O9",
+        "title": "민주화운동기념사업회법 일부개정법률안",
+        "proposed_date": "2012-06-14",
+        "decision_date": "2013-04-29",
+        "status": "처리",
+        "status_detail": "공포",
+        "actor_count": 10
     }
 ]

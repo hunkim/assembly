@@ -20,16 +20,6 @@
         "actor_count": 10
     },
     {
-        "id": 16443,
-        "link_id": "PRC_W1V5F1R0T2N3X1J7Y1V6J2F7P8I6V4",
-        "title": "국민연금법 일부개정법률안",
-        "proposed_date": "2015-10-23",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 10
-    },
-    {
         "id": 8162,
         "link_id": "PRC_X1L5T1W0L2N3W1N7I1X4Z2F6O9Q3R9",
         "title": "영유아보육법 일부개정법률안",
@@ -40,6 +30,16 @@
         "actor_count": 11
     },
     {
+        "id": 16443,
+        "link_id": "PRC_W1V5F1R0T2N3X1J7Y1V6J2F7P8I6V4",
+        "title": "국민연금법 일부개정법률안",
+        "proposed_date": "2015-10-23",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 10
+    },
+    {
         "id": 8840,
         "link_id": "PRC_J1X5S1V0F0X5R1O5L5Y3P4Z3K4Z7V5",
         "title": "감염병의 예방 및 관리에 관한 법률 일부개정법률안",
@@ -48,16 +48,6 @@
         "status": "계류",
         "status_detail": "위원회 심사",
         "actor_count": 10
-    },
-    {
-        "id": 12555,
-        "link_id": "PRC_A1R5W0N8Y1T1W1B0Y3P1N3Q7U7Q4I1",
-        "title": "감염병의 예방 및 관리에 관한 법률 일부개정법률안",
-        "proposed_date": "2015-08-11",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 12
     },
     {
         "id": 13946,
@@ -83,6 +73,16 @@
         "id": 14597,
         "link_id": "PRC_H1Z5F0Y8G1V1E1V1O1W8Z1A4M1E5G4",
         "title": "지방의료원의 설립 및 운영에 관한 법률 일부개정법률안",
+        "proposed_date": "2015-08-11",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 12
+    },
+    {
+        "id": 12555,
+        "link_id": "PRC_A1R5W0N8Y1T1W1B0Y3P1N3Q7U7Q4I1",
+        "title": "감염병의 예방 및 관리에 관한 법률 일부개정법률안",
         "proposed_date": "2015-08-11",
         "decision_date": "0000-00-00",
         "status": "계류",
@@ -210,16 +210,6 @@
         "actor_count": 13
     },
     {
-        "id": 16730,
-        "link_id": "PRC_Q1A5U0M2Y0M5F1V4H2L4D0S8B0D9X0",
-        "title": "민주시민교육지원법안",
-        "proposed_date": "2015-02-05",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 13
-    },
-    {
         "id": 2223,
         "link_id": "PRC_R1E5O0G2X0G5C1X4V1N6I1J5N1D2X7",
         "title": "지역보건법 일부개정법률안",
@@ -230,14 +220,14 @@
         "actor_count": 19
     },
     {
-        "id": 3789,
-        "link_id": "PRC_X1P5A0G2W0Z4C1D1F2J4B1E3Q9J4T8",
-        "title": "가정폭력방지 및 피해자보호 등에 관한 법률 일부개정법률안",
-        "proposed_date": "2015-02-04",
-        "decision_date": "2015-05-29",
-        "status": "처리",
-        "status_detail": "대안반영폐기",
-        "actor_count": 10
+        "id": 16730,
+        "link_id": "PRC_Q1A5U0M2Y0M5F1V4H2L4D0S8B0D9X0",
+        "title": "민주시민교육지원법안",
+        "proposed_date": "2015-02-05",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 13
     },
     {
         "id": 14656,
@@ -247,6 +237,16 @@
         "decision_date": "0000-00-00",
         "status": "계류",
         "status_detail": "위원회 심사",
+        "actor_count": 10
+    },
+    {
+        "id": 3789,
+        "link_id": "PRC_X1P5A0G2W0Z4C1D1F2J4B1E3Q9J4T8",
+        "title": "가정폭력방지 및 피해자보호 등에 관한 법률 일부개정법률안",
+        "proposed_date": "2015-02-04",
+        "decision_date": "2015-05-29",
+        "status": "처리",
+        "status_detail": "대안반영폐기",
         "actor_count": 10
     },
     {
@@ -370,19 +370,9 @@
         "actor_count": 10
     },
     {
-        "id": 7684,
-        "link_id": "PRC_Y1V4B0Z6V2Z7D1W6C5J9I3T2B5C7C4",
-        "title": "영유아보육법 일부개정법률안",
-        "proposed_date": "2014-06-27",
-        "decision_date": "2015-03-03",
-        "status": "처리",
-        "status_detail": "대안반영폐기",
-        "actor_count": 13
-    },
-    {
-        "id": 86,
-        "link_id": "PRC_H1T4M0N6D2H7P1X6M4R6W1E1K1M0I5",
-        "title": "기초연금법 일부개정법률안",
+        "id": 2161,
+        "link_id": "PRC_I1Y4R0T6Y2S7L1G6M4U8T5J0R8L1S4",
+        "title": "장애인연금법 일부개정법률안",
         "proposed_date": "2014-06-27",
         "decision_date": "0000-00-00",
         "status": "계류",
@@ -400,9 +390,19 @@
         "actor_count": 13
     },
     {
-        "id": 2161,
-        "link_id": "PRC_I1Y4R0T6Y2S7L1G6M4U8T5J0R8L1S4",
-        "title": "장애인연금법 일부개정법률안",
+        "id": 7684,
+        "link_id": "PRC_Y1V4B0Z6V2Z7D1W6C5J9I3T2B5C7C4",
+        "title": "영유아보육법 일부개정법률안",
+        "proposed_date": "2014-06-27",
+        "decision_date": "2015-03-03",
+        "status": "처리",
+        "status_detail": "대안반영폐기",
+        "actor_count": 13
+    },
+    {
+        "id": 86,
+        "link_id": "PRC_H1T4M0N6D2H7P1X6M4R6W1E1K1M0I5",
+        "title": "기초연금법 일부개정법률안",
         "proposed_date": "2014-06-27",
         "decision_date": "0000-00-00",
         "status": "계류",
@@ -430,16 +430,6 @@
         "actor_count": 13
     },
     {
-        "id": 13104,
-        "link_id": "PRC_K1V4H0S6K1V0J1Y6X4C6Z3X1L5H4S8",
-        "title": "건강가정기본법 일부개정법률안",
-        "proposed_date": "2014-06-10",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 11
-    },
-    {
         "id": 7420,
         "link_id": "PRC_H1X4X0Y6O1W0N1Z6I4N1B3E3L0C2Q1",
         "title": "아이돌봄 지원법 일부개정법률안",
@@ -450,14 +440,14 @@
         "actor_count": 11
     },
     {
-        "id": 9504,
-        "link_id": "PRC_B1S4M0G5N3J0J1T5E3Z2N0R4M1Z0D1",
-        "title": "재난 및 안전관리 기본법 일부개정법률안",
-        "proposed_date": "2014-05-30",
+        "id": 13104,
+        "link_id": "PRC_K1V4H0S6K1V0J1Y6X4C6Z3X1L5H4S8",
+        "title": "건강가정기본법 일부개정법률안",
+        "proposed_date": "2014-06-10",
         "decision_date": "0000-00-00",
         "status": "계류",
         "status_detail": "위원회 심사",
-        "actor_count": 15
+        "actor_count": 11
     },
     {
         "id": 13148,
@@ -470,9 +460,19 @@
         "actor_count": 14
     },
     {
-        "id": 1687,
-        "link_id": "PRC_K1V4M0J5Y2K8E1B5C4S0X5K7S0E8Q6",
-        "title": "기초연금법 일부개정법률안",
+        "id": 9504,
+        "link_id": "PRC_B1S4M0G5N3J0J1T5E3Z2N0R4M1Z0D1",
+        "title": "재난 및 안전관리 기본법 일부개정법률안",
+        "proposed_date": "2014-05-30",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 15
+    },
+    {
+        "id": 10147,
+        "link_id": "PRC_Z1S4P0N5U2P8D1K5B4G6O0Z2A3G1Y6",
+        "title": "장애인연금법 일부개정법률안",
         "proposed_date": "2014-05-28",
         "decision_date": "0000-00-00",
         "status": "계류",
@@ -480,9 +480,9 @@
         "actor_count": 31
     },
     {
-        "id": 10147,
-        "link_id": "PRC_Z1S4P0N5U2P8D1K5B4G6O0Z2A3G1Y6",
-        "title": "장애인연금법 일부개정법률안",
+        "id": 1687,
+        "link_id": "PRC_K1V4M0J5Y2K8E1B5C4S0X5K7S0E8Q6",
+        "title": "기초연금법 일부개정법률안",
         "proposed_date": "2014-05-28",
         "decision_date": "0000-00-00",
         "status": "계류",
@@ -630,16 +630,6 @@
         "actor_count": 14
     },
     {
-        "id": 2322,
-        "link_id": "PRC_Q1N4E0J1L1Y3W1T4Y1N8S4R6L3M1R7",
-        "title": "복권 및 복권기금법 일부개정법률안",
-        "proposed_date": "2014-01-13",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 10
-    },
-    {
         "id": 7172,
         "link_id": "PRC_N1D4I0Y1S1O3L1X4W1U5C5S3W6B7X1",
         "title": "공공보건의료에 관한 법률 일부개정법률안",
@@ -660,24 +650,14 @@
         "actor_count": 11
     },
     {
-        "id": 3111,
-        "link_id": "PRC_K1T4B0A1F1Y0X1X5E4L9C5M9Q9R7W6",
-        "title": "지방의료원의 설립 및 운영에 관한 법률 일부개정법률안",
-        "proposed_date": "2014-01-10",
-        "decision_date": "2014-12-29",
-        "status": "처리",
-        "status_detail": "대안반영폐기",
-        "actor_count": 10
-    },
-    {
-        "id": 8920,
-        "link_id": "PRC_S1R4F0O1D1D0X1B5D4G6G4T2V4G7J1",
-        "title": "약사법 일부개정법률안",
-        "proposed_date": "2014-01-10",
+        "id": 2322,
+        "link_id": "PRC_Q1N4E0J1L1Y3W1T4Y1N8S4R6L3M1R7",
+        "title": "복권 및 복권기금법 일부개정법률안",
+        "proposed_date": "2014-01-13",
         "decision_date": "0000-00-00",
         "status": "계류",
         "status_detail": "위원회 심사",
-        "actor_count": 12
+        "actor_count": 10
     },
     {
         "id": 5881,
@@ -703,6 +683,26 @@
         "id": 16345,
         "link_id": "PRC_F1A4M0L1T1G0C1K5S5D0W5A6J6Z2B0",
         "title": "의료기기법 일부개정법률안",
+        "proposed_date": "2014-01-10",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 12
+    },
+    {
+        "id": 3111,
+        "link_id": "PRC_K1T4B0A1F1Y0X1X5E4L9C5M9Q9R7W6",
+        "title": "지방의료원의 설립 및 운영에 관한 법률 일부개정법률안",
+        "proposed_date": "2014-01-10",
+        "decision_date": "2014-12-29",
+        "status": "처리",
+        "status_detail": "대안반영폐기",
+        "actor_count": 10
+    },
+    {
+        "id": 8920,
+        "link_id": "PRC_S1R4F0O1D1D0X1B5D4G6G4T2V4G7J1",
+        "title": "약사법 일부개정법률안",
         "proposed_date": "2014-01-10",
         "decision_date": "0000-00-00",
         "status": "계류",
@@ -770,14 +770,14 @@
         "actor_count": 17
     },
     {
-        "id": 6812,
-        "link_id": "PRC_S1E3Y0C9G2R7M1V5D5T5W4H2E3M8C7",
-        "title": "지방자치단체 기금관리기본법 일부개정법률안",
+        "id": 9940,
+        "link_id": "PRC_B1A3A0E9Y2H7J1E5M2Z8E1L9G0J7T4",
+        "title": "남녀고용평등과 일·가정 양립 지원에 관한 법률 일부개정법률안",
         "proposed_date": "2013-09-27",
-        "decision_date": "2015-07-06",
-        "status": "처리",
-        "status_detail": "대안반영폐기",
-        "actor_count": 14
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 15
     },
     {
         "id": 3768,
@@ -790,14 +790,14 @@
         "actor_count": 14
     },
     {
-        "id": 9940,
-        "link_id": "PRC_B1A3A0E9Y2H7J1E5M2Z8E1L9G0J7T4",
-        "title": "남녀고용평등과 일·가정 양립 지원에 관한 법률 일부개정법률안",
+        "id": 6812,
+        "link_id": "PRC_S1E3Y0C9G2R7M1V5D5T5W4H2E3M8C7",
+        "title": "지방자치단체 기금관리기본법 일부개정법률안",
         "proposed_date": "2013-09-27",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 15
+        "decision_date": "2015-07-06",
+        "status": "처리",
+        "status_detail": "대안반영폐기",
+        "actor_count": 14
     },
     {
         "id": 13752,
@@ -840,9 +840,9 @@
         "actor_count": 28
     },
     {
-        "id": 13740,
-        "link_id": "PRC_W1N3K0H7F1A9V1H0E2V4D1T0C1Q4B5",
-        "title": "성폭력방지 및 피해자보호 등에 관한 법률 일부개정법률안",
+        "id": 10966,
+        "link_id": "PRC_W1G3J0N7F1Y9T1G0N2M2E4C9S0U5Q2",
+        "title": "가정폭력방지 및 피해자보호 등에 관한 법률 일부개정법률안",
         "proposed_date": "2013-07-19",
         "decision_date": "2013-12-26",
         "status": "처리",
@@ -850,9 +850,9 @@
         "actor_count": 14
     },
     {
-        "id": 10966,
-        "link_id": "PRC_W1G3J0N7F1Y9T1G0N2M2E4C9S0U5Q2",
-        "title": "가정폭력방지 및 피해자보호 등에 관한 법률 일부개정법률안",
+        "id": 13740,
+        "link_id": "PRC_W1N3K0H7F1A9V1H0E2V4D1T0C1Q4B5",
+        "title": "성폭력방지 및 피해자보호 등에 관한 법률 일부개정법률안",
         "proposed_date": "2013-07-19",
         "decision_date": "2013-12-26",
         "status": "처리",
@@ -970,9 +970,9 @@
         "actor_count": 15
     },
     {
-        "id": 2369,
-        "link_id": "PRC_Q1P3K0X2I0Y5W1E5F3H0P4D9F4H9A3",
-        "title": "식품위생법 일부개정법률안",
+        "id": 1347,
+        "link_id": "PRC_X1U3X0U2I0A5R1M5V3D4J5Z6O9E1Y6",
+        "title": "건강기능식품에 관한 법률 일부개정법률안",
         "proposed_date": "2013-02-05",
         "decision_date": "0000-00-00",
         "status": "계류",
@@ -980,9 +980,9 @@
         "actor_count": 14
     },
     {
-        "id": 1347,
-        "link_id": "PRC_X1U3X0U2I0A5R1M5V3D4J5Z6O9E1Y6",
-        "title": "건강기능식품에 관한 법률 일부개정법률안",
+        "id": 2369,
+        "link_id": "PRC_Q1P3K0X2I0Y5W1E5F3H0P4D9F4H9A3",
+        "title": "식품위생법 일부개정법률안",
         "proposed_date": "2013-02-05",
         "decision_date": "0000-00-00",
         "status": "계류",
@@ -1010,16 +1010,6 @@
         "actor_count": 12
     },
     {
-        "id": 5690,
-        "link_id": "PRC_S1Q3O0X1C2S4N1P1D1M1I3O8O0M2G2",
-        "title": "장애인복지법 일부개정법률안",
-        "proposed_date": "2013-01-24",
-        "decision_date": "2013-06-27",
-        "status": "처리",
-        "status_detail": "대안반영폐기",
-        "actor_count": 23
-    },
-    {
         "id": 10084,
         "link_id": "PRC_E1L3M0S1Z2E4O1N1M4D0M2L8K3K4P5",
         "title": "영유아보육법 일부개정법률안",
@@ -1028,6 +1018,16 @@
         "status": "처리",
         "status_detail": "대안반영폐기",
         "actor_count": 18
+    },
+    {
+        "id": 5690,
+        "link_id": "PRC_S1Q3O0X1C2S4N1P1D1M1I3O8O0M2G2",
+        "title": "장애인복지법 일부개정법률안",
+        "proposed_date": "2013-01-24",
+        "decision_date": "2013-06-27",
+        "status": "처리",
+        "status_detail": "대안반영폐기",
+        "actor_count": 23
     },
     {
         "id": 4482,
@@ -1040,16 +1040,6 @@
         "actor_count": 17
     },
     {
-        "id": 11661,
-        "link_id": "PRC_A1Y2N1R2K2Q6N1Z5J0X5P3O8E2F9N7",
-        "title": "의료법 일부개정법률안",
-        "proposed_date": "2012-12-26",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 12
-    },
-    {
         "id": 16100,
         "link_id": "PRC_L1N2P1N2B2D6R1S5P1I6S4J1F9A1C2",
         "title": "약사법 일부개정법률안",
@@ -1058,6 +1048,16 @@
         "status": "처리",
         "status_detail": "대안반영폐기",
         "actor_count": 11
+    },
+    {
+        "id": 11661,
+        "link_id": "PRC_A1Y2N1R2K2Q6N1Z5J0X5P3O8E2F9N7",
+        "title": "의료법 일부개정법률안",
+        "proposed_date": "2012-12-26",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 12
     },
     {
         "id": 3406,
@@ -1100,6 +1100,16 @@
         "actor_count": 10
     },
     {
+        "id": 2768,
+        "link_id": "PRC_H1L2U1K0T0F9M1E8R5A7Q3X5V6A6X4",
+        "title": "성폭력범죄의 처벌 등에 관한 특례법 일부개정법률안",
+        "proposed_date": "2012-10-09",
+        "decision_date": "2012-11-22",
+        "status": "처리",
+        "status_detail": "대안반영폐기",
+        "actor_count": 12
+    },
+    {
         "id": 8707,
         "link_id": "PRC_D1D2W1Q0A0K9O1D8W5H2T0Z8N4W7M0",
         "title": "범죄피해자보호기금법 일부개정법률안",
@@ -1120,16 +1130,6 @@
         "actor_count": 12
     },
     {
-        "id": 2768,
-        "link_id": "PRC_H1L2U1K0T0F9M1E8R5A7Q3X5V6A6X4",
-        "title": "성폭력범죄의 처벌 등에 관한 특례법 일부개정법률안",
-        "proposed_date": "2012-10-09",
-        "decision_date": "2012-11-22",
-        "status": "처리",
-        "status_detail": "대안반영폐기",
-        "actor_count": 12
-    },
-    {
         "id": 13695,
         "link_id": "PRC_M1N2Z0Z9P2E6T1V7G4Q3U1Y6L6O5W5",
         "title": "성폭력방지 및 피해자보호 등에 관한 법률 일부개정법률안",
@@ -1138,16 +1138,6 @@
         "status": "처리",
         "status_detail": "대안반영폐기",
         "actor_count": 13
-    },
-    {
-        "id": 142,
-        "link_id": "PRC_J1X2J0O9Q2Z5P1Y8P4B6H4A8M0C4X3",
-        "title": "주택법 일부개정법률안",
-        "proposed_date": "2012-09-25",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 16
     },
     {
         "id": 10393,
@@ -1160,14 +1150,14 @@
         "actor_count": 16
     },
     {
-        "id": 15513,
-        "link_id": "PRC_L1Z2R0I9R1G3K1D7H0Q3S1D8U9Z5A9",
-        "title": "의료급여법 일부개정법률안",
-        "proposed_date": "2012-09-13",
-        "decision_date": "2013-12-31",
-        "status": "처리",
-        "status_detail": "공포",
-        "actor_count": 13
+        "id": 142,
+        "link_id": "PRC_J1X2J0O9Q2Z5P1Y8P4B6H4A8M0C4X3",
+        "title": "주택법 일부개정법률안",
+        "proposed_date": "2012-09-25",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 16
     },
     {
         "id": 2807,
@@ -1178,6 +1168,16 @@
         "status": "처리",
         "status_detail": "대안반영폐기",
         "actor_count": 15
+    },
+    {
+        "id": 15513,
+        "link_id": "PRC_L1Z2R0I9R1G3K1D7H0Q3S1D8U9Z5A9",
+        "title": "의료급여법 일부개정법률안",
+        "proposed_date": "2012-09-13",
+        "decision_date": "2013-12-31",
+        "status": "처리",
+        "status_detail": "공포",
+        "actor_count": 13
     },
     {
         "id": 8689,
@@ -1200,16 +1200,6 @@
         "actor_count": 18
     },
     {
-        "id": 421,
-        "link_id": "PRC_R1W2F0G7U3B1W1E8V0X1B3D0E0I9T4",
-        "title": "영유아보육법 일부개정법률안",
-        "proposed_date": "2012-07-31",
-        "decision_date": "2013-01-01",
-        "status": "처리",
-        "status_detail": "대안반영폐기",
-        "actor_count": 15
-    },
-    {
         "id": 3537,
         "link_id": "PRC_E1Q2I0D7F3I1R1O8M3Z7M0B2F9G8N5",
         "title": "하천법 일부개정법률안",
@@ -1218,6 +1208,16 @@
         "status": "계류",
         "status_detail": "위원회 심사",
         "actor_count": 13
+    },
+    {
+        "id": 421,
+        "link_id": "PRC_R1W2F0G7U3B1W1E8V0X1B3D0E0I9T4",
+        "title": "영유아보육법 일부개정법률안",
+        "proposed_date": "2012-07-31",
+        "decision_date": "2013-01-01",
+        "status": "처리",
+        "status_detail": "대안반영폐기",
+        "actor_count": 15
     },
     {
         "id": 11281,

@@ -30,36 +30,6 @@
         "actor_count": 10
     },
     {
-        "id": 10009,
-        "link_id": "PRC_V1B5Q1R1H1M6W1W7R5T4O3H0T0U1F0",
-        "title": "부패방지 및 국민권익위원회의 설치와 운영에 관한 법률 일부개정법률안",
-        "proposed_date": "2015-11-16",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 10
-    },
-    {
-        "id": 2787,
-        "link_id": "PRC_O1P5V1F1H1G6G1P6M5J8V5Q0P8I4L6",
-        "title": "전기통신사업법 일부개정법률안",
-        "proposed_date": "2015-11-16",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 10
-    },
-    {
-        "id": 7007,
-        "link_id": "PRC_E1M5E1Q1C1C6R1F7Z5Y5Z4Z1X6D7I2",
-        "title": "난민법 일부개정법률안",
-        "proposed_date": "2015-11-16",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 10
-    },
-    {
         "id": 6543,
         "link_id": "PRC_H1B5X1F1V1L6Q1I7A5L8Z0E5V4X5C8",
         "title": "전기사업법 일부개정법률안",
@@ -90,9 +60,39 @@
         "actor_count": 10
     },
     {
-        "id": 14859,
-        "link_id": "PRC_R1J5R1K1G0F5K1R8T0W6B0E9K4D2R6",
-        "title": "청소년복지 지원법 일부개정법률안",
+        "id": 10009,
+        "link_id": "PRC_V1B5Q1R1H1M6W1W7R5T4O3H0T0U1F0",
+        "title": "부패방지 및 국민권익위원회의 설치와 운영에 관한 법률 일부개정법률안",
+        "proposed_date": "2015-11-16",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 10
+    },
+    {
+        "id": 2787,
+        "link_id": "PRC_O1P5V1F1H1G6G1P6M5J8V5Q0P8I4L6",
+        "title": "전기통신사업법 일부개정법률안",
+        "proposed_date": "2015-11-16",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 10
+    },
+    {
+        "id": 7007,
+        "link_id": "PRC_E1M5E1Q1C1C6R1F7Z5Y5Z4Z1X6D7I2",
+        "title": "난민법 일부개정법률안",
+        "proposed_date": "2015-11-16",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 10
+    },
+    {
+        "id": 18117,
+        "link_id": "PRC_G1N5U1O1G0D5I1X8M0C7G4G9D2R4G9",
+        "title": "경력단절여성등의 경제활동 촉진법 일부개정법률안",
         "proposed_date": "2015-11-05",
         "decision_date": "0000-00-00",
         "status": "계류",
@@ -110,9 +110,9 @@
         "actor_count": 10
     },
     {
-        "id": 18117,
-        "link_id": "PRC_G1N5U1O1G0D5I1X8M0C7G4G9D2R4G9",
-        "title": "경력단절여성등의 경제활동 촉진법 일부개정법률안",
+        "id": 14859,
+        "link_id": "PRC_R1J5R1K1G0F5K1R8T0W6B0E9K4D2R6",
+        "title": "청소년복지 지원법 일부개정법률안",
         "proposed_date": "2015-11-05",
         "decision_date": "0000-00-00",
         "status": "계류",
@@ -140,9 +140,9 @@
         "actor_count": 10
     },
     {
-        "id": 14477,
-        "link_id": "PRC_E1L5C1O1X0N3J1B0R5U9L0L2M3Z3Y3",
-        "title": "가정폭력방지 및 피해자보호 등에 관한 법률 일부개정법률안",
+        "id": 2325,
+        "link_id": "PRC_M1B5N1F1O0Q3B1K7S5B5V5F1B1G2M1",
+        "title": "참전유공자예우 및 단체설립에 관한 법률 일부개정법률안",
         "proposed_date": "2015-11-03",
         "decision_date": "0000-00-00",
         "status": "계류",
@@ -150,9 +150,9 @@
         "actor_count": 10
     },
     {
-        "id": 2325,
-        "link_id": "PRC_M1B5N1F1O0Q3B1K7S5B5V5F1B1G2M1",
-        "title": "참전유공자예우 및 단체설립에 관한 법률 일부개정법률안",
+        "id": 14477,
+        "link_id": "PRC_E1L5C1O1X0N3J1B0R5U9L0L2M3Z3Y3",
+        "title": "가정폭력방지 및 피해자보호 등에 관한 법률 일부개정법률안",
         "proposed_date": "2015-11-03",
         "decision_date": "0000-00-00",
         "status": "계류",
@@ -190,6 +190,16 @@
         "actor_count": 11
     },
     {
+        "id": 14172,
+        "link_id": "PRC_K1J5R1O0T2L7E1P4K0C4A2N7X3E8B6",
+        "title": "범죄피해자보호기금법 일부개정법률안",
+        "proposed_date": "2015-10-27",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 10
+    },
+    {
         "id": 1532,
         "link_id": "PRC_Q1M5F1L0C2B7Q1L0G0B6D0L9T3B9O9",
         "title": "민사집행법 일부개정법률안",
@@ -208,16 +218,6 @@
         "status": "계류",
         "status_detail": "위원회 심사",
         "actor_count": 11
-    },
-    {
-        "id": 14172,
-        "link_id": "PRC_K1J5R1O0T2L7E1P4K0C4A2N7X3E8B6",
-        "title": "범죄피해자보호기금법 일부개정법률안",
-        "proposed_date": "2015-10-27",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 10
     },
     {
         "id": 12539,
@@ -310,16 +310,6 @@
         "actor_count": 45
     },
     {
-        "id": 1711,
-        "link_id": "PRC_K1Z5P0Q4X0N6P1N8O1X1O0W5T7G0D6",
-        "title": "국경일에 관한 법률 일부개정법률안",
-        "proposed_date": "2015-04-06",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 33
-    },
-    {
         "id": 2323,
         "link_id": "PRC_U1P5D0N4Y0J6G1M8Q3X4Q0A1Y4X5E5",
         "title": "여성발전기본법 일부개정법률안",
@@ -328,6 +318,16 @@
         "status": "처리",
         "status_detail": "대안반영폐기",
         "actor_count": 10
+    },
+    {
+        "id": 1711,
+        "link_id": "PRC_K1Z5P0Q4X0N6P1N8O1X1O0W5T7G0D6",
+        "title": "국경일에 관한 법률 일부개정법률안",
+        "proposed_date": "2015-04-06",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 33
     },
     {
         "id": 13399,
@@ -820,16 +820,6 @@
         "actor_count": 46
     },
     {
-        "id": 28,
-        "link_id": "PRC_S1Q3K0R2T2V2Y1U8I4L5X5N4K3F5N3",
-        "title": "정봉주 전 국회의원 복권 촉구 결의안",
-        "proposed_date": "2013-02-22",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 82
-    },
-    {
         "id": 10505,
         "link_id": "PRC_K1C3V0J2E2P2U1W8Q5W1C3Q1V6E6P9",
         "title": "노회찬 전 국회의원 삼일절 사면촉구 결의안",
@@ -838,6 +828,16 @@
         "status": "계류",
         "status_detail": "위원회 심사",
         "actor_count": 80
+    },
+    {
+        "id": 28,
+        "link_id": "PRC_S1Q3K0R2T2V2Y1U8I4L5X5N4K3F5N3",
+        "title": "정봉주 전 국회의원 복권 촉구 결의안",
+        "proposed_date": "2013-02-22",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 82
     },
     {
         "id": 2631,
@@ -870,9 +870,9 @@
         "actor_count": 21
     },
     {
-        "id": 4949,
-        "link_id": "PRC_D1P2D1B1D2V3I1I6H1A7M5M6N9Z5C5",
-        "title": "군인연금법 일부개정법률안",
+        "id": 17517,
+        "link_id": "PRC_T1V2N1O1G2F3X1D6N2A6R5U6L8M7B4",
+        "title": "사립학교교직원 연금법 일부개정법률안",
         "proposed_date": "2012-11-23",
         "decision_date": "0000-00-00",
         "status": "계류",
@@ -880,13 +880,13 @@
         "actor_count": 14
     },
     {
-        "id": 15020,
-        "link_id": "PRC_V1A2R1O1M2T3Y1B6C2F3E2X9B4S9D8",
-        "title": "공무원연금법 일부개정법률안",
+        "id": 4949,
+        "link_id": "PRC_D1P2D1B1D2V3I1I6H1A7M5M6N9Z5C5",
+        "title": "군인연금법 일부개정법률안",
         "proposed_date": "2012-11-23",
-        "decision_date": "2015-05-29",
-        "status": "처리",
-        "status_detail": "대안반영폐기",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
         "actor_count": 14
     },
     {
@@ -900,13 +900,13 @@
         "actor_count": 14
     },
     {
-        "id": 17517,
-        "link_id": "PRC_T1V2N1O1G2F3X1D6N2A6R5U6L8M7B4",
-        "title": "사립학교교직원 연금법 일부개정법률안",
+        "id": 15020,
+        "link_id": "PRC_V1A2R1O1M2T3Y1B6C2F3E2X9B4S9D8",
+        "title": "공무원연금법 일부개정법률안",
         "proposed_date": "2012-11-23",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
+        "decision_date": "2015-05-29",
+        "status": "처리",
+        "status_detail": "대안반영폐기",
         "actor_count": 14
     },
     {

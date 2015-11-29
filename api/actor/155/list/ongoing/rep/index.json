@@ -1,15 +1,5 @@
 [
     {
-        "id": 3179,
-        "link_id": "PRC_Z1S5K0A7D1M0W1H5E2K8Y2D8N3E0E8",
-        "title": "고등교육법 일부개정법률안",
-        "proposed_date": "2015-07-10",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 23
-    },
-    {
         "id": 6136,
         "link_id": "PRC_A1Q5F0L7E1J0V1K5E3T5Z3R1G4C5P6",
         "title": "성폭력방지 및 피해자보호 등에 관한 법률 일부개정법률안",
@@ -20,14 +10,14 @@
         "actor_count": 23
     },
     {
-        "id": 3994,
-        "link_id": "PRC_F1I5F0W6Y1C6N0N9L4A9X1D0A1N5G2",
-        "title": "학교보건법 일부개정법률안",
-        "proposed_date": "2015-06-16",
+        "id": 3179,
+        "link_id": "PRC_Z1S5K0A7D1M0W1H5E2K8Y2D8N3E0E8",
+        "title": "고등교육법 일부개정법률안",
+        "proposed_date": "2015-07-10",
         "decision_date": "0000-00-00",
         "status": "계류",
         "status_detail": "위원회 심사",
-        "actor_count": 16
+        "actor_count": 23
     },
     {
         "id": 12580,
@@ -38,6 +28,16 @@
         "status": "계류",
         "status_detail": "위원회 심사",
         "actor_count": 17
+    },
+    {
+        "id": 3994,
+        "link_id": "PRC_F1I5F0W6Y1C6N0N9L4A9X1D0A1N5G2",
+        "title": "학교보건법 일부개정법률안",
+        "proposed_date": "2015-06-16",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 16
     },
     {
         "id": 3302,
@@ -90,16 +90,6 @@
         "actor_count": 23
     },
     {
-        "id": 7099,
-        "link_id": "PRC_C1X4H0P4G2U8B1E7G4R3P2E7A5P8V2",
-        "title": "교육관련기관의 정보공개에 관한 특례법 일부개정법률안",
-        "proposed_date": "2014-04-28",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 13
-    },
-    {
         "id": 4778,
         "link_id": "PRC_U1A4U0C4A2K8N1R7R2V9C3V3G2T0G2",
         "title": "사립학교법 일부개정법률안",
@@ -108,6 +98,16 @@
         "status": "계류",
         "status_detail": "본회의 심의",
         "actor_count": 15
+    },
+    {
+        "id": 7099,
+        "link_id": "PRC_C1X4H0P4G2U8B1E7G4R3P2E7A5P8V2",
+        "title": "교육관련기관의 정보공개에 관한 특례법 일부개정법률안",
+        "proposed_date": "2014-04-28",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 13
     },
     {
         "id": 5216,
@@ -210,16 +210,6 @@
         "actor_count": 10
     },
     {
-        "id": 6611,
-        "link_id": "PRC_U1Q3O0B3J2U6A1F4C0T0J1D6L1X7B9",
-        "title": "장애인차별금지 및 권리구제 등에 관한 법률 일부개정법률안",
-        "proposed_date": "2013-03-26",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 15
-    },
-    {
         "id": 17028,
         "link_id": "PRC_W1C3A0U3W2L6U1X4E4G9H0P6O3T2E7",
         "title": "국립대학병원 설치법 일부개정법률안",
@@ -260,16 +250,6 @@
         "actor_count": 12
     },
     {
-        "id": 2962,
-        "link_id": "PRC_K1Z3C0V3V2X6G1G4I0R1A3I3D7K8E2",
-        "title": "주택법 일부개정법률안",
-        "proposed_date": "2013-03-26",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 10
-    },
-    {
         "id": 8687,
         "link_id": "PRC_K1A3V0D3K2C6R1S4U3X3N4L4V6Z0K6",
         "title": "고등교육법 일부개정법률안",
@@ -288,6 +268,26 @@
         "status": "계류",
         "status_detail": "위원회 심사",
         "actor_count": 13
+    },
+    {
+        "id": 2962,
+        "link_id": "PRC_K1Z3C0V3V2X6G1G4I0R1A3I3D7K8E2",
+        "title": "주택법 일부개정법률안",
+        "proposed_date": "2013-03-26",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 10
+    },
+    {
+        "id": 6611,
+        "link_id": "PRC_U1Q3O0B3J2U6A1F4C0T0J1D6L1X7B9",
+        "title": "장애인차별금지 및 권리구제 등에 관한 법률 일부개정법률안",
+        "proposed_date": "2013-03-26",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 15
     },
     {
         "id": 484,
@@ -340,16 +340,6 @@
         "actor_count": 128
     },
     {
-        "id": 13705,
-        "link_id": "PRC_Y1L2N0Q7X0G9H1O5D2S6X4P5M2K2P5",
-        "title": "전기사업법 일부개정법률안",
-        "proposed_date": "2012-07-09",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 16
-    },
-    {
         "id": 2608,
         "link_id": "PRC_F1T2M0R7U0Q9D1S5W2D8L3V5I1L5Z4",
         "title": "국립대학법인 서울대학교 설립·운영에 관한 법률 폐지법률안",
@@ -358,5 +348,15 @@
         "status": "계류",
         "status_detail": "위원회 심사",
         "actor_count": 10
+    },
+    {
+        "id": 13705,
+        "link_id": "PRC_Y1L2N0Q7X0G9H1O5D2S6X4P5M2K2P5",
+        "title": "전기사업법 일부개정법률안",
+        "proposed_date": "2012-07-09",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 16
     }
 ]

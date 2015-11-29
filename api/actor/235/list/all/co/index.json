@@ -120,26 +120,6 @@
         "actor_count": 34
     },
     {
-        "id": 6538,
-        "link_id": "PRC_I1F5J0K9H1V6H1N6S4M3Y3O1E7Y0G0",
-        "title": "고용보험법 일부개정법률안",
-        "proposed_date": "2015-09-16",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 159
-    },
-    {
-        "id": 6846,
-        "link_id": "PRC_G1V5N0Y9A1A6K1A6F5I0Y4I3N6S9O6",
-        "title": "고용보험 및 산업재해보상보험의 보험료징수 등에 관한 법률 일부개정법률안",
-        "proposed_date": "2015-09-16",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 159
-    },
-    {
         "id": 17118,
         "link_id": "PRC_F1S5F0V9W1U6D1T6L3U9E4F3W0A0C5",
         "title": "근로기준법 일부개정법률안",
@@ -180,6 +160,26 @@
         "actor_count": 159
     },
     {
+        "id": 6538,
+        "link_id": "PRC_I1F5J0K9H1V6H1N6S4M3Y3O1E7Y0G0",
+        "title": "고용보험법 일부개정법률안",
+        "proposed_date": "2015-09-16",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 159
+    },
+    {
+        "id": 6846,
+        "link_id": "PRC_G1V5N0Y9A1A6K1A6F5I0Y4I3N6S9O6",
+        "title": "고용보험 및 산업재해보상보험의 보험료징수 등에 관한 법률 일부개정법률안",
+        "proposed_date": "2015-09-16",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 159
+    },
+    {
         "id": 9848,
         "link_id": "PRC_U1Z5F0T9U1C5E1X8S1T7Y0X5C4V9E3",
         "title": "국토의 계획 및 이용에 관한 법률 일부개정법률안",
@@ -190,16 +190,6 @@
         "actor_count": 20
     },
     {
-        "id": 8001,
-        "link_id": "PRC_D1Q5U0Q9D0D8T1D8J1F1L3N9I2U0Y3",
-        "title": "고엽제후유의증 등 환자지원 및 단체설립에 관한 법률 일부개정법률안",
-        "proposed_date": "2015-09-08",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 66
-    },
-    {
         "id": 9431,
         "link_id": "PRC_J1A5X0R9P0Y8H1B8M1M3N3E8E3E1C6",
         "title": "참전유공자예우 및 단체설립에 관한 법률 일부개정법률안",
@@ -208,6 +198,16 @@
         "status": "계류",
         "status_detail": "위원회 심사",
         "actor_count": 44
+    },
+    {
+        "id": 8001,
+        "link_id": "PRC_D1Q5U0Q9D0D8T1D8J1F1L3N9I2U0Y3",
+        "title": "고엽제후유의증 등 환자지원 및 단체설립에 관한 법률 일부개정법률안",
+        "proposed_date": "2015-09-08",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 66
     },
     {
         "id": 3530,
@@ -340,16 +340,6 @@
         "actor_count": 52
     },
     {
-        "id": 13442,
-        "link_id": "PRC_O1X5D0V4O0F2M1W1R2M1X3G8I8F0R9",
-        "title": "국무총리 및 국무위원 출석요구의 건(국정에 관한 교섭단체 대표연설)",
-        "proposed_date": "2015-04-02",
-        "decision_date": "2015-04-07",
-        "status": "처리",
-        "status_detail": "의결",
-        "actor_count": 287
-    },
-    {
         "id": 630,
         "link_id": "PRC_B1W5I0Z4P0X2M1L1D3D1H0H0G3J0B8",
         "title": "국무총리 및 국무위원 출석요구의 건(정치에 관한 질문)",
@@ -390,6 +380,16 @@
         "actor_count": 287
     },
     {
+        "id": 13442,
+        "link_id": "PRC_O1X5D0V4O0F2M1W1R2M1X3G8I8F0R9",
+        "title": "국무총리 및 국무위원 출석요구의 건(국정에 관한 교섭단체 대표연설)",
+        "proposed_date": "2015-04-02",
+        "decision_date": "2015-04-07",
+        "status": "처리",
+        "status_detail": "의결",
+        "actor_count": 287
+    },
+    {
         "id": 16986,
         "link_id": "PRC_K1S5R0K3R2D0J1H7I3V5A4V8Z1W0K9",
         "title": "문학진흥법안",
@@ -420,9 +420,9 @@
         "actor_count": 11
     },
     {
-        "id": 14587,
-        "link_id": "PRC_B1E5A0A1C2J8Z1M7U3C3Z3Q5X6M5K2",
-        "title": "국무총리 및 국무위원 출석요구의 건(국정에 관한 교섭단체 대표연설)",
+        "id": 13487,
+        "link_id": "PRC_X1K5Z0N1T2F8X1R7Y4G6G0H3I1V1S4",
+        "title": "국무총리ㆍ국무위원 및 정부위원 출석요구의 건(경제에 관한 질문)",
         "proposed_date": "2015-01-28",
         "decision_date": "2015-02-02",
         "status": "처리",
@@ -430,9 +430,9 @@
         "actor_count": 288
     },
     {
-        "id": 6095,
-        "link_id": "PRC_L1I5F0O1S2L8U1V7K4J9Z5Q6G6P5X3",
-        "title": "국무총리ㆍ국무위원 및 정부위원 출석요구의 건(교육ㆍ사회ㆍ문화에 관한 질문)",
+        "id": 14587,
+        "link_id": "PRC_B1E5A0A1C2J8Z1M7U3C3Z3Q5X6M5K2",
+        "title": "국무총리 및 국무위원 출석요구의 건(국정에 관한 교섭단체 대표연설)",
         "proposed_date": "2015-01-28",
         "decision_date": "2015-02-02",
         "status": "처리",
@@ -450,9 +450,9 @@
         "actor_count": 288
     },
     {
-        "id": 13487,
-        "link_id": "PRC_X1K5Z0N1T2F8X1R7Y4G6G0H3I1V1S4",
-        "title": "국무총리ㆍ국무위원 및 정부위원 출석요구의 건(경제에 관한 질문)",
+        "id": 6095,
+        "link_id": "PRC_L1I5F0O1S2L8U1V7K4J9Z5Q6G6P5X3",
+        "title": "국무총리ㆍ국무위원 및 정부위원 출석요구의 건(교육ㆍ사회ㆍ문화에 관한 질문)",
         "proposed_date": "2015-01-28",
         "decision_date": "2015-02-02",
         "status": "처리",
@@ -520,16 +520,6 @@
         "actor_count": 32
     },
     {
-        "id": 17843,
-        "link_id": "PRC_N1I4U1Q0G2U8I1F7X3K5B5C5J1E9V2",
-        "title": "공무원연금법 일부개정법률안",
-        "proposed_date": "2014-10-28",
-        "decision_date": "2015-05-29",
-        "status": "처리",
-        "status_detail": "대안반영폐기",
-        "actor_count": 159
-    },
-    {
         "id": 5178,
         "link_id": "PRC_L1T4G1M0P2B8E1U4U4P7K3M5J5Q0Z3",
         "title": "국무총리ㆍ국무위원 및 정부위원 출석요구의 건(경제에 관한 질문)",
@@ -550,9 +540,9 @@
         "actor_count": 288
     },
     {
-        "id": 1337,
-        "link_id": "PRC_H1U4K1J0D2W8V1J4K4E4R1P2U0M2J8",
-        "title": "국무총리 및 국무위원 출석요구의 건(외교ㆍ통일ㆍ안보에 관한 질문)",
+        "id": 2383,
+        "link_id": "PRC_L1O4L1V0C2Q8C1O4O5O1N3J6M9J0M8",
+        "title": "국무총리ㆍ국무위원 및 정부위원 출석요구의 건(교육ㆍ사회ㆍ문화에 관한 질문)",
         "proposed_date": "2014-10-28",
         "decision_date": "2014-10-29",
         "status": "처리",
@@ -560,9 +550,9 @@
         "actor_count": 288
     },
     {
-        "id": 2383,
-        "link_id": "PRC_L1O4L1V0C2Q8C1O4O5O1N3J6M9J0M8",
-        "title": "국무총리ㆍ국무위원 및 정부위원 출석요구의 건(교육ㆍ사회ㆍ문화에 관한 질문)",
+        "id": 1337,
+        "link_id": "PRC_H1U4K1J0D2W8V1J4K4E4R1P2U0M2J8",
+        "title": "국무총리 및 국무위원 출석요구의 건(외교ㆍ통일ㆍ안보에 관한 질문)",
         "proposed_date": "2014-10-28",
         "decision_date": "2014-10-29",
         "status": "처리",
@@ -578,6 +568,16 @@
         "status": "처리",
         "status_detail": "의결",
         "actor_count": 288
+    },
+    {
+        "id": 17843,
+        "link_id": "PRC_N1I4U1Q0G2U8I1F7X3K5B5C5J1E9V2",
+        "title": "공무원연금법 일부개정법률안",
+        "proposed_date": "2014-10-28",
+        "decision_date": "2015-05-29",
+        "status": "처리",
+        "status_detail": "대안반영폐기",
+        "actor_count": 159
     },
     {
         "id": 11769,
@@ -760,6 +760,26 @@
         "actor_count": 156
     },
     {
+        "id": 17895,
+        "link_id": "PRC_X1R4M0V3L3A1D1W6S1Z3M4O8C8Y9B4",
+        "title": "국무총리 및 국무위원 출석요구의 건(정치에 관한 질문)",
+        "proposed_date": "2014-03-31",
+        "decision_date": "2014-04-01",
+        "status": "처리",
+        "status_detail": "의결",
+        "actor_count": 286
+    },
+    {
+        "id": 10298,
+        "link_id": "PRC_Z1S4F0I3Y3W1E1F6Z2J3Z4E3Y3I6E4",
+        "title": "국무총리ㆍ국무위원 및 정부위원 출석요구의 건(경제에 관한 질문)",
+        "proposed_date": "2014-03-31",
+        "decision_date": "2014-04-01",
+        "status": "처리",
+        "status_detail": "의결",
+        "actor_count": 286
+    },
+    {
         "id": 9282,
         "link_id": "PRC_H1O4F0R3P3U1P1L6O1A9I4O3O2L5C6",
         "title": "국무총리 및 국무위원 출석요구의 건(외교ㆍ통일ㆍ안보에 관한 질문)",
@@ -793,26 +813,6 @@
         "id": 14027,
         "link_id": "PRC_V1H4A0S3W3L1M1M6R3R1J3R9K7A9A0",
         "title": "국무총리ㆍ국무위원 및 정부위원 출석요구의 건(교육ㆍ사회ㆍ문화에 관한 질문)",
-        "proposed_date": "2014-03-31",
-        "decision_date": "2014-04-01",
-        "status": "처리",
-        "status_detail": "의결",
-        "actor_count": 286
-    },
-    {
-        "id": 17895,
-        "link_id": "PRC_X1R4M0V3L3A1D1W6S1Z3M4O8C8Y9B4",
-        "title": "국무총리 및 국무위원 출석요구의 건(정치에 관한 질문)",
-        "proposed_date": "2014-03-31",
-        "decision_date": "2014-04-01",
-        "status": "처리",
-        "status_detail": "의결",
-        "actor_count": 286
-    },
-    {
-        "id": 10298,
-        "link_id": "PRC_Z1S4F0I3Y3W1E1F6Z2J3Z4E3Y3I6E4",
-        "title": "국무총리ㆍ국무위원 및 정부위원 출석요구의 건(경제에 관한 질문)",
         "proposed_date": "2014-03-31",
         "decision_date": "2014-04-01",
         "status": "처리",
@@ -890,9 +890,9 @@
         "actor_count": 281
     },
     {
-        "id": 12734,
-        "link_id": "PRC_W1C4U0Y1X2P8Y1G7J3I9B1A6B5R6D5",
-        "title": "국무총리·국무위원 및 정부위원 출석요구의 건(경제에 관한 질문)",
+        "id": 12935,
+        "link_id": "PRC_S1P4O0S1H2G8G1S7X2X6J3Z5K9L7B4",
+        "title": "국무총리 및 국무위원 출석요구의 건(국정에 관한 교섭단체 대표연설)",
         "proposed_date": "2014-01-28",
         "decision_date": "2014-02-03",
         "status": "처리",
@@ -900,9 +900,9 @@
         "actor_count": 281
     },
     {
-        "id": 620,
-        "link_id": "PRC_F1X4L0E1B2Q8Y1X7A4U5V0P6Y6X0A6",
-        "title": "국무총리 및 국무위원 출석요구의 건(외교ㆍ통일ㆍ안보에 관한 질문)",
+        "id": 12734,
+        "link_id": "PRC_W1C4U0Y1X2P8Y1G7J3I9B1A6B5R6D5",
+        "title": "국무총리·국무위원 및 정부위원 출석요구의 건(경제에 관한 질문)",
         "proposed_date": "2014-01-28",
         "decision_date": "2014-02-03",
         "status": "처리",
@@ -930,9 +930,9 @@
         "actor_count": 281
     },
     {
-        "id": 12935,
-        "link_id": "PRC_S1P4O0S1H2G8G1S7X2X6J3Z5K9L7B4",
-        "title": "국무총리 및 국무위원 출석요구의 건(국정에 관한 교섭단체 대표연설)",
+        "id": 620,
+        "link_id": "PRC_F1X4L0E1B2Q8Y1X7A4U5V0P6Y6X0A6",
+        "title": "국무총리 및 국무위원 출석요구의 건(외교ㆍ통일ㆍ안보에 관한 질문)",
         "proposed_date": "2014-01-28",
         "decision_date": "2014-02-03",
         "status": "처리",
@@ -1000,16 +1000,6 @@
         "actor_count": 104
     },
     {
-        "id": 4329,
-        "link_id": "PRC_Y1M3E1K2V1G2A1G0K2U9S2Z4Q9N3K3",
-        "title": "국회의원(장하나) 징계안",
-        "proposed_date": "2013-12-12",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 154
-    },
-    {
         "id": 1406,
         "link_id": "PRC_A1Q3D1F2S1F2T1B6T1B7O1U0W3R7O7",
         "title": "변호사법 일부개정법률안",
@@ -1018,6 +1008,16 @@
         "status": "계류",
         "status_detail": "위원회 심사",
         "actor_count": 10
+    },
+    {
+        "id": 4329,
+        "link_id": "PRC_Y1M3E1K2V1G2A1G0K2U9S2Z4Q9N3K3",
+        "title": "국회의원(장하나) 징계안",
+        "proposed_date": "2013-12-12",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 154
     },
     {
         "id": 9814,
@@ -1080,16 +1080,6 @@
         "actor_count": 88
     },
     {
-        "id": 4111,
-        "link_id": "PRC_X1E3D1T2H0O4S1Q5M2W2J1L2R3N8R4",
-        "title": "사행산업통합감독위원회법 일부개정법률안",
-        "proposed_date": "2013-12-04",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 10
-    },
-    {
         "id": 15455,
         "link_id": "PRC_C1X3J1R2G0E4V1D5Y1A3R1N2V1X0Z0",
         "title": "한국마사회법 일부개정법률안",
@@ -1100,14 +1090,14 @@
         "actor_count": 11
     },
     {
-        "id": 6824,
-        "link_id": "PRC_Y1P3L1K1Y2L9V1S5J1K8H1Q1U8M2M6",
-        "title": "국회의원수당 등에 관한 법률 일부개정법률안",
-        "proposed_date": "2013-11-29",
+        "id": 4111,
+        "link_id": "PRC_X1E3D1T2H0O4S1Q5M2W2J1L2R3N8R4",
+        "title": "사행산업통합감독위원회법 일부개정법률안",
+        "proposed_date": "2013-12-04",
         "decision_date": "0000-00-00",
         "status": "계류",
         "status_detail": "위원회 심사",
-        "actor_count": 155
+        "actor_count": 10
     },
     {
         "id": 2965,
@@ -1120,14 +1110,14 @@
         "actor_count": 155
     },
     {
-        "id": 14595,
-        "link_id": "PRC_Y1V3G1A1Q2I8W1M6K3O0S0I6L0C7C1",
-        "title": "국민건강보험법 일부개정법률안",
-        "proposed_date": "2013-11-28",
+        "id": 6824,
+        "link_id": "PRC_Y1P3L1K1Y2L9V1S5J1K8H1Q1U8M2M6",
+        "title": "국회의원수당 등에 관한 법률 일부개정법률안",
+        "proposed_date": "2013-11-29",
         "decision_date": "0000-00-00",
         "status": "계류",
         "status_detail": "위원회 심사",
-        "actor_count": 13
+        "actor_count": 155
     },
     {
         "id": 2181,
@@ -1140,6 +1130,16 @@
         "actor_count": 12
     },
     {
+        "id": 14595,
+        "link_id": "PRC_Y1V3G1A1Q2I8W1M6K3O0S0I6L0C7C1",
+        "title": "국민건강보험법 일부개정법률안",
+        "proposed_date": "2013-11-28",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 13
+    },
+    {
         "id": 14792,
         "link_id": "PRC_V1S3Z1J1A2M5G1B6Q3N8C5E3I8S5J3",
         "title": "상훈법 일부개정법률안",
@@ -1148,26 +1148,6 @@
         "status": "계류",
         "status_detail": "위원회 심사",
         "actor_count": 37
-    },
-    {
-        "id": 10861,
-        "link_id": "PRC_Y1U3K1Y1X1G5E1H1H4U6T0P3P0E3B0",
-        "title": "국무총리·국무위원 및 정부위원 출석요구의 건(교육·사회·문화에 관한 질문)",
-        "proposed_date": "2013-11-15",
-        "decision_date": "2013-11-15",
-        "status": "처리",
-        "status_detail": "의결",
-        "actor_count": 282
-    },
-    {
-        "id": 16477,
-        "link_id": "PRC_G1N3N1N1Z1X5Z1P1P4U1L3Z6C4S1S2",
-        "title": "국무총리·국무위원 및 정부위원 출석요구의 건(경제에 관한 질문)",
-        "proposed_date": "2013-11-15",
-        "decision_date": "2013-11-15",
-        "status": "처리",
-        "status_detail": "의결",
-        "actor_count": 282
     },
     {
         "id": 8267,
@@ -1203,6 +1183,26 @@
         "id": 6784,
         "link_id": "PRC_U1J3P1P1I1F5R1K1A3T7Y2S0Y0T5X8",
         "title": "국무총리 및 국무위원 출석요구의 건(외교·통일·안보에 관한 질문)",
+        "proposed_date": "2013-11-15",
+        "decision_date": "2013-11-15",
+        "status": "처리",
+        "status_detail": "의결",
+        "actor_count": 282
+    },
+    {
+        "id": 10861,
+        "link_id": "PRC_Y1U3K1Y1X1G5E1H1H4U6T0P3P0E3B0",
+        "title": "국무총리·국무위원 및 정부위원 출석요구의 건(교육·사회·문화에 관한 질문)",
+        "proposed_date": "2013-11-15",
+        "decision_date": "2013-11-15",
+        "status": "처리",
+        "status_detail": "의결",
+        "actor_count": 282
+    },
+    {
+        "id": 16477,
+        "link_id": "PRC_G1N3N1N1Z1X5Z1P1P4U1L3Z6C4S1S2",
+        "title": "국무총리·국무위원 및 정부위원 출석요구의 건(경제에 관한 질문)",
         "proposed_date": "2013-11-15",
         "decision_date": "2013-11-15",
         "status": "처리",
@@ -1250,6 +1250,16 @@
         "actor_count": 154
     },
     {
+        "id": 17946,
+        "link_id": "PRC_L1J3D1N0Y3F0P1M6W1A0V4R1T2H2D3",
+        "title": "병역법 일부개정법률안",
+        "proposed_date": "2013-10-30",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 16
+    },
+    {
         "id": 1038,
         "link_id": "PRC_C1Z3B1F0R3C0I1F5Q3G4I0C5L2P7D7",
         "title": "군인사법 일부개정법률안",
@@ -1268,16 +1278,6 @@
         "status": "처리",
         "status_detail": "공포",
         "actor_count": 12
-    },
-    {
-        "id": 17946,
-        "link_id": "PRC_L1J3D1N0Y3F0P1M6W1A0V4R1T2H2D3",
-        "title": "병역법 일부개정법률안",
-        "proposed_date": "2013-10-30",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 16
     },
     {
         "id": 13310,
@@ -1330,16 +1330,6 @@
         "actor_count": 12
     },
     {
-        "id": 16238,
-        "link_id": "PRC_D1K3Z0B9K2Y7P1Y8V1X3J4V0S8J5E4",
-        "title": "철도산업발전기본법 일부개정법률안",
-        "proposed_date": "2013-09-27",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 12
-    },
-    {
         "id": 11450,
         "link_id": "PRC_H1F3U0E9D2D7C1S9W3E1S0X7V8G0A9",
         "title": "국무총리 및 국무위원 출석요구의 건(교섭단체 대표연설)",
@@ -1348,6 +1338,16 @@
         "status": "처리",
         "status_detail": "의결",
         "actor_count": 280
+    },
+    {
+        "id": 16238,
+        "link_id": "PRC_D1K3Z0B9K2Y7P1Y8V1X3J4V0S8J5E4",
+        "title": "철도산업발전기본법 일부개정법률안",
+        "proposed_date": "2013-09-27",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 12
     },
     {
         "id": 6803,
@@ -1530,26 +1530,6 @@
         "actor_count": 14
     },
     {
-        "id": 14008,
-        "link_id": "PRC_U1A3C0B5S3M1O1P6M4M4E1W8N8V3W1",
-        "title": "국무총리 및 국무위원 출석요구의 건(국정에 관한 교섭단체 대표연설)",
-        "proposed_date": "2013-05-31",
-        "decision_date": "2013-06-03",
-        "status": "처리",
-        "status_detail": "의결",
-        "actor_count": 281
-    },
-    {
-        "id": 95,
-        "link_id": "PRC_A1F3M0A5S3B1R1Q5R4X2V1Y1H7K6F3",
-        "title": "국회법 일부개정법률안",
-        "proposed_date": "2013-05-31",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 13
-    },
-    {
         "id": 4980,
         "link_id": "PRC_N1Y3K0G5U3E1Z1F8N2N7M2C3T7S5H5",
         "title": "국무총리·국무위원 및 정부위원 출석요구의 건(경제에 관한 질문)",
@@ -1588,6 +1568,26 @@
         "status": "처리",
         "status_detail": "의결",
         "actor_count": 281
+    },
+    {
+        "id": 14008,
+        "link_id": "PRC_U1A3C0B5S3M1O1P6M4M4E1W8N8V3W1",
+        "title": "국무총리 및 국무위원 출석요구의 건(국정에 관한 교섭단체 대표연설)",
+        "proposed_date": "2013-05-31",
+        "decision_date": "2013-06-03",
+        "status": "처리",
+        "status_detail": "의결",
+        "actor_count": 281
+    },
+    {
+        "id": 95,
+        "link_id": "PRC_A1F3M0A5S3B1R1Q5R4X2V1Y1H7K6F3",
+        "title": "국회법 일부개정법률안",
+        "proposed_date": "2013-05-31",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 13
     },
     {
         "id": 8448,
@@ -1700,16 +1700,6 @@
         "actor_count": 279
     },
     {
-        "id": 16845,
-        "link_id": "PRC_K1R3P0P4V0T9Z1B5Z3T5O3F1K4F1D4",
-        "title": "소방공무원 보건안전 및 복지 기본법 일부개정법률안",
-        "proposed_date": "2013-04-09",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 15
-    },
-    {
         "id": 5195,
         "link_id": "PRC_V1C3V0L4A0X9H1O7X1R8G0M0D0R2B4",
         "title": "주택법 일부개정법률안",
@@ -1718,6 +1708,16 @@
         "status": "처리",
         "status_detail": "대안반영폐기",
         "actor_count": 14
+    },
+    {
+        "id": 16845,
+        "link_id": "PRC_K1R3P0P4V0T9Z1B5Z3T5O3F1K4F1D4",
+        "title": "소방공무원 보건안전 및 복지 기본법 일부개정법률안",
+        "proposed_date": "2013-04-09",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 15
     },
     {
         "id": 13976,
@@ -1910,6 +1910,16 @@
         "actor_count": 30
     },
     {
+        "id": 6411,
+        "link_id": "PRC_A1U2M1O2M1D0U1V8C0V5T2T5B6O4W9",
+        "title": "고문방지 및 고문피해자 구제·지원 등에 관한 법률안",
+        "proposed_date": "2012-12-10",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 59
+    },
+    {
         "id": 2619,
         "link_id": "PRC_W1P2R1K2N1I0I1Z8M0Y0S2O3M2X1S6",
         "title": "고문범죄의 공소시효에 관한 특례법안",
@@ -1933,16 +1943,6 @@
         "id": 5615,
         "link_id": "PRC_A1Y2O1K2X1W0V1S8V0Z4L4Q4F8Q7V3",
         "title": "고문ㆍ가혹행위로 인한 피해의 회복을 위한 청구권의 소멸시효에 관한 특례법안",
-        "proposed_date": "2012-12-10",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 59
-    },
-    {
-        "id": 6411,
-        "link_id": "PRC_A1U2M1O2M1D0U1V8C0V5T2T5B6O4W9",
-        "title": "고문방지 및 고문피해자 구제·지원 등에 관한 법률안",
         "proposed_date": "2012-12-10",
         "decision_date": "0000-00-00",
         "status": "계류",
@@ -1990,16 +1990,6 @@
         "actor_count": 12
     },
     {
-        "id": 9619,
-        "link_id": "PRC_E1F2B1N0N2N6O1K6K0S6N4G1T2U5W9",
-        "title": "지진재해대책법 일부개정법률안",
-        "proposed_date": "2012-10-26",
-        "decision_date": "2013-06-27",
-        "status": "처리",
-        "status_detail": "대안반영폐기",
-        "actor_count": 14
-    },
-    {
         "id": 6854,
         "link_id": "PRC_F1O2W1A0U2M6T1O6L4J5X1E2H2A5E1",
         "title": "공직선거법 일부개정법률안",
@@ -2018,6 +2008,16 @@
         "status": "처리",
         "status_detail": "공포",
         "actor_count": 13
+    },
+    {
+        "id": 9619,
+        "link_id": "PRC_E1F2B1N0N2N6O1K6K0S6N4G1T2U5W9",
+        "title": "지진재해대책법 일부개정법률안",
+        "proposed_date": "2012-10-26",
+        "decision_date": "2013-06-27",
+        "status": "처리",
+        "status_detail": "대안반영폐기",
+        "actor_count": 14
     },
     {
         "id": 11605,
@@ -2100,16 +2100,6 @@
         "actor_count": 12
     },
     {
-        "id": 8041,
-        "link_id": "PRC_I1G2J0W8M3S1Q1K8Z4R5G2D8R0D2J4",
-        "title": "국무총리·국무위원 및 정부위원 출석요구의 건(교육·사회·문화에 관한 질문)",
-        "proposed_date": "2012-08-31",
-        "decision_date": "2012-09-03",
-        "status": "처리",
-        "status_detail": "의결",
-        "actor_count": 277
-    },
-    {
         "id": 17188,
         "link_id": "PRC_D1J2C0Q8I3U1I1A8Y4U0P2P2V7T2I0",
         "title": "국무총리·국무위원 및 정부위원 출석요구의 건(경제에 관한 질문)",
@@ -2150,6 +2140,16 @@
         "actor_count": 277
     },
     {
+        "id": 8041,
+        "link_id": "PRC_I1G2J0W8M3S1Q1K8Z4R5G2D8R0D2J4",
+        "title": "국무총리·국무위원 및 정부위원 출석요구의 건(교육·사회·문화에 관한 질문)",
+        "proposed_date": "2012-08-31",
+        "decision_date": "2012-09-03",
+        "status": "처리",
+        "status_detail": "의결",
+        "actor_count": 277
+    },
+    {
         "id": 10278,
         "link_id": "PRC_I1W2V0Q8Y0O1E1V7W4V3N0M3P9J8P2",
         "title": "남북협력기금법 전부개정법률안",
@@ -2168,26 +2168,6 @@
         "status": "계류",
         "status_detail": "위원회 심사",
         "actor_count": 29
-    },
-    {
-        "id": 8527,
-        "link_id": "PRC_V1Q2E0V7C0D6G2V0Y5W9A0S5S6H6W4",
-        "title": "국무총리·국무위원 및 정부위원 출석요구의 건(교육·사회·문화에 관한 질문)",
-        "proposed_date": "2012-07-06",
-        "decision_date": "2012-07-09",
-        "status": "처리",
-        "status_detail": "의결",
-        "actor_count": 276
-    },
-    {
-        "id": 17871,
-        "link_id": "PRC_A1T2B0G7M0U6V2G0X5Y5R2L7R2C3B0",
-        "title": "국무총리·국무위원 및 정부위원 출석요구의 건(경제에 관한 질문)",
-        "proposed_date": "2012-07-06",
-        "decision_date": "2012-07-09",
-        "status": "처리",
-        "status_detail": "의결",
-        "actor_count": 276
     },
     {
         "id": 12107,
@@ -2213,6 +2193,26 @@
         "id": 14321,
         "link_id": "PRC_D1E2Y0P7S0N6Q1B8E4K7A0H5S2T6F9",
         "title": "국무총리 및 국무위원 출석요구의 건(외교·통일·안보에 관한 질문)",
+        "proposed_date": "2012-07-06",
+        "decision_date": "2012-07-09",
+        "status": "처리",
+        "status_detail": "의결",
+        "actor_count": 276
+    },
+    {
+        "id": 8527,
+        "link_id": "PRC_V1Q2E0V7C0D6G2V0Y5W9A0S5S6H6W4",
+        "title": "국무총리·국무위원 및 정부위원 출석요구의 건(교육·사회·문화에 관한 질문)",
+        "proposed_date": "2012-07-06",
+        "decision_date": "2012-07-09",
+        "status": "처리",
+        "status_detail": "의결",
+        "actor_count": 276
+    },
+    {
+        "id": 17871,
+        "link_id": "PRC_A1T2B0G7M0U6V2G0X5Y5R2L7R2C3B0",
+        "title": "국무총리·국무위원 및 정부위원 출석요구의 건(경제에 관한 질문)",
         "proposed_date": "2012-07-06",
         "decision_date": "2012-07-09",
         "status": "처리",

@@ -40,26 +40,6 @@
         "actor_count": 10
     },
     {
-        "id": 7380,
-        "link_id": "PRC_T1R5T0B5G2J8G1Z7N2E2K3L5S0C4J0",
-        "title": "주차장법 일부개정법률안",
-        "proposed_date": "2015-05-28",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 10
-    },
-    {
-        "id": 10546,
-        "link_id": "PRC_R1T5J0U5W2A8O1B7U4G0F0P1R7Y7U2",
-        "title": "비파괴검사기술의 진흥 및 관리에 관한 법률 일부개정법률안",
-        "proposed_date": "2015-05-28",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 10
-    },
-    {
         "id": 8014,
         "link_id": "PRC_Z1Q5D0O5D2E8Z1L7A5P1J0A0G4L1E6",
         "title": "골재채취법 일부개정법률안",
@@ -100,6 +80,16 @@
         "actor_count": 10
     },
     {
+        "id": 12103,
+        "link_id": "PRC_G1U5F0Q5C2Z8F1B7L4Y4O3Z2J5G7H7",
+        "title": "인터넷 멀티미디어 방송사업법 일부개정법률안",
+        "proposed_date": "2015-05-28",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 10
+    },
+    {
         "id": 4341,
         "link_id": "PRC_U1Y5A0A5B2N8Q1G7O3F8J3E4V2P5K9",
         "title": "방송광고판매대행 등에 관한 법률 일부개정법률안",
@@ -110,9 +100,19 @@
         "actor_count": 10
     },
     {
-        "id": 12103,
-        "link_id": "PRC_G1U5F0Q5C2Z8F1B7L4Y4O3Z2J5G7H7",
-        "title": "인터넷 멀티미디어 방송사업법 일부개정법률안",
+        "id": 10546,
+        "link_id": "PRC_R1T5J0U5W2A8O1B7U4G0F0P1R7Y7U2",
+        "title": "비파괴검사기술의 진흥 및 관리에 관한 법률 일부개정법률안",
+        "proposed_date": "2015-05-28",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 10
+    },
+    {
+        "id": 7380,
+        "link_id": "PRC_T1R5T0B5G2J8G1Z7N2E2K3L5S0C4J0",
+        "title": "주차장법 일부개정법률안",
         "proposed_date": "2015-05-28",
         "decision_date": "0000-00-00",
         "status": "계류",
@@ -160,36 +160,6 @@
         "actor_count": 16
     },
     {
-        "id": 8884,
-        "link_id": "PRC_Z1N4Z1E2H1O9L1R7K3C3T3D3K3P8K7",
-        "title": "상고심절차에 관한 특례법 폐지법률안",
-        "proposed_date": "2014-12-19",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 168
-    },
-    {
-        "id": 6420,
-        "link_id": "PRC_R1B4Z1K2Z1Q9K1A7G4F1P3H8N0B0T0",
-        "title": "민사소송 등 인지법 일부개정법률안",
-        "proposed_date": "2014-12-19",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 168
-    },
-    {
-        "id": 15134,
-        "link_id": "PRC_F1Q4K1D2E1Z9E1B7A0H7Q5W4B9S1E4",
-        "title": "법원조직법 일부개정법률안",
-        "proposed_date": "2014-12-19",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 168
-    },
-    {
         "id": 10802,
         "link_id": "PRC_N1X4F1N2W1S9Q1T7Q2T7M2C6J3T1Q0",
         "title": "형사소송법 일부개정법률안",
@@ -213,6 +183,36 @@
         "id": 12771,
         "link_id": "PRC_N1Y4Q1M2K1P9K1T7J1B5G5K6O3Z0U2",
         "title": "민사소송법 일부개정법률안",
+        "proposed_date": "2014-12-19",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 168
+    },
+    {
+        "id": 8884,
+        "link_id": "PRC_Z1N4Z1E2H1O9L1R7K3C3T3D3K3P8K7",
+        "title": "상고심절차에 관한 특례법 폐지법률안",
+        "proposed_date": "2014-12-19",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 168
+    },
+    {
+        "id": 6420,
+        "link_id": "PRC_R1B4Z1K2Z1Q9K1A7G4F1P3H8N0B0T0",
+        "title": "민사소송 등 인지법 일부개정법률안",
+        "proposed_date": "2014-12-19",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 168
+    },
+    {
+        "id": 15134,
+        "link_id": "PRC_F1Q4K1D2E1Z9E1B7A0H7Q5W4B9S1E4",
+        "title": "법원조직법 일부개정법률안",
         "proposed_date": "2014-12-19",
         "decision_date": "0000-00-00",
         "status": "계류",

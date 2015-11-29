@@ -10,36 +10,6 @@
         "actor_count": 13
     },
     {
-        "id": 7708,
-        "link_id": "PRC_D1U5C1U0P2X3P1N8N4W3T1X8F0H5J1",
-        "title": "사회보장기본법 일부개정법률안",
-        "proposed_date": "2015-10-23",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 10
-    },
-    {
-        "id": 17494,
-        "link_id": "PRC_A1K5I1G0E2W3Q1K8B2U4W5B9G8U0H6",
-        "title": "혈액관리법 일부개정법률안",
-        "proposed_date": "2015-10-23",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 10
-    },
-    {
-        "id": 13475,
-        "link_id": "PRC_E1K5S1A0S2B3O1X8I5I9R4D0C7F8U3",
-        "title": "사회복지사 등의 처우 및 지위 향상을 위한 법률 일부개정법률안",
-        "proposed_date": "2015-10-23",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 10
-    },
-    {
         "id": 2032,
         "link_id": "PRC_S1C5M1N0T2F3I1A8T1E2G0M6X4R5H7",
         "title": "의료기기법 일부개정법률안",
@@ -73,6 +43,36 @@
         "id": 16728,
         "link_id": "PRC_I1H5L1L0N2N3V1U8A4I5S3J6I9Z6Q7",
         "title": "국민연금법 일부개정법률안",
+        "proposed_date": "2015-10-23",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 10
+    },
+    {
+        "id": 7708,
+        "link_id": "PRC_D1U5C1U0P2X3P1N8N4W3T1X8F0H5J1",
+        "title": "사회보장기본법 일부개정법률안",
+        "proposed_date": "2015-10-23",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 10
+    },
+    {
+        "id": 17494,
+        "link_id": "PRC_A1K5I1G0E2W3Q1K8B2U4W5B9G8U0H6",
+        "title": "혈액관리법 일부개정법률안",
+        "proposed_date": "2015-10-23",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 10
+    },
+    {
+        "id": 13475,
+        "link_id": "PRC_E1K5S1A0S2B3O1X8I5I9R4D0C7F8U3",
+        "title": "사회복지사 등의 처우 및 지위 향상을 위한 법률 일부개정법률안",
         "proposed_date": "2015-10-23",
         "decision_date": "0000-00-00",
         "status": "계류",
@@ -150,26 +150,6 @@
         "actor_count": 15
     },
     {
-        "id": 8323,
-        "link_id": "PRC_L1A4O1A1A1K2T1Z1M2D6M2S1K8H4J4",
-        "title": "장애인연금법 일부개정법률안",
-        "proposed_date": "2014-11-12",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 25
-    },
-    {
-        "id": 17512,
-        "link_id": "PRC_B1C4U1A1H1L2O1E3M3X9L0K7K0O5Y1",
-        "title": "기초연금법 일부개정법률안",
-        "proposed_date": "2014-11-12",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 25
-    },
-    {
         "id": 13714,
         "link_id": "PRC_O1K4C1R1Z1T2M1N1A2U6R3V6W0I5H5",
         "title": "영유아보육법 일부개정법률안",
@@ -183,6 +163,26 @@
         "id": 7349,
         "link_id": "PRC_Q1O4P1M1M1E2O1H3T3M7R4V9G4L2J9",
         "title": "국민기초생활 보장법 일부개정법률안",
+        "proposed_date": "2014-11-12",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 25
+    },
+    {
+        "id": 8323,
+        "link_id": "PRC_L1A4O1A1A1K2T1Z1M2D6M2S1K8H4J4",
+        "title": "장애인연금법 일부개정법률안",
+        "proposed_date": "2014-11-12",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 25
+    },
+    {
+        "id": 17512,
+        "link_id": "PRC_B1C4U1A1H1L2O1E3M3X9L0K7K0O5Y1",
+        "title": "기초연금법 일부개정법률안",
         "proposed_date": "2014-11-12",
         "decision_date": "0000-00-00",
         "status": "계류",
@@ -240,16 +240,6 @@
         "actor_count": 12
     },
     {
-        "id": 695,
-        "link_id": "PRC_I1Q3K1T0M2Z3C1Q7V1B0L0U5F4F5O0",
-        "title": "보건의료기술 진흥법 일부개정법률안",
-        "proposed_date": "2013-10-23",
-        "decision_date": "2014-12-29",
-        "status": "처리",
-        "status_detail": "공포",
-        "actor_count": 12
-    },
-    {
         "id": 14145,
         "link_id": "PRC_K1R3C1Q0J2G3Z1J7N0S5H2Z7I5O9O4",
         "title": "혈액관리법 일부개정법률안",
@@ -260,23 +250,13 @@
         "actor_count": 12
     },
     {
-        "id": 2977,
-        "link_id": "PRC_D1B3J1K0Z1W5K1J5T4F5Y2O7G4T9Q2",
-        "title": "식품위생법 일부개정법률안",
-        "proposed_date": "2013-10-15",
-        "decision_date": "2014-05-09",
-        "status": "처리",
-        "status_detail": "폐기",
-        "actor_count": 12
-    },
-    {
-        "id": 15868,
-        "link_id": "PRC_V1X3S1A0P1Q5F1X5P4N3N2L5E2H8Y8",
-        "title": "의료법 일부개정법률안",
-        "proposed_date": "2013-10-15",
+        "id": 695,
+        "link_id": "PRC_I1Q3K1T0M2Z3C1Q7V1B0L0U5F4F5O0",
+        "title": "보건의료기술 진흥법 일부개정법률안",
+        "proposed_date": "2013-10-23",
         "decision_date": "2014-12-29",
         "status": "처리",
-        "status_detail": "대안반영폐기",
+        "status_detail": "공포",
         "actor_count": 12
     },
     {
@@ -290,13 +270,23 @@
         "actor_count": 12
     },
     {
-        "id": 8565,
-        "link_id": "PRC_E1T3U0E9S2V3W1G6N0I1R2A8B6S3N3",
-        "title": "국민영양관리법 일부개정법률안",
-        "proposed_date": "2013-09-23",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
+        "id": 15868,
+        "link_id": "PRC_V1X3S1A0P1Q5F1X5P4N3N2L5E2H8Y8",
+        "title": "의료법 일부개정법률안",
+        "proposed_date": "2013-10-15",
+        "decision_date": "2014-12-29",
+        "status": "처리",
+        "status_detail": "대안반영폐기",
+        "actor_count": 12
+    },
+    {
+        "id": 2977,
+        "link_id": "PRC_D1B3J1K0Z1W5K1J5T4F5Y2O7G4T9Q2",
+        "title": "식품위생법 일부개정법률안",
+        "proposed_date": "2013-10-15",
+        "decision_date": "2014-05-09",
+        "status": "처리",
+        "status_detail": "폐기",
         "actor_count": 12
     },
     {
@@ -320,13 +310,13 @@
         "actor_count": 12
     },
     {
-        "id": 1958,
-        "link_id": "PRC_E1M3F0I8V2K7X1V4Y1W0U1O5P5A5A1",
-        "title": "의료기기법 일부개정법률안",
-        "proposed_date": "2013-08-27",
-        "decision_date": "2014-12-29",
-        "status": "처리",
-        "status_detail": "대안반영폐기",
+        "id": 8565,
+        "link_id": "PRC_E1T3U0E9S2V3W1G6N0I1R2A8B6S3N3",
+        "title": "국민영양관리법 일부개정법률안",
+        "proposed_date": "2013-09-23",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
         "actor_count": 12
     },
     {
@@ -337,6 +327,26 @@
         "decision_date": "0000-00-00",
         "status": "계류",
         "status_detail": "위원회 심사",
+        "actor_count": 12
+    },
+    {
+        "id": 1958,
+        "link_id": "PRC_E1M3F0I8V2K7X1V4Y1W0U1O5P5A5A1",
+        "title": "의료기기법 일부개정법률안",
+        "proposed_date": "2013-08-27",
+        "decision_date": "2014-12-29",
+        "status": "처리",
+        "status_detail": "대안반영폐기",
+        "actor_count": 12
+    },
+    {
+        "id": 9225,
+        "link_id": "PRC_M1G3A0G8R2Y0J1T4P0D6Z2M2T3E6I0",
+        "title": "의료법 일부개정법률안",
+        "proposed_date": "2013-08-20",
+        "decision_date": "2014-12-29",
+        "status": "처리",
+        "status_detail": "대안반영폐기",
         "actor_count": 12
     },
     {
@@ -357,16 +367,6 @@
         "decision_date": "0000-00-00",
         "status": "계류",
         "status_detail": "위원회 심사",
-        "actor_count": 12
-    },
-    {
-        "id": 9225,
-        "link_id": "PRC_M1G3A0G8R2Y0J1T4P0D6Z2M2T3E6I0",
-        "title": "의료법 일부개정법률안",
-        "proposed_date": "2013-08-20",
-        "decision_date": "2014-12-29",
-        "status": "처리",
-        "status_detail": "대안반영폐기",
         "actor_count": 12
     },
     {

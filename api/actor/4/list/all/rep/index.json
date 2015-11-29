@@ -40,16 +40,6 @@
         "actor_count": 11
     },
     {
-        "id": 6852,
-        "link_id": "PRC_Z1G4M0A3N0J7O1H4K2G9Q2J6Z1P7I7",
-        "title": "형법 일부개정법률안",
-        "proposed_date": "2014-03-07",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 10
-    },
-    {
         "id": 11573,
         "link_id": "PRC_R1Y4F0J3O0H7Z1Q4M3E1V4B7N6A0I2",
         "title": "공직선거법 일부개정법률안",
@@ -57,6 +47,16 @@
         "decision_date": "2015-07-24",
         "status": "처리",
         "status_detail": "대안반영폐기",
+        "actor_count": 10
+    },
+    {
+        "id": 6852,
+        "link_id": "PRC_Z1G4M0A3N0J7O1H4K2G9Q2J6Z1P7I7",
+        "title": "형법 일부개정법률안",
+        "proposed_date": "2014-03-07",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
         "actor_count": 10
     },
     {
@@ -100,9 +100,9 @@
         "actor_count": 154
     },
     {
-        "id": 9901,
-        "link_id": "PRC_B1J3F1I0N0O8N1N0W5Z3W3V7D2L2L1",
-        "title": "애니메이션산업 육성 및 지원에 관한 법률안",
+        "id": 17707,
+        "link_id": "PRC_C1K3T1T0R0O8A1Z1N4K3H4I0F1E3X4",
+        "title": "조세특례제한법 일부개정법률안",
         "proposed_date": "2013-10-08",
         "decision_date": "0000-00-00",
         "status": "계류",
@@ -110,9 +110,9 @@
         "actor_count": 31
     },
     {
-        "id": 17707,
-        "link_id": "PRC_C1K3T1T0R0O8A1Z1N4K3H4I0F1E3X4",
-        "title": "조세특례제한법 일부개정법률안",
+        "id": 9901,
+        "link_id": "PRC_B1J3F1I0N0O8N1N0W5Z3W3V7D2L2L1",
+        "title": "애니메이션산업 육성 및 지원에 관한 법률안",
         "proposed_date": "2013-10-08",
         "decision_date": "0000-00-00",
         "status": "계류",
@@ -130,16 +130,6 @@
         "actor_count": 17
     },
     {
-        "id": 451,
-        "link_id": "PRC_R1T3I0P4R2V2U1G0I4Z7L4G6J5Q1W5",
-        "title": "공공기관의 운영에 관한 법률 일부개정법률안",
-        "proposed_date": "2013-04-22",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 13
-    },
-    {
         "id": 8208,
         "link_id": "PRC_P1N3V0N4A2H2Y1K1T1O2D0D9L2A6F9",
         "title": "원양산업발전법 일부개정법률안",
@@ -148,6 +138,16 @@
         "status": "처리",
         "status_detail": "대안반영폐기",
         "actor_count": 11
+    },
+    {
+        "id": 451,
+        "link_id": "PRC_R1T3I0P4R2V2U1G0I4Z7L4G6J5Q1W5",
+        "title": "공공기관의 운영에 관한 법률 일부개정법률안",
+        "proposed_date": "2013-04-22",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 13
     },
     {
         "id": 15523,
@@ -200,14 +200,14 @@
         "actor_count": 15
     },
     {
-        "id": 3604,
-        "link_id": "PRC_Y1U3G0I2Z0D7A1I6O2V5Y2F4A9C8Q1",
-        "title": "노인복지법 일부개정법률안",
+        "id": 7277,
+        "link_id": "PRC_K1I3P0N2K0M7D1P6Z4W5I0J7L0Q2G8",
+        "title": "장애인고용촉진 및 직업재활법 일부개정법률안",
         "proposed_date": "2013-02-07",
         "decision_date": "0000-00-00",
         "status": "계류",
         "status_detail": "위원회 심사",
-        "actor_count": 15
+        "actor_count": 24
     },
     {
         "id": 12953,
@@ -220,6 +220,16 @@
         "actor_count": 25
     },
     {
+        "id": 3604,
+        "link_id": "PRC_Y1U3G0I2Z0D7A1I6O2V5Y2F4A9C8Q1",
+        "title": "노인복지법 일부개정법률안",
+        "proposed_date": "2013-02-07",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 15
+    },
+    {
         "id": 13900,
         "link_id": "PRC_Z1T3H0P2D0Z7J1Y6N4L1F4H6N8K7P0",
         "title": "공직선거법 일부개정법률안",
@@ -228,16 +238,6 @@
         "status": "계류",
         "status_detail": "위원회 심사",
         "actor_count": 10
-    },
-    {
-        "id": 7277,
-        "link_id": "PRC_K1I3P0N2K0M7D1P6Z4W5I0J7L0Q2G8",
-        "title": "장애인고용촉진 및 직업재활법 일부개정법률안",
-        "proposed_date": "2013-02-07",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 24
     },
     {
         "id": 7186,
@@ -300,16 +300,6 @@
         "actor_count": 20
     },
     {
-        "id": 1422,
-        "link_id": "PRC_V1F2G0I8H2C4J1F4A3W4M0I0P3M8A5",
-        "title": "농어업인 부채경감에 관한 특별조치법 일부개정법률안",
-        "proposed_date": "2012-08-24",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 14
-    },
-    {
         "id": 10203,
         "link_id": "PRC_N1G2V0Q8D2N4L1E4K2K9X2W1M1O0U3",
         "title": "박물관 및 미술관 진흥법 일부개정법률안",
@@ -318,6 +308,16 @@
         "status": "처리",
         "status_detail": "공포",
         "actor_count": 10
+    },
+    {
+        "id": 1422,
+        "link_id": "PRC_V1F2G0I8H2C4J1F4A3W4M0I0P3M8A5",
+        "title": "농어업인 부채경감에 관한 특별조치법 일부개정법률안",
+        "proposed_date": "2012-08-24",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 14
     },
     {
         "id": 6181,

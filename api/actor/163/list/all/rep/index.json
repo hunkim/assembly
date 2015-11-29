@@ -1,5 +1,15 @@
 [
     {
+        "id": 8534,
+        "link_id": "PRC_G1T5C1Y1N1M7B1F4D4U6T2S0V0I0C4",
+        "title": "전기통신사업법 일부개정법률안",
+        "proposed_date": "2015-11-17",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 11
+    },
+    {
         "id": 3699,
         "link_id": "PRC_W1R5B1R1T1J7Y1L4F4P8H5M2T1M5Y9",
         "title": "정보통신망 이용촉진 및 정보보호 등에 관한 법률 일부개정법률안",
@@ -18,16 +28,6 @@
         "status": "계류",
         "status_detail": "위원회 심사",
         "actor_count": 12
-    },
-    {
-        "id": 8534,
-        "link_id": "PRC_G1T5C1Y1N1M7B1F4D4U6T2S0V0I0C4",
-        "title": "전기통신사업법 일부개정법률안",
-        "proposed_date": "2015-11-17",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 11
     },
     {
         "id": 15525,
@@ -110,29 +110,9 @@
         "actor_count": 28
     },
     {
-        "id": 190,
-        "link_id": "PRC_L1V4T0O9E1W9I1H4G2W4C0P4Z1T2X1",
-        "title": "원자력 진흥법 일부개정법률안",
-        "proposed_date": "2014-09-19",
-        "decision_date": "2015-05-29",
-        "status": "처리",
-        "status_detail": "공포",
-        "actor_count": 12
-    },
-    {
         "id": 639,
         "link_id": "PRC_F1X4Y0R9E1O9J1M4T1C1P0E5B7X5Y9",
         "title": "원자력시설 등의 방호 및 방사능 방재 대책법 일부개정법률안",
-        "proposed_date": "2014-09-19",
-        "decision_date": "2015-05-29",
-        "status": "처리",
-        "status_detail": "공포",
-        "actor_count": 12
-    },
-    {
-        "id": 2497,
-        "link_id": "PRC_Q1K4F0T9K1B9X1E4M1J4T3Q3K8J0U0",
-        "title": "한국원자력안전기술원법 일부개정법률안",
         "proposed_date": "2014-09-19",
         "decision_date": "2015-05-29",
         "status": "처리",
@@ -147,6 +127,26 @@
         "decision_date": "2015-05-29",
         "status": "처리",
         "status_detail": "대안반영폐기",
+        "actor_count": 12
+    },
+    {
+        "id": 2497,
+        "link_id": "PRC_Q1K4F0T9K1B9X1E4M1J4T3Q3K8J0U0",
+        "title": "한국원자력안전기술원법 일부개정법률안",
+        "proposed_date": "2014-09-19",
+        "decision_date": "2015-05-29",
+        "status": "처리",
+        "status_detail": "공포",
+        "actor_count": 12
+    },
+    {
+        "id": 190,
+        "link_id": "PRC_L1V4T0O9E1W9I1H4G2W4C0P4Z1T2X1",
+        "title": "원자력 진흥법 일부개정법률안",
+        "proposed_date": "2014-09-19",
+        "decision_date": "2015-05-29",
+        "status": "처리",
+        "status_detail": "공포",
         "actor_count": 12
     },
     {
@@ -310,16 +310,6 @@
         "actor_count": 11
     },
     {
-        "id": 10032,
-        "link_id": "PRC_Q1S2Y0E7B0K4H1G4O4X1H1T4S9S6V0",
-        "title": "초·중등교육법 일부개정법률안",
-        "proposed_date": "2012-07-04",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 14
-    },
-    {
         "id": 13188,
         "link_id": "PRC_A1Z2I0Q7E0N4O1P4C0I2T2T1L5D7Z8",
         "title": "교원지위향상을 위한 특별법 일부개정법률안",
@@ -330,14 +320,14 @@
         "actor_count": 14
     },
     {
-        "id": 6336,
-        "link_id": "PRC_Q1W2E0L6H1F9R1E1B4J9S2O5H9F4D2",
-        "title": "소득세법 일부개정법률안",
-        "proposed_date": "2012-06-19",
+        "id": 10032,
+        "link_id": "PRC_Q1S2Y0E7B0K4H1G4O4X1H1T4S9S6V0",
+        "title": "초·중등교육법 일부개정법률안",
+        "proposed_date": "2012-07-04",
         "decision_date": "0000-00-00",
         "status": "계류",
         "status_detail": "위원회 심사",
-        "actor_count": 13
+        "actor_count": 14
     },
     {
         "id": 4757,
@@ -378,5 +368,15 @@
         "status": "계류",
         "status_detail": "위원회 심사",
         "actor_count": 12
+    },
+    {
+        "id": 6336,
+        "link_id": "PRC_Q1W2E0L6H1F9R1E1B4J9S2O5H9F4D2",
+        "title": "소득세법 일부개정법률안",
+        "proposed_date": "2012-06-19",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 13
     }
 ]

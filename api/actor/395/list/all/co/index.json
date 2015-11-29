@@ -1,25 +1,5 @@
 [
     {
-        "id": 2429,
-        "link_id": "PRC_F1M5T1F1K2K7O1J7C3D2P4T0I5Z5I7",
-        "title": "사립학교법 일부개정법률안",
-        "proposed_date": "2015-11-27",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "접수",
-        "actor_count": 15
-    },
-    {
-        "id": 17122,
-        "link_id": "PRC_L1J5B1U1E2K7K1D7D2R4G3Y3L9W2X0",
-        "title": "문화산업진흥 기본법 일부개정법률안",
-        "proposed_date": "2015-11-27",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "접수",
-        "actor_count": 16
-    },
-    {
         "id": 6156,
         "link_id": "PRC_M1I5K1L1Q2W7A1C5M2F6V5E7L6B8M5",
         "title": "공직선거법 일부개정법률안",
@@ -80,6 +60,26 @@
         "actor_count": 16
     },
     {
+        "id": 17122,
+        "link_id": "PRC_L1J5B1U1E2K7K1D7D2R4G3Y3L9W2X0",
+        "title": "문화산업진흥 기본법 일부개정법률안",
+        "proposed_date": "2015-11-27",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "접수",
+        "actor_count": 16
+    },
+    {
+        "id": 2429,
+        "link_id": "PRC_F1M5T1F1K2K7O1J7C3D2P4T0I5Z5I7",
+        "title": "사립학교법 일부개정법률안",
+        "proposed_date": "2015-11-27",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "접수",
+        "actor_count": 15
+    },
+    {
         "id": 12508,
         "link_id": "PRC_W1X5C0L5H2E2R1G7D4N6Z4S3B4V9C6",
         "title": "곤충산업의 육성 및 지원에 관한 법률 일부개정법률안",
@@ -128,36 +128,6 @@
         "status": "계류",
         "status_detail": "위원회 심사",
         "actor_count": 20
-    },
-    {
-        "id": 440,
-        "link_id": "PRC_V1L5D0O5U1R8Z1J7E2O9K0A2X3E9K5",
-        "title": "남북 주민 사이의 가족관계와 상속 등에 관한 특례법 일부개정법률안",
-        "proposed_date": "2015-05-18",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 10
-    },
-    {
-        "id": 9720,
-        "link_id": "PRC_O1V5Z0Z5J1W8N1F7U3M8W2D6I6R3A2",
-        "title": "기업구조조정투자회사법 일부개정법률안",
-        "proposed_date": "2015-05-18",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 10
-    },
-    {
-        "id": 17046,
-        "link_id": "PRC_M1Q5L0D5O1X8W1A7L2I7R3X7O8Y0G3",
-        "title": "금융지주회사법 일부개정법률안",
-        "proposed_date": "2015-05-18",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 10
     },
     {
         "id": 13078,
@@ -210,14 +180,34 @@
         "actor_count": 10
     },
     {
-        "id": 5736,
-        "link_id": "PRC_A1G5G0S5W1Q4A1K3C5O2L0W7E3V5U0",
-        "title": "통신비밀보호법 일부개정법률안",
-        "proposed_date": "2015-05-14",
+        "id": 17046,
+        "link_id": "PRC_M1Q5L0D5O1X8W1A7L2I7R3X7O8Y0G3",
+        "title": "금융지주회사법 일부개정법률안",
+        "proposed_date": "2015-05-18",
         "decision_date": "0000-00-00",
         "status": "계류",
         "status_detail": "위원회 심사",
-        "actor_count": 17
+        "actor_count": 10
+    },
+    {
+        "id": 440,
+        "link_id": "PRC_V1L5D0O5U1R8Z1J7E2O9K0A2X3E9K5",
+        "title": "남북 주민 사이의 가족관계와 상속 등에 관한 특례법 일부개정법률안",
+        "proposed_date": "2015-05-18",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 10
+    },
+    {
+        "id": 9720,
+        "link_id": "PRC_O1V5Z0Z5J1W8N1F7U3M8W2D6I6R3A2",
+        "title": "기업구조조정투자회사법 일부개정법률안",
+        "proposed_date": "2015-05-18",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 10
     },
     {
         "id": 6942,
@@ -240,14 +230,14 @@
         "actor_count": 17
     },
     {
-        "id": 5755,
-        "link_id": "PRC_U1F5W0S5B1E1D1W5F5Y2J1Z9C8M7B2",
-        "title": "국민의 생명과 안전을 위한 노후원전 고리1호기 폐쇄 촉구 결의안",
-        "proposed_date": "2015-05-11",
+        "id": 5736,
+        "link_id": "PRC_A1G5G0S5W1Q4A1K3C5O2L0W7E3V5U0",
+        "title": "통신비밀보호법 일부개정법률안",
+        "proposed_date": "2015-05-14",
         "decision_date": "0000-00-00",
         "status": "계류",
         "status_detail": "위원회 심사",
-        "actor_count": 27
+        "actor_count": 17
     },
     {
         "id": 12531,
@@ -258,5 +248,15 @@
         "status": "계류",
         "status_detail": "위원회 심사",
         "actor_count": 15
+    },
+    {
+        "id": 5755,
+        "link_id": "PRC_U1F5W0S5B1E1D1W5F5Y2J1Z9C8M7B2",
+        "title": "국민의 생명과 안전을 위한 노후원전 고리1호기 폐쇄 촉구 결의안",
+        "proposed_date": "2015-05-11",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 27
     }
 ]

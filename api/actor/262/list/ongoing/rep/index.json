@@ -70,6 +70,16 @@
         "actor_count": 30
     },
     {
+        "id": 13401,
+        "link_id": "PRC_O1P3P1W1Z2X8L1E7J2O8T2E9O1I6F6",
+        "title": "복권 및 복권기금법 일부개정법률안",
+        "proposed_date": "2013-11-28",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 10
+    },
+    {
         "id": 12179,
         "link_id": "PRC_I1B3Q1V1X2M8E1N7P4M4X5D8K7A7A5",
         "title": "국가재정법 일부개정법률안",
@@ -84,36 +94,6 @@
         "link_id": "PRC_N1O3B1W1V2W8T1K7W4T1G0L6L8A3K3",
         "title": "공탁법 일부개정법률안",
         "proposed_date": "2013-11-28",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 10
-    },
-    {
-        "id": 13401,
-        "link_id": "PRC_O1P3P1W1Z2X8L1E7J2O8T2E9O1I6F6",
-        "title": "복권 및 복권기금법 일부개정법률안",
-        "proposed_date": "2013-11-28",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 10
-    },
-    {
-        "id": 8235,
-        "link_id": "PRC_E1T3Z1N1A2U7E1M1Z4V7B3P9B6I6L1",
-        "title": "산업안전보건법 일부개정법률안",
-        "proposed_date": "2013-11-27",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 10
-    },
-    {
-        "id": 12357,
-        "link_id": "PRC_M1O3E1G1N2B7S1Z3H5X8L5P1H9S6O7",
-        "title": "수도권 대기환경개선에 관한 특별법 일부개정법률안",
-        "proposed_date": "2013-11-27",
         "decision_date": "0000-00-00",
         "status": "계류",
         "status_detail": "위원회 심사",
@@ -140,6 +120,26 @@
         "actor_count": 10
     },
     {
+        "id": 8235,
+        "link_id": "PRC_E1T3Z1N1A2U7E1M1Z4V7B3P9B6I6L1",
+        "title": "산업안전보건법 일부개정법률안",
+        "proposed_date": "2013-11-27",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 10
+    },
+    {
+        "id": 12357,
+        "link_id": "PRC_M1O3E1G1N2B7S1Z3H5X8L5P1H9S6O7",
+        "title": "수도권 대기환경개선에 관한 특별법 일부개정법률안",
+        "proposed_date": "2013-11-27",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 10
+    },
+    {
         "id": 5591,
         "link_id": "PRC_H1Q3M1C1E0S8K1D7W1H7S1F3I4T8M8",
         "title": "인문학 진흥 및 인문강좌등의 지원에 관한 법률안",
@@ -148,16 +148,6 @@
         "status": "계류",
         "status_detail": "위원회 심사",
         "actor_count": 31
-    },
-    {
-        "id": 325,
-        "link_id": "PRC_C1E3C0E8S0V2E1M4F0G5U0R5Q0R5Y2",
-        "title": "법령정보 표시 촉진에 관한 법률안",
-        "proposed_date": "2013-08-02",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 18
     },
     {
         "id": 10184,
@@ -180,9 +170,19 @@
         "actor_count": 18
     },
     {
-        "id": 1448,
-        "link_id": "PRC_P1B3K0Y1B1K6J1S7H4V0Q5Z6I6I8Y5",
-        "title": "입법교육원법안",
+        "id": 325,
+        "link_id": "PRC_C1E3C0E8S0V2E1M4F0G5U0R5Q0R5Y2",
+        "title": "법령정보 표시 촉진에 관한 법률안",
+        "proposed_date": "2013-08-02",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 18
+    },
+    {
+        "id": 11669,
+        "link_id": "PRC_M1V3N0D1R1T6T1N7R3L4M2M5Y3K5M5",
+        "title": "국회법 일부개정법률안",
         "proposed_date": "2013-01-16",
         "decision_date": "0000-00-00",
         "status": "계류",
@@ -190,9 +190,9 @@
         "actor_count": 20
     },
     {
-        "id": 11669,
-        "link_id": "PRC_M1V3N0D1R1T6T1N7R3L4M2M5Y3K5M5",
-        "title": "국회법 일부개정법률안",
+        "id": 1448,
+        "link_id": "PRC_P1B3K0Y1B1K6J1S7H4V0Q5Z6I6I8Y5",
+        "title": "입법교육원법안",
         "proposed_date": "2013-01-16",
         "decision_date": "0000-00-00",
         "status": "계류",

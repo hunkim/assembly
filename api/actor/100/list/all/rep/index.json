@@ -10,16 +10,6 @@
         "actor_count": 10
     },
     {
-        "id": 6909,
-        "link_id": "PRC_A1J5J1E1N1K0Q1O4A4V8L1H4C2Q4C9",
-        "title": "방위사업법 일부개정법률안",
-        "proposed_date": "2015-11-10",
-        "decision_date": "2015-11-12",
-        "status": "처리",
-        "status_detail": "철회",
-        "actor_count": 10
-    },
-    {
         "id": 11943,
         "link_id": "PRC_P1F5C1R1Y1Y0X1O4O4J2X5P0Z2H5A8",
         "title": "재외동포의 출입국과 법적 지위에 관한 법률 일부개정법률안",
@@ -27,6 +17,16 @@
         "decision_date": "0000-00-00",
         "status": "계류",
         "status_detail": "위원회 심사",
+        "actor_count": 10
+    },
+    {
+        "id": 6909,
+        "link_id": "PRC_A1J5J1E1N1K0Q1O4A4V8L1H4C2Q4C9",
+        "title": "방위사업법 일부개정법률안",
+        "proposed_date": "2015-11-10",
+        "decision_date": "2015-11-12",
+        "status": "처리",
+        "status_detail": "철회",
         "actor_count": 10
     },
     {
@@ -100,26 +100,6 @@
         "actor_count": 11
     },
     {
-        "id": 17307,
-        "link_id": "PRC_N1L4B0P5P2Q1A1W5S2U7C5E1Q7D6F0",
-        "title": "공중방역수의사에 관한 법률 일부개정법률안",
-        "proposed_date": "2014-05-21",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 10
-    },
-    {
-        "id": 1545,
-        "link_id": "PRC_V1U4S0O5O2J1J1P5P2E8U4H9W9C0M6",
-        "title": "공익법무관에 관한 법률 일부개정법률안",
-        "proposed_date": "2014-05-21",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 10
-    },
-    {
         "id": 15910,
         "link_id": "PRC_S1B4W0D5N2L1U1S6O4Q6Q5O3W8I7J2",
         "title": "국제협력요원에 관한 법률 일부개정법률안",
@@ -160,6 +140,26 @@
         "actor_count": 10
     },
     {
+        "id": 17307,
+        "link_id": "PRC_N1L4B0P5P2Q1A1W5S2U7C5E1Q7D6F0",
+        "title": "공중방역수의사에 관한 법률 일부개정법률안",
+        "proposed_date": "2014-05-21",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 10
+    },
+    {
+        "id": 1545,
+        "link_id": "PRC_V1U4S0O5O2J1J1P5P2E8U4H9W9C0M6",
+        "title": "공익법무관에 관한 법률 일부개정법률안",
+        "proposed_date": "2014-05-21",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 10
+    },
+    {
         "id": 1755,
         "link_id": "PRC_Q1U4X0L4Y3U0P1R4G1R8I2A4T0M1J4",
         "title": "해운법 일부개정법률안",
@@ -190,16 +190,6 @@
         "actor_count": 10
     },
     {
-        "id": 9800,
-        "link_id": "PRC_X1N3A1A1V2T2V1P7Y4I6N5W2M7F4K9",
-        "title": "해적행위의 처벌 등에 관한 특례법안",
-        "proposed_date": "2013-11-22",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 22
-    },
-    {
         "id": 7530,
         "link_id": "PRC_H1U3H1P1O2V2X1F7O4C7I5Q3G8J4E9",
         "title": "사법경찰관리의 직무를 수행할 자와 그 직무범위에 관한 법률 일부개정법률안",
@@ -208,6 +198,16 @@
         "status": "계류",
         "status_detail": "위원회 심사",
         "actor_count": 20
+    },
+    {
+        "id": 9800,
+        "link_id": "PRC_X1N3A1A1V2T2V1P7Y4I6N5W2M7F4K9",
+        "title": "해적행위의 처벌 등에 관한 특례법안",
+        "proposed_date": "2013-11-22",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 22
     },
     {
         "id": 3274,
@@ -250,9 +250,9 @@
         "actor_count": 10
     },
     {
-        "id": 1625,
-        "link_id": "PRC_V1Q3T0W8T1S6G1K4S0M2E0N2A3V8W6",
-        "title": "의사상자 등 예우 및 지원에 관한 법률 일부개정법률안",
+        "id": 9119,
+        "link_id": "PRC_O1K3K0Z8N1U6E1W4R0D5I2I6R5G3X5",
+        "title": "한국장학재단 설립 등에 관한 법률 일부개정법률안",
         "proposed_date": "2013-08-16",
         "decision_date": "0000-00-00",
         "status": "계류",
@@ -260,9 +260,9 @@
         "actor_count": 10
     },
     {
-        "id": 9119,
-        "link_id": "PRC_O1K3K0Z8N1U6E1W4R0D5I2I6R5G3X5",
-        "title": "한국장학재단 설립 등에 관한 법률 일부개정법률안",
+        "id": 1625,
+        "link_id": "PRC_V1Q3T0W8T1S6G1K4S0M2E0N2A3V8W6",
+        "title": "의사상자 등 예우 및 지원에 관한 법률 일부개정법률안",
         "proposed_date": "2013-08-16",
         "decision_date": "0000-00-00",
         "status": "계류",
@@ -330,16 +330,6 @@
         "actor_count": 10
     },
     {
-        "id": 3458,
-        "link_id": "PRC_I1V2T0I8T1H7R1W5Q0Z2Z4K3V6A1B0",
-        "title": "지방행정체제 개편에 관한 특별법 일부개정법률안",
-        "proposed_date": "2012-08-17",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 10
-    },
-    {
         "id": 13689,
         "link_id": "PRC_J1S2U0G8L1X7A1J5L0H7A1J4E5C5D0",
         "title": "지방세특례제한법 일부개정법률안",
@@ -350,19 +340,19 @@
         "actor_count": 10
     },
     {
-        "id": 15564,
-        "link_id": "PRC_E1Q2H0K7T1N7T1R4A3W2F5E4E5K8Y2",
-        "title": "경찰대학 설치법 일부개정법률안",
-        "proposed_date": "2012-07-17",
+        "id": 3458,
+        "link_id": "PRC_I1V2T0I8T1H7R1W5Q0Z2Z4K3V6A1B0",
+        "title": "지방행정체제 개편에 관한 특별법 일부개정법률안",
+        "proposed_date": "2012-08-17",
         "decision_date": "0000-00-00",
         "status": "계류",
         "status_detail": "위원회 심사",
         "actor_count": 10
     },
     {
-        "id": 6383,
-        "link_id": "PRC_V1Y2S0O7G1I7X1O4L1M9E1U5S0L3G9",
-        "title": "국방대학교설치법 일부개정법률안",
+        "id": 16582,
+        "link_id": "PRC_T1K2L0W7D1R7M1Y4N2H5D0Z4T6G1O6",
+        "title": "육군3사관학교 설치법 일부개정법률안",
         "proposed_date": "2012-07-17",
         "decision_date": "2013-02-26",
         "status": "처리",
@@ -370,9 +360,9 @@
         "actor_count": 10
     },
     {
-        "id": 16582,
-        "link_id": "PRC_T1K2L0W7D1R7M1Y4N2H5D0Z4T6G1O6",
-        "title": "육군3사관학교 설치법 일부개정법률안",
+        "id": 6383,
+        "link_id": "PRC_V1Y2S0O7G1I7X1O4L1M9E1U5S0L3G9",
+        "title": "국방대학교설치법 일부개정법률안",
         "proposed_date": "2012-07-17",
         "decision_date": "2013-02-26",
         "status": "처리",
@@ -387,6 +377,16 @@
         "decision_date": "2013-02-26",
         "status": "처리",
         "status_detail": "공포",
+        "actor_count": 10
+    },
+    {
+        "id": 15564,
+        "link_id": "PRC_E1Q2H0K7T1N7T1R4A3W2F5E4E5K8Y2",
+        "title": "경찰대학 설치법 일부개정법률안",
+        "proposed_date": "2012-07-17",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
         "actor_count": 10
     },
     {

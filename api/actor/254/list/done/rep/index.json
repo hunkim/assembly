@@ -20,16 +20,6 @@
         "actor_count": 12
     },
     {
-        "id": 8666,
-        "link_id": "PRC_F1I3T1W1J2V2D1X7L4C8U4P0J9I2W2",
-        "title": "관세법 일부개정법률안",
-        "proposed_date": "2013-11-22",
-        "decision_date": "2014-01-01",
-        "status": "처리",
-        "status_detail": "대안반영폐기",
-        "actor_count": 12
-    },
-    {
         "id": 14070,
         "link_id": "PRC_K1C3X1E1N2X2F1A7M0K2A5P2O9M3Q6",
         "title": "개별소비세법 일부개정법률안",
@@ -38,6 +28,16 @@
         "status": "처리",
         "status_detail": "대안반영폐기",
         "actor_count": 11
+    },
+    {
+        "id": 8666,
+        "link_id": "PRC_F1I3T1W1J2V2D1X7L4C8U4P0J9I2W2",
+        "title": "관세법 일부개정법률안",
+        "proposed_date": "2013-11-22",
+        "decision_date": "2014-01-01",
+        "status": "처리",
+        "status_detail": "대안반영폐기",
+        "actor_count": 12
     },
     {
         "id": 14078,
@@ -110,16 +110,6 @@
         "actor_count": 10
     },
     {
-        "id": 6972,
-        "link_id": "PRC_S1S3I0O4S0N5B1F5W1K2O4T0V7L7O2",
-        "title": "법인세법 일부개정법률안",
-        "proposed_date": "2013-04-05",
-        "decision_date": "2014-01-01",
-        "status": "처리",
-        "status_detail": "대안반영폐기",
-        "actor_count": 11
-    },
-    {
         "id": 4105,
         "link_id": "PRC_W1S3K0X4Y0R5T1Y5V4J7J4B7B5H5S6",
         "title": "조세특례제한법 일부개정법률안",
@@ -140,14 +130,14 @@
         "actor_count": 11
     },
     {
-        "id": 7670,
-        "link_id": "PRC_E1G2T1N0U2G6F1E8X3B7U3D7T8S0O4",
-        "title": "세무사법 일부개정법률안",
-        "proposed_date": "2012-10-26",
-        "decision_date": "2013-01-01",
+        "id": 6972,
+        "link_id": "PRC_S1S3I0O4S0N5B1F5W1K2O4T0V7L7O2",
+        "title": "법인세법 일부개정법률안",
+        "proposed_date": "2013-04-05",
+        "decision_date": "2014-01-01",
         "status": "처리",
         "status_detail": "대안반영폐기",
-        "actor_count": 10
+        "actor_count": 11
     },
     {
         "id": 4004,
@@ -163,6 +153,16 @@
         "id": 12612,
         "link_id": "PRC_W1T2K1U0U2W6M1M8X3O7A2O4S7S3I0",
         "title": "부가가치세법 일부개정법률안",
+        "proposed_date": "2012-10-26",
+        "decision_date": "2013-01-01",
+        "status": "처리",
+        "status_detail": "대안반영폐기",
+        "actor_count": 10
+    },
+    {
+        "id": 7670,
+        "link_id": "PRC_E1G2T1N0U2G6F1E8X3B7U3D7T8S0O4",
+        "title": "세무사법 일부개정법률안",
         "proposed_date": "2012-10-26",
         "decision_date": "2013-01-01",
         "status": "처리",

@@ -90,16 +90,6 @@
         "actor_count": 10
     },
     {
-        "id": 2103,
-        "link_id": "PRC_A1M4A1Y2W0O5W1M7G4J0P5Q5X6X3Z2",
-        "title": "구강보건법 일부개정법률안",
-        "proposed_date": "2014-12-05",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 10
-    },
-    {
         "id": 11167,
         "link_id": "PRC_B1N4A1W2P0T5M1T7K3T6J3D8Z8I8M5",
         "title": "정신보건법 일부개정법률안",
@@ -110,6 +100,16 @@
         "actor_count": 11
     },
     {
+        "id": 2103,
+        "link_id": "PRC_A1M4A1Y2W0O5W1M7G4J0P5Q5X6X3Z2",
+        "title": "구강보건법 일부개정법률안",
+        "proposed_date": "2014-12-05",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 10
+    },
+    {
         "id": 14468,
         "link_id": "PRC_S1B4U0L9X1Q7O1Y6P0X0E1G8H2G3Z7",
         "title": "의료기사 등에 관한 법률 일부개정법률안",
@@ -117,26 +117,6 @@
         "decision_date": "0000-00-00",
         "status": "계류",
         "status_detail": "위원회 심사",
-        "actor_count": 10
-    },
-    {
-        "id": 4729,
-        "link_id": "PRC_F1C4L0Y9H1W2V1K1H0S1S4P6E3T4W1",
-        "title": "국민연금법 일부개정법률안",
-        "proposed_date": "2014-09-12",
-        "decision_date": "2014-12-29",
-        "status": "처리",
-        "status_detail": "대안반영폐기",
-        "actor_count": 10
-    },
-    {
-        "id": 13747,
-        "link_id": "PRC_X1O4Q0I9R1W2O1Y1A0I8C0G2U7G5Y6",
-        "title": "장사 등에 관한 법률 일부개정법률안",
-        "proposed_date": "2014-09-12",
-        "decision_date": "2014-12-29",
-        "status": "처리",
-        "status_detail": "대안반영폐기",
         "actor_count": 10
     },
     {
@@ -150,14 +130,24 @@
         "actor_count": 10
     },
     {
-        "id": 9339,
-        "link_id": "PRC_B1Z4B0I7C1Z8K1Y7C5K7H1V9D9P9D1",
-        "title": "사회보장기본법 일부개정법률안",
-        "proposed_date": "2014-07-18",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 11
+        "id": 13747,
+        "link_id": "PRC_X1O4Q0I9R1W2O1Y1A0I8C0G2U7G5Y6",
+        "title": "장사 등에 관한 법률 일부개정법률안",
+        "proposed_date": "2014-09-12",
+        "decision_date": "2014-12-29",
+        "status": "처리",
+        "status_detail": "대안반영폐기",
+        "actor_count": 10
+    },
+    {
+        "id": 4729,
+        "link_id": "PRC_F1C4L0Y9H1W2V1K1H0S1S4P6E3T4W1",
+        "title": "국민연금법 일부개정법률안",
+        "proposed_date": "2014-09-12",
+        "decision_date": "2014-12-29",
+        "status": "처리",
+        "status_detail": "대안반영폐기",
+        "actor_count": 10
     },
     {
         "id": 7412,
@@ -180,6 +170,16 @@
         "actor_count": 11
     },
     {
+        "id": 9339,
+        "link_id": "PRC_B1Z4B0I7C1Z8K1Y7C5K7H1V9D9P9D1",
+        "title": "사회보장기본법 일부개정법률안",
+        "proposed_date": "2014-07-18",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 11
+    },
+    {
         "id": 12989,
         "link_id": "PRC_J1G4K0Y7H1T4U1A6S5C6Z0T6K0N0I5",
         "title": "공직선거법 일부개정법률안",
@@ -190,9 +190,9 @@
         "actor_count": 11
     },
     {
-        "id": 6881,
-        "link_id": "PRC_B1N4H0E4U2H8H1V7D4T1I1O6P2J5D0",
-        "title": "재난 및 안전관리 기본법 일부개정법률안",
+        "id": 14878,
+        "link_id": "PRC_A1L4X0B4A2C8O1H6F3B7N0Q1M7F4T5",
+        "title": "선원법 일부개정법률안",
         "proposed_date": "2014-04-28",
         "decision_date": "2014-12-09",
         "status": "처리",
@@ -200,9 +200,9 @@
         "actor_count": 10
     },
     {
-        "id": 14878,
-        "link_id": "PRC_A1L4X0B4A2C8O1H6F3B7N0Q1M7F4T5",
-        "title": "선원법 일부개정법률안",
+        "id": 6881,
+        "link_id": "PRC_B1N4H0E4U2H8H1V7D4T1I1O6P2J5D0",
+        "title": "재난 및 안전관리 기본법 일부개정법률안",
         "proposed_date": "2014-04-28",
         "decision_date": "2014-12-09",
         "status": "처리",
@@ -330,16 +330,6 @@
         "actor_count": 10
     },
     {
-        "id": 5073,
-        "link_id": "PRC_O1F2H1X2E1D0K1P7L5E4H4B1J3O3N8",
-        "title": "장애인연금법 일부개정법률안",
-        "proposed_date": "2012-12-10",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 10
-    },
-    {
         "id": 17282,
         "link_id": "PRC_R1U2W1K2P1Y0L1O7L2Z0J4Q5D4S2V1",
         "title": "지방재정법 일부개정법률안",
@@ -353,6 +343,16 @@
         "id": 6752,
         "link_id": "PRC_G1D2C1V2V1Q0Y1K7O2F4S3D4N9N3Q9",
         "title": "지방교부세법 일부개정법률안",
+        "proposed_date": "2012-12-10",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 10
+    },
+    {
+        "id": 5073,
+        "link_id": "PRC_O1F2H1X2E1D0K1P7L5E4H4B1J3O3N8",
+        "title": "장애인연금법 일부개정법률안",
         "proposed_date": "2012-12-10",
         "decision_date": "0000-00-00",
         "status": "계류",
@@ -400,26 +400,6 @@
         "actor_count": 10
     },
     {
-        "id": 1178,
-        "link_id": "PRC_T1I2Z0J7L2N6F1V6E0C3Q0G7M6K5T9",
-        "title": "상법 일부개정법률안",
-        "proposed_date": "2012-07-26",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 10
-    },
-    {
-        "id": 7190,
-        "link_id": "PRC_I1B2R0N7W2R6B1D6K0S4L4P0Q8T3B2",
-        "title": "대·중소기업 상생협력 촉진에 관한 법률 일부개정법률안",
-        "proposed_date": "2012-07-26",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 10
-    },
-    {
         "id": 6524,
         "link_id": "PRC_V1G2I0D7Z2C6P1G5T5G5B4C9W4G5P1",
         "title": "고용상 연령차별금지 및 고령자고용촉진에 관한 법률 일부개정법률안",
@@ -433,6 +413,26 @@
         "id": 15572,
         "link_id": "PRC_L1E2L0K7K2N6D1W6P1B8O1W8B7P8B1",
         "title": "공직선거법 일부개정법률안",
+        "proposed_date": "2012-07-26",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 10
+    },
+    {
+        "id": 1178,
+        "link_id": "PRC_T1I2Z0J7L2N6F1V6E0C3Q0G7M6K5T9",
+        "title": "상법 일부개정법률안",
+        "proposed_date": "2012-07-26",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 10
+    },
+    {
+        "id": 7190,
+        "link_id": "PRC_I1B2R0N7W2R6B1D6K0S4L4P0Q8T3B2",
+        "title": "대·중소기업 상생협력 촉진에 관한 법률 일부개정법률안",
         "proposed_date": "2012-07-26",
         "decision_date": "0000-00-00",
         "status": "계류",

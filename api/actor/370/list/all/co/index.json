@@ -10,16 +10,6 @@
         "actor_count": 27
     },
     {
-        "id": 15094,
-        "link_id": "PRC_O1H5Z0U5Q2Z2T1J6G5C9U2J6X6S6R4",
-        "title": "승강기시설 안전관리법 일부개정법률안",
-        "proposed_date": "2015-05-22",
-        "decision_date": "2015-09-02",
-        "status": "처리",
-        "status_detail": "철회",
-        "actor_count": 10
-    },
-    {
         "id": 949,
         "link_id": "PRC_Y1W5I0V5S2D2G1U8I0M2T3I0S7J7I8",
         "title": "전기사업법 일부개정법률안",
@@ -50,6 +40,16 @@
         "actor_count": 11
     },
     {
+        "id": 15094,
+        "link_id": "PRC_O1H5Z0U5Q2Z2T1J6G5C9U2J6X6S6R4",
+        "title": "승강기시설 안전관리법 일부개정법률안",
+        "proposed_date": "2015-05-22",
+        "decision_date": "2015-09-02",
+        "status": "처리",
+        "status_detail": "철회",
+        "actor_count": 10
+    },
+    {
         "id": 14866,
         "link_id": "PRC_B1I5Y0K5Z2G1S1L6A1U6O2B1P1Y9X0",
         "title": "국가보훈처장(박승춘) 해임 촉구 결의안",
@@ -68,16 +68,6 @@
         "status": "계류",
         "status_detail": "위원회 심사",
         "actor_count": 20
-    },
-    {
-        "id": 6818,
-        "link_id": "PRC_Q1J5I0A5J1X8N1Z1J2C5U1E8V2U6V5",
-        "title": "자원의 절약과 재활용촉진에 관한 법률 일부개정법률안",
-        "proposed_date": "2015-05-18",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 12
     },
     {
         "id": 15447,
@@ -110,6 +100,16 @@
         "actor_count": 10
     },
     {
+        "id": 6818,
+        "link_id": "PRC_Q1J5I0A5J1X8N1Z1J2C5U1E8V2U6V5",
+        "title": "자원의 절약과 재활용촉진에 관한 법률 일부개정법률안",
+        "proposed_date": "2015-05-18",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 12
+    },
+    {
         "id": 16490,
         "link_id": "PRC_T1D5G0Y5F1R4I1S3W2N6D3Q1I3D4Q0",
         "title": "전기통신사업법 일부개정법률안",
@@ -128,36 +128,6 @@
         "status": "계류",
         "status_detail": "위원회 심사",
         "actor_count": 17
-    },
-    {
-        "id": 388,
-        "link_id": "PRC_K1O5N0U5P1H2F1J7N0W9B1W5S1F5U0",
-        "title": "감사원법 일부개정법률안",
-        "proposed_date": "2015-05-12",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 13
-    },
-    {
-        "id": 751,
-        "link_id": "PRC_Y1C5R0Z5J1I2L1J7L1P1Z1P4L6H5R7",
-        "title": "상속세 및 증여세법 일부개정법률안",
-        "proposed_date": "2015-05-12",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 11
-    },
-    {
-        "id": 7375,
-        "link_id": "PRC_B1P5N0C5V1H2F1U7S1T7A1R6V1K7F5",
-        "title": "중소기업진흥에 관한 법률 일부개정법률안",
-        "proposed_date": "2015-05-12",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 13
     },
     {
         "id": 8401,
@@ -198,5 +168,35 @@
         "status": "처리",
         "status_detail": "대안반영폐기",
         "actor_count": 15
+    },
+    {
+        "id": 388,
+        "link_id": "PRC_K1O5N0U5P1H2F1J7N0W9B1W5S1F5U0",
+        "title": "감사원법 일부개정법률안",
+        "proposed_date": "2015-05-12",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 13
+    },
+    {
+        "id": 751,
+        "link_id": "PRC_Y1C5R0Z5J1I2L1J7L1P1Z1P4L6H5R7",
+        "title": "상속세 및 증여세법 일부개정법률안",
+        "proposed_date": "2015-05-12",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 11
+    },
+    {
+        "id": 7375,
+        "link_id": "PRC_B1P5N0C5V1H2F1U7S1T7A1R6V1K7F5",
+        "title": "중소기업진흥에 관한 법률 일부개정법률안",
+        "proposed_date": "2015-05-12",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 13
     }
 ]

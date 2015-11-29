@@ -20,16 +20,6 @@
         "actor_count": 158
     },
     {
-        "id": 17286,
-        "link_id": "PRC_I1T5R0B1F1B9I1O1O1F7Y3R6N5R5R4",
-        "title": "사행산업통합감독위원회법 일부개정법률안",
-        "proposed_date": "2015-01-19",
-        "decision_date": "2015-04-08",
-        "status": "처리",
-        "status_detail": "철회",
-        "actor_count": 11
-    },
-    {
         "id": 7242,
         "link_id": "PRC_P1R5V0F1Z1X9M1L1A2W5W2K7S7Y5K8",
         "title": "공연법 일부개정법률안",
@@ -38,6 +28,16 @@
         "status": "처리",
         "status_detail": "대안반영폐기",
         "actor_count": 14
+    },
+    {
+        "id": 17286,
+        "link_id": "PRC_I1T5R0B1F1B9I1O1O1F7Y3R6N5R5R4",
+        "title": "사행산업통합감독위원회법 일부개정법률안",
+        "proposed_date": "2015-01-19",
+        "decision_date": "2015-04-08",
+        "status": "처리",
+        "status_detail": "철회",
+        "actor_count": 11
     },
     {
         "id": 17203,
@@ -130,26 +130,6 @@
         "actor_count": 12
     },
     {
-        "id": 13371,
-        "link_id": "PRC_H1Z4Z0Y7H1P7U1T7Q3D6B3U0C1I0N7",
-        "title": "중소기업진흥에 관한 법률 일부개정법률안",
-        "proposed_date": "2014-07-17",
-        "decision_date": "2014-12-29",
-        "status": "처리",
-        "status_detail": "대안반영폐기",
-        "actor_count": 27
-    },
-    {
-        "id": 2963,
-        "link_id": "PRC_D1Z4H0T7G1N7H1F7Z2S7W4O9B3N8F7",
-        "title": "중소기업제품 구매촉진 및 판로지원에 관한 법률 일부개정법률안",
-        "proposed_date": "2014-07-17",
-        "decision_date": "2014-12-29",
-        "status": "처리",
-        "status_detail": "대안반영폐기",
-        "actor_count": 27
-    },
-    {
         "id": 931,
         "link_id": "PRC_V1Q4X0H7Q1V7J1U6E5U7H1X8L6F7W1",
         "title": "국립대학법안",
@@ -178,6 +158,26 @@
         "status": "처리",
         "status_detail": "대안반영폐기",
         "actor_count": 10
+    },
+    {
+        "id": 13371,
+        "link_id": "PRC_H1Z4Z0Y7H1P7U1T7Q3D6B3U0C1I0N7",
+        "title": "중소기업진흥에 관한 법률 일부개정법률안",
+        "proposed_date": "2014-07-17",
+        "decision_date": "2014-12-29",
+        "status": "처리",
+        "status_detail": "대안반영폐기",
+        "actor_count": 27
+    },
+    {
+        "id": 2963,
+        "link_id": "PRC_D1Z4H0T7G1N7H1F7Z2S7W4O9B3N8F7",
+        "title": "중소기업제품 구매촉진 및 판로지원에 관한 법률 일부개정법률안",
+        "proposed_date": "2014-07-17",
+        "decision_date": "2014-12-29",
+        "status": "처리",
+        "status_detail": "대안반영폐기",
+        "actor_count": 27
     },
     {
         "id": 7557,
@@ -630,9 +630,9 @@
         "actor_count": 11
     },
     {
-        "id": 15612,
-        "link_id": "PRC_E1C3F0Y9M0G6V1V6Y5A1T5Z3B6J4M9",
-        "title": "특정 금융거래정보의 보고 및 이용 등에 관한 법률 일부개정법률안",
+        "id": 3304,
+        "link_id": "PRC_V1M3Z0W9V0V6R1R6I4R9O1X4L5X1M8",
+        "title": "금융실명거래 및 비밀보장에 관한 법률 일부개정법률안",
         "proposed_date": "2013-09-06",
         "decision_date": "2014-05-02",
         "status": "처리",
@@ -640,9 +640,9 @@
         "actor_count": 11
     },
     {
-        "id": 3304,
-        "link_id": "PRC_V1M3Z0W9V0V6R1R6I4R9O1X4L5X1M8",
-        "title": "금융실명거래 및 비밀보장에 관한 법률 일부개정법률안",
+        "id": 15612,
+        "link_id": "PRC_E1C3F0Y9M0G6V1V6Y5A1T5Z3B6J4M9",
+        "title": "특정 금융거래정보의 보고 및 이용 등에 관한 법률 일부개정법률안",
         "proposed_date": "2013-09-06",
         "decision_date": "2014-05-02",
         "status": "처리",

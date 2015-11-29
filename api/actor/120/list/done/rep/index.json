@@ -50,16 +50,6 @@
         "actor_count": 10
     },
     {
-        "id": 11643,
-        "link_id": "PRC_N1S4U0G6I1V1R1F3W2Q8J3A5K3Y7X2",
-        "title": "전자금융거래법 일부개정법률안",
-        "proposed_date": "2014-06-11",
-        "decision_date": "2014-12-29",
-        "status": "처리",
-        "status_detail": "공포",
-        "actor_count": 10
-    },
-    {
         "id": 8266,
         "link_id": "PRC_D1V4R0V6V1E1S1Z3Q3L3R0E3W2V0J5",
         "title": "공직자윤리법 일부개정법률안",
@@ -67,6 +57,16 @@
         "decision_date": "2014-12-09",
         "status": "처리",
         "status_detail": "대안반영폐기",
+        "actor_count": 10
+    },
+    {
+        "id": 11643,
+        "link_id": "PRC_N1S4U0G6I1V1R1F3W2Q8J3A5K3Y7X2",
+        "title": "전자금융거래법 일부개정법률안",
+        "proposed_date": "2014-06-11",
+        "decision_date": "2014-12-29",
+        "status": "처리",
+        "status_detail": "공포",
         "actor_count": 10
     },
     {
@@ -110,26 +110,6 @@
         "actor_count": 10
     },
     {
-        "id": 7286,
-        "link_id": "PRC_F1T3Y1H2Q1E0O1I8K0O4S5A3F0N8B4",
-        "title": "한국철도공사법 일부개정법률안",
-        "proposed_date": "2013-12-10",
-        "decision_date": "2014-04-29",
-        "status": "처리",
-        "status_detail": "공포",
-        "actor_count": 10
-    },
-    {
-        "id": 2821,
-        "link_id": "PRC_C1K3V1E2L1G0K1A8C0W7A2E2J9L7R2",
-        "title": "교통안전공단법 일부개정법률안",
-        "proposed_date": "2013-12-10",
-        "decision_date": "2014-04-29",
-        "status": "처리",
-        "status_detail": "공포",
-        "actor_count": 10
-    },
-    {
         "id": 14171,
         "link_id": "PRC_O1O3L1A2Y1K0H1U8N1R2M3B6H6U9S6",
         "title": "항만공사법 일부개정법률안",
@@ -143,6 +123,26 @@
         "id": 6694,
         "link_id": "PRC_I1U3O1P2O1T0K1M7E4H5K4N4K2K2M0",
         "title": "한국도로공사법 일부개정법률안",
+        "proposed_date": "2013-12-10",
+        "decision_date": "2014-04-29",
+        "status": "처리",
+        "status_detail": "공포",
+        "actor_count": 10
+    },
+    {
+        "id": 7286,
+        "link_id": "PRC_F1T3Y1H2Q1E0O1I8K0O4S5A3F0N8B4",
+        "title": "한국철도공사법 일부개정법률안",
+        "proposed_date": "2013-12-10",
+        "decision_date": "2014-04-29",
+        "status": "처리",
+        "status_detail": "공포",
+        "actor_count": 10
+    },
+    {
+        "id": 2821,
+        "link_id": "PRC_C1K3V1E2L1G0K1A8C0W7A2E2J9L7R2",
+        "title": "교통안전공단법 일부개정법률안",
         "proposed_date": "2013-12-10",
         "decision_date": "2014-04-29",
         "status": "처리",
@@ -240,6 +240,26 @@
         "actor_count": 10
     },
     {
+        "id": 4072,
+        "link_id": "PRC_Y1K3N0C1R2D1I1L4F0H7A3P2G3Z2K5",
+        "title": "과학기술기본법 일부개정법률안",
+        "proposed_date": "2013-01-21",
+        "decision_date": "2014-05-09",
+        "status": "처리",
+        "status_detail": "폐기",
+        "actor_count": 18
+    },
+    {
+        "id": 16920,
+        "link_id": "PRC_Y1A3E0I1E2T1J1T3G4W1O0L4Y7B2Z7",
+        "title": "교육공무원법 일부개정법률안",
+        "proposed_date": "2013-01-21",
+        "decision_date": "2013-12-10",
+        "status": "처리",
+        "status_detail": "공포",
+        "actor_count": 18
+    },
+    {
         "id": 10162,
         "link_id": "PRC_C1K3V0R1N2Z1D1N3H4H6E1W3V5M1H1",
         "title": "국회의원수당 등에 관한 법률 일부개정법률안",
@@ -267,26 +287,6 @@
         "decision_date": "2013-07-02",
         "status": "처리",
         "status_detail": "대안반영폐기",
-        "actor_count": 18
-    },
-    {
-        "id": 4072,
-        "link_id": "PRC_Y1K3N0C1R2D1I1L4F0H7A3P2G3Z2K5",
-        "title": "과학기술기본법 일부개정법률안",
-        "proposed_date": "2013-01-21",
-        "decision_date": "2014-05-09",
-        "status": "처리",
-        "status_detail": "폐기",
-        "actor_count": 18
-    },
-    {
-        "id": 16920,
-        "link_id": "PRC_Y1A3E0I1E2T1J1T3G4W1O0L4Y7B2Z7",
-        "title": "교육공무원법 일부개정법률안",
-        "proposed_date": "2013-01-21",
-        "decision_date": "2013-12-10",
-        "status": "처리",
-        "status_detail": "공포",
         "actor_count": 18
     },
     {
@@ -340,16 +340,6 @@
         "actor_count": 12
     },
     {
-        "id": 13712,
-        "link_id": "PRC_E1L2K0C9I0T3L1D4O5Z5J1G0Q4Z9W6",
-        "title": "병역법 일부개정법률안",
-        "proposed_date": "2012-09-03",
-        "decision_date": "2014-04-16",
-        "status": "처리",
-        "status_detail": "대안반영폐기",
-        "actor_count": 11
-    },
-    {
         "id": 5976,
         "link_id": "PRC_D1M2J0X9N0J3J1J4S5T3C1G2I4P9T4",
         "title": "건축법 일부개정법률안",
@@ -358,6 +348,16 @@
         "status": "처리",
         "status_detail": "대안반영폐기",
         "actor_count": 14
+    },
+    {
+        "id": 13712,
+        "link_id": "PRC_E1L2K0C9I0T3L1D4O5Z5J1G0Q4Z9W6",
+        "title": "병역법 일부개정법률안",
+        "proposed_date": "2012-09-03",
+        "decision_date": "2014-04-16",
+        "status": "처리",
+        "status_detail": "대안반영폐기",
+        "actor_count": 11
     },
     {
         "id": 9407,

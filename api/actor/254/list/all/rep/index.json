@@ -20,26 +20,6 @@
         "actor_count": 13
     },
     {
-        "id": 2436,
-        "link_id": "PRC_T1L5V1Q0B1Z4F1B5V0F7Z2J3N8J5S6",
-        "title": "주세법 일부개정법률안",
-        "proposed_date": "2015-10-14",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 11
-    },
-    {
-        "id": 13345,
-        "link_id": "PRC_H1Y5P1C0Q1A4D1N6U2W0Q0C4I9K4O0",
-        "title": "조세특례제한법 일부개정법률안",
-        "proposed_date": "2015-10-14",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 10
-    },
-    {
         "id": 13774,
         "link_id": "PRC_W1O5Z1E0M1J4V1F5Z1G1Q2O7A2O3E3",
         "title": "지방세특례제한법 일부개정법률안",
@@ -60,10 +40,20 @@
         "actor_count": 11
     },
     {
-        "id": 11394,
-        "link_id": "PRC_E1Y5Q1F0J0K6D1S6Z5Z1T5H3Z9H3F5",
+        "id": 2436,
+        "link_id": "PRC_T1L5V1Q0B1Z4F1B5V0F7Z2J3N8J5S6",
+        "title": "주세법 일부개정법률안",
+        "proposed_date": "2015-10-14",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 11
+    },
+    {
+        "id": 13345,
+        "link_id": "PRC_H1Y5P1C0Q1A4D1N6U2W0Q0C4I9K4O0",
         "title": "조세특례제한법 일부개정법률안",
-        "proposed_date": "2015-10-06",
+        "proposed_date": "2015-10-14",
         "decision_date": "0000-00-00",
         "status": "계류",
         "status_detail": "위원회 심사",
@@ -73,6 +63,16 @@
         "id": 15744,
         "link_id": "PRC_Y1W5L1K0D0Q6V1C6K4V0C3Y2D0M2L5",
         "title": "소득세법 일부개정법률안",
+        "proposed_date": "2015-10-06",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 10
+    },
+    {
+        "id": 11394,
+        "link_id": "PRC_E1Y5Q1F0J0K6D1S6Z5Z1T5H3Z9H3F5",
+        "title": "조세특례제한법 일부개정법률안",
         "proposed_date": "2015-10-06",
         "decision_date": "0000-00-00",
         "status": "계류",
@@ -290,6 +290,16 @@
         "actor_count": 11
     },
     {
+        "id": 14070,
+        "link_id": "PRC_K1C3X1E1N2X2F1A7M0K2A5P2O9M3Q6",
+        "title": "개별소비세법 일부개정법률안",
+        "proposed_date": "2013-11-22",
+        "decision_date": "2014-01-01",
+        "status": "처리",
+        "status_detail": "대안반영폐기",
+        "actor_count": 11
+    },
+    {
         "id": 8666,
         "link_id": "PRC_F1I3T1W1J2V2D1X7L4C8U4P0J9I2W2",
         "title": "관세법 일부개정법률안",
@@ -308,16 +318,6 @@
         "status": "처리",
         "status_detail": "대안반영폐기",
         "actor_count": 12
-    },
-    {
-        "id": 14070,
-        "link_id": "PRC_K1C3X1E1N2X2F1A7M0K2A5P2O9M3Q6",
-        "title": "개별소비세법 일부개정법률안",
-        "proposed_date": "2013-11-22",
-        "decision_date": "2014-01-01",
-        "status": "처리",
-        "status_detail": "대안반영폐기",
-        "actor_count": 11
     },
     {
         "id": 3960,
@@ -350,16 +350,6 @@
         "actor_count": 12
     },
     {
-        "id": 12818,
-        "link_id": "PRC_A1K3R0R8O2U9S1Y7L3W1P2Q5Z1F9N3",
-        "title": "조세특례제한법 일부개정법률안",
-        "proposed_date": "2013-08-29",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 12
-    },
-    {
         "id": 16154,
         "link_id": "PRC_L1S3U0T8T2D9I1X7L2P7J3W2P2N2A3",
         "title": "국가를 당사자로 하는 계약에 관한 법률 일부개정법률안",
@@ -368,6 +358,16 @@
         "status": "계류",
         "status_detail": "위원회 심사",
         "actor_count": 13
+    },
+    {
+        "id": 12818,
+        "link_id": "PRC_A1K3R0R8O2U9S1Y7L3W1P2Q5Z1F9N3",
+        "title": "조세특례제한법 일부개정법률안",
+        "proposed_date": "2013-08-29",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 12
     },
     {
         "id": 5462,
@@ -480,16 +480,6 @@
         "actor_count": 10
     },
     {
-        "id": 7670,
-        "link_id": "PRC_E1G2T1N0U2G6F1E8X3B7U3D7T8S0O4",
-        "title": "세무사법 일부개정법률안",
-        "proposed_date": "2012-10-26",
-        "decision_date": "2013-01-01",
-        "status": "처리",
-        "status_detail": "대안반영폐기",
-        "actor_count": 10
-    },
-    {
         "id": 4004,
         "link_id": "PRC_J1S2C1I0U2L6U1A8O4A3C3F9C2A1R5",
         "title": "조세특례제한법 일부개정법률안",
@@ -517,6 +507,16 @@
         "decision_date": "0000-00-00",
         "status": "계류",
         "status_detail": "위원회 심사",
+        "actor_count": 10
+    },
+    {
+        "id": 7670,
+        "link_id": "PRC_E1G2T1N0U2G6F1E8X3B7U3D7T8S0O4",
+        "title": "세무사법 일부개정법률안",
+        "proposed_date": "2012-10-26",
+        "decision_date": "2013-01-01",
+        "status": "처리",
+        "status_detail": "대안반영폐기",
         "actor_count": 10
     },
     {
@@ -550,9 +550,9 @@
         "actor_count": 16
     },
     {
-        "id": 11683,
-        "link_id": "PRC_N1V2T0M7B2Y5T1R6U3M3D0K0B7R4H7",
-        "title": "조세특례제한법 일부개정법률안",
+        "id": 9679,
+        "link_id": "PRC_B1G2K0M7I2Y5U1P6V1W7P1N5Y3D6Q0",
+        "title": "소득세법 일부개정법률안",
         "proposed_date": "2012-07-25",
         "decision_date": "2013-01-01",
         "status": "처리",
@@ -560,9 +560,9 @@
         "actor_count": 17
     },
     {
-        "id": 9679,
-        "link_id": "PRC_B1G2K0M7I2Y5U1P6V1W7P1N5Y3D6Q0",
-        "title": "소득세법 일부개정법률안",
+        "id": 11683,
+        "link_id": "PRC_N1V2T0M7B2Y5T1R6U3M3D0K0B7R4H7",
+        "title": "조세특례제한법 일부개정법률안",
         "proposed_date": "2012-07-25",
         "decision_date": "2013-01-01",
         "status": "처리",

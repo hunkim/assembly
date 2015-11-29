@@ -1,15 +1,5 @@
 [
     {
-        "id": 1837,
-        "link_id": "PRC_P1K4X0S8P0D1P1Z7R4Z7Q0J6K4W9L1",
-        "title": "영유아보육법 일부개정법률안",
-        "proposed_date": "2014-08-01",
-        "decision_date": "2015-03-03",
-        "status": "처리",
-        "status_detail": "대안반영폐기",
-        "actor_count": 11
-    },
-    {
         "id": 15156,
         "link_id": "PRC_F1G4K0A8Z0R1N1R7I3X0W5C3C7S1U9",
         "title": "의료기기법 일부개정법률안",
@@ -18,6 +8,16 @@
         "status": "처리",
         "status_detail": "대안반영폐기",
         "actor_count": 16
+    },
+    {
+        "id": 1837,
+        "link_id": "PRC_P1K4X0S8P0D1P1Z7R4Z7Q0J6K4W9L1",
+        "title": "영유아보육법 일부개정법률안",
+        "proposed_date": "2014-08-01",
+        "decision_date": "2015-03-03",
+        "status": "처리",
+        "status_detail": "대안반영폐기",
+        "actor_count": 11
     },
     {
         "id": 928,
@@ -70,16 +70,6 @@
         "actor_count": 12
     },
     {
-        "id": 11325,
-        "link_id": "PRC_J1Y3S0O9C2J6H1Z7K5D1M1N4P9I6D9",
-        "title": "국회에서의 증언·감정 등에 관한 법률 일부개정법률안",
-        "proposed_date": "2013-09-26",
-        "decision_date": "2014-02-28",
-        "status": "처리",
-        "status_detail": "공포",
-        "actor_count": 18
-    },
-    {
         "id": 1529,
         "link_id": "PRC_Z1K3K0Z9J2P6K1G7D4U7J5X2C0E3J4",
         "title": "국회법 일부개정법률안",
@@ -87,6 +77,16 @@
         "decision_date": "2014-02-28",
         "status": "처리",
         "status_detail": "대안반영폐기",
+        "actor_count": 18
+    },
+    {
+        "id": 11325,
+        "link_id": "PRC_J1Y3S0O9C2J6H1Z7K5D1M1N4P9I6D9",
+        "title": "국회에서의 증언·감정 등에 관한 법률 일부개정법률안",
+        "proposed_date": "2013-09-26",
+        "decision_date": "2014-02-28",
+        "status": "처리",
+        "status_detail": "공포",
         "actor_count": 18
     },
     {
@@ -140,46 +140,6 @@
         "actor_count": 17
     },
     {
-        "id": 294,
-        "link_id": "PRC_M1C3U0X2H1K5U1D6T2F9Y3E3M3Q8V2",
-        "title": "약사법 일부개정법률안",
-        "proposed_date": "2013-02-15",
-        "decision_date": "2013-07-02",
-        "status": "처리",
-        "status_detail": "공포",
-        "actor_count": 13
-    },
-    {
-        "id": 5678,
-        "link_id": "PRC_Y1M3E0M2Z1N5W1X4H1L1E5O5R6X7I9",
-        "title": "의료법 일부개정법률안",
-        "proposed_date": "2013-02-15",
-        "decision_date": "2013-07-02",
-        "status": "처리",
-        "status_detail": "공포",
-        "actor_count": 13
-    },
-    {
-        "id": 7177,
-        "link_id": "PRC_Q1P3Q0O2Q1Z5E1G4P1B4F0M8P2W5T0",
-        "title": "어린이 식생활안전관리 특별법 일부개정법률안",
-        "proposed_date": "2013-02-15",
-        "decision_date": "2013-06-27",
-        "status": "처리",
-        "status_detail": "대안반영폐기",
-        "actor_count": 13
-    },
-    {
-        "id": 16718,
-        "link_id": "PRC_C1U3P0L2X1U5Z1F4M1D5J3A4T0J8D4",
-        "title": "의료기기법 일부개정법률안",
-        "proposed_date": "2013-02-15",
-        "decision_date": "2013-07-02",
-        "status": "처리",
-        "status_detail": "공포",
-        "actor_count": 13
-    },
-    {
         "id": 7428,
         "link_id": "PRC_K1I3W0U2T1K5F1D6Q3T2Q0E9H9M6P7",
         "title": "마약류 관리에 관한 법률 일부개정법률안",
@@ -230,9 +190,49 @@
         "actor_count": 13
     },
     {
-        "id": 237,
-        "link_id": "PRC_R1A3O0J1M2M5O1N4J0C4W3U6U6C7Q0",
-        "title": "의료급여법 일부개정법률안",
+        "id": 294,
+        "link_id": "PRC_M1C3U0X2H1K5U1D6T2F9Y3E3M3Q8V2",
+        "title": "약사법 일부개정법률안",
+        "proposed_date": "2013-02-15",
+        "decision_date": "2013-07-02",
+        "status": "처리",
+        "status_detail": "공포",
+        "actor_count": 13
+    },
+    {
+        "id": 5678,
+        "link_id": "PRC_Y1M3E0M2Z1N5W1X4H1L1E5O5R6X7I9",
+        "title": "의료법 일부개정법률안",
+        "proposed_date": "2013-02-15",
+        "decision_date": "2013-07-02",
+        "status": "처리",
+        "status_detail": "공포",
+        "actor_count": 13
+    },
+    {
+        "id": 16718,
+        "link_id": "PRC_C1U3P0L2X1U5Z1F4M1D5J3A4T0J8D4",
+        "title": "의료기기법 일부개정법률안",
+        "proposed_date": "2013-02-15",
+        "decision_date": "2013-07-02",
+        "status": "처리",
+        "status_detail": "공포",
+        "actor_count": 13
+    },
+    {
+        "id": 7177,
+        "link_id": "PRC_Q1P3Q0O2Q1Z5E1G4P1B4F0M8P2W5T0",
+        "title": "어린이 식생활안전관리 특별법 일부개정법률안",
+        "proposed_date": "2013-02-15",
+        "decision_date": "2013-06-27",
+        "status": "처리",
+        "status_detail": "대안반영폐기",
+        "actor_count": 13
+    },
+    {
+        "id": 3035,
+        "link_id": "PRC_N1J3A0Q1H2J5Y1V4G2Q3V0P1Z3D3I0",
+        "title": "국민건강보험법 일부개정법률안",
         "proposed_date": "2013-01-25",
         "decision_date": "2013-05-07",
         "status": "처리",
@@ -250,9 +250,9 @@
         "actor_count": 13
     },
     {
-        "id": 3035,
-        "link_id": "PRC_N1J3A0Q1H2J5Y1V4G2Q3V0P1Z3D3I0",
-        "title": "국민건강보험법 일부개정법률안",
+        "id": 237,
+        "link_id": "PRC_R1A3O0J1M2M5O1N4J0C4W3U6U6C7Q0",
+        "title": "의료급여법 일부개정법률안",
         "proposed_date": "2013-01-25",
         "decision_date": "2013-05-07",
         "status": "처리",

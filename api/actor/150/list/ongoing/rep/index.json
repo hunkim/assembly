@@ -70,16 +70,6 @@
         "actor_count": 10
     },
     {
-        "id": 13007,
-        "link_id": "PRC_T1A4V1X1B2M7R1R8C0M0V4H7K2Z6N4",
-        "title": "자본시장과 금융투자업에 관한 법률 일부개정법률안",
-        "proposed_date": "2014-11-27",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 10
-    },
-    {
         "id": 1189,
         "link_id": "PRC_G1V4S1L1C2H7Z1R8R0V0V0C0K4L2I6",
         "title": "상법 일부개정법률안",
@@ -98,6 +88,16 @@
         "status": "계류",
         "status_detail": "위원회 심사",
         "actor_count": 11
+    },
+    {
+        "id": 13007,
+        "link_id": "PRC_T1A4V1X1B2M7R1R8C0M0V4H7K2Z6N4",
+        "title": "자본시장과 금융투자업에 관한 법률 일부개정법률안",
+        "proposed_date": "2014-11-27",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 10
     },
     {
         "id": 17867,
@@ -260,6 +260,16 @@
         "actor_count": 12
     },
     {
+        "id": 3346,
+        "link_id": "PRC_I1P3C1I1P2X8W1C0J2I7X4Z8X9P1Q4",
+        "title": "금융소비자 보호 및 금융상품 판매에 관한 법률안",
+        "proposed_date": "2013-11-28",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 10
+    },
+    {
         "id": 575,
         "link_id": "PRC_G1W3N1K1W2A8X1F1K4A3P0C8A8K3D3",
         "title": "정부조직법 일부개정법률안",
@@ -280,16 +290,6 @@
         "actor_count": 10
     },
     {
-        "id": 3346,
-        "link_id": "PRC_I1P3C1I1P2X8W1C0J2I7X4Z8X9P1Q4",
-        "title": "금융소비자 보호 및 금융상품 판매에 관한 법률안",
-        "proposed_date": "2013-11-28",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 10
-    },
-    {
         "id": 11287,
         "link_id": "PRC_O1Y3A1Y1T1X4H1P8X0V5B2O8N7I2K5",
         "title": "검찰청법 일부개정법률안",
@@ -300,29 +300,9 @@
         "actor_count": 10
     },
     {
-        "id": 3037,
-        "link_id": "PRC_S1B3G1E1U0R7Z1I6P1W1K5P1C2J5T4",
-        "title": "조세범 처벌법 일부개정법률안",
-        "proposed_date": "2013-11-07",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 10
-    },
-    {
         "id": 10320,
         "link_id": "PRC_Q1M3Y1G1X0L7W1V5K4V9B1L3L4W8O1",
         "title": "관세법 일부개정법률안",
-        "proposed_date": "2013-11-07",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 10
-    },
-    {
-        "id": 14660,
-        "link_id": "PRC_A1C3W1B1B0Q7A1G5B5C0Y4C6L2U6Z1",
-        "title": "마약류 불법거래 방지에 관한 특례법 일부개정법률안",
         "proposed_date": "2013-11-07",
         "decision_date": "0000-00-00",
         "status": "계류",
@@ -340,9 +320,29 @@
         "actor_count": 10
     },
     {
+        "id": 14660,
+        "link_id": "PRC_A1C3W1B1B0Q7A1G5B5C0Y4C6L2U6Z1",
+        "title": "마약류 불법거래 방지에 관한 특례법 일부개정법률안",
+        "proposed_date": "2013-11-07",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 10
+    },
+    {
         "id": 17571,
         "link_id": "PRC_P1A3K1R1A0P7P1M6V0Z5X4D4R2N1O8",
         "title": "공인회계사법 일부개정법률안",
+        "proposed_date": "2013-11-07",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 10
+    },
+    {
+        "id": 3037,
+        "link_id": "PRC_S1B3G1E1U0R7Z1I6P1W1K5P1C2J5T4",
+        "title": "조세범 처벌법 일부개정법률안",
         "proposed_date": "2013-11-07",
         "decision_date": "0000-00-00",
         "status": "계류",
@@ -430,16 +430,6 @@
         "actor_count": 10
     },
     {
-        "id": 4288,
-        "link_id": "PRC_R1M3D0D6C1M8S1N0G3O3Y2U3X1G9M8",
-        "title": "의료기사 등에 관한 법률 일부개정법률안",
-        "proposed_date": "2013-06-18",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 12
-    },
-    {
         "id": 10063,
         "link_id": "PRC_C1I3D0V6S1Z8D0K9J5C3H2V4R2Z8D8",
         "title": "연호에관한법률 전부개정법률안",
@@ -448,6 +438,16 @@
         "status": "계류",
         "status_detail": "위원회 심사",
         "actor_count": 14
+    },
+    {
+        "id": 4288,
+        "link_id": "PRC_R1M3D0D6C1M8S1N0G3O3Y2U3X1G9M8",
+        "title": "의료기사 등에 관한 법률 일부개정법률안",
+        "proposed_date": "2013-06-18",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 12
     },
     {
         "id": 15222,
@@ -510,9 +510,9 @@
         "actor_count": 10
     },
     {
-        "id": 14100,
-        "link_id": "PRC_W1E3A0A3Z1J4R1D7E3X2C1Y7N8G5E5",
-        "title": "할부거래에 관한 법률 일부개정법률안",
+        "id": 12883,
+        "link_id": "PRC_E1Z3A0Z3U1L4M1S7E2I7D3G9O1A2I0",
+        "title": "여신전문금융업법 일부개정법률안",
         "proposed_date": "2013-03-14",
         "decision_date": "0000-00-00",
         "status": "계류",
@@ -520,9 +520,9 @@
         "actor_count": 10
     },
     {
-        "id": 12883,
-        "link_id": "PRC_E1Z3A0Z3U1L4M1S7E2I7D3G9O1A2I0",
-        "title": "여신전문금융업법 일부개정법률안",
+        "id": 14100,
+        "link_id": "PRC_W1E3A0A3Z1J4R1D7E3X2C1Y7N8G5E5",
+        "title": "할부거래에 관한 법률 일부개정법률안",
         "proposed_date": "2013-03-14",
         "decision_date": "0000-00-00",
         "status": "계류",
