@@ -11,7 +11,7 @@ $appnames = ['coact','stat','list'];
 
 $billappnames = ['summary','billactors'];
 
-$restapp['actor', 'all', 'order'];
+$restapp=['actor', 'all', 'order'];
 
 $optRes=['done', 'ongoing', 'pass', 'all'];
 $optBy=['rep','co'];
