@@ -7,7 +7,7 @@ header("Content-Type: application/json; charset=UTF-8");
 
 include_once 'q_eng.php';
 
-$appnames = ['coact','stat','list', 'all', 'summary','order', 'actor'];
+$appnames = ['coact','stat','list'];
 $optRes=['done', 'onging', 'pass'];
 $optBy=['rep','co'];
 
@@ -33,7 +33,7 @@ if (($result=$db->query("SELECT id from Actor")) === false) {
 
 // output data of each row
 while($row = $result->fetch_assoc()) {
-   $id = $GET['bid'] = $row['id'];
+   $id = $GET['id'] = $row['id'];
 
    foreach ($appnames as $apptype) {
       foreach ($optRes as $res) {

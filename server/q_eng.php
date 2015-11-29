@@ -194,7 +194,6 @@ function processQuery($apptype, $sql, $GET) {
   if (!$debug) {
     return;
   }
-  
   switch (json_last_error()) {
           case JSON_ERROR_NONE:
               // echo ' - No errors';
