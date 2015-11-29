@@ -53,6 +53,8 @@ while($row = $result->fetch_assoc()) {
 
       query_engine($apptype, $billGET);
       ob_end_flush();
+
+      checkJSon("$dir/index.json");
     }
 }
 
@@ -69,6 +71,8 @@ foreach ($restapp as $app) {
 
   query_engine($app, $restGet);
   ob_end_flush();
+
+  checkJSon("$dir/index.json");
 }
 
 
@@ -96,6 +100,7 @@ while($row = $result->fetch_assoc()) {
 
           query_engine($apptype, $GET);
           ob_end_flush();
+          checkJSon("$dir/index.json");
         }
       }
    }
@@ -114,7 +119,36 @@ function ob_file_callback($buffer)
   fwrite($ob_file,$buffer);
 }
 
+function checkJSon($file) {
+  $str = file_get_contents($file);
+  $json = json_decode($str, true);
 
+  switch (json_last_error()) {
+    case JSON_ERROR_NONE:
+      return;
+    break;
+    case JSON_ERROR_DEPTH:
+        echo ' - Maximum stack depth exceeded';
+    break;
+    case JSON_ERROR_STATE_MISMATCH:
+        echo ' - Underflow or the modes mismatch';
+    break;
+    case JSON_ERROR_CTRL_CHAR:
+        echo ' - Unexpected control character found';
+    break;
+    case JSON_ERROR_SYNTAX:
+        echo ' - Syntax error, malformed JSON';
+    break;
+    case JSON_ERROR_UTF8:
+        echo ' - Malformed UTF-8 characters, possibly incorrectly encoded';
+    break;
+    default:
+        echo ' - Unknown error';
+    break;
+  }
+
+  exit(-2);
+}
 
 
 ?>
