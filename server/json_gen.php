@@ -41,12 +41,13 @@ if (($result=$db->query("SELECT distinct(billid) as id from CoActor")) === false
 // bill
 while($row = $result->fetch_assoc()) {
    $id = $billGET['bid'] = $row['id'];
+   $billGET['debug']=1;
 
    foreach ($billappnames as $apptype) {
       $dir = "$basedir/api/bill/$id/$apptype/";
       mkdir($dir, 0777, true);
 
-      echo ("Working on $dir...\n");
+      echo ("Working on $dir...$id\n");
       $ob_file = fopen("$dir/index.json",'w');
       ob_start('ob_file_callback');
 
