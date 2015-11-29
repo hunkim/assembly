@@ -20,6 +20,16 @@
         "actor_count": 10
     },
     {
+        "id": 15128,
+        "link_id": "PRC_E1I5N1Q1C1V2Y1Q1S0M9K0Q4Q7U6G5",
+        "title": "공직선거법 일부개정법률안",
+        "proposed_date": "2015-11-12",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 10
+    },
+    {
         "id": 2426,
         "link_id": "PRC_J1I5A1W1O1T2O1K1X1Y8J1N8D2X6U2",
         "title": "지방자치법 일부개정법률안",
@@ -33,16 +43,6 @@
         "id": 12097,
         "link_id": "PRC_W1C5U1O1U1M2V1F1H0G9N0K1R2N1G1",
         "title": "지방세기본법 일부개정법률안",
-        "proposed_date": "2015-11-12",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 10
-    },
-    {
-        "id": 15128,
-        "link_id": "PRC_E1I5N1Q1C1V2Y1Q1S0M9K0Q4Q7U6G5",
-        "title": "공직선거법 일부개정법률안",
         "proposed_date": "2015-11-12",
         "decision_date": "0000-00-00",
         "status": "계류",
@@ -320,16 +320,6 @@
         "actor_count": 11
     },
     {
-        "id": 10382,
-        "link_id": "PRC_H1C4F0R1P2J8I1J6C2C0B4S1I8G7L1",
-        "title": "지방교육재정교부금법 일부개정법률안",
-        "proposed_date": "2014-01-28",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 10
-    },
-    {
         "id": 162,
         "link_id": "PRC_E1J4R0A1G2X8F1D6C0K2D1Z7H6C0L6",
         "title": "평생교육법 일부개정법률안",
@@ -338,6 +328,16 @@
         "status": "계류",
         "status_detail": "위원회 심사",
         "actor_count": 11
+    },
+    {
+        "id": 10382,
+        "link_id": "PRC_H1C4F0R1P2J8I1J6C2C0B4S1I8G7L1",
+        "title": "지방교육재정교부금법 일부개정법률안",
+        "proposed_date": "2014-01-28",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 10
     },
     {
         "id": 423,
@@ -370,9 +370,9 @@
         "actor_count": 13
     },
     {
-        "id": 682,
-        "link_id": "PRC_F1I3P0U9I0I4I1N3Q3D7X5Z2L5Q8D4",
-        "title": "소득세법 일부개정법률안",
+        "id": 15425,
+        "link_id": "PRC_D1B3Z0S9S0Y4V1E3R1I9T0A9T8W5L7",
+        "title": "법인세법 일부개정법률안",
         "proposed_date": "2013-09-04",
         "decision_date": "0000-00-00",
         "status": "계류",
@@ -380,9 +380,9 @@
         "actor_count": 10
     },
     {
-        "id": 15425,
-        "link_id": "PRC_D1B3Z0S9S0Y4V1E3R1I9T0A9T8W5L7",
-        "title": "법인세법 일부개정법률안",
+        "id": 682,
+        "link_id": "PRC_F1I3P0U9I0I4I1N3Q3D7X5Z2L5Q8D4",
+        "title": "소득세법 일부개정법률안",
         "proposed_date": "2013-09-04",
         "decision_date": "0000-00-00",
         "status": "계류",
@@ -440,6 +440,26 @@
         "actor_count": 10
     },
     {
+        "id": 6403,
+        "link_id": "PRC_A1K2J1S1E3B0P1N7W5F5Q4I5I7O4K9",
+        "title": "공연법 일부개정법률안",
+        "proposed_date": "2012-11-30",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 10
+    },
+    {
+        "id": 13897,
+        "link_id": "PRC_H1J2G1V1C3B0N1M7D5B0G2N8O4M2T6",
+        "title": "게임산업진흥에 관한 법률 일부개정법률안",
+        "proposed_date": "2012-11-30",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 10
+    },
+    {
         "id": 14225,
         "link_id": "PRC_Z1F2B1O1E3K0K1D7E5K4I1P8C7T3X9",
         "title": "장애아동 복지지원법 일부개정법률안",
@@ -480,20 +500,20 @@
         "actor_count": 10
     },
     {
-        "id": 6403,
-        "link_id": "PRC_A1K2J1S1E3B0P1N7W5F5Q4I5I7O4K9",
-        "title": "공연법 일부개정법률안",
-        "proposed_date": "2012-11-30",
+        "id": 12458,
+        "link_id": "PRC_K1M2Q1Y1F2H7M1I8D0B5I4Z5P6B1K3",
+        "title": "청소년 보호법 일부개정법률안",
+        "proposed_date": "2012-11-27",
         "decision_date": "0000-00-00",
         "status": "계류",
         "status_detail": "위원회 심사",
-        "actor_count": 10
+        "actor_count": 11
     },
     {
-        "id": 13897,
-        "link_id": "PRC_H1J2G1V1C3B0N1M7D5B0G2N8O4M2T6",
-        "title": "게임산업진흥에 관한 법률 일부개정법률안",
-        "proposed_date": "2012-11-30",
+        "id": 4906,
+        "link_id": "PRC_X1H2F1A1L2R7L1C8Z0U6D2C3L0C1E3",
+        "title": "청소년기본법 일부개정법률안",
+        "proposed_date": "2012-11-27",
         "decision_date": "0000-00-00",
         "status": "계류",
         "status_detail": "위원회 심사",
@@ -530,20 +550,10 @@
         "actor_count": 11
     },
     {
-        "id": 12458,
-        "link_id": "PRC_K1M2Q1Y1F2H7M1I8D0B5I4Z5P6B1K3",
-        "title": "청소년 보호법 일부개정법률안",
-        "proposed_date": "2012-11-27",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 11
-    },
-    {
-        "id": 4906,
-        "link_id": "PRC_X1H2F1A1L2R7L1C8Z0U6D2C3L0C1E3",
-        "title": "청소년기본법 일부개정법률안",
-        "proposed_date": "2012-11-27",
+        "id": 7243,
+        "link_id": "PRC_I1J2P1J1U1S5L0F9K5M6K5J0M1G0I0",
+        "title": "지방세법 일부개정법률안",
+        "proposed_date": "2012-11-15",
         "decision_date": "0000-00-00",
         "status": "계류",
         "status_detail": "위원회 심사",
@@ -553,16 +563,6 @@
         "id": 1258,
         "link_id": "PRC_R1G2E1L1U1N5K0K9S5G5H5S8W0Q9E2",
         "title": "지방재정법 일부개정법률안",
-        "proposed_date": "2012-11-15",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 10
-    },
-    {
-        "id": 7243,
-        "link_id": "PRC_I1J2P1J1U1S5L0F9K5M6K5J0M1G0I0",
-        "title": "지방세법 일부개정법률안",
         "proposed_date": "2012-11-15",
         "decision_date": "0000-00-00",
         "status": "계류",

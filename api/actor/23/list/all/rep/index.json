@@ -30,16 +30,6 @@
         "actor_count": 10
     },
     {
-        "id": 1488,
-        "link_id": "PRC_H1V5V1F0C0T8L1C1Z3T5Y0P7B9Y2D4",
-        "title": "지방세법 일부개정법률안",
-        "proposed_date": "2015-10-08",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 10
-    },
-    {
         "id": 4420,
         "link_id": "PRC_G1L5X1V0D0D8O1H3O3O6W4Y1R9O4U5",
         "title": "소방기본법 일부개정법률안",
@@ -63,6 +53,16 @@
         "id": 7804,
         "link_id": "PRC_H1P5O1T0V0D8H1E3C2T5S3E7S2Q5I1",
         "title": "지방세특례제한법 일부개정법률안",
+        "proposed_date": "2015-10-08",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 10
+    },
+    {
+        "id": 1488,
+        "link_id": "PRC_H1V5V1F0C0T8L1C1Z3T5Y0P7B9Y2D4",
+        "title": "지방세법 일부개정법률안",
         "proposed_date": "2015-10-08",
         "decision_date": "0000-00-00",
         "status": "계류",
@@ -430,16 +430,6 @@
         "actor_count": 10
     },
     {
-        "id": 15351,
-        "link_id": "PRC_P1S4J0C6U0P9B1N4D2D0X2V8H2K9P2",
-        "title": "물류정책기본법 일부개정법률안",
-        "proposed_date": "2014-06-09",
-        "decision_date": "2015-05-29",
-        "status": "처리",
-        "status_detail": "대안반영폐기",
-        "actor_count": 10
-    },
-    {
         "id": 10457,
         "link_id": "PRC_M1Z4X0I6C0Z9C1B4Z2L3N1T9L8U2O1",
         "title": "건설산업기본법 일부개정법률안",
@@ -447,6 +437,16 @@
         "decision_date": "0000-00-00",
         "status": "계류",
         "status_detail": "위원회 심사",
+        "actor_count": 10
+    },
+    {
+        "id": 15351,
+        "link_id": "PRC_P1S4J0C6U0P9B1N4D2D0X2V8H2K9P2",
+        "title": "물류정책기본법 일부개정법률안",
+        "proposed_date": "2014-06-09",
+        "decision_date": "2015-05-29",
+        "status": "처리",
+        "status_detail": "대안반영폐기",
         "actor_count": 10
     },
     {
@@ -474,46 +474,6 @@
         "link_id": "PRC_G1G4X0K5X1Z3R1R1X1R1A3M8R5D8N5",
         "title": "한국토지주택공사법 일부개정법률안",
         "proposed_date": "2014-05-13",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 10
-    },
-    {
-        "id": 14634,
-        "link_id": "PRC_F1X4D0I5U1M2K1W6M0L2F2A6V5S1M6",
-        "title": "산림자원의 조성 및 관리에 관한 법률 일부개정법률안",
-        "proposed_date": "2014-05-12",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 10
-    },
-    {
-        "id": 9450,
-        "link_id": "PRC_P1W4N0X5A1Z2T1C6I1A4H5F6R2R8A3",
-        "title": "발명진흥법 일부개정법률안",
-        "proposed_date": "2014-05-12",
-        "decision_date": "2015-04-30",
-        "status": "처리",
-        "status_detail": "대안반영폐기",
-        "actor_count": 10
-    },
-    {
-        "id": 9573,
-        "link_id": "PRC_J1N4R0I5X1Q2R1T5G5Y9D5Y5N2P0L5",
-        "title": "제품안전기본법 일부개정법률안",
-        "proposed_date": "2014-05-12",
-        "decision_date": "2014-12-29",
-        "status": "처리",
-        "status_detail": "대안반영폐기",
-        "actor_count": 10
-    },
-    {
-        "id": 11807,
-        "link_id": "PRC_B1Y4V0K5Y1B2Q1K5Z5H2I4C6H3P8X3",
-        "title": "도서관법 일부개정법률안",
-        "proposed_date": "2014-05-12",
         "decision_date": "0000-00-00",
         "status": "계류",
         "status_detail": "위원회 심사",
@@ -560,6 +520,46 @@
         "actor_count": 10
     },
     {
+        "id": 14634,
+        "link_id": "PRC_F1X4D0I5U1M2K1W6M0L2F2A6V5S1M6",
+        "title": "산림자원의 조성 및 관리에 관한 법률 일부개정법률안",
+        "proposed_date": "2014-05-12",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 10
+    },
+    {
+        "id": 9450,
+        "link_id": "PRC_P1W4N0X5A1Z2T1C6I1A4H5F6R2R8A3",
+        "title": "발명진흥법 일부개정법률안",
+        "proposed_date": "2014-05-12",
+        "decision_date": "2015-04-30",
+        "status": "처리",
+        "status_detail": "대안반영폐기",
+        "actor_count": 10
+    },
+    {
+        "id": 9573,
+        "link_id": "PRC_J1N4R0I5X1Q2R1T5G5Y9D5Y5N2P0L5",
+        "title": "제품안전기본법 일부개정법률안",
+        "proposed_date": "2014-05-12",
+        "decision_date": "2014-12-29",
+        "status": "처리",
+        "status_detail": "대안반영폐기",
+        "actor_count": 10
+    },
+    {
+        "id": 11807,
+        "link_id": "PRC_B1Y4V0K5Y1B2Q1K5Z5H2I4C6H3P8X3",
+        "title": "도서관법 일부개정법률안",
+        "proposed_date": "2014-05-12",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 10
+    },
+    {
         "id": 3766,
         "link_id": "PRC_D1L4W0O4L1P4T1J1Q1W4W5D1Z0O9E6",
         "title": "집합건물의 소유 및 관리에 관한 법률 일부개정법률안",
@@ -587,26 +587,6 @@
         "decision_date": "0000-00-00",
         "status": "계류",
         "status_detail": "위원회 심사",
-        "actor_count": 10
-    },
-    {
-        "id": 5816,
-        "link_id": "PRC_Q1F4P0Z4W0M4V1H5Y2C4C3I3P7G0Y1",
-        "title": "진실·화해를 위한 과거사정리 기본법 일부개정법률안",
-        "proposed_date": "2014-04-04",
-        "decision_date": "2014-12-09",
-        "status": "처리",
-        "status_detail": "공포",
-        "actor_count": 10
-    },
-    {
-        "id": 6451,
-        "link_id": "PRC_W1K4J0T4L0B4P1U5Y3V5A4A5P7Q0O9",
-        "title": "대일항쟁기 강제동원 피해조사 및 국외강제동원 희생자 등 지원에 관한 특별법 일부개정법률안",
-        "proposed_date": "2014-04-04",
-        "decision_date": "2014-12-09",
-        "status": "처리",
-        "status_detail": "공포",
         "actor_count": 10
     },
     {
@@ -664,6 +644,86 @@
         "link_id": "PRC_B1J4I0R4R0E4H1M5A2M9N5F0Z1B9I8",
         "title": "도시재생 활성화 및 지원에 관한 특별법 일부개정법률안",
         "proposed_date": "2014-04-04",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 10
+    },
+    {
+        "id": 5816,
+        "link_id": "PRC_Q1F4P0Z4W0M4V1H5Y2C4C3I3P7G0Y1",
+        "title": "진실·화해를 위한 과거사정리 기본법 일부개정법률안",
+        "proposed_date": "2014-04-04",
+        "decision_date": "2014-12-09",
+        "status": "처리",
+        "status_detail": "공포",
+        "actor_count": 10
+    },
+    {
+        "id": 6451,
+        "link_id": "PRC_W1K4J0T4L0B4P1U5Y3V5A4A5P7Q0O9",
+        "title": "대일항쟁기 강제동원 피해조사 및 국외강제동원 희생자 등 지원에 관한 특별법 일부개정법률안",
+        "proposed_date": "2014-04-04",
+        "decision_date": "2014-12-09",
+        "status": "처리",
+        "status_detail": "공포",
+        "actor_count": 10
+    },
+    {
+        "id": 3,
+        "link_id": "PRC_B1X4C0U3M1V8N1H4W1L5O4L6B1W8Q6",
+        "title": "사회기반시설에 대한 민간투자법 일부개정법률안",
+        "proposed_date": "2014-03-18",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 10
+    },
+    {
+        "id": 4431,
+        "link_id": "PRC_D1E4P0W3M1J8S1Y4Z1J2T3F7F0I8W0",
+        "title": "주택법 일부개정법률안",
+        "proposed_date": "2014-03-18",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 10
+    },
+    {
+        "id": 12565,
+        "link_id": "PRC_R1C4L0D3L1Z8Y1V4U2A0E1L6U2J8R7",
+        "title": "여객자동차 운수사업법 일부개정법률안",
+        "proposed_date": "2014-03-18",
+        "decision_date": "2014-12-09",
+        "status": "처리",
+        "status_detail": "대안반영폐기",
+        "actor_count": 10
+    },
+    {
+        "id": 14981,
+        "link_id": "PRC_O1V4E0M3E1Z8R1L4V1Q7R5J0N5Z7K5",
+        "title": "교원지위향상을 위한 특별법 일부개정법률안",
+        "proposed_date": "2014-03-18",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 10
+    },
+    {
+        "id": 9366,
+        "link_id": "PRC_S1G4J0W3X1W8N1E4R1D4G5H0G7R5P5",
+        "title": "범죄피해자 보호법 일부개정법률안",
+        "proposed_date": "2014-03-18",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 10
+    },
+    {
+        "id": 10644,
+        "link_id": "PRC_K1U4J0V3P1D8P1Y4R4D3L3A5O4E7L7",
+        "title": "형사보상 및 명예회복에 관한 법률 일부개정법률안",
+        "proposed_date": "2014-03-18",
         "decision_date": "0000-00-00",
         "status": "계류",
         "status_detail": "위원회 심사",
@@ -730,66 +790,6 @@
         "actor_count": 10
     },
     {
-        "id": 3,
-        "link_id": "PRC_B1X4C0U3M1V8N1H4W1L5O4L6B1W8Q6",
-        "title": "사회기반시설에 대한 민간투자법 일부개정법률안",
-        "proposed_date": "2014-03-18",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 10
-    },
-    {
-        "id": 4431,
-        "link_id": "PRC_D1E4P0W3M1J8S1Y4Z1J2T3F7F0I8W0",
-        "title": "주택법 일부개정법률안",
-        "proposed_date": "2014-03-18",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 10
-    },
-    {
-        "id": 12565,
-        "link_id": "PRC_R1C4L0D3L1Z8Y1V4U2A0E1L6U2J8R7",
-        "title": "여객자동차 운수사업법 일부개정법률안",
-        "proposed_date": "2014-03-18",
-        "decision_date": "2014-12-09",
-        "status": "처리",
-        "status_detail": "대안반영폐기",
-        "actor_count": 10
-    },
-    {
-        "id": 14981,
-        "link_id": "PRC_O1V4E0M3E1Z8R1L4V1Q7R5J0N5Z7K5",
-        "title": "교원지위향상을 위한 특별법 일부개정법률안",
-        "proposed_date": "2014-03-18",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 10
-    },
-    {
-        "id": 9366,
-        "link_id": "PRC_S1G4J0W3X1W8N1E4R1D4G5H0G7R5P5",
-        "title": "범죄피해자 보호법 일부개정법률안",
-        "proposed_date": "2014-03-18",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 10
-    },
-    {
-        "id": 10644,
-        "link_id": "PRC_K1U4J0V3P1D8P1Y4R4D3L3A5O4E7L7",
-        "title": "형사보상 및 명예회복에 관한 법률 일부개정법률안",
-        "proposed_date": "2014-03-18",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 10
-    },
-    {
         "id": 16804,
         "link_id": "PRC_Q1Q4D0K3Q0O6P1Q1C0D5R4J0J4M1C7",
         "title": "교통약자의 이동편의 증진법 일부개정법률안",
@@ -830,16 +830,6 @@
         "actor_count": 12
     },
     {
-        "id": 17401,
-        "link_id": "PRC_F1Q4J0K2V1D3Z1N6L0W4F5J1M3R6M1",
-        "title": "항공법 일부개정법률안",
-        "proposed_date": "2014-02-13",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 10
-    },
-    {
         "id": 6067,
         "link_id": "PRC_S1N4N0V2Y1Y3N1R5M5Z6K3H1W3L0Y2",
         "title": "자동차관리법 일부개정법률안",
@@ -868,6 +858,16 @@
         "status": "처리",
         "status_detail": "대안반영폐기",
         "actor_count": 11
+    },
+    {
+        "id": 17401,
+        "link_id": "PRC_F1Q4J0K2V1D3Z1N6L0W4F5J1M3R6M1",
+        "title": "항공법 일부개정법률안",
+        "proposed_date": "2014-02-13",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 10
     },
     {
         "id": 16934,
@@ -960,26 +960,6 @@
         "actor_count": 10
     },
     {
-        "id": 2728,
-        "link_id": "PRC_X1T3S1P1V2G9M1Q1B4G4S3V5E1R9Q5",
-        "title": "소방공무원법 전부개정법률안",
-        "proposed_date": "2013-11-29",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 10
-    },
-    {
-        "id": 12337,
-        "link_id": "PRC_P1Y3E1G1A2A9J1C1P2S7G2S6R0X1F6",
-        "title": "지방자치단체에 두는 국가공무원의 정원에 관한 법률 일부개정법률안",
-        "proposed_date": "2013-11-29",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 10
-    },
-    {
         "id": 1584,
         "link_id": "PRC_L1D3V1T1W2S9O1Q3Z1L1E5K1L0P0V2",
         "title": "지방자치법 일부개정법률안",
@@ -1020,6 +1000,26 @@
         "actor_count": 10
     },
     {
+        "id": 2728,
+        "link_id": "PRC_X1T3S1P1V2G9M1Q1B4G4S3V5E1R9Q5",
+        "title": "소방공무원법 전부개정법률안",
+        "proposed_date": "2013-11-29",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 10
+    },
+    {
+        "id": 12337,
+        "link_id": "PRC_P1Y3E1G1A2A9J1C1P2S7G2S6R0X1F6",
+        "title": "지방자치단체에 두는 국가공무원의 정원에 관한 법률 일부개정법률안",
+        "proposed_date": "2013-11-29",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 10
+    },
+    {
         "id": 14345,
         "link_id": "PRC_E1P3H1H1B2G8Y1D0G5P8T3K9B6O1K5",
         "title": "표시·광고의 공정화에 관한 법률 일부개정법률안",
@@ -1040,16 +1040,6 @@
         "actor_count": 10
     },
     {
-        "id": 7895,
-        "link_id": "PRC_S1P3B1T1T2B7I0Y9N4M2O5Y9M9E0P9",
-        "title": "사립학교법 일부개정법률안",
-        "proposed_date": "2013-11-27",
-        "decision_date": "2015-03-03",
-        "status": "처리",
-        "status_detail": "대안반영폐기",
-        "actor_count": 12
-    },
-    {
         "id": 11209,
         "link_id": "PRC_A1P3R1U1O2B7P0I9S4B4O0S7U6Z0X6",
         "title": "군인사법 일부개정법률안",
@@ -1065,6 +1055,16 @@
         "title": "군무원인사법 일부개정법률안",
         "proposed_date": "2013-11-27",
         "decision_date": "2014-09-30",
+        "status": "처리",
+        "status_detail": "대안반영폐기",
+        "actor_count": 12
+    },
+    {
+        "id": 7895,
+        "link_id": "PRC_S1P3B1T1T2B7I0Y9N4M2O5Y9M9E0P9",
+        "title": "사립학교법 일부개정법률안",
+        "proposed_date": "2013-11-27",
+        "decision_date": "2015-03-03",
         "status": "처리",
         "status_detail": "대안반영폐기",
         "actor_count": 12
@@ -1150,16 +1150,6 @@
         "actor_count": 11
     },
     {
-        "id": 4390,
-        "link_id": "PRC_P1Z3K1T1L0V1K1V3S2N6V5L3I2M3G1",
-        "title": "토지이용규제 기본법 일부개정법률안",
-        "proposed_date": "2013-11-01",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 13
-    },
-    {
         "id": 12418,
         "link_id": "PRC_F1A3S1W1G0U1U1J0J3I6G3G9B7Y4S5",
         "title": "개발제한구역의 지정 및 관리에 관한 특별조치법 일부개정법률안",
@@ -1190,14 +1180,14 @@
         "actor_count": 13
     },
     {
-        "id": 3663,
-        "link_id": "PRC_A1I3L0Y8Q0T2E1O4T5W1I3Z1L4G5Q1",
-        "title": "여성발전기본법 일부개정법률안",
-        "proposed_date": "2013-08-02",
-        "decision_date": "2013-12-10",
-        "status": "처리",
-        "status_detail": "대안반영폐기",
-        "actor_count": 10
+        "id": 4390,
+        "link_id": "PRC_P1Z3K1T1L0V1K1V3S2N6V5L3I2M3G1",
+        "title": "토지이용규제 기본법 일부개정법률안",
+        "proposed_date": "2013-11-01",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 13
     },
     {
         "id": 8592,
@@ -1215,6 +1205,16 @@
         "title": "성매매방지 및 피해자보호 등에 관한 법률 일부개정법률안",
         "proposed_date": "2013-08-02",
         "decision_date": "2014-02-28",
+        "status": "처리",
+        "status_detail": "대안반영폐기",
+        "actor_count": 10
+    },
+    {
+        "id": 3663,
+        "link_id": "PRC_A1I3L0Y8Q0T2E1O4T5W1I3Z1L4G5Q1",
+        "title": "여성발전기본법 일부개정법률안",
+        "proposed_date": "2013-08-02",
+        "decision_date": "2013-12-10",
         "status": "처리",
         "status_detail": "대안반영폐기",
         "actor_count": 10
@@ -1350,9 +1350,9 @@
         "actor_count": 10
     },
     {
-        "id": 5303,
-        "link_id": "PRC_V1U3N0V3G0N4N1L3X3A5F5I3C8M6C5",
-        "title": "여행업법안",
+        "id": 15740,
+        "link_id": "PRC_Z1A3G0D3P0F4B1Y4M3A9S2B5R1T4T6",
+        "title": "관광진흥법 일부개정법률안",
         "proposed_date": "2013-03-04",
         "decision_date": "0000-00-00",
         "status": "계류",
@@ -1360,9 +1360,9 @@
         "actor_count": 11
     },
     {
-        "id": 15740,
-        "link_id": "PRC_Z1A3G0D3P0F4B1Y4M3A9S2B5R1T4T6",
-        "title": "관광진흥법 일부개정법률안",
+        "id": 5303,
+        "link_id": "PRC_V1U3N0V3G0N4N1L3X3A5F5I3C8M6C5",
+        "title": "여행업법안",
         "proposed_date": "2013-03-04",
         "decision_date": "0000-00-00",
         "status": "계류",
@@ -1490,9 +1490,9 @@
         "actor_count": 11
     },
     {
-        "id": 16576,
-        "link_id": "PRC_I1Z2T1Z1A1P5P1V1O2Q4D0Q2W0K2S7",
-        "title": "도시재정비 촉진을 위한 특별법 일부개정법률안",
+        "id": 12091,
+        "link_id": "PRC_G1H2D1W1P1X5M1W3E5X2Q0A1F6N8V9",
+        "title": "도시 및 주거환경정비법 일부개정법률안",
         "proposed_date": "2012-11-15",
         "decision_date": "0000-00-00",
         "status": "계류",
@@ -1500,9 +1500,9 @@
         "actor_count": 10
     },
     {
-        "id": 12091,
-        "link_id": "PRC_G1H2D1W1P1X5M1W3E5X2Q0A1F6N8V9",
-        "title": "도시 및 주거환경정비법 일부개정법률안",
+        "id": 16576,
+        "link_id": "PRC_I1Z2T1Z1A1P5P1V1O2Q4D0Q2W0K2S7",
+        "title": "도시재정비 촉진을 위한 특별법 일부개정법률안",
         "proposed_date": "2012-11-15",
         "decision_date": "0000-00-00",
         "status": "계류",
@@ -1540,16 +1540,6 @@
         "actor_count": 10
     },
     {
-        "id": 10130,
-        "link_id": "PRC_R1H2B0D8G3L0J0O9S5H7S1U1Y9P4M6",
-        "title": "지방공무원법 일부개정법률안",
-        "proposed_date": "2012-08-30",
-        "decision_date": "0000-00-00",
-        "status": "계류",
-        "status_detail": "위원회 심사",
-        "actor_count": 10
-    },
-    {
         "id": 14963,
         "link_id": "PRC_Y1S2S0B8S3D0C0D9M5Z9I0W2P6Z4C4",
         "title": "경찰공무원법 일부개정법률안",
@@ -1573,6 +1563,16 @@
         "id": 11616,
         "link_id": "PRC_W1I2Q0R8H3D0X0G9N5U5C5V7J2O7V5",
         "title": "국가공무원법 일부개정법률안",
+        "proposed_date": "2012-08-30",
+        "decision_date": "0000-00-00",
+        "status": "계류",
+        "status_detail": "위원회 심사",
+        "actor_count": 10
+    },
+    {
+        "id": 10130,
+        "link_id": "PRC_R1H2B0D8G3L0J0O9S5H7S1U1Y9P4M6",
+        "title": "지방공무원법 일부개정법률안",
         "proposed_date": "2012-08-30",
         "decision_date": "0000-00-00",
         "status": "계류",
