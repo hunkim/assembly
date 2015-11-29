@@ -125,7 +125,7 @@ function checkJSon($file) {
 
   switch (json_last_error()) {
     case JSON_ERROR_NONE:
-      echo("$file Sucess!");
+      echo("$file Sucess!\n");
       return;
     break;
     case JSON_ERROR_DEPTH:

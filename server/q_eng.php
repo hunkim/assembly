@@ -90,23 +90,21 @@ function query_engine($apptype, $GET) {
 * Main function
 */
 function processQuery($apptype, $sql, $GET) {
-  $startyear = intval($GET['startyear']);
-  $endyear = intval($GET['endyear']);
+  if ($GET['debug']) {
+    $debug = $GET['debug'];
+  }
 
-  $id = intval($GET['id']);
-  $debug = $GET['debug'];
-
-
-  $bid = $GET['bid'];
-
+ 
   $params = [];
   $type = "";
 
-  if($GET['id']!=="") {
+  if(isset($GET['id'])) {
+    $id = intval($GET['id']);
     // make array and type
     $params = [&$id];
     $type = "i";
-  } else if ($bid!=="") {
+  } else if (isset($GET['bid']) {
+    $bid = $GET['bid'];
     // make array and type
     $params = [&$bid];
     $type = "s";
