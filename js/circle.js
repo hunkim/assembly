@@ -14,7 +14,7 @@ var svg = d3.select("body").append("svg")
 
 
 d3.json(
-  "api/order/index.json",
+  "api/order/index.json2",
   //"http://kassembly.xyz/circle.json",
  //"http://api.kassembly.xyz/q.php/order",
  
@@ -73,7 +73,7 @@ function classes(root) {
     });
     else classes.push({
       packageName: name,
-      className: node.name,
+      className: node.name_kr,
       count: node.c,
       value: node.value,
       id: node.id,
