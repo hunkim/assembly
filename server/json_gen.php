@@ -71,18 +71,16 @@ while($row = $result->fetch_assoc()) {
    $id = $billGET['bid'] = $row['id'];
 
    foreach ($billappnames as $apptype) {
-          $dir = "api/bill/$id/$apptype/";
-          mkdir($dir, 0777, true);
+      $dir = "api/bill/$id/$apptype/";
+      mkdir($dir, 0777, true);
 
-          echo ("Working on $dir...\n");
-          $ob_file = fopen("$dir/index.json",'w');
-          ob_start('ob_file_callback');
+      echo ("Working on $dir...\n");
+      $ob_file = fopen("$dir/index.json",'w');
+      ob_start('ob_file_callback');
 
-          query_engine($apptype, $billGET);
-          ob_end_flush();
-        }
-      }
-   }
+      query_engine($apptype, $billGET);
+      ob_end_flush();
+    }
 }
 
 // No argument
