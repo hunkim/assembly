@@ -8,7 +8,7 @@ header("Content-Type: application/json; charset=UTF-8");
 include_once 'q_eng.php';
 
 $appnames = ['coact','stat','list'];
-$optRes=['done', 'ongoing', 'pass', 'all';
+$optRes=['done', 'ongoing', 'pass', 'all'];
 $optBy=['rep','co'];
 
 // Persistent Connections
