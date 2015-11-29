@@ -36,7 +36,7 @@ function query_engine($apptype, $GET) {
   // Basic information SQL
   switch($apptype) {
     case 'coact':
-     $sql = "select name, name_cn, party, actorid as id, count(actorid) c from CoActor c ".
+     $sql = "select name_kr, name_cn, party, actorid as id, count(actorid) c from CoActor c ".
             " inner join Actor a on a.id=actorid inner join  (select distinct(billid) from CoActor ".
             " where actorid = ?) x on x.billid=c.billid group by actorid order by c desc limit 11;";
       break;  
@@ -53,7 +53,7 @@ function query_engine($apptype, $GET) {
       break;
 
     case 'all':
-      $sql = "select a.name, a.name_cn, a.party, a.id actorid, count(*) as c from CoActor c ";
+      $sql = "select a.name_kr, a.name_cn, a.party, a.id actorid, count(*) as c from CoActor c ";
       $sql .= "INNER JOIN Actor a ON a.id = c.actorid group by actorid order by c desc; ";
 
     case 'summary':
@@ -61,21 +61,21 @@ function query_engine($apptype, $GET) {
       break;
 
     case 'billactors':
-      $sql = "select name, name_cn, party, a.id  from Actor a Inner join CoActor c on a.id = c.actorid where c.billid = ? order by name;";
+      $sql = "select name_kr, name_cn, party, a.id  from Actor a Inner join CoActor c on a.id = c.actorid where c.billid = ? order by name_kr;";
       break;
 
     case 'allorder':
-      $sql = "select a.id, a.name, a.name_cn, a.party, year(proposed_date) as y, month(proposed_date) as m, count(distinct b.id) as c from CoActor c inner join Actor a on a.id=c.actorid inner join Bill b on c.billid=b.id  group by actorid, y, m order by a.id, y, m";
+      $sql = "select a.id, a.name_kr, a.name_cn, a.party, year(proposed_date) as y, month(proposed_date) as m, count(distinct b.id) as c from CoActor c inner join Actor a on a.id=c.actorid inner join Bill b on c.billid=b.id  group by actorid, y, m order by a.id, y, m";
       break;
 
     // This for the circle viz
     case 'order':
-      $sql = "select  name, name_cn, party, id, count(distinct billid) as c, count(distinct billid)+50 as value  from CoActor c inner join Actor a on a.id = c.actorid and a.name_cn<>'' AND a.party<>'' group by actorid order by c desc";
+      $sql = "select  name_kr, name_cn, party, id, count(distinct billid) as c, count(distinct billid)+50 as value  from CoActor c inner join Actor a on a.id = c.actorid and a.name_cn<>'' AND a.party<>'' group by actorid order by c desc";
       break;
 
     // This is for the autocomplete search
     case 'actor':
-      $sql = "select CONCAT_WS('(', name,   CONCAT(CONCAT_WS('/', party, district),')') ) as info, id from Actor order by name";
+      $sql = "select CONCAT_WS('(', name_kr,   CONCAT(CONCAT_WS('/', party, district),')') ) as info, id from Actor order by name_kr";
       break;
 
     default:
