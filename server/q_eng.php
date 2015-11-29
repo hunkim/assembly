@@ -36,7 +36,7 @@ function query_engine($apptype, $GET) {
   // Basic information SQL
   switch($apptype) {
     case 'coact':
-     $sql = "select name_kr, name_cn, party, actorid as id, count(actorid) c from CoActor c ".
+     $sql = "select name_kr, name_cn, party, district, actorid as id, count(actorid) c from CoActor c ".
             " inner join Actor a on a.id=actorid inner join  (select distinct(billid) from CoActor ".
             " where actorid = ?) x on x.billid=c.billid group by actorid order by c desc limit 11;";
       break;  
