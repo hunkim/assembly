@@ -5,6 +5,8 @@ header("Access-Control-Allow-Origin: *");
 //header("Content-Encoding: gzip");
 header("Content-Type: application/json; charset=UTF-8");
 
+$basedir = "/home/ubuntu/assembly-gh/";
+
 include_once 'q_eng.php';
 
 $appnames = ['coact','stat','list'];
@@ -45,7 +47,7 @@ while($row = $result->fetch_assoc()) {
         $GET['result'] = $res;
         foreach ($optBy as $by) {
           $GET['by'] = $by;
-          $dir = "api/actor/$id/$apptype/$res/$by/";
+          $dir = "$basedir/api/actor/$id/$apptype/$res/$by/";
           mkdir($dir, 0777, true);
 
           echo ("Working on $dir...\n");
@@ -71,7 +73,7 @@ while($row = $result->fetch_assoc()) {
    $id = $billGET['bid'] = $row['id'];
 
    foreach ($billappnames as $apptype) {
-      $dir = "api/bill/$id/$apptype/";
+      $dir = "$basedir/api/bill/$id/$apptype/";
       mkdir($dir, 0777, true);
 
       echo ("Working on $dir...\n");
@@ -86,7 +88,7 @@ while($row = $result->fetch_assoc()) {
 // No argument
 foreach ($restapp as $app) {
   $restGet=[];
-  $dir = "api/$app/";
+  $dir = "$basedir/api/$app/";
   mkdir($dir, 0777, true);
 
   echo ("Working on $dir...\n");
