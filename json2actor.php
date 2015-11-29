@@ -4,14 +4,15 @@ assert_options(ASSERT_BAIL,     true);
 
 if (count($argv) < 2) {
     echo "Usage: $argv[0] <authorjsonfiler>\n\n";
-    exit;
+    exit(-1);
 }
 
 $db = new mysqli("localhost", "trend", "", "assembly");
 
 // Check connection
 if ($db->connect_error) {
-    die("Connection failed: " . $db->connect_error);
+    echo("Connection failed: " . $db->connect_error);
+    exit(-1);
 }
 
 // Set utf8
@@ -26,7 +27,7 @@ $tableName = "Actor";
 // Drop table
 if ($db->query("DROP TABLE $tableName") === FALSE) {
   echo ("Error: Drop\n" . $db->error);
-  return false;
+  exit(-1);
 }
 
 // Create table sequence
@@ -37,7 +38,7 @@ echo $sqlCreateTable;
 // Create table
 if ($db->query($sqlCreateTable) === FALSE) {
   echo ("Error: " . $sqlCreateTable . "\n" . $db->error);
-  return false;
+  exit(-1);
 }
 
 foreach ($json as $actor) {
@@ -74,7 +75,7 @@ function insert($db, $tname, $actor) {
   // Create table
   if ($db->query($sql) === FALSE) {
     echo ("Error: " . $sql . "\n" . $db->error);
-    return false;
+    exit(-1);
   }
 
 

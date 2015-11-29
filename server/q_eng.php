@@ -2,7 +2,7 @@
 
 function query_engine($apptype, $GET) {
   if (!$apptype) {
-    exit(0);
+    exit(-1);
   }
 
   $optQuery = " ";
@@ -80,7 +80,7 @@ function query_engine($apptype, $GET) {
 
     default:
       print $json;
-      exit(0);
+      exit(-1);
   }
   // process and print
   processQuery($apptype, $sql, $GET);
@@ -127,7 +127,7 @@ function processQuery($apptype, $sql, $GET) {
 	// Check connection
 	if ($conn->connect_error) {
 			echo("Connection failed: " . $conn->connect_error);
-      exit(0);
+      exit(-1);
 	}
 
   $conn->set_charset("utf8");
@@ -135,7 +135,7 @@ function processQuery($apptype, $sql, $GET) {
   $stmt = $conn->prepare($sql);
 	if (!$stmt) {
 		 echo("Prepare $sql failed: ($conn->errno)  $conn->error");
-     exit(0);
+     exit(-1);
 	}
 
   // http://stackoverflow.com/questions/16236395/bind-param-with-array-of-parameters
@@ -156,7 +156,7 @@ function processQuery($apptype, $sql, $GET) {
   if ($apptype=='order') {
     $idx = 0;
     while($row = $result->fetch_array(MYSQLI_ASSOC)) {
-        $row['info'] = $row['name']."(" . $row['cname'] . "/". $row['party']. ")";
+        $row['info'] = $row['name_kr']."(" . $row['district'] . "/". $row['party']. ")";
         $child[] = $row;
         // Check it's ready to be added
         //if (rand(7,15)==1) {

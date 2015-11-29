@@ -26,7 +26,7 @@ $db = new mysqli("p:localhost", "trend", "", "assembly");
 // Check connection
 if ($db->connect_error) {
   echo("Connection failed: " . $db->connect_error);
-  exit(0);
+  exit(-1);
 }
 
 $db->set_charset("utf8");
@@ -102,7 +102,7 @@ while($row = $result->fetch_assoc()) {
           if (!is_dir($dir)) {
             mkdir($dir, 0777, true);
           }
-          
+
           echo ("Working on $dir...$id\n");
           $ob_file = fopen("$dir/index.json",'w');
           ob_start('ob_file_callback');

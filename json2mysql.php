@@ -7,14 +7,15 @@ include_once 'Actor.php';
 
 if (count($argv) < 2) {
     echo "Usage: $argv[0] <json_dir>\n\n";
-    exit;
+    exit(-1);
 }
 
 $db = new mysqli("p:localhost", "trend", "", "assembly");
 
 // Check connection
 if ($db->connect_error) {
-    die("Connection failed: " . $db->connect_error);
+    echo("Connection failed: " . $db->connect_error);
+    exit(-1);
 }
 
 $db->set_charset("utf8");
