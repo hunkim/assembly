@@ -24,7 +24,7 @@
   <table><tr><td class="col-md-9">
   <h3>
     <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-  {{coArr[0].name}}({{coArr[0].party}}) {{optString}} 
+  {{coArr[0].name_kr}}({{coArr[0].party}}) {{optString}} 
   <span ng-show="listArr.length>0"> {{listArr.length}}개 법안</span>
       <small>(시험운영중: <a href="mailto:hunkim+ka@gmail.com?Subject=Bug" target="_top">의견 주기</a>)</small>
   </h3>
@@ -71,7 +71,7 @@
   <br>
   <strong>{{optString}}의안 공동발의 많이한 의원들(공동발의수):</strong>
   <span ng-repeat="actor in coArr">
-    <a ng-hide="coArr[0].id==actor.id" class="btn btn-xs btn-primary" role="button" ng-click="setId(actor.id);"> {{actor.name}}
+    <a ng-hide="coArr[0].id==actor.id" class="btn btn-xs btn-primary" role="button" ng-click="setId(actor.id);"> {{actor.name_kr}}
      <span class="badge">{{actor.c}}</span></a>
   </span>
 </div>
@@ -106,7 +106,7 @@
 <div class="panel panel-default">
   <!-- Default panel contents -->
   <div class="panel-heading">
-    <strong>{{coArr[0].name}}({{coArr[0].cname}}/{{coArr[0].party}})님의 {{optString}} 총 {{listArr.length}} 법안 목록</strong>
+    <strong>{{coArr[0].name_kr}}({{coArr[0].region}}/{{coArr[0].party}})님의 {{optString}} 총 {{listArr.length}} 법안 목록</strong>
     (<i class="glyphicon glyphicon-chevron-right" aria-hidden="true">를 클릭하시면 요약정보와 제안자를 보여줍니다.</i>)
   </div>
 </div>
@@ -141,7 +141,7 @@
           <span class="glyphicon glyphicon-book" aria-hidden="true"></span>
              {{printSummary(list.summary);}}<p>
               제안자: <span ng-repeat="actor in list.ActArr">
-                <a class="btn-xs btn btn-default navbar-btn" ng-click="setId(actor.id);">{{actor.name}}</a>
+                <a class="btn-xs btn btn-default navbar-btn" ng-click="setId(actor.id);">{{actor.name_kr}}</a>
                  <!-- <span class="badge">{{actor.c}}</span></a> -->
               </span>
           </div>
