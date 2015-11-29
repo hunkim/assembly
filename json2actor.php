@@ -18,7 +18,7 @@ if ($db->connect_error) {
 $db->set_charset("utf8");
 
 // Read json
-$str = file_get_contents($jsonfile);
+$str = file_get_contents($argv[1]);
 $json = json_decode($str, true);
 
 $tableName = "Actor";
@@ -31,13 +31,17 @@ if ($db->query("DROP TABLE $tableName") === FALSE) {
 
 // Create table sequence
 $sqlCreateTable = createTableSQL($db, $tableName, $json[0]);
-// Drop table
+
+echo $sqlCreateTable;
+
+// Create table
 if ($db->query($sqlCreateTable) === FALSE) {
   echo ("Error: " . $sqlCreateTable . "\n" . $db->error);
   return false;
 }
 
 foreach ($json as $actor) {
+  echo ("Adding " . $actor['name_kr'] . "\n");
   insert($db, $tableName, $actor);
 }
 //readJson('1904016.json', $db);
@@ -47,11 +51,11 @@ function createTableSQL($db, $tname, $actor) {
 
 
   foreach ($actor as $key=>$val) {
-    $sql.= ", $key varchar(255)";  
+    $sql.= ", $key varchar(255)";
   }
 
   $sql .=",PRIMARY KEY (id))";
-    
+
   return $sql;
 }
 
@@ -64,10 +68,17 @@ function insert($db, $tname, $actor) {
       $sql .= ",";
     }
 
-    $sql.= "$key='" .  $db->_real_escape_string($val) . "'";  
+    $sql.= "$key='" .  $db->real_escape_string($val) . "'";
   }
-    
-  return $sql;
+
+  // Create table
+  if ($db->query($sql) === FALSE) {
+    echo ("Error: " . $sql . "\n" . $db->error);
+    return false;
+  }
+
+
+  return true;
 }
 
 ?>
