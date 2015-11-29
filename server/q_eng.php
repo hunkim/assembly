@@ -102,11 +102,11 @@ function processQuery($apptype, $sql, $GET) {
   $params = [];
   $type = "";
 
-  if($id) {
+  if($GET['id']!=="") {
     // make array and type
     $params = [&$id];
     $type = "i";
-  } else if ($bid) {
+  } else if ($bid!=="") {
     // make array and type
     $params = [&$bid];
     $type = "s";
