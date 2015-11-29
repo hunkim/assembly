@@ -44,7 +44,7 @@ foreach ($restapp as $app) {
   $ob_file = fopen("$dir/index.json",'w');
   ob_start('ob_file_callback');
 
-  query_engine($apptype, $restGet);
+  query_engine($app, $restGet);
 }
 
 
