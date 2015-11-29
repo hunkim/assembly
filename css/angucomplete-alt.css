@@ -16,7 +16,8 @@
     /*top: 32px;
     left: 0px;
     */
-    margin-top: -6px;
+    margin-top: 33px;
+    overflow-y: auto;
     background-color: #ffffff;
 }
 
