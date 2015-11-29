@@ -41,7 +41,7 @@ if (($result=$db->query("SELECT distinct(billid) as id from CoActor")) === false
 // bill
 while($row = $result->fetch_assoc()) {
    $id = $billGET['bid'] = $row['id'];
-   $billGET['debug']=1;
+   //$billGET['debug']=1;
 
    foreach ($billappnames as $apptype) {
       $dir = "$basedir/api/bill/$id/$apptype/";
