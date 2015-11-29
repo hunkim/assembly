@@ -54,7 +54,7 @@ function createTableSQL($db, $tname, $actor) {
     $sql.= ", $key varchar(255)";
   }
 
-  $sql .=",PRIMARY KEY (id))";
+  $sql .=",PRIMARY KEY (id)) ENGINE = MYISAM;";
 
   return $sql;
 }

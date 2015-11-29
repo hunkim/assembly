@@ -30,9 +30,17 @@ class Actor {
 
   function setId($db) {
     $sql = "SELECT id from Actor where ";
-    $sql .= "name='" . $db->real_escape_string(($this->name)) . "'\n";
-    $sql .= "AND cname='" . $db->real_escape_string(($this->cname)) . "'\n";
-    $sql .= "AND party='" . $db->real_escape_string(($this->party)) . "'\n";
+    $sql .= "name_kr='" . $db->real_escape_string(($this->name)) . "'\n";
+
+    // dealing with empty name
+    if ($this->cname !== "") {
+      $sql .= "AND name_cn='" . $db->real_escape_string(($this->cname)) . "'\n";
+    }
+
+    // dealing with empty party
+    if ($this->party !== "") {
+      $sql .= "AND party='" . $db->real_escape_string(($this->party)) . "'\n";
+    }
 
     echo $sql;
 
@@ -41,7 +49,9 @@ class Actor {
       return false;
     }
 
-    if ($result->num_rows > 0) {
+    assert ($result->num_rows <= 1, "Cannot be grater than 1");
+
+    if ($result->num_rows == 1) {
       // output data of each row
       while($row = $result->fetch_assoc()) {
         $this->id = intval($row["id"]);
@@ -83,8 +93,8 @@ class Actor {
     }
 
     $sql = "INSERT INTO Actor SET ";
-    $sql .= "name='" . $db->real_escape_string(($this->name)) . "'\n";
-    $sql .= ", cname='" . $db->real_escape_string(($this->cname)) . "'\n";
+    $sql .= "name_kr='" . $db->real_escape_string(($this->name)) . "'\n";
+    $sql .= ", cname_cn='" . $db->real_escape_string(($this->cname)) . "'\n";
     $sql .= ", party='" . $db->real_escape_string(($this->party)) . "'\n";
 
     if ($db->query($sql) === TRUE) {
