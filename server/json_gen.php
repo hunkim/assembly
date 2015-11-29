@@ -8,6 +8,11 @@ header("Content-Type: application/json; charset=UTF-8");
 include_once 'q_eng.php';
 
 $appnames = ['coact','stat','list'];
+
+$billappnames = ['summary','billactors'];
+
+$restapp['actor', 'all', 'order'];
+
 $optRes=['done', 'ongoing', 'pass', 'all'];
 $optBy=['rep','co'];
 
@@ -31,7 +36,7 @@ if (($result=$db->query("SELECT id from Actor")) === false) {
 
 
 
-// output data of each row
+// actor
 while($row = $result->fetch_assoc()) {
    $id = $GET['id'] = $row['id'];
 
@@ -40,7 +45,7 @@ while($row = $result->fetch_assoc()) {
         $GET['result'] = $res;
         foreach ($optBy as $by) {
           $GET['by'] = $by;
-          $dir = "api/$id/$apptype/$res/$by/";
+          $dir = "api/actor/$id/$apptype/$res/$by/";
           mkdir($dir, 0777, true);
 
           echo ("Working on $dir...\n");
@@ -53,6 +58,48 @@ while($row = $result->fetch_assoc()) {
       }
    }
 }
+
+
+
+
+// bill id
+if (($result=$db->query("SELECT id from Bill")) === false) {
+    echo "Error: " . $sql . "\n" . $db->error;
+    return false;
+}
+
+// bill
+while($row = $result->fetch_assoc()) {
+   $id = $GET['bid'] = $row['id'];
+
+   foreach ($billappnames as $apptype) {
+          $dir = "api/bill/$id/$apptype/";
+          mkdir($dir, 0777, true);
+
+          echo ("Working on $dir...\n");
+          $ob_file = fopen("$dir/index.json",'w');
+          ob_start('ob_file_callback');
+
+          query_engine($apptype, $GET);
+          ob_end_flush();
+        }
+      }
+   }
+}
+
+// No argument
+foreach ($restapp as $app) {
+  $restGet=[];
+  $dir = "api/$app/";
+  mkdir($dir, 0777, true);
+
+  echo ("Working on $dir...\n");
+  $ob_file = fopen("$dir/index.json",'w');
+  ob_start('ob_file_callback');
+
+  query_engine($apptype, $restGet);
+}
+
 
 
 
