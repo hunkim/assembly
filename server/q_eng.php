@@ -99,6 +99,7 @@ function processQuery($apptype, $sql, $GET) {
   $type = "";
 
   if(isset($GET['id'])) {
+
     $id = intval($GET['id']);
     // make array and type
     $params = [&$id];
