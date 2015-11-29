@@ -59,8 +59,12 @@ CREATE INDEX all_index ON  CoActor (billid, actorid, is_representative, is_propo
 
 DROP TABLE HTML;
 
+DROP USER 'trend'@'localhost';
+FLUSH PRIVILEGES;
 
 CREATE USER 'trend'@'localhost' IDENTIFIED BY 'only!trend!';
+CREATE USER 'trend'@'localhost' IDENTIFIED BY '';
+
 GRANT ALL PRIVILEGES ON assembly.* TO 'trend'@'localhost';
 
 CREATE TABLE Bill (
