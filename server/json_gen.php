@@ -32,6 +32,30 @@ if ($db->connect_error) {
 $db->set_charset("utf8");
 
 
+// bill id
+if (($result=$db->query("SELECT distinct(billid) as id from CoActor")) === false) {
+    echo "Error: " . $sql . "\n" . $db->error;
+    return false;
+}
+
+// bill
+while($row = $result->fetch_assoc()) {
+   $id = $billGET['bid'] = $row['id'];
+
+   foreach ($billappnames as $apptype) {
+      $dir = "$basedir/api/bill/$id/$apptype/";
+      mkdir($dir, 0777, true);
+
+      echo ("Working on $dir...\n");
+      $ob_file = fopen("$dir/index.json",'w');
+      ob_start('ob_file_callback');
+
+      query_engine($apptype, $billGET);
+      ob_end_flush();
+    }
+}
+
+
 // No argument
 foreach ($restapp as $app) {
   $restGet=[];
@@ -77,28 +101,6 @@ while($row = $result->fetch_assoc()) {
 }
 
 
-// bill id
-if (($result=$db->query("SELECT distinct(billid) as id from CoActor")) === false) {
-    echo "Error: " . $sql . "\n" . $db->error;
-    return false;
-}
-
-// bill
-while($row = $result->fetch_assoc()) {
-   $id = $billGET['bid'] = $row['id'];
-
-   foreach ($billappnames as $apptype) {
-      $dir = "$basedir/api/bill/$id/$apptype/";
-      mkdir($dir, 0777, true);
-
-      echo ("Working on $dir...\n");
-      $ob_file = fopen("$dir/index.json",'w');
-      ob_start('ob_file_callback');
-
-      query_engine($apptype, $billGET);
-      ob_end_flush();
-    }
-}
 
 
 
