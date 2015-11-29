@@ -91,7 +91,8 @@ function query_engine($apptype, $GET) {
 */
 function processQuery($apptype, $sql, $GET) {
   $debug = false;
-  if (isset($GET['debug']) {
+
+  if (isset($GET['debug'])) {
     $debug = $GET['debug'];
   }
 
