@@ -80,7 +80,7 @@ function classes(root) {
       info: node.info
     });
   }
-
+//TOOD: info change
   recurse(null, root);
   return {
     children: classes
