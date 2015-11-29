@@ -90,11 +90,11 @@ function query_engine($apptype, $GET) {
 * Main function
 */
 function processQuery($apptype, $sql, $GET) {
+  $debug = false;
   if ($GET['debug']) {
     $debug = $GET['debug'];
   }
 
- 
   $params = [];
   $type = "";
 
