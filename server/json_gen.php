@@ -77,7 +77,7 @@ while($row = $result->fetch_assoc()) {
 
 
 // bill id
-if (($result=$db->query("SELECT id from Bill")) === false) {
+if (($result=$db->query("SELECT distinct(billid) from CoActor")) === false) {
     echo "Error: " . $sql . "\n" . $db->error;
     return false;
 }
