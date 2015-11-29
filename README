@@ -1,8 +1,14 @@
+PHP 
 
- 39  sudo apt-get install php-pear
- 42  sodo apt-get install php5-dev
- 43  sudo apt-get install libcurl3-openssl-dev
- 45  sudo apt-get install php5-dev
- 60  sudo apt-get install libpcre3-dev
- 61  sudo pecl install pecl_http
- 62  sudo vi /etc/php5/cli/php.ini
+ sudo apt-get install php-pear
+ sudo apt-get install php5-dev
+ sudo apt-get install libcurl3-openssl-dev
+ sudo apt-get install php5-dev
+ sudo apt-get install libpcre3-dev
+ sudo pecl install pecl_http
+ sudo vi /etc/php5/cli/php.ini
+
+
+ Run Chrome for testing:
+ /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --allow-file-access-from-files
+
