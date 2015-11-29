@@ -31,12 +31,27 @@ if ($db->connect_error) {
 
 $db->set_charset("utf8");
 
+
+// No argument
+foreach ($restapp as $app) {
+  $restGet=[];
+  $restGet['debug']=1;
+  
+  $dir = "$basedir/api/$app/";
+  mkdir($dir, 0777, true);
+
+  echo ("Working on $dir...\n");
+  $ob_file = fopen("$dir/index.json",'w');
+  ob_start('ob_file_callback');
+
+  query_engine($apptype, $restGet);
+}
+
+
 if (($result=$db->query("SELECT id from Actor")) === false) {
     echo "Error: " . $sql . "\n" . $db->error;
     return false;
 }
-
-
 
 // actor
 while($row = $result->fetch_assoc()) {
@@ -85,18 +100,7 @@ while($row = $result->fetch_assoc()) {
     }
 }
 
-// No argument
-foreach ($restapp as $app) {
-  $restGet=[];
-  $dir = "$basedir/api/$app/";
-  mkdir($dir, 0777, true);
 
-  echo ("Working on $dir...\n");
-  $ob_file = fopen("$dir/index.json",'w');
-  ob_start('ob_file_callback');
-
-  query_engine($apptype, $restGet);
-}
 
 
 
