@@ -47,6 +47,7 @@ foreach ($restapp as $app) {
 }
 
 
+// get actors
 if (($result=$db->query("SELECT id from Actor")) === false) {
     echo "Error: " . $sql . "\n" . $db->error;
     return false;
