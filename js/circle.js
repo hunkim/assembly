@@ -14,7 +14,7 @@ var svg = d3.select("body").append("svg")
 
 
 d3.json(
-  "api/order/index.json2",
+  "api/order/index.json",
   //"http://kassembly.xyz/circle.json",
  //"http://api.kassembly.xyz/q.php/order",
  
