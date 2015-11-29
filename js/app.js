@@ -8,6 +8,8 @@ app.controller('customersCtrl',
   function($scope, $http, $location) {
     // API Host
     var $rhost = "http://api.kassembly.xyz/q.php";
+    var $rhostStatic = "./api/";
+
 
     // show all
     $scope.showCircle = true;
@@ -40,9 +42,16 @@ app.controller('customersCtrl',
     };
 
     $scope.optQuery = '';
+    $scope.optQueryStatic = '';
+    
     $scope.optString = '';
+
     $scope.setOptQuery = function() {
       $scope.optQuery = "&result=" + $scope.opt.result + "&by=" + $scope.opt.by;
+    };
+
+    $scope.setOptStaticQuery = function() {
+      $scope.optQueryStatic = "/" + $scope.opt.result + "/" + $scope.opt.by;
     };
 
     $scope.setOptString = function() {
@@ -158,6 +167,8 @@ app.controller('customersCtrl',
 
     $scope.upAll = function() {
       $scope.setOptQuery();
+      $scope.setOptStaticQuery();
+
       $scope.setOptString();
 
       $scope.getList();
@@ -165,14 +176,20 @@ app.controller('customersCtrl',
       $scope.getCoAct();
     };
 
+    var mkActorURL = function($app, $id) {
+      return $rhostStatic + "/actor/" + $id + "/" + $app + $scope.optQueryStatic + "/index.json";
+    }
+
+    var mkBillURL = function($app, $id) {
+      return $rhostStatic + "/bill/" + $id + "/" + $app + "/index.json";
+    }
 
     $scope.getStat = function() {
       $scope.statArr = [];
 
       $scope.errorFlag = false;
 
-      $scope.statPromise = $http.get($rhost +
-          '/stat?id=' + $scope.id + $scope.optQuery)
+      $scope.statPromise = $http.get(mkActorURL("stat", $scope.id))
         .success(function(response) {
           $scope.statArr = response;
           $scope.updateGraph();
@@ -185,8 +202,7 @@ app.controller('customersCtrl',
     $scope.getList = function() {
       $scope.listArr = [];
       $scope.errorFlag = false;
-      $scope.listPromise = $http.get($rhost +
-          "/list?id=" + $scope.id + $scope.optQuery)
+      $scope.listPromise = $http.get(mkActorURL("list", $scope.id))
         .success(function(response) {
           $scope.listArr = response;
         })
@@ -197,8 +213,8 @@ app.controller('customersCtrl',
 
     $scope.getAllActors = function() {
       $scope.errorFlag = false;
-      $scope.getAllActorsPromise = $http.get($rhost +
-          "/actor")
+      $scope.getAllActorsPromise = $http.get($rhostStatic +
+          "/actor/index.json")
         .success(function(response) {
           $scope.actors = response;
         })
@@ -210,8 +226,7 @@ app.controller('customersCtrl',
     $scope.getCoAct = function() {
       $scope.coActArr = [];
       $scope.errorFlag = false;
-      $scope.coActPromise = $http.get($rhost +
-          "/coact?id=" + $scope.id + $scope.optQuery)
+      $scope.coActPromise = $http.get(mkActorURL("coact", $scope.id))
         .success(function(response) {
           $scope.coArr = response;
         })
@@ -232,8 +247,7 @@ app.controller('customersCtrl',
       }
 
       $scope.errorFlag = false;
-      $scope.billActPromise = $http.get($rhost +
-          "/billactors?bid=" + $bid)
+      $scope.billActPromise = $http.get(mkBillURL("billactors",$bid))
         .success(function(response) {
           $scope.listArr[$index].ActArr = response;
         })
@@ -266,8 +280,7 @@ app.controller('customersCtrl',
       }
 
       $scope.errorFlag = false;
-      $scope.summaryPromise = $http.get($rhost +
-          "/summary?bid=" + $bid)
+      $scope.summaryPromise = $http.get(mkBillURL("summary", $bid))
         .success(function(response) {
           $scope.listArr[$index].summary = response;
         })
