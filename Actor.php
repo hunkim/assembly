@@ -94,7 +94,7 @@ class Actor {
 
     $sql = "INSERT INTO Actor SET ";
     $sql .= "name_kr='" . $db->real_escape_string(($this->name)) . "'\n";
-    $sql .= ", cname_cn='" . $db->real_escape_string(($this->cname)) . "'\n";
+    $sql .= ", name_cn='" . $db->real_escape_string(($this->cname)) . "'\n";
     $sql .= ", party='" . $db->real_escape_string(($this->party)) . "'\n";
 
     if ($db->query($sql) === TRUE) {
