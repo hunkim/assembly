@@ -173,7 +173,6 @@ function processQuery($apptype, $sql, $GET) {
     $rows = ['name'=>'all', 'children'=>$rows];
   } else {
     if ($debug) echo ("Result is ready!");
-    
     while($row = $result->fetch_array(MYSQLI_ASSOC)) {
       $rows[] = $row;
     }

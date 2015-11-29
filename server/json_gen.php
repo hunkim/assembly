@@ -35,8 +35,6 @@ $db->set_charset("utf8");
 // No argument
 foreach ($restapp as $app) {
   $restGet=[];
-  $restGet['debug']=1;
-  
   $dir = "$basedir/api/$app/";
   mkdir($dir, 0777, true);
 
