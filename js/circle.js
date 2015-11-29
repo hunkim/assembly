@@ -73,7 +73,7 @@ function classes(root) {
     });
     else classes.push({
       packageName: name,
-      className: node.name,
+      className: node.name_kr,
       count: node.c,
       value: node.value,
       id: node.id,
