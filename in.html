@@ -53,54 +53,33 @@
 <!-- info block -->
 <div cg-busy="{promise:statPromise,message:'통계 정보를 읽고 있습니다...'}"></div>
 <div ng-hide="errorFlag" class="alert alert-info" role="alert">
-  <strong>의안 선택: </strong>
+  <strong>발의 선택: </strong>
 
 
       &nbsp;<input type="radio" ng-model="opt.by" value="rep" ng-change="upAll()"/> 대표발의
-      &nbsp;<input type="radio" ng-model="opt.by" value="co" ng-change="upAll()" /> 공동발의 
+      &nbsp;&nbsp;<input type="radio" ng-model="opt.by" value="co" ng-change="upAll()" /> 공동발의 
    
 
     &nbsp;&nbsp;<strong>결과 선택:</strong>             
     &nbsp;<input type="radio" ng-model="opt.result" value="ongoing" ng-change="upAll()"/> 계류중
-    &nbsp;<input type="radio" ng-model="opt.result"  value="pass" ng-change="upAll()" /> 가결
-    &nbsp;<input type="radio" ng-model="opt.result" value="done" ng-change="upAll()"/> 처리
-    &nbsp;<input type="radio" ng-model="opt.result" value="all" ng-change="upAll()"/> 모두보기 
+    &nbsp;&nbsp;<input type="radio" ng-model="opt.result"  value="pass" ng-change="upAll()" /> 가결
+    &nbsp;&nbsp;<input type="radio" ng-model="opt.result" value="done" ng-change="upAll()"/> 처리
+    &nbsp;&nbsp;<input type="radio" ng-model="opt.result" value="all" ng-change="upAll()"/> 모두보기 
      
    <strong>(시험운영중: <a href="mailto:hunkim+ka@gmail.com?Subject=Bug" target="_top">의견 주기</a>)</strong>
-
-  <br>
-  <strong>{{optString}}의안 공동발의 많이한 의원들(공동발의수):</strong>
-  <span ng-repeat="actor in coArr">
-    <a ng-hide="coArr[0].id==actor.id" class="btn btn-xs btn-primary" role="button" ng-click="setId(actor.id);"> {{actor.name_kr}}
-     <span class="badge">{{actor.c}}</span></a>
-  </span>
 </div>
-  <!--  <A href=#list> -->
- &nbsp;
-
 <!-- error block -->
 <div ng-show="errorFlag" class="alert alert-danger text-center" role="error">
   <span class="glyphicon glyphicon-globe" aria-hidden="true"></span>
   인터넷 연결이 불안정 합니다.
   <a class="btn btn-primary" role="button" ng-click="reconnect();"> 다시 연결 시도하기</a>
 </div>
-
 <canvas id="line" class="chart chart-line" chart-data="data"
   chart-labels="labels" chart-legend="true" chart-series="series"
   chart-click="onClick" >
 </canvas>
 
-<!--
-<table class="table">
-  <tr ng-repeat="stat in statArr">
-    <td>{{ stat.year }}</td>
-    <td>{{ stat.month }}</td>
-    <td>{{ stat.c }}</td>
-    <td>{{ stat.avgAmtArea }}</td>
-    <td>{{ stat.avgAmtLand }}</td>
-</tr>
-</table>
--->
+<!-- List -->
 <a name="list"></a>
 <div cg-busy="{promise:listPromise,message:'법안 정보를 읽고 있습니다...'}"></div>
 <div class="panel panel-default">
@@ -108,6 +87,12 @@
   <div class="panel-heading">
     <strong>{{coArr[0].name_kr}}({{coArr[0].district}}/{{coArr[0].party}})님의 {{optString}} 총 {{listArr.length}} 법안 목록</strong>
     (<i class="glyphicon glyphicon-chevron-right" aria-hidden="true">를 클릭하시면 요약정보와 제안자를 보여줍니다.</i>)
+      <br>
+  <strong>공동발의 많의한 의원들(공동발의수):</strong>
+  <span ng-repeat="actor in coArr">
+    <a ng-hide="coArr[0].id==actor.id" class="btn btn-xs btn-primary" role="button" ng-click="setId(actor.id);"> {{actor.name_kr}}
+     <span class="badge">{{actor.c}}</span></a>
+  </span>
   </div>
 </div>
 
