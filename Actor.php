@@ -61,7 +61,9 @@ class Actor {
     }
 
     // We need only one or 0 results.
-    assert($result->num_rows > 1,  "Cannot be more than one entry");
+    if($result->num_rows > 1) { 
+      echo ("Cannot be more than one entry: $sql";
+    }
     
     // Not found
     if ($result->num_rows == 0) {
