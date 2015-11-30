@@ -37,8 +37,13 @@ function readJson($jsonfile, $db) {
 
   $bill = new Bill($json);
 
-  print $bill->toString();
-  assert($bill->link_id!=="", "Bill ID Needed for $entry!");
+  //print $bill->toString();
+  
+  if($bill->link_id==="") {
+     echo ("Bill ID Needed for $entry!");
+     exit(-1);
+  }
+  
   $bill->insert($db);
 
   // Let's work on the actors
@@ -49,7 +54,7 @@ function readJson($jsonfile, $db) {
       $actor->insert($db);
       $actor->insertCoActor($db, $bill->id);
 
-      print $actor->toString() . "\n";
+      //print $actor->toString() . "\n";
     }
 
     foreach ($json['withdrawers'] as $a) {
@@ -58,7 +63,7 @@ function readJson($jsonfile, $db) {
       $actor->insert($db);
       $actor->insertCoActor($db, $bill->id);
 
-      print $actor->toString() . "\n";
+      //print $actor->toString() . "\n";
     }
 }
 
