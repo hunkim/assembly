@@ -47,6 +47,7 @@ class Actor {
           echo("We have the actor with the same name: $this->id\n");
           return true;
         }
+      }
     }
 
     // Add cname and party in the query
