@@ -82,7 +82,10 @@ class Actor {
   }
 
   function insertCoActor($db, $billid) {
-    assert($this->id);
+    if(!($this->id)) {
+      echo "No id?";
+      exit(-1);
+    }
 
     $sql = "INSERT INTO CoActor SET ";
     $sql .= "actorid='" . $db->real_escape_string($this->id) . "'\n";
