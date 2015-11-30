@@ -13,7 +13,9 @@ $appnames = ['coact','stat','list'];
 
 $billappnames = ['summary','billactors'];
 
-$restapp=['actor', 'order'];
+$rest=['actor'];
+
+$optapp=['order'];
 
 $optRes=['done', 'ongoing', 'pass', 'all'];
 $optBy=['rep','co'];
@@ -31,6 +33,30 @@ if ($db->connect_error) {
 
 $db->set_charset("utf8");
 
+// No argument, but opt
+foreach ($optapp as $apptype) {
+  foreach ($optRes as $res) {
+    $GET['result'] = $res;
+    foreach ($optBy as $by) {
+      $GET['by'] = $by;
+      $dir = "$basedir/api/$apptype/$res/$by/";
+      
+      if (!is_dir($dir)) {
+        mkdir($dir, 0777, true);
+      }
+
+      echo ("Working on $dir...$id\n");
+      $ob_file = fopen("$dir/index.json",'w');
+      ob_start('ob_file_callback');
+
+      query_engine($apptype, $GET);
+      ob_end_flush();
+      checkJSon("$dir/index.json");
+    }
+  }
+}
+
+return;
 
 // bill id
 if (($result=$db->query("SELECT distinct(billid) as id from CoActor")) === false) {
