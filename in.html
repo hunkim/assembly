@@ -26,14 +26,13 @@
     <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
   {{coArr[0].name_kr}}({{coArr[0].district}}/{{coArr[0].party}}) {{optString}} 
   <span ng-show="listArr.length>0"> {{listArr.length}}개 법안</span>
-      <small>(시험운영중: <a href="mailto:hunkim+ka@gmail.com?Subject=Bug" target="_top">의견 주기</a>)</small>
   </h3>
 </td>
 
 <td>
   <div class="input-group vcenter">
     <angucomplete-alt id="ex1"
-            placeholder="의원검색"
+            placeholder="의원/지역구 검색"
             selected-object="setActor"
             local-data="actors"
             search-fields="info"
@@ -67,6 +66,7 @@
     &nbsp;<input type="radio" ng-model="opt.result" value="done" ng-change="upAll()"/> 처리
     &nbsp;<input type="radio" ng-model="opt.result" value="all" ng-change="upAll()"/> 모두보기 
      
+   <strong>(시험운영중: <a href="mailto:hunkim+ka@gmail.com?Subject=Bug" target="_top">의견 주기</a>)</strong>
 
   <br>
   <strong>{{optString}}의안 공동발의 많이한 의원들(공동발의수):</strong>
