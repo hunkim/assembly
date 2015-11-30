@@ -53,18 +53,18 @@
 <!-- info block -->
 <div cg-busy="{promise:statPromise,message:'통계 정보를 읽고 있습니다...'}"></div>
 <div ng-hide="errorFlag" class="alert alert-info" role="alert">
-  <strong>의안 선택: </strong>
+  <strong>발의 선택: </strong>
 
 
       &nbsp;<input type="radio" ng-model="opt.by" value="rep" ng-change="upAll()"/> 대표발의
-      &nbsp;<input type="radio" ng-model="opt.by" value="co" ng-change="upAll()" /> 공동발의 
+      &nbsp;&nbsp;<input type="radio" ng-model="opt.by" value="co" ng-change="upAll()" /> 공동발의 
    
 
     &nbsp;&nbsp;<strong>결과 선택:</strong>             
     &nbsp;<input type="radio" ng-model="opt.result" value="ongoing" ng-change="upAll()"/> 계류중
-    &nbsp;<input type="radio" ng-model="opt.result"  value="pass" ng-change="upAll()" /> 가결
-    &nbsp;<input type="radio" ng-model="opt.result" value="done" ng-change="upAll()"/> 처리
-    &nbsp;<input type="radio" ng-model="opt.result" value="all" ng-change="upAll()"/> 모두보기 
+    &nbsp;&nbsp;<input type="radio" ng-model="opt.result"  value="pass" ng-change="upAll()" /> 가결
+    &nbsp;&nbsp;<input type="radio" ng-model="opt.result" value="done" ng-change="upAll()"/> 처리
+    &nbsp;&nbsp;<input type="radio" ng-model="opt.result" value="all" ng-change="upAll()"/> 모두보기 
      
    <strong>(시험운영중: <a href="mailto:hunkim+ka@gmail.com?Subject=Bug" target="_top">의견 주기</a>)</strong>
 </div>
