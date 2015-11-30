@@ -45,7 +45,7 @@ foreach ($optapp as $apptype) {
         mkdir($dir, 0777, true);
       }
 
-      echo ("Working on $dir...$id\n");
+      echo ("Working on $dir...\n");
       $ob_file = fopen("$dir/index.json",'w');
       ob_start('ob_file_callback');
 
@@ -55,8 +55,6 @@ foreach ($optapp as $apptype) {
     }
   }
 }
-
-return;
 
 // bill id
 if (($result=$db->query("SELECT distinct(billid) as id from CoActor")) === false) {
