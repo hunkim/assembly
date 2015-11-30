@@ -116,5 +116,4 @@ class Actor {
       die ("Error: " . $sql . "<br>" . $db->error);
     }
   }
-
 ?>
