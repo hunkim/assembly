@@ -81,7 +81,7 @@ function query_engine($apptype, $GET) {
 
     // This is for the autocomplete search
     case 'actor':
-      $sql = "select CONCAT_WS('(', name_kr,   CONCAT(CONCAT_WS('/', party, district),')') ) as info, id from Actor order by name_kr";
+      $sql = "select CONCAT_WS('(', name_kr,   CONCAT(CONCAT_WS('/', party, district),')') ) as info, id from Actor where a.name_cn<>'' AND a.party<>'' order by name_kr";
       break;
 
     default:
