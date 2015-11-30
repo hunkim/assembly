@@ -13,8 +13,8 @@ var svg = d3.select("body").append("svg")
   .attr("class", "bubble");
 
 
-d3.json(
-  "api/order/index.json",
+d3.json( 
+  "api/order/done/rep/index.json",
   //"http://kassembly.xyz/circle.json",
  //"http://api.kassembly.xyz/q.php/order",
  
@@ -88,3 +88,59 @@ function classes(root) {
 }
 
 d3.select(self.frameElement).style("height", diameter + "px");
+
+function updateData($jsonFile) {
+  // remove and redraw
+  svg.selectAll(".node").remove();
+
+  d3.json(
+  $jsonFile,
+ // "api/order/index.json",
+  //"http://kassembly.xyz/circle.json",
+ //"http://api.kassembly.xyz/q.php/order",
+ 
+  function(error, root) {
+    //d3.json("all.json", function(error, root) {
+    //d3.json("http://api.kassembly.xyz/q.php/order", function(error, root) {
+    if (error) throw error;
+
+    var node = svg.selectAll(".node")
+      .data(bubble.nodes(classes(root))
+        .filter(function(d) {
+          return !d.children;
+        }))
+      .enter().append("g")
+      .attr("class", "node")
+      .attr("transform", function(d) {
+        return "translate(" + d.x + "," + d.y + ")";
+      });
+
+    node.append("title")
+      .text(function(d) {
+        return d.info + ": " + format(d.count);
+      });
+
+    node.append("circle")
+      .attr("r", function(d) {
+        return d.r;
+      })
+      .style("fill", function(d) {
+        return color(d.packageName);
+      });
+
+    //http://stackoverflow.com/questions/13104681/hyperlinks-in-d3-js-objects
+
+    node.append("text")
+      .attr("dy", ".3em")
+      .style("text-anchor", "middle")
+      //  .on("click", function(d) { alert("hello" + d.id); })
+      .text(function(d) {
+        return d.className.substring(0, d.r / 3);
+      });
+
+    node.on("click", function(d) {
+      var url = location.href; //Save down the URL without hash.
+      window.top.location.href = "in.html#/" + d.id;
+    });
+  });
+}
