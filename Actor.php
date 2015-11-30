@@ -33,7 +33,7 @@ class Actor {
     $sql .= "name_kr='" . $db->real_escape_string(($this->name)) . "'\n";
 
     // No party and cname, let's search for the same name only
-    if ($this->cname !== "" && $this->party !== "") {
+    if ($this->cname == "" && $this->party == "") {
       if (($result=$db->query($sql)) === false) {
         echo "Error: " . $sql . "\n" . $db->error;
         exit(-1);
