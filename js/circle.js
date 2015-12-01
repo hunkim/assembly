@@ -12,6 +12,7 @@ var svg = d3.select("body").append("svg")
   .attr("height", diameter)
   .attr("class", "bubble");
 
+var maxCount =0;
 
 // Returns a flattened hierarchy containing all leaf nodes under the root.
 function classes(root) {
@@ -21,7 +22,7 @@ function classes(root) {
     if (node.children) node.children.forEach(function(child) {
       recurse(node.name, child);
     });
-    else classes.push({
+    else { classes.push({
       color: node.color,
       party: node.party,
       className: node.name_kr,
@@ -29,7 +30,12 @@ function classes(root) {
       value: node.c,
       id: node.id,
       info: node.info
-    });
+      });
+
+    // compote max
+    maxCount = Math.max(maxCount, node.c);
+  
+    }
   }
 //TOOD: info change
   recurse(null, root);
@@ -71,10 +77,13 @@ function updateData($jsonFile) {
         return d.info + ": " + format(d.count);
       });
 
+
     node.append("circle")
       .attr("r", function(d) {
         return d.r;
       })
+       .style("opacity", function(d) {return .5+d.count/maxCount})
+
        .attr('class', 'node')
       .style("fill", function(d) {
         return d.color;

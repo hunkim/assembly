@@ -11,6 +11,8 @@ app.controller('assemblyMainCtrl',
     // http error flag
     $scope.errorFlag = false;
 
+    $scope.listProposedArr = [];
+    $scope.listDecisionArr = [];
 
     // all actors for search auto complete
     $scope.actors = [];
@@ -65,8 +67,9 @@ app.controller('assemblyMainCtrl',
       $scope.setOptString();
       $scope.setOptString();
       
-      $scope.getList();
-      
+      $scope.getListDecision();
+      $scope.getListProposed();
+
     };
  
 
@@ -87,12 +90,24 @@ app.controller('assemblyMainCtrl',
       return $rhostStatic + "/latest/" + $id + "/" + $app + $scope.optQueryStatic + "/index.json";
     }
 
-    $scope.getList = function() {
+    $scope.getListDecision = function() {
       $scope.listArr = [];
       $scope.errorFlag = false;
-      $scope.listPromise = $http.get(mkActorURL("list", $scope.id))
+      $scope.listDecisionPromise = $http.get("http://ec2-52-193-7-169.ap-northeast-1.compute.amazonaws.com/q.php/latestdecision")
         .success(function(response) {
-          $scope.listArr = response;
+          $scope.listDecisionArr = response;
+        })
+        .error(function(response) {
+          $scope.errorFlag = true;
+        });
+    };
+
+      $scope.getListProposed = function() {
+      $scope.listArr = [];
+      $scope.errorFlag = false;
+      $scope.listProposedPromise = $http.get("http://ec2-52-193-7-169.ap-northeast-1.compute.amazonaws.com/q.php/latestproposed")
+        .success(function(response) {
+          $scope.listProposedArr = response;
         })
         .error(function(response) {
           $scope.errorFlag = true;
