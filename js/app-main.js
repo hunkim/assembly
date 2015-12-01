@@ -57,8 +57,16 @@ app.controller('assemblyMainCtrl',
 
 
     $scope.upAll = function() {
+      // reload only empty
+      if ($scope.actors.length==0) {
+         $scope.getAllActors();
+      }
       $scope.setCircleURL();
       $scope.setOptString();
+      $scope.setOptString();
+      
+      $scope.getList();
+      
     };
  
 
@@ -74,6 +82,22 @@ app.controller('assemblyMainCtrl',
         });
     };
 
+
+    var mkActorURL = function($app, $id) {
+      return $rhostStatic + "/latest/" + $id + "/" + $app + $scope.optQueryStatic + "/index.json";
+    }
+
+    $scope.getList = function() {
+      $scope.listArr = [];
+      $scope.errorFlag = false;
+      $scope.listPromise = $http.get(mkActorURL("list", $scope.id))
+        .success(function(response) {
+          $scope.listArr = response;
+        })
+        .error(function(response) {
+          $scope.errorFlag = true;
+        });
+    };
  
     $scope.setActor = function(selected) {
       if (selected == undefined || selected.originalObject == undefined) {
@@ -89,8 +113,6 @@ app.controller('assemblyMainCtrl',
       $window.location.href = "in.html#/" + $id;
     };
 
-    // get all actors
-    $scope.getAllActors();
     $scope.upAll(); 
   }
 );

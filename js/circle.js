@@ -13,8 +13,8 @@ var svg = d3.select("body").append("svg")
   .attr("class", "bubble");
 
 
-d3.json( 
-  "api/order/done/rep/index.json",
+d3.json( //"api/order/index.json",
+"api/order/done/rep/index.json",
   //"http://kassembly.xyz/circle.json",
  //"http://api.kassembly.xyz/q.php/order",
  
@@ -43,8 +43,9 @@ d3.json(
       .attr("r", function(d) {
         return d.r;
       })
+      .attr('class', 'node')
       .style("fill", function(d) {
-        return color(d.packageName);
+        return d.color; // need to change the color here
       });
 
     //http://stackoverflow.com/questions/13104681/hyperlinks-in-d3-js-objects
@@ -79,7 +80,8 @@ function classes(root) {
       recurse(node.name, child);
     });
     else classes.push({
-      packageName: name,
+      color: node.color,
+      party: node.party,
       className: node.name_kr,
       count: node.c,
       value: node.value,
@@ -132,7 +134,7 @@ function updateData($jsonFile) {
         return d.r;
       })
       .style("fill", function(d) {
-        return color(d.packageName);
+        return d.color;
       });
 
     //http://stackoverflow.com/questions/13104681/hyperlinks-in-d3-js-objects

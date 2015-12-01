@@ -178,11 +178,11 @@ app.controller('customersCtrl',
 
     var mkActorURL = function($app, $id) {
       return $rhostStatic + "/actor/" + $id + "/" + $app + $scope.optQueryStatic + "/index.json";
-    }
+    };
 
     var mkBillURL = function($app, $id) {
       return $rhostStatic + "/bill/" + $id + "/" + $app + "/index.json";
-    }
+    };
 
     $scope.getStat = function() {
       $scope.statArr = [];
