@@ -4,6 +4,10 @@
     float: none;
 }
 
+g.connect-node circle{
+    fill: #BEFFFF;
+}
+
 iframe {
   width: 980px;
   height: 970px;

@@ -60,7 +60,14 @@ d3.json(
     node.on("click", function(d) {
       var url = location.href; //Save down the URL without hash.
       window.top.location.href = "in.html#/" + d.id;
-    });
+    })
+
+    .on("mouseover", function(d){        
+        d3.select(this).style("opacity", .4);
+      })
+      .on("mouseout", function(d){
+        d3.select(this).style("opacity", 1);
+      });
   });
 
 // Returns a flattened hierarchy containing all leaf nodes under the root.
