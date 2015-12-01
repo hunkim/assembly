@@ -82,9 +82,9 @@
 <!-- List -->
 <a name="list"></a>
 <div cg-busy="{promise:listPromise,message:'법안 정보를 읽고 있습니다...'}"></div>
-<div class="panel panel-default">
+<div class="alert alert-info">
   <!-- Default panel contents -->
-  <div class="panel-heading">
+ <!-- <div class="panel-heading"> -->
     <strong>{{coArr[0].name_kr}}({{coArr[0].district}}/{{coArr[0].party}})님의 {{optString}} 총 {{listArr.length}} 법안 목록</strong>
     (<i class="glyphicon glyphicon-chevron-right" aria-hidden="true">를 클릭하시면 요약정보와 제안자를 보여줍니다.</i>)
       <br>
@@ -93,7 +93,7 @@
     <a ng-hide="coArr[0].id==actor.id" class="btn btn-xs btn-primary" role="button" ng-click="setId(actor.id);"> {{actor.name_kr}}
      <span class="badge">{{actor.c}}</span></a>
   </span>
-  </div>
+  <!-- </div> -->
 </div>
 
   <!-- Table -->
