@@ -11,6 +11,8 @@ app.controller('assemblyMainCtrl',
     // http error flag
     $scope.errorFlag = false;
 
+    $scope.listProposedArr = [];
+    $scope.listDecisionArr = [];
 
     // all actors for search auto complete
     $scope.actors = [];
@@ -57,8 +59,17 @@ app.controller('assemblyMainCtrl',
 
 
     $scope.upAll = function() {
+      // reload only empty
+      if ($scope.actors.length==0) {
+         $scope.getAllActors();
+      }
       $scope.setCircleURL();
       $scope.setOptString();
+      $scope.setOptString();
+      
+      $scope.getListDecision();
+      $scope.getListProposed();
+
     };
  
 
@@ -74,6 +85,34 @@ app.controller('assemblyMainCtrl',
         });
     };
 
+
+    var mkActorURL = function($app, $id) {
+      return $rhostStatic + "/latest/" + $id + "/" + $app + $scope.optQueryStatic + "/index.json";
+    }
+
+    $scope.getListDecision = function() {
+      $scope.listArr = [];
+      $scope.errorFlag = false;
+      $scope.listDecisionPromise = $http.get("http://ec2-52-193-7-169.ap-northeast-1.compute.amazonaws.com/q.php/latestdecision")
+        .success(function(response) {
+          $scope.listDecisionArr = response;
+        })
+        .error(function(response) {
+          $scope.errorFlag = true;
+        });
+    };
+
+      $scope.getListProposed = function() {
+      $scope.listArr = [];
+      $scope.errorFlag = false;
+      $scope.listProposedPromise = $http.get("http://ec2-52-193-7-169.ap-northeast-1.compute.amazonaws.com/q.php/latestproposed")
+        .success(function(response) {
+          $scope.listProposedArr = response;
+        })
+        .error(function(response) {
+          $scope.errorFlag = true;
+        });
+    };
  
     $scope.setActor = function(selected) {
       if (selected == undefined || selected.originalObject == undefined) {
@@ -89,8 +128,6 @@ app.controller('assemblyMainCtrl',
       $window.location.href = "in.html#/" + $id;
     };
 
-    // get all actors
-    $scope.getAllActors();
     $scope.upAll(); 
   }
 );
