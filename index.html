@@ -48,7 +48,7 @@
   </td>
 <td>
   <div class="vcenter">
-    &nbsp;&nbsp;<a ng-href="#list" class="btn btn-primary" role="button">최근발의 <span class="badge">{{listProposedArr[0].proposed_date}}</span></a></a>
+    &nbsp;&nbsp;<a href="#List" class="btn btn-primary" role="button">최근발의 <span class="badge">{{listProposedArr[0].proposed_date}}</span></a></a>
   </div>
 </td>
 <!--
@@ -97,11 +97,11 @@
 </center>
 
 <!-- 최근 의제 -->
-<a name="list"></a>
+<a name="List"></a>
 <div cg-busy="{promise:listProposedPromise,message:'최근 발의 정보를 읽고 있습니다...'}"></div>
-<div class="alert alert-info">
+<div id="List" class="alert alert-info">
     <strong> 최근 발의 목록 ({{listProposedArr.length}} 건)</strong>
-자세한 자료는 의원 이름을 클릭하사면 됩니다.
+자세한 자료는 의안 제목이나 의원 이름을 클릭하사면 됩니다.
 </div>
 
   <!-- Table -->
@@ -111,7 +111,6 @@
       <th>제안일자</th>
       <th>의안명 </th>
       <th>대표발의 (공동발의자수)</th>
-      <th>의결일자</th>
       <th>의결결과</th>
     </tr>
     <!-- http://stackoverflow.com/questions/3076708/can-we-have-multiple-tbody-in-same-table -->
@@ -125,7 +124,6 @@
         </A>
       </td>
       <td><a class="btn-xs btn btn-default" ng-href="in.html#/{{list.actorid}}">{{list.name_kr}}</a> 외 {{list.actor_count}}명</td>
-      <td>{{list.decision_date}}</td>
       <td>{{list.status}}/{{list.status_detail}}</td>
     </tr>
   </tbody>
