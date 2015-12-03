@@ -28,9 +28,9 @@
   </style>
 <body>
 <table>
-<tr><td class="col-md-9">
+<tr><td>
 <h2>
-    <span class="glyphicon glyphicon-user" aria-hidden="true"></span> 19대 국회 전체의원 법안발의 정보
+    <span class="glyphicon glyphicon-user" aria-hidden="true"></span> 19대 국회 전체의원 법안발의 정보&nbsp;&nbsp;
 </h2>
 </td><td>
    <div class="input-group vcenter">
@@ -45,7 +45,20 @@
             clear-selected="true"
             input-class="pull-right form-control form-control-small small-input"
             minlength="1"/></div>
-  </td></tr> </table>
+  </td>
+<td>
+  <div class="vcenter">
+    &nbsp;&nbsp;<a href="#List" class="btn btn-primary" role="button">최근발의 <span class="badge">{{listProposedArr[0].proposed_date}}</span></a></a>
+  </div>
+</td>
+<!--
+<td>
+  <div class="vcenter">
+    &nbsp;&nbsp;<a href="#latestdecision" class="btn btn-primary" role="button">최근처리 <span class="badge">{{listDecisionArr[0].decision_date}}</span></a></a>
+  </div>
+</td>
+--> 
+</tr></table>
 
 <!-- info block -->
 <div class="alert alert-info" role="alert">
@@ -69,6 +82,13 @@
 
 </div>
 
+<!-- error block -->
+<div ng-show="errorFlag" class="alert alert-danger text-center" role="error">
+  <span class="glyphicon glyphicon-globe" aria-hidden="true"></span>
+  인터넷 연결이 불안정 합니다.
+  <a class="btn btn-primary" role="button" ng-click="reconnect();"> 다시 연결 시도하기</a>
+</div>
+
 <center>
 <iframe sandbox="allow-scripts allow-forms allow-top-navigation allow-same-origin" 
   ng-src="{{circleUrl}}" 
@@ -77,14 +97,11 @@
 </center>
 
 <!-- 최근 의제 -->
-<a name="list"></a>
-<div cg-busy="{promise:listPromise,message:'최신 법안 정보를 읽고 있습니다...'}"></div>
-<div class="alert alert-info">
-  <!-- Default panel contents -->
- <!-- <div class="panel-heading"> -->
-    <strong>최근 {{optString}} 총 {{listArr.length}} 법안 목록</strong>
-    (<i class="glyphicon glyphicon-chevron-right" aria-hidden="true">를 클릭하시면 요약정보와 제안자를 보여줍니다.</i>)
-  <!-- </div> -->
+<a name="List"></a>
+<div cg-busy="{promise:listProposedPromise,message:'최근 발의 정보를 읽고 있습니다...'}"></div>
+<div id="List" class="alert alert-info">
+    <strong> 최근 발의 목록 ({{listProposedArr.length}} 건)</strong>
+자세한 자료는 의안 제목이나 의원 이름을 클릭하사면 됩니다.
 </div>
 
   <!-- Table -->
@@ -94,7 +111,6 @@
       <th>제안일자</th>
       <th>의안명 </th>
       <th>대표발의 (공동발의자수)</th>
-      <th>의결일자</th>
       <th>의결결과</th>
     </tr>
     <!-- http://stackoverflow.com/questions/3076708/can-we-have-multiple-tbody-in-same-table -->
@@ -106,29 +122,20 @@
         <A target="_blank"
           href="http://likms.assembly.go.kr/bill/jsp/BillDetail.jsp?bill_id={{list.link_id}}">{{list.title}} 
         </A>
-         <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': list.open, 'glyphicon-chevron-right': !list.open}"ng-click="toggleList($index);"/>
       </td>
-      <td>{{list.name_kr}} ({{list.actor_count}})</td>
-      <td>{{list.decision_date}}</td>
+      <td><a class="btn-xs btn btn-default" ng-href="in.html#/{{list.actorid}}">{{list.name_kr}}</a> 외 {{list.actor_count}}명</td>
       <td>{{list.status}}/{{list.status_detail}}</td>
     </tr>
-    <tr>
-      <!-- http://stackoverflow.com/questions/16389775/twitter-bootstrap-use-collapse-js-on-table-cells-almost-done -->
-    <td ng-show="list.open" colspan="5" class="hiddenRow">
-        <div class="accordion-body" ng-class="{'collapse in':list.open, 'collapse': !list.open}">
-          <span class="glyphicon glyphicon-book" aria-hidden="true"></span>
-             {{printSummary(list.summary);}}<p>
-              제안자: <span ng-repeat="actor in list.ActArr">
-                <a class="btn-xs btn btn-default navbar-btn" ng-click="setId(actor.id);">{{actor.name_kr}}</a>
-                 <!-- <span class="badge">{{actor.c}}</span></a> -->
-              </span>
-          </div>
-    </td>
-  </tr>
-</tbody>
+  </tbody>
 </table>
 
-  <!-- Table -->
+<!-- 
+<a name="latestdecision"></a>
+<div cg-busy="{listProposedPromise:listPromise,message:'최근 처리 법안 정보를 읽고 있습니다...'}"></div>
+<div class="alert alert-info">
+    <strong>{{optString}} 총 {{listDecisionArr.length}} 최근 처리 의안 목록</strong> 자세한 자료는 의원을 클릭하사면 됩니다 .</i>)
+</div>
+
   <table class="table">
     <tr>
       <th>#</th>
@@ -138,7 +145,6 @@
       <th>의결일자</th>
       <th>의결결과</th>
     </tr>
-    <!-- http://stackoverflow.com/questions/3076708/can-we-have-multiple-tbody-in-same-table -->
     <tbody ng-repeat="list in listDecisionArr">
       <tr>
       <td>{{$index+1}}</td>
@@ -147,28 +153,14 @@
         <A target="_blank"
           href="http://likms.assembly.go.kr/bill/jsp/BillDetail.jsp?bill_id={{list.link_id}}">{{list.title}} 
         </A>
-         <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': list.open, 'glyphicon-chevron-right': !list.open}"ng-click="toggleList($index);"/>
       </td>
-      <td>{{list.name_kr}} ({{list.actor_count}})</td>
+      <td><a class="btn-xs btn btn-default" ng-href="in.html#/{{list.actorid}}">{{list.name_kr}}</a> 외 {{list.actor_count}}명</td>
       <td>{{list.decision_date}}</td>
       <td>{{list.status}}/{{list.status_detail}}</td>
-    </tr>
-    <tr>
-      <!-- http://stackoverflow.com/questions/16389775/twitter-bootstrap-use-collapse-js-on-table-cells-almost-done -->
-    <td ng-show="list.open" colspan="5" class="hiddenRow">
-        <div class="accordion-body" ng-class="{'collapse in':list.open, 'collapse': !list.open}">
-          <span class="glyphicon glyphicon-book" aria-hidden="true"></span>
-             {{printSummary(list.summary);}}<p>
-              제안자: <span ng-repeat="actor in list.ActArr">
-                <a class="btn-xs btn btn-default navbar-btn" ng-click="setId(actor.id);">{{actor.name_kr}}</a>
-                 <!-- <span class="badge">{{actor.c}}</span></a> -->
-              </span>
-          </div>
-    </td>
   </tr>
 </tbody>
 </table>
-
+-->
 
 <div class="footer">
 <div class="alert alert-danger" role="alert">

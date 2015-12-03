@@ -67,7 +67,7 @@ app.controller('assemblyMainCtrl',
       $scope.setOptString();
       $scope.setOptString();
       
-      $scope.getListDecision();
+     // $scope.getListDecision();
       $scope.getListProposed();
 
     };
@@ -105,7 +105,9 @@ app.controller('assemblyMainCtrl',
       $scope.getListProposed = function() {
       $scope.listArr = [];
       $scope.errorFlag = false;
-      $scope.listProposedPromise = $http.get("http://ec2-52-193-7-169.ap-northeast-1.compute.amazonaws.com/q.php/latestproposed")
+//      $scope.listProposedPromise = $http.get("http://ec2-52-193-7-169.ap-northeast-1.compute.amazonaws.com/q.php/latestproposed")
+      $scope.listProposedPromise = $http.get("api/latestproposed/index.json")
+
         .success(function(response) {
           $scope.listProposedArr = response;
         })
@@ -113,6 +115,13 @@ app.controller('assemblyMainCtrl',
           $scope.errorFlag = true;
         });
     };
+
+    // recovering from network error
+    $scope.reconnect = function() {
+      $scope.errorFlag = false; //reset the flag and let's hope
+      $scope.upAll();
+    };
+
  
     $scope.setActor = function(selected) {
       if (selected == undefined || selected.originalObject == undefined) {

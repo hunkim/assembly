@@ -114,16 +114,7 @@ app.controller('customersCtrl',
     // recovering from network error
     $scope.reconnect = function() {
       $scope.errorFlag = false; //reset the flag and let's hope
-
-      // no statdate? reload!
-      if ($scope.statArr.length == 0) {
-        $scope.getStat();
-      }
-
-      // no sale array? reload!
-      if ($scope.saleArr.length == 0) {
-        $scope.getList();
-      }
+      upAll();
     };
 
     // local function for KR URL encodning
