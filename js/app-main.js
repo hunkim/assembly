@@ -67,7 +67,7 @@ app.controller('assemblyMainCtrl',
       $scope.setOptString();
       $scope.setOptString();
       
-     // $scope.getListDecision();
+      $scope.getListDecision();
       $scope.getListProposed();
 
     };
@@ -93,7 +93,8 @@ app.controller('assemblyMainCtrl',
     $scope.getListDecision = function() {
       $scope.listArr = [];
       $scope.errorFlag = false;
-      $scope.listDecisionPromise = $http.get("http://ec2-52-193-7-169.ap-northeast-1.compute.amazonaws.com/q.php/latestdecision")
+     // $scope.listDecisionPromise = $http.get("http://ec2-52-193-7-169.ap-northeast-1.compute.amazonaws.com/q.php/latestdecision")
+      $scope.listDecisionPromise = $http.get("api/latestdecision/index.json")
         .success(function(response) {
           $scope.listDecisionArr = response;
         })
@@ -105,7 +106,7 @@ app.controller('assemblyMainCtrl',
       $scope.getListProposed = function() {
       $scope.listArr = [];
       $scope.errorFlag = false;
-//      $scope.listProposedPromise = $http.get("http://ec2-52-193-7-169.ap-northeast-1.compute.amazonaws.com/q.php/latestproposed")
+     // $scope.listProposedPromise = $http.get("http://ec2-52-193-7-169.ap-northeast-1.compute.amazonaws.com/q.php/latestproposed")
       $scope.listProposedPromise = $http.get("api/latestproposed/index.json")
 
         .success(function(response) {

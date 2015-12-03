@@ -51,13 +51,11 @@
     &nbsp;&nbsp;<a href="#List" class="btn btn-primary" role="button">최근발의 <span class="badge">{{listProposedArr[0].proposed_date}}</span></a></a>
   </div>
 </td>
-<!--
 <td>
   <div class="vcenter">
     &nbsp;&nbsp;<a href="#latestdecision" class="btn btn-primary" role="button">최근처리 <span class="badge">{{listDecisionArr[0].decision_date}}</span></a></a>
   </div>
 </td>
---> 
 </tr></table>
 
 <!-- info block -->
@@ -129,7 +127,6 @@
   </tbody>
 </table>
 
-<!-- 
 <a name="latestdecision"></a>
 <div cg-busy="{listProposedPromise:listPromise,message:'최근 처리 법안 정보를 읽고 있습니다...'}"></div>
 <div class="alert alert-info">
@@ -139,15 +136,16 @@
   <table class="table">
     <tr>
       <th>#</th>
+      <th>의결일자</th>
       <th>제안일자</th>
       <th>의안명 </th>
       <th>대표발의 (공동발의자수)</th>
-      <th>의결일자</th>
       <th>의결결과</th>
     </tr>
     <tbody ng-repeat="list in listDecisionArr">
       <tr>
       <td>{{$index+1}}</td>
+      <td>{{list.decision_date}}</td>
       <td>{{list.proposed_date}}</td>
       <td>
         <A target="_blank"
@@ -155,12 +153,11 @@
         </A>
       </td>
       <td><a class="btn-xs btn btn-default" ng-href="in.html#/{{list.actorid}}">{{list.name_kr}}</a> 외 {{list.actor_count}}명</td>
-      <td>{{list.decision_date}}</td>
       <td>{{list.status}}/{{list.status_detail}}</td>
   </tr>
 </tbody>
 </table>
--->
+
 
 <div class="footer">
 <div class="alert alert-danger" role="alert">
