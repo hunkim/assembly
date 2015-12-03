@@ -67,7 +67,7 @@ app.controller('assemblyMainCtrl',
       $scope.setOptString();
       $scope.setOptString();
       
-      $scope.getListDecision();
+     // $scope.getListDecision();
       $scope.getListProposed();
 
     };
@@ -113,6 +113,13 @@ app.controller('assemblyMainCtrl',
           $scope.errorFlag = true;
         });
     };
+
+    // recovering from network error
+    $scope.reconnect = function() {
+      $scope.errorFlag = false; //reset the flag and let's hope
+      upAll();
+    };
+
  
     $scope.setActor = function(selected) {
       if (selected == undefined || selected.originalObject == undefined) {
