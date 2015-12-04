@@ -250,7 +250,6 @@ app.controller('customersCtrl',
         return;
       }
 
-      console.log($index + ":" + $scope.listArr[$index]);
       var $bid = $scope.listArr[$index].id;
       if (!$bid) {
         return;
@@ -316,7 +315,6 @@ app.controller('customersCtrl',
     // move to the current selected
     var $id = $location.path().substring(1);
     $scope.setId($id);
-    console.log("Move: " + $scope.id);
 
     $scope.setActor = function(selected) {
       if (selected == undefined || selected.originalObject == undefined) {
