@@ -1,8 +1,7 @@
 'use strict';
 
 var app = angular.module('myApp', ['chart.js', 'cgBusy',
-  'angucomplete-alt'
-]);
+  'angucomplete-alt','ui.bootstrap']);
 
 app.controller('customersCtrl',
   function($scope, $http, $location) {
@@ -29,6 +28,8 @@ app.controller('customersCtrl',
 
     // stat and sale array
     $scope.statArr = [];
+    $scope.rateArr = [];
+
     $scope.listArr = [];
     $scope.coArr = [];
 
@@ -309,12 +310,22 @@ app.controller('customersCtrl',
 
       $scope.id = $id;
       $location.url("/" + $id);
+      $scope.getRateArr(); // get rate information
       $scope.upAll();
     }
 
-    // move to the current selected
-    var $id = $location.path().substring(1);
-    $scope.setId($id);
+    $scope.getRateArr = function() {
+      $scope.rateArr = [];
+      $scope.errorFlag = false;
+      $scope.rateArrPromise = $http.get(
+        "http://bill-2041646493.ap-northeast-1.elb.amazonaws.com/q.php/billdecisionrate?id="+ $scope.id)
+        .success(function(response) {
+          $scope.rateArr = response;
+        })
+        .error(function(response) {
+          $scope.errorFlag = true;
+        });
+    };
 
     $scope.setActor = function(selected) {
       if (selected == undefined || selected.originalObject == undefined) {
@@ -324,6 +335,8 @@ app.controller('customersCtrl',
       $scope.setId(selected.originalObject.id);
     };
 
-
+    // move to the current selected
+    var $id = $location.path().substring(1);
+    $scope.setId($id);
   }
 );

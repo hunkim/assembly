@@ -1,6 +1,6 @@
 'use strict';
 
-var app = angular.module('myApp', ['cgBusy','angucomplete-alt']);
+var app = angular.module('myApp', ['cgBusy','ui.bootstrap','angucomplete-alt']);
 
 app.controller('assemblyMainCtrl',
   function($window, $scope, $http, $location) {

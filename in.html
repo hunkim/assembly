@@ -12,6 +12,7 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/angular-busy.min.js"></script>
     <script src="js/angucomplete-alt.2.1.0.min.js"></script>
+    <script src="js/ui-bootstrap-tpls-0.14.3.min.js"></script>
 
 
     <link rel="stylesheet" href="css/angular-chart.css">
@@ -53,6 +54,10 @@
 <!-- info block -->
 <div cg-busy="{promise:statPromise,message:'통계 정보를 읽고 있습니다...'}"></div>
 <div ng-hide="errorFlag" class="alert alert-info" role="alert">
+  <div class="col-sm-2"><uib-progressbar  max="(rateArr[1].c+rateArr[0].c)" value="rateArr[1].c"
+    uib-tooltip="법안 처리률: {{rateArr[1].c+rateArr[0].c}}개의 법안중 {{rateArr[1].c}}처리">
+    <i>{{rateArr[1].c}}/{{rateArr[1].c+rateArr[0].c}}</i>
+  </uib-progressbar></div>
   <strong>발의 선택: </strong>
 
 
@@ -90,7 +95,7 @@
       <br>
   <strong>공동발의 많의한 의원들(공동발의수):</strong>
   <span ng-repeat="actor in coArr">
-    <a ng-hide="coArr[0].id==actor.id" class="btn btn-xs btn-primary" role="button" ng-click="setId(actor.id);"> {{actor.name_kr}}
+    <a ng-hide="coArr[0].id==actor.id" uib-tooltip="{{actor.district}}/{{actor.party}}" class="btn btn-xs btn-primary" role="button" ng-click="setId(actor.id);"> {{actor.name_kr}}
      <span class="badge">{{actor.c}}</span></a>
   </span>
   <!-- </div> -->
@@ -114,7 +119,9 @@
         <A target="_blank"
           href="http://likms.assembly.go.kr/bill/jsp/BillDetail.jsp?bill_id={{list.link_id}}">{{list.title}} ({{list.actor_count}})
         </A>
-         <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': list.open, 'glyphicon-chevron-right': !list.open}"ng-click="toggleList($index);"/>
+         <i class="pull-right glyphicon" uib-tooltip="요약정보 및 공동발의 의원 보기" 
+         ng-class="{'glyphicon-chevron-down': list.open, 'glyphicon-chevron-right': !list.open}"
+         ng-click="toggleList($index);"/>
       </td>
       <td>{{getDecisionDate(list);}}</td>
       <td>{{list.status}}/{{list.status_detail}}</td>
@@ -126,7 +133,7 @@
           <span class="glyphicon glyphicon-book" aria-hidden="true"></span>
              {{printSummary(list.summary);}}<p>
               제안자: <span ng-repeat="actor in list.ActArr">
-                <a class="btn-xs btn btn-default navbar-btn" ng-click="setId(actor.id);">{{actor.name_kr}}</a>
+                <a class="btn-xs btn btn-default navbar-btn" uib-tooltip="{{actor.district}}/{{actor.party}}" ng-click="setId(actor.id);">{{actor.name_kr}}</a>
                  <!-- <span class="badge">{{actor.c}}</span></a> -->
               </span>
           </div>
