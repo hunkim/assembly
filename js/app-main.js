@@ -117,6 +117,13 @@ app.controller('assemblyMainCtrl',
         });
     };
 
+    $scope.getDays = function($list) {
+      var oneDay = 24*60*60*1000; // hours*minutes*seconds*milliseconds
+      var firstDate = new Date($list.proposed_date);
+      var secondDate = new Date($list.decision_date);
+
+      return Math.round(Math.abs((firstDate.getTime() - secondDate.getTime())/(oneDay)));
+    }
     // recovering from network error
     $scope.reconnect = function() {
       $scope.errorFlag = false; //reset the flag and let's hope

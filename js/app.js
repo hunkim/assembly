@@ -110,6 +110,25 @@ app.controller('customersCtrl',
       return '';
     }
 
+    $scope.getDecisionDate = function($list) {
+      if ($list.decision_date=='0000-00-00') {
+        return '---';
+      }
+
+      return $list.decision_date + " (" + $scope.getDays($list) + ")";
+    }    
+
+    $scope.getDays = function($list) {
+      var oneDay = 24*60*60*1000; // hours*minutes*seconds*milliseconds
+      var firstDate = new Date($list.proposed_date);
+      var secondDate = new Date($list.decision_date);
+
+      if ($list.decision_date=='0000-00-00') {
+        return '';
+      }
+
+      return Math.round(Math.abs((firstDate.getTime() - secondDate.getTime())/(oneDay)));
+    }
 
     // recovering from network error
     $scope.reconnect = function() {

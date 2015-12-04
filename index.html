@@ -48,12 +48,12 @@
   </td>
 <td>
   <div class="vcenter">
-    &nbsp;&nbsp;<a href="#List" class="btn btn-primary" role="button">최근발의 <span class="badge">{{listProposedArr[0].proposed_date}}</span></a></a>
+    &nbsp;&nbsp;<a href="#List" target="_self" class="btn btn-primary" role="button">최근발의 <span class="badge">{{listProposedArr[0].proposed_date}}</span></a></a>
   </div>
 </td>
 <td>
   <div class="vcenter">
-    &nbsp;&nbsp;<a href="#latestdecision" class="btn btn-primary" role="button">최근처리 <span class="badge">{{listDecisionArr[0].decision_date}}</span></a></a>
+    &nbsp;&nbsp;<a href="#latestdecision" target="_self" class="btn btn-primary" role="button">최근처리 <span class="badge">{{listDecisionArr[0].decision_date}}</span></a></a>
   </div>
 </td>
 </tr></table>
@@ -136,7 +136,7 @@
   <table class="table">
     <tr>
       <th>#</th>
-      <th>의결일자</th>
+      <th>의결일자 (제안후 걸린 일수)</th>
       <th>제안일자</th>
       <th>의안명 </th>
       <th>대표발의 (공동발의자수)</th>
@@ -145,7 +145,7 @@
     <tbody ng-repeat="list in listDecisionArr">
       <tr>
       <td>{{$index+1}}</td>
-      <td>{{list.decision_date}}</td>
+      <td>{{list.decision_date}} ({{getDays(list);}})</td>
       <td>{{list.proposed_date}}</td>
       <td>
         <A target="_blank"
