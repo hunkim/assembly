@@ -102,7 +102,7 @@
       <th>#</th>
       <th>제안일자</th>
       <th>의안명 (공동발의자수)</th>
-      <th>의결일자</th>
+      <th>의결일자 (제안후 걸린 일수)</th>
       <th>의결결과</th>
     </tr>
     <!-- http://stackoverflow.com/questions/3076708/can-we-have-multiple-tbody-in-same-table -->
@@ -116,7 +116,7 @@
         </A>
          <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': list.open, 'glyphicon-chevron-right': !list.open}"ng-click="toggleList($index);"/>
       </td>
-      <td>{{list.decision_date}}</td>
+      <td>{{getDecisionDate(list);}}</td>
       <td>{{list.status}}/{{list.status_detail}}</td>
     </tr>
     <tr>

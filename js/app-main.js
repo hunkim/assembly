@@ -1,18 +1,22 @@
 'use strict';
 
-var app = angular.module('myApp', ['angucomplete-alt']);
+var app = angular.module('myApp', ['cgBusy','angucomplete-alt']);
 
 app.controller('assemblyMainCtrl',
   function($window, $scope, $http, $location) {
     // API Host
-    var $rhost = "http://api.kassembly.xyz/q.php";
+    var $rhost = "http://ec2-52-193-7-169.ap-northeast-1.compute.amazonaws.com";
     var $rhostStatic = "./api/";
 
+    var mkBillURL = function($app, $id) {
+      return $rhostStatic + "/bill/" + $id + "/" + $app + "/index.json";
+    };
     // http error flag
     $scope.errorFlag = false;
 
     $scope.listProposedArr = [];
     $scope.listDecisionArr = [];
+    $scope.listSearchArr = [];
 
     // all actors for search auto complete
     $scope.actors = [];
@@ -22,6 +26,11 @@ app.controller('assemblyMainCtrl',
       result: "done",
       by: "rep"
     };
+
+
+    $scope.key = '';
+    $scope.keySearched = '';
+
 
     $scope.circleUrl="circle.html";
     
@@ -67,7 +76,7 @@ app.controller('assemblyMainCtrl',
       $scope.setOptString();
       $scope.setOptString();
       
-     // $scope.getListDecision();
+      $scope.getListDecision();
       $scope.getListProposed();
 
     };
@@ -91,9 +100,10 @@ app.controller('assemblyMainCtrl',
     }
 
     $scope.getListDecision = function() {
-      $scope.listArr = [];
+      $scope.listDecisionArr = [];
       $scope.errorFlag = false;
-      $scope.listDecisionPromise = $http.get("http://ec2-52-193-7-169.ap-northeast-1.compute.amazonaws.com/q.php/latestdecision")
+     // $scope.listDecisionPromise = $http.get("http://ec2-52-193-7-169.ap-northeast-1.compute.amazonaws.com/q.php/latestdecision")
+      $scope.listDecisionPromise = $http.get("api/latestdecision/index.json")
         .success(function(response) {
           $scope.listDecisionArr = response;
         })
@@ -103,9 +113,9 @@ app.controller('assemblyMainCtrl',
     };
 
       $scope.getListProposed = function() {
-      $scope.listArr = [];
+      $scope.listProposedArr = [];
       $scope.errorFlag = false;
-//      $scope.listProposedPromise = $http.get("http://ec2-52-193-7-169.ap-northeast-1.compute.amazonaws.com/q.php/latestproposed")
+     // $scope.listProposedPromise = $http.get("http://ec2-52-193-7-169.ap-northeast-1.compute.amazonaws.com/q.php/latestproposed")
       $scope.listProposedPromise = $http.get("api/latestproposed/index.json")
 
         .success(function(response) {
@@ -116,6 +126,108 @@ app.controller('assemblyMainCtrl',
         });
     };
 
+    $scope.getListSearch = function() {
+      $scope.listSearchArr = [];
+      $scope.keySearched = $scope.key;
+
+      if($scope.key==='') {
+        return;
+      }
+
+      $scope.errorFlag = false;
+      $scope.searchPromise = $http.get($rhost + "/q.php/billsearch?key=" + $scope.key)
+        .success(function(response) {
+          $scope.listSearchArr = response;
+        })
+        .error(function(response) {
+          $scope.errorFlag = true;
+        });
+    };
+
+    $scope.getBillAct = function($listArr, $index) {
+      if ($listArr.length < $index) {
+        return;
+      }
+
+      var $bid = $listArr[$index].id;
+      if (!$bid) {
+        return;
+      }
+
+      $scope.errorFlag = false;
+      $scope.billActPromise = $http.get(mkBillURL("billactors",$bid))
+        .success(function(response) {
+          $listArr[$index].ActArr = response;
+        })
+        .error(function(response) {
+          $scope.errorFlag = true;
+        });
+    };
+
+    // Show summary
+    $scope.printSummary = function($summary) {
+      if ($summary === undefined || $summary[0] === undefined ||
+        $summary[
+          0]
+        .summary === undefined ||
+        $summary[0].summary === "") {
+        return "요약정보 없슴.";
+      }
+
+      return "요약정보: " + $summary[0].summary;
+    }
+
+    $scope.getSummary = function($listArr, $index) {
+      if ($listArr.length < $index) {
+        return;
+      }
+
+      var $bid = $listArr[$index].id;
+      if (!$bid) {
+        return;
+      }
+
+      $scope.errorFlag = false;
+      $scope.summaryPromise = $http.get(mkBillURL("summary", $bid))
+        .success(function(response) {
+          $listArr[$index].summary = response;
+        })
+        .error(function(response) {
+          $scope.errorFlag = true;
+        });
+    };
+
+
+     // Toggle cell so show more info
+    $scope.toggleList = function($listArr, $index) {
+      if ($listArr.length < $index) {
+        return;
+      }
+
+      // Toggle it
+      $listArr[$index].open = !$listArr[$index].open;
+
+      // If it is open, get data
+      if ($listArr[$index].open) {
+        // Load only if it is not loaded
+        if ($listArr[$index].summary === undefined) {
+          $scope.getSummary($listArr, $index);
+        }
+
+        // Load only it is not loaded
+        if ($listArr[$index].ActArr === undefined) {
+          $scope.getBillAct($listArr, $index);
+        }
+      }
+    }
+
+    $scope.getDays = function($list) {
+      var oneDay = 24*60*60*1000; // hours*minutes*seconds*milliseconds
+      var firstDate = new Date($list.proposed_date);
+      var secondDate = new Date($list.decision_date);
+
+      return Math.round(Math.abs((firstDate.getTime() - secondDate.getTime())/(oneDay)));
+    }
     // recovering from network error
     $scope.reconnect = function() {
       $scope.errorFlag = false; //reset the flag and let's hope

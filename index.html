@@ -11,6 +11,8 @@
     <script src="js/jquery-2.1.4.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/angucomplete-alt.2.1.0.min.js"></script>
+    <script src="js/angular-busy.min.js"></script>
+
 
     <!-- our app-->
     <script src="js/app-main.js"></script>
@@ -20,6 +22,8 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/angucomplete-alt.css">
     <link rel="stylesheet" href="css/assembly.css">
+    <link rel="stylesheet" href="css/angular-busy.min.css">
+
   </head>
   <style>
   text {
@@ -48,16 +52,19 @@
   </td>
 <td>
   <div class="vcenter">
-    &nbsp;&nbsp;<a href="#List" class="btn btn-primary" role="button">최근발의 <span class="badge">{{listProposedArr[0].proposed_date}}</span></a></a>
+    &nbsp;&nbsp;<a href="#List" target="_self" class="btn btn-primary" role="button">최근발의 <span class="badge">{{listProposedArr[0].proposed_date}}</span></a>
   </div>
 </td>
-<!--
 <td>
   <div class="vcenter">
-    &nbsp;&nbsp;<a href="#latestdecision" class="btn btn-primary" role="button">최근처리 <span class="badge">{{listDecisionArr[0].decision_date}}</span></a></a>
+    &nbsp;&nbsp;<a href="#latestdecision" target="_self" class="btn btn-primary" role="button">최근처리 <span class="badge">{{listDecisionArr[0].decision_date}}</span></a>
   </div>
 </td>
---> 
+<td>
+  <div class="vcenter">
+    &nbsp;&nbsp;<a href="#search" target="_self" class="btn btn-primary" role="button">의안검색</a>
+  </div>
+</td>
 </tr></table>
 
 <!-- info block -->
@@ -96,12 +103,69 @@
 </iframe>
 </center>
 
+<!-- 검색 의제 -->
+<a name="search"></a>
+<div cg-busy="{promise:searchPromise,message:'검색 의안을 읽고 있습니다...'}"></div>
+<div id="List" class="alert alert-info">
+  <form ng-submit="getListSearch();">
+    <div class="input-group">
+      <input type="text" class="form-control" ng-model="key" placeholder="의안 제목...">
+      <span class="input-group-btn">
+        <button class="btn btn-default" type="button" ng-click="getListSearch();">검색</button>
+      </span>
+      <span>
+         <strong>&nbsp;&nbsp;키워드:{{keySearched}} 결과: {{listSearchArr.length}}건 (최대 200건만 보여 줍니다.)</strong>
+더 자세한 자료는 의안 제목이나 의원 이름을 클릭하시면 불수 있습니다.
+</span>
+    </div><!-- /input-group -->
+   </form>
+</div>
+
+  <!-- Table -->
+  <table class="table">
+    <tr ng-show="listSearchArr.length">
+      <th>#</th>
+      <th>제안일자</th>
+      <th>의안명 </th>
+      <th>대표발의 (공동발의자수)</th>
+      <th>의결결과</th>
+    </tr>
+    <!-- http://stackoverflow.com/questions/3076708/can-we-have-multiple-tbody-in-same-table -->
+    <tbody ng-repeat="list in listSearchArr">
+      <tr>
+      <td>{{$index+1}}</td>
+      <td>{{list.proposed_date}}</td>
+      <td>
+        <A target="_blank"
+          href="http://likms.assembly.go.kr/bill/jsp/BillDetail.jsp?bill_id={{list.link_id}}">{{list.title}} 
+        </A>
+         <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': list.open, 'glyphicon-chevron-right': !list.open}"ng-click="toggleList(listSearchArr, $index);"/>
+      </td>
+      <td><a class="btn-xs btn btn-default" ng-href="in.html#/{{list.actorid}}">{{list.name_kr}}</a> 외 {{list.actor_count}}명</td>
+      <td>{{list.status}}/{{list.status_detail}}</td>
+    </tr>
+    <tr>
+       <td ng-show="list.open" colspan="5" class="hiddenRow">
+          <div class="accordion-body" ng-class="{'collapse in':list.open, 'collapse': !list.open}">
+            <span class="glyphicon glyphicon-book" aria-hidden="true"></span>
+               {{printSummary(list.summary);}}<p>
+                제안자: <span ng-repeat="actor in list.ActArr">
+                  <a class="btn-xs btn btn-default navbar-btn" ng-click="setId(actor.id);">{{actor.name_kr}}</a>
+                   <!-- <span class="badge">{{actor.c}}</span></a> -->
+            </span>
+          </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
 <!-- 최근 의제 -->
 <a name="List"></a>
 <div cg-busy="{promise:listProposedPromise,message:'최근 발의 정보를 읽고 있습니다...'}"></div>
 <div id="List" class="alert alert-info">
     <strong> 최근 발의 목록 ({{listProposedArr.length}} 건)</strong>
-자세한 자료는 의안 제목이나 의원 이름을 클릭하사면 됩니다.
+더 자세한 자료는 의안 제목이나 의원 이름을 클릭하시면 불수 있습니다.
 </div>
 
   <!-- Table -->
@@ -122,45 +186,70 @@
         <A target="_blank"
           href="http://likms.assembly.go.kr/bill/jsp/BillDetail.jsp?bill_id={{list.link_id}}">{{list.title}} 
         </A>
+         <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': list.open, 'glyphicon-chevron-right': !list.open}"ng-click="toggleList(listProposedArr, $index);"/>
       </td>
       <td><a class="btn-xs btn btn-default" ng-href="in.html#/{{list.actorid}}">{{list.name_kr}}</a> 외 {{list.actor_count}}명</td>
       <td>{{list.status}}/{{list.status_detail}}</td>
     </tr>
+      <tr>
+       <td ng-show="list.open" colspan="5" class="hiddenRow">
+          <div class="accordion-body" ng-class="{'collapse in':list.open, 'collapse': !list.open}">
+            <span class="glyphicon glyphicon-book" aria-hidden="true"></span>
+               {{printSummary(list.summary);}}<p>
+                제안자: <span ng-repeat="actor in list.ActArr">
+                  <a class="btn-xs btn btn-default navbar-btn" ng-click="setId(actor.id);">{{actor.name_kr}}</a>
+                   <!-- <span class="badge">{{actor.c}}</span></a> -->
+            </span>
+          </div>
+      </td>
+    </tr>
   </tbody>
 </table>
 
-<!-- 
 <a name="latestdecision"></a>
 <div cg-busy="{listProposedPromise:listPromise,message:'최근 처리 법안 정보를 읽고 있습니다...'}"></div>
 <div class="alert alert-info">
-    <strong>{{optString}} 총 {{listDecisionArr.length}} 최근 처리 의안 목록</strong> 자세한 자료는 의원을 클릭하사면 됩니다 .</i>)
+    <strong>{{optString}} 총 {{listDecisionArr.length}} 최근 처리 의안 목록</strong> 더 자세한 자료는 의안 제목이나 의원 이름을 클릭하시면 불수 있습니다.</i>)
 </div>
 
   <table class="table">
     <tr>
       <th>#</th>
+      <th>의결일자 (제안후 걸린 일수)</th>
       <th>제안일자</th>
       <th>의안명 </th>
       <th>대표발의 (공동발의자수)</th>
-      <th>의결일자</th>
       <th>의결결과</th>
     </tr>
     <tbody ng-repeat="list in listDecisionArr">
       <tr>
       <td>{{$index+1}}</td>
+      <td>{{list.decision_date}} ({{getDays(list);}})</td>
       <td>{{list.proposed_date}}</td>
       <td>
         <A target="_blank"
           href="http://likms.assembly.go.kr/bill/jsp/BillDetail.jsp?bill_id={{list.link_id}}">{{list.title}} 
         </A>
+             <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': list.open, 'glyphicon-chevron-right': !list.open}"ng-click="toggleList(listDecisionArr, $index);"/>
       </td>
       <td><a class="btn-xs btn btn-default" ng-href="in.html#/{{list.actorid}}">{{list.name_kr}}</a> 외 {{list.actor_count}}명</td>
-      <td>{{list.decision_date}}</td>
       <td>{{list.status}}/{{list.status_detail}}</td>
   </tr>
+    <tr>
+       <td ng-show="list.open" colspan="5" class="hiddenRow">
+          <div class="accordion-body" ng-class="{'collapse in':list.open, 'collapse': !list.open}">
+            <span class="glyphicon glyphicon-book" aria-hidden="true"></span>
+               {{printSummary(list.summary);}}<p>
+                제안자: <span ng-repeat="actor in list.ActArr">
+                  <a class="btn-xs btn btn-default navbar-btn" ng-click="setId(actor.id);">{{actor.name_kr}}</a>
+                   <!-- <span class="badge">{{actor.c}}</span></a> -->
+            </span>
+          </div>
+      </td>
+    </tr>
 </tbody>
 </table>
--->
+
 
 <div class="footer">
 <div class="alert alert-danger" role="alert">
