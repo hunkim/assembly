@@ -1,6 +1,6 @@
 'use strict';
 
-var app = angular.module('myApp', ['angucomplete-alt']);
+var app = angular.module('myApp', ['cgBusy','angucomplete-alt']);
 
 app.controller('assemblyMainCtrl',
   function($window, $scope, $http, $location) {
@@ -135,7 +135,7 @@ app.controller('assemblyMainCtrl',
       }
 
       $scope.errorFlag = false;
-      $scope.listSearchPromise = $http.get($rhost + "/q.php/billsearch?key=" + $scope.key)
+      $scope.searchPromise = $http.get($rhost + "/q.php/billsearch?key=" + $scope.key)
         .success(function(response) {
           $scope.listSearchArr = response;
         })
