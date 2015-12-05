@@ -5,7 +5,7 @@ var app = angular.module('myApp', ['cgBusy','ui.bootstrap','angucomplete-alt']);
 app.controller('assemblyMainCtrl',
   function($window, $scope, $http, $location) {
     // API Host
-    var $rhost = "http://ec2-52-193-7-169.ap-northeast-1.compute.amazonaws.com";
+    var $rhost = "http://a.kbill.org/";
     var $rhostStatic = "./api/";
 
     var mkBillURL = function($app, $id) {

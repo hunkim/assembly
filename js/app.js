@@ -6,7 +6,7 @@ var app = angular.module('myApp', ['chart.js', 'cgBusy',
 app.controller('customersCtrl',
   function($scope, $http, $location) {
     // API Host
-    var $rhost = "http://api.kassembly.xyz/q.php";
+    var $rhost = "http://a.kbill.org/q.php";
     var $rhostStatic = "./api/";
 
 
@@ -318,7 +318,7 @@ app.controller('customersCtrl',
       $scope.rateArr = [];
       $scope.errorFlag = false;
       $scope.rateArrPromise = $http.get(
-        "http://bill-2041646493.ap-northeast-1.elb.amazonaws.com/q.php/billdecisionrate?id="+ $scope.id)
+        "http://a.kbill.org/q.php/billdecisionrate?id="+ $scope.id)
         .success(function(response) {
           $scope.rateArr = response;
         })
