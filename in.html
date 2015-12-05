@@ -55,7 +55,7 @@
 <div cg-busy="{promise:statPromise,message:'통계 정보를 읽고 있습니다...'}"></div>
 <div ng-hide="errorFlag" class="alert alert-info" role="alert">
   <div class="col-sm-2"><uib-progressbar  max="(rateArr[1].c+rateArr[0].c)" value="rateArr[1].c"
-    uib-tooltip="법안 처리률: {{rateArr[1].c+rateArr[0].c}}개의 법안중 {{rateArr[1].c}}처리">
+    uib-tooltip="법안 처리률: {{rateArr[1].c*100/(rateArr[1].c+rateArr[0].c)|number:0}}%, {{rateArr[1].c+rateArr[0].c}}중 {{rateArr[1].c}}처리">
     <i>{{rateArr[1].c}}/{{rateArr[1].c+rateArr[0].c}}</i>
   </uib-progressbar></div>
   <strong>발의 선택: </strong>
