@@ -273,7 +273,7 @@ app.controller('customersCtrl',
           0]
         .summary === undefined ||
         $summary[0].summary === "") {
-        return "요약정보 없슴.";
+        return "요약정보 없음.";
       }
 
       return "요약정보: " + $summary[0].summary;
